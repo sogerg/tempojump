@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Droplets, TrendingDown, TrendingUp, WavesHorizontal, Zap } from 'lucide-react-native';
 import { NumberField } from '../components/NumberField';
@@ -7,7 +7,6 @@ import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { HorsePicker } from '../components/HorsePicker';
 import { IntroCard } from '../components/IntroCard';
-import { HorseshoeIcon } from '../components/icons';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE } from '../constants/horseDefaults';
@@ -37,7 +36,11 @@ export function ConverterScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
       <View pointerEvents="none" style={styles.watermark}>
-        <HorseshoeIcon size={340} color={colors.text} />
+        <Image
+          source={require('../../assets/cheval-watermark.png')}
+          style={[styles.watermarkImage, { tintColor: colors.text }]}
+          resizeMode="contain"
+        />
       </View>
       <ScrollView contentContainerStyle={styles.content}>
         <IntroCard title={t('converter.title')} subtitle={t('converter.subtitle')} />
@@ -111,6 +114,10 @@ const styles = StyleSheet.create({
     top: 60,
     right: -60,
     opacity: 0.07,
+  },
+  watermarkImage: {
+    width: 340,
+    height: 322,
   },
   sectionLabel: {
     fontSize: 13,
