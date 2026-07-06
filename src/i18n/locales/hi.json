@@ -12,7 +12,10 @@
     "chrono": "समय गणक",
     "exercises": "अभ्यास",
     "metronome": "मेट्रोनोम",
-    "checklist": "सूची"
+    "checklist": "सूची",
+    "more": "अधिक",
+    "coursePlan": "कोर्स योजना",
+    "journal": "जर्नल"
   },
   "converter": {
     "title": "कदम → स्ट्राइड परिवर्तक",
@@ -151,5 +154,41 @@
       "licence": "लाइसेंस",
       "passeportCheval": "घोड़े का पासपोर्ट"
     }
+  },
+  "coursePlan": {
+    "title": "कोर्स योजना संपादक",
+    "subtitle": "योजना की फोटो लें, अपना आदर्श मार्ग बनाएं और स्ट्राइड नोट करें।",
+    "defaultName": "नई योजना",
+    "takePhoto": "फोटो लें",
+    "pickPhoto": "फोटो चुनें",
+    "drawMode": "बनाएं",
+    "markMode": "चिह्न",
+    "undo": "पूर्ववत करें",
+    "clear": "सभी साफ़ करें",
+    "clearConfirmTitle": "चित्र और चिह्न साफ़ करें?",
+    "save": "सहेजें",
+    "share": "साझा करें",
+    "shareErrorTitle": "योजना साझा नहीं की जा सकी।",
+    "hintNoPhoto": "शुरू करने के लिए योजना की फोटो लें या चुनें।"
+  },
+  "journal": {
+    "title": "जर्नल",
+    "subtitle": "अपनी योजनाबद्ध और वास्तविक स्ट्राइड की तुलना करें, अपने राउंड के वीडियो के साथ।",
+    "nameLabel": "प्रतियोगिता का नाम",
+    "theoreticalLabel": "योजनाबद्ध स्ट्राइड",
+    "actualLabel": "वास्तविक स्ट्राइड",
+    "notesLabel": "नोट्स",
+    "recordVideo": "रिकॉर्ड करें",
+    "pickVideo": "वीडियो चुनें",
+    "videoAttached": "वीडियो संलग्न ✓",
+    "saveEntry": "सहेजें",
+    "addEntry": "नई प्रविष्टि",
+    "missingNameTitle": "एक प्रतियोगिता नाम दर्ज करें।",
+    "deleteConfirmTitle": "यह प्रविष्टि हटाएं?",
+    "deltaExact": "बिल्कुल योजना अनुसार",
+    "deltaLong_one": "{{count}} स्ट्राइड ज़्यादा",
+    "deltaLong_other": "{{count}} स्ट्राइड ज़्यादा",
+    "deltaShort_one": "{{count}} स्ट्राइड कम",
+    "deltaShort_other": "{{count}} स्ट्राइड कम"
   }
 }

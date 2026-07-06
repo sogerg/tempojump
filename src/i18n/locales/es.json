@@ -12,7 +12,10 @@
     "chrono": "Crono",
     "exercises": "Ejercicios",
     "metronome": "Metrónomo",
-    "checklist": "Lista"
+    "checklist": "Lista",
+    "more": "Más",
+    "coursePlan": "Plano de pista",
+    "journal": "Diario"
   },
   "converter": {
     "title": "Convertidor pasos → zancadas",
@@ -151,5 +154,41 @@
       "licence": "Licencia",
       "passeportCheval": "Pasaporte del caballo"
     }
+  },
+  "coursePlan": {
+    "title": "Editor de plano de pista",
+    "subtitle": "Fotografía el plano, traza tu recorrido ideal y anota las zancadas.",
+    "defaultName": "Nuevo plano",
+    "takePhoto": "Hacer una foto",
+    "pickPhoto": "Elegir una foto",
+    "drawMode": "Dibujar",
+    "markMode": "Marcas",
+    "undo": "Deshacer",
+    "clear": "Borrar todo",
+    "clearConfirmTitle": "¿Borrar el dibujo y las marcas?",
+    "save": "Guardar",
+    "share": "Compartir",
+    "shareErrorTitle": "No se pudo compartir el plano.",
+    "hintNoPhoto": "Haz o elige una foto del plano para empezar."
+  },
+  "journal": {
+    "title": "Diario",
+    "subtitle": "Compara tus zancadas previstas y reales, con el vídeo de tu recorrido.",
+    "nameLabel": "Nombre del concurso",
+    "theoreticalLabel": "Zancadas previstas",
+    "actualLabel": "Zancadas reales",
+    "notesLabel": "Notas",
+    "recordVideo": "Grabar",
+    "pickVideo": "Elegir un vídeo",
+    "videoAttached": "Vídeo adjunto ✓",
+    "saveEntry": "Guardar",
+    "addEntry": "Nueva entrada",
+    "missingNameTitle": "Introduce un nombre de concurso.",
+    "deleteConfirmTitle": "¿Eliminar esta entrada?",
+    "deltaExact": "Justo lo previsto",
+    "deltaLong_one": "{{count}} zancada de más",
+    "deltaLong_other": "{{count}} zancadas de más",
+    "deltaShort_one": "{{count}} zancada de menos",
+    "deltaShort_other": "{{count}} zancadas de menos"
   }
 }

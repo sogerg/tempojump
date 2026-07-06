@@ -12,7 +12,10 @@
     "chrono": "Cronometru",
     "exercises": "Exerciții",
     "metronome": "Metronom",
-    "checklist": "Listă"
+    "checklist": "Listă",
+    "more": "Mai mult",
+    "coursePlan": "Plan traseu",
+    "journal": "Jurnal"
   },
   "converter": {
     "title": "Convertor pași → galopade",
@@ -151,5 +154,41 @@
       "licence": "Licență",
       "passeportCheval": "Pașaport cal"
     }
+  },
+  "coursePlan": {
+    "title": "Editor plan traseu",
+    "subtitle": "Fotografiază planul, trasează traseul tău ideal și notează galopadele.",
+    "defaultName": "Plan nou",
+    "takePhoto": "Fă o fotografie",
+    "pickPhoto": "Alege o fotografie",
+    "drawMode": "Desenează",
+    "markMode": "Marcaje",
+    "undo": "Anulează",
+    "clear": "Șterge tot",
+    "clearConfirmTitle": "Ștergi desenul și marcajele?",
+    "save": "Salvează",
+    "share": "Distribuie",
+    "shareErrorTitle": "Nu s-a putut distribui planul.",
+    "hintNoPhoto": "Fă sau alege o fotografie a planului pentru a începe."
+  },
+  "journal": {
+    "title": "Jurnal",
+    "subtitle": "Compară galopadele planificate și cele reale, cu videoclipul parcursului tău.",
+    "nameLabel": "Numele concursului",
+    "theoreticalLabel": "Galopade planificate",
+    "actualLabel": "Galopade reale",
+    "notesLabel": "Note",
+    "recordVideo": "Filmează",
+    "pickVideo": "Alege un videoclip",
+    "videoAttached": "Videoclip atașat ✓",
+    "saveEntry": "Salvează",
+    "addEntry": "Intrare nouă",
+    "missingNameTitle": "Introdu numele concursului.",
+    "deleteConfirmTitle": "Ștergi această intrare?",
+    "deltaExact": "Exact ca planificat",
+    "deltaLong_one": "{{count}} galopadă în plus",
+    "deltaLong_other": "{{count}} galopade în plus",
+    "deltaShort_one": "{{count}} galopadă în minus",
+    "deltaShort_other": "{{count}} galopade în minus"
   }
 }

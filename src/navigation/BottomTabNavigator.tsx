@@ -8,8 +8,7 @@ import { CombinationsScreen } from '../screens/CombinationsScreen';
 import { HorsesScreen } from '../screens/HorsesScreen';
 import { ExercisesScreen } from '../screens/ExercisesScreen';
 import { ChronoScreen } from '../screens/ChronoScreen';
-import { MetronomeScreen } from '../screens/MetronomeScreen';
-import { ChecklistScreen } from '../screens/ChecklistScreen';
+import { MoreScreen } from '../screens/MoreScreen';
 import { useSettings } from '../context/SettingsContext';
 
 const Tab = createBottomTabNavigator();
@@ -41,8 +40,7 @@ export function BottomTabNavigator() {
       <Tab.Screen name="Montures" options={{ title: t('nav.mounts') }} component={HorsesScreen} />
       <Tab.Screen name="Exercices" options={{ title: t('nav.exercises') }} component={ExercisesScreen} />
       <Tab.Screen name="Chrono" options={{ title: t('nav.chrono') }} component={ChronoScreen} />
-      <Tab.Screen name="Metronome" options={{ title: t('nav.metronome') }} component={MetronomeScreen} />
-      <Tab.Screen name="Checklist" options={{ title: t('nav.checklist') }} component={ChecklistScreen} />
+      <Tab.Screen name="Plus" options={{ title: t('nav.more') }} component={MoreScreen} />
     </Tab.Navigator>
   );
 }

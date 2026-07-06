@@ -12,7 +12,10 @@
     "chrono": "Časomíra",
     "exercises": "Cvičení",
     "metronome": "Metronom",
-    "checklist": "Seznam"
+    "checklist": "Seznam",
+    "more": "Více",
+    "coursePlan": "Plán parkuru",
+    "journal": "Deník"
   },
   "converter": {
     "title": "Převodník kroky → cvalové skoky",
@@ -151,5 +154,41 @@
       "licence": "Licence",
       "passeportCheval": "Pas koně"
     }
+  },
+  "coursePlan": {
+    "title": "Editor plánu parkuru",
+    "subtitle": "Vyfoť plán, nakresli svou ideální trasu a zaznamenej počet cvalových skoků.",
+    "defaultName": "Nový plán",
+    "takePhoto": "Vyfotit",
+    "pickPhoto": "Vybrat fotku",
+    "drawMode": "Kreslit",
+    "markMode": "Značky",
+    "undo": "Zpět",
+    "clear": "Vymazat vše",
+    "clearConfirmTitle": "Vymazat kresbu a značky?",
+    "save": "Uložit",
+    "share": "Sdílet",
+    "shareErrorTitle": "Plán se nepodařilo sdílet.",
+    "hintNoPhoto": "Vyfoť nebo vyber fotku plánu, abys mohl začít."
+  },
+  "journal": {
+    "title": "Deník",
+    "subtitle": "Porovnej plánované a skutečné cvalové skoky s videem svého parkuru.",
+    "nameLabel": "Název závodu",
+    "theoreticalLabel": "Plánované cvalové skoky",
+    "actualLabel": "Skutečné cvalové skoky",
+    "notesLabel": "Poznámky",
+    "recordVideo": "Natočit",
+    "pickVideo": "Vybrat video",
+    "videoAttached": "Video připojeno ✓",
+    "saveEntry": "Uložit",
+    "addEntry": "Nový záznam",
+    "missingNameTitle": "Zadejte název závodu.",
+    "deleteConfirmTitle": "Smazat tento záznam?",
+    "deltaExact": "Přesně podle plánu",
+    "deltaLong_one": "{{count}} cvalový skok navíc",
+    "deltaLong_other": "{{count}} cvalových skoků navíc",
+    "deltaShort_one": "{{count}} cvalový skok méně",
+    "deltaShort_other": "{{count}} cvalových skoků méně"
   }
 }

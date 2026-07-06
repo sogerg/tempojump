@@ -12,7 +12,10 @@
     "chrono": "Хронометр",
     "exercises": "Упражнения",
     "metronome": "Метроном",
-    "checklist": "Список"
+    "checklist": "Список",
+    "more": "Ещё",
+    "coursePlan": "План маршрута",
+    "journal": "Дневник"
   },
   "converter": {
     "title": "Конвертер шагов в галопные прыжки",
@@ -151,5 +154,41 @@
       "licence": "Лицензия",
       "passeportCheval": "Паспорт лошади"
     }
+  },
+  "coursePlan": {
+    "title": "Редактор плана маршрута",
+    "subtitle": "Сфотографируйте план, отметьте идеальную траекторию и число прыжков.",
+    "defaultName": "Новый план",
+    "takePhoto": "Сделать фото",
+    "pickPhoto": "Выбрать фото",
+    "drawMode": "Рисовать",
+    "markMode": "Метки",
+    "undo": "Отменить",
+    "clear": "Очистить всё",
+    "clearConfirmTitle": "Очистить рисунок и метки?",
+    "save": "Сохранить",
+    "share": "Поделиться",
+    "shareErrorTitle": "Не удалось поделиться планом.",
+    "hintNoPhoto": "Сделайте или выберите фото плана, чтобы начать."
+  },
+  "journal": {
+    "title": "Дневник",
+    "subtitle": "Сравните запланированные и фактические прыжки, с видео вашего маршрута.",
+    "nameLabel": "Название соревнования",
+    "theoreticalLabel": "Запланированные прыжки",
+    "actualLabel": "Фактические прыжки",
+    "notesLabel": "Заметки",
+    "recordVideo": "Снять видео",
+    "pickVideo": "Выбрать видео",
+    "videoAttached": "Видео прикреплено ✓",
+    "saveEntry": "Сохранить",
+    "addEntry": "Новая запись",
+    "missingNameTitle": "Введите название соревнования.",
+    "deleteConfirmTitle": "Удалить эту запись?",
+    "deltaExact": "Точно как планировалось",
+    "deltaLong_one": "{{count}} прыжок больше",
+    "deltaLong_other": "{{count}} прыжков больше",
+    "deltaShort_one": "{{count}} прыжок меньше",
+    "deltaShort_other": "{{count}} прыжков меньше"
   }
 }

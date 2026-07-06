@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Horse } from '../types';
+import { File, Paths } from 'expo-file-system';
+import { CoursePlan, Horse, JournalEntry } from '../types';
 import { UnitSystem } from './units';
 
 const HORSES_KEY = '@cavalier/horses';
@@ -9,6 +10,8 @@ const LANGUAGE_KEY = '@cavalier/language';
 const UNIT_SYSTEM_KEY = '@cavalier/unitSystem';
 const DARK_MODE_KEY = '@cavalier/darkMode';
 const CHECKLIST_STATE_KEY = '@cavalier/checklistState';
+const COURSE_PLANS_KEY = '@cavalier/coursePlans';
+const JOURNAL_ENTRIES_KEY = '@cavalier/journalEntries';
 
 export async function loadHorses(): Promise<Horse[]> {
   const raw = await AsyncStorage.getItem(HORSES_KEY);
@@ -73,4 +76,30 @@ export async function loadChecklistState(): Promise<Record<string, boolean>> {
 
 export async function saveChecklistState(state: Record<string, boolean>): Promise<void> {
   await AsyncStorage.setItem(CHECKLIST_STATE_KEY, JSON.stringify(state));
+}
+
+/** Copie un fichier (photo/vidéo) choisi par l'utilisateur vers le stockage permanent de l'app. */
+export function copyToPersistentStorage(sourceUri: string, filename: string): string {
+  const destination = new File(Paths.document, filename);
+  const source = new File(sourceUri);
+  source.copySync(destination);
+  return destination.uri;
+}
+
+export async function loadCoursePlans(): Promise<CoursePlan[]> {
+  const raw = await AsyncStorage.getItem(COURSE_PLANS_KEY);
+  return raw ? (JSON.parse(raw) as CoursePlan[]) : [];
+}
+
+export async function saveCoursePlans(plans: CoursePlan[]): Promise<void> {
+  await AsyncStorage.setItem(COURSE_PLANS_KEY, JSON.stringify(plans));
+}
+
+export async function loadJournalEntries(): Promise<JournalEntry[]> {
+  const raw = await AsyncStorage.getItem(JOURNAL_ENTRIES_KEY);
+  return raw ? (JSON.parse(raw) as JournalEntry[]) : [];
+}
+
+export async function saveJournalEntries(entries: JournalEntry[]): Promise<void> {
+  await AsyncStorage.setItem(JOURNAL_ENTRIES_KEY, JSON.stringify(entries));
 }

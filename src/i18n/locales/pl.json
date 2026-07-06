@@ -12,7 +12,10 @@
     "chrono": "Stoper",
     "exercises": "Ćwiczenia",
     "metronome": "Metronom",
-    "checklist": "Lista"
+    "checklist": "Lista",
+    "more": "Więcej",
+    "coursePlan": "Plan parkuru",
+    "journal": "Dziennik"
   },
   "converter": {
     "title": "Przelicznik kroków → cwałów",
@@ -151,5 +154,41 @@
       "licence": "Licencja",
       "passeportCheval": "Paszport konia"
     }
+  },
+  "coursePlan": {
+    "title": "Edytor planu parkuru",
+    "subtitle": "Sfotografuj plan, zaznacz swoją idealną trasę i zapisz liczbę cwałów.",
+    "defaultName": "Nowy plan",
+    "takePhoto": "Zrób zdjęcie",
+    "pickPhoto": "Wybierz zdjęcie",
+    "drawMode": "Rysuj",
+    "markMode": "Znaczniki",
+    "undo": "Cofnij",
+    "clear": "Wyczyść wszystko",
+    "clearConfirmTitle": "Wyczyścić rysunek i znaczniki?",
+    "save": "Zapisz",
+    "share": "Udostępnij",
+    "shareErrorTitle": "Nie udało się udostępnić planu.",
+    "hintNoPhoto": "Zrób lub wybierz zdjęcie planu, aby zacząć."
+  },
+  "journal": {
+    "title": "Dziennik",
+    "subtitle": "Porównaj przewidywane i rzeczywiste cwały, wraz z filmem z przejazdu.",
+    "nameLabel": "Nazwa zawodów",
+    "theoreticalLabel": "Przewidywane cwały",
+    "actualLabel": "Rzeczywiste cwały",
+    "notesLabel": "Notatki",
+    "recordVideo": "Nagraj",
+    "pickVideo": "Wybierz film",
+    "videoAttached": "Film dołączony ✓",
+    "saveEntry": "Zapisz",
+    "addEntry": "Nowy wpis",
+    "missingNameTitle": "Wprowadź nazwę zawodów.",
+    "deleteConfirmTitle": "Usunąć ten wpis?",
+    "deltaExact": "Dokładnie jak przewidziano",
+    "deltaLong_one": "{{count}} cwał więcej",
+    "deltaLong_other": "{{count}} cwały więcej",
+    "deltaShort_one": "{{count}} cwał mniej",
+    "deltaShort_other": "{{count}} cwały mniej"
   }
 }

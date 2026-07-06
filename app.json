@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Foulées Cavalier",
+    "name": "TempoJump",
     "slug": "mon-appli-cavalier",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +13,7 @@
     "android": {
       "package": "com.sogerg.monappcavalier",
       "adaptiveIcon": {
-        "backgroundColor": "#052345",
+        "backgroundColor": "#0A2844",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
@@ -25,7 +25,18 @@
     },
     "plugins": [
       "expo-localization",
-      "expo-audio"
+      "expo-audio",
+      "expo-sharing",
+      "expo-video",
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "Autorise l'accès à la caméra pour photographier les plans de parcours et filmer tes reprises.",
+          "microphonePermission": "Autorise l'accès au micro pour filmer tes reprises avec le son.",
+          "photosPermission": "Autorise l'accès à tes photos pour choisir un plan de parcours ou une vidéo."
+        }
+      ],
+      "expo-file-system"
     ]
   }
 }

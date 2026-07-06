@@ -12,7 +12,10 @@
     "chrono": "Stoppuhr",
     "exercises": "Übungen",
     "metronome": "Metronom",
-    "checklist": "Checkliste"
+    "checklist": "Checkliste",
+    "more": "Mehr",
+    "coursePlan": "Parcoursplan",
+    "journal": "Tagebuch"
   },
   "converter": {
     "title": "Umrechner Schritte → Galoppsprünge",
@@ -151,5 +154,41 @@
       "licence": "Lizenz",
       "passeportCheval": "Pferdepass"
     }
+  },
+  "coursePlan": {
+    "title": "Parcoursplan-Editor",
+    "subtitle": "Fotografiere den Plan, zeichne deine ideale Linie ein und notiere die Galoppsprünge.",
+    "defaultName": "Neuer Plan",
+    "takePhoto": "Foto aufnehmen",
+    "pickPhoto": "Foto auswählen",
+    "drawMode": "Zeichnen",
+    "markMode": "Markierungen",
+    "undo": "Rückgängig",
+    "clear": "Alles löschen",
+    "clearConfirmTitle": "Zeichnung und Markierungen löschen?",
+    "save": "Speichern",
+    "share": "Teilen",
+    "shareErrorTitle": "Plan konnte nicht geteilt werden.",
+    "hintNoPhoto": "Nimm ein Foto des Plans auf oder wähle eines aus, um zu beginnen."
+  },
+  "journal": {
+    "title": "Logbuch",
+    "subtitle": "Vergleiche geplante und tatsächliche Galoppsprünge mit dem Video deines Parcours.",
+    "nameLabel": "Name des Turniers",
+    "theoreticalLabel": "Geplante Galoppsprünge",
+    "actualLabel": "Tatsächliche Galoppsprünge",
+    "notesLabel": "Notizen",
+    "recordVideo": "Aufnehmen",
+    "pickVideo": "Video auswählen",
+    "videoAttached": "Video angehängt ✓",
+    "saveEntry": "Speichern",
+    "addEntry": "Neuer Eintrag",
+    "missingNameTitle": "Gib einen Turniernamen ein.",
+    "deleteConfirmTitle": "Diesen Eintrag löschen?",
+    "deltaExact": "Genau wie geplant",
+    "deltaLong_one": "{{count}} Galoppsprung mehr",
+    "deltaLong_other": "{{count}} Galoppsprünge mehr",
+    "deltaShort_one": "{{count}} Galoppsprung weniger",
+    "deltaShort_other": "{{count}} Galoppsprünge weniger"
   }
 }

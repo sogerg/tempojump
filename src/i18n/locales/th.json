@@ -12,7 +12,10 @@
     "chrono": "จับเวลา",
     "exercises": "แบบฝึกหัด",
     "metronome": "เครื่องเคาะจังหวะ",
-    "checklist": "รายการ"
+    "checklist": "รายการ",
+    "more": "เพิ่มเติม",
+    "coursePlan": "ผังสนาม",
+    "journal": "บันทึก"
   },
   "converter": {
     "title": "ตัวแปลงจำนวนก้าว → จังหวะม้าวิ่ง",
@@ -150,5 +153,41 @@
       "licence": "ใบอนุญาต",
       "passeportCheval": "พาสปอร์ตม้า"
     }
+  },
+  "coursePlan": {
+    "title": "ตัวแก้ไขผังสนาม",
+    "subtitle": "ถ่ายภาพผังสนาม วาดเส้นทางที่ต้องการ และจดจำนวนจังหวะ",
+    "defaultName": "ผังใหม่",
+    "takePhoto": "ถ่ายภาพ",
+    "pickPhoto": "เลือกภาพ",
+    "drawMode": "วาด",
+    "markMode": "จุดทำเครื่องหมาย",
+    "undo": "เลิกทำ",
+    "clear": "ล้างทั้งหมด",
+    "clearConfirmTitle": "ล้างภาพวาดและจุดทำเครื่องหมาย?",
+    "save": "บันทึก",
+    "share": "แชร์",
+    "shareErrorTitle": "ไม่สามารถแชร์ผังได้",
+    "hintNoPhoto": "ถ่ายหรือเลือกภาพผังสนามเพื่อเริ่มต้น"
+  },
+  "journal": {
+    "title": "บันทึก",
+    "subtitle": "เปรียบเทียบจังหวะที่วางแผนไว้กับจังหวะจริง พร้อมวิดีโอการแข่งขันของคุณ",
+    "nameLabel": "ชื่อการแข่งขัน",
+    "theoreticalLabel": "จังหวะที่วางแผนไว้",
+    "actualLabel": "จังหวะจริง",
+    "notesLabel": "บันทึกย่อ",
+    "recordVideo": "ถ่ายวิดีโอ",
+    "pickVideo": "เลือกวิดีโอ",
+    "videoAttached": "แนบวิดีโอแล้ว ✓",
+    "saveEntry": "บันทึก",
+    "addEntry": "รายการใหม่",
+    "missingNameTitle": "ป้อนชื่อการแข่งขัน",
+    "deleteConfirmTitle": "ลบรายการนี้?",
+    "deltaExact": "ตรงตามแผนเป๊ะ",
+    "deltaLong_one": "มากกว่า {{count}} จังหวะ",
+    "deltaLong_other": "มากกว่า {{count}} จังหวะ",
+    "deltaShort_one": "น้อยกว่า {{count}} จังหวะ",
+    "deltaShort_other": "น้อยกว่า {{count}} จังหวะ"
   }
 }

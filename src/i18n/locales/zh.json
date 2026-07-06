@@ -12,7 +12,10 @@
     "chrono": "计时器",
     "exercises": "练习",
     "metronome": "节拍器",
-    "checklist": "清单"
+    "checklist": "清单",
+    "more": "更多",
+    "coursePlan": "路线图",
+    "journal": "日志"
   },
   "converter": {
     "title": "步数 → 跨步换算器",
@@ -150,5 +153,41 @@
       "licence": "执照",
       "passeportCheval": "马匹护照"
     }
+  },
+  "coursePlan": {
+    "title": "路线图编辑器",
+    "subtitle": "拍摄路线图，画出理想路线并标注跨步数。",
+    "defaultName": "新路线图",
+    "takePhoto": "拍照",
+    "pickPhoto": "选择照片",
+    "drawMode": "绘制",
+    "markMode": "标记",
+    "undo": "撤销",
+    "clear": "全部清除",
+    "clearConfirmTitle": "清除绘图和标记？",
+    "save": "保存",
+    "share": "分享",
+    "shareErrorTitle": "无法分享路线图。",
+    "hintNoPhoto": "拍摄或选择路线图照片以开始。"
+  },
+  "journal": {
+    "title": "日志",
+    "subtitle": "对比预计与实际跨步数，并查看比赛录像。",
+    "nameLabel": "比赛名称",
+    "theoreticalLabel": "预计跨步数",
+    "actualLabel": "实际跨步数",
+    "notesLabel": "备注",
+    "recordVideo": "录制",
+    "pickVideo": "选择视频",
+    "videoAttached": "已附加视频 ✓",
+    "saveEntry": "保存",
+    "addEntry": "新记录",
+    "missingNameTitle": "请输入比赛名称。",
+    "deleteConfirmTitle": "删除此记录？",
+    "deltaExact": "与预计完全一致",
+    "deltaLong_one": "多 {{count}} 个跨步",
+    "deltaLong_other": "多 {{count}} 个跨步",
+    "deltaShort_one": "少 {{count}} 个跨步",
+    "deltaShort_other": "少 {{count}} 个跨步"
   }
 }

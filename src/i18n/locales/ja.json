@@ -12,7 +12,10 @@
     "chrono": "タイム計算",
     "exercises": "練習",
     "metronome": "メトロノーム",
-    "checklist": "チェックリスト"
+    "checklist": "チェックリスト",
+    "more": "その他",
+    "coursePlan": "コース図",
+    "journal": "日誌"
   },
   "converter": {
     "title": "歩数→ストライド換算",
@@ -150,5 +153,41 @@
       "licence": "ライセンス",
       "passeportCheval": "馬のパスポート"
     }
+  },
+  "coursePlan": {
+    "title": "コース図エディター",
+    "subtitle": "コース図を撮影し、理想のラインを描いてストライド数を記入しましょう。",
+    "defaultName": "新しいコース図",
+    "takePhoto": "写真を撮る",
+    "pickPhoto": "写真を選ぶ",
+    "drawMode": "描画",
+    "markMode": "マーカー",
+    "undo": "元に戻す",
+    "clear": "すべて消去",
+    "clearConfirmTitle": "描画とマーカーを消去しますか？",
+    "save": "保存",
+    "share": "共有",
+    "shareErrorTitle": "コース図を共有できませんでした。",
+    "hintNoPhoto": "始めるにはコース図の写真を撮るか選んでください。"
+  },
+  "journal": {
+    "title": "日誌",
+    "subtitle": "予定と実際のストライド数を、走行動画とともに比較しましょう。",
+    "nameLabel": "大会名",
+    "theoreticalLabel": "予定ストライド数",
+    "actualLabel": "実際のストライド数",
+    "notesLabel": "メモ",
+    "recordVideo": "撮影",
+    "pickVideo": "動画を選ぶ",
+    "videoAttached": "動画を添付済み ✓",
+    "saveEntry": "保存",
+    "addEntry": "新しい記録",
+    "missingNameTitle": "大会名を入力してください。",
+    "deleteConfirmTitle": "この記録を削除しますか？",
+    "deltaExact": "予定通り",
+    "deltaLong_one": "{{count}} ストライド多い",
+    "deltaLong_other": "{{count}} ストライド多い",
+    "deltaShort_one": "{{count}} ストライド少ない",
+    "deltaShort_other": "{{count}} ストライド少ない"
   }
 }

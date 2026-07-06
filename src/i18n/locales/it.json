@@ -12,7 +12,10 @@
     "chrono": "Cronometro",
     "exercises": "Esercizi",
     "metronome": "Metronomo",
-    "checklist": "Lista"
+    "checklist": "Lista",
+    "more": "Altro",
+    "coursePlan": "Piano del percorso",
+    "journal": "Diario"
   },
   "converter": {
     "title": "Convertitore passi → falcate",
@@ -151,5 +154,41 @@
       "licence": "Licenza",
       "passeportCheval": "Passaporto del cavallo"
     }
+  },
+  "coursePlan": {
+    "title": "Editor del piano del percorso",
+    "subtitle": "Fotografa il piano, traccia il tuo percorso ideale e annota le falcate.",
+    "defaultName": "Nuovo piano",
+    "takePhoto": "Scatta una foto",
+    "pickPhoto": "Scegli una foto",
+    "drawMode": "Disegna",
+    "markMode": "Indicatori",
+    "undo": "Annulla",
+    "clear": "Cancella tutto",
+    "clearConfirmTitle": "Cancellare il disegno e gli indicatori?",
+    "save": "Salva",
+    "share": "Condividi",
+    "shareErrorTitle": "Impossibile condividere il piano.",
+    "hintNoPhoto": "Scatta o scegli una foto del piano per iniziare."
+  },
+  "journal": {
+    "title": "Diario",
+    "subtitle": "Confronta le falcate previste e reali, con il video del tuo percorso.",
+    "nameLabel": "Nome del concorso",
+    "theoreticalLabel": "Falcate previste",
+    "actualLabel": "Falcate reali",
+    "notesLabel": "Note",
+    "recordVideo": "Filma",
+    "pickVideo": "Scegli un video",
+    "videoAttached": "Video allegato ✓",
+    "saveEntry": "Salva",
+    "addEntry": "Nuova voce",
+    "missingNameTitle": "Inserisci un nome del concorso.",
+    "deleteConfirmTitle": "Eliminare questa voce?",
+    "deltaExact": "Esattamente come previsto",
+    "deltaLong_one": "{{count}} falcata in più",
+    "deltaLong_other": "{{count}} falcate in più",
+    "deltaShort_one": "{{count}} falcata in meno",
+    "deltaShort_other": "{{count}} falcate in meno"
   }
 }

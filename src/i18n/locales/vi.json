@@ -12,7 +12,10 @@
     "chrono": "Đồng hồ",
     "exercises": "Bài tập",
     "metronome": "Máy đếm nhịp",
-    "checklist": "Danh sách"
+    "checklist": "Danh sách",
+    "more": "Thêm",
+    "coursePlan": "Sơ đồ đường đua",
+    "journal": "Nhật ký"
   },
   "converter": {
     "title": "Chuyển đổi bước chân → sải nước đại",
@@ -150,5 +153,41 @@
       "licence": "Giấy phép",
       "passeportCheval": "Hộ chiếu ngựa"
     }
+  },
+  "coursePlan": {
+    "title": "Trình chỉnh sửa sơ đồ đường đua",
+    "subtitle": "Chụp sơ đồ, vẽ đường đi lý tưởng và ghi chú số sải bước.",
+    "defaultName": "Sơ đồ mới",
+    "takePhoto": "Chụp ảnh",
+    "pickPhoto": "Chọn ảnh",
+    "drawMode": "Vẽ",
+    "markMode": "Đánh dấu",
+    "undo": "Hoàn tác",
+    "clear": "Xóa tất cả",
+    "clearConfirmTitle": "Xóa hình vẽ và đánh dấu?",
+    "save": "Lưu",
+    "share": "Chia sẻ",
+    "shareErrorTitle": "Không thể chia sẻ sơ đồ.",
+    "hintNoPhoto": "Chụp hoặc chọn ảnh sơ đồ để bắt đầu."
+  },
+  "journal": {
+    "title": "Nhật ký",
+    "subtitle": "So sánh số sải bước dự kiến và thực tế, cùng video buổi thi đấu của bạn.",
+    "nameLabel": "Tên cuộc thi",
+    "theoreticalLabel": "Số sải dự kiến",
+    "actualLabel": "Số sải thực tế",
+    "notesLabel": "Ghi chú",
+    "recordVideo": "Quay video",
+    "pickVideo": "Chọn video",
+    "videoAttached": "Đã đính kèm video ✓",
+    "saveEntry": "Lưu",
+    "addEntry": "Mục mới",
+    "missingNameTitle": "Nhập tên cuộc thi.",
+    "deleteConfirmTitle": "Xóa mục này?",
+    "deltaExact": "Đúng như dự kiến",
+    "deltaLong_one": "Nhiều hơn {{count}} sải",
+    "deltaLong_other": "Nhiều hơn {{count}} sải",
+    "deltaShort_one": "Ít hơn {{count}} sải",
+    "deltaShort_other": "Ít hơn {{count}} sải"
   }
 }

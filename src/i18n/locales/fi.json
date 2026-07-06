@@ -12,7 +12,10 @@
     "chrono": "Ajanotto",
     "exercises": "Harjoitukset",
     "metronome": "Metronomi",
-    "checklist": "Tarkistuslista"
+    "checklist": "Tarkistuslista",
+    "more": "Lisää",
+    "coursePlan": "Ratasuunnitelma",
+    "journal": "Päiväkirja"
   },
   "converter": {
     "title": "Askel → laukka-askel -muunnin",
@@ -151,5 +154,41 @@
       "licence": "Lisenssi",
       "passeportCheval": "Hevospassi"
     }
+  },
+  "coursePlan": {
+    "title": "Ratasuunnitelman muokkain",
+    "subtitle": "Kuvaa suunnitelma, piirrä ihanteellinen reittisi ja merkitse laukka-askeleet.",
+    "defaultName": "Uusi suunnitelma",
+    "takePhoto": "Ota kuva",
+    "pickPhoto": "Valitse kuva",
+    "drawMode": "Piirrä",
+    "markMode": "Merkinnät",
+    "undo": "Kumoa",
+    "clear": "Tyhjennä kaikki",
+    "clearConfirmTitle": "Tyhjennetäänkö piirros ja merkinnät?",
+    "save": "Tallenna",
+    "share": "Jaa",
+    "shareErrorTitle": "Suunnitelmaa ei voitu jakaa.",
+    "hintNoPhoto": "Ota tai valitse kuva suunnitelmasta aloittaaksesi."
+  },
+  "journal": {
+    "title": "Päiväkirja",
+    "subtitle": "Vertaa suunniteltuja ja toteutuneita laukka-askelia kilpailusi videon kanssa.",
+    "nameLabel": "Kilpailun nimi",
+    "theoreticalLabel": "Suunnitellut laukka-askeleet",
+    "actualLabel": "Toteutuneet laukka-askeleet",
+    "notesLabel": "Muistiinpanot",
+    "recordVideo": "Kuvaa video",
+    "pickVideo": "Valitse video",
+    "videoAttached": "Video liitetty ✓",
+    "saveEntry": "Tallenna",
+    "addEntry": "Uusi merkintä",
+    "missingNameTitle": "Syötä kilpailun nimi.",
+    "deleteConfirmTitle": "Poistetaanko tämä merkintä?",
+    "deltaExact": "Juuri suunnitelman mukaan",
+    "deltaLong_one": "{{count}} laukka-askel enemmän",
+    "deltaLong_other": "{{count}} laukka-askelta enemmän",
+    "deltaShort_one": "{{count}} laukka-askel vähemmän",
+    "deltaShort_other": "{{count}} laukka-askelta vähemmän"
   }
 }

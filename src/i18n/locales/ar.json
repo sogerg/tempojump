@@ -12,7 +12,10 @@
     "chrono": "الموقت",
     "exercises": "التمارين",
     "metronome": "مترونوم",
-    "checklist": "قائمة"
+    "checklist": "قائمة",
+    "more": "المزيد",
+    "coursePlan": "مخطط المسار",
+    "journal": "السجل"
   },
   "converter": {
     "title": "محوّل الخطوات إلى الوثبات",
@@ -151,5 +154,41 @@
       "licence": "رخصة",
       "passeportCheval": "جواز سفر الحصان"
     }
+  },
+  "coursePlan": {
+    "title": "محرر مخطط المسار",
+    "subtitle": "صوّر المخطط، ارسم مسارك المثالي ودوّن عدد الوثبات.",
+    "defaultName": "مخطط جديد",
+    "takePhoto": "التقاط صورة",
+    "pickPhoto": "اختيار صورة",
+    "drawMode": "رسم",
+    "markMode": "علامات",
+    "undo": "تراجع",
+    "clear": "مسح الكل",
+    "clearConfirmTitle": "مسح الرسم والعلامات؟",
+    "save": "حفظ",
+    "share": "مشاركة",
+    "shareErrorTitle": "تعذرت مشاركة المخطط.",
+    "hintNoPhoto": "التقط أو اختر صورة للمخطط للبدء."
+  },
+  "journal": {
+    "title": "السجل",
+    "subtitle": "قارن الوثبات المتوقعة والفعلية، مع فيديو مسارك.",
+    "nameLabel": "اسم المسابقة",
+    "theoreticalLabel": "الوثبات المتوقعة",
+    "actualLabel": "الوثبات الفعلية",
+    "notesLabel": "ملاحظات",
+    "recordVideo": "تصوير",
+    "pickVideo": "اختيار فيديو",
+    "videoAttached": "تم إرفاق الفيديو ✓",
+    "saveEntry": "حفظ",
+    "addEntry": "إدخال جديد",
+    "missingNameTitle": "أدخل اسم المسابقة.",
+    "deleteConfirmTitle": "حذف هذا الإدخال؟",
+    "deltaExact": "بالضبط كما هو متوقع",
+    "deltaLong_one": "وثبة واحدة زيادة",
+    "deltaLong_other": "{{count}} وثبة زيادة",
+    "deltaShort_one": "وثبة واحدة نقصان",
+    "deltaShort_other": "{{count}} وثبة نقصان"
   }
 }

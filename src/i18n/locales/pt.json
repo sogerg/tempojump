@@ -12,7 +12,10 @@
     "chrono": "Cronómetro",
     "exercises": "Exercícios",
     "metronome": "Metrónomo",
-    "checklist": "Lista"
+    "checklist": "Lista",
+    "more": "Mais",
+    "coursePlan": "Plano de percurso",
+    "journal": "Diário"
   },
   "converter": {
     "title": "Conversor passos → passadas",
@@ -151,5 +154,41 @@
       "licence": "Licença",
       "passeportCheval": "Passaporte do cavalo"
     }
+  },
+  "coursePlan": {
+    "title": "Editor de plano de percurso",
+    "subtitle": "Fotografa o plano, traça o teu trajeto ideal e anota as passadas.",
+    "defaultName": "Novo plano",
+    "takePhoto": "Tirar uma foto",
+    "pickPhoto": "Escolher uma foto",
+    "drawMode": "Desenhar",
+    "markMode": "Marcadores",
+    "undo": "Anular",
+    "clear": "Limpar tudo",
+    "clearConfirmTitle": "Apagar o desenho e os marcadores?",
+    "save": "Guardar",
+    "share": "Partilhar",
+    "shareErrorTitle": "Não foi possível partilhar o plano.",
+    "hintNoPhoto": "Tira ou escolhe uma foto do plano para começar."
+  },
+  "journal": {
+    "title": "Diário",
+    "subtitle": "Compara as tuas passadas previstas e reais, com o vídeo do teu percurso.",
+    "nameLabel": "Nome do concurso",
+    "theoreticalLabel": "Passadas previstas",
+    "actualLabel": "Passadas reais",
+    "notesLabel": "Notas",
+    "recordVideo": "Filmar",
+    "pickVideo": "Escolher um vídeo",
+    "videoAttached": "Vídeo anexado ✓",
+    "saveEntry": "Guardar",
+    "addEntry": "Nova entrada",
+    "missingNameTitle": "Introduz um nome de concurso.",
+    "deleteConfirmTitle": "Eliminar esta entrada?",
+    "deltaExact": "Exatamente como previsto",
+    "deltaLong_one": "{{count}} passada a mais",
+    "deltaLong_other": "{{count}} passadas a mais",
+    "deltaShort_one": "{{count}} passada a menos",
+    "deltaShort_other": "{{count}} passadas a menos"
   }
 }

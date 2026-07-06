@@ -12,7 +12,10 @@
     "chrono": "Tidtagning",
     "exercises": "Øvelser",
     "metronome": "Metronom",
-    "checklist": "Tjekliste"
+    "checklist": "Tjekliste",
+    "more": "Mere",
+    "coursePlan": "Baneplan",
+    "journal": "Dagbog"
   },
   "converter": {
     "title": "Konverter skridt → galopspring",
@@ -151,5 +154,41 @@
       "licence": "Licens",
       "passeportCheval": "Hestepas"
     }
+  },
+  "coursePlan": {
+    "title": "Redigering af baneplan",
+    "subtitle": "Fotografer planen, tegn din ideelle linje, og notér galopspringene.",
+    "defaultName": "Ny plan",
+    "takePhoto": "Tag et billede",
+    "pickPhoto": "Vælg et billede",
+    "drawMode": "Tegn",
+    "markMode": "Markører",
+    "undo": "Fortryd",
+    "clear": "Ryd alt",
+    "clearConfirmTitle": "Ryd tegning og markører?",
+    "save": "Gem",
+    "share": "Del",
+    "shareErrorTitle": "Kunne ikke dele planen.",
+    "hintNoPhoto": "Tag eller vælg et billede af planen for at komme i gang."
+  },
+  "journal": {
+    "title": "Logbog",
+    "subtitle": "Sammenlign planlagte og faktiske galopspring med videoen af din bane.",
+    "nameLabel": "Konkurrencens navn",
+    "theoreticalLabel": "Planlagte galopspring",
+    "actualLabel": "Faktiske galopspring",
+    "notesLabel": "Noter",
+    "recordVideo": "Optag video",
+    "pickVideo": "Vælg en video",
+    "videoAttached": "Video vedhæftet ✓",
+    "saveEntry": "Gem",
+    "addEntry": "Ny post",
+    "missingNameTitle": "Angiv et konkurrencenavn.",
+    "deleteConfirmTitle": "Slette denne post?",
+    "deltaExact": "Præcis som planlagt",
+    "deltaLong_one": "{{count}} galopspring mere",
+    "deltaLong_other": "{{count}} galopspring mere",
+    "deltaShort_one": "{{count}} galopspring mindre",
+    "deltaShort_other": "{{count}} galopspring mindre"
   }
 }

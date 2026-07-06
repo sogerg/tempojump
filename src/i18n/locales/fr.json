@@ -12,7 +12,10 @@
     "chrono": "Chrono",
     "exercises": "Exercices",
     "metronome": "Métronome",
-    "checklist": "Check-list"
+    "checklist": "Check-list",
+    "more": "Plus",
+    "coursePlan": "Plan de parcours",
+    "journal": "Journal"
   },
   "converter": {
     "title": "Convertisseur pas → foulées",
@@ -151,5 +154,41 @@
       "licence": "Licence",
       "passeportCheval": "Passeport du cheval"
     }
+  },
+  "coursePlan": {
+    "title": "Éditeur de plan de parcours",
+    "subtitle": "Photographie le plan, trace ton tracé idéal et annote les foulées.",
+    "defaultName": "Nouveau plan",
+    "takePhoto": "Prendre une photo",
+    "pickPhoto": "Choisir une photo",
+    "drawMode": "Dessiner",
+    "markMode": "Repères",
+    "undo": "Annuler",
+    "clear": "Tout effacer",
+    "clearConfirmTitle": "Effacer le dessin et les repères ?",
+    "save": "Enregistrer",
+    "share": "Partager",
+    "shareErrorTitle": "Impossible de partager le plan.",
+    "hintNoPhoto": "Prends ou choisis une photo du plan pour commencer."
+  },
+  "journal": {
+    "title": "Journal de bord",
+    "subtitle": "Compare tes foulées prévues et réalisées, avec la vidéo de ton parcours.",
+    "nameLabel": "Nom du concours",
+    "theoreticalLabel": "Foulées prévues",
+    "actualLabel": "Foulées réalisées",
+    "notesLabel": "Notes",
+    "recordVideo": "Filmer",
+    "pickVideo": "Choisir une vidéo",
+    "videoAttached": "Vidéo attachée ✓",
+    "saveEntry": "Enregistrer",
+    "addEntry": "Nouvelle entrée",
+    "missingNameTitle": "Renseigne un nom de concours.",
+    "deleteConfirmTitle": "Supprimer cette entrée ?",
+    "deltaExact": "Pile prévu",
+    "deltaLong_one": "{{count}} foulée de plus",
+    "deltaLong_other": "{{count}} foulées de plus",
+    "deltaShort_one": "{{count}} foulée de moins",
+    "deltaShort_other": "{{count}} foulées de moins"
   }
 }

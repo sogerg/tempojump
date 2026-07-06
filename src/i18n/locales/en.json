@@ -12,7 +12,10 @@
     "chrono": "Timer",
     "exercises": "Exercises",
     "metronome": "Metronome",
-    "checklist": "Checklist"
+    "checklist": "Checklist",
+    "more": "More",
+    "coursePlan": "Course Plan",
+    "journal": "Journal"
   },
   "converter": {
     "title": "Steps → Strides converter",
@@ -151,5 +154,41 @@
       "licence": "Licence",
       "passeportCheval": "Horse passport"
     }
+  },
+  "coursePlan": {
+    "title": "Course plan editor",
+    "subtitle": "Photograph the plan, trace your ideal path and annotate the strides.",
+    "defaultName": "New plan",
+    "takePhoto": "Take a photo",
+    "pickPhoto": "Choose a photo",
+    "drawMode": "Draw",
+    "markMode": "Markers",
+    "undo": "Undo",
+    "clear": "Clear all",
+    "clearConfirmTitle": "Clear the drawing and markers?",
+    "save": "Save",
+    "share": "Share",
+    "shareErrorTitle": "Could not share the plan.",
+    "hintNoPhoto": "Take or choose a photo of the plan to get started."
+  },
+  "journal": {
+    "title": "Logbook",
+    "subtitle": "Compare your planned and actual strides, with the video of your round.",
+    "nameLabel": "Competition name",
+    "theoreticalLabel": "Planned strides",
+    "actualLabel": "Actual strides",
+    "notesLabel": "Notes",
+    "recordVideo": "Record",
+    "pickVideo": "Choose a video",
+    "videoAttached": "Video attached ✓",
+    "saveEntry": "Save",
+    "addEntry": "New entry",
+    "missingNameTitle": "Enter a competition name.",
+    "deleteConfirmTitle": "Delete this entry?",
+    "deltaExact": "Exactly as planned",
+    "deltaLong_one": "{{count}} stride more",
+    "deltaLong_other": "{{count}} strides more",
+    "deltaShort_one": "{{count}} stride less",
+    "deltaShort_other": "{{count}} strides less"
   }
 }

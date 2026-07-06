@@ -12,7 +12,10 @@
     "chrono": "Tijdklok",
     "exercises": "Oefeningen",
     "metronome": "Metronoom",
-    "checklist": "Checklist"
+    "checklist": "Checklist",
+    "more": "Meer",
+    "coursePlan": "Parcoursplan",
+    "journal": "Dagboek"
   },
   "converter": {
     "title": "Omzetter stappen → galopsprongen",
@@ -151,5 +154,41 @@
       "licence": "Licentie",
       "passeportCheval": "Paspoort paard"
     }
+  },
+  "coursePlan": {
+    "title": "Parcoursplan-editor",
+    "subtitle": "Fotografeer het plan, teken je ideale lijn en noteer de galopsprongen.",
+    "defaultName": "Nieuw plan",
+    "takePhoto": "Foto maken",
+    "pickPhoto": "Foto kiezen",
+    "drawMode": "Tekenen",
+    "markMode": "Markeringen",
+    "undo": "Ongedaan maken",
+    "clear": "Alles wissen",
+    "clearConfirmTitle": "Tekening en markeringen wissen?",
+    "save": "Opslaan",
+    "share": "Delen",
+    "shareErrorTitle": "Kon het plan niet delen.",
+    "hintNoPhoto": "Maak of kies een foto van het plan om te beginnen."
+  },
+  "journal": {
+    "title": "Logboek",
+    "subtitle": "Vergelijk je geplande en werkelijke galopsprongen met de video van je parcours.",
+    "nameLabel": "Naam van de wedstrijd",
+    "theoreticalLabel": "Geplande galopsprongen",
+    "actualLabel": "Werkelijke galopsprongen",
+    "notesLabel": "Notities",
+    "recordVideo": "Filmen",
+    "pickVideo": "Video kiezen",
+    "videoAttached": "Video toegevoegd ✓",
+    "saveEntry": "Opslaan",
+    "addEntry": "Nieuwe invoer",
+    "missingNameTitle": "Voer een wedstrijdnaam in.",
+    "deleteConfirmTitle": "Deze invoer verwijderen?",
+    "deltaExact": "Precies zoals gepland",
+    "deltaLong_one": "{{count}} galopsprong meer",
+    "deltaLong_other": "{{count}} galopsprongen meer",
+    "deltaShort_one": "{{count}} galopsprong minder",
+    "deltaShort_other": "{{count}} galopsprongen minder"
   }
 }

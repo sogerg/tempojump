@@ -12,7 +12,10 @@
     "chrono": "Kronometre",
     "exercises": "Egzersizler",
     "metronome": "Metronom",
-    "checklist": "Liste"
+    "checklist": "Liste",
+    "more": "Diğer",
+    "coursePlan": "Parkur planı",
+    "journal": "Günlük"
   },
   "converter": {
     "title": "Adım → Dörtnala adımı dönüştürücü",
@@ -151,5 +154,41 @@
       "licence": "Lisans",
       "passeportCheval": "At pasaportu"
     }
+  },
+  "coursePlan": {
+    "title": "Parkur planı düzenleyici",
+    "subtitle": "Planı fotoğrafla, ideal rotanı çiz ve adım sayılarını not et.",
+    "defaultName": "Yeni plan",
+    "takePhoto": "Fotoğraf çek",
+    "pickPhoto": "Fotoğraf seç",
+    "drawMode": "Çiz",
+    "markMode": "İşaretler",
+    "undo": "Geri al",
+    "clear": "Tümünü temizle",
+    "clearConfirmTitle": "Çizim ve işaretler temizlensin mi?",
+    "save": "Kaydet",
+    "share": "Paylaş",
+    "shareErrorTitle": "Plan paylaşılamadı.",
+    "hintNoPhoto": "Başlamak için planın fotoğrafını çek veya seç."
+  },
+  "journal": {
+    "title": "Günlük",
+    "subtitle": "Planlanan ve gerçek adım sayılarını, parkur videonla karşılaştır.",
+    "nameLabel": "Yarışma adı",
+    "theoreticalLabel": "Planlanan adımlar",
+    "actualLabel": "Gerçek adımlar",
+    "notesLabel": "Notlar",
+    "recordVideo": "Kaydet (video)",
+    "pickVideo": "Video seç",
+    "videoAttached": "Video eklendi ✓",
+    "saveEntry": "Kaydet",
+    "addEntry": "Yeni kayıt",
+    "missingNameTitle": "Bir yarışma adı gir.",
+    "deleteConfirmTitle": "Bu kayıt silinsin mi?",
+    "deltaExact": "Tam planlandığı gibi",
+    "deltaLong_one": "{{count}} adım fazla",
+    "deltaLong_other": "{{count}} adım fazla",
+    "deltaShort_one": "{{count}} adım eksik",
+    "deltaShort_other": "{{count}} adım eksik"
   }
 }

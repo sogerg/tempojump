@@ -12,7 +12,10 @@
     "chrono": "Tidtagning",
     "exercises": "Övningar",
     "metronome": "Metronom",
-    "checklist": "Checklista"
+    "checklist": "Checklista",
+    "more": "Mer",
+    "coursePlan": "Banplan",
+    "journal": "Dagbok"
   },
   "converter": {
     "title": "Omvandlare steg → galoppsprång",
@@ -151,5 +154,41 @@
       "licence": "Licens",
       "passeportCheval": "Hästpass"
     }
+  },
+  "coursePlan": {
+    "title": "Redigerare för banplan",
+    "subtitle": "Fotografera planen, rita din idealiska linje och notera galoppsprången.",
+    "defaultName": "Ny plan",
+    "takePhoto": "Ta ett foto",
+    "pickPhoto": "Välj ett foto",
+    "drawMode": "Rita",
+    "markMode": "Markörer",
+    "undo": "Ångra",
+    "clear": "Rensa allt",
+    "clearConfirmTitle": "Rensa ritning och markörer?",
+    "save": "Spara",
+    "share": "Dela",
+    "shareErrorTitle": "Det gick inte att dela planen.",
+    "hintNoPhoto": "Ta eller välj ett foto av planen för att komma igång."
+  },
+  "journal": {
+    "title": "Loggbok",
+    "subtitle": "Jämför planerade och faktiska galoppsprång, med videon av din bana.",
+    "nameLabel": "Tävlingens namn",
+    "theoreticalLabel": "Planerade galoppsprång",
+    "actualLabel": "Faktiska galoppsprång",
+    "notesLabel": "Anteckningar",
+    "recordVideo": "Spela in",
+    "pickVideo": "Välj en video",
+    "videoAttached": "Video bifogad ✓",
+    "saveEntry": "Spara",
+    "addEntry": "Ny post",
+    "missingNameTitle": "Ange ett tävlingsnamn.",
+    "deleteConfirmTitle": "Ta bort denna post?",
+    "deltaExact": "Precis som planerat",
+    "deltaLong_one": "{{count}} galoppsprång mer",
+    "deltaLong_other": "{{count}} galoppsprång mer",
+    "deltaShort_one": "{{count}} galoppsprång mindre",
+    "deltaShort_other": "{{count}} galoppsprång mindre"
   }
 }

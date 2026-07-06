@@ -12,7 +12,10 @@
     "chrono": "Tidtaking",
     "exercises": "Øvelser",
     "metronome": "Metronom",
-    "checklist": "Sjekkliste"
+    "checklist": "Sjekkliste",
+    "more": "Mer",
+    "coursePlan": "Baneplan",
+    "journal": "Dagbok"
   },
   "converter": {
     "title": "Omregner skritt → galoppsprang",
@@ -151,5 +154,41 @@
       "licence": "Lisens",
       "passeportCheval": "Hestepass"
     }
+  },
+  "coursePlan": {
+    "title": "Redigering av baneplan",
+    "subtitle": "Fotografer planen, tegn din ideelle linje og noter galoppsprangene.",
+    "defaultName": "Ny plan",
+    "takePhoto": "Ta et bilde",
+    "pickPhoto": "Velg et bilde",
+    "drawMode": "Tegn",
+    "markMode": "Markører",
+    "undo": "Angre",
+    "clear": "Fjern alt",
+    "clearConfirmTitle": "Fjerne tegning og markører?",
+    "save": "Lagre",
+    "share": "Del",
+    "shareErrorTitle": "Kunne ikke dele planen.",
+    "hintNoPhoto": "Ta eller velg et bilde av planen for å komme i gang."
+  },
+  "journal": {
+    "title": "Loggbok",
+    "subtitle": "Sammenlign planlagte og faktiske galoppsprang, med videoen av banen din.",
+    "nameLabel": "Konkurransens navn",
+    "theoreticalLabel": "Planlagte galoppsprang",
+    "actualLabel": "Faktiske galoppsprang",
+    "notesLabel": "Notater",
+    "recordVideo": "Ta opp video",
+    "pickVideo": "Velg en video",
+    "videoAttached": "Video lagt ved ✓",
+    "saveEntry": "Lagre",
+    "addEntry": "Nytt innlegg",
+    "missingNameTitle": "Angi et konkurransenavn.",
+    "deleteConfirmTitle": "Slette dette innlegget?",
+    "deltaExact": "Akkurat som planlagt",
+    "deltaLong_one": "{{count}} galoppsprang mer",
+    "deltaLong_other": "{{count}} galoppsprang mer",
+    "deltaShort_one": "{{count}} galoppsprang mindre",
+    "deltaShort_other": "{{count}} galoppsprang mindre"
   }
 }

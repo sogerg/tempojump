@@ -43,3 +43,37 @@ export interface ChecklistItemDefinition {
   id: string;
   category: ChecklistCategory;
 }
+
+export interface DrawingPoint {
+  x: number;
+  y: number;
+}
+
+export interface DrawingStroke {
+  points: DrawingPoint[];
+}
+
+export interface StrideMarker {
+  x: number;
+  y: number;
+  label: string;
+}
+
+export interface CoursePlan {
+  id: string;
+  name: string;
+  createdAt: string; // ISO date
+  photoUri: string;
+  strokes: DrawingStroke[];
+  markers: StrideMarker[];
+}
+
+export interface JournalEntry {
+  id: string;
+  name: string;
+  date: string; // ISO date
+  videoUri?: string;
+  theoreticalStrides?: number;
+  actualStrides?: number;
+  notes?: string;
+}

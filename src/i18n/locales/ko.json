@@ -12,7 +12,10 @@
     "chrono": "타임 계산",
     "exercises": "운동",
     "metronome": "메트로놈",
-    "checklist": "체크리스트"
+    "checklist": "체크리스트",
+    "more": "더보기",
+    "coursePlan": "코스 도면",
+    "journal": "일지"
   },
   "converter": {
     "title": "걸음 수 → 스트라이드 변환기",
@@ -150,5 +153,41 @@
       "licence": "라이선스",
       "passeportCheval": "말 여권"
     }
+  },
+  "coursePlan": {
+    "title": "코스 도면 편집기",
+    "subtitle": "도면을 촬영하고 이상적인 경로를 그리고 스트라이드를 표시하세요.",
+    "defaultName": "새 도면",
+    "takePhoto": "사진 촬영",
+    "pickPhoto": "사진 선택",
+    "drawMode": "그리기",
+    "markMode": "마커",
+    "undo": "실행 취소",
+    "clear": "모두 지우기",
+    "clearConfirmTitle": "그림과 마커를 지우시겠습니까?",
+    "save": "저장",
+    "share": "공유",
+    "shareErrorTitle": "도면을 공유할 수 없습니다.",
+    "hintNoPhoto": "시작하려면 도면 사진을 촬영하거나 선택하세요."
+  },
+  "journal": {
+    "title": "일지",
+    "subtitle": "예상과 실제 스트라이드를 주행 영상과 함께 비교하세요.",
+    "nameLabel": "대회 이름",
+    "theoreticalLabel": "예상 스트라이드",
+    "actualLabel": "실제 스트라이드",
+    "notesLabel": "메모",
+    "recordVideo": "촬영",
+    "pickVideo": "동영상 선택",
+    "videoAttached": "동영상 첨부됨 ✓",
+    "saveEntry": "저장",
+    "addEntry": "새 기록",
+    "missingNameTitle": "대회 이름을 입력하세요.",
+    "deleteConfirmTitle": "이 기록을 삭제하시겠습니까?",
+    "deltaExact": "예상과 정확히 일치",
+    "deltaLong_one": "{{count}} 스트라이드 더 많음",
+    "deltaLong_other": "{{count}} 스트라이드 더 많음",
+    "deltaShort_one": "{{count}} 스트라이드 더 적음",
+    "deltaShort_other": "{{count}} 스트라이드 더 적음"
   }
 }

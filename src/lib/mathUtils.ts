@@ -88,3 +88,8 @@ export function canterCadence(speedMetersPerMinute: number, strideLength: number
   if (strideLength <= 0) return 0;
   return speedMetersPerMinute / strideLength;
 }
+
+/** Écart entre les foulées réalisées en piste et les foulées théoriques prévues à la reconnaissance. */
+export function strideDelta(theoreticalStrides: number, actualStrides: number): number {
+  return actualStrides - theoreticalStrides;
+}

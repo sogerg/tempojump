@@ -12,7 +12,10 @@
     "chrono": "Időmérés",
     "exercises": "Gyakorlatok",
     "metronome": "Metronóm",
-    "checklist": "Lista"
+    "checklist": "Lista",
+    "more": "Több",
+    "coursePlan": "Pályaterv",
+    "journal": "Napló"
   },
   "converter": {
     "title": "Lépés → vágtaugrás átváltó",
@@ -151,5 +154,41 @@
       "licence": "Licenc",
       "passeportCheval": "Lóútlevél"
     }
+  },
+  "coursePlan": {
+    "title": "Pályaterv szerkesztő",
+    "subtitle": "Fényképezd le a tervet, rajzold be az ideális vonalad és jegyezd fel a vágtaugrásokat.",
+    "defaultName": "Új terv",
+    "takePhoto": "Fénykép készítése",
+    "pickPhoto": "Fénykép kiválasztása",
+    "drawMode": "Rajzolás",
+    "markMode": "Jelölők",
+    "undo": "Visszavonás",
+    "clear": "Összes törlése",
+    "clearConfirmTitle": "Törlöd a rajzot és a jelölőket?",
+    "save": "Mentés",
+    "share": "Megosztás",
+    "shareErrorTitle": "A tervet nem sikerült megosztani.",
+    "hintNoPhoto": "Készíts vagy válassz egy fényképet a tervről a kezdéshez."
+  },
+  "journal": {
+    "title": "Napló",
+    "subtitle": "Hasonlítsd össze a tervezett és a tényleges vágtaugrásokat a futásod videójával.",
+    "nameLabel": "Verseny neve",
+    "theoreticalLabel": "Tervezett vágtaugrások",
+    "actualLabel": "Tényleges vágtaugrások",
+    "notesLabel": "Jegyzetek",
+    "recordVideo": "Felvétel",
+    "pickVideo": "Videó kiválasztása",
+    "videoAttached": "Videó csatolva ✓",
+    "saveEntry": "Mentés",
+    "addEntry": "Új bejegyzés",
+    "missingNameTitle": "Add meg a verseny nevét.",
+    "deleteConfirmTitle": "Törlöd ezt a bejegyzést?",
+    "deltaExact": "Pontosan a terv szerint",
+    "deltaLong_one": "{{count}} vágtaugrással több",
+    "deltaLong_other": "{{count}} vágtaugrással több",
+    "deltaShort_one": "{{count}} vágtaugrással kevesebb",
+    "deltaShort_other": "{{count}} vágtaugrással kevesebb"
   }
 }
