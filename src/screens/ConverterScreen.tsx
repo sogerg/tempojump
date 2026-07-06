@@ -111,8 +111,10 @@ const styles = StyleSheet.create({
   },
   watermark: {
     position: 'absolute',
-    top: 60,
-    right: -60,
+    top: 120,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
     opacity: 0.07,
   },
   watermarkImage: {
