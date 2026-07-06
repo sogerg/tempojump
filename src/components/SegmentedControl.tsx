@@ -1,10 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useSettings } from '../context/SettingsContext';
-import { IconProps } from './icons';
 
 interface SegmentedControlProps<T extends string> {
-  options: { value: T; label: string; icon?: React.ComponentType<IconProps> }[];
+  options: { value: T; label: string; icon?: React.ComponentType<{ size?: number; color?: string }> }[];
   value: T;
   onChange: (value: T) => void;
 }

@@ -4,13 +4,17 @@ import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
-import { CheckListIcon, IconProps, JournalIcon, MapIcon, StopwatchIcon } from '../components/icons';
+import { AlarmClock, BookOpen, ListChecks, Map } from 'lucide-react-native';
 
-const MENU_ITEMS: { route: string; labelKey: string; icon: React.ComponentType<IconProps> }[] = [
-  { route: 'Metronome', labelKey: 'nav.metronome', icon: StopwatchIcon },
-  { route: 'Checklist', labelKey: 'nav.checklist', icon: CheckListIcon },
-  { route: 'CoursePlan', labelKey: 'nav.coursePlan', icon: MapIcon },
-  { route: 'Journal', labelKey: 'nav.journal', icon: JournalIcon },
+const MENU_ITEMS: {
+  route: string;
+  labelKey: string;
+  icon: React.ComponentType<{ size?: number; color?: string }>;
+}[] = [
+  { route: 'Metronome', labelKey: 'nav.metronome', icon: AlarmClock },
+  { route: 'Checklist', labelKey: 'nav.checklist', icon: ListChecks },
+  { route: 'CoursePlan', labelKey: 'nav.coursePlan', icon: Map },
+  { route: 'Journal', labelKey: 'nav.journal', icon: BookOpen },
 ];
 
 export function MoreScreen() {

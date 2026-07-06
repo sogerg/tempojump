@@ -8,6 +8,7 @@ import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from 
 import { strideDelta } from '../lib/mathUtils';
 import { JournalEntry } from '../types';
 import { FONTS } from '../constants/typography';
+import { FolderOpen, Plus, Save, Trash2, Video, X } from 'lucide-react-native';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
@@ -126,7 +127,8 @@ export function JournalScreen() {
               <Text style={[styles.entryName, { color: colors.text }]}>{entry.name}</Text>
               <Text style={[styles.entryDate, { color: colors.textMuted }]}>{entry.date}</Text>
             </View>
-            <TouchableOpacity onPress={() => handleDeleteEntry(entry.id)}>
+            <TouchableOpacity onPress={() => handleDeleteEntry(entry.id)} style={styles.deleteRow}>
+              <Trash2 size={15} color={colors.danger} />
               <Text style={{ color: colors.danger, fontWeight: '600' }}>{t('common.delete')}</Text>
             </TouchableOpacity>
           </View>
@@ -187,18 +189,21 @@ export function JournalScreen() {
               style={[styles.videoButton, { backgroundColor: colors.primary }]}
               onPress={() => pickVideo('camera')}
             >
+              <Video size={16} color={colors.primaryText} />
               <Text style={{ color: colors.primaryText, fontWeight: '600' }}>{t('journal.recordVideo')}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.videoButton, { backgroundColor: colors.segmentBackground }]}
               onPress={() => pickVideo('library')}
             >
+              <FolderOpen size={16} color={colors.accentGold} />
               <Text style={{ color: colors.text, fontWeight: '600' }}>{t('journal.pickVideo')}</Text>
             </TouchableOpacity>
           </View>
           {videoUri ? <Text style={{ color: colors.textMuted, marginTop: 6 }}>{t('journal.videoAttached')}</Text> : null}
 
           <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleSaveEntry}>
+            <Save size={16} color={colors.primaryText} />
             <Text style={{ color: colors.primaryText, fontWeight: '700' }}>{t('journal.saveEntry')}</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -208,11 +213,13 @@ export function JournalScreen() {
               setIsAdding(false);
             }}
           >
+            <X size={16} color={colors.text} />
             <Text style={{ color: colors.text, fontWeight: '700' }}>{t('common.cancel')}</Text>
           </TouchableOpacity>
         </View>
       ) : (
         <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={() => setIsAdding(true)}>
+          <Plus size={16} color={colors.primaryText} />
           <Text style={{ color: colors.primaryText, fontWeight: '700' }}>{t('journal.addEntry')}</Text>
         </TouchableOpacity>
       )}
@@ -283,14 +290,25 @@ const styles = StyleSheet.create({
   },
   videoButton: {
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
   },
   primaryButton: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
     paddingVertical: 14,
     borderRadius: 10,
     alignItems: 'center',
     marginTop: 12,
+  },
+  deleteRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
   },
 });

@@ -3,6 +3,7 @@ import { StyleSheet, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
+import { Ellipsis, Fence, Footprints, Settings, Timer, Expand } from 'lucide-react-native';
 import { ConverterScreen } from '../screens/ConverterScreen';
 import { CombinationsScreen } from '../screens/CombinationsScreen';
 import { HorsesScreen } from '../screens/HorsesScreen';
@@ -10,25 +11,17 @@ import { ExercisesScreen } from '../screens/ExercisesScreen';
 import { ChronoScreen } from '../screens/ChronoScreen';
 import { MoreScreen } from '../screens/MoreScreen';
 import { useSettings } from '../context/SettingsContext';
-import {
-  ExpandIcon,
-  GearIcon,
-  HorseshoeIcon,
-  MoreDotsIcon,
-  PolesIcon,
-  StopwatchIcon,
-  StrideArcIcon,
-} from '../components/icons';
+import { HorseshoeIcon } from '../components/icons';
 
 const Tab = createBottomTabNavigator();
 
-const TAB_ICONS: Record<string, typeof StrideArcIcon> = {
-  Convertisseur: StrideArcIcon,
-  Combinaisons: PolesIcon,
+const TAB_ICONS: Record<string, React.ComponentType<{ size?: number; color?: string }>> = {
+  Convertisseur: Footprints,
+  Combinaisons: Fence,
   Montures: HorseshoeIcon,
-  Exercices: ExpandIcon,
-  Chrono: StopwatchIcon,
-  Plus: MoreDotsIcon,
+  Exercices: Expand,
+  Chrono: Timer,
+  Plus: Ellipsis,
 };
 
 export function BottomTabNavigator() {
@@ -38,7 +31,7 @@ export function BottomTabNavigator() {
 
   const headerRight = () => (
     <TouchableOpacity onPress={() => navigation.navigate('Settings' as never)} style={styles.settingsButton}>
-      <GearIcon size={22} color={colors.accentGold} />
+      <Settings size={22} color={colors.accentGold} />
     </TouchableOpacity>
   );
 
@@ -53,7 +46,7 @@ export function BottomTabNavigator() {
         headerStyle: { backgroundColor: colors.surface },
         headerTitleStyle: { color: colors.text, fontFamily: 'serif' },
         tabBarIcon: ({ color, size }: { color: string; size: number }) => {
-          const Icon = TAB_ICONS[route.name] ?? StrideArcIcon;
+          const Icon = TAB_ICONS[route.name] ?? Footprints;
           return <Icon size={size} color={color} />;
         },
       })}

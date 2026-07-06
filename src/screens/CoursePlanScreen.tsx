@@ -24,6 +24,7 @@ import {
 } from '../lib/storage';
 import { CoursePlan, DrawingStroke, StrideMarker } from '../types';
 import { FONTS } from '../constants/typography';
+import { Camera, Images, MapPin, PenLine, Save, Share2, Trash2, Undo2 } from 'lucide-react-native';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
@@ -198,12 +199,14 @@ export function CoursePlanScreen() {
           style={[styles.photoButton, { backgroundColor: colors.primary }]}
           onPress={() => pickPhoto('camera')}
         >
+          <Camera size={16} color={colors.primaryText} />
           <Text style={[styles.photoButtonText, { color: colors.primaryText }]}>{t('coursePlan.takePhoto')}</Text>
         </TouchableOpacity>
         <TouchableOpacity
           style={[styles.photoButton, { backgroundColor: colors.segmentBackground }]}
           onPress={() => pickPhoto('library')}
         >
+          <Images size={16} color={colors.accentGold} />
           <Text style={[styles.photoButtonText, { color: colors.text }]}>{t('coursePlan.pickPhoto')}</Text>
         </TouchableOpacity>
       </View>
@@ -225,6 +228,7 @@ export function CoursePlanScreen() {
               style={[styles.modeButton, { backgroundColor: mode === 'draw' ? colors.primary : colors.segmentBackground }]}
               onPress={() => setMode('draw')}
             >
+              <PenLine size={16} color={mode === 'draw' ? colors.primaryText : colors.accentGold} />
               <Text style={{ color: mode === 'draw' ? colors.primaryText : colors.text, fontWeight: '600' }}>
                 {t('coursePlan.drawMode')}
               </Text>
@@ -233,6 +237,7 @@ export function CoursePlanScreen() {
               style={[styles.modeButton, { backgroundColor: mode === 'mark' ? colors.primary : colors.segmentBackground }]}
               onPress={() => setMode('mark')}
             >
+              <MapPin size={16} color={mode === 'mark' ? colors.primaryText : colors.accentGold} />
               <Text style={{ color: mode === 'mark' ? colors.primaryText : colors.text, fontWeight: '600' }}>
                 {t('coursePlan.markMode')}
               </Text>
@@ -284,9 +289,11 @@ export function CoursePlanScreen() {
 
           <View style={styles.actionsRow}>
             <TouchableOpacity style={[styles.actionButton, { borderColor: colors.border }]} onPress={handleUndo}>
+              <Undo2 size={16} color={colors.text} />
               <Text style={[styles.actionButtonText, { color: colors.text }]}>{t('coursePlan.undo')}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.actionButton, { borderColor: colors.danger }]} onPress={handleClear}>
+              <Trash2 size={16} color={colors.danger} />
               <Text style={[styles.actionButtonText, { color: colors.danger }]}>{t('coursePlan.clear')}</Text>
             </TouchableOpacity>
           </View>
@@ -296,12 +303,14 @@ export function CoursePlanScreen() {
               style={[styles.primaryButton, { backgroundColor: colors.primary }]}
               onPress={handleSave}
             >
+              <Save size={16} color={colors.primaryText} />
               <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('coursePlan.save')}</Text>
             </TouchableOpacity>
             <TouchableOpacity
               style={[styles.primaryButton, { backgroundColor: colors.segmentBackground }]}
               onPress={handleShare}
             >
+              <Share2 size={16} color={colors.accentGold} />
               <Text style={[styles.primaryButtonText, { color: colors.text }]}>{t('coursePlan.share')}</Text>
             </TouchableOpacity>
           </View>
@@ -342,6 +351,9 @@ const styles = StyleSheet.create({
   },
   photoButton: {
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
@@ -364,6 +376,9 @@ const styles = StyleSheet.create({
   },
   modeButton: {
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
     paddingVertical: 10,
     borderRadius: 10,
     alignItems: 'center',
@@ -400,6 +415,9 @@ const styles = StyleSheet.create({
   },
   actionButton: {
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
     paddingVertical: 10,
     borderRadius: 10,
     borderWidth: 1,
@@ -411,6 +429,9 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    gap: 6,
     paddingVertical: 12,
     borderRadius: 10,
     alignItems: 'center',
