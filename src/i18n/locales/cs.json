@@ -9,7 +9,10 @@
     "converter": "Převodník",
     "combinations": "Kombinace",
     "mounts": "Koně",
-    "chrono": "Časomíra"
+    "chrono": "Časomíra",
+    "exercises": "Cvičení",
+    "metronome": "Metronom",
+    "checklist": "Seznam"
   },
   "converter": {
     "title": "Převodník kroky → cvalové skoky",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Povolený čas",
     "hintNoInput": "Zadejte délku parkuru a rychlost."
   },
-  "mountPicker": {
-    "label": "Kůň",
-    "empty": "Zatím není uložen žádný kůň. Přidejte jej v záložce Koně."
-  },
   "categories": {
     "PoneyD": "Pony D",
     "PoneyC": "Pony C",
@@ -106,5 +105,51 @@
     "metric": "Metrické (m, cm)",
     "imperial": "Imperiální (ft, in)",
     "darkMode": "Tmavý režim"
+  },
+  "horsePicker": {
+    "label": "Kůň",
+    "empty": "Zatím není uložen žádný kůň. Přidejte jej v záložce Koně."
+  },
+  "exercises": {
+    "title": "Knihovna cvičení",
+    "subtitle": "Nastav si linie ze zemních tyčí nebo kavaletů: přesné vzdálenosti pro každý počet cvalových skoků.",
+    "heightLabel": "Výška tyčí",
+    "tableTitle": "Schéma cvalových skoků",
+    "strideCount_one": "{{count}} cvalový skok",
+    "strideCount_other": "{{count}} cvalových skoků"
+  },
+  "metronome": {
+    "title": "Metronom cvalu",
+    "subtitle": "Zapamatuj si správné tempo, než vjedeš do kolbiště.",
+    "speedLabel": "Rychlost",
+    "resultTitle": "Tempo",
+    "cadenceLabel": "Cvalových skoků za minutu",
+    "start": "Spustit",
+    "stop": "Zastavit",
+    "hintNoSpeed": "Zadejte platnou rychlost.",
+    "hintNoMount": "Vyberte nebo vytvořte koně."
+  },
+  "checklist": {
+    "title": "Seznam na závody",
+    "subtitle": "Zkontroluj, že na nic nezapomínáš, než vyrazíš.",
+    "sectionHorse": "Vybavení koně",
+    "sectionRider": "Vybavení jezdce",
+    "sectionPapers": "Doklady",
+    "resetButton": "Resetovat seznam",
+    "items": {
+      "protections": "Ochranné dečky",
+      "licol": "Ohlávka",
+      "filet": "Uzdečka",
+      "tapis": "Podsedlová dečka",
+      "selle": "Sedlo",
+      "bombe": "Přilba",
+      "bottes": "Jezdecké boty",
+      "pantalonBlanc": "Bílé rajtky",
+      "veste": "Sako",
+      "cravache": "Bičík",
+      "carnet": "Závodní knížka",
+      "licence": "Licence",
+      "passeportCheval": "Pas koně"
+    }
   }
 }

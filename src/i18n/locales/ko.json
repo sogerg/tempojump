@@ -9,7 +9,10 @@
     "converter": "변환기",
     "combinations": "콤비네이션",
     "mounts": "말",
-    "chrono": "타임 계산"
+    "chrono": "타임 계산",
+    "exercises": "운동",
+    "metronome": "메트로놈",
+    "checklist": "체크리스트"
   },
   "converter": {
     "title": "걸음 수 → 스트라이드 변환기",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "허용 시간",
     "hintNoInput": "코스 길이와 속도를 입력하세요."
   },
-  "mountPicker": {
-    "label": "말",
-    "empty": "저장된 말이 없습니다. '말' 탭에서 추가하세요."
-  },
   "categories": {
     "PoneyD": "포니 D",
     "PoneyC": "포니 C",
@@ -106,5 +105,50 @@
     "metric": "미터법 (m, cm)",
     "imperial": "야드파운드법 (ft, in)",
     "darkMode": "다크 모드"
+  },
+  "horsePicker": {
+    "label": "말",
+    "empty": "저장된 말이 없습니다. '말' 탭에서 추가하세요."
+  },
+  "exercises": {
+    "title": "운동 라이브러리",
+    "subtitle": "지상 폴 또는 캐벌레티 라인을 설정하세요: 스트라이드 수별 정확한 거리.",
+    "heightLabel": "폴 높이",
+    "tableTitle": "스트라이드 패턴",
+    "strideCount_other": "{{count}} 스트라이드"
+  },
+  "metronome": {
+    "title": "캔터 메트로놈",
+    "subtitle": "입장하기 전에 올바른 박자를 기억하세요.",
+    "speedLabel": "속도",
+    "resultTitle": "박자",
+    "cadenceLabel": "분당 스트라이드 수",
+    "start": "시작",
+    "stop": "정지",
+    "hintNoSpeed": "유효한 속도를 입력하세요.",
+    "hintNoMount": "말을 선택하거나 추가하세요."
+  },
+  "checklist": {
+    "title": "대회 체크리스트",
+    "subtitle": "출발 전에 빠뜨린 것이 없는지 확인하세요.",
+    "sectionHorse": "말 장비",
+    "sectionRider": "기수 장비",
+    "sectionPapers": "서류",
+    "resetButton": "목록 초기화",
+    "items": {
+      "protections": "보호대",
+      "licol": "헤드칼라",
+      "filet": "굴레",
+      "tapis": "안장 패드",
+      "selle": "안장",
+      "bombe": "헬멧",
+      "bottes": "승마 부츠",
+      "pantalonBlanc": "흰색 브리치즈",
+      "veste": "재킷",
+      "cravache": "채찍",
+      "carnet": "기록 수첩",
+      "licence": "라이선스",
+      "passeportCheval": "말 여권"
+    }
   }
 }

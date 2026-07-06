@@ -9,7 +9,10 @@
     "converter": "المحوّل",
     "combinations": "المركّبات",
     "mounts": "الخيول",
-    "chrono": "الموقت"
+    "chrono": "الموقت",
+    "exercises": "التمارين",
+    "metronome": "مترونوم",
+    "checklist": "قائمة"
   },
   "converter": {
     "title": "محوّل الخطوات إلى الوثبات",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "الوقت المسموح",
     "hintNoInput": "أدخل طول المسار والسرعة."
   },
-  "mountPicker": {
-    "label": "الحصان",
-    "empty": "لا يوجد حصان محفوظ. أضف واحدًا من علامة تبويب الخيول."
-  },
   "categories": {
     "PoneyD": "مهر D",
     "PoneyC": "مهر C",
@@ -106,5 +105,51 @@
     "metric": "متري (م، سم)",
     "imperial": "إمبراطوري (قدم، إنش)",
     "darkMode": "الوضع الداكن"
+  },
+  "horsePicker": {
+    "label": "الحصان",
+    "empty": "لا يوجد حصان محفوظ. أضف واحدًا من علامة تبويب الخيول."
+  },
+  "exercises": {
+    "title": "مكتبة التمارين",
+    "subtitle": "جهّز خطوط العصي الأرضية أو الكافاليتي: مسافات دقيقة لكل عدد من الوثبات.",
+    "heightLabel": "ارتفاع العصي",
+    "tableTitle": "مخطط الوثبات",
+    "strideCount_one": "وثبة واحدة",
+    "strideCount_other": "{{count}} وثبة"
+  },
+  "metronome": {
+    "title": "مترونوم العدو",
+    "subtitle": "احفظ الإيقاع الصحيح قبل الدخول إلى الميدان.",
+    "speedLabel": "السرعة",
+    "resultTitle": "الإيقاع",
+    "cadenceLabel": "وثبات في الدقيقة",
+    "start": "ابدأ",
+    "stop": "إيقاف",
+    "hintNoSpeed": "أدخل سرعة صالحة.",
+    "hintNoMount": "اختر أو أنشئ حصانًا."
+  },
+  "checklist": {
+    "title": "قائمة المسابقة",
+    "subtitle": "تأكد من عدم نسيان أي شيء قبل المغادرة.",
+    "sectionHorse": "معدات الحصان",
+    "sectionRider": "معدات الفارس",
+    "sectionPapers": "الأوراق",
+    "resetButton": "إعادة تعيين القائمة",
+    "items": {
+      "protections": "واقيات",
+      "licol": "مقود",
+      "filet": "لجام",
+      "tapis": "برذعة",
+      "selle": "سرج",
+      "bombe": "خوذة",
+      "bottes": "أحذية الفروسية",
+      "pantalonBlanc": "بنطال أبيض",
+      "veste": "سترة",
+      "cravache": "سوط",
+      "carnet": "دفتر المسابقات",
+      "licence": "رخصة",
+      "passeportCheval": "جواز سفر الحصان"
+    }
   }
 }

@@ -4,48 +4,48 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
-import { useProfiles } from '../context/ProfilesContext';
+import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/mountDefaults';
-import { calibrateStepLength } from '../lib/strideCalculator';
+import { CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/horseDefaults';
+import { calibrateStepLength } from '../lib/mathUtils';
 import { formatLength, fromMeters, inputUnitSuffix, toMeters } from '../lib/units';
-import { MountCategory } from '../types';
+import { HorseCategory } from '../types';
 
-export function MountsScreen() {
+export function HorsesScreen() {
   const { t } = useTranslation();
   const { colors, unitSystem } = useSettings();
-  const { mounts, selectedMountId, selectMount, addMount, removeMount, riderStepLength, setRiderStepLength } =
-    useProfiles();
+  const { horses, selectedHorseId, selectHorse, addHorse, removeHorse, riderStepLength, setRiderStepLength } =
+    useHorses();
 
   const [newName, setNewName] = useState('');
-  const [newCategory, setNewCategory] = useState<MountCategory>('Cheval');
+  const [newCategory, setNewCategory] = useState<HorseCategory>('Cheval');
   const [newStrideLength, setNewStrideLength] = useState(String(DEFAULT_STRIDE_LENGTH.Cheval));
 
   const [calibrationDistance, setCalibrationDistance] = useState('');
   const [calibrationSteps, setCalibrationSteps] = useState('10');
 
-  const handleCategoryChange = (category: MountCategory) => {
+  const handleCategoryChange = (category: HorseCategory) => {
     setNewCategory(category);
     setNewStrideLength(fromMeters(DEFAULT_STRIDE_LENGTH[category], unitSystem).toFixed(2));
   };
 
-  const handleAddMount = async () => {
+  const handleAddHorse = async () => {
     const rawStrideLength = Number(newStrideLength.replace(',', '.'));
     if (!newName.trim() || !rawStrideLength || rawStrideLength <= 0) {
       Alert.alert(t('mounts.missingFieldsTitle'), t('mounts.missingFieldsMessage'));
       return;
     }
     const strideLength = toMeters(rawStrideLength, unitSystem);
-    await addMount({ name: newName.trim(), category: newCategory, strideLength });
+    await addHorse({ name: newName.trim(), category: newCategory, strideLength });
     setNewName('');
     setNewCategory('Cheval');
     setNewStrideLength(fromMeters(DEFAULT_STRIDE_LENGTH.Cheval, unitSystem).toFixed(2));
   };
 
-  const handleRemoveMount = (id: string, name: string) => {
+  const handleRemoveHorse = (id: string, name: string) => {
     Alert.alert(t('mounts.deleteConfirmTitle'), t('mounts.deleteConfirmMessage', { name }), [
       { text: t('common.cancel'), style: 'cancel' },
-      { text: t('common.delete'), style: 'destructive', onPress: () => removeMount(id) },
+      { text: t('common.delete'), style: 'destructive', onPress: () => removeHorse(id) },
     ]);
   };
 
@@ -61,23 +61,23 @@ export function MountsScreen() {
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <Text style={[styles.heading, { color: colors.text }]}>{t('mounts.title')}</Text>
 
-      {mounts.map((mount) => {
-        const isActive = mount.id === selectedMountId;
+      {horses.map((horse) => {
+        const isActive = horse.id === selectedHorseId;
         return (
           <View
-            key={mount.id}
+            key={horse.id}
             style={[
-              styles.mountCard,
+              styles.horseCard,
               { borderColor: isActive ? colors.primary : colors.border, backgroundColor: isActive ? colors.card : colors.surface },
             ]}
           >
-            <TouchableOpacity style={styles.mountInfo} onPress={() => selectMount(mount.id)}>
-              <Text style={[styles.mountName, { color: colors.text }]}>{mount.name}</Text>
-              <Text style={[styles.mountMeta, { color: colors.textMuted }]}>
-                {t(`categories.${mount.category}`)} · {formatLength(mount.strideLength, unitSystem)}
+            <TouchableOpacity style={styles.horseInfo} onPress={() => selectHorse(horse.id)}>
+              <Text style={[styles.horseName, { color: colors.text }]}>{horse.name}</Text>
+              <Text style={[styles.horseMeta, { color: colors.textMuted }]}>
+                {t(`categories.${horse.category}`)} · {formatLength(horse.strideLength, unitSystem)}
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleRemoveMount(mount.id, mount.name)}>
+            <TouchableOpacity onPress={() => handleRemoveHorse(horse.id, horse.name)}>
               <Text style={[styles.deleteLabel, { color: colors.danger }]}>{t('mounts.delete')}</Text>
             </TouchableOpacity>
           </View>
@@ -114,7 +114,7 @@ export function MountsScreen() {
         suffix={inputUnitSuffix(unitSystem)}
       />
 
-      <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleAddMount}>
+      <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleAddHorse}>
         <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('mounts.addButton')}</Text>
       </TouchableOpacity>
 
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
     fontSize: 13,
     marginBottom: 14,
   },
-  mountCard: {
+  horseCard: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -193,14 +193,14 @@ const styles = StyleSheet.create({
     padding: 14,
     marginBottom: 10,
   },
-  mountInfo: {
+  horseInfo: {
     flex: 1,
   },
-  mountName: {
+  horseName: {
     fontSize: 15,
     fontWeight: '600',
   },
-  mountMeta: {
+  horseMeta: {
     fontSize: 12,
     marginTop: 2,
   },

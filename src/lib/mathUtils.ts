@@ -5,28 +5,12 @@ import {
   SPEED_ADJUSTMENT,
   TERRAIN_ADJUSTMENT,
   combinationKey,
-} from '../constants/mountDefaults';
-import { MountProfile, ObstacleType, SpeedLevel, Terrain } from '../types';
-
-export interface EnvironmentAdjustments {
-  terrain: Terrain;
-  speed: SpeedLevel;
-}
+} from '../constants/horseDefaults';
+import { CombinationResult, EnvironmentAdjustments, Horse, ObstacleType, StrideResult } from '../types';
 
 /** Foulée effective d'une monture une fois le terrain et la vitesse pris en compte. */
-export function effectiveStrideLength(
-  mount: MountProfile,
-  env: EnvironmentAdjustments
-): number {
-  return mount.strideLength + TERRAIN_ADJUSTMENT[env.terrain] + SPEED_ADJUSTMENT[env.speed];
-}
-
-export interface StepsToStridesResult {
-  distanceMeters: number;
-  strideLength: number;
-  fixedAllowance: number;
-  theoreticalStrides: number; // valeur décimale
-  suggestedStrides: number; // arrondi à l'entier le plus proche
+export function effectiveStrideLength(horse: Horse, env: EnvironmentAdjustments): number {
+  return horse.strideLength + TERRAIN_ADJUSTMENT[env.terrain] + SPEED_ADJUSTMENT[env.speed];
 }
 
 /**
@@ -37,12 +21,12 @@ export interface StepsToStridesResult {
 export function stepsToStrides(
   humanSteps: number,
   riderStepLength: number,
-  mount: MountProfile,
+  horse: Horse,
   fixedAllowance: number,
   env: EnvironmentAdjustments
-): StepsToStridesResult {
+): StrideResult {
   const distanceMeters = humanSteps * riderStepLength;
-  const strideLength = effectiveStrideLength(mount, env);
+  const strideLength = effectiveStrideLength(horse, env);
   const theoreticalStrides = (distanceMeters - fixedAllowance) / strideLength + 1;
 
   return {
@@ -54,26 +38,21 @@ export function stepsToStrides(
   };
 }
 
-export interface CombinationDistanceResult {
-  distanceMeters: number;
-  strideLength: number;
-  fixedAllowance: number;
-}
-
 /**
  * Calcule la distance exacte (m) à poser pour obtenir un nombre de foulées donné
- * dans une combinaison, en tenant compte du type d'obstacles et de leur hauteur.
+ * dans une combinaison ou une ligne d'exercice, en tenant compte du type
+ * d'obstacles et de leur hauteur.
  */
 export function combinationDistance(
   targetStrides: number,
   from: ObstacleType,
   to: ObstacleType,
   heightMeters: number,
-  mount: MountProfile,
+  horse: Horse,
   fixedAllowance: number,
   env: EnvironmentAdjustments
-): CombinationDistanceResult {
-  const strideLength = effectiveStrideLength(mount, env);
+): CombinationResult {
+  const strideLength = effectiveStrideLength(horse, env);
 
   const combinationBonus = COMBINATION_ADJUSTMENT[combinationKey(from, to)] ?? 0;
   const heightSteps = Math.max(0, heightMeters - HEIGHT_ADJUSTMENT_THRESHOLD) / 0.1;
@@ -102,4 +81,10 @@ export function calibrateStepLength(distanceMeters: number, stepCount: number): 
 export function allowedTime(courseLengthMeters: number, speedMetersPerMinute: number): number {
   if (speedMetersPerMinute <= 0) return 0;
   return (courseLengthMeters / speedMetersPerMinute) * 60;
+}
+
+/** Cadence du galop (foulées/minute) à une vitesse donnée, pour une longueur de foulée donnée. */
+export function canterCadence(speedMetersPerMinute: number, strideLength: number): number {
+  if (strideLength <= 0) return 0;
+  return speedMetersPerMinute / strideLength;
 }

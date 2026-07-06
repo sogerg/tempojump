@@ -9,7 +9,10 @@
     "converter": "Conversor",
     "combinations": "Combinações",
     "mounts": "Montadas",
-    "chrono": "Cronómetro"
+    "chrono": "Cronómetro",
+    "exercises": "Exercícios",
+    "metronome": "Metrónomo",
+    "checklist": "Lista"
   },
   "converter": {
     "title": "Conversor passos → passadas",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Tempo permitido",
     "hintNoInput": "Introduz o comprimento do percurso e a velocidade."
   },
-  "mountPicker": {
-    "label": "Montada",
-    "empty": "Nenhuma montada guardada. Adiciona uma no separador Montadas."
-  },
   "categories": {
     "PoneyD": "Pónei D",
     "PoneyC": "Pónei C",
@@ -106,5 +105,51 @@
     "metric": "Métrico (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Modo escuro"
+  },
+  "horsePicker": {
+    "label": "Montada",
+    "empty": "Nenhuma montada guardada. Adiciona uma no separador Montadas."
+  },
+  "exercises": {
+    "title": "Biblioteca de exercícios",
+    "subtitle": "Prepara as tuas linhas de barras no chão ou cavaletti: distâncias exatas para cada número de passadas.",
+    "heightLabel": "Altura das barras",
+    "tableTitle": "Padrão de passadas",
+    "strideCount_one": "{{count}} passada",
+    "strideCount_other": "{{count}} passadas"
+  },
+  "metronome": {
+    "title": "Metrónomo de galope",
+    "subtitle": "Memoriza a cadência certa antes de entrar na pista.",
+    "speedLabel": "Velocidade",
+    "resultTitle": "Cadência",
+    "cadenceLabel": "Passadas por minuto",
+    "start": "Iniciar",
+    "stop": "Parar",
+    "hintNoSpeed": "Introduz uma velocidade válida.",
+    "hintNoMount": "Seleciona ou cria uma montada."
+  },
+  "checklist": {
+    "title": "Lista de concurso",
+    "subtitle": "Confirma que não te esqueces de nada antes de saíres.",
+    "sectionHorse": "Material do cavalo",
+    "sectionRider": "Material do cavaleiro",
+    "sectionPapers": "Documentos",
+    "resetButton": "Reiniciar lista",
+    "items": {
+      "protections": "Proteções",
+      "licol": "Cabresto",
+      "filet": "Bridão",
+      "tapis": "Manta",
+      "selle": "Sela",
+      "bombe": "Capacete",
+      "bottes": "Botas",
+      "pantalonBlanc": "Calça branca",
+      "veste": "Casaco",
+      "cravache": "Chicote",
+      "carnet": "Caderneta",
+      "licence": "Licença",
+      "passeportCheval": "Passaporte do cavalo"
+    }
   }
 }

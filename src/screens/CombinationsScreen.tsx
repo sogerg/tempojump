@@ -4,19 +4,19 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
-import { MountPicker } from '../components/MountPicker';
-import { useProfiles } from '../context/ProfilesContext';
+import { HorsePicker } from '../components/HorsePicker';
+import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { DEFAULT_FIXED_ALLOWANCE, OBSTACLE_TYPES } from '../constants/mountDefaults';
-import { combinationDistance } from '../lib/strideCalculator';
+import { DEFAULT_FIXED_ALLOWANCE, OBSTACLE_TYPES } from '../constants/horseDefaults';
+import { combinationDistance } from '../lib/mathUtils';
 import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
 import { ObstacleType } from '../types';
 
 const STRIDE_OPTIONS = [0, 1, 2, 3];
 
-export function CombinationScreen() {
+export function CombinationsScreen() {
   const { t } = useTranslation();
-  const { selectedMount } = useProfiles();
+  const { selectedHorse } = useHorses();
   const { colors, unitSystem } = useSettings();
   const [from, setFrom] = useState<ObstacleType>('Vertical');
   const [to, setTo] = useState<ObstacleType>('Vertical');
@@ -31,28 +31,28 @@ export function CombinationScreen() {
   };
 
   const result = useMemo(() => {
-    if (!selectedMount) return null;
+    if (!selectedHorse) return null;
     const rawHeight = Number(height.replace(',', '.'));
     if (!rawHeight || rawHeight <= 0) return null;
     const heightMeters = toMeters(rawHeight, unitSystem);
-    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedMount.category];
+    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedHorse.category];
     return combinationDistance(
       targetStrides,
       from,
       to,
       heightMeters,
-      selectedMount,
+      selectedHorse,
       fixedAllowance,
       { terrain: 'Plat', speed: 'Standard' }
     );
-  }, [selectedMount, height, unitSystem, from, to, targetStrides]);
+  }, [selectedHorse, height, unitSystem, from, to, targetStrides]);
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <Text style={[styles.heading, { color: colors.text }]}>{t('combination.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('combination.subtitle')}</Text>
 
-      <MountPicker />
+      <HorsePicker />
 
       <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('combination.fromLabel')}</Text>
       <SegmentedControl
@@ -103,7 +103,7 @@ export function CombinationScreen() {
         />
       ) : (
         <Text style={[styles.hint, { color: colors.textMuted }]}>
-          {selectedMount ? t('combination.hintNoHeight') : t('combination.hintNoMount')}
+          {selectedHorse ? t('combination.hintNoHeight') : t('combination.hintNoMount')}
         </Text>
       )}
     </ScrollView>

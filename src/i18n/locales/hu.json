@@ -9,7 +9,10 @@
     "converter": "Átváltó",
     "combinations": "Kombinációk",
     "mounts": "Lovak",
-    "chrono": "Időmérés"
+    "chrono": "Időmérés",
+    "exercises": "Gyakorlatok",
+    "metronome": "Metronóm",
+    "checklist": "Lista"
   },
   "converter": {
     "title": "Lépés → vágtaugrás átváltó",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Megengedett idő",
     "hintNoInput": "Add meg a pálya hosszát és a sebességet."
   },
-  "mountPicker": {
-    "label": "Ló",
-    "empty": "Még nincs mentett ló. Adj hozzá egyet a Lovak fülön."
-  },
   "categories": {
     "PoneyD": "D póni",
     "PoneyC": "C póni",
@@ -106,5 +105,51 @@
     "metric": "Metrikus (m, cm)",
     "imperial": "Angolszász (ft, in)",
     "darkMode": "Sötét mód"
+  },
+  "horsePicker": {
+    "label": "Ló",
+    "empty": "Még nincs mentett ló. Adj hozzá egyet a Lovak fülön."
+  },
+  "exercises": {
+    "title": "Gyakorlattár",
+    "subtitle": "Állítsd be a földi rudakból vagy cavalettikből álló vonalaidat: pontos távolságok minden vágtaugrás-számhoz.",
+    "heightLabel": "Rudak magassága",
+    "tableTitle": "Vágtaugrás-minta",
+    "strideCount_one": "{{count}} vágtaugrás",
+    "strideCount_other": "{{count}} vágtaugrás"
+  },
+  "metronome": {
+    "title": "Vágta metronóm",
+    "subtitle": "Jegyezd meg a helyes ütemet, mielőtt belépnél a pályára.",
+    "speedLabel": "Sebesség",
+    "resultTitle": "Ütem",
+    "cadenceLabel": "Vágtaugrás percenként",
+    "start": "Indítás",
+    "stop": "Leállítás",
+    "hintNoSpeed": "Adj meg egy érvényes sebességet.",
+    "hintNoMount": "Válassz vagy hozz létre egy lovat."
+  },
+  "checklist": {
+    "title": "Verseny ellenőrzőlista",
+    "subtitle": "Ellenőrizd, hogy semmit nem felejtettél el indulás előtt.",
+    "sectionHorse": "Lófelszerelés",
+    "sectionRider": "Lovas felszerelése",
+    "sectionPapers": "Iratok",
+    "resetButton": "Lista visszaállítása",
+    "items": {
+      "protections": "Gamasnik",
+      "licol": "Kötőfék",
+      "filet": "Kantár",
+      "tapis": "Nyeregalátét",
+      "selle": "Nyereg",
+      "bombe": "Bukósisak",
+      "bottes": "Lovaglócsizma",
+      "pantalonBlanc": "Fehér lovaglónadrág",
+      "veste": "Kabát",
+      "cravache": "Pálca",
+      "carnet": "Versenykönyv",
+      "licence": "Licenc",
+      "passeportCheval": "Lóútlevél"
+    }
   }
 }

@@ -1,14 +1,17 @@
 import React, { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import { useColorScheme } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import i18n from '../i18n';
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGE_CODES } from '../i18n/languages';
-import { darkColors, lightColors, ThemeColors } from '../theme/colors';
+import { darkColors, lightColors, ThemeColors } from '../constants/colors';
 import { UnitSystem } from '../lib/units';
-
-const LANGUAGE_KEY = '@cavalier/language';
-const UNIT_SYSTEM_KEY = '@cavalier/unitSystem';
-const DARK_MODE_KEY = '@cavalier/darkMode';
+import {
+  loadDarkMode,
+  loadLanguage,
+  loadUnitSystem,
+  saveDarkMode,
+  saveLanguage,
+  saveUnitSystem,
+} from '../lib/storage';
 
 interface SettingsContextValue {
   language: string;
@@ -33,20 +36,20 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     (async () => {
       const [storedLanguage, storedUnitSystem, storedDarkMode] = await Promise.all([
-        AsyncStorage.getItem(LANGUAGE_KEY),
-        AsyncStorage.getItem(UNIT_SYSTEM_KEY),
-        AsyncStorage.getItem(DARK_MODE_KEY),
+        loadLanguage(),
+        loadUnitSystem(),
+        loadDarkMode(),
       ]);
 
       if (storedLanguage && SUPPORTED_LANGUAGE_CODES.includes(storedLanguage)) {
         setLanguageState(storedLanguage);
         await i18n.changeLanguage(storedLanguage);
       }
-      if (storedUnitSystem === 'metric' || storedUnitSystem === 'imperial') {
+      if (storedUnitSystem) {
         setUnitSystemState(storedUnitSystem);
       }
       if (storedDarkMode !== null) {
-        setIsDarkModeState(storedDarkMode === 'true');
+        setIsDarkModeState(storedDarkMode);
       }
       setIsLoading(false);
     })();
@@ -55,17 +58,17 @@ export function SettingsProvider({ children }: { children: React.ReactNode }) {
   const setLanguage = async (code: string) => {
     setLanguageState(code);
     await i18n.changeLanguage(code);
-    await AsyncStorage.setItem(LANGUAGE_KEY, code);
+    await saveLanguage(code);
   };
 
   const setUnitSystem = async (system: UnitSystem) => {
     setUnitSystemState(system);
-    await AsyncStorage.setItem(UNIT_SYSTEM_KEY, system);
+    await saveUnitSystem(system);
   };
 
   const setIsDarkMode = async (value: boolean) => {
     setIsDarkModeState(value);
-    await AsyncStorage.setItem(DARK_MODE_KEY, String(value));
+    await saveDarkMode(value);
   };
 
   const colors = useMemo(() => (isDarkMode ? darkColors : lightColors), [isDarkMode]);

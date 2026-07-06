@@ -9,7 +9,10 @@
     "converter": "Omregner",
     "combinations": "Kombinasjoner",
     "mounts": "Hester",
-    "chrono": "Tidtaking"
+    "chrono": "Tidtaking",
+    "exercises": "Øvelser",
+    "metronome": "Metronom",
+    "checklist": "Sjekkliste"
   },
   "converter": {
     "title": "Omregner skritt → galoppsprang",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Tillatt tid",
     "hintNoInput": "Angi banens lengde og hastigheten."
   },
-  "mountPicker": {
-    "label": "Hest",
-    "empty": "Ingen hest lagret ennå. Legg til en under fanen Hester."
-  },
   "categories": {
     "PoneyD": "Ponni D",
     "PoneyC": "Ponni C",
@@ -106,5 +105,51 @@
     "metric": "Metrisk (m, cm)",
     "imperial": "Britisk (ft, in)",
     "darkMode": "Mørk modus"
+  },
+  "horsePicker": {
+    "label": "Hest",
+    "empty": "Ingen hest lagret ennå. Legg til en under fanen Hester."
+  },
+  "exercises": {
+    "title": "Øvelsesbibliotek",
+    "subtitle": "Sett opp linjene dine med bakkestenger eller kavaletti: nøyaktige avstander for hvert antall galoppsprang.",
+    "heightLabel": "Stengenes høyde",
+    "tableTitle": "Galoppsprangmønster",
+    "strideCount_one": "{{count}} galoppsprang",
+    "strideCount_other": "{{count}} galoppsprang"
+  },
+  "metronome": {
+    "title": "Galoppmetronom",
+    "subtitle": "Memorer riktig takt før du rir inn i banen.",
+    "speedLabel": "Hastighet",
+    "resultTitle": "Takt",
+    "cadenceLabel": "Galoppsprang per minutt",
+    "start": "Start",
+    "stop": "Stopp",
+    "hintNoSpeed": "Angi en gyldig hastighet.",
+    "hintNoMount": "Velg eller opprett en hest."
+  },
+  "checklist": {
+    "title": "Konkurransesjekkliste",
+    "subtitle": "Sjekk at du ikke glemmer noe før du drar.",
+    "sectionHorse": "Hesteutstyr",
+    "sectionRider": "Rytterutstyr",
+    "sectionPapers": "Dokumenter",
+    "resetButton": "Tilbakestill listen",
+    "items": {
+      "protections": "Beinbeskyttelse",
+      "licol": "Grime",
+      "filet": "Hodelag",
+      "tapis": "Salunderlag",
+      "selle": "Sal",
+      "bombe": "Ridehjelm",
+      "bottes": "Ridestøvler",
+      "pantalonBlanc": "Hvite ridebukser",
+      "veste": "Ridejakke",
+      "cravache": "Pisk",
+      "carnet": "Konkurransehefte",
+      "licence": "Lisens",
+      "passeportCheval": "Hestepass"
+    }
   }
 }

@@ -9,7 +9,10 @@
     "converter": "Dönüştürücü",
     "combinations": "Kombinasyonlar",
     "mounts": "Atlar",
-    "chrono": "Kronometre"
+    "chrono": "Kronometre",
+    "exercises": "Egzersizler",
+    "metronome": "Metronom",
+    "checklist": "Liste"
   },
   "converter": {
     "title": "Adım → Dörtnala adımı dönüştürücü",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "İzin verilen süre",
     "hintNoInput": "Parkur uzunluğunu ve hızı gir."
   },
-  "mountPicker": {
-    "label": "At",
-    "empty": "Kayıtlı at yok. Atlar sekmesinden bir tane ekle."
-  },
   "categories": {
     "PoneyD": "Midilli D",
     "PoneyC": "Midilli C",
@@ -106,5 +105,51 @@
     "metric": "Metrik (m, cm)",
     "imperial": "İngiliz birimi (ft, in)",
     "darkMode": "Karanlık mod"
+  },
+  "horsePicker": {
+    "label": "At",
+    "empty": "Kayıtlı at yok. Atlar sekmesinden bir tane ekle."
+  },
+  "exercises": {
+    "title": "Egzersiz kütüphanesi",
+    "subtitle": "Yerdeki çubuk veya kavaletti hatlarını ayarla: her adım sayısı için tam mesafeler.",
+    "heightLabel": "Çubuk yüksekliği",
+    "tableTitle": "Adım düzeni",
+    "strideCount_one": "{{count}} adım",
+    "strideCount_other": "{{count}} adım"
+  },
+  "metronome": {
+    "title": "Kanter metronomu",
+    "subtitle": "Pisteye girmeden önce doğru tempoyu ezberle.",
+    "speedLabel": "Hız",
+    "resultTitle": "Tempo",
+    "cadenceLabel": "Dakikadaki adım sayısı",
+    "start": "Başlat",
+    "stop": "Durdur",
+    "hintNoSpeed": "Geçerli bir hız gir.",
+    "hintNoMount": "Bir at seç veya oluştur."
+  },
+  "checklist": {
+    "title": "Yarışma listesi",
+    "subtitle": "Yola çıkmadan önce hiçbir şeyi unutmadığından emin ol.",
+    "sectionHorse": "At ekipmanı",
+    "sectionRider": "Binici ekipmanı",
+    "sectionPapers": "Belgeler",
+    "resetButton": "Listeyi sıfırla",
+    "items": {
+      "protections": "Bacaklıklar",
+      "licol": "Yular",
+      "filet": "Gem",
+      "tapis": "Eyer altlığı",
+      "selle": "Eyer",
+      "bombe": "Kask",
+      "bottes": "Çizmeler",
+      "pantalonBlanc": "Beyaz pantolon",
+      "veste": "Ceket",
+      "cravache": "Kırbaç",
+      "carnet": "Yarışma defteri",
+      "licence": "Lisans",
+      "passeportCheval": "At pasaportu"
+    }
   }
 }

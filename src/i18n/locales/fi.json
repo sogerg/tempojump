@@ -9,7 +9,10 @@
     "converter": "Muunnin",
     "combinations": "Yhdistelmät",
     "mounts": "Hevoset",
-    "chrono": "Ajanotto"
+    "chrono": "Ajanotto",
+    "exercises": "Harjoitukset",
+    "metronome": "Metronomi",
+    "checklist": "Tarkistuslista"
   },
   "converter": {
     "title": "Askel → laukka-askel -muunnin",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Sallittu aika",
     "hintNoInput": "Syötä radan pituus ja nopeus."
   },
-  "mountPicker": {
-    "label": "Hevonen",
-    "empty": "Yhtään hevosta ei ole vielä tallennettu. Lisää yksi Hevoset-välilehdellä."
-  },
   "categories": {
     "PoneyD": "Poni D",
     "PoneyC": "Poni C",
@@ -106,5 +105,51 @@
     "metric": "Metrinen (m, cm)",
     "imperial": "Imperiaalinen (ft, in)",
     "darkMode": "Tumma tila"
+  },
+  "horsePicker": {
+    "label": "Hevonen",
+    "empty": "Yhtään hevosta ei ole vielä tallennettu. Lisää yksi Hevoset-välilehdellä."
+  },
+  "exercises": {
+    "title": "Harjoituskirjasto",
+    "subtitle": "Aseta maakoroke- tai cavaletti-linjasi: tarkat etäisyydet jokaiselle laukka-askelmäärälle.",
+    "heightLabel": "Korokkeiden korkeus",
+    "tableTitle": "Laukka-askelkaavio",
+    "strideCount_one": "{{count}} laukka-askel",
+    "strideCount_other": "{{count}} laukka-askelta"
+  },
+  "metronome": {
+    "title": "Laukkametronomi",
+    "subtitle": "Paina oikea rytmi mieleen ennen kentälle menoa.",
+    "speedLabel": "Nopeus",
+    "resultTitle": "Rytmi",
+    "cadenceLabel": "Laukka-askelia minuutissa",
+    "start": "Aloita",
+    "stop": "Pysäytä",
+    "hintNoSpeed": "Syötä kelvollinen nopeus.",
+    "hintNoMount": "Valitse tai luo hevonen."
+  },
+  "checklist": {
+    "title": "Kilpailun tarkistuslista",
+    "subtitle": "Tarkista, ettet unohda mitään ennen lähtöä.",
+    "sectionHorse": "Hevosen varusteet",
+    "sectionRider": "Ratsastajan varusteet",
+    "sectionPapers": "Asiakirjat",
+    "resetButton": "Nollaa lista",
+    "items": {
+      "protections": "Jalkasuojat",
+      "licol": "Riimu",
+      "filet": "Suitset",
+      "tapis": "Satulahuopa",
+      "selle": "Satula",
+      "bombe": "Ratsastuskypärä",
+      "bottes": "Ratsastussaappaat",
+      "pantalonBlanc": "Valkoiset ratsastushousut",
+      "veste": "Takki",
+      "cravache": "Ratsupiiska",
+      "carnet": "Kilpailukirja",
+      "licence": "Lisenssi",
+      "passeportCheval": "Hevospassi"
+    }
   }
 }

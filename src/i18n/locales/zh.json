@@ -9,7 +9,10 @@
     "converter": "换算器",
     "combinations": "连续障碍",
     "mounts": "坐骑",
-    "chrono": "计时器"
+    "chrono": "计时器",
+    "exercises": "练习",
+    "metronome": "节拍器",
+    "checklist": "清单"
   },
   "converter": {
     "title": "步数 → 跨步换算器",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "允许时间",
     "hintNoInput": "请输入赛道长度和速度。"
   },
-  "mountPicker": {
-    "label": "坐骑",
-    "empty": "尚未保存任何坐骑，请在“坐骑”标签页中添加。"
-  },
   "categories": {
     "PoneyD": "D级小马",
     "PoneyC": "C级小马",
@@ -106,5 +105,50 @@
     "metric": "公制（米、厘米）",
     "imperial": "英制（英尺、英寸）",
     "darkMode": "深色模式"
+  },
+  "horsePicker": {
+    "label": "坐骑",
+    "empty": "尚未保存任何坐骑，请在“坐骑”标签页中添加。"
+  },
+  "exercises": {
+    "title": "练习库",
+    "subtitle": "设置地面横杆或矮桩线：每种跨步数对应的精确距离。",
+    "heightLabel": "横杆高度",
+    "tableTitle": "跨步方案",
+    "strideCount_other": "{{count}} 个跨步"
+  },
+  "metronome": {
+    "title": "跑步节拍器",
+    "subtitle": "在进场前记住正确的节奏。",
+    "speedLabel": "速度",
+    "resultTitle": "节奏",
+    "cadenceLabel": "每分钟跨步数",
+    "start": "开始",
+    "stop": "停止",
+    "hintNoSpeed": "请输入有效速度。",
+    "hintNoMount": "请选择或创建一个坐骑。"
+  },
+  "checklist": {
+    "title": "比赛清单",
+    "subtitle": "出发前检查是否遗漏任何物品。",
+    "sectionHorse": "马匹装备",
+    "sectionRider": "骑手装备",
+    "sectionPapers": "证件",
+    "resetButton": "重置清单",
+    "items": {
+      "protections": "护具",
+      "licol": "笼头",
+      "filet": "辔头",
+      "tapis": "鞍垫",
+      "selle": "马鞍",
+      "bombe": "头盔",
+      "bottes": "马靴",
+      "pantalonBlanc": "白色马裤",
+      "veste": "骑装外套",
+      "cravache": "马鞭",
+      "carnet": "比赛手册",
+      "licence": "执照",
+      "passeportCheval": "马匹护照"
+    }
   }
 }

@@ -9,7 +9,10 @@
     "converter": "परिवर्तक",
     "combinations": "संयोजन",
     "mounts": "घोड़े",
-    "chrono": "समय गणक"
+    "chrono": "समय गणक",
+    "exercises": "अभ्यास",
+    "metronome": "मेट्रोनोम",
+    "checklist": "सूची"
   },
   "converter": {
     "title": "कदम → स्ट्राइड परिवर्तक",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "स्वीकृत समय",
     "hintNoInput": "कोर्स की लंबाई और गति दर्ज करें।"
   },
-  "mountPicker": {
-    "label": "घोड़ा",
-    "empty": "कोई घोड़ा सहेजा नहीं गया है। घोड़े टैब में एक जोड़ें।"
-  },
   "categories": {
     "PoneyD": "पोनी D",
     "PoneyC": "पोनी C",
@@ -106,5 +105,51 @@
     "metric": "मीट्रिक (मी, सेमी)",
     "imperial": "इंपीरियल (फ़ुट, इंच)",
     "darkMode": "डार्क मोड"
+  },
+  "horsePicker": {
+    "label": "घोड़ा",
+    "empty": "कोई घोड़ा सहेजा नहीं गया है। घोड़े टैब में एक जोड़ें।"
+  },
+  "exercises": {
+    "title": "अभ्यास लाइब्रेरी",
+    "subtitle": "ज़मीन पर बार या कैवलेटी की लाइनें सेट करें: हर स्ट्राइड संख्या के लिए सटीक दूरी।",
+    "heightLabel": "बार की ऊंचाई",
+    "tableTitle": "स्ट्राइड पैटर्न",
+    "strideCount_one": "{{count}} स्ट्राइड",
+    "strideCount_other": "{{count}} स्ट्राइड"
+  },
+  "metronome": {
+    "title": "सरपट मेट्रोनोम",
+    "subtitle": "मैदान में प्रवेश करने से पहले सही लय याद रखें।",
+    "speedLabel": "गति",
+    "resultTitle": "लय",
+    "cadenceLabel": "प्रति मिनट स्ट्राइड",
+    "start": "शुरू करें",
+    "stop": "रोकें",
+    "hintNoSpeed": "एक मान्य गति दर्ज करें।",
+    "hintNoMount": "एक घोड़ा चुनें या बनाएं।"
+  },
+  "checklist": {
+    "title": "प्रतियोगिता सूची",
+    "subtitle": "जाने से पहले जांच लें कि आप कुछ भूल तो नहीं रहे।",
+    "sectionHorse": "घोड़े का सामान",
+    "sectionRider": "सवार का सामान",
+    "sectionPapers": "दस्तावेज़",
+    "resetButton": "सूची रीसेट करें",
+    "items": {
+      "protections": "प्रोटेक्शन",
+      "licol": "हैल्टर",
+      "filet": "लगाम",
+      "tapis": "सैडल पैड",
+      "selle": "ज़ीन",
+      "bombe": "हेलमेट",
+      "bottes": "राइडिंग बूट्स",
+      "pantalonBlanc": "सफेद पैंट",
+      "veste": "जैकेट",
+      "cravache": "चाबुक",
+      "carnet": "रिकॉर्ड बुक",
+      "licence": "लाइसेंस",
+      "passeportCheval": "घोड़े का पासपोर्ट"
+    }
   }
 }

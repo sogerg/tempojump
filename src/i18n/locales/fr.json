@@ -9,7 +9,10 @@
     "converter": "Convertisseur",
     "combinations": "Combinaisons",
     "mounts": "Montures",
-    "chrono": "Chrono"
+    "chrono": "Chrono",
+    "exercises": "Exercices",
+    "metronome": "Métronome",
+    "checklist": "Check-list"
   },
   "converter": {
     "title": "Convertisseur pas → foulées",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Temps accordé",
     "hintNoInput": "Renseigne la longueur du parcours et la vitesse."
   },
-  "mountPicker": {
-    "label": "Monture",
-    "empty": "Aucune monture enregistrée. Ajoute-en une dans l'onglet Montures."
-  },
   "categories": {
     "PoneyD": "Poney D",
     "PoneyC": "Poney C",
@@ -106,5 +105,51 @@
     "metric": "Métrique (m, cm)",
     "imperial": "Impérial (ft, in)",
     "darkMode": "Mode sombre"
+  },
+  "horsePicker": {
+    "label": "Monture",
+    "empty": "Aucune monture enregistrée. Ajoute-en une dans l'onglet Montures."
+  },
+  "exercises": {
+    "title": "Bibliothèque d'exercices",
+    "subtitle": "Prépare tes lignes de barres au sol ou de cavalettis : distances exactes pour chaque nombre de foulées.",
+    "heightLabel": "Hauteur des barres",
+    "tableTitle": "Contrat de foulées",
+    "strideCount_one": "{{count}} foulée",
+    "strideCount_other": "{{count}} foulées"
+  },
+  "metronome": {
+    "title": "Métronome de galop",
+    "subtitle": "Mémorise la bonne cadence avant d'entrer en piste.",
+    "speedLabel": "Vitesse",
+    "resultTitle": "Cadence",
+    "cadenceLabel": "Foulées par minute",
+    "start": "Démarrer",
+    "stop": "Arrêter",
+    "hintNoSpeed": "Renseigne une vitesse valide.",
+    "hintNoMount": "Sélectionne ou crée une monture."
+  },
+  "checklist": {
+    "title": "Check-list de concours",
+    "subtitle": "Vérifie que tu n'oublies rien avant de partir.",
+    "sectionHorse": "Matériel du cheval",
+    "sectionRider": "Matériel du cavalier",
+    "sectionPapers": "Papiers",
+    "resetButton": "Réinitialiser la liste",
+    "items": {
+      "protections": "Protections",
+      "licol": "Licol",
+      "filet": "Filet",
+      "tapis": "Tapis",
+      "selle": "Selle",
+      "bombe": "Bombe",
+      "bottes": "Bottes",
+      "pantalonBlanc": "Pantalon blanc",
+      "veste": "Veste",
+      "cravache": "Cravache",
+      "carnet": "Carnet",
+      "licence": "Licence",
+      "passeportCheval": "Passeport du cheval"
+    }
   }
 }

@@ -9,7 +9,10 @@
     "converter": "Bộ chuyển đổi",
     "combinations": "Tổ hợp",
     "mounts": "Ngựa",
-    "chrono": "Đồng hồ"
+    "chrono": "Đồng hồ",
+    "exercises": "Bài tập",
+    "metronome": "Máy đếm nhịp",
+    "checklist": "Danh sách"
   },
   "converter": {
     "title": "Chuyển đổi bước chân → sải nước đại",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Thời gian cho phép",
     "hintNoInput": "Nhập chiều dài đường đua và tốc độ."
   },
-  "mountPicker": {
-    "label": "Ngựa",
-    "empty": "Chưa có ngựa nào được lưu. Thêm một con trong tab Ngựa."
-  },
   "categories": {
     "PoneyD": "Ngựa nhỏ D",
     "PoneyC": "Ngựa nhỏ C",
@@ -106,5 +105,50 @@
     "metric": "Hệ mét (m, cm)",
     "imperial": "Hệ Anh (ft, in)",
     "darkMode": "Chế độ tối"
+  },
+  "horsePicker": {
+    "label": "Ngựa",
+    "empty": "Chưa có ngựa nào được lưu. Thêm một con trong tab Ngựa."
+  },
+  "exercises": {
+    "title": "Thư viện bài tập",
+    "subtitle": "Thiết lập các đường thanh ngang hoặc cavaletti: khoảng cách chính xác cho mỗi số sải bước.",
+    "heightLabel": "Chiều cao thanh ngang",
+    "tableTitle": "Mẫu sải bước",
+    "strideCount_other": "{{count}} sải"
+  },
+  "metronome": {
+    "title": "Máy đếm nhịp nước đại",
+    "subtitle": "Ghi nhớ nhịp điệu đúng trước khi vào sân.",
+    "speedLabel": "Tốc độ",
+    "resultTitle": "Nhịp điệu",
+    "cadenceLabel": "Số sải mỗi phút",
+    "start": "Bắt đầu",
+    "stop": "Dừng",
+    "hintNoSpeed": "Nhập tốc độ hợp lệ.",
+    "hintNoMount": "Chọn hoặc tạo một con ngựa."
+  },
+  "checklist": {
+    "title": "Danh sách thi đấu",
+    "subtitle": "Kiểm tra để không quên gì trước khi đi.",
+    "sectionHorse": "Dụng cụ cho ngựa",
+    "sectionRider": "Dụng cụ cho người cưỡi",
+    "sectionPapers": "Giấy tờ",
+    "resetButton": "Đặt lại danh sách",
+    "items": {
+      "protections": "Đồ bảo vệ chân",
+      "licol": "Dây dắt",
+      "filet": "Dây cương",
+      "tapis": "Lót yên",
+      "selle": "Yên ngựa",
+      "bombe": "Mũ bảo hiểm",
+      "bottes": "Ủng cưỡi ngựa",
+      "pantalonBlanc": "Quần trắng",
+      "veste": "Áo khoác",
+      "cravache": "Roi",
+      "carnet": "Sổ thi đấu",
+      "licence": "Giấy phép",
+      "passeportCheval": "Hộ chiếu ngựa"
+    }
   }
 }

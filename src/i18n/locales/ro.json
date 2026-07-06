@@ -9,7 +9,10 @@
     "converter": "Convertor",
     "combinations": "Combinații",
     "mounts": "Cai",
-    "chrono": "Cronometru"
+    "chrono": "Cronometru",
+    "exercises": "Exerciții",
+    "metronome": "Metronom",
+    "checklist": "Listă"
   },
   "converter": {
     "title": "Convertor pași → galopade",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Timp acordat",
     "hintNoInput": "Introdu lungimea traseului și viteza."
   },
-  "mountPicker": {
-    "label": "Cal",
-    "empty": "Niciun cal salvat încă. Adaugă unul în fila Cai."
-  },
   "categories": {
     "PoneyD": "Ponei D",
     "PoneyC": "Ponei C",
@@ -106,5 +105,51 @@
     "metric": "Metric (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Mod întunecat"
+  },
+  "horsePicker": {
+    "label": "Cal",
+    "empty": "Niciun cal salvat încă. Adaugă unul în fila Cai."
+  },
+  "exercises": {
+    "title": "Bibliotecă de exerciții",
+    "subtitle": "Pregătește-ți liniile cu bare la sol sau cavaleti: distanțe exacte pentru fiecare număr de galopade.",
+    "heightLabel": "Înălțimea barelor",
+    "tableTitle": "Model de galopade",
+    "strideCount_one": "{{count}} galopadă",
+    "strideCount_other": "{{count}} galopade"
+  },
+  "metronome": {
+    "title": "Metronom de galop",
+    "subtitle": "Memorează cadența corectă înainte de a intra pe teren.",
+    "speedLabel": "Viteză",
+    "resultTitle": "Cadență",
+    "cadenceLabel": "Galopade pe minut",
+    "start": "Pornește",
+    "stop": "Oprește",
+    "hintNoSpeed": "Introdu o viteză validă.",
+    "hintNoMount": "Selectează sau creează un cal."
+  },
+  "checklist": {
+    "title": "Listă pentru concurs",
+    "subtitle": "Verifică să nu uiți nimic înainte de plecare.",
+    "sectionHorse": "Echipament cal",
+    "sectionRider": "Echipament călăreț",
+    "sectionPapers": "Acte",
+    "resetButton": "Resetează lista",
+    "items": {
+      "protections": "Protecții",
+      "licol": "Căpăstru",
+      "filet": "Frâu",
+      "tapis": "Valtrap",
+      "selle": "Șa",
+      "bombe": "Cască",
+      "bottes": "Cizme de călărie",
+      "pantalonBlanc": "Pantaloni albi",
+      "veste": "Sacou",
+      "cravache": "Bici",
+      "carnet": "Carnet de concurs",
+      "licence": "Licență",
+      "passeportCheval": "Pașaport cal"
+    }
   }
 }

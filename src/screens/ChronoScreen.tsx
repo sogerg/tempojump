@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { ResultCard } from '../components/ResultCard';
 import { useSettings } from '../context/SettingsContext';
-import { allowedTime } from '../lib/strideCalculator';
+import { allowedTime } from '../lib/mathUtils';
 
 function formatSecondsAsClock(totalSeconds: number): string {
   const minutes = Math.floor(totalSeconds / 60);

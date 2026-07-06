@@ -9,7 +9,10 @@
     "converter": "Converter",
     "combinations": "Combinations",
     "mounts": "Mounts",
-    "chrono": "Timer"
+    "chrono": "Timer",
+    "exercises": "Exercises",
+    "metronome": "Metronome",
+    "checklist": "Checklist"
   },
   "converter": {
     "title": "Steps → Strides converter",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Allowed time",
     "hintNoInput": "Enter the course length and speed."
   },
-  "mountPicker": {
-    "label": "Mount",
-    "empty": "No mount saved yet. Add one in the Mounts tab."
-  },
   "categories": {
     "PoneyD": "Pony D",
     "PoneyC": "Pony C",
@@ -106,5 +105,51 @@
     "metric": "Metric (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Dark mode"
+  },
+  "horsePicker": {
+    "label": "Mount",
+    "empty": "No mount saved yet. Add one in the Mounts tab."
+  },
+  "exercises": {
+    "title": "Exercise library",
+    "subtitle": "Set up your ground pole or cavaletti lines: exact distances for each number of strides.",
+    "heightLabel": "Pole height",
+    "tableTitle": "Stride pattern",
+    "strideCount_one": "{{count}} stride",
+    "strideCount_other": "{{count}} strides"
+  },
+  "metronome": {
+    "title": "Canter metronome",
+    "subtitle": "Memorize the right cadence before entering the arena.",
+    "speedLabel": "Speed",
+    "resultTitle": "Cadence",
+    "cadenceLabel": "Strides per minute",
+    "start": "Start",
+    "stop": "Stop",
+    "hintNoSpeed": "Enter a valid speed.",
+    "hintNoMount": "Select or create a mount."
+  },
+  "checklist": {
+    "title": "Competition checklist",
+    "subtitle": "Make sure you don't forget anything before you leave.",
+    "sectionHorse": "Horse gear",
+    "sectionRider": "Rider gear",
+    "sectionPapers": "Documents",
+    "resetButton": "Reset checklist",
+    "items": {
+      "protections": "Boots/protections",
+      "licol": "Head collar",
+      "filet": "Bridle",
+      "tapis": "Saddle pad",
+      "selle": "Saddle",
+      "bombe": "Riding helmet",
+      "bottes": "Riding boots",
+      "pantalonBlanc": "White breeches",
+      "veste": "Riding jacket",
+      "cravache": "Riding crop",
+      "carnet": "Logbook",
+      "licence": "Licence",
+      "passeportCheval": "Horse passport"
+    }
   }
 }

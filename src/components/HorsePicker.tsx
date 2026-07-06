@@ -1,43 +1,43 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { useProfiles } from '../context/ProfilesContext';
+import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { formatLength } from '../lib/units';
 
-export function MountPicker() {
+export function HorsePicker() {
   const { t } = useTranslation();
-  const { mounts, selectedMountId, selectMount } = useProfiles();
+  const { horses, selectedHorseId, selectHorse } = useHorses();
   const { colors, unitSystem } = useSettings();
 
-  if (mounts.length === 0) {
+  if (horses.length === 0) {
     return (
       <View style={[styles.empty, { backgroundColor: colors.card }]}>
-        <Text style={[styles.emptyText, { color: colors.text }]}>{t('mountPicker.empty')}</Text>
+        <Text style={[styles.emptyText, { color: colors.text }]}>{t('horsePicker.empty')}</Text>
       </View>
     );
   }
 
   return (
     <View style={styles.container}>
-      <Text style={[styles.label, { color: colors.textMuted }]}>{t('mountPicker.label')}</Text>
+      <Text style={[styles.label, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.list}>
-        {mounts.map((mount) => {
-          const isActive = mount.id === selectedMountId;
+        {horses.map((horse) => {
+          const isActive = horse.id === selectedHorseId;
           return (
             <TouchableOpacity
-              key={mount.id}
+              key={horse.id}
               style={[
                 styles.chip,
                 { backgroundColor: isActive ? colors.primary : colors.segmentBackground },
               ]}
-              onPress={() => selectMount(mount.id)}
+              onPress={() => selectHorse(horse.id)}
             >
               <Text style={[styles.chipText, { color: isActive ? colors.primaryText : colors.text }]}>
-                {mount.name}
+                {horse.name}
               </Text>
               <Text style={[styles.chipSubText, { color: isActive ? colors.primaryText : colors.textMuted }]}>
-                {t(`categories.${mount.category}`)} · {formatLength(mount.strideLength, unitSystem)}
+                {t(`categories.${horse.category}`)} · {formatLength(horse.strideLength, unitSystem)}
               </Text>
             </TouchableOpacity>
           );

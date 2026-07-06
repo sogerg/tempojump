@@ -9,7 +9,10 @@
     "converter": "換算",
     "combinations": "コンビネーション",
     "mounts": "馬",
-    "chrono": "タイム計算"
+    "chrono": "タイム計算",
+    "exercises": "練習",
+    "metronome": "メトロノーム",
+    "checklist": "チェックリスト"
   },
   "converter": {
     "title": "歩数→ストライド換算",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "許容タイム",
     "hintNoInput": "コース長と速度を入力してください。"
   },
-  "mountPicker": {
-    "label": "馬",
-    "empty": "登録された馬がありません。「馬」タブで追加してください。"
-  },
   "categories": {
     "PoneyD": "ポニーD",
     "PoneyC": "ポニーC",
@@ -106,5 +105,50 @@
     "metric": "メートル法（m、cm）",
     "imperial": "ヤード・ポンド法（ft、in）",
     "darkMode": "ダークモード"
+  },
+  "horsePicker": {
+    "label": "馬",
+    "empty": "登録された馬がありません。「馬」タブで追加してください。"
+  },
+  "exercises": {
+    "title": "練習ライブラリ",
+    "subtitle": "地上バーやキャバレティのラインを設定：ストライド数ごとの正確な距離。",
+    "heightLabel": "バーの高さ",
+    "tableTitle": "ストライドパターン",
+    "strideCount_other": "{{count}} ストライド"
+  },
+  "metronome": {
+    "title": "キャンターメトロノーム",
+    "subtitle": "入場前に正しいリズムを覚えましょう。",
+    "speedLabel": "速度",
+    "resultTitle": "リズム",
+    "cadenceLabel": "1分あたりのストライド数",
+    "start": "開始",
+    "stop": "停止",
+    "hintNoSpeed": "有効な速度を入力してください。",
+    "hintNoMount": "馬を選択または作成してください。"
+  },
+  "checklist": {
+    "title": "競技会チェックリスト",
+    "subtitle": "出発前に忘れ物がないか確認しましょう。",
+    "sectionHorse": "馬装備",
+    "sectionRider": "ライダー装備",
+    "sectionPapers": "書類",
+    "resetButton": "リストをリセット",
+    "items": {
+      "protections": "プロテクター",
+      "licol": "ヘッドコラー",
+      "filet": "轡",
+      "tapis": "ゼッケン",
+      "selle": "鞍",
+      "bombe": "ヘルメット",
+      "bottes": "ライディングブーツ",
+      "pantalonBlanc": "白いブリーチズ",
+      "veste": "ジャケット",
+      "cravache": "ムチ",
+      "carnet": "成績手帳",
+      "licence": "ライセンス",
+      "passeportCheval": "馬のパスポート"
+    }
   }
 }

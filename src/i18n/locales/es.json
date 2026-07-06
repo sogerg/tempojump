@@ -9,7 +9,10 @@
     "converter": "Convertidor",
     "combinations": "Combinaciones",
     "mounts": "Monturas",
-    "chrono": "Crono"
+    "chrono": "Crono",
+    "exercises": "Ejercicios",
+    "metronome": "Metrónomo",
+    "checklist": "Lista"
   },
   "converter": {
     "title": "Convertidor pasos → zancadas",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Tiempo concedido",
     "hintNoInput": "Introduce la longitud del recorrido y la velocidad."
   },
-  "mountPicker": {
-    "label": "Montura",
-    "empty": "Ninguna montura guardada. Añade una en la pestaña Monturas."
-  },
   "categories": {
     "PoneyD": "Poni D",
     "PoneyC": "Poni C",
@@ -106,5 +105,51 @@
     "metric": "Métrico (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Modo oscuro"
+  },
+  "horsePicker": {
+    "label": "Montura",
+    "empty": "Ninguna montura guardada. Añade una en la pestaña Monturas."
+  },
+  "exercises": {
+    "title": "Biblioteca de ejercicios",
+    "subtitle": "Prepara tus líneas de barras en el suelo o cavaletti: distancias exactas para cada número de zancadas.",
+    "heightLabel": "Altura de las barras",
+    "tableTitle": "Patrón de zancadas",
+    "strideCount_one": "{{count}} zancada",
+    "strideCount_other": "{{count}} zancadas"
+  },
+  "metronome": {
+    "title": "Metrónomo de galope",
+    "subtitle": "Memoriza la cadencia correcta antes de entrar en pista.",
+    "speedLabel": "Velocidad",
+    "resultTitle": "Cadencia",
+    "cadenceLabel": "Zancadas por minuto",
+    "start": "Iniciar",
+    "stop": "Detener",
+    "hintNoSpeed": "Introduce una velocidad válida.",
+    "hintNoMount": "Selecciona o crea una montura."
+  },
+  "checklist": {
+    "title": "Lista de concurso",
+    "subtitle": "Comprueba que no olvidas nada antes de salir.",
+    "sectionHorse": "Material del caballo",
+    "sectionRider": "Material del jinete",
+    "sectionPapers": "Documentos",
+    "resetButton": "Reiniciar lista",
+    "items": {
+      "protections": "Protecciones",
+      "licol": "Cabestro",
+      "filet": "Brida",
+      "tapis": "Manta",
+      "selle": "Silla",
+      "bombe": "Casco",
+      "bottes": "Botas",
+      "pantalonBlanc": "Pantalón blanco",
+      "veste": "Chaqueta",
+      "cravache": "Fusta",
+      "carnet": "Libreta",
+      "licence": "Licencia",
+      "passeportCheval": "Pasaporte del caballo"
+    }
   }
 }

@@ -9,7 +9,10 @@
     "converter": "Umrechner",
     "combinations": "Kombinationen",
     "mounts": "Pferde",
-    "chrono": "Stoppuhr"
+    "chrono": "Stoppuhr",
+    "exercises": "Übungen",
+    "metronome": "Metronom",
+    "checklist": "Checkliste"
   },
   "converter": {
     "title": "Umrechner Schritte → Galoppsprünge",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Erlaubte Zeit",
     "hintNoInput": "Gib die Parcourslänge und die Geschwindigkeit ein."
   },
-  "mountPicker": {
-    "label": "Pferd",
-    "empty": "Noch kein Pferd gespeichert. Füge eines im Tab Pferde hinzu."
-  },
   "categories": {
     "PoneyD": "Pony D",
     "PoneyC": "Pony C",
@@ -106,5 +105,51 @@
     "metric": "Metrisch (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Dunkler Modus"
+  },
+  "horsePicker": {
+    "label": "Pferd",
+    "empty": "Noch kein Pferd gespeichert. Füge eines im Tab Pferde hinzu."
+  },
+  "exercises": {
+    "title": "Übungsbibliothek",
+    "subtitle": "Stelle deine Bodenstangen- oder Cavaletti-Linien ein: genaue Distanzen für jede Anzahl an Galoppsprüngen.",
+    "heightLabel": "Stangenhöhe",
+    "tableTitle": "Galoppsprung-Schema",
+    "strideCount_one": "{{count}} Galoppsprung",
+    "strideCount_other": "{{count}} Galoppsprünge"
+  },
+  "metronome": {
+    "title": "Galopp-Metronom",
+    "subtitle": "Präge dir den richtigen Takt ein, bevor du den Parcours betrittst.",
+    "speedLabel": "Geschwindigkeit",
+    "resultTitle": "Kadenz",
+    "cadenceLabel": "Galoppsprünge pro Minute",
+    "start": "Starten",
+    "stop": "Stoppen",
+    "hintNoSpeed": "Gib eine gültige Geschwindigkeit ein.",
+    "hintNoMount": "Wähle oder erstelle ein Pferd."
+  },
+  "checklist": {
+    "title": "Turnier-Checkliste",
+    "subtitle": "Stelle sicher, dass du nichts vergisst, bevor du losfährst.",
+    "sectionHorse": "Ausrüstung Pferd",
+    "sectionRider": "Ausrüstung Reiter",
+    "sectionPapers": "Papiere",
+    "resetButton": "Liste zurücksetzen",
+    "items": {
+      "protections": "Gamaschen",
+      "licol": "Halfter",
+      "filet": "Trense",
+      "tapis": "Schabracke",
+      "selle": "Sattel",
+      "bombe": "Reithelm",
+      "bottes": "Reitstiefel",
+      "pantalonBlanc": "Weiße Reithose",
+      "veste": "Reitjacke",
+      "cravache": "Gerte",
+      "carnet": "Turnierpass",
+      "licence": "Lizenz",
+      "passeportCheval": "Pferdepass"
+    }
   }
 }

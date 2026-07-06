@@ -9,7 +9,10 @@
     "converter": "Omvandlare",
     "combinations": "Kombinationer",
     "mounts": "Hästar",
-    "chrono": "Tidtagning"
+    "chrono": "Tidtagning",
+    "exercises": "Övningar",
+    "metronome": "Metronom",
+    "checklist": "Checklista"
   },
   "converter": {
     "title": "Omvandlare steg → galoppsprång",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Tillåten tid",
     "hintNoInput": "Ange banans längd och hastigheten."
   },
-  "mountPicker": {
-    "label": "Häst",
-    "empty": "Ingen häst sparad än. Lägg till en under fliken Hästar."
-  },
   "categories": {
     "PoneyD": "Ponny D",
     "PoneyC": "Ponny C",
@@ -106,5 +105,51 @@
     "metric": "Metriskt (m, cm)",
     "imperial": "Brittiskt (ft, in)",
     "darkMode": "Mörkt läge"
+  },
+  "horsePicker": {
+    "label": "Häst",
+    "empty": "Ingen häst sparad än. Lägg till en under fliken Hästar."
+  },
+  "exercises": {
+    "title": "Övningsbibliotek",
+    "subtitle": "Ställ in dina linjer med markbommar eller cavaletti: exakta avstånd för varje antal galoppsprång.",
+    "heightLabel": "Bommarnas höjd",
+    "tableTitle": "Galoppsprångsmönster",
+    "strideCount_one": "{{count}} galoppsprång",
+    "strideCount_other": "{{count}} galoppsprång"
+  },
+  "metronome": {
+    "title": "Galoppmetronom",
+    "subtitle": "Memorera rätt takt innan du rider in i banan.",
+    "speedLabel": "Hastighet",
+    "resultTitle": "Takt",
+    "cadenceLabel": "Galoppsprång per minut",
+    "start": "Starta",
+    "stop": "Stoppa",
+    "hintNoSpeed": "Ange en giltig hastighet.",
+    "hintNoMount": "Välj eller skapa en häst."
+  },
+  "checklist": {
+    "title": "Tävlingschecklista",
+    "subtitle": "Se till att du inte glömmer något innan du åker.",
+    "sectionHorse": "Hästutrustning",
+    "sectionRider": "Ryttarutrustning",
+    "sectionPapers": "Dokument",
+    "resetButton": "Återställ listan",
+    "items": {
+      "protections": "Bensskydd",
+      "licol": "Grimma",
+      "filet": "Träns",
+      "tapis": "Sadelunderlägg",
+      "selle": "Sadel",
+      "bombe": "Ridhjälm",
+      "bottes": "Ridstövlar",
+      "pantalonBlanc": "Vita ridbyxor",
+      "veste": "Ridjacka",
+      "cravache": "Spö",
+      "carnet": "Tävlingshäfte",
+      "licence": "Licens",
+      "passeportCheval": "Hästpass"
+    }
   }
 }

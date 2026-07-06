@@ -9,7 +9,10 @@
     "converter": "Konverter",
     "combinations": "Kombinationer",
     "mounts": "Heste",
-    "chrono": "Tidtagning"
+    "chrono": "Tidtagning",
+    "exercises": "Øvelser",
+    "metronome": "Metronom",
+    "checklist": "Tjekliste"
   },
   "converter": {
     "title": "Konverter skridt → galopspring",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Tilladt tid",
     "hintNoInput": "Angiv banens længde og hastigheden."
   },
-  "mountPicker": {
-    "label": "Hest",
-    "empty": "Ingen hest gemt endnu. Tilføj en under fanen Heste."
-  },
   "categories": {
     "PoneyD": "Pony D",
     "PoneyC": "Pony C",
@@ -106,5 +105,51 @@
     "metric": "Metrisk (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Mørk tilstand"
+  },
+  "horsePicker": {
+    "label": "Hest",
+    "empty": "Ingen hest gemt endnu. Tilføj en under fanen Heste."
+  },
+  "exercises": {
+    "title": "Øvelsesbibliotek",
+    "subtitle": "Sæt dine linjer med bomme på jorden eller kavaletti op: præcise afstande for hvert antal galopspring.",
+    "heightLabel": "Bommenes højde",
+    "tableTitle": "Galopspringmønster",
+    "strideCount_one": "{{count}} galopspring",
+    "strideCount_other": "{{count}} galopspring"
+  },
+  "metronome": {
+    "title": "Galopmetronom",
+    "subtitle": "Husk den rigtige takt, før du rider ind i banen.",
+    "speedLabel": "Hastighed",
+    "resultTitle": "Takt",
+    "cadenceLabel": "Galopspring per minut",
+    "start": "Start",
+    "stop": "Stop",
+    "hintNoSpeed": "Angiv en gyldig hastighed.",
+    "hintNoMount": "Vælg eller opret en hest."
+  },
+  "checklist": {
+    "title": "Konkurrencetjekliste",
+    "subtitle": "Tjek at du ikke glemmer noget, før du tager afsted.",
+    "sectionHorse": "Hesteudstyr",
+    "sectionRider": "Rytterudstyr",
+    "sectionPapers": "Dokumenter",
+    "resetButton": "Nulstil listen",
+    "items": {
+      "protections": "Benbeskyttelse",
+      "licol": "Grime",
+      "filet": "Hovedtøj",
+      "tapis": "Saddeldækken",
+      "selle": "Sadel",
+      "bombe": "Ridehjelm",
+      "bottes": "Ridestøvler",
+      "pantalonBlanc": "Hvide ridebukser",
+      "veste": "Ridejakke",
+      "cravache": "Pisk",
+      "carnet": "Konkurrencehæfte",
+      "licence": "Licens",
+      "passeportCheval": "Hestepas"
+    }
   }
 }

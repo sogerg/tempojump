@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
-import { MountPicker } from '../components/MountPicker';
-import { useProfiles } from '../context/ProfilesContext';
+import { HorsePicker } from '../components/HorsePicker';
+import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { DEFAULT_FIXED_ALLOWANCE } from '../constants/mountDefaults';
-import { stepsToStrides } from '../lib/strideCalculator';
+import { DEFAULT_FIXED_ALLOWANCE } from '../constants/horseDefaults';
+import { stepsToStrides } from '../lib/mathUtils';
 import { formatLength } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
 
@@ -17,7 +17,7 @@ const SPEED_OPTIONS: SpeedLevel[] = ['Standard', 'Elite'];
 
 export function ConverterScreen() {
   const { t } = useTranslation();
-  const { selectedMount, riderStepLength } = useProfiles();
+  const { selectedHorse, riderStepLength } = useHorses();
   const { colors, unitSystem } = useSettings();
   const [humanSteps, setHumanSteps] = useState('');
   const [terrain, setTerrain] = useState<Terrain>('Plat');
@@ -25,17 +25,17 @@ export function ConverterScreen() {
 
   const result = useMemo(() => {
     const steps = Number(humanSteps.replace(',', '.'));
-    if (!selectedMount || !steps || steps <= 0) return null;
-    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedMount.category];
-    return stepsToStrides(steps, riderStepLength, selectedMount, fixedAllowance, { terrain, speed });
-  }, [humanSteps, selectedMount, riderStepLength, terrain, speed]);
+    if (!selectedHorse || !steps || steps <= 0) return null;
+    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedHorse.category];
+    return stepsToStrides(steps, riderStepLength, selectedHorse, fixedAllowance, { terrain, speed });
+  }, [humanSteps, selectedHorse, riderStepLength, terrain, speed]);
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <Text style={[styles.heading, { color: colors.text }]}>{t('converter.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('converter.subtitle')}</Text>
 
-      <MountPicker />
+      <HorsePicker />
 
       <NumberField
         label={t('converter.stepsLabel')}
@@ -84,7 +84,7 @@ export function ConverterScreen() {
         />
       ) : (
         <Text style={[styles.hint, { color: colors.textMuted }]}>
-          {selectedMount ? t('converter.hintNoSteps') : t('converter.hintNoMount')}
+          {selectedHorse ? t('converter.hintNoSteps') : t('converter.hintNoMount')}
         </Text>
       )}
     </ScrollView>

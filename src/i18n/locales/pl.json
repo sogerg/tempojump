@@ -9,7 +9,10 @@
     "converter": "Przelicznik",
     "combinations": "Kombinacje",
     "mounts": "Konie",
-    "chrono": "Stoper"
+    "chrono": "Stoper",
+    "exercises": "Ćwiczenia",
+    "metronome": "Metronom",
+    "checklist": "Lista"
   },
   "converter": {
     "title": "Przelicznik kroków → cwałów",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Czas dozwolony",
     "hintNoInput": "Wprowadź długość parkuru i prędkość."
   },
-  "mountPicker": {
-    "label": "Koń",
-    "empty": "Brak zapisanych koni. Dodaj jednego w zakładce Konie."
-  },
   "categories": {
     "PoneyD": "Kucyk D",
     "PoneyC": "Kucyk C",
@@ -106,5 +105,51 @@
     "metric": "Metryczne (m, cm)",
     "imperial": "Imperialne (ft, in)",
     "darkMode": "Tryb ciemny"
+  },
+  "horsePicker": {
+    "label": "Koń",
+    "empty": "Brak zapisanych koni. Dodaj jednego w zakładce Konie."
+  },
+  "exercises": {
+    "title": "Biblioteka ćwiczeń",
+    "subtitle": "Ustaw swoje linie z drążków na ziemi lub kawaletti: dokładne odległości dla każdej liczby cwałów.",
+    "heightLabel": "Wysokość drążków",
+    "tableTitle": "Schemat cwałów",
+    "strideCount_one": "{{count}} cwał",
+    "strideCount_other": "{{count}} cwały"
+  },
+  "metronome": {
+    "title": "Metronom galopu",
+    "subtitle": "Zapamiętaj właściwe tempo przed wejściem na parkur.",
+    "speedLabel": "Prędkość",
+    "resultTitle": "Kadencja",
+    "cadenceLabel": "Cwały na minutę",
+    "start": "Start",
+    "stop": "Stop",
+    "hintNoSpeed": "Wprowadź prawidłową prędkość.",
+    "hintNoMount": "Wybierz lub utwórz konia."
+  },
+  "checklist": {
+    "title": "Lista na zawody",
+    "subtitle": "Sprawdź, czy o niczym nie zapomniałeś przed wyjazdem.",
+    "sectionHorse": "Sprzęt konia",
+    "sectionRider": "Sprzęt jeźdźca",
+    "sectionPapers": "Dokumenty",
+    "resetButton": "Zresetuj listę",
+    "items": {
+      "protections": "Ochraniacze",
+      "licol": "Kantar",
+      "filet": "Uzda",
+      "tapis": "Potnik",
+      "selle": "Siodło",
+      "bombe": "Kask",
+      "bottes": "Buty",
+      "pantalonBlanc": "Białe bryczesy",
+      "veste": "Marynarka",
+      "cravache": "Szpicruta",
+      "carnet": "Książeczka startowa",
+      "licence": "Licencja",
+      "passeportCheval": "Paszport konia"
+    }
   }
 }

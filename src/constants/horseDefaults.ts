@@ -1,6 +1,6 @@
-import { MountCategory, ObstacleType, Terrain, SpeedLevel } from '../types';
+import { HorseCategory, ObstacleType, Terrain, SpeedLevel } from '../types';
 
-export const CATEGORY_LABELS: Record<MountCategory, string> = {
+export const CATEGORY_LABELS: Record<HorseCategory, string> = {
   PoneyD: 'Poney D',
   PoneyC: 'Poney C',
   PoneyB: 'Poney B',
@@ -8,10 +8,10 @@ export const CATEGORY_LABELS: Record<MountCategory, string> = {
   Cheval: 'Cheval',
 };
 
-export const CATEGORY_ORDER: MountCategory[] = ['PoneyD', 'PoneyC', 'PoneyB', 'PoneyA', 'Cheval'];
+export const CATEGORY_ORDER: HorseCategory[] = ['PoneyD', 'PoneyC', 'PoneyB', 'PoneyA', 'Cheval'];
 
 // Foulée par défaut (m), vitesse standard, terrain plat.
-export const DEFAULT_STRIDE_LENGTH: Record<MountCategory, number> = {
+export const DEFAULT_STRIDE_LENGTH: Record<HorseCategory, number> = {
   PoneyD: 3.0,
   PoneyC: 3.2,
   PoneyB: 3.35,
@@ -21,7 +21,7 @@ export const DEFAULT_STRIDE_LENGTH: Record<MountCategory, number> = {
 
 // Allocation fixe réception + impulsion (m), utilisée pour convertir une distance
 // en nombre de foulées : distance = allocationFixe + (nbFoulées - 1) * foulée.
-export const DEFAULT_FIXED_ALLOWANCE: Record<MountCategory, number> = {
+export const DEFAULT_FIXED_ALLOWANCE: Record<HorseCategory, number> = {
   PoneyD: 2.4,
   PoneyC: 2.8,
   PoneyB: 3.2,
@@ -75,3 +75,6 @@ export function combinationKey(from: ObstacleType, to: ObstacleType): string {
 // Ajustement (m) de l'allocation fixe par tranche de hauteur au-delà de 1,10 m.
 export const HEIGHT_ADJUSTMENT_STEP = 0.02; // m ajoutés par tranche de 10 cm
 export const HEIGHT_ADJUSTMENT_THRESHOLD = 1.1; // m, hauteur de référence sans ajustement
+
+// Nombre de foulées proposées par défaut dans le tableau de contrat de foulées (module Exercices).
+export const EXERCISE_STRIDE_RANGE = [0, 1, 2, 3, 4, 5, 6];

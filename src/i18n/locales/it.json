@@ -9,7 +9,10 @@
     "converter": "Convertitore",
     "combinations": "Combinazioni",
     "mounts": "Cavalli",
-    "chrono": "Cronometro"
+    "chrono": "Cronometro",
+    "exercises": "Esercizi",
+    "metronome": "Metronomo",
+    "checklist": "Lista"
   },
   "converter": {
     "title": "Convertitore passi → falcate",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Tempo consentito",
     "hintNoInput": "Inserisci la lunghezza del percorso e la velocità."
   },
-  "mountPicker": {
-    "label": "Cavallo",
-    "empty": "Nessun cavallo salvato. Aggiungine uno nella scheda Cavalli."
-  },
   "categories": {
     "PoneyD": "Pony D",
     "PoneyC": "Pony C",
@@ -106,5 +105,51 @@
     "metric": "Metrico (m, cm)",
     "imperial": "Imperiale (ft, in)",
     "darkMode": "Modalità scura"
+  },
+  "horsePicker": {
+    "label": "Cavallo",
+    "empty": "Nessun cavallo salvato. Aggiungine uno nella scheda Cavalli."
+  },
+  "exercises": {
+    "title": "Libreria di esercizi",
+    "subtitle": "Prepara le tue linee di barre a terra o cavalletti: distanze esatte per ogni numero di falcate.",
+    "heightLabel": "Altezza delle barre",
+    "tableTitle": "Schema di falcate",
+    "strideCount_one": "{{count}} falcata",
+    "strideCount_other": "{{count}} falcate"
+  },
+  "metronome": {
+    "title": "Metronomo del galoppo",
+    "subtitle": "Memorizza la cadenza giusta prima di entrare in campo.",
+    "speedLabel": "Velocità",
+    "resultTitle": "Cadenza",
+    "cadenceLabel": "Falcate al minuto",
+    "start": "Avvia",
+    "stop": "Ferma",
+    "hintNoSpeed": "Inserisci una velocità valida.",
+    "hintNoMount": "Seleziona o crea un cavallo."
+  },
+  "checklist": {
+    "title": "Lista da concorso",
+    "subtitle": "Controlla di non dimenticare nulla prima di partire.",
+    "sectionHorse": "Materiale del cavallo",
+    "sectionRider": "Materiale del cavaliere",
+    "sectionPapers": "Documenti",
+    "resetButton": "Reimposta lista",
+    "items": {
+      "protections": "Protezioni",
+      "licol": "Capezza",
+      "filet": "Briglia",
+      "tapis": "Sottosella",
+      "selle": "Sella",
+      "bombe": "Casco",
+      "bottes": "Stivali",
+      "pantalonBlanc": "Pantaloni bianchi",
+      "veste": "Giacca",
+      "cravache": "Frustino",
+      "carnet": "Libretto",
+      "licence": "Licenza",
+      "passeportCheval": "Passaporto del cavallo"
+    }
   }
 }

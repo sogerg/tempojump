@@ -9,7 +9,10 @@
     "converter": "Omzetter",
     "combinations": "Combinaties",
     "mounts": "Paarden",
-    "chrono": "Tijdklok"
+    "chrono": "Tijdklok",
+    "exercises": "Oefeningen",
+    "metronome": "Metronoom",
+    "checklist": "Checklist"
   },
   "converter": {
     "title": "Omzetter stappen → galopsprongen",
@@ -78,10 +81,6 @@
     "allowedTimeLabel": "Toegestane tijd",
     "hintNoInput": "Voer de lengte van het parcours en de snelheid in."
   },
-  "mountPicker": {
-    "label": "Paard",
-    "empty": "Nog geen paard opgeslagen. Voeg er een toe in het tabblad Paarden."
-  },
   "categories": {
     "PoneyD": "Pony D",
     "PoneyC": "Pony C",
@@ -106,5 +105,51 @@
     "metric": "Metrisch (m, cm)",
     "imperial": "Imperiaal (ft, in)",
     "darkMode": "Donkere modus"
+  },
+  "horsePicker": {
+    "label": "Paard",
+    "empty": "Nog geen paard opgeslagen. Voeg er een toe in het tabblad Paarden."
+  },
+  "exercises": {
+    "title": "Oefenbibliotheek",
+    "subtitle": "Stel je lijnen met grondstangen of cavaletti's in: exacte afstanden voor elk aantal galopsprongen.",
+    "heightLabel": "Hoogte van de stangen",
+    "tableTitle": "Galopsprongpatroon",
+    "strideCount_one": "{{count}} galopsprong",
+    "strideCount_other": "{{count}} galopsprongen"
+  },
+  "metronome": {
+    "title": "Galopmetronoom",
+    "subtitle": "Onthoud het juiste ritme voordat je de piste betreedt.",
+    "speedLabel": "Snelheid",
+    "resultTitle": "Cadans",
+    "cadenceLabel": "Galopsprongen per minuut",
+    "start": "Start",
+    "stop": "Stop",
+    "hintNoSpeed": "Voer een geldige snelheid in.",
+    "hintNoMount": "Selecteer of maak een paard aan."
+  },
+  "checklist": {
+    "title": "Wedstrijdchecklist",
+    "subtitle": "Controleer of je niets vergeet voordat je vertrekt.",
+    "sectionHorse": "Materiaal paard",
+    "sectionRider": "Materiaal ruiter",
+    "sectionPapers": "Papieren",
+    "resetButton": "Lijst resetten",
+    "items": {
+      "protections": "Beenbeschermers",
+      "licol": "Halster",
+      "filet": "Hoofdstel",
+      "tapis": "Zadeldek",
+      "selle": "Zadel",
+      "bombe": "Cap",
+      "bottes": "Rijlaarzen",
+      "pantalonBlanc": "Witte rijbroek",
+      "veste": "Jasje",
+      "cravache": "Zweep",
+      "carnet": "Wedstrijdboekje",
+      "licence": "Licentie",
+      "passeportCheval": "Paspoort paard"
+    }
   }
 }
