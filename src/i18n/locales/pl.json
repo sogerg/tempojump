@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Anuluj",
+    "save": "Zapisz",
+    "delete": "Usuń",
+    "close": "Zamknij"
+  },
+  "nav": {
+    "converter": "Przelicznik",
+    "combinations": "Kombinacje",
+    "mounts": "Konie",
+    "chrono": "Stoper"
+  },
+  "converter": {
+    "title": "Przelicznik kroków → cwałów",
+    "subtitle": "Wprowadź liczbę kroków policzonych między dwiema przeszkodami, aby uzyskać teoretyczną liczbę cwałów.",
+    "stepsLabel": "Liczba policzonych kroków",
+    "stepsPlaceholder": "np. 24",
+    "terrainLabel": "Teren",
+    "speedLabel": "Prędkość",
+    "resultTitle": "Wynik",
+    "distance": "Pokonany dystans",
+    "effectiveStride": "Efektywny cwał",
+    "theoreticalStrides": "Teoretyczne cwały",
+    "suggestedStrides": "Sugerowane cwały",
+    "hintNoSteps": "Wprowadź liczbę kroków, aby zobaczyć wynik.",
+    "hintNoMount": "Wybierz lub utwórz konia."
+  },
+  "combination": {
+    "title": "Kalkulator kombinacji",
+    "subtitle": "Dokładna odległość do ustawienia między dwoma elementami kombinacji (podwójnej, potrójnej).",
+    "fromLabel": "1. element (odbicie)",
+    "toLabel": "2. element (lądowanie)",
+    "heightLabel": "Wysokość przeszkód",
+    "targetStridesLabel": "Pożądane cwały",
+    "bounce": "Bez cwału",
+    "oneStride": "1 cwał",
+    "twoStrides": "2 cwały",
+    "threeStrides": "3 cwały",
+    "resultTitle": "Wynik",
+    "effectiveStride": "Efektywny cwał",
+    "adjustedAllowance": "Skorygowany naddatek",
+    "distanceToSet": "Odległość do ustawienia",
+    "hintNoHeight": "Wprowadź wysokość przeszkód.",
+    "hintNoMount": "Wybierz lub utwórz konia."
+  },
+  "mounts": {
+    "title": "Moje konie",
+    "delete": "Usuń",
+    "addTitle": "Dodaj konia",
+    "nameLabel": "Imię",
+    "namePlaceholder": "np. Voltigeur",
+    "categoryLabel": "Kategoria",
+    "strideLengthLabel": "Domyślna długość cwału",
+    "addButton": "Dodaj konia",
+    "missingFieldsTitle": "Brakujące pola",
+    "missingFieldsMessage": "Wprowadź prawidłowe imię i długość cwału.",
+    "deleteConfirmTitle": "Usuń konia",
+    "deleteConfirmMessage": "Usunąć \"{{name}}\"?",
+    "calibrationTitle": "Kalibracja kroku jeźdźca",
+    "calibrationSubtitle": "Przejdź znaną liczbę kroków na zmierzonym dystansie, aby obliczyć średnią długość kroku.",
+    "calibrationDistanceLabel": "Zmierzony dystans",
+    "calibrationStepsLabel": "Liczba kroków",
+    "calibrationResultTitle": "Obliczona długość kroku",
+    "riderStepLabel": "Krok jeźdźca",
+    "saveAsRiderStep": "Zapisz jako krok jeźdźca",
+    "currentRiderStepTitle": "Aktualny krok jeźdźca",
+    "currentRiderStepLabel": "Długość kroku"
+  },
+  "chrono": {
+    "title": "Czas dozwolony",
+    "subtitle": "Oblicz czas dozwolony na podstawie długości parkuru i narzuconej prędkości.",
+    "lengthLabel": "Długość parkuru",
+    "lengthPlaceholder": "np. 420",
+    "speedLabel": "Narzucona prędkość",
+    "speedPlaceholder": "np. 350",
+    "resultTitle": "Wynik",
+    "allowedTimeLabel": "Czas dozwolony",
+    "hintNoInput": "Wprowadź długość parkuru i prędkość."
+  },
+  "mountPicker": {
+    "label": "Koń",
+    "empty": "Brak zapisanych koni. Dodaj jednego w zakładce Konie."
+  },
+  "categories": {
+    "PoneyD": "Kucyk D",
+    "PoneyC": "Kucyk C",
+    "PoneyB": "Kucyk B",
+    "PoneyA": "Kucyk A",
+    "Cheval": "Koń"
+  },
+  "terrain": {
+    "Plat": "Płaski",
+    "Montant": "Pod górę",
+    "Descendant": "Z górki",
+    "Lourd": "Ciężki / błotnisty grunt"
+  },
+  "speed": {
+    "Standard": "Standardowa (~350 m/min)",
+    "Elite": "Elita / Rozgrywka (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "language": "Język",
+    "units": "Jednostki",
+    "metric": "Metryczne (m, cm)",
+    "imperial": "Imperialne (ft, in)",
+    "darkMode": "Tryb ciemny"
+  }
+}

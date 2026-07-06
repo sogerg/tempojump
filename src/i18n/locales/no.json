@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Avbryt",
+    "save": "Lagre",
+    "delete": "Slett",
+    "close": "Lukk"
+  },
+  "nav": {
+    "converter": "Omregner",
+    "combinations": "Kombinasjoner",
+    "mounts": "Hester",
+    "chrono": "Tidtaking"
+  },
+  "converter": {
+    "title": "Omregner skritt → galoppsprang",
+    "subtitle": "Angi antall skritt talt mellom to hindre for å få det teoretiske antallet galoppsprang.",
+    "stepsLabel": "Antall talte skritt",
+    "stepsPlaceholder": "f.eks. 24",
+    "terrainLabel": "Underlag",
+    "speedLabel": "Fart",
+    "resultTitle": "Resultat",
+    "distance": "Tilbakelagt distanse",
+    "effectiveStride": "Effektivt galoppsprang",
+    "theoreticalStrides": "Teoretiske galoppsprang",
+    "suggestedStrides": "Foreslåtte galoppsprang",
+    "hintNoSteps": "Angi antall skritt for å se resultatet.",
+    "hintNoMount": "Velg eller opprett en hest."
+  },
+  "combination": {
+    "title": "Kombinasjonskalkulator",
+    "subtitle": "Nøyaktig avstand som skal settes mellom to elementer i en kombinasjon (dobbel, trippel).",
+    "fromLabel": "1. element (avspark)",
+    "toLabel": "2. element (landing)",
+    "heightLabel": "Hinderhøyde",
+    "targetStridesLabel": "Ønsket antall galoppsprang",
+    "bounce": "Uten galoppsprang",
+    "oneStride": "1 galoppsprang",
+    "twoStrides": "2 galoppsprang",
+    "threeStrides": "3 galoppsprang",
+    "resultTitle": "Resultat",
+    "effectiveStride": "Effektivt galoppsprang",
+    "adjustedAllowance": "Justert margin",
+    "distanceToSet": "Avstand som skal settes",
+    "hintNoHeight": "Angi hinderhøyden.",
+    "hintNoMount": "Velg eller opprett en hest."
+  },
+  "mounts": {
+    "title": "Mine hester",
+    "delete": "Slett",
+    "addTitle": "Legg til hest",
+    "nameLabel": "Navn",
+    "namePlaceholder": "f.eks. Voltigeur",
+    "categoryLabel": "Kategori",
+    "strideLengthLabel": "Standard galoppspranglengde",
+    "addButton": "Legg til hest",
+    "missingFieldsTitle": "Manglende felt",
+    "missingFieldsMessage": "Angi et gyldig navn og en gyldig galoppspranglengde.",
+    "deleteConfirmTitle": "Slett hest",
+    "deleteConfirmMessage": "Slette \"{{name}}\"?",
+    "calibrationTitle": "Kalibrering av rytterens skritt",
+    "calibrationSubtitle": "Gå et kjent antall skritt over en oppmålt distanse for å beregne din gjennomsnittlige skrittlengde.",
+    "calibrationDistanceLabel": "Oppmålt distanse",
+    "calibrationStepsLabel": "Antall skritt",
+    "calibrationResultTitle": "Beregnet skrittlengde",
+    "riderStepLabel": "Rytterens skritt",
+    "saveAsRiderStep": "Lagre som rytterens skritt",
+    "currentRiderStepTitle": "Nåværende rytterskritt",
+    "currentRiderStepLabel": "Skrittlengde"
+  },
+  "chrono": {
+    "title": "Tillatt tid",
+    "subtitle": "Beregn tillatt tid ut fra banens lengde og den pålagte hastigheten.",
+    "lengthLabel": "Banens lengde",
+    "lengthPlaceholder": "f.eks. 420",
+    "speedLabel": "Pålagt hastighet",
+    "speedPlaceholder": "f.eks. 350",
+    "resultTitle": "Resultat",
+    "allowedTimeLabel": "Tillatt tid",
+    "hintNoInput": "Angi banens lengde og hastigheten."
+  },
+  "mountPicker": {
+    "label": "Hest",
+    "empty": "Ingen hest lagret ennå. Legg til en under fanen Hester."
+  },
+  "categories": {
+    "PoneyD": "Ponni D",
+    "PoneyC": "Ponni C",
+    "PoneyB": "Ponni B",
+    "PoneyA": "Ponni A",
+    "Cheval": "Hest"
+  },
+  "terrain": {
+    "Plat": "Flatt",
+    "Montant": "Oppoverbakke",
+    "Descendant": "Nedoverbakke",
+    "Lourd": "Tung / gjørmete mark"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Elite / Omhopping (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Innstillinger",
+    "language": "Språk",
+    "units": "Enheter",
+    "metric": "Metrisk (m, cm)",
+    "imperial": "Britisk (ft, in)",
+    "darkMode": "Mørk modus"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Peruuta",
+    "save": "Tallenna",
+    "delete": "Poista",
+    "close": "Sulje"
+  },
+  "nav": {
+    "converter": "Muunnin",
+    "combinations": "Yhdistelmät",
+    "mounts": "Hevoset",
+    "chrono": "Ajanotto"
+  },
+  "converter": {
+    "title": "Askel → laukka-askel -muunnin",
+    "subtitle": "Syötä kahden esteen välillä laskettujen askelten määrä saadaksesi teoreettisen laukka-askelten määrän.",
+    "stepsLabel": "Laskettujen askelten määrä",
+    "stepsPlaceholder": "esim. 24",
+    "terrainLabel": "Maasto",
+    "speedLabel": "Nopeus",
+    "resultTitle": "Tulos",
+    "distance": "Kuljettu matka",
+    "effectiveStride": "Tehollinen laukka-askel",
+    "theoreticalStrides": "Teoreettiset laukka-askeleet",
+    "suggestedStrides": "Suositellut laukka-askeleet",
+    "hintNoSteps": "Syötä askelten määrä nähdäksesi tuloksen.",
+    "hintNoMount": "Valitse tai luo hevonen."
+  },
+  "combination": {
+    "title": "Yhdistelmälaskuri",
+    "subtitle": "Tarkka etäisyys, joka asetetaan yhdistelmän (tupla, tripla) kahden osan väliin.",
+    "fromLabel": "1. este (ponnistus)",
+    "toLabel": "2. este (laskeutuminen)",
+    "heightLabel": "Esteiden korkeus",
+    "targetStridesLabel": "Halutut laukka-askeleet",
+    "bounce": "Ilman laukka-askelta",
+    "oneStride": "1 laukka-askel",
+    "twoStrides": "2 laukka-askelta",
+    "threeStrides": "3 laukka-askelta",
+    "resultTitle": "Tulos",
+    "effectiveStride": "Tehollinen laukka-askel",
+    "adjustedAllowance": "Säädetty marginaali",
+    "distanceToSet": "Asetettava etäisyys",
+    "hintNoHeight": "Syötä esteiden korkeus.",
+    "hintNoMount": "Valitse tai luo hevonen."
+  },
+  "mounts": {
+    "title": "Omat hevoseni",
+    "delete": "Poista",
+    "addTitle": "Lisää hevonen",
+    "nameLabel": "Nimi",
+    "namePlaceholder": "esim. Voltigeur",
+    "categoryLabel": "Kategoria",
+    "strideLengthLabel": "Oletuslaukka-askeleen pituus",
+    "addButton": "Lisää hevonen",
+    "missingFieldsTitle": "Puuttuvia tietoja",
+    "missingFieldsMessage": "Syötä kelvollinen nimi ja laukka-askeleen pituus.",
+    "deleteConfirmTitle": "Poista hevonen",
+    "deleteConfirmMessage": "Poistetaanko \"{{name}}\"?",
+    "calibrationTitle": "Ratsastajan askeleen kalibrointi",
+    "calibrationSubtitle": "Kävele tunnettu määrä askelia mitatulla matkalla laskeaksesi keskimääräisen askelpituutesi.",
+    "calibrationDistanceLabel": "Mitattu matka",
+    "calibrationStepsLabel": "Askelten määrä",
+    "calibrationResultTitle": "Laskettu askelpituus",
+    "riderStepLabel": "Ratsastajan askel",
+    "saveAsRiderStep": "Tallenna ratsastajan askeleeksi",
+    "currentRiderStepTitle": "Nykyinen ratsastajan askel",
+    "currentRiderStepLabel": "Askelpituus"
+  },
+  "chrono": {
+    "title": "Sallittu aika",
+    "subtitle": "Laske sallittu aika radan pituuden ja vaaditun nopeuden perusteella.",
+    "lengthLabel": "Radan pituus",
+    "lengthPlaceholder": "esim. 420",
+    "speedLabel": "Vaadittu nopeus",
+    "speedPlaceholder": "esim. 350",
+    "resultTitle": "Tulos",
+    "allowedTimeLabel": "Sallittu aika",
+    "hintNoInput": "Syötä radan pituus ja nopeus."
+  },
+  "mountPicker": {
+    "label": "Hevonen",
+    "empty": "Yhtään hevosta ei ole vielä tallennettu. Lisää yksi Hevoset-välilehdellä."
+  },
+  "categories": {
+    "PoneyD": "Poni D",
+    "PoneyC": "Poni C",
+    "PoneyB": "Poni B",
+    "PoneyA": "Poni A",
+    "Cheval": "Hevonen"
+  },
+  "terrain": {
+    "Plat": "Tasainen",
+    "Montant": "Ylämäki",
+    "Descendant": "Alamäki",
+    "Lourd": "Raskas / mutainen maasto"
+  },
+  "speed": {
+    "Standard": "Vakio (~350 m/min)",
+    "Elite": "Eliitti / Uusinta (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Asetukset",
+    "language": "Kieli",
+    "units": "Yksiköt",
+    "metric": "Metrinen (m, cm)",
+    "imperial": "Imperiaalinen (ft, in)",
+    "darkMode": "Tumma tila"
+  }
+}

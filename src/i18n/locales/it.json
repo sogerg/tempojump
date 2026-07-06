@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Annulla",
+    "save": "Salva",
+    "delete": "Elimina",
+    "close": "Chiudi"
+  },
+  "nav": {
+    "converter": "Convertitore",
+    "combinations": "Combinazioni",
+    "mounts": "Cavalli",
+    "chrono": "Cronometro"
+  },
+  "converter": {
+    "title": "Convertitore passi → falcate",
+    "subtitle": "Inserisci il numero di passi contati tra due ostacoli per ottenere il numero teorico di falcate.",
+    "stepsLabel": "Numero di passi contati",
+    "stepsPlaceholder": "es: 24",
+    "terrainLabel": "Terreno",
+    "speedLabel": "Velocità",
+    "resultTitle": "Risultato",
+    "distance": "Distanza percorsa",
+    "effectiveStride": "Falcata effettiva",
+    "theoreticalStrides": "Falcate teoriche",
+    "suggestedStrides": "Falcate consigliate",
+    "hintNoSteps": "Inserisci il numero di passi per vedere il risultato.",
+    "hintNoMount": "Seleziona o crea un cavallo."
+  },
+  "combination": {
+    "title": "Calcolatore di combinazioni",
+    "subtitle": "Distanza esatta da impostare tra due elementi di una combinazione (doppio, triplo).",
+    "fromLabel": "1° elemento (stacco)",
+    "toLabel": "2° elemento (atterraggio)",
+    "heightLabel": "Altezza degli ostacoli",
+    "targetStridesLabel": "Falcate desiderate",
+    "bounce": "Senza falcata",
+    "oneStride": "1 falcata",
+    "twoStrides": "2 falcate",
+    "threeStrides": "3 falcate",
+    "resultTitle": "Risultato",
+    "effectiveStride": "Falcata effettiva",
+    "adjustedAllowance": "Regolazione applicata",
+    "distanceToSet": "Distanza da impostare",
+    "hintNoHeight": "Inserisci l'altezza degli ostacoli.",
+    "hintNoMount": "Seleziona o crea un cavallo."
+  },
+  "mounts": {
+    "title": "I miei cavalli",
+    "delete": "Elimina",
+    "addTitle": "Aggiungi un cavallo",
+    "nameLabel": "Nome",
+    "namePlaceholder": "es: Voltigeur",
+    "categoryLabel": "Categoria",
+    "strideLengthLabel": "Lunghezza di falcata predefinita",
+    "addButton": "Aggiungi cavallo",
+    "missingFieldsTitle": "Campi mancanti",
+    "missingFieldsMessage": "Inserisci un nome e una lunghezza di falcata validi.",
+    "deleteConfirmTitle": "Elimina cavallo",
+    "deleteConfirmMessage": "Eliminare \"{{name}}\"?",
+    "calibrationTitle": "Calibrazione del passo del cavaliere",
+    "calibrationSubtitle": "Cammina un numero noto di passi su una distanza misurata per calcolare la lunghezza media del tuo passo.",
+    "calibrationDistanceLabel": "Distanza misurata",
+    "calibrationStepsLabel": "Numero di passi",
+    "calibrationResultTitle": "Lunghezza del passo calcolata",
+    "riderStepLabel": "Passo del cavaliere",
+    "saveAsRiderStep": "Salva come passo del cavaliere",
+    "currentRiderStepTitle": "Passo del cavaliere attuale",
+    "currentRiderStepLabel": "Lunghezza del passo"
+  },
+  "chrono": {
+    "title": "Tempo consentito",
+    "subtitle": "Calcola il tempo consentito a partire dalla lunghezza del percorso e dalla velocità imposta.",
+    "lengthLabel": "Lunghezza del percorso",
+    "lengthPlaceholder": "es: 420",
+    "speedLabel": "Velocità imposta",
+    "speedPlaceholder": "es: 350",
+    "resultTitle": "Risultato",
+    "allowedTimeLabel": "Tempo consentito",
+    "hintNoInput": "Inserisci la lunghezza del percorso e la velocità."
+  },
+  "mountPicker": {
+    "label": "Cavallo",
+    "empty": "Nessun cavallo salvato. Aggiungine uno nella scheda Cavalli."
+  },
+  "categories": {
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
+    "Cheval": "Cavallo"
+  },
+  "terrain": {
+    "Plat": "Pianeggiante",
+    "Montant": "In salita",
+    "Descendant": "In discesa",
+    "Lourd": "Terreno pesante / fangoso"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Élite / Barrage (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "units": "Unità",
+    "metric": "Metrico (m, cm)",
+    "imperial": "Imperiale (ft, in)",
+    "darkMode": "Modalità scura"
+  }
+}

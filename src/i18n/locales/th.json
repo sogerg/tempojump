@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "ยกเลิก",
+    "save": "บันทึก",
+    "delete": "ลบ",
+    "close": "ปิด"
+  },
+  "nav": {
+    "converter": "ตัวแปลง",
+    "combinations": "ชุดสิ่งกีดขวาง",
+    "mounts": "ม้า",
+    "chrono": "จับเวลา"
+  },
+  "converter": {
+    "title": "ตัวแปลงจำนวนก้าว → จังหวะม้าวิ่ง",
+    "subtitle": "ป้อนจำนวนก้าวที่นับได้ระหว่างสิ่งกีดขวางสองอันเพื่อดูจำนวนจังหวะม้าวิ่งทางทฤษฎี",
+    "stepsLabel": "จำนวนก้าวที่นับได้",
+    "stepsPlaceholder": "เช่น 24",
+    "terrainLabel": "สภาพพื้น",
+    "speedLabel": "ความเร็ว",
+    "resultTitle": "ผลลัพธ์",
+    "distance": "ระยะทางที่เดิน",
+    "effectiveStride": "จังหวะม้าวิ่งที่แท้จริง",
+    "theoreticalStrides": "จังหวะม้าวิ่งทางทฤษฎี",
+    "suggestedStrides": "จังหวะม้าวิ่งที่แนะนำ",
+    "hintNoSteps": "ป้อนจำนวนก้าวเพื่อดูผลลัพธ์",
+    "hintNoMount": "เลือกหรือสร้างม้า"
+  },
+  "combination": {
+    "title": "เครื่องคำนวณชุดสิ่งกีดขวาง",
+    "subtitle": "ระยะทางที่แน่นอนที่ต้องตั้งระหว่างสองส่วนของชุดสิ่งกีดขวาง (คู่ สาม)",
+    "fromLabel": "ส่วนที่ 1 (จุดกระโดดขึ้น)",
+    "toLabel": "ส่วนที่ 2 (จุดลงพื้น)",
+    "heightLabel": "ความสูงของสิ่งกีดขวาง",
+    "targetStridesLabel": "จำนวนจังหวะม้าวิ่งที่ต้องการ",
+    "bounce": "ไม่มีจังหวะคั่น",
+    "oneStride": "1 จังหวะ",
+    "twoStrides": "2 จังหวะ",
+    "threeStrides": "3 จังหวะ",
+    "resultTitle": "ผลลัพธ์",
+    "effectiveStride": "จังหวะม้าวิ่งที่แท้จริง",
+    "adjustedAllowance": "ระยะเผื่อที่ปรับแล้ว",
+    "distanceToSet": "ระยะทางที่ต้องตั้ง",
+    "hintNoHeight": "ป้อนความสูงของสิ่งกีดขวาง",
+    "hintNoMount": "เลือกหรือสร้างม้า"
+  },
+  "mounts": {
+    "title": "ม้าของฉัน",
+    "delete": "ลบ",
+    "addTitle": "เพิ่มม้า",
+    "nameLabel": "ชื่อ",
+    "namePlaceholder": "เช่น Voltigeur",
+    "categoryLabel": "ประเภท",
+    "strideLengthLabel": "ความยาวจังหวะม้าวิ่งเริ่มต้น",
+    "addButton": "เพิ่มม้า",
+    "missingFieldsTitle": "ข้อมูลไม่ครบ",
+    "missingFieldsMessage": "ป้อนชื่อและความยาวจังหวะม้าวิ่งที่ถูกต้อง",
+    "deleteConfirmTitle": "ลบม้า",
+    "deleteConfirmMessage": "ลบ \"{{name}}\" หรือไม่?",
+    "calibrationTitle": "ปรับเทียบความยาวก้าวของผู้ขี่",
+    "calibrationSubtitle": "เดินตามจำนวนก้าวที่ทราบบนระยะทางที่วัดไว้เพื่อคำนวณความยาวก้าวเฉลี่ยของคุณ",
+    "calibrationDistanceLabel": "ระยะทางที่วัดได้",
+    "calibrationStepsLabel": "จำนวนก้าว",
+    "calibrationResultTitle": "ความยาวก้าวที่คำนวณได้",
+    "riderStepLabel": "ความยาวก้าวของผู้ขี่",
+    "saveAsRiderStep": "บันทึกเป็นความยาวก้าวของผู้ขี่",
+    "currentRiderStepTitle": "ความยาวก้าวของผู้ขี่ปัจจุบัน",
+    "currentRiderStepLabel": "ความยาวก้าว"
+  },
+  "chrono": {
+    "title": "เวลาที่กำหนด",
+    "subtitle": "คำนวณเวลาที่กำหนดจากความยาวสนามและความเร็วที่กำหนด",
+    "lengthLabel": "ความยาวสนาม",
+    "lengthPlaceholder": "เช่น 420",
+    "speedLabel": "ความเร็วที่กำหนด",
+    "speedPlaceholder": "เช่น 350",
+    "resultTitle": "ผลลัพธ์",
+    "allowedTimeLabel": "เวลาที่กำหนด",
+    "hintNoInput": "ป้อนความยาวสนามและความเร็ว"
+  },
+  "mountPicker": {
+    "label": "ม้า",
+    "empty": "ยังไม่มีม้าที่บันทึกไว้ เพิ่มได้ที่แท็บม้า"
+  },
+  "categories": {
+    "PoneyD": "โพนี่ D",
+    "PoneyC": "โพนี่ C",
+    "PoneyB": "โพนี่ B",
+    "PoneyA": "โพนี่ A",
+    "Cheval": "ม้า"
+  },
+  "terrain": {
+    "Plat": "พื้นราบ",
+    "Montant": "ทางขึ้นเนิน",
+    "Descendant": "ทางลงเนิน",
+    "Lourd": "พื้นหนักหรือเป็นโคลน"
+  },
+  "speed": {
+    "Standard": "มาตรฐาน (~350 ม./นาที)",
+    "Elite": "ระดับสูง / รอบตัดสิน (~375 ม./นาทีขึ้นไป)"
+  },
+  "settings": {
+    "title": "ตั้งค่า",
+    "language": "ภาษา",
+    "units": "หน่วย",
+    "metric": "หน่วยเมตริก (ม., ซม.)",
+    "imperial": "หน่วยอิมพีเรียล (ฟุต, นิ้ว)",
+    "darkMode": "โหมดมืด"
+  }
+}

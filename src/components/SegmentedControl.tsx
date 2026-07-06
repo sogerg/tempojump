@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useSettings } from '../context/SettingsContext';
 
 interface SegmentedControlProps<T extends string> {
   options: { value: T; label: string }[];
@@ -12,17 +13,23 @@ export function SegmentedControl<T extends string>({
   value,
   onChange,
 }: SegmentedControlProps<T>) {
+  const { colors } = useSettings();
+
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { backgroundColor: colors.segmentBackground }]}>
       {options.map((option) => {
         const isActive = option.value === value;
         return (
           <TouchableOpacity
             key={option.value}
-            style={[styles.segment, isActive && styles.segmentActive]}
+            style={[styles.segment, isActive && { backgroundColor: colors.primary }]}
             onPress={() => onChange(option.value)}
           >
-            <Text style={[styles.label, isActive && styles.labelActive]}>{option.label}</Text>
+            <Text
+              style={[styles.label, { color: isActive ? colors.primaryText : colors.text }]}
+            >
+              {option.label}
+            </Text>
           </TouchableOpacity>
         );
       })}
@@ -34,7 +41,6 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    backgroundColor: '#eef1f4',
     borderRadius: 10,
     padding: 4,
     gap: 4,
@@ -44,15 +50,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     borderRadius: 8,
   },
-  segmentActive: {
-    backgroundColor: '#2f6f4f',
-  },
   label: {
     fontSize: 13,
-    color: '#333',
     fontWeight: '500',
-  },
-  labelActive: {
-    color: '#fff',
   },
 });

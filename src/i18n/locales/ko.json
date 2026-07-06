@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "취소",
+    "save": "저장",
+    "delete": "삭제",
+    "close": "닫기"
+  },
+  "nav": {
+    "converter": "변환기",
+    "combinations": "콤비네이션",
+    "mounts": "말",
+    "chrono": "타임 계산"
+  },
+  "converter": {
+    "title": "걸음 수 → 스트라이드 변환기",
+    "subtitle": "두 장애물 사이에서 센 걸음 수를 입력하면 이론적인 스트라이드 수를 알 수 있습니다.",
+    "stepsLabel": "센 걸음 수",
+    "stepsPlaceholder": "예: 24",
+    "terrainLabel": "지면 상태",
+    "speedLabel": "속도",
+    "resultTitle": "결과",
+    "distance": "이동 거리",
+    "effectiveStride": "유효 스트라이드",
+    "theoreticalStrides": "이론적 스트라이드 수",
+    "suggestedStrides": "권장 스트라이드 수",
+    "hintNoSteps": "걸음 수를 입력하면 결과가 표시됩니다.",
+    "hintNoMount": "말을 선택하거나 추가하세요."
+  },
+  "combination": {
+    "title": "콤비네이션 계산기",
+    "subtitle": "콤비네이션(더블, 트리플)의 두 요소 사이에 설정할 정확한 거리.",
+    "fromLabel": "첫 번째 요소 (이륙)",
+    "toLabel": "두 번째 요소 (착지)",
+    "heightLabel": "장애물 높이",
+    "targetStridesLabel": "원하는 스트라이드 수",
+    "bounce": "논스트라이드",
+    "oneStride": "1 스트라이드",
+    "twoStrides": "2 스트라이드",
+    "threeStrides": "3 스트라이드",
+    "resultTitle": "결과",
+    "effectiveStride": "유효 스트라이드",
+    "adjustedAllowance": "조정된 여유 거리",
+    "distanceToSet": "설정할 거리",
+    "hintNoHeight": "장애물 높이를 입력하세요.",
+    "hintNoMount": "말을 선택하거나 추가하세요."
+  },
+  "mounts": {
+    "title": "내 말",
+    "delete": "삭제",
+    "addTitle": "말 추가",
+    "nameLabel": "이름",
+    "namePlaceholder": "예: Voltigeur",
+    "categoryLabel": "카테고리",
+    "strideLengthLabel": "기본 스트라이드 길이",
+    "addButton": "말 추가",
+    "missingFieldsTitle": "입력 정보 부족",
+    "missingFieldsMessage": "유효한 이름과 스트라이드 길이를 입력하세요.",
+    "deleteConfirmTitle": "말 삭제",
+    "deleteConfirmMessage": "\"{{name}}\"을(를) 삭제하시겠습니까?",
+    "calibrationTitle": "라이더 보폭 보정",
+    "calibrationSubtitle": "측정된 거리를 알려진 걸음 수로 걸어서 평균 보폭을 계산하세요.",
+    "calibrationDistanceLabel": "측정된 거리",
+    "calibrationStepsLabel": "걸음 수",
+    "calibrationResultTitle": "계산된 보폭",
+    "riderStepLabel": "라이더 보폭",
+    "saveAsRiderStep": "라이더 보폭으로 저장",
+    "currentRiderStepTitle": "현재 라이더 보폭",
+    "currentRiderStepLabel": "보폭"
+  },
+  "chrono": {
+    "title": "허용 시간",
+    "subtitle": "코스 길이와 지정 속도로 허용 시간을 계산합니다.",
+    "lengthLabel": "코스 길이",
+    "lengthPlaceholder": "예: 420",
+    "speedLabel": "지정 속도",
+    "speedPlaceholder": "예: 350",
+    "resultTitle": "결과",
+    "allowedTimeLabel": "허용 시간",
+    "hintNoInput": "코스 길이와 속도를 입력하세요."
+  },
+  "mountPicker": {
+    "label": "말",
+    "empty": "저장된 말이 없습니다. '말' 탭에서 추가하세요."
+  },
+  "categories": {
+    "PoneyD": "포니 D",
+    "PoneyC": "포니 C",
+    "PoneyB": "포니 B",
+    "PoneyA": "포니 A",
+    "Cheval": "말"
+  },
+  "terrain": {
+    "Plat": "평지",
+    "Montant": "오르막",
+    "Descendant": "내리막",
+    "Lourd": "무겁거나 진흙땅"
+  },
+  "speed": {
+    "Standard": "표준 (~350 m/분)",
+    "Elite": "엘리트 / 점프오프 (~375 m/분 이상)"
+  },
+  "settings": {
+    "title": "설정",
+    "language": "언어",
+    "units": "단위",
+    "metric": "미터법 (m, cm)",
+    "imperial": "야드파운드법 (ft, in)",
+    "darkMode": "다크 모드"
+  }
+}

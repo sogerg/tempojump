@@ -1,0 +1,32 @@
+export type UnitSystem = 'metric' | 'imperial';
+
+const METERS_PER_FOOT = 0.3048;
+const INCHES_PER_METER = 39.3700787;
+
+/** Convertit une valeur saisie par l'utilisateur (dans son système d'unités) en mètres. */
+export function toMeters(value: number, unitSystem: UnitSystem): number {
+  return unitSystem === 'imperial' ? value * METERS_PER_FOOT : value;
+}
+
+/** Convertit des mètres vers la valeur à afficher dans le champ de saisie (m ou ft décimal). */
+export function fromMeters(meters: number, unitSystem: UnitSystem): number {
+  return unitSystem === 'imperial' ? meters / METERS_PER_FOOT : meters;
+}
+
+export function inputUnitSuffix(unitSystem: UnitSystem): string {
+  return unitSystem === 'imperial' ? 'ft' : 'm';
+}
+
+/** Formate une longueur en mètres pour l'affichage, dans le système d'unités choisi. */
+export function formatLength(meters: number, unitSystem: UnitSystem): string {
+  if (unitSystem === 'metric') {
+    if (Math.abs(meters) < 1) return `${(meters * 100).toFixed(0)} cm`;
+    return `${meters.toFixed(2)} m`;
+  }
+
+  const totalInches = meters * INCHES_PER_METER;
+  const feet = Math.trunc(totalInches / 12);
+  const inches = Math.abs(totalInches - feet * 12);
+  if (feet === 0) return `${totalInches.toFixed(1)} in`;
+  return `${feet} ft ${inches.toFixed(1)} in`;
+}

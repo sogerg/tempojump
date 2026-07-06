@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "delete": "Verwijderen",
+    "close": "Sluiten"
+  },
+  "nav": {
+    "converter": "Omzetter",
+    "combinations": "Combinaties",
+    "mounts": "Paarden",
+    "chrono": "Tijdklok"
+  },
+  "converter": {
+    "title": "Omzetter stappen → galopsprongen",
+    "subtitle": "Voer het aantal getelde stappen tussen twee hindernissen in om het theoretische aantal galopsprongen te krijgen.",
+    "stepsLabel": "Aantal getelde stappen",
+    "stepsPlaceholder": "bijv. 24",
+    "terrainLabel": "Terrein",
+    "speedLabel": "Snelheid",
+    "resultTitle": "Resultaat",
+    "distance": "Afgelegde afstand",
+    "effectiveStride": "Effectieve galopsprong",
+    "theoreticalStrides": "Theoretische galopsprongen",
+    "suggestedStrides": "Voorgestelde galopsprongen",
+    "hintNoSteps": "Voer het aantal stappen in om het resultaat te zien.",
+    "hintNoMount": "Selecteer of maak een paard aan."
+  },
+  "combination": {
+    "title": "Combinatiecalculator",
+    "subtitle": "Exacte afstand tussen twee elementen van een combinatie (dubbel, driedubbel).",
+    "fromLabel": "1e element (afsprong)",
+    "toLabel": "2e element (landing)",
+    "heightLabel": "Hoogte van de hindernissen",
+    "targetStridesLabel": "Gewenste galopsprongen",
+    "bounce": "Zonder tussensprong",
+    "oneStride": "1 galopsprong",
+    "twoStrides": "2 galopsprongen",
+    "threeStrides": "3 galopsprongen",
+    "resultTitle": "Resultaat",
+    "effectiveStride": "Effectieve galopsprong",
+    "adjustedAllowance": "Aangepaste marge",
+    "distanceToSet": "In te stellen afstand",
+    "hintNoHeight": "Voer de hoogte van de hindernissen in.",
+    "hintNoMount": "Selecteer of maak een paard aan."
+  },
+  "mounts": {
+    "title": "Mijn paarden",
+    "delete": "Verwijderen",
+    "addTitle": "Paard toevoegen",
+    "nameLabel": "Naam",
+    "namePlaceholder": "bijv. Voltigeur",
+    "categoryLabel": "Categorie",
+    "strideLengthLabel": "Standaard galopspronglengte",
+    "addButton": "Paard toevoegen",
+    "missingFieldsTitle": "Ontbrekende velden",
+    "missingFieldsMessage": "Voer een naam en een geldige galopspronglengte in.",
+    "deleteConfirmTitle": "Paard verwijderen",
+    "deleteConfirmMessage": "\"{{name}}\" verwijderen?",
+    "calibrationTitle": "Kalibratie van de ruiterstap",
+    "calibrationSubtitle": "Loop een bekend aantal stappen over een gemeten afstand om je gemiddelde staplengte te berekenen.",
+    "calibrationDistanceLabel": "Gemeten afstand",
+    "calibrationStepsLabel": "Aantal stappen",
+    "calibrationResultTitle": "Berekende staplengte",
+    "riderStepLabel": "Ruiterstap",
+    "saveAsRiderStep": "Opslaan als ruiterstap",
+    "currentRiderStepTitle": "Huidige ruiterstap",
+    "currentRiderStepLabel": "Staplengte"
+  },
+  "chrono": {
+    "title": "Toegestane tijd",
+    "subtitle": "Bereken de toegestane tijd op basis van de lengte van het parcours en de opgelegde snelheid.",
+    "lengthLabel": "Lengte van het parcours",
+    "lengthPlaceholder": "bijv. 420",
+    "speedLabel": "Opgelegde snelheid",
+    "speedPlaceholder": "bijv. 350",
+    "resultTitle": "Resultaat",
+    "allowedTimeLabel": "Toegestane tijd",
+    "hintNoInput": "Voer de lengte van het parcours en de snelheid in."
+  },
+  "mountPicker": {
+    "label": "Paard",
+    "empty": "Nog geen paard opgeslagen. Voeg er een toe in het tabblad Paarden."
+  },
+  "categories": {
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
+    "Cheval": "Paard"
+  },
+  "terrain": {
+    "Plat": "Vlak",
+    "Montant": "Bergopwaarts",
+    "Descendant": "Bergafwaarts",
+    "Lourd": "Zware / modderige grond"
+  },
+  "speed": {
+    "Standard": "Standaard (~350 m/min)",
+    "Elite": "Elite / Barrage (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Instellingen",
+    "language": "Taal",
+    "units": "Eenheden",
+    "metric": "Metrisch (m, cm)",
+    "imperial": "Imperiaal (ft, in)",
+    "darkMode": "Donkere modus"
+  }
+}

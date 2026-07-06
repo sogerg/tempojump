@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "close": "Close"
+  },
+  "nav": {
+    "converter": "Converter",
+    "combinations": "Combinations",
+    "mounts": "Mounts",
+    "chrono": "Timer"
+  },
+  "converter": {
+    "title": "Steps → Strides converter",
+    "subtitle": "Enter the number of steps counted between two fences to get the theoretical number of strides.",
+    "stepsLabel": "Number of steps counted",
+    "stepsPlaceholder": "e.g. 24",
+    "terrainLabel": "Terrain",
+    "speedLabel": "Speed",
+    "resultTitle": "Result",
+    "distance": "Distance covered",
+    "effectiveStride": "Effective stride",
+    "theoreticalStrides": "Theoretical strides",
+    "suggestedStrides": "Suggested strides",
+    "hintNoSteps": "Enter the number of steps to see the result.",
+    "hintNoMount": "Select or create a mount."
+  },
+  "combination": {
+    "title": "Combination calculator",
+    "subtitle": "Exact distance to set between two elements of a combination (double, triple).",
+    "fromLabel": "1st element (take-off)",
+    "toLabel": "2nd element (landing)",
+    "heightLabel": "Fence height",
+    "targetStridesLabel": "Desired strides",
+    "bounce": "Bounce",
+    "oneStride": "1 stride",
+    "twoStrides": "2 strides",
+    "threeStrides": "3 strides",
+    "resultTitle": "Result",
+    "effectiveStride": "Effective stride",
+    "adjustedAllowance": "Adjusted allowance",
+    "distanceToSet": "Distance to set",
+    "hintNoHeight": "Enter the fence height.",
+    "hintNoMount": "Select or create a mount."
+  },
+  "mounts": {
+    "title": "My mounts",
+    "delete": "Delete",
+    "addTitle": "Add a mount",
+    "nameLabel": "Name",
+    "namePlaceholder": "e.g. Voltigeur",
+    "categoryLabel": "Category",
+    "strideLengthLabel": "Default stride length",
+    "addButton": "Add mount",
+    "missingFieldsTitle": "Missing fields",
+    "missingFieldsMessage": "Enter a valid name and stride length.",
+    "deleteConfirmTitle": "Delete mount",
+    "deleteConfirmMessage": "Delete \"{{name}}\"?",
+    "calibrationTitle": "Rider step calibration",
+    "calibrationSubtitle": "Walk a known number of steps over a measured distance to calculate your average step length.",
+    "calibrationDistanceLabel": "Measured distance",
+    "calibrationStepsLabel": "Number of steps",
+    "calibrationResultTitle": "Calculated step length",
+    "riderStepLabel": "Rider step",
+    "saveAsRiderStep": "Save as rider step",
+    "currentRiderStepTitle": "Current rider step",
+    "currentRiderStepLabel": "Step length"
+  },
+  "chrono": {
+    "title": "Allowed time",
+    "subtitle": "Calculate the allowed time from the course length and the required speed.",
+    "lengthLabel": "Course length",
+    "lengthPlaceholder": "e.g. 420",
+    "speedLabel": "Required speed",
+    "speedPlaceholder": "e.g. 350",
+    "resultTitle": "Result",
+    "allowedTimeLabel": "Allowed time",
+    "hintNoInput": "Enter the course length and speed."
+  },
+  "mountPicker": {
+    "label": "Mount",
+    "empty": "No mount saved yet. Add one in the Mounts tab."
+  },
+  "categories": {
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
+    "Cheval": "Horse"
+  },
+  "terrain": {
+    "Plat": "Flat",
+    "Montant": "Uphill",
+    "Descendant": "Downhill",
+    "Lourd": "Heavy / muddy ground"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Elite / Jump-off (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "units": "Units",
+    "metric": "Metric (m, cm)",
+    "imperial": "Imperial (ft, in)",
+    "darkMode": "Dark mode"
+  }
+}

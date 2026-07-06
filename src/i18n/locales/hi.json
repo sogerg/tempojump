@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "रद्द करें",
+    "save": "सहेजें",
+    "delete": "हटाएं",
+    "close": "बंद करें"
+  },
+  "nav": {
+    "converter": "परिवर्तक",
+    "combinations": "संयोजन",
+    "mounts": "घोड़े",
+    "chrono": "समय गणक"
+  },
+  "converter": {
+    "title": "कदम → स्ट्राइड परिवर्तक",
+    "subtitle": "दो बाधाओं के बीच गिने गए कदमों की संख्या दर्ज करें ताकि सैद्धांतिक स्ट्राइड संख्या मिल सके।",
+    "stepsLabel": "गिने गए कदमों की संख्या",
+    "stepsPlaceholder": "उदा: 24",
+    "terrainLabel": "ज़मीन",
+    "speedLabel": "गति",
+    "resultTitle": "परिणाम",
+    "distance": "तय की गई दूरी",
+    "effectiveStride": "प्रभावी स्ट्राइड",
+    "theoreticalStrides": "सैद्धांतिक स्ट्राइड",
+    "suggestedStrides": "सुझाई गई स्ट्राइड",
+    "hintNoSteps": "परिणाम देखने के लिए कदमों की संख्या दर्ज करें।",
+    "hintNoMount": "एक घोड़ा चुनें या बनाएं।"
+  },
+  "combination": {
+    "title": "संयोजन कैलकुलेटर",
+    "subtitle": "एक संयोजन (डबल, ट्रिपल) के दो तत्वों के बीच सेट की जाने वाली सटीक दूरी।",
+    "fromLabel": "पहला तत्व (टेक-ऑफ)",
+    "toLabel": "दूसरा तत्व (लैंडिंग)",
+    "heightLabel": "बाधाओं की ऊंचाई",
+    "targetStridesLabel": "वांछित स्ट्राइड",
+    "bounce": "बिना स्ट्राइड",
+    "oneStride": "1 स्ट्राइड",
+    "twoStrides": "2 स्ट्राइड",
+    "threeStrides": "3 स्ट्राइड",
+    "resultTitle": "परिणाम",
+    "effectiveStride": "प्रभावी स्ट्राइड",
+    "adjustedAllowance": "समायोजित मार्जिन",
+    "distanceToSet": "सेट की जाने वाली दूरी",
+    "hintNoHeight": "बाधाओं की ऊंचाई दर्ज करें।",
+    "hintNoMount": "एक घोड़ा चुनें या बनाएं।"
+  },
+  "mounts": {
+    "title": "मेरे घोड़े",
+    "delete": "हटाएं",
+    "addTitle": "घोड़ा जोड़ें",
+    "nameLabel": "नाम",
+    "namePlaceholder": "उदा: Voltigeur",
+    "categoryLabel": "श्रेणी",
+    "strideLengthLabel": "डिफ़ॉल्ट स्ट्राइड लंबाई",
+    "addButton": "घोड़ा जोड़ें",
+    "missingFieldsTitle": "अधूरी जानकारी",
+    "missingFieldsMessage": "एक मान्य नाम और स्ट्राइड लंबाई दर्ज करें।",
+    "deleteConfirmTitle": "घोड़ा हटाएं",
+    "deleteConfirmMessage": "\"{{name}}\" को हटाएं?",
+    "calibrationTitle": "सवार के कदम की कैलिब्रेशन",
+    "calibrationSubtitle": "अपनी औसत कदम लंबाई की गणना के लिए मापी गई दूरी पर ज्ञात संख्या में कदम चलें।",
+    "calibrationDistanceLabel": "मापी गई दूरी",
+    "calibrationStepsLabel": "कदमों की संख्या",
+    "calibrationResultTitle": "गणना की गई कदम लंबाई",
+    "riderStepLabel": "सवार का कदम",
+    "saveAsRiderStep": "सवार के कदम के रूप में सहेजें",
+    "currentRiderStepTitle": "वर्तमान सवार का कदम",
+    "currentRiderStepLabel": "कदम की लंबाई"
+  },
+  "chrono": {
+    "title": "स्वीकृत समय",
+    "subtitle": "कोर्स की लंबाई और निर्धारित गति से स्वीकृत समय की गणना करें।",
+    "lengthLabel": "कोर्स की लंबाई",
+    "lengthPlaceholder": "उदा: 420",
+    "speedLabel": "निर्धारित गति",
+    "speedPlaceholder": "उदा: 350",
+    "resultTitle": "परिणाम",
+    "allowedTimeLabel": "स्वीकृत समय",
+    "hintNoInput": "कोर्स की लंबाई और गति दर्ज करें।"
+  },
+  "mountPicker": {
+    "label": "घोड़ा",
+    "empty": "कोई घोड़ा सहेजा नहीं गया है। घोड़े टैब में एक जोड़ें।"
+  },
+  "categories": {
+    "PoneyD": "पोनी D",
+    "PoneyC": "पोनी C",
+    "PoneyB": "पोनी B",
+    "PoneyA": "पोनी A",
+    "Cheval": "घोड़ा"
+  },
+  "terrain": {
+    "Plat": "समतल",
+    "Montant": "चढ़ाई",
+    "Descendant": "ढलान",
+    "Lourd": "भारी / दलदली ज़मीन"
+  },
+  "speed": {
+    "Standard": "मानक (~350 मी/मिनट)",
+    "Elite": "एलीट / जंप-ऑफ (~375 मी/मिनट+)"
+  },
+  "settings": {
+    "title": "सेटिंग्स",
+    "language": "भाषा",
+    "units": "इकाइयाँ",
+    "metric": "मीट्रिक (मी, सेमी)",
+    "imperial": "इंपीरियल (फ़ुट, इंच)",
+    "darkMode": "डार्क मोड"
+  }
+}

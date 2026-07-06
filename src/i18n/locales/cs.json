@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Zrušit",
+    "save": "Uložit",
+    "delete": "Smazat",
+    "close": "Zavřít"
+  },
+  "nav": {
+    "converter": "Převodník",
+    "combinations": "Kombinace",
+    "mounts": "Koně",
+    "chrono": "Časomíra"
+  },
+  "converter": {
+    "title": "Převodník kroky → cvalové skoky",
+    "subtitle": "Zadejte počet kroků napočítaných mezi dvěma překážkami a získáte teoretický počet cvalových skoků.",
+    "stepsLabel": "Počet napočítaných kroků",
+    "stepsPlaceholder": "např. 24",
+    "terrainLabel": "Terén",
+    "speedLabel": "Rychlost",
+    "resultTitle": "Výsledek",
+    "distance": "Ujetá vzdálenost",
+    "effectiveStride": "Efektivní cvalový skok",
+    "theoreticalStrides": "Teoretické cvalové skoky",
+    "suggestedStrides": "Doporučené cvalové skoky",
+    "hintNoSteps": "Zadejte počet kroků pro zobrazení výsledku.",
+    "hintNoMount": "Vyberte nebo vytvořte koně."
+  },
+  "combination": {
+    "title": "Kalkulačka kombinací",
+    "subtitle": "Přesná vzdálenost, kterou nastavit mezi dvěma prvky kombinace (dvojkombinace, trojkombinace).",
+    "fromLabel": "1. prvek (odraz)",
+    "toLabel": "2. prvek (dopad)",
+    "heightLabel": "Výška překážek",
+    "targetStridesLabel": "Požadované cvalové skoky",
+    "bounce": "Bez cvalového skoku",
+    "oneStride": "1 cvalový skok",
+    "twoStrides": "2 cvalové skoky",
+    "threeStrides": "3 cvalové skoky",
+    "resultTitle": "Výsledek",
+    "effectiveStride": "Efektivní cvalový skok",
+    "adjustedAllowance": "Upravená rezerva",
+    "distanceToSet": "Vzdálenost k nastavení",
+    "hintNoHeight": "Zadejte výšku překážek.",
+    "hintNoMount": "Vyberte nebo vytvořte koně."
+  },
+  "mounts": {
+    "title": "Moji koně",
+    "delete": "Smazat",
+    "addTitle": "Přidat koně",
+    "nameLabel": "Jméno",
+    "namePlaceholder": "např. Voltigeur",
+    "categoryLabel": "Kategorie",
+    "strideLengthLabel": "Výchozí délka cvalového skoku",
+    "addButton": "Přidat koně",
+    "missingFieldsTitle": "Chybějící údaje",
+    "missingFieldsMessage": "Zadejte platné jméno a délku cvalového skoku.",
+    "deleteConfirmTitle": "Smazat koně",
+    "deleteConfirmMessage": "Smazat \"{{name}}\"?",
+    "calibrationTitle": "Kalibrace kroku jezdce",
+    "calibrationSubtitle": "Ujděte známý počet kroků na naměřené vzdálenosti a vypočítejte si průměrnou délku kroku.",
+    "calibrationDistanceLabel": "Naměřená vzdálenost",
+    "calibrationStepsLabel": "Počet kroků",
+    "calibrationResultTitle": "Vypočítaná délka kroku",
+    "riderStepLabel": "Krok jezdce",
+    "saveAsRiderStep": "Uložit jako krok jezdce",
+    "currentRiderStepTitle": "Aktuální krok jezdce",
+    "currentRiderStepLabel": "Délka kroku"
+  },
+  "chrono": {
+    "title": "Povolený čas",
+    "subtitle": "Vypočítej povolený čas na základě délky parkuru a předepsané rychlosti.",
+    "lengthLabel": "Délka parkuru",
+    "lengthPlaceholder": "např. 420",
+    "speedLabel": "Předepsaná rychlost",
+    "speedPlaceholder": "např. 350",
+    "resultTitle": "Výsledek",
+    "allowedTimeLabel": "Povolený čas",
+    "hintNoInput": "Zadejte délku parkuru a rychlost."
+  },
+  "mountPicker": {
+    "label": "Kůň",
+    "empty": "Zatím není uložen žádný kůň. Přidejte jej v záložce Koně."
+  },
+  "categories": {
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
+    "Cheval": "Kůň"
+  },
+  "terrain": {
+    "Plat": "Rovina",
+    "Montant": "Do kopce",
+    "Descendant": "Z kopce",
+    "Lourd": "Těžký / bahnitý terén"
+  },
+  "speed": {
+    "Standard": "Standardní (~350 m/min)",
+    "Elite": "Elitní / Rozeskakování (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Nastavení",
+    "language": "Jazyk",
+    "units": "Jednotky",
+    "metric": "Metrické (m, cm)",
+    "imperial": "Imperiální (ft, in)",
+    "darkMode": "Tmavý režim"
+  }
+}

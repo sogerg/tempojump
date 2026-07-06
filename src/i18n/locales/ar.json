@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "delete": "حذف",
+    "close": "إغلاق"
+  },
+  "nav": {
+    "converter": "المحوّل",
+    "combinations": "المركّبات",
+    "mounts": "الخيول",
+    "chrono": "الموقت"
+  },
+  "converter": {
+    "title": "محوّل الخطوات إلى الوثبات",
+    "subtitle": "أدخل عدد الخطوات المعدودة بين عائقين للحصول على العدد النظري للوثبات.",
+    "stepsLabel": "عدد الخطوات المعدودة",
+    "stepsPlaceholder": "مثال: 24",
+    "terrainLabel": "الأرضية",
+    "speedLabel": "السرعة",
+    "resultTitle": "النتيجة",
+    "distance": "المسافة المقطوعة",
+    "effectiveStride": "الوثبة الفعلية",
+    "theoreticalStrides": "الوثبات النظرية",
+    "suggestedStrides": "الوثبات المقترحة",
+    "hintNoSteps": "أدخل عدد الخطوات لرؤية النتيجة.",
+    "hintNoMount": "اختر أو أنشئ حصانًا."
+  },
+  "combination": {
+    "title": "حاسبة المركّبات",
+    "subtitle": "المسافة الدقيقة الواجب ضبطها بين عنصرين من مركّب (مزدوج، ثلاثي).",
+    "fromLabel": "العنصر الأول (الانطلاق)",
+    "toLabel": "العنصر الثاني (الهبوط)",
+    "heightLabel": "ارتفاع العوائق",
+    "targetStridesLabel": "عدد الوثبات المطلوب",
+    "bounce": "بدون وثبة",
+    "oneStride": "وثبة واحدة",
+    "twoStrides": "وثبتان",
+    "threeStrides": "3 وثبات",
+    "resultTitle": "النتيجة",
+    "effectiveStride": "الوثبة الفعلية",
+    "adjustedAllowance": "الهامش المعدَّل",
+    "distanceToSet": "المسافة الواجب ضبطها",
+    "hintNoHeight": "أدخل ارتفاع العوائق.",
+    "hintNoMount": "اختر أو أنشئ حصانًا."
+  },
+  "mounts": {
+    "title": "خيولي",
+    "delete": "حذف",
+    "addTitle": "إضافة حصان",
+    "nameLabel": "الاسم",
+    "namePlaceholder": "مثال: Voltigeur",
+    "categoryLabel": "الفئة",
+    "strideLengthLabel": "طول الوثبة الافتراضي",
+    "addButton": "إضافة الحصان",
+    "missingFieldsTitle": "حقول ناقصة",
+    "missingFieldsMessage": "أدخل اسمًا وطول وثبة صالحين.",
+    "deleteConfirmTitle": "حذف الحصان",
+    "deleteConfirmMessage": "هل تريد حذف \"{{name}}\"؟",
+    "calibrationTitle": "معايرة خطوة الفارس",
+    "calibrationSubtitle": "امشِ عددًا معلومًا من الخطوات على مسافة مقاسة لحساب متوسط طول خطوتك.",
+    "calibrationDistanceLabel": "المسافة المقاسة",
+    "calibrationStepsLabel": "عدد الخطوات",
+    "calibrationResultTitle": "طول الخطوة المحسوب",
+    "riderStepLabel": "خطوة الفارس",
+    "saveAsRiderStep": "حفظ كخطوة للفارس",
+    "currentRiderStepTitle": "خطوة الفارس الحالية",
+    "currentRiderStepLabel": "طول الخطوة"
+  },
+  "chrono": {
+    "title": "الوقت المسموح",
+    "subtitle": "احسب الوقت المسموح انطلاقًا من طول المسار والسرعة المفروضة.",
+    "lengthLabel": "طول المسار",
+    "lengthPlaceholder": "مثال: 420",
+    "speedLabel": "السرعة المفروضة",
+    "speedPlaceholder": "مثال: 350",
+    "resultTitle": "النتيجة",
+    "allowedTimeLabel": "الوقت المسموح",
+    "hintNoInput": "أدخل طول المسار والسرعة."
+  },
+  "mountPicker": {
+    "label": "الحصان",
+    "empty": "لا يوجد حصان محفوظ. أضف واحدًا من علامة تبويب الخيول."
+  },
+  "categories": {
+    "PoneyD": "مهر D",
+    "PoneyC": "مهر C",
+    "PoneyB": "مهر B",
+    "PoneyA": "مهر A",
+    "Cheval": "حصان"
+  },
+  "terrain": {
+    "Plat": "مستوٍ",
+    "Montant": "منحدر صاعد",
+    "Descendant": "منحدر هابط",
+    "Lourd": "أرضية ثقيلة / موحلة"
+  },
+  "speed": {
+    "Standard": "قياسية (~350 م/د)",
+    "Elite": "نخبة / فاصل (~375 م/د أو أكثر)"
+  },
+  "settings": {
+    "title": "الإعدادات",
+    "language": "اللغة",
+    "units": "الوحدات",
+    "metric": "متري (م، سم)",
+    "imperial": "إمبراطوري (قدم، إنش)",
+    "darkMode": "الوضع الداكن"
+  }
+}

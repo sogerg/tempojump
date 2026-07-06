@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Ακύρωση",
+    "save": "Αποθήκευση",
+    "delete": "Διαγραφή",
+    "close": "Κλείσιμο"
+  },
+  "nav": {
+    "converter": "Μετατροπέας",
+    "combinations": "Συνδυασμοί",
+    "mounts": "Άλογα",
+    "chrono": "Χρονόμετρο"
+  },
+  "converter": {
+    "title": "Μετατροπέας βημάτων → δρασκελιών",
+    "subtitle": "Εισάγετε τον αριθμό των βημάτων που μετρήσατε ανάμεσα σε δύο εμπόδια για να λάβετε τον θεωρητικό αριθμό δρασκελιών.",
+    "stepsLabel": "Αριθμός μετρημένων βημάτων",
+    "stepsPlaceholder": "π.χ. 24",
+    "terrainLabel": "Έδαφος",
+    "speedLabel": "Ταχύτητα",
+    "resultTitle": "Αποτέλεσμα",
+    "distance": "Διανυθείσα απόσταση",
+    "effectiveStride": "Ενεργός δρασκελιά",
+    "theoreticalStrides": "Θεωρητικές δρασκελιές",
+    "suggestedStrides": "Προτεινόμενες δρασκελιές",
+    "hintNoSteps": "Εισάγετε τον αριθμό βημάτων για να δείτε το αποτέλεσμα.",
+    "hintNoMount": "Επιλέξτε ή δημιουργήστε ένα άλογο."
+  },
+  "combination": {
+    "title": "Υπολογιστής συνδυασμών",
+    "subtitle": "Ακριβής απόσταση για τοποθέτηση ανάμεσα σε δύο στοιχεία ενός συνδυασμού (διπλό, τριπλό).",
+    "fromLabel": "1ο στοιχείο (απογείωση)",
+    "toLabel": "2ο στοιχείο (προσγείωση)",
+    "heightLabel": "Ύψος εμποδίων",
+    "targetStridesLabel": "Επιθυμητές δρασκελιές",
+    "bounce": "Χωρίς δρασκελιά",
+    "oneStride": "1 δρασκελιά",
+    "twoStrides": "2 δρασκελιές",
+    "threeStrides": "3 δρασκελιές",
+    "resultTitle": "Αποτέλεσμα",
+    "effectiveStride": "Ενεργός δρασκελιά",
+    "adjustedAllowance": "Προσαρμοσμένο περιθώριο",
+    "distanceToSet": "Απόσταση προς τοποθέτηση",
+    "hintNoHeight": "Εισάγετε το ύψος των εμποδίων.",
+    "hintNoMount": "Επιλέξτε ή δημιουργήστε ένα άλογο."
+  },
+  "mounts": {
+    "title": "Τα άλογά μου",
+    "delete": "Διαγραφή",
+    "addTitle": "Προσθήκη αλόγου",
+    "nameLabel": "Όνομα",
+    "namePlaceholder": "π.χ. Voltigeur",
+    "categoryLabel": "Κατηγορία",
+    "strideLengthLabel": "Προεπιλεγμένο μήκος δρασκελιάς",
+    "addButton": "Προσθήκη αλόγου",
+    "missingFieldsTitle": "Λείπουν στοιχεία",
+    "missingFieldsMessage": "Εισάγετε ένα έγκυρο όνομα και μήκος δρασκελιάς.",
+    "deleteConfirmTitle": "Διαγραφή αλόγου",
+    "deleteConfirmMessage": "Διαγραφή του \"{{name}}\";",
+    "calibrationTitle": "Βαθμονόμηση βήματος αναβάτη",
+    "calibrationSubtitle": "Περπατήστε έναν γνωστό αριθμό βημάτων σε μια μετρημένη απόσταση για να υπολογίσετε το μέσο μήκος βήματός σας.",
+    "calibrationDistanceLabel": "Μετρημένη απόσταση",
+    "calibrationStepsLabel": "Αριθμός βημάτων",
+    "calibrationResultTitle": "Υπολογισμένο μήκος βήματος",
+    "riderStepLabel": "Βήμα αναβάτη",
+    "saveAsRiderStep": "Αποθήκευση ως βήμα αναβάτη",
+    "currentRiderStepTitle": "Τρέχον βήμα αναβάτη",
+    "currentRiderStepLabel": "Μήκος βήματος"
+  },
+  "chrono": {
+    "title": "Επιτρεπόμενος χρόνος",
+    "subtitle": "Υπολόγισε τον επιτρεπόμενο χρόνο από το μήκος της διαδρομής και την επιβεβλημένη ταχύτητα.",
+    "lengthLabel": "Μήκος διαδρομής",
+    "lengthPlaceholder": "π.χ. 420",
+    "speedLabel": "Επιβεβλημένη ταχύτητα",
+    "speedPlaceholder": "π.χ. 350",
+    "resultTitle": "Αποτέλεσμα",
+    "allowedTimeLabel": "Επιτρεπόμενος χρόνος",
+    "hintNoInput": "Εισάγετε το μήκος της διαδρομής και την ταχύτητα."
+  },
+  "mountPicker": {
+    "label": "Άλογο",
+    "empty": "Δεν έχει αποθηκευτεί κανένα άλογο. Προσθέστε ένα στην καρτέλα Άλογα."
+  },
+  "categories": {
+    "PoneyD": "Πόνυ D",
+    "PoneyC": "Πόνυ C",
+    "PoneyB": "Πόνυ B",
+    "PoneyA": "Πόνυ A",
+    "Cheval": "Άλογο"
+  },
+  "terrain": {
+    "Plat": "Επίπεδο",
+    "Montant": "Ανηφόρα",
+    "Descendant": "Κατηφόρα",
+    "Lourd": "Βαρύ / λασπωμένο έδαφος"
+  },
+  "speed": {
+    "Standard": "Στάνταρ (~350 μ/λεπτό)",
+    "Elite": "Ελίτ / Μπαράζ (~375 μ/λεπτό+)"
+  },
+  "settings": {
+    "title": "Ρυθμίσεις",
+    "language": "Γλώσσα",
+    "units": "Μονάδες",
+    "metric": "Μετρικό (μ, εκ)",
+    "imperial": "Αγγλοσαξονικό (πόδι, ίντσα)",
+    "darkMode": "Σκοτεινή λειτουργία"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "close": "Fermer"
+  },
+  "nav": {
+    "converter": "Convertisseur",
+    "combinations": "Combinaisons",
+    "mounts": "Montures",
+    "chrono": "Chrono"
+  },
+  "converter": {
+    "title": "Convertisseur pas → foulées",
+    "subtitle": "Entre le nombre de pas comptés entre deux obstacles pour obtenir le nombre de foulées théoriques.",
+    "stepsLabel": "Nombre de pas comptés",
+    "stepsPlaceholder": "ex : 24",
+    "terrainLabel": "Terrain",
+    "speedLabel": "Vitesse",
+    "resultTitle": "Résultat",
+    "distance": "Distance parcourue",
+    "effectiveStride": "Foulée effective",
+    "theoreticalStrides": "Foulées théoriques",
+    "suggestedStrides": "Foulées conseillées",
+    "hintNoSteps": "Renseigne le nombre de pas pour voir le résultat.",
+    "hintNoMount": "Sélectionne ou crée une monture."
+  },
+  "combination": {
+    "title": "Calculateur de combinaisons",
+    "subtitle": "Distance exacte à poser entre deux éléments d'une combinaison (double, triple).",
+    "fromLabel": "1er élément (appel)",
+    "toLabel": "2e élément (réception)",
+    "heightLabel": "Hauteur des obstacles",
+    "targetStridesLabel": "Foulées souhaitées",
+    "bounce": "Saut de puce",
+    "oneStride": "1 foulée",
+    "twoStrides": "2 foulées",
+    "threeStrides": "3 foulées",
+    "resultTitle": "Résultat",
+    "effectiveStride": "Foulée effective",
+    "adjustedAllowance": "Allocation ajustée",
+    "distanceToSet": "Distance à poser",
+    "hintNoHeight": "Renseigne la hauteur des obstacles.",
+    "hintNoMount": "Sélectionne ou crée une monture."
+  },
+  "mounts": {
+    "title": "Mes montures",
+    "delete": "Supprimer",
+    "addTitle": "Ajouter une monture",
+    "nameLabel": "Nom",
+    "namePlaceholder": "ex : Voltigeur",
+    "categoryLabel": "Catégorie",
+    "strideLengthLabel": "Longueur de foulée par défaut",
+    "addButton": "Ajouter la monture",
+    "missingFieldsTitle": "Champs manquants",
+    "missingFieldsMessage": "Renseigne un nom et une longueur de foulée valides.",
+    "deleteConfirmTitle": "Supprimer la monture",
+    "deleteConfirmMessage": "Supprimer \"{{name}}\" ?",
+    "calibrationTitle": "Étalonnage du pas cavalier",
+    "calibrationSubtitle": "Marche un nombre de pas connu sur une distance mesurée pour calculer ta longueur de pas moyenne.",
+    "calibrationDistanceLabel": "Distance mesurée",
+    "calibrationStepsLabel": "Nombre de pas",
+    "calibrationResultTitle": "Longueur de pas calculée",
+    "riderStepLabel": "Pas cavalier",
+    "saveAsRiderStep": "Enregistrer comme pas cavalier",
+    "currentRiderStepTitle": "Pas cavalier actuel",
+    "currentRiderStepLabel": "Longueur de pas"
+  },
+  "chrono": {
+    "title": "Temps accordé",
+    "subtitle": "Calcule le temps accordé à partir de la longueur du parcours et de la vitesse imposée.",
+    "lengthLabel": "Longueur du parcours",
+    "lengthPlaceholder": "ex : 420",
+    "speedLabel": "Vitesse imposée",
+    "speedPlaceholder": "ex : 350",
+    "resultTitle": "Résultat",
+    "allowedTimeLabel": "Temps accordé",
+    "hintNoInput": "Renseigne la longueur du parcours et la vitesse."
+  },
+  "mountPicker": {
+    "label": "Monture",
+    "empty": "Aucune monture enregistrée. Ajoute-en une dans l'onglet Montures."
+  },
+  "categories": {
+    "PoneyD": "Poney D",
+    "PoneyC": "Poney C",
+    "PoneyB": "Poney B",
+    "PoneyA": "Poney A",
+    "Cheval": "Cheval"
+  },
+  "terrain": {
+    "Plat": "Plat",
+    "Montant": "Pente montante",
+    "Descendant": "Pente descendante",
+    "Lourd": "Terrain lourd / boueux"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Élite / Barrage (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Réglages",
+    "language": "Langue",
+    "units": "Unités",
+    "metric": "Métrique (m, cm)",
+    "imperial": "Impérial (ft, in)",
+    "darkMode": "Mode sombre"
+  }
+}

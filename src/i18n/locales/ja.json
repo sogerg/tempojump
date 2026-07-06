@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "キャンセル",
+    "save": "保存",
+    "delete": "削除",
+    "close": "閉じる"
+  },
+  "nav": {
+    "converter": "換算",
+    "combinations": "コンビネーション",
+    "mounts": "馬",
+    "chrono": "タイム計算"
+  },
+  "converter": {
+    "title": "歩数→ストライド換算",
+    "subtitle": "2つの障害物の間で数えた歩数を入力すると、理論上のストライド数が分かります。",
+    "stepsLabel": "数えた歩数",
+    "stepsPlaceholder": "例：24",
+    "terrainLabel": "地面の状態",
+    "speedLabel": "速度",
+    "resultTitle": "結果",
+    "distance": "移動距離",
+    "effectiveStride": "実効ストライド",
+    "theoreticalStrides": "理論上のストライド数",
+    "suggestedStrides": "推奨ストライド数",
+    "hintNoSteps": "歩数を入力すると結果が表示されます。",
+    "hintNoMount": "馬を選択または作成してください。"
+  },
+  "combination": {
+    "title": "コンビネーション計算",
+    "subtitle": "コンビネーション（ダブル、トリプル）の2つの要素間に設定する正確な距離。",
+    "fromLabel": "1つ目の障害（踏切）",
+    "toLabel": "2つ目の障害（着地）",
+    "heightLabel": "障害物の高さ",
+    "targetStridesLabel": "希望するストライド数",
+    "bounce": "ノーストライド",
+    "oneStride": "1ストライド",
+    "twoStrides": "2ストライド",
+    "threeStrides": "3ストライド",
+    "resultTitle": "結果",
+    "effectiveStride": "実効ストライド",
+    "adjustedAllowance": "調整後の余裕距離",
+    "distanceToSet": "設定する距離",
+    "hintNoHeight": "障害物の高さを入力してください。",
+    "hintNoMount": "馬を選択または作成してください。"
+  },
+  "mounts": {
+    "title": "登録した馬",
+    "delete": "削除",
+    "addTitle": "馬を追加",
+    "nameLabel": "名前",
+    "namePlaceholder": "例：Voltigeur",
+    "categoryLabel": "カテゴリー",
+    "strideLengthLabel": "デフォルトのストライド長",
+    "addButton": "馬を追加",
+    "missingFieldsTitle": "入力不足",
+    "missingFieldsMessage": "有効な名前とストライド長を入力してください。",
+    "deleteConfirmTitle": "馬を削除",
+    "deleteConfirmMessage": "「{{name}}」を削除しますか？",
+    "calibrationTitle": "騎乗者の歩幅キャリブレーション",
+    "calibrationSubtitle": "測定した距離を既知の歩数で歩いて、平均歩幅を計算します。",
+    "calibrationDistanceLabel": "測定距離",
+    "calibrationStepsLabel": "歩数",
+    "calibrationResultTitle": "計算された歩幅",
+    "riderStepLabel": "騎乗者の歩幅",
+    "saveAsRiderStep": "騎乗者の歩幅として保存",
+    "currentRiderStepTitle": "現在の騎乗者の歩幅",
+    "currentRiderStepLabel": "歩幅"
+  },
+  "chrono": {
+    "title": "許容タイム",
+    "subtitle": "コース長と規定速度から許容タイムを計算します。",
+    "lengthLabel": "コース長",
+    "lengthPlaceholder": "例：420",
+    "speedLabel": "規定速度",
+    "speedPlaceholder": "例：350",
+    "resultTitle": "結果",
+    "allowedTimeLabel": "許容タイム",
+    "hintNoInput": "コース長と速度を入力してください。"
+  },
+  "mountPicker": {
+    "label": "馬",
+    "empty": "登録された馬がありません。「馬」タブで追加してください。"
+  },
+  "categories": {
+    "PoneyD": "ポニーD",
+    "PoneyC": "ポニーC",
+    "PoneyB": "ポニーB",
+    "PoneyA": "ポニーA",
+    "Cheval": "馬"
+  },
+  "terrain": {
+    "Plat": "平坦",
+    "Montant": "上り坂",
+    "Descendant": "下り坂",
+    "Lourd": "重い/ぬかるんだ地面"
+  },
+  "speed": {
+    "Standard": "標準（約350m/分）",
+    "Elite": "エリート/ジャンプオフ（約375m/分以上）"
+  },
+  "settings": {
+    "title": "設定",
+    "language": "言語",
+    "units": "単位",
+    "metric": "メートル法（m、cm）",
+    "imperial": "ヤード・ポンド法（ft、in）",
+    "darkMode": "ダークモード"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "delete": "Ta bort",
+    "close": "Stäng"
+  },
+  "nav": {
+    "converter": "Omvandlare",
+    "combinations": "Kombinationer",
+    "mounts": "Hästar",
+    "chrono": "Tidtagning"
+  },
+  "converter": {
+    "title": "Omvandlare steg → galoppsprång",
+    "subtitle": "Ange antalet steg som räknats mellan två hinder för att få det teoretiska antalet galoppsprång.",
+    "stepsLabel": "Antal räknade steg",
+    "stepsPlaceholder": "t.ex. 24",
+    "terrainLabel": "Underlag",
+    "speedLabel": "Hastighet",
+    "resultTitle": "Resultat",
+    "distance": "Tillryggalagd sträcka",
+    "effectiveStride": "Effektivt galoppsprång",
+    "theoreticalStrides": "Teoretiska galoppsprång",
+    "suggestedStrides": "Föreslagna galoppsprång",
+    "hintNoSteps": "Ange antalet steg för att se resultatet.",
+    "hintNoMount": "Välj eller skapa en häst."
+  },
+  "combination": {
+    "title": "Kombinationskalkylator",
+    "subtitle": "Exakt avstånd att ställa in mellan två delar av en kombination (dubbel, trippel).",
+    "fromLabel": "1:a delen (avstamp)",
+    "toLabel": "2:a delen (landning)",
+    "heightLabel": "Hinderhöjd",
+    "targetStridesLabel": "Önskat antal galoppsprång",
+    "bounce": "Utan galoppsprång",
+    "oneStride": "1 galoppsprång",
+    "twoStrides": "2 galoppsprång",
+    "threeStrides": "3 galoppsprång",
+    "resultTitle": "Resultat",
+    "effectiveStride": "Effektivt galoppsprång",
+    "adjustedAllowance": "Justerad marginal",
+    "distanceToSet": "Avstånd att ställa in",
+    "hintNoHeight": "Ange hinderhöjden.",
+    "hintNoMount": "Välj eller skapa en häst."
+  },
+  "mounts": {
+    "title": "Mina hästar",
+    "delete": "Ta bort",
+    "addTitle": "Lägg till häst",
+    "nameLabel": "Namn",
+    "namePlaceholder": "t.ex. Voltigeur",
+    "categoryLabel": "Kategori",
+    "strideLengthLabel": "Standard galoppsprångslängd",
+    "addButton": "Lägg till häst",
+    "missingFieldsTitle": "Saknade fält",
+    "missingFieldsMessage": "Ange ett giltigt namn och en giltig galoppsprångslängd.",
+    "deleteConfirmTitle": "Ta bort häst",
+    "deleteConfirmMessage": "Ta bort \"{{name}}\"?",
+    "calibrationTitle": "Kalibrering av ryttarens steg",
+    "calibrationSubtitle": "Gå ett känt antal steg över en uppmätt sträcka för att beräkna din genomsnittliga steglängd.",
+    "calibrationDistanceLabel": "Uppmätt sträcka",
+    "calibrationStepsLabel": "Antal steg",
+    "calibrationResultTitle": "Beräknad steglängd",
+    "riderStepLabel": "Ryttarens steg",
+    "saveAsRiderStep": "Spara som ryttarens steg",
+    "currentRiderStepTitle": "Nuvarande ryttarsteg",
+    "currentRiderStepLabel": "Steglängd"
+  },
+  "chrono": {
+    "title": "Tillåten tid",
+    "subtitle": "Beräkna tillåten tid utifrån banans längd och den föreskrivna hastigheten.",
+    "lengthLabel": "Banans längd",
+    "lengthPlaceholder": "t.ex. 420",
+    "speedLabel": "Föreskriven hastighet",
+    "speedPlaceholder": "t.ex. 350",
+    "resultTitle": "Resultat",
+    "allowedTimeLabel": "Tillåten tid",
+    "hintNoInput": "Ange banans längd och hastigheten."
+  },
+  "mountPicker": {
+    "label": "Häst",
+    "empty": "Ingen häst sparad än. Lägg till en under fliken Hästar."
+  },
+  "categories": {
+    "PoneyD": "Ponny D",
+    "PoneyC": "Ponny C",
+    "PoneyB": "Ponny B",
+    "PoneyA": "Ponny A",
+    "Cheval": "Häst"
+  },
+  "terrain": {
+    "Plat": "Plan mark",
+    "Montant": "Uppförsbacke",
+    "Descendant": "Nedförsbacke",
+    "Lourd": "Tung / lerig mark"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Elit / Omhoppning (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Inställningar",
+    "language": "Språk",
+    "units": "Enheter",
+    "metric": "Metriskt (m, cm)",
+    "imperial": "Brittiskt (ft, in)",
+    "darkMode": "Mörkt läge"
+  }
+}

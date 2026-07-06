@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Отмена",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "close": "Закрыть"
+  },
+  "nav": {
+    "converter": "Конвертер",
+    "combinations": "Комбинации",
+    "mounts": "Лошади",
+    "chrono": "Хронометр"
+  },
+  "converter": {
+    "title": "Конвертер шагов в галопные прыжки",
+    "subtitle": "Введите число шагов, отсчитанных между двумя препятствиями, чтобы получить теоретическое число галопных прыжков.",
+    "stepsLabel": "Число отсчитанных шагов",
+    "stepsPlaceholder": "напр. 24",
+    "terrainLabel": "Грунт",
+    "speedLabel": "Скорость",
+    "resultTitle": "Результат",
+    "distance": "Пройденное расстояние",
+    "effectiveStride": "Эффективный прыжок",
+    "theoreticalStrides": "Теоретические прыжки",
+    "suggestedStrides": "Рекомендуемые прыжки",
+    "hintNoSteps": "Введите число шагов, чтобы увидеть результат.",
+    "hintNoMount": "Выберите или создайте лошадь."
+  },
+  "combination": {
+    "title": "Калькулятор комбинаций",
+    "subtitle": "Точное расстояние между двумя элементами комбинации (двойной, тройной).",
+    "fromLabel": "1-й элемент (отталкивание)",
+    "toLabel": "2-й элемент (приземление)",
+    "heightLabel": "Высота препятствий",
+    "targetStridesLabel": "Желаемые прыжки",
+    "bounce": "Без прыжка",
+    "oneStride": "1 прыжок",
+    "twoStrides": "2 прыжка",
+    "threeStrides": "3 прыжка",
+    "resultTitle": "Результат",
+    "effectiveStride": "Эффективный прыжок",
+    "adjustedAllowance": "Скорректированный допуск",
+    "distanceToSet": "Расстояние для установки",
+    "hintNoHeight": "Введите высоту препятствий.",
+    "hintNoMount": "Выберите или создайте лошадь."
+  },
+  "mounts": {
+    "title": "Мои лошади",
+    "delete": "Удалить",
+    "addTitle": "Добавить лошадь",
+    "nameLabel": "Имя",
+    "namePlaceholder": "напр. Вольтижёр",
+    "categoryLabel": "Категория",
+    "strideLengthLabel": "Длина прыжка по умолчанию",
+    "addButton": "Добавить лошадь",
+    "missingFieldsTitle": "Не все поля заполнены",
+    "missingFieldsMessage": "Введите корректное имя и длину прыжка.",
+    "deleteConfirmTitle": "Удалить лошадь",
+    "deleteConfirmMessage": "Удалить «{{name}}»?",
+    "calibrationTitle": "Калибровка шага всадника",
+    "calibrationSubtitle": "Пройдите известное число шагов на измеренном расстоянии, чтобы рассчитать среднюю длину шага.",
+    "calibrationDistanceLabel": "Измеренное расстояние",
+    "calibrationStepsLabel": "Число шагов",
+    "calibrationResultTitle": "Рассчитанная длина шага",
+    "riderStepLabel": "Шаг всадника",
+    "saveAsRiderStep": "Сохранить как шаг всадника",
+    "currentRiderStepTitle": "Текущий шаг всадника",
+    "currentRiderStepLabel": "Длина шага"
+  },
+  "chrono": {
+    "title": "Допустимое время",
+    "subtitle": "Рассчитайте допустимое время на основе длины маршрута и заданной скорости.",
+    "lengthLabel": "Длина маршрута",
+    "lengthPlaceholder": "напр. 420",
+    "speedLabel": "Заданная скорость",
+    "speedPlaceholder": "напр. 350",
+    "resultTitle": "Результат",
+    "allowedTimeLabel": "Допустимое время",
+    "hintNoInput": "Введите длину маршрута и скорость."
+  },
+  "mountPicker": {
+    "label": "Лошадь",
+    "empty": "Нет сохранённых лошадей. Добавьте одну на вкладке «Лошади»."
+  },
+  "categories": {
+    "PoneyD": "Пони D",
+    "PoneyC": "Пони C",
+    "PoneyB": "Пони B",
+    "PoneyA": "Пони A",
+    "Cheval": "Лошадь"
+  },
+  "terrain": {
+    "Plat": "Ровный",
+    "Montant": "В гору",
+    "Descendant": "Под гору",
+    "Lourd": "Тяжёлый / грязный грунт"
+  },
+  "speed": {
+    "Standard": "Стандарт (~350 м/мин)",
+    "Elite": "Элита / Перепрыжка (~375 м/мин+)"
+  },
+  "settings": {
+    "title": "Настройки",
+    "language": "Язык",
+    "units": "Единицы измерения",
+    "metric": "Метрические (м, см)",
+    "imperial": "Имперские (фут, дюйм)",
+    "darkMode": "Тёмная тема"
+  }
+}

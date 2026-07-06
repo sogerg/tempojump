@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "delete": "Sil",
+    "close": "Kapat"
+  },
+  "nav": {
+    "converter": "Dönüştürücü",
+    "combinations": "Kombinasyonlar",
+    "mounts": "Atlar",
+    "chrono": "Kronometre"
+  },
+  "converter": {
+    "title": "Adım → Dörtnala adımı dönüştürücü",
+    "subtitle": "İki engel arasında sayılan adım sayısını girerek teorik dörtnala adımı sayısını öğren.",
+    "stepsLabel": "Sayılan adım sayısı",
+    "stepsPlaceholder": "örn: 24",
+    "terrainLabel": "Zemin",
+    "speedLabel": "Hız",
+    "resultTitle": "Sonuç",
+    "distance": "Kat edilen mesafe",
+    "effectiveStride": "Etkin dörtnala adımı",
+    "theoreticalStrides": "Teorik dörtnala adımları",
+    "suggestedStrides": "Önerilen dörtnala adımları",
+    "hintNoSteps": "Sonucu görmek için adım sayısını gir.",
+    "hintNoMount": "Bir at seç veya oluştur."
+  },
+  "combination": {
+    "title": "Kombinasyon hesaplayıcı",
+    "subtitle": "Bir kombinasyonun (dubl, tribl) iki unsuru arasına konulacak tam mesafe.",
+    "fromLabel": "1. unsur (kalkış)",
+    "toLabel": "2. unsur (iniş)",
+    "heightLabel": "Engel yüksekliği",
+    "targetStridesLabel": "İstenen dörtnala adımı sayısı",
+    "bounce": "Adımsız (bounce)",
+    "oneStride": "1 dörtnala adımı",
+    "twoStrides": "2 dörtnala adımı",
+    "threeStrides": "3 dörtnala adımı",
+    "resultTitle": "Sonuç",
+    "effectiveStride": "Etkin dörtnala adımı",
+    "adjustedAllowance": "Ayarlanmış pay",
+    "distanceToSet": "Ayarlanacak mesafe",
+    "hintNoHeight": "Engel yüksekliğini gir.",
+    "hintNoMount": "Bir at seç veya oluştur."
+  },
+  "mounts": {
+    "title": "Atlarım",
+    "delete": "Sil",
+    "addTitle": "At ekle",
+    "nameLabel": "İsim",
+    "namePlaceholder": "örn: Voltigeur",
+    "categoryLabel": "Kategori",
+    "strideLengthLabel": "Varsayılan dörtnala adımı uzunluğu",
+    "addButton": "At ekle",
+    "missingFieldsTitle": "Eksik alanlar",
+    "missingFieldsMessage": "Geçerli bir isim ve dörtnala adımı uzunluğu gir.",
+    "deleteConfirmTitle": "Atı sil",
+    "deleteConfirmMessage": "\"{{name}}\" silinsin mi?",
+    "calibrationTitle": "Binici adımı kalibrasyonu",
+    "calibrationSubtitle": "Ortalama adım uzunluğunu hesaplamak için ölçülen bir mesafede bilinen sayıda adım at.",
+    "calibrationDistanceLabel": "Ölçülen mesafe",
+    "calibrationStepsLabel": "Adım sayısı",
+    "calibrationResultTitle": "Hesaplanan adım uzunluğu",
+    "riderStepLabel": "Binici adımı",
+    "saveAsRiderStep": "Binici adımı olarak kaydet",
+    "currentRiderStepTitle": "Mevcut binici adımı",
+    "currentRiderStepLabel": "Adım uzunluğu"
+  },
+  "chrono": {
+    "title": "İzin verilen süre",
+    "subtitle": "Parkur uzunluğu ve zorunlu hıza göre izin verilen süreyi hesapla.",
+    "lengthLabel": "Parkur uzunluğu",
+    "lengthPlaceholder": "örn: 420",
+    "speedLabel": "Zorunlu hız",
+    "speedPlaceholder": "örn: 350",
+    "resultTitle": "Sonuç",
+    "allowedTimeLabel": "İzin verilen süre",
+    "hintNoInput": "Parkur uzunluğunu ve hızı gir."
+  },
+  "mountPicker": {
+    "label": "At",
+    "empty": "Kayıtlı at yok. Atlar sekmesinden bir tane ekle."
+  },
+  "categories": {
+    "PoneyD": "Midilli D",
+    "PoneyC": "Midilli C",
+    "PoneyB": "Midilli B",
+    "PoneyA": "Midilli A",
+    "Cheval": "At"
+  },
+  "terrain": {
+    "Plat": "Düz",
+    "Montant": "Yokuş yukarı",
+    "Descendant": "Yokuş aşağı",
+    "Lourd": "Ağır / çamurlu zemin"
+  },
+  "speed": {
+    "Standard": "Standart (~350 m/dk)",
+    "Elite": "Elit / Barraj (~375 m/dk ve üzeri)"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": "Dil",
+    "units": "Birimler",
+    "metric": "Metrik (m, cm)",
+    "imperial": "İngiliz birimi (ft, in)",
+    "darkMode": "Karanlık mod"
+  }
+}

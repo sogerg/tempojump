@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
 import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { useProfiles } from '../context/ProfilesContext';
-import { CATEGORY_LABELS, CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/mountDefaults';
+import { useSettings } from '../context/SettingsContext';
+import { CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/mountDefaults';
 import { calibrateStepLength } from '../lib/strideCalculator';
+import { formatLength, fromMeters, inputUnitSuffix, toMeters } from '../lib/units';
 import { MountCategory } from '../types';
 
 export function MountsScreen() {
-  const { mounts, selectedMountId, selectMount, addMount, updateMount, removeMount, riderStepLength, setRiderStepLength } =
+  const { t } = useTranslation();
+  const { colors, unitSystem } = useSettings();
+  const { mounts, selectedMountId, selectMount, addMount, removeMount, riderStepLength, setRiderStepLength } =
     useProfiles();
 
   const [newName, setNewName] = useState('');
@@ -21,62 +26,81 @@ export function MountsScreen() {
 
   const handleCategoryChange = (category: MountCategory) => {
     setNewCategory(category);
-    setNewStrideLength(String(DEFAULT_STRIDE_LENGTH[category]));
+    setNewStrideLength(fromMeters(DEFAULT_STRIDE_LENGTH[category], unitSystem).toFixed(2));
   };
 
   const handleAddMount = async () => {
-    const strideLength = Number(newStrideLength.replace(',', '.'));
-    if (!newName.trim() || !strideLength || strideLength <= 0) {
-      Alert.alert('Champs manquants', 'Renseigne un nom et une longueur de foulée valides.');
+    const rawStrideLength = Number(newStrideLength.replace(',', '.'));
+    if (!newName.trim() || !rawStrideLength || rawStrideLength <= 0) {
+      Alert.alert(t('mounts.missingFieldsTitle'), t('mounts.missingFieldsMessage'));
       return;
     }
+    const strideLength = toMeters(rawStrideLength, unitSystem);
     await addMount({ name: newName.trim(), category: newCategory, strideLength });
     setNewName('');
     setNewCategory('Cheval');
-    setNewStrideLength(String(DEFAULT_STRIDE_LENGTH.Cheval));
+    setNewStrideLength(fromMeters(DEFAULT_STRIDE_LENGTH.Cheval, unitSystem).toFixed(2));
   };
 
   const handleRemoveMount = (id: string, name: string) => {
-    Alert.alert('Supprimer la monture', `Supprimer "${name}" ?`, [
-      { text: 'Annuler', style: 'cancel' },
-      { text: 'Supprimer', style: 'destructive', onPress: () => removeMount(id) },
+    Alert.alert(t('mounts.deleteConfirmTitle'), t('mounts.deleteConfirmMessage', { name }), [
+      { text: t('common.cancel'), style: 'cancel' },
+      { text: t('common.delete'), style: 'destructive', onPress: () => removeMount(id) },
     ]);
   };
 
-  const calibrationResult = (() => {
-    const distance = Number(calibrationDistance.replace(',', '.'));
+  const calibrationResultMeters = (() => {
+    const distanceRaw = Number(calibrationDistance.replace(',', '.'));
     const steps = Number(calibrationSteps.replace(',', '.'));
-    if (!distance || !steps || distance <= 0 || steps <= 0) return null;
-    return calibrateStepLength(distance, steps);
+    if (!distanceRaw || !steps || distanceRaw <= 0 || steps <= 0) return null;
+    const distanceMeters = toMeters(distanceRaw, unitSystem);
+    return calibrateStepLength(distanceMeters, steps);
   })();
 
   return (
-    <ScrollView contentContainerStyle={styles.content}>
-      <Text style={styles.heading}>Mes montures</Text>
+    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+      <Text style={[styles.heading, { color: colors.text }]}>{t('mounts.title')}</Text>
 
       {mounts.map((mount) => {
         const isActive = mount.id === selectedMountId;
         return (
-          <View key={mount.id} style={[styles.mountCard, isActive && styles.mountCardActive]}>
+          <View
+            key={mount.id}
+            style={[
+              styles.mountCard,
+              { borderColor: isActive ? colors.primary : colors.border, backgroundColor: isActive ? colors.card : colors.surface },
+            ]}
+          >
             <TouchableOpacity style={styles.mountInfo} onPress={() => selectMount(mount.id)}>
-              <Text style={styles.mountName}>{mount.name}</Text>
-              <Text style={styles.mountMeta}>
-                {CATEGORY_LABELS[mount.category]} · foulée {mount.strideLength.toFixed(2)} m
+              <Text style={[styles.mountName, { color: colors.text }]}>{mount.name}</Text>
+              <Text style={[styles.mountMeta, { color: colors.textMuted }]}>
+                {t(`categories.${mount.category}`)} · {formatLength(mount.strideLength, unitSystem)}
               </Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => handleRemoveMount(mount.id, mount.name)}>
-              <Text style={styles.deleteLabel}>Supprimer</Text>
+              <Text style={[styles.deleteLabel, { color: colors.danger }]}>{t('mounts.delete')}</Text>
             </TouchableOpacity>
           </View>
         );
       })}
 
-      <Text style={styles.sectionHeading}>Ajouter une monture</Text>
-      <NumberFieldLikeText label="Nom" value={newName} onChangeText={setNewName} />
+      <Text style={[styles.sectionHeading, { color: colors.text }]}>{t('mounts.addTitle')}</Text>
+      <View style={{ marginBottom: 14 }}>
+        <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('mounts.nameLabel')}</Text>
+        <View style={[styles.textInputWrapper, { borderColor: colors.border, backgroundColor: colors.surface }]}>
+          <TextInput
+            style={[styles.textInput, { color: colors.text }]}
+            value={newName}
+            onChangeText={setNewName}
+            placeholder={t('mounts.namePlaceholder')}
+            placeholderTextColor={colors.placeholder}
+          />
+        </View>
+      </View>
 
-      <Text style={styles.sectionLabel}>Catégorie</Text>
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('mounts.categoryLabel')}</Text>
       <SegmentedControl
-        options={CATEGORY_ORDER.map((c) => ({ value: c, label: CATEGORY_LABELS[c] }))}
+        options={CATEGORY_ORDER.map((c) => ({ value: c, label: t(`categories.${c}`) }))}
         value={newCategory}
         onChange={handleCategoryChange}
       />
@@ -84,77 +108,54 @@ export function MountsScreen() {
       <View style={{ height: 14 }} />
 
       <NumberField
-        label="Longueur de foulée par défaut"
+        label={t('mounts.strideLengthLabel')}
         value={newStrideLength}
         onChangeText={setNewStrideLength}
-        suffix="m"
+        suffix={inputUnitSuffix(unitSystem)}
       />
 
-      <TouchableOpacity style={styles.primaryButton} onPress={handleAddMount}>
-        <Text style={styles.primaryButtonText}>Ajouter la monture</Text>
+      <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleAddMount}>
+        <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('mounts.addButton')}</Text>
       </TouchableOpacity>
 
-      <View style={styles.separator} />
+      <View style={[styles.separator, { backgroundColor: colors.border }]} />
 
-      <Text style={styles.sectionHeading}>Étalonnage du pas cavalier</Text>
-      <Text style={styles.subheading}>
-        Marche un nombre de pas connu sur une distance mesurée pour calculer ta longueur de pas moyenne.
-      </Text>
+      <Text style={[styles.sectionHeading, { color: colors.text }]}>{t('mounts.calibrationTitle')}</Text>
+      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('mounts.calibrationSubtitle')}</Text>
 
       <NumberField
-        label="Distance mesurée"
+        label={t('mounts.calibrationDistanceLabel')}
         value={calibrationDistance}
         onChangeText={setCalibrationDistance}
-        placeholder="ex : 7.50"
-        suffix="m"
+        placeholder="7.50"
+        suffix={inputUnitSuffix(unitSystem)}
       />
-      <NumberField label="Nombre de pas" value={calibrationSteps} onChangeText={setCalibrationSteps} suffix="pas" />
+      <NumberField
+        label={t('mounts.calibrationStepsLabel')}
+        value={calibrationSteps}
+        onChangeText={setCalibrationSteps}
+      />
 
-      {calibrationResult ? (
+      {calibrationResultMeters ? (
         <ResultCard
-          title="Longueur de pas calculée"
-          rows={[{ label: 'Pas cavalier', value: `${calibrationResult.toFixed(3)} m`, emphasis: true }]}
+          title={t('mounts.calibrationResultTitle')}
+          rows={[{ label: t('mounts.riderStepLabel'), value: formatLength(calibrationResultMeters, unitSystem), emphasis: true }]}
         />
       ) : null}
 
       <TouchableOpacity
-        style={[styles.primaryButton, !calibrationResult && styles.primaryButtonDisabled]}
-        disabled={!calibrationResult}
-        onPress={() => calibrationResult && setRiderStepLength(calibrationResult)}
+        style={[styles.primaryButton, { backgroundColor: colors.primary }, !calibrationResultMeters && styles.primaryButtonDisabled]}
+        disabled={!calibrationResultMeters}
+        onPress={() => calibrationResultMeters && setRiderStepLength(calibrationResultMeters)}
       >
-        <Text style={styles.primaryButtonText}>Enregistrer comme pas cavalier</Text>
+        <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('mounts.saveAsRiderStep')}</Text>
       </TouchableOpacity>
 
       <ResultCard
-        title="Pas cavalier actuel"
-        rows={[{ label: 'Longueur de pas', value: `${riderStepLength.toFixed(3)} m`, emphasis: true }]}
+        title={t('mounts.currentRiderStepTitle')}
+        rows={[{ label: t('mounts.currentRiderStepLabel'), value: formatLength(riderStepLength, unitSystem), emphasis: true }]}
       />
     </ScrollView>
-  );
-}
-
-function NumberFieldLikeText({
-  label,
-  value,
-  onChangeText,
-}: {
-  label: string;
-  value: string;
-  onChangeText: (t: string) => void;
-}) {
-  return (
-    <View style={{ marginBottom: 14 }}>
-      <Text style={styles.sectionLabel}>{label}</Text>
-      <View style={styles.textInputWrapper}>
-        <TextInput
-          style={styles.textInput}
-          value={value}
-          onChangeText={onChangeText}
-          placeholder="ex : Voltigeur"
-          placeholderTextColor="#999"
-        />
-      </View>
-    </View>
   );
 }
 
@@ -166,41 +167,31 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 22,
     fontWeight: '700',
-    color: '#1a1a1a',
     marginBottom: 16,
   },
   sectionHeading: {
     fontSize: 16,
     fontWeight: '700',
-    color: '#1a1a1a',
     marginTop: 20,
     marginBottom: 10,
   },
   sectionLabel: {
     fontSize: 13,
-    color: '#555',
     marginBottom: 6,
     fontWeight: '500',
   },
   subheading: {
     fontSize: 13,
-    color: '#666',
     marginBottom: 14,
   },
   mountCard: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: '#fff',
     borderWidth: 1,
-    borderColor: '#e2e5e9',
     borderRadius: 12,
     padding: 14,
     marginBottom: 10,
-  },
-  mountCardActive: {
-    borderColor: '#2f6f4f',
-    backgroundColor: '#f4f8f5',
   },
   mountInfo: {
     flex: 1,
@@ -208,32 +199,25 @@ const styles = StyleSheet.create({
   mountName: {
     fontSize: 15,
     fontWeight: '600',
-    color: '#1a1a1a',
   },
   mountMeta: {
     fontSize: 12,
-    color: '#666',
     marginTop: 2,
   },
   deleteLabel: {
     fontSize: 12,
-    color: '#b3413a',
     fontWeight: '600',
   },
   textInputWrapper: {
     borderWidth: 1,
-    borderColor: '#d8dce1',
     borderRadius: 10,
-    backgroundColor: '#fff',
     paddingHorizontal: 12,
   },
   textInput: {
     paddingVertical: 10,
     fontSize: 16,
-    color: '#1a1a1a',
   },
   primaryButton: {
-    backgroundColor: '#2f6f4f',
     borderRadius: 10,
     paddingVertical: 12,
     alignItems: 'center',
@@ -244,13 +228,11 @@ const styles = StyleSheet.create({
     opacity: 0.5,
   },
   primaryButtonText: {
-    color: '#fff',
     fontWeight: '600',
     fontSize: 14,
   },
   separator: {
     height: 1,
-    backgroundColor: '#e2e5e9',
     marginVertical: 10,
   },
 });

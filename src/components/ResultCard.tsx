@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { useSettings } from '../context/SettingsContext';
 
 interface ResultCardProps {
   title: string;
@@ -7,13 +8,21 @@ interface ResultCardProps {
 }
 
 export function ResultCard({ title, rows }: ResultCardProps) {
+  const { colors } = useSettings();
+
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+    <View style={[styles.container, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
+      <Text style={[styles.title, { color: colors.primary }]}>{title}</Text>
       {rows.map((row) => (
         <View key={row.label} style={styles.row}>
-          <Text style={styles.rowLabel}>{row.label}</Text>
-          <Text style={[styles.rowValue, row.emphasis && styles.rowValueEmphasis]}>
+          <Text style={[styles.rowLabel, { color: colors.text }]}>{row.label}</Text>
+          <Text
+            style={[
+              styles.rowValue,
+              { color: colors.text },
+              row.emphasis && [styles.rowValueEmphasis, { color: colors.primary }],
+            ]}
+          >
             {row.value}
           </Text>
         </View>
@@ -24,16 +33,13 @@ export function ResultCard({ title, rows }: ResultCardProps) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#f4f8f5',
     borderRadius: 14,
     padding: 16,
     borderWidth: 1,
-    borderColor: '#dbe8de',
   },
   title: {
     fontSize: 13,
     fontWeight: '600',
-    color: '#2f6f4f',
     marginBottom: 10,
     textTransform: 'uppercase',
     letterSpacing: 0.5,
@@ -45,16 +51,13 @@ const styles = StyleSheet.create({
   },
   rowLabel: {
     fontSize: 14,
-    color: '#444',
   },
   rowValue: {
     fontSize: 14,
-    color: '#1a1a1a',
     fontWeight: '500',
   },
   rowValueEmphasis: {
     fontSize: 20,
     fontWeight: '700',
-    color: '#2f6f4f',
   },
 });

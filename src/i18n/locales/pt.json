@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "close": "Fechar"
+  },
+  "nav": {
+    "converter": "Conversor",
+    "combinations": "Combinações",
+    "mounts": "Montadas",
+    "chrono": "Cronómetro"
+  },
+  "converter": {
+    "title": "Conversor passos → passadas",
+    "subtitle": "Introduz o número de passos contados entre dois obstáculos para obter o número teórico de passadas.",
+    "stepsLabel": "Número de passos contados",
+    "stepsPlaceholder": "ex: 24",
+    "terrainLabel": "Terreno",
+    "speedLabel": "Velocidade",
+    "resultTitle": "Resultado",
+    "distance": "Distância percorrida",
+    "effectiveStride": "Passada efetiva",
+    "theoreticalStrides": "Passadas teóricas",
+    "suggestedStrides": "Passadas sugeridas",
+    "hintNoSteps": "Introduz o número de passos para ver o resultado.",
+    "hintNoMount": "Seleciona ou cria uma montada."
+  },
+  "combination": {
+    "title": "Calculadora de combinações",
+    "subtitle": "Distância exata a colocar entre dois elementos de uma combinação (duplo, triplo).",
+    "fromLabel": "1º elemento (partida)",
+    "toLabel": "2º elemento (receção)",
+    "heightLabel": "Altura dos obstáculos",
+    "targetStridesLabel": "Passadas desejadas",
+    "bounce": "Sem passada",
+    "oneStride": "1 passada",
+    "twoStrides": "2 passadas",
+    "threeStrides": "3 passadas",
+    "resultTitle": "Resultado",
+    "effectiveStride": "Passada efetiva",
+    "adjustedAllowance": "Ajuste aplicado",
+    "distanceToSet": "Distância a colocar",
+    "hintNoHeight": "Introduz a altura dos obstáculos.",
+    "hintNoMount": "Seleciona ou cria uma montada."
+  },
+  "mounts": {
+    "title": "As minhas montadas",
+    "delete": "Eliminar",
+    "addTitle": "Adicionar uma montada",
+    "nameLabel": "Nome",
+    "namePlaceholder": "ex: Voltigeur",
+    "categoryLabel": "Categoria",
+    "strideLengthLabel": "Comprimento de passada padrão",
+    "addButton": "Adicionar montada",
+    "missingFieldsTitle": "Campos em falta",
+    "missingFieldsMessage": "Introduz um nome e um comprimento de passada válidos.",
+    "deleteConfirmTitle": "Eliminar montada",
+    "deleteConfirmMessage": "Eliminar \"{{name}}\"?",
+    "calibrationTitle": "Calibração do passo do cavaleiro",
+    "calibrationSubtitle": "Anda um número conhecido de passos numa distância medida para calcular o teu comprimento de passo médio.",
+    "calibrationDistanceLabel": "Distância medida",
+    "calibrationStepsLabel": "Número de passos",
+    "calibrationResultTitle": "Comprimento de passo calculado",
+    "riderStepLabel": "Passo do cavaleiro",
+    "saveAsRiderStep": "Guardar como passo do cavaleiro",
+    "currentRiderStepTitle": "Passo do cavaleiro atual",
+    "currentRiderStepLabel": "Comprimento de passo"
+  },
+  "chrono": {
+    "title": "Tempo permitido",
+    "subtitle": "Calcula o tempo permitido a partir do comprimento do percurso e da velocidade imposta.",
+    "lengthLabel": "Comprimento do percurso",
+    "lengthPlaceholder": "ex: 420",
+    "speedLabel": "Velocidade imposta",
+    "speedPlaceholder": "ex: 350",
+    "resultTitle": "Resultado",
+    "allowedTimeLabel": "Tempo permitido",
+    "hintNoInput": "Introduz o comprimento do percurso e a velocidade."
+  },
+  "mountPicker": {
+    "label": "Montada",
+    "empty": "Nenhuma montada guardada. Adiciona uma no separador Montadas."
+  },
+  "categories": {
+    "PoneyD": "Pónei D",
+    "PoneyC": "Pónei C",
+    "PoneyB": "Pónei B",
+    "PoneyA": "Pónei A",
+    "Cheval": "Cavalo"
+  },
+  "terrain": {
+    "Plat": "Plano",
+    "Montant": "A subir",
+    "Descendant": "A descer",
+    "Lourd": "Terreno pesado / lamacento"
+  },
+  "speed": {
+    "Standard": "Padrão (~350 m/min)",
+    "Elite": "Elite / Desempate (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Definições",
+    "language": "Idioma",
+    "units": "Unidades",
+    "metric": "Métrico (m, cm)",
+    "imperial": "Imperial (ft, in)",
+    "darkMode": "Modo escuro"
+  }
+}

@@ -1,33 +1,40 @@
 import React, { useMemo, useState } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { MountPicker } from '../components/MountPicker';
 import { useProfiles } from '../context/ProfilesContext';
+import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE, OBSTACLE_TYPES } from '../constants/mountDefaults';
 import { combinationDistance } from '../lib/strideCalculator';
+import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
 import { ObstacleType } from '../types';
 
 const STRIDE_OPTIONS = [0, 1, 2, 3];
-const STRIDE_LABELS: Record<number, string> = {
-  0: 'Saut de puce',
-  1: '1 foulée',
-  2: '2 foulées',
-  3: '3 foulées',
-};
 
 export function CombinationScreen() {
+  const { t } = useTranslation();
   const { selectedMount } = useProfiles();
+  const { colors, unitSystem } = useSettings();
   const [from, setFrom] = useState<ObstacleType>('Vertical');
   const [to, setTo] = useState<ObstacleType>('Vertical');
   const [height, setHeight] = useState('1.10');
   const [targetStrides, setTargetStrides] = useState(1);
 
+  const strideLabels: Record<number, string> = {
+    0: t('combination.bounce'),
+    1: t('combination.oneStride'),
+    2: t('combination.twoStrides'),
+    3: t('combination.threeStrides'),
+  };
+
   const result = useMemo(() => {
     if (!selectedMount) return null;
-    const heightMeters = Number(height.replace(',', '.'));
-    if (!heightMeters || heightMeters <= 0) return null;
+    const rawHeight = Number(height.replace(',', '.'));
+    if (!rawHeight || rawHeight <= 0) return null;
+    const heightMeters = toMeters(rawHeight, unitSystem);
     const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedMount.category];
     return combinationDistance(
       targetStrides,
@@ -38,40 +45,43 @@ export function CombinationScreen() {
       fixedAllowance,
       { terrain: 'Plat', speed: 'Standard' }
     );
-  }, [selectedMount, height, from, to, targetStrides]);
+  }, [selectedMount, height, unitSystem, from, to, targetStrides]);
 
   return (
-    <ScrollView contentContainerStyle={styles.content}>
-      <Text style={styles.heading}>Calculateur de combinaisons</Text>
-      <Text style={styles.subheading}>
-        Distance exacte à poser entre deux éléments d'une combinaison (double, triple).
-      </Text>
+    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+      <Text style={[styles.heading, { color: colors.text }]}>{t('combination.title')}</Text>
+      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('combination.subtitle')}</Text>
 
       <MountPicker />
 
-      <Text style={styles.sectionLabel}>1er élément (appel)</Text>
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('combination.fromLabel')}</Text>
       <SegmentedControl
-        options={OBSTACLE_TYPES.map((t) => ({ value: t, label: t }))}
+        options={OBSTACLE_TYPES.map((obstacleType) => ({ value: obstacleType, label: obstacleType }))}
         value={from}
         onChange={setFrom}
       />
 
       <View style={{ height: 14 }} />
 
-      <Text style={styles.sectionLabel}>2e élément (réception)</Text>
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('combination.toLabel')}</Text>
       <SegmentedControl
-        options={OBSTACLE_TYPES.map((t) => ({ value: t, label: t }))}
+        options={OBSTACLE_TYPES.map((obstacleType) => ({ value: obstacleType, label: obstacleType }))}
         value={to}
         onChange={setTo}
       />
 
       <View style={{ height: 14 }} />
 
-      <NumberField label="Hauteur des obstacles" value={height} onChangeText={setHeight} suffix="m" />
+      <NumberField
+        label={t('combination.heightLabel')}
+        value={height}
+        onChangeText={setHeight}
+        suffix={inputUnitSuffix(unitSystem)}
+      />
 
-      <Text style={styles.sectionLabel}>Foulées souhaitées</Text>
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('combination.targetStridesLabel')}</Text>
       <SegmentedControl
-        options={STRIDE_OPTIONS.map((n) => ({ value: String(n), label: STRIDE_LABELS[n] }))}
+        options={STRIDE_OPTIONS.map((n) => ({ value: String(n), label: strideLabels[n] }))}
         value={String(targetStrides)}
         onChange={(v) => setTargetStrides(Number(v))}
       />
@@ -80,20 +90,20 @@ export function CombinationScreen() {
 
       {result ? (
         <ResultCard
-          title="Résultat"
+          title={t('combination.resultTitle')}
           rows={[
-            { label: 'Foulée effective', value: `${result.strideLength.toFixed(2)} m` },
-            { label: 'Allocation ajustée', value: `${result.fixedAllowance.toFixed(2)} m` },
+            { label: t('combination.effectiveStride'), value: formatLength(result.strideLength, unitSystem) },
+            { label: t('combination.adjustedAllowance'), value: formatLength(result.fixedAllowance, unitSystem) },
             {
-              label: 'Distance à poser',
-              value: `${result.distanceMeters.toFixed(2)} m`,
+              label: t('combination.distanceToSet'),
+              value: formatLength(result.distanceMeters, unitSystem),
               emphasis: true,
             },
           ]}
         />
       ) : (
-        <Text style={styles.hint}>
-          {selectedMount ? 'Renseigne la hauteur des obstacles.' : 'Sélectionne ou crée une monture.'}
+        <Text style={[styles.hint, { color: colors.textMuted }]}>
+          {selectedMount ? t('combination.hintNoHeight') : t('combination.hintNoMount')}
         </Text>
       )}
     </ScrollView>
@@ -108,23 +118,19 @@ const styles = StyleSheet.create({
   heading: {
     fontSize: 22,
     fontWeight: '700',
-    color: '#1a1a1a',
     marginBottom: 4,
   },
   subheading: {
     fontSize: 13,
-    color: '#666',
     marginBottom: 20,
   },
   sectionLabel: {
     fontSize: 13,
-    color: '#555',
     marginBottom: 6,
     fontWeight: '500',
   },
   hint: {
     fontSize: 13,
-    color: '#888',
     textAlign: 'center',
     marginTop: 10,
   },

@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "close": "关闭"
+  },
+  "nav": {
+    "converter": "换算器",
+    "combinations": "连续障碍",
+    "mounts": "坐骑",
+    "chrono": "计时器"
+  },
+  "converter": {
+    "title": "步数 → 跨步换算器",
+    "subtitle": "输入两个障碍之间数得的步数，获取理论跨步数。",
+    "stepsLabel": "数得的步数",
+    "stepsPlaceholder": "例如：24",
+    "terrainLabel": "地形",
+    "speedLabel": "速度",
+    "resultTitle": "结果",
+    "distance": "行进距离",
+    "effectiveStride": "有效跨步",
+    "theoreticalStrides": "理论跨步数",
+    "suggestedStrides": "建议跨步数",
+    "hintNoSteps": "输入步数以查看结果。",
+    "hintNoMount": "请选择或创建一个坐骑。"
+  },
+  "combination": {
+    "title": "连续障碍计算器",
+    "subtitle": "计算连续障碍（双重、三重）两个部分之间应设置的精确距离。",
+    "fromLabel": "第一部分（起跳）",
+    "toLabel": "第二部分（落地）",
+    "heightLabel": "障碍高度",
+    "targetStridesLabel": "目标跨步数",
+    "bounce": "无跨步",
+    "oneStride": "1个跨步",
+    "twoStrides": "2个跨步",
+    "threeStrides": "3个跨步",
+    "resultTitle": "结果",
+    "effectiveStride": "有效跨步",
+    "adjustedAllowance": "调整后余量",
+    "distanceToSet": "应设置的距离",
+    "hintNoHeight": "请输入障碍高度。",
+    "hintNoMount": "请选择或创建一个坐骑。"
+  },
+  "mounts": {
+    "title": "我的坐骑",
+    "delete": "删除",
+    "addTitle": "添加坐骑",
+    "nameLabel": "名称",
+    "namePlaceholder": "例如：Voltigeur",
+    "categoryLabel": "类别",
+    "strideLengthLabel": "默认跨步长度",
+    "addButton": "添加坐骑",
+    "missingFieldsTitle": "缺少信息",
+    "missingFieldsMessage": "请输入有效的名称和跨步长度。",
+    "deleteConfirmTitle": "删除坐骑",
+    "deleteConfirmMessage": "确定删除“{{name}}”吗？",
+    "calibrationTitle": "骑手步长校准",
+    "calibrationSubtitle": "在测量过的距离上走已知的步数，以计算你的平均步长。",
+    "calibrationDistanceLabel": "测量距离",
+    "calibrationStepsLabel": "步数",
+    "calibrationResultTitle": "计算出的步长",
+    "riderStepLabel": "骑手步长",
+    "saveAsRiderStep": "保存为骑手步长",
+    "currentRiderStepTitle": "当前骑手步长",
+    "currentRiderStepLabel": "步长"
+  },
+  "chrono": {
+    "title": "允许时间",
+    "subtitle": "根据赛道长度和规定速度计算允许时间。",
+    "lengthLabel": "赛道长度",
+    "lengthPlaceholder": "例如：420",
+    "speedLabel": "规定速度",
+    "speedPlaceholder": "例如：350",
+    "resultTitle": "结果",
+    "allowedTimeLabel": "允许时间",
+    "hintNoInput": "请输入赛道长度和速度。"
+  },
+  "mountPicker": {
+    "label": "坐骑",
+    "empty": "尚未保存任何坐骑，请在“坐骑”标签页中添加。"
+  },
+  "categories": {
+    "PoneyD": "D级小马",
+    "PoneyC": "C级小马",
+    "PoneyB": "B级小马",
+    "PoneyA": "A级小马",
+    "Cheval": "马"
+  },
+  "terrain": {
+    "Plat": "平地",
+    "Montant": "上坡",
+    "Descendant": "下坡",
+    "Lourd": "重/泥泞地面"
+  },
+  "speed": {
+    "Standard": "标准（约350米/分钟）",
+    "Elite": "精英/加赛（约375米/分钟以上）"
+  },
+  "settings": {
+    "title": "设置",
+    "language": "语言",
+    "units": "单位",
+    "metric": "公制（米、厘米）",
+    "imperial": "英制（英尺、英寸）",
+    "darkMode": "深色模式"
+  }
+}

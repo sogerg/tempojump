@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "close": "Schließen"
+  },
+  "nav": {
+    "converter": "Umrechner",
+    "combinations": "Kombinationen",
+    "mounts": "Pferde",
+    "chrono": "Stoppuhr"
+  },
+  "converter": {
+    "title": "Umrechner Schritte → Galoppsprünge",
+    "subtitle": "Gib die Anzahl der zwischen zwei Hindernissen gezählten Schritte ein, um die theoretische Anzahl an Galoppsprüngen zu erhalten.",
+    "stepsLabel": "Anzahl gezählter Schritte",
+    "stepsPlaceholder": "z.B. 24",
+    "terrainLabel": "Boden",
+    "speedLabel": "Geschwindigkeit",
+    "resultTitle": "Ergebnis",
+    "distance": "Zurückgelegte Distanz",
+    "effectiveStride": "Effektiver Galoppsprung",
+    "theoreticalStrides": "Theoretische Galoppsprünge",
+    "suggestedStrides": "Empfohlene Galoppsprünge",
+    "hintNoSteps": "Gib die Anzahl der Schritte ein, um das Ergebnis zu sehen.",
+    "hintNoMount": "Wähle oder erstelle ein Pferd."
+  },
+  "combination": {
+    "title": "Kombinationsrechner",
+    "subtitle": "Exakte Distanz zwischen zwei Elementen einer Kombination (Doppel, Dreifach).",
+    "fromLabel": "1. Element (Absprung)",
+    "toLabel": "2. Element (Landung)",
+    "heightLabel": "Hindernishöhe",
+    "targetStridesLabel": "Gewünschte Galoppsprünge",
+    "bounce": "Ohne Zwischensprung",
+    "oneStride": "1 Galoppsprung",
+    "twoStrides": "2 Galoppsprünge",
+    "threeStrides": "3 Galoppsprünge",
+    "resultTitle": "Ergebnis",
+    "effectiveStride": "Effektiver Galoppsprung",
+    "adjustedAllowance": "Angepasster Zuschlag",
+    "distanceToSet": "Einzustellende Distanz",
+    "hintNoHeight": "Gib die Hindernishöhe ein.",
+    "hintNoMount": "Wähle oder erstelle ein Pferd."
+  },
+  "mounts": {
+    "title": "Meine Pferde",
+    "delete": "Löschen",
+    "addTitle": "Pferd hinzufügen",
+    "nameLabel": "Name",
+    "namePlaceholder": "z.B. Voltigeur",
+    "categoryLabel": "Kategorie",
+    "strideLengthLabel": "Standard-Galoppsprunglänge",
+    "addButton": "Pferd hinzufügen",
+    "missingFieldsTitle": "Fehlende Angaben",
+    "missingFieldsMessage": "Gib einen Namen und eine gültige Galoppsprunglänge ein.",
+    "deleteConfirmTitle": "Pferd löschen",
+    "deleteConfirmMessage": "\"{{name}}\" löschen?",
+    "calibrationTitle": "Kalibrierung des Reiterschritts",
+    "calibrationSubtitle": "Gehe eine bekannte Anzahl an Schritten über eine gemessene Distanz, um deine durchschnittliche Schrittlänge zu berechnen.",
+    "calibrationDistanceLabel": "Gemessene Distanz",
+    "calibrationStepsLabel": "Anzahl der Schritte",
+    "calibrationResultTitle": "Berechnete Schrittlänge",
+    "riderStepLabel": "Reiterschritt",
+    "saveAsRiderStep": "Als Reiterschritt speichern",
+    "currentRiderStepTitle": "Aktueller Reiterschritt",
+    "currentRiderStepLabel": "Schrittlänge"
+  },
+  "chrono": {
+    "title": "Erlaubte Zeit",
+    "subtitle": "Berechne die erlaubte Zeit anhand der Parcourslänge und der vorgeschriebenen Geschwindigkeit.",
+    "lengthLabel": "Parcourslänge",
+    "lengthPlaceholder": "z.B. 420",
+    "speedLabel": "Vorgeschriebene Geschwindigkeit",
+    "speedPlaceholder": "z.B. 350",
+    "resultTitle": "Ergebnis",
+    "allowedTimeLabel": "Erlaubte Zeit",
+    "hintNoInput": "Gib die Parcourslänge und die Geschwindigkeit ein."
+  },
+  "mountPicker": {
+    "label": "Pferd",
+    "empty": "Noch kein Pferd gespeichert. Füge eines im Tab Pferde hinzu."
+  },
+  "categories": {
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
+    "Cheval": "Pferd"
+  },
+  "terrain": {
+    "Plat": "Eben",
+    "Montant": "Bergauf",
+    "Descendant": "Bergab",
+    "Lourd": "Schwerer / matschiger Boden"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Elite / Stechen (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Einstellungen",
+    "language": "Sprache",
+    "units": "Einheiten",
+    "metric": "Metrisch (m, cm)",
+    "imperial": "Imperial (ft, in)",
+    "darkMode": "Dunkler Modus"
+  }
+}

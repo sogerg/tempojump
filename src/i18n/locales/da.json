@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Annuller",
+    "save": "Gem",
+    "delete": "Slet",
+    "close": "Luk"
+  },
+  "nav": {
+    "converter": "Konverter",
+    "combinations": "Kombinationer",
+    "mounts": "Heste",
+    "chrono": "Tidtagning"
+  },
+  "converter": {
+    "title": "Konverter skridt → galopspring",
+    "subtitle": "Angiv antallet af skridt talt mellem to forhindringer for at få det teoretiske antal galopspring.",
+    "stepsLabel": "Antal talte skridt",
+    "stepsPlaceholder": "f.eks. 24",
+    "terrainLabel": "Terræn",
+    "speedLabel": "Hastighed",
+    "resultTitle": "Resultat",
+    "distance": "Tilbagelagt distance",
+    "effectiveStride": "Effektivt galopspring",
+    "theoreticalStrides": "Teoretiske galopspring",
+    "suggestedStrides": "Foreslåede galopspring",
+    "hintNoSteps": "Angiv antal skridt for at se resultatet.",
+    "hintNoMount": "Vælg eller opret en hest."
+  },
+  "combination": {
+    "title": "Kombinationsberegner",
+    "subtitle": "Præcis afstand der skal indstilles mellem to elementer i en kombination (dobbelt, tredobbelt).",
+    "fromLabel": "1. element (afspring)",
+    "toLabel": "2. element (landing)",
+    "heightLabel": "Forhindringshøjde",
+    "targetStridesLabel": "Ønskede galopspring",
+    "bounce": "Uden galopspring",
+    "oneStride": "1 galopspring",
+    "twoStrides": "2 galopspring",
+    "threeStrides": "3 galopspring",
+    "resultTitle": "Resultat",
+    "effectiveStride": "Effektivt galopspring",
+    "adjustedAllowance": "Justeret margin",
+    "distanceToSet": "Afstand der skal indstilles",
+    "hintNoHeight": "Angiv forhindringshøjden.",
+    "hintNoMount": "Vælg eller opret en hest."
+  },
+  "mounts": {
+    "title": "Mine heste",
+    "delete": "Slet",
+    "addTitle": "Tilføj hest",
+    "nameLabel": "Navn",
+    "namePlaceholder": "f.eks. Voltigeur",
+    "categoryLabel": "Kategori",
+    "strideLengthLabel": "Standard galopspringslængde",
+    "addButton": "Tilføj hest",
+    "missingFieldsTitle": "Manglende felter",
+    "missingFieldsMessage": "Angiv et gyldigt navn og en gyldig galopspringslængde.",
+    "deleteConfirmTitle": "Slet hest",
+    "deleteConfirmMessage": "Slet \"{{name}}\"?",
+    "calibrationTitle": "Kalibrering af rytterens skridt",
+    "calibrationSubtitle": "Gå et kendt antal skridt over en målt distance for at beregne din gennemsnitlige skridtlængde.",
+    "calibrationDistanceLabel": "Målt distance",
+    "calibrationStepsLabel": "Antal skridt",
+    "calibrationResultTitle": "Beregnet skridtlængde",
+    "riderStepLabel": "Rytterens skridt",
+    "saveAsRiderStep": "Gem som rytterens skridt",
+    "currentRiderStepTitle": "Nuværende rytterskridt",
+    "currentRiderStepLabel": "Skridtlængde"
+  },
+  "chrono": {
+    "title": "Tilladt tid",
+    "subtitle": "Beregn den tilladte tid ud fra banens længde og den påkrævede hastighed.",
+    "lengthLabel": "Banens længde",
+    "lengthPlaceholder": "f.eks. 420",
+    "speedLabel": "Påkrævet hastighed",
+    "speedPlaceholder": "f.eks. 350",
+    "resultTitle": "Resultat",
+    "allowedTimeLabel": "Tilladt tid",
+    "hintNoInput": "Angiv banens længde og hastigheden."
+  },
+  "mountPicker": {
+    "label": "Hest",
+    "empty": "Ingen hest gemt endnu. Tilføj en under fanen Heste."
+  },
+  "categories": {
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
+    "Cheval": "Hest"
+  },
+  "terrain": {
+    "Plat": "Fladt",
+    "Montant": "Opad bakke",
+    "Descendant": "Nedad bakke",
+    "Lourd": "Tung / mudret bund"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Elite / Omspring (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Indstillinger",
+    "language": "Sprog",
+    "units": "Enheder",
+    "metric": "Metrisk (m, cm)",
+    "imperial": "Imperial (ft, in)",
+    "darkMode": "Mørk tilstand"
+  }
+}

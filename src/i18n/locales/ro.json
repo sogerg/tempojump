@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Anulează",
+    "save": "Salvează",
+    "delete": "Șterge",
+    "close": "Închide"
+  },
+  "nav": {
+    "converter": "Convertor",
+    "combinations": "Combinații",
+    "mounts": "Cai",
+    "chrono": "Cronometru"
+  },
+  "converter": {
+    "title": "Convertor pași → galopade",
+    "subtitle": "Introdu numărul de pași numărați între două obstacole pentru a obține numărul teoretic de galopade.",
+    "stepsLabel": "Număr de pași numărați",
+    "stepsPlaceholder": "ex: 24",
+    "terrainLabel": "Teren",
+    "speedLabel": "Viteză",
+    "resultTitle": "Rezultat",
+    "distance": "Distanță parcursă",
+    "effectiveStride": "Galopadă efectivă",
+    "theoreticalStrides": "Galopade teoretice",
+    "suggestedStrides": "Galopade sugerate",
+    "hintNoSteps": "Introdu numărul de pași pentru a vedea rezultatul.",
+    "hintNoMount": "Selectează sau creează un cal."
+  },
+  "combination": {
+    "title": "Calculator de combinații",
+    "subtitle": "Distanța exactă de stabilit între două elemente ale unei combinații (dublu, triplu).",
+    "fromLabel": "Elementul 1 (bătaia de desprindere)",
+    "toLabel": "Elementul 2 (aterizare)",
+    "heightLabel": "Înălțimea obstacolelor",
+    "targetStridesLabel": "Galopade dorite",
+    "bounce": "Fără galopadă",
+    "oneStride": "1 galopadă",
+    "twoStrides": "2 galopade",
+    "threeStrides": "3 galopade",
+    "resultTitle": "Rezultat",
+    "effectiveStride": "Galopadă efectivă",
+    "adjustedAllowance": "Marjă ajustată",
+    "distanceToSet": "Distanța de stabilit",
+    "hintNoHeight": "Introdu înălțimea obstacolelor.",
+    "hintNoMount": "Selectează sau creează un cal."
+  },
+  "mounts": {
+    "title": "Caii mei",
+    "delete": "Șterge",
+    "addTitle": "Adaugă un cal",
+    "nameLabel": "Nume",
+    "namePlaceholder": "ex: Voltigeur",
+    "categoryLabel": "Categorie",
+    "strideLengthLabel": "Lungimea implicită a galopadei",
+    "addButton": "Adaugă calul",
+    "missingFieldsTitle": "Câmpuri lipsă",
+    "missingFieldsMessage": "Introdu un nume și o lungime de galopadă valide.",
+    "deleteConfirmTitle": "Șterge calul",
+    "deleteConfirmMessage": "Ștergi \"{{name}}\"?",
+    "calibrationTitle": "Calibrarea pasului călărețului",
+    "calibrationSubtitle": "Mergi un număr cunoscut de pași pe o distanță măsurată pentru a calcula lungimea medie a pasului tău.",
+    "calibrationDistanceLabel": "Distanță măsurată",
+    "calibrationStepsLabel": "Număr de pași",
+    "calibrationResultTitle": "Lungimea pasului calculată",
+    "riderStepLabel": "Pasul călărețului",
+    "saveAsRiderStep": "Salvează ca pasul călărețului",
+    "currentRiderStepTitle": "Pasul actual al călărețului",
+    "currentRiderStepLabel": "Lungimea pasului"
+  },
+  "chrono": {
+    "title": "Timp acordat",
+    "subtitle": "Calculează timpul acordat pe baza lungimii traseului și a vitezei impuse.",
+    "lengthLabel": "Lungimea traseului",
+    "lengthPlaceholder": "ex: 420",
+    "speedLabel": "Viteza impusă",
+    "speedPlaceholder": "ex: 350",
+    "resultTitle": "Rezultat",
+    "allowedTimeLabel": "Timp acordat",
+    "hintNoInput": "Introdu lungimea traseului și viteza."
+  },
+  "mountPicker": {
+    "label": "Cal",
+    "empty": "Niciun cal salvat încă. Adaugă unul în fila Cai."
+  },
+  "categories": {
+    "PoneyD": "Ponei D",
+    "PoneyC": "Ponei C",
+    "PoneyB": "Ponei B",
+    "PoneyA": "Ponei A",
+    "Cheval": "Cal"
+  },
+  "terrain": {
+    "Plat": "Plat",
+    "Montant": "Urcare",
+    "Descendant": "Coborâre",
+    "Lourd": "Teren greu / noroios"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/min)",
+    "Elite": "Elită / Baraj (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Setări",
+    "language": "Limbă",
+    "units": "Unități",
+    "metric": "Metric (m, cm)",
+    "imperial": "Imperial (ft, in)",
+    "darkMode": "Mod întunecat"
+  }
+}

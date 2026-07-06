@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Hủy",
+    "save": "Lưu",
+    "delete": "Xóa",
+    "close": "Đóng"
+  },
+  "nav": {
+    "converter": "Bộ chuyển đổi",
+    "combinations": "Tổ hợp",
+    "mounts": "Ngựa",
+    "chrono": "Đồng hồ"
+  },
+  "converter": {
+    "title": "Chuyển đổi bước chân → sải nước đại",
+    "subtitle": "Nhập số bước chân đếm được giữa hai chướng ngại vật để có số sải nước đại lý thuyết.",
+    "stepsLabel": "Số bước chân đã đếm",
+    "stepsPlaceholder": "vd: 24",
+    "terrainLabel": "Địa hình",
+    "speedLabel": "Tốc độ",
+    "resultTitle": "Kết quả",
+    "distance": "Quãng đường đã đi",
+    "effectiveStride": "Sải nước đại hiệu dụng",
+    "theoreticalStrides": "Sải nước đại lý thuyết",
+    "suggestedStrides": "Sải nước đại đề xuất",
+    "hintNoSteps": "Nhập số bước chân để xem kết quả.",
+    "hintNoMount": "Chọn hoặc tạo một con ngựa."
+  },
+  "combination": {
+    "title": "Máy tính tổ hợp",
+    "subtitle": "Khoảng cách chính xác cần đặt giữa hai phần của một tổ hợp (đôi, ba).",
+    "fromLabel": "Phần 1 (cất vó)",
+    "toLabel": "Phần 2 (tiếp đất)",
+    "heightLabel": "Chiều cao chướng ngại vật",
+    "targetStridesLabel": "Số sải nước đại mong muốn",
+    "bounce": "Không sải",
+    "oneStride": "1 sải",
+    "twoStrides": "2 sải",
+    "threeStrides": "3 sải",
+    "resultTitle": "Kết quả",
+    "effectiveStride": "Sải nước đại hiệu dụng",
+    "adjustedAllowance": "Khoảng điều chỉnh",
+    "distanceToSet": "Khoảng cách cần đặt",
+    "hintNoHeight": "Nhập chiều cao chướng ngại vật.",
+    "hintNoMount": "Chọn hoặc tạo một con ngựa."
+  },
+  "mounts": {
+    "title": "Ngựa của tôi",
+    "delete": "Xóa",
+    "addTitle": "Thêm ngựa",
+    "nameLabel": "Tên",
+    "namePlaceholder": "vd: Voltigeur",
+    "categoryLabel": "Hạng",
+    "strideLengthLabel": "Độ dài sải nước đại mặc định",
+    "addButton": "Thêm ngựa",
+    "missingFieldsTitle": "Thiếu thông tin",
+    "missingFieldsMessage": "Nhập tên và độ dài sải nước đại hợp lệ.",
+    "deleteConfirmTitle": "Xóa ngựa",
+    "deleteConfirmMessage": "Xóa \"{{name}}\"?",
+    "calibrationTitle": "Hiệu chỉnh bước chân người cưỡi",
+    "calibrationSubtitle": "Đi một số bước chân đã biết trên quãng đường đã đo để tính độ dài bước chân trung bình.",
+    "calibrationDistanceLabel": "Quãng đường đã đo",
+    "calibrationStepsLabel": "Số bước chân",
+    "calibrationResultTitle": "Độ dài bước chân đã tính",
+    "riderStepLabel": "Bước chân người cưỡi",
+    "saveAsRiderStep": "Lưu làm bước chân người cưỡi",
+    "currentRiderStepTitle": "Bước chân người cưỡi hiện tại",
+    "currentRiderStepLabel": "Độ dài bước chân"
+  },
+  "chrono": {
+    "title": "Thời gian cho phép",
+    "subtitle": "Tính thời gian cho phép dựa trên chiều dài đường đua và tốc độ quy định.",
+    "lengthLabel": "Chiều dài đường đua",
+    "lengthPlaceholder": "vd: 420",
+    "speedLabel": "Tốc độ quy định",
+    "speedPlaceholder": "vd: 350",
+    "resultTitle": "Kết quả",
+    "allowedTimeLabel": "Thời gian cho phép",
+    "hintNoInput": "Nhập chiều dài đường đua và tốc độ."
+  },
+  "mountPicker": {
+    "label": "Ngựa",
+    "empty": "Chưa có ngựa nào được lưu. Thêm một con trong tab Ngựa."
+  },
+  "categories": {
+    "PoneyD": "Ngựa nhỏ D",
+    "PoneyC": "Ngựa nhỏ C",
+    "PoneyB": "Ngựa nhỏ B",
+    "PoneyA": "Ngựa nhỏ A",
+    "Cheval": "Ngựa"
+  },
+  "terrain": {
+    "Plat": "Bằng phẳng",
+    "Montant": "Dốc lên",
+    "Descendant": "Dốc xuống",
+    "Lourd": "Đất nặng / lầy lội"
+  },
+  "speed": {
+    "Standard": "Tiêu chuẩn (~350 m/phút)",
+    "Elite": "Ưu tú / Đấu loại (~375 m/phút trở lên)"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "language": "Ngôn ngữ",
+    "units": "Đơn vị",
+    "metric": "Hệ mét (m, cm)",
+    "imperial": "Hệ Anh (ft, in)",
+    "darkMode": "Chế độ tối"
+  }
+}

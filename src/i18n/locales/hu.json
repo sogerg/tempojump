@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Mégse",
+    "save": "Mentés",
+    "delete": "Törlés",
+    "close": "Bezárás"
+  },
+  "nav": {
+    "converter": "Átváltó",
+    "combinations": "Kombinációk",
+    "mounts": "Lovak",
+    "chrono": "Időmérés"
+  },
+  "converter": {
+    "title": "Lépés → vágtaugrás átváltó",
+    "subtitle": "Add meg a két akadály között megszámolt lépések számát, hogy megkapd az elméleti vágtaugrás-számot.",
+    "stepsLabel": "Megszámolt lépések száma",
+    "stepsPlaceholder": "pl.: 24",
+    "terrainLabel": "Talaj",
+    "speedLabel": "Sebesség",
+    "resultTitle": "Eredmény",
+    "distance": "Megtett távolság",
+    "effectiveStride": "Effektív vágtaugrás",
+    "theoreticalStrides": "Elméleti vágtaugrások",
+    "suggestedStrides": "Javasolt vágtaugrások",
+    "hintNoSteps": "Add meg a lépések számát az eredmény megtekintéséhez.",
+    "hintNoMount": "Válassz vagy hozz létre egy lovat."
+  },
+  "combination": {
+    "title": "Kombináció-kalkulátor",
+    "subtitle": "Egy kombináció (dupla, tripla) két eleme közé beállítandó pontos távolság.",
+    "fromLabel": "1. elem (elugrás)",
+    "toLabel": "2. elem (landolás)",
+    "heightLabel": "Akadályok magassága",
+    "targetStridesLabel": "Kívánt vágtaugrások",
+    "bounce": "Vágtaugrás nélkül",
+    "oneStride": "1 vágtaugrás",
+    "twoStrides": "2 vágtaugrás",
+    "threeStrides": "3 vágtaugrás",
+    "resultTitle": "Eredmény",
+    "effectiveStride": "Effektív vágtaugrás",
+    "adjustedAllowance": "Módosított ráhagyás",
+    "distanceToSet": "Beállítandó távolság",
+    "hintNoHeight": "Add meg az akadályok magasságát.",
+    "hintNoMount": "Válassz vagy hozz létre egy lovat."
+  },
+  "mounts": {
+    "title": "Lovaim",
+    "delete": "Törlés",
+    "addTitle": "Ló hozzáadása",
+    "nameLabel": "Név",
+    "namePlaceholder": "pl.: Voltigeur",
+    "categoryLabel": "Kategória",
+    "strideLengthLabel": "Alapértelmezett vágtaugrás-hossz",
+    "addButton": "Ló hozzáadása",
+    "missingFieldsTitle": "Hiányzó mezők",
+    "missingFieldsMessage": "Adj meg egy érvényes nevet és vágtaugrás-hosszt.",
+    "deleteConfirmTitle": "Ló törlése",
+    "deleteConfirmMessage": "Törlöd: \"{{name}}\"?",
+    "calibrationTitle": "Lovas lépéshosszának kalibrálása",
+    "calibrationSubtitle": "Sétálj egy ismert lépésszámot egy megmért távolságon, hogy kiszámítsd az átlagos lépéshosszadat.",
+    "calibrationDistanceLabel": "Megmért távolság",
+    "calibrationStepsLabel": "Lépések száma",
+    "calibrationResultTitle": "Kiszámított lépéshossz",
+    "riderStepLabel": "Lovas lépése",
+    "saveAsRiderStep": "Mentés lovas lépéseként",
+    "currentRiderStepTitle": "Jelenlegi lovas lépés",
+    "currentRiderStepLabel": "Lépéshossz"
+  },
+  "chrono": {
+    "title": "Megengedett idő",
+    "subtitle": "Számítsd ki a megengedett időt a pálya hossza és az előírt sebesség alapján.",
+    "lengthLabel": "Pálya hossza",
+    "lengthPlaceholder": "pl.: 420",
+    "speedLabel": "Előírt sebesség",
+    "speedPlaceholder": "pl.: 350",
+    "resultTitle": "Eredmény",
+    "allowedTimeLabel": "Megengedett idő",
+    "hintNoInput": "Add meg a pálya hosszát és a sebességet."
+  },
+  "mountPicker": {
+    "label": "Ló",
+    "empty": "Még nincs mentett ló. Adj hozzá egyet a Lovak fülön."
+  },
+  "categories": {
+    "PoneyD": "D póni",
+    "PoneyC": "C póni",
+    "PoneyB": "B póni",
+    "PoneyA": "A póni",
+    "Cheval": "Ló"
+  },
+  "terrain": {
+    "Plat": "Sík",
+    "Montant": "Emelkedő",
+    "Descendant": "Lejtő",
+    "Lourd": "Nehéz / sáros talaj"
+  },
+  "speed": {
+    "Standard": "Standard (~350 m/perc)",
+    "Elite": "Elit / Rájárás (~375 m/perc+)"
+  },
+  "settings": {
+    "title": "Beállítások",
+    "language": "Nyelv",
+    "units": "Mértékegységek",
+    "metric": "Metrikus (m, cm)",
+    "imperial": "Angolszász (ft, in)",
+    "darkMode": "Sötét mód"
+  }
+}

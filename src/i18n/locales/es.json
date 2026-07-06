@@ -1,0 +1,110 @@
+{
+  "common": {
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "close": "Cerrar"
+  },
+  "nav": {
+    "converter": "Convertidor",
+    "combinations": "Combinaciones",
+    "mounts": "Monturas",
+    "chrono": "Crono"
+  },
+  "converter": {
+    "title": "Convertidor pasos → zancadas",
+    "subtitle": "Introduce el número de pasos contados entre dos obstáculos para obtener el número teórico de zancadas.",
+    "stepsLabel": "Número de pasos contados",
+    "stepsPlaceholder": "ej: 24",
+    "terrainLabel": "Terreno",
+    "speedLabel": "Velocidad",
+    "resultTitle": "Resultado",
+    "distance": "Distancia recorrida",
+    "effectiveStride": "Zancada efectiva",
+    "theoreticalStrides": "Zancadas teóricas",
+    "suggestedStrides": "Zancadas sugeridas",
+    "hintNoSteps": "Introduce el número de pasos para ver el resultado.",
+    "hintNoMount": "Selecciona o crea una montura."
+  },
+  "combination": {
+    "title": "Calculadora de combinaciones",
+    "subtitle": "Distancia exacta a colocar entre dos elementos de una combinación (doble, triple).",
+    "fromLabel": "1er elemento (salida)",
+    "toLabel": "2º elemento (recepción)",
+    "heightLabel": "Altura de los obstáculos",
+    "targetStridesLabel": "Zancadas deseadas",
+    "bounce": "A un tiempo",
+    "oneStride": "1 zancada",
+    "twoStrides": "2 zancadas",
+    "threeStrides": "3 zancadas",
+    "resultTitle": "Resultado",
+    "effectiveStride": "Zancada efectiva",
+    "adjustedAllowance": "Ajuste aplicado",
+    "distanceToSet": "Distancia a colocar",
+    "hintNoHeight": "Introduce la altura de los obstáculos.",
+    "hintNoMount": "Selecciona o crea una montura."
+  },
+  "mounts": {
+    "title": "Mis monturas",
+    "delete": "Eliminar",
+    "addTitle": "Añadir una montura",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "ej: Voltigeur",
+    "categoryLabel": "Categoría",
+    "strideLengthLabel": "Longitud de zancada por defecto",
+    "addButton": "Añadir montura",
+    "missingFieldsTitle": "Campos incompletos",
+    "missingFieldsMessage": "Introduce un nombre y una longitud de zancada válidos.",
+    "deleteConfirmTitle": "Eliminar montura",
+    "deleteConfirmMessage": "¿Eliminar \"{{name}}\"?",
+    "calibrationTitle": "Calibración del paso del jinete",
+    "calibrationSubtitle": "Camina un número conocido de pasos sobre una distancia medida para calcular tu longitud de paso media.",
+    "calibrationDistanceLabel": "Distancia medida",
+    "calibrationStepsLabel": "Número de pasos",
+    "calibrationResultTitle": "Longitud de paso calculada",
+    "riderStepLabel": "Paso del jinete",
+    "saveAsRiderStep": "Guardar como paso del jinete",
+    "currentRiderStepTitle": "Paso del jinete actual",
+    "currentRiderStepLabel": "Longitud de paso"
+  },
+  "chrono": {
+    "title": "Tiempo concedido",
+    "subtitle": "Calcula el tiempo concedido a partir de la longitud del recorrido y la velocidad impuesta.",
+    "lengthLabel": "Longitud del recorrido",
+    "lengthPlaceholder": "ej: 420",
+    "speedLabel": "Velocidad impuesta",
+    "speedPlaceholder": "ej: 350",
+    "resultTitle": "Resultado",
+    "allowedTimeLabel": "Tiempo concedido",
+    "hintNoInput": "Introduce la longitud del recorrido y la velocidad."
+  },
+  "mountPicker": {
+    "label": "Montura",
+    "empty": "Ninguna montura guardada. Añade una en la pestaña Monturas."
+  },
+  "categories": {
+    "PoneyD": "Poni D",
+    "PoneyC": "Poni C",
+    "PoneyB": "Poni B",
+    "PoneyA": "Poni A",
+    "Cheval": "Caballo"
+  },
+  "terrain": {
+    "Plat": "Llano",
+    "Montant": "Cuesta arriba",
+    "Descendant": "Cuesta abajo",
+    "Lourd": "Terreno pesado / embarrado"
+  },
+  "speed": {
+    "Standard": "Estándar (~350 m/min)",
+    "Elite": "Élite / Desempate (~375 m/min+)"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "units": "Unidades",
+    "metric": "Métrico (m, cm)",
+    "imperial": "Imperial (ft, in)",
+    "darkMode": "Modo oscuro"
+  }
+}
