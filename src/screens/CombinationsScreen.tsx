@@ -5,10 +5,10 @@ import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { HorsePicker } from '../components/HorsePicker';
+import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE, OBSTACLE_TYPES } from '../constants/horseDefaults';
-import { FONTS } from '../constants/typography';
 import { combinationDistance } from '../lib/mathUtils';
 import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
 import { ObstacleType } from '../types';
@@ -50,8 +50,7 @@ export function CombinationsScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('combination.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('combination.subtitle')}</Text>
+      <IntroCard title={t('combination.title')} subtitle={t('combination.subtitle')} />
 
       <HorsePicker />
 
@@ -115,15 +114,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
-  },
-  heading: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
-    marginBottom: 20,
   },
   sectionLabel: {
     fontSize: 13,

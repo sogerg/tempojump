@@ -5,7 +5,7 @@ import { useSettings } from '../context/SettingsContext';
 import { CHECKLIST_ITEMS } from '../constants/checklistDefaults';
 import { loadChecklistState, saveChecklistState } from '../lib/storage';
 import { ChecklistCategory } from '../types';
-import { FONTS } from '../constants/typography';
+import { IntroCard } from '../components/IntroCard';
 
 const SECTIONS: { category: ChecklistCategory; titleKey: string }[] = [
   { category: 'horse', titleKey: 'checklist.sectionHorse' },
@@ -38,8 +38,7 @@ export function ChecklistScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('checklist.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('checklist.subtitle')}</Text>
+      <IntroCard title={t('checklist.title')} subtitle={t('checklist.subtitle')} />
 
       {SECTIONS.map((section) => (
         <View key={section.category} style={styles.section}>
@@ -86,15 +85,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
-  },
-  heading: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
-    marginBottom: 20,
   },
   section: {
     marginBottom: 20,

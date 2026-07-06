@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teoretiska galoppsprång",
     "suggestedStrides": "Föreslagna galoppsprång",
     "hintNoSteps": "Ange antalet steg för att se resultatet.",
-    "hintNoMount": "Välj eller skapa en häst."
+    "hintNoMount": "Välj eller skapa en häst.",
+    "headerTitle": "Omvandlare"
   },
   "combination": {
     "title": "Kombinationskalkylator",

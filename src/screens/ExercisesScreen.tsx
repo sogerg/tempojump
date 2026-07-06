@@ -4,12 +4,12 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { ResultCard } from '../components/ResultCard';
 import { HorsePicker } from '../components/HorsePicker';
+import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE, EXERCISE_STRIDE_RANGE } from '../constants/horseDefaults';
 import { combinationDistance } from '../lib/mathUtils';
 import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
-import { FONTS } from '../constants/typography';
 
 export function ExercisesScreen() {
   const { t } = useTranslation();
@@ -44,8 +44,7 @@ export function ExercisesScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('exercises.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('exercises.subtitle')}</Text>
+      <IntroCard title={t('exercises.title')} subtitle={t('exercises.subtitle')} />
 
       <HorsePicker />
 
@@ -73,15 +72,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
-  },
-  heading: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
-    marginBottom: 20,
   },
   hint: {
     fontSize: 13,

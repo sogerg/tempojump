@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teoreettiset laukka-askeleet",
     "suggestedStrides": "Suositellut laukka-askeleet",
     "hintNoSteps": "Syötä askelten määrä nähdäksesi tuloksen.",
-    "hintNoMount": "Valitse tai luo hevonen."
+    "hintNoMount": "Valitse tai luo hevonen.",
+    "headerTitle": "Muunnin"
   },
   "combination": {
     "title": "Yhdistelmälaskuri",

@@ -30,7 +30,8 @@
     "theoreticalStrides": "이론적 스트라이드 수",
     "suggestedStrides": "권장 스트라이드 수",
     "hintNoSteps": "걸음 수를 입력하면 결과가 표시됩니다.",
-    "hintNoMount": "말을 선택하거나 추가하세요."
+    "hintNoMount": "말을 선택하거나 추가하세요.",
+    "headerTitle": "변환기"
   },
   "combination": {
     "title": "콤비네이션 계산기",

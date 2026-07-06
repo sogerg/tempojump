@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teoretyczne cwały",
     "suggestedStrides": "Sugerowane cwały",
     "hintNoSteps": "Wprowadź liczbę kroków, aby zobaczyć wynik.",
-    "hintNoMount": "Wybierz lub utwórz konia."
+    "hintNoMount": "Wybierz lub utwórz konia.",
+    "headerTitle": "Przelicznik"
   },
   "combination": {
     "title": "Kalkulator kombinacji",

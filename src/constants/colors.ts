@@ -12,13 +12,16 @@ export interface ThemeColors {
   danger: string;
   placeholder: string;
   accentGold: string;
+  introGradientStart: string;
+  introGradientEnd: string;
 }
 
-// Palette "cavalerie élégante" : beige cuir chaud, rose poudré, vert olive,
-// accents or brossé — inspirée de la maquette design (doc/maquette design elegante.png).
+// Palette "cavalerie élégante" : beige cuir clair (presque blanc), rose
+// poudré, vert olive, accents or brossé — inspirée de la maquette design
+// (doc/maquette design elegante.png).
 export const lightColors: ThemeColors = {
-  background: '#F7EFE3',
-  surface: '#FBF6EE',
+  background: '#FCFAF5',
+  surface: '#FFFFFF',
   card: '#F0DFD8',
   cardBorder: '#D9BE98',
   text: '#3B2A20',
@@ -30,6 +33,8 @@ export const lightColors: ThemeColors = {
   danger: '#B5675A',
   placeholder: '#B69C86',
   accentGold: '#C9A24B',
+  introGradientStart: '#F3D9CE',
+  introGradientEnd: '#E1B7A9',
 };
 
 export const darkColors: ThemeColors = {
@@ -46,4 +51,6 @@ export const darkColors: ThemeColors = {
   danger: '#C97A6C',
   placeholder: '#8A7460',
   accentGold: '#D4AF6A',
+  introGradientStart: '#4A342E',
+  introGradientEnd: '#37241F',
 };

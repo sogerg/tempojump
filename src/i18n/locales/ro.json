@@ -30,7 +30,8 @@
     "theoreticalStrides": "Galopade teoretice",
     "suggestedStrides": "Galopade sugerate",
     "hintNoSteps": "Introdu numărul de pași pentru a vedea rezultatul.",
-    "hintNoMount": "Selectează sau creează un cal."
+    "hintNoMount": "Selectează sau creează un cal.",
+    "headerTitle": "Convertor"
   },
   "combination": {
     "title": "Calculator de combinații",

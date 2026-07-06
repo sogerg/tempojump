@@ -30,7 +30,8 @@
     "theoreticalStrides": "Elméleti vágtaugrások",
     "suggestedStrides": "Javasolt vágtaugrások",
     "hintNoSteps": "Add meg a lépések számát az eredmény megtekintéséhez.",
-    "hintNoMount": "Válassz vagy hozz létre egy lovat."
+    "hintNoMount": "Válassz vagy hozz létre egy lovat.",
+    "headerTitle": "Átváltó"
   },
   "combination": {
     "title": "Kombináció-kalkulátor",

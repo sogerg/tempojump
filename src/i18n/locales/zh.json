@@ -30,7 +30,8 @@
     "theoreticalStrides": "理论跨步数",
     "suggestedStrides": "建议跨步数",
     "hintNoSteps": "输入步数以查看结果。",
-    "hintNoMount": "请选择或创建一个坐骑。"
+    "hintNoMount": "请选择或创建一个坐骑。",
+    "headerTitle": "换算器"
   },
   "combination": {
     "title": "连续障碍计算器",

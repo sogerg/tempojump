@@ -30,7 +30,8 @@
     "theoreticalStrides": "理論上のストライド数",
     "suggestedStrides": "推奨ストライド数",
     "hintNoSteps": "歩数を入力すると結果が表示されます。",
-    "hintNoMount": "馬を選択または作成してください。"
+    "hintNoMount": "馬を選択または作成してください。",
+    "headerTitle": "換算"
   },
   "combination": {
     "title": "コンビネーション計算",

@@ -30,7 +30,8 @@
     "theoreticalStrides": "Falcate teoriche",
     "suggestedStrides": "Falcate consigliate",
     "hintNoSteps": "Inserisci il numero di passi per vedere il risultato.",
-    "hintNoMount": "Seleziona o crea un cavallo."
+    "hintNoMount": "Seleziona o crea un cavallo.",
+    "headerTitle": "Convertitore"
   },
   "combination": {
     "title": "Calcolatore di combinazioni",

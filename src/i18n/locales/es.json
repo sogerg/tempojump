@@ -30,7 +30,8 @@
     "theoreticalStrides": "Zancadas teóricas",
     "suggestedStrides": "Zancadas sugeridas",
     "hintNoSteps": "Introduce el número de pasos para ver el resultado.",
-    "hintNoMount": "Selecciona o crea una montura."
+    "hintNoMount": "Selecciona o crea una montura.",
+    "headerTitle": "Convertidor"
   },
   "combination": {
     "title": "Calculadora de combinaciones",

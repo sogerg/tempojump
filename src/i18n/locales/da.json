@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teoretiske galopspring",
     "suggestedStrides": "Foreslåede galopspring",
     "hintNoSteps": "Angiv antal skridt for at se resultatet.",
-    "hintNoMount": "Vælg eller opret en hest."
+    "hintNoMount": "Vælg eller opret en hest.",
+    "headerTitle": "Konverter"
   },
   "combination": {
     "title": "Kombinationsberegner",

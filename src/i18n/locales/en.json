@@ -30,7 +30,8 @@
     "theoreticalStrides": "Theoretical strides",
     "suggestedStrides": "Suggested strides",
     "hintNoSteps": "Enter the number of steps to see the result.",
-    "hintNoMount": "Select or create a mount."
+    "hintNoMount": "Select or create a mount.",
+    "headerTitle": "Converter"
   },
   "combination": {
     "title": "Combination calculator",

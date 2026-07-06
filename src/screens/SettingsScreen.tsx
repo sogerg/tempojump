@@ -74,8 +74,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   title: {
-    fontSize: 18,
-    fontWeight: '700',
+    fontSize: 20,
   },
   closeButton: {
     fontSize: 14,

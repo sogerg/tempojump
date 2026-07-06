@@ -36,7 +36,8 @@
           "photosPermission": "Autorise l'accès à tes photos pour choisir un plan de parcours ou une vidéo."
         }
       ],
-      "expo-file-system"
+      "expo-file-system",
+      "expo-font"
     ]
   }
 }

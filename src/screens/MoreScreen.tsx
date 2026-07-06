@@ -48,8 +48,7 @@ const styles = StyleSheet.create({
     paddingBottom: 60,
   },
   heading: {
-    fontSize: 22,
-    fontWeight: '700',
+    fontSize: 24,
     marginBottom: 20,
   },
   row: {

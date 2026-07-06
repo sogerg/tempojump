@@ -30,7 +30,8 @@
     "theoreticalStrides": "सैद्धांतिक स्ट्राइड",
     "suggestedStrides": "सुझाई गई स्ट्राइड",
     "hintNoSteps": "परिणाम देखने के लिए कदमों की संख्या दर्ज करें।",
-    "hintNoMount": "एक घोड़ा चुनें या बनाएं।"
+    "hintNoMount": "एक घोड़ा चुनें या बनाएं।",
+    "headerTitle": "परिवर्तक"
   },
   "combination": {
     "title": "संयोजन कैलकुलेटर",

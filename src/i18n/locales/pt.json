@@ -30,7 +30,8 @@
     "theoreticalStrides": "Passadas teóricas",
     "suggestedStrides": "Passadas sugeridas",
     "hintNoSteps": "Introduz o número de passos para ver o resultado.",
-    "hintNoMount": "Seleciona ou cria uma montada."
+    "hintNoMount": "Seleciona ou cria uma montada.",
+    "headerTitle": "Conversor"
   },
   "combination": {
     "title": "Calculadora de combinações",

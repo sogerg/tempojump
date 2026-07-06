@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teoretiske galoppsprang",
     "suggestedStrides": "Foreslåtte galoppsprang",
     "hintNoSteps": "Angi antall skritt for å se resultatet.",
-    "hintNoMount": "Velg eller opprett en hest."
+    "hintNoMount": "Velg eller opprett en hest.",
+    "headerTitle": "Omregner"
   },
   "combination": {
     "title": "Kombinasjonskalkulator",

@@ -30,7 +30,8 @@
     "theoreticalStrides": "الوثبات النظرية",
     "suggestedStrides": "الوثبات المقترحة",
     "hintNoSteps": "أدخل عدد الخطوات لرؤية النتيجة.",
-    "hintNoMount": "اختر أو أنشئ حصانًا."
+    "hintNoMount": "اختر أو أنشئ حصانًا.",
+    "headerTitle": "المحوّل"
   },
   "combination": {
     "title": "حاسبة المركّبات",

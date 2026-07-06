@@ -30,7 +30,8 @@
     "theoreticalStrides": "จังหวะม้าวิ่งทางทฤษฎี",
     "suggestedStrides": "จังหวะม้าวิ่งที่แนะนำ",
     "hintNoSteps": "ป้อนจำนวนก้าวเพื่อดูผลลัพธ์",
-    "hintNoMount": "เลือกหรือสร้างม้า"
+    "hintNoMount": "เลือกหรือสร้างม้า",
+    "headerTitle": "ตัวแปลง"
   },
   "combination": {
     "title": "เครื่องคำนวณชุดสิ่งกีดขวาง",

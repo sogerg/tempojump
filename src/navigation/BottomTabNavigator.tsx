@@ -12,6 +12,7 @@ import { ChronoScreen } from '../screens/ChronoScreen';
 import { MoreScreen } from '../screens/MoreScreen';
 import { useSettings } from '../context/SettingsContext';
 import { HorseshoeIcon } from '../components/icons';
+import { FONTS } from '../constants/typography';
 
 const Tab = createBottomTabNavigator();
 
@@ -44,14 +45,18 @@ export function BottomTabNavigator() {
         tabBarInactiveTintColor: colors.textMuted,
         tabBarStyle: { backgroundColor: colors.surface, borderTopColor: colors.border },
         headerStyle: { backgroundColor: colors.surface },
-        headerTitleStyle: { color: colors.text, fontFamily: 'serif' },
+        headerTitleStyle: { color: colors.text, fontFamily: FONTS.heading, fontSize: 20 },
         tabBarIcon: ({ color, size }: { color: string; size: number }) => {
           const Icon = TAB_ICONS[route.name] ?? Footprints;
           return <Icon size={size} color={color} />;
         },
       })}
     >
-      <Tab.Screen name="Convertisseur" options={{ title: t('nav.converter') }} component={ConverterScreen} />
+      <Tab.Screen
+        name="Convertisseur"
+        options={{ tabBarLabel: t('nav.converter'), title: t('converter.headerTitle') }}
+        component={ConverterScreen}
+      />
       <Tab.Screen name="Combinaisons" options={{ title: t('nav.combinations') }} component={CombinationsScreen} />
       <Tab.Screen name="Montures" options={{ title: t('nav.mounts') }} component={HorsesScreen} />
       <Tab.Screen name="Exercices" options={{ title: t('nav.exercises') }} component={ExercisesScreen} />

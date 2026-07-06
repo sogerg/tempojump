@@ -30,7 +30,8 @@
     "theoreticalStrides": "Theoretische Galoppsprünge",
     "suggestedStrides": "Empfohlene Galoppsprünge",
     "hintNoSteps": "Gib die Anzahl der Schritte ein, um das Ergebnis zu sehen.",
-    "hintNoMount": "Wähle oder erstelle ein Pferd."
+    "hintNoMount": "Wähle oder erstelle ein Pferd.",
+    "headerTitle": "Umrechner"
   },
   "combination": {
     "title": "Kombinationsrechner",

@@ -6,11 +6,11 @@ import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { HorsePicker } from '../components/HorsePicker';
+import { IntroCard } from '../components/IntroCard';
 import { HorseshoeIcon } from '../components/icons';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE } from '../constants/horseDefaults';
-import { FONTS } from '../constants/typography';
 import { stepsToStrides } from '../lib/mathUtils';
 import { formatLength } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
@@ -40,14 +40,7 @@ export function ConverterScreen() {
         <HorseshoeIcon size={340} color={colors.text} />
       </View>
       <ScrollView contentContainerStyle={styles.content}>
-        <View style={[styles.introCard, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
-          <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>
-            {t('converter.title')}
-          </Text>
-          <Text style={[styles.subheading, { color: colors.textMuted, fontFamily: FONTS.body }]}>
-            {t('converter.subtitle')}
-          </Text>
-        </View>
+        <IntroCard title={t('converter.title')} subtitle={t('converter.subtitle')} />
 
         <HorsePicker />
 
@@ -117,21 +110,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 60,
     right: -60,
-    opacity: 0.06,
-  },
-  introCard: {
-    borderWidth: 1,
-    borderRadius: 16,
-    padding: 16,
-    marginBottom: 20,
-  },
-  heading: {
-    fontSize: 23,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
+    opacity: 0.07,
   },
   sectionLabel: {
     fontSize: 13,

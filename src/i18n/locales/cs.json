@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teoretické cvalové skoky",
     "suggestedStrides": "Doporučené cvalové skoky",
     "hintNoSteps": "Zadejte počet kroků pro zobrazení výsledku.",
-    "hintNoMount": "Vyberte nebo vytvořte koně."
+    "hintNoMount": "Vyberte nebo vytvořte koně.",
+    "headerTitle": "Převodník"
   },
   "combination": {
     "title": "Kalkulačka kombinací",

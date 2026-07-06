@@ -30,7 +30,8 @@
     "theoreticalStrides": "Theoretische galopsprongen",
     "suggestedStrides": "Voorgestelde galopsprongen",
     "hintNoSteps": "Voer het aantal stappen in om het resultaat te zien.",
-    "hintNoMount": "Selecteer of maak een paard aan."
+    "hintNoMount": "Selecteer of maak een paard aan.",
+    "headerTitle": "Omzetter"
   },
   "combination": {
     "title": "Combinatiecalculator",

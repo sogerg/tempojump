@@ -30,7 +30,8 @@
     "theoreticalStrides": "Foulées théoriques",
     "suggestedStrides": "Foulées conseillées",
     "hintNoSteps": "Renseigne le nombre de pas pour voir le résultat.",
-    "hintNoMount": "Sélectionne ou crée une monture."
+    "hintNoMount": "Sélectionne ou crée une monture.",
+    "headerTitle": "Convertisseur d'Amplitude"
   },
   "combination": {
     "title": "Calculateur de combinaisons",

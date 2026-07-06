@@ -30,7 +30,8 @@
     "theoreticalStrides": "Teorik dörtnala adımları",
     "suggestedStrides": "Önerilen dörtnala adımları",
     "hintNoSteps": "Sonucu görmek için adım sayısını gir.",
-    "hintNoMount": "Bir at seç veya oluştur."
+    "hintNoMount": "Bir at seç veya oluştur.",
+    "headerTitle": "Dönüştürücü"
   },
   "combination": {
     "title": "Kombinasyon hesaplayıcı",

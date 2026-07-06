@@ -30,7 +30,8 @@
     "theoreticalStrides": "Sải nước đại lý thuyết",
     "suggestedStrides": "Sải nước đại đề xuất",
     "hintNoSteps": "Nhập số bước chân để xem kết quả.",
-    "hintNoMount": "Chọn hoặc tạo một con ngựa."
+    "hintNoMount": "Chọn hoặc tạo một con ngựa.",
+    "headerTitle": "Bộ chuyển đổi"
   },
   "combination": {
     "title": "Máy tính tổ hợp",

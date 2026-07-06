@@ -6,10 +6,10 @@ import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { HorsePicker } from '../components/HorsePicker';
+import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { canterCadence } from '../lib/mathUtils';
-import { FONTS } from '../constants/typography';
 
 const SPEED_PRESETS = ['300', '350', '375'];
 const clickSound = require('../../assets/sounds/metronome-click.wav');
@@ -48,8 +48,7 @@ export function MetronomeScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('metronome.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('metronome.subtitle')}</Text>
+      <IntroCard title={t('metronome.title')} subtitle={t('metronome.subtitle')} />
 
       <HorsePicker />
 
@@ -92,15 +91,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
-  },
-  heading: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
-    marginBottom: 20,
   },
   hint: {
     fontSize: 13,

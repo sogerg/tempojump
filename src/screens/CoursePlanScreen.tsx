@@ -23,7 +23,7 @@ import {
   saveCoursePlans,
 } from '../lib/storage';
 import { CoursePlan, DrawingStroke, StrideMarker } from '../types';
-import { FONTS } from '../constants/typography';
+import { IntroCard } from '../components/IntroCard';
 import { Camera, Images, MapPin, PenLine, Save, Share2, Trash2, Undo2 } from 'lucide-react-native';
 
 function generateId(): string {
@@ -168,8 +168,7 @@ export function CoursePlanScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('coursePlan.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('coursePlan.subtitle')}</Text>
+      <IntroCard title={t('coursePlan.title')} subtitle={t('coursePlan.subtitle')} />
 
       {plans.length > 0 ? (
         <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.planList}>
@@ -326,15 +325,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
-  },
-  heading: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
-    marginBottom: 16,
   },
   planList: {
     marginBottom: 14,

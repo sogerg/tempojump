@@ -7,7 +7,7 @@ import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
 import { strideDelta } from '../lib/mathUtils';
 import { JournalEntry } from '../types';
-import { FONTS } from '../constants/typography';
+import { IntroCard } from '../components/IntroCard';
 import { FolderOpen, Plus, Save, Trash2, Video, X } from 'lucide-react-native';
 
 function generateId(): string {
@@ -117,8 +117,7 @@ export function JournalScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('journal.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('journal.subtitle')}</Text>
+      <IntroCard title={t('journal.title')} subtitle={t('journal.subtitle')} />
 
       {entries.map((entry) => (
         <View key={entry.id} style={[styles.entryCard, { borderColor: colors.border, backgroundColor: colors.surface }]}>
@@ -231,15 +230,6 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
-  },
-  heading: {
-    fontSize: 22,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  subheading: {
-    fontSize: 13,
-    marginBottom: 20,
   },
   entryCard: {
     borderWidth: 1,
