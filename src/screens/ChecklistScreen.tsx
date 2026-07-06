@@ -5,6 +5,7 @@ import { useSettings } from '../context/SettingsContext';
 import { CHECKLIST_ITEMS } from '../constants/checklistDefaults';
 import { loadChecklistState, saveChecklistState } from '../lib/storage';
 import { ChecklistCategory } from '../types';
+import { FONTS } from '../constants/typography';
 
 const SECTIONS: { category: ChecklistCategory; titleKey: string }[] = [
   { category: 'horse', titleKey: 'checklist.sectionHorse' },
@@ -37,7 +38,7 @@ export function ChecklistScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('checklist.title')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('checklist.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('checklist.subtitle')}</Text>
 
       {SECTIONS.map((section) => (

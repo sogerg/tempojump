@@ -11,34 +11,39 @@ export interface ThemeColors {
   segmentBackground: string;
   danger: string;
   placeholder: string;
+  accentGold: string;
 }
 
+// Palette "cavalerie élégante" : beige cuir chaud, rose poudré, vert olive,
+// accents or brossé — inspirée de la maquette design (doc/maquette design elegante.png).
 export const lightColors: ThemeColors = {
-  background: '#ffffff',
-  surface: '#ffffff',
-  card: '#f4f8f5',
-  cardBorder: '#dbe8de',
-  text: '#1a1a1a',
-  textMuted: '#666666',
-  border: '#d8dce1',
-  primary: '#2f6f4f',
-  primaryText: '#ffffff',
-  segmentBackground: '#eef1f4',
-  danger: '#b3413a',
-  placeholder: '#999999',
+  background: '#F7EFE3',
+  surface: '#FBF6EE',
+  card: '#F0DFD8',
+  cardBorder: '#D9BE98',
+  text: '#3B2A20',
+  textMuted: '#8A6F5C',
+  border: '#DEC6A6',
+  primary: '#8FA377',
+  primaryText: '#FFFFFF',
+  segmentBackground: '#EDE0D0',
+  danger: '#B5675A',
+  placeholder: '#B69C86',
+  accentGold: '#C9A24B',
 };
 
 export const darkColors: ThemeColors = {
-  background: '#121412',
-  surface: '#1c1f1c',
-  card: '#1c2620',
-  cardBorder: '#2c3a31',
-  text: '#f1f3f1',
-  textMuted: '#a9b0a9',
-  border: '#33372f',
-  primary: '#4caf7d',
-  primaryText: '#0d1a12',
-  segmentBackground: '#232823',
-  danger: '#e0665c',
-  placeholder: '#7a807a',
+  background: '#211A14',
+  surface: '#2B2119',
+  card: '#3A2B27',
+  cardBorder: '#6B4F35',
+  text: '#F1E4D3',
+  textMuted: '#B8A08C',
+  border: '#5A4531',
+  primary: '#7C9367',
+  primaryText: '#0D1A12',
+  segmentBackground: '#382C22',
+  danger: '#C97A6C',
+  placeholder: '#8A7460',
+  accentGold: '#D4AF6A',
 };

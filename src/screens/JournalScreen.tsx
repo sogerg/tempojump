@@ -7,6 +7,7 @@ import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
 import { strideDelta } from '../lib/mathUtils';
 import { JournalEntry } from '../types';
+import { FONTS } from '../constants/typography';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
@@ -115,7 +116,7 @@ export function JournalScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('journal.title')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('journal.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('journal.subtitle')}</Text>
 
       {entries.map((entry) => (

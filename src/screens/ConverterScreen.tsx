@@ -8,12 +8,15 @@ import { HorsePicker } from '../components/HorsePicker';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE } from '../constants/horseDefaults';
+import { FONTS } from '../constants/typography';
 import { stepsToStrides } from '../lib/mathUtils';
 import { formatLength } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
+import { DeclineIcon, InclineIcon, MudIcon, StopwatchIcon, WaveIcon } from '../components/icons';
 
 const TERRAIN_OPTIONS: Terrain[] = ['Plat', 'Montant', 'Descendant', 'Lourd'];
 const SPEED_OPTIONS: SpeedLevel[] = ['Standard', 'Elite'];
+const TERRAIN_ICONS = { Plat: WaveIcon, Montant: InclineIcon, Descendant: DeclineIcon, Lourd: MudIcon };
 
 export function ConverterScreen() {
   const { t } = useTranslation();
@@ -32,8 +35,14 @@ export function ConverterScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('converter.title')}</Text>
-      <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('converter.subtitle')}</Text>
+      <View style={[styles.introCard, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
+        <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>
+          {t('converter.title')}
+        </Text>
+        <Text style={[styles.subheading, { color: colors.textMuted, fontFamily: FONTS.body }]}>
+          {t('converter.subtitle')}
+        </Text>
+      </View>
 
       <HorsePicker />
 
@@ -49,6 +58,7 @@ export function ConverterScreen() {
         options={TERRAIN_OPTIONS.map((terrainOption) => ({
           value: terrainOption,
           label: t(`terrain.${terrainOption}`),
+          icon: TERRAIN_ICONS[terrainOption],
         }))}
         value={terrain}
         onChange={setTerrain}
@@ -61,6 +71,7 @@ export function ConverterScreen() {
         options={SPEED_OPTIONS.map((speedOption) => ({
           value: speedOption,
           label: t(`speed.${speedOption}`),
+          icon: speedOption === 'Elite' ? StopwatchIcon : undefined,
         }))}
         value={speed}
         onChange={setSpeed}
@@ -96,14 +107,19 @@ const styles = StyleSheet.create({
     padding: 20,
     paddingBottom: 60,
   },
+  introCard: {
+    borderWidth: 1,
+    borderRadius: 16,
+    padding: 16,
+    marginBottom: 20,
+  },
   heading: {
-    fontSize: 22,
+    fontSize: 23,
     fontWeight: '700',
     marginBottom: 4,
   },
   subheading: {
     fontSize: 13,
-    marginBottom: 20,
   },
   sectionLabel: {
     fontSize: 13,

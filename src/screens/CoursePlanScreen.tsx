@@ -23,6 +23,7 @@ import {
   saveCoursePlans,
 } from '../lib/storage';
 import { CoursePlan, DrawingStroke, StrideMarker } from '../types';
+import { FONTS } from '../constants/typography';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
@@ -166,7 +167,7 @@ export function CoursePlanScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('coursePlan.title')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('coursePlan.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('coursePlan.subtitle')}</Text>
 
       {plans.length > 0 ? (

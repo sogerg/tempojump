@@ -1,14 +1,16 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
 import { useSettings } from '../context/SettingsContext';
+import { FONTS } from '../constants/typography';
+import { CheckListIcon, IconProps, JournalIcon, MapIcon, StopwatchIcon } from '../components/icons';
 
-const MENU_ITEMS: { route: string; labelKey: string }[] = [
-  { route: 'Metronome', labelKey: 'nav.metronome' },
-  { route: 'Checklist', labelKey: 'nav.checklist' },
-  { route: 'CoursePlan', labelKey: 'nav.coursePlan' },
-  { route: 'Journal', labelKey: 'nav.journal' },
+const MENU_ITEMS: { route: string; labelKey: string; icon: React.ComponentType<IconProps> }[] = [
+  { route: 'Metronome', labelKey: 'nav.metronome', icon: StopwatchIcon },
+  { route: 'Checklist', labelKey: 'nav.checklist', icon: CheckListIcon },
+  { route: 'CoursePlan', labelKey: 'nav.coursePlan', icon: MapIcon },
+  { route: 'Journal', labelKey: 'nav.journal', icon: JournalIcon },
 ];
 
 export function MoreScreen() {
@@ -18,14 +20,17 @@ export function MoreScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('nav.more')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('nav.more')}</Text>
       {MENU_ITEMS.map((item) => (
         <TouchableOpacity
           key={item.route}
-          style={[styles.row, { borderColor: colors.border, backgroundColor: colors.surface }]}
+          style={[styles.row, { borderColor: colors.cardBorder, backgroundColor: colors.surface }]}
           onPress={() => navigation.navigate(item.route as never)}
         >
-          <Text style={[styles.rowText, { color: colors.text }]}>{t(item.labelKey)}</Text>
+          <View style={styles.rowLeft}>
+            <item.icon size={20} color={colors.accentGold} />
+            <Text style={[styles.rowText, { color: colors.text }]}>{t(item.labelKey)}</Text>
+          </View>
           <Text style={{ color: colors.textMuted }}>›</Text>
         </TouchableOpacity>
       ))}
@@ -48,10 +53,15 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     borderWidth: 1,
-    borderRadius: 12,
+    borderRadius: 14,
     paddingVertical: 16,
     paddingHorizontal: 16,
     marginBottom: 10,
+  },
+  rowLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
   },
   rowText: {
     fontSize: 16,

@@ -5,6 +5,7 @@ import { NumberField } from '../components/NumberField';
 import { ResultCard } from '../components/ResultCard';
 import { useSettings } from '../context/SettingsContext';
 import { allowedTime } from '../lib/mathUtils';
+import { FONTS } from '../constants/typography';
 
 function formatSecondsAsClock(totalSeconds: number): string {
   const minutes = Math.floor(totalSeconds / 60);
@@ -27,7 +28,7 @@ export function ChronoScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('chrono.title')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('chrono.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('chrono.subtitle')}</Text>
 
       <NumberField

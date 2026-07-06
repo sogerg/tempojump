@@ -9,6 +9,7 @@ import { HorsePicker } from '../components/HorsePicker';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { canterCadence } from '../lib/mathUtils';
+import { FONTS } from '../constants/typography';
 
 const SPEED_PRESETS = ['300', '350', '375'];
 const clickSound = require('../../assets/sounds/metronome-click.wav');
@@ -47,7 +48,7 @@ export function MetronomeScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('metronome.title')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('metronome.title')}</Text>
       <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('metronome.subtitle')}</Text>
 
       <HorsePicker />

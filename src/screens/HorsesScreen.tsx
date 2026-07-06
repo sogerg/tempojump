@@ -10,6 +10,7 @@ import { CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/horseDefault
 import { calibrateStepLength } from '../lib/mathUtils';
 import { formatLength, fromMeters, inputUnitSuffix, toMeters } from '../lib/units';
 import { HorseCategory } from '../types';
+import { FONTS } from '../constants/typography';
 
 export function HorsesScreen() {
   const { t } = useTranslation();
@@ -59,7 +60,7 @@ export function HorsesScreen() {
 
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <Text style={[styles.heading, { color: colors.text }]}>{t('mounts.title')}</Text>
+      <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('mounts.title')}</Text>
 
       {horses.map((horse) => {
         const isActive = horse.id === selectedHorseId;

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { formatLength } from '../lib/units';
+import { HorseshoeIcon } from './icons';
 
 export function HorsePicker() {
   const { t } = useTranslation();
@@ -29,16 +30,22 @@ export function HorsePicker() {
               key={horse.id}
               style={[
                 styles.chip,
-                { backgroundColor: isActive ? colors.primary : colors.segmentBackground },
+                {
+                  backgroundColor: isActive ? colors.primary : colors.surface,
+                  borderColor: isActive ? colors.primary : colors.cardBorder,
+                },
               ]}
               onPress={() => selectHorse(horse.id)}
             >
-              <Text style={[styles.chipText, { color: isActive ? colors.primaryText : colors.text }]}>
-                {horse.name}
-              </Text>
-              <Text style={[styles.chipSubText, { color: isActive ? colors.primaryText : colors.textMuted }]}>
-                {t(`categories.${horse.category}`)} · {formatLength(horse.strideLength, unitSystem)}
-              </Text>
+              <HorseshoeIcon size={22} color={isActive ? colors.primaryText : colors.accentGold} />
+              <View style={{ marginLeft: 8 }}>
+                <Text style={[styles.chipText, { color: isActive ? colors.primaryText : colors.text }]}>
+                  {horse.name}
+                </Text>
+                <Text style={[styles.chipSubText, { color: isActive ? colors.primaryText : colors.textMuted }]}>
+                  {t(`categories.${horse.category}`)} · {formatLength(horse.strideLength, unitSystem)}
+                </Text>
+              </View>
             </TouchableOpacity>
           );
         })}
@@ -60,11 +67,14 @@ const styles = StyleSheet.create({
     gap: 8,
   },
   chip: {
-    paddingVertical: 8,
-    paddingHorizontal: 12,
-    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    borderRadius: 14,
+    borderWidth: 1,
     marginRight: 8,
-    minWidth: 120,
+    minWidth: 150,
   },
   chipText: {
     fontSize: 14,

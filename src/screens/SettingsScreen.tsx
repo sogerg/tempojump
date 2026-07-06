@@ -6,6 +6,7 @@ import { useSettings } from '../context/SettingsContext';
 import { SUPPORTED_LANGUAGES } from '../i18n/languages';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { UnitSystem } from '../lib/units';
+import { FONTS } from '../constants/typography';
 
 export function SettingsScreen() {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export function SettingsScreen() {
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       <View style={styles.header}>
-        <Text style={[styles.title, { color: colors.text }]}>{t('settings.title')}</Text>
+        <Text style={[styles.title, { color: colors.text, fontFamily: FONTS.heading }]}>{t('settings.title')}</Text>
         <TouchableOpacity onPress={() => navigation.goBack()}>
           <Text style={[styles.closeButton, { color: colors.primary }]}>{t('common.close')}</Text>
         </TouchableOpacity>
