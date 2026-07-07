@@ -3,7 +3,7 @@ import { useColorScheme } from 'react-native';
 import i18n from '../i18n';
 import { DEFAULT_LANGUAGE, SUPPORTED_LANGUAGE_CODES } from '../i18n/languages';
 import { darkColors, lightColors, ThemeColors } from '../constants/colors';
-import { UnitSystem } from '../lib/units';
+import { detectDeviceUnitSystem, UnitSystem } from '../lib/units';
 import {
   loadDarkMode,
   loadLanguage,
@@ -29,7 +29,7 @@ const SettingsContext = createContext<SettingsContextValue | null>(null);
 export function SettingsProvider({ children }: { children: React.ReactNode }) {
   const systemScheme = useColorScheme();
   const [language, setLanguageState] = useState(i18n.language || DEFAULT_LANGUAGE);
-  const [unitSystem, setUnitSystemState] = useState<UnitSystem>('metric');
+  const [unitSystem, setUnitSystemState] = useState<UnitSystem>(detectDeviceUnitSystem);
   const [isDarkMode, setIsDarkModeState] = useState(systemScheme === 'dark');
   const [isLoading, setIsLoading] = useState(true);
 

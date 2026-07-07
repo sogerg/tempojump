@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Ló",
-    "empty": "Még nincs mentett ló. Adj hozzá egyet a Lovak fülön."
+    "empty": "Még nincs mentett ló. Adj hozzá egyet a Lovak fülön.",
+    "selectButton": "Kiválaszt"
   },
   "exercises": {
     "title": "Gyakorlattár",

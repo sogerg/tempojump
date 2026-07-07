@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Cavallo",
-    "empty": "Nessun cavallo salvato. Aggiungine uno nella scheda Cavalli."
+    "empty": "Nessun cavallo salvato. Aggiungine uno nella scheda Cavalli.",
+    "selectButton": "Seleziona"
   },
   "exercises": {
     "title": "Libreria di esercizi",

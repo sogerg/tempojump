@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Koń",
-    "empty": "Brak zapisanych koni. Dodaj jednego w zakładce Konie."
+    "empty": "Brak zapisanych koni. Dodaj jednego w zakładce Konie.",
+    "selectButton": "Wybierz"
   },
   "exercises": {
     "title": "Biblioteka ćwiczeń",

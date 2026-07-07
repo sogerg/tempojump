@@ -43,6 +43,12 @@
         {
           "hidden": true
         }
+      ],
+      [
+        "expo-status-bar",
+        {
+          "hidden": true
+        }
       ]
     ]
   }

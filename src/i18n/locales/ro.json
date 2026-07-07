@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Cal",
-    "empty": "Niciun cal salvat încă. Adaugă unul în fila Cai."
+    "empty": "Niciun cal salvat încă. Adaugă unul în fila Cai.",
+    "selectButton": "Selectează"
   },
   "exercises": {
     "title": "Bibliotecă de exerciții",

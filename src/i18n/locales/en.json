@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Mount",
-    "empty": "No mount saved yet. Add one in the Mounts tab."
+    "empty": "No mount saved yet. Add one in the Mounts tab.",
+    "selectButton": "Select"
   },
   "exercises": {
     "title": "Exercise library",

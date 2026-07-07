@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Hevonen",
-    "empty": "Yhtään hevosta ei ole vielä tallennettu. Lisää yksi Hevoset-välilehdellä."
+    "empty": "Yhtään hevosta ei ole vielä tallennettu. Lisää yksi Hevoset-välilehdellä.",
+    "selectButton": "Valitse"
   },
   "exercises": {
     "title": "Harjoituskirjasto",

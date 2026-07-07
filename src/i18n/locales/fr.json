@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Monture",
-    "empty": "Aucune monture enregistrée. Ajoute-en une dans l'onglet Montures."
+    "empty": "Aucune monture enregistrée. Ajoute-en une dans l'onglet Montures.",
+    "selectButton": "Sélection"
   },
   "exercises": {
     "title": "Bibliothèque d'exercices",

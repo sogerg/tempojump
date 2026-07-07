@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Ngựa",
-    "empty": "Chưa có ngựa nào được lưu. Thêm một con trong tab Ngựa."
+    "empty": "Chưa có ngựa nào được lưu. Thêm một con trong tab Ngựa.",
+    "selectButton": "Chọn"
   },
   "exercises": {
     "title": "Thư viện bài tập",

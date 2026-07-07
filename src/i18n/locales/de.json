@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Pferd",
-    "empty": "Noch kein Pferd gespeichert. Füge eines im Tab Pferde hinzu."
+    "empty": "Noch kein Pferd gespeichert. Füge eines im Tab Pferde hinzu.",
+    "selectButton": "Auswählen"
   },
   "exercises": {
     "title": "Übungsbibliothek",

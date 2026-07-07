@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Montura",
-    "empty": "Ninguna montura guardada. Añade una en la pestaña Monturas."
+    "empty": "Ninguna montura guardada. Añade una en la pestaña Monturas.",
+    "selectButton": "Seleccionar"
   },
   "exercises": {
     "title": "Biblioteca de ejercicios",

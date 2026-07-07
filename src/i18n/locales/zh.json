@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "坐骑",
-    "empty": "尚未保存任何坐骑，请在“坐骑”标签页中添加。"
+    "empty": "尚未保存任何坐骑，请在“坐骑”标签页中添加。",
+    "selectButton": "选择"
   },
   "exercises": {
     "title": "练习库",

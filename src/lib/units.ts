@@ -1,4 +1,12 @@
+import * as Localization from 'expo-localization';
+
 export type UnitSystem = 'metric' | 'imperial';
+
+/** Déduit le système d'unités par défaut à partir de la région de l'appareil. */
+export function detectDeviceUnitSystem(): UnitSystem {
+  const measurementSystem = Localization.getLocales()[0]?.measurementSystem;
+  return measurementSystem === 'metric' || measurementSystem === null ? 'metric' : 'imperial';
+}
 
 const METERS_PER_FOOT = 0.3048;
 const INCHES_PER_METER = 39.3700787;

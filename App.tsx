@@ -17,7 +17,7 @@ function AppContent() {
   return (
     <HorseProvider>
       <RootNavigator />
-      <StatusBar style={isDarkMode ? 'light' : 'dark'} />
+      <StatusBar style={isDarkMode ? 'light' : 'dark'} hidden />
       <NavigationBar hidden />
     </HorseProvider>
   );

@@ -5,7 +5,7 @@ import { Droplets, TrendingDown, TrendingUp, WavesHorizontal, Zap } from 'lucide
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
-import { HorsePicker } from '../components/HorsePicker';
+import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
@@ -45,7 +45,8 @@ export function ConverterScreen() {
       <ScrollView contentContainerStyle={styles.content}>
         <IntroCard title={t('converter.title')} subtitle={t('converter.subtitle')} />
 
-        <HorsePicker />
+        <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
+        <MountSummaryCard />
 
         <NumberField
           label={t('converter.stepsLabel')}

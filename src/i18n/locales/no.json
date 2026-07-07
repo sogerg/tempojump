@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Hest",
-    "empty": "Ingen hest lagret ennå. Legg til en under fanen Hester."
+    "empty": "Ingen hest lagret ennå. Legg til en under fanen Hester.",
+    "selectButton": "Velg"
   },
   "exercises": {
     "title": "Øvelsesbibliotek",

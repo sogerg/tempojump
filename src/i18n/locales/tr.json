@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "At",
-    "empty": "Kayıtlı at yok. Atlar sekmesinden bir tane ekle."
+    "empty": "Kayıtlı at yok. Atlar sekmesinden bir tane ekle.",
+    "selectButton": "Seç"
   },
   "exercises": {
     "title": "Egzersiz kütüphanesi",

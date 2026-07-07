@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Paard",
-    "empty": "Nog geen paard opgeslagen. Voeg er een toe in het tabblad Paarden."
+    "empty": "Nog geen paard opgeslagen. Voeg er een toe in het tabblad Paarden.",
+    "selectButton": "Selecteren"
   },
   "exercises": {
     "title": "Oefenbibliotheek",

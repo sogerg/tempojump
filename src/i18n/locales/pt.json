@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Montada",
-    "empty": "Nenhuma montada guardada. Adiciona uma no separador Montadas."
+    "empty": "Nenhuma montada guardada. Adiciona uma no separador Montadas.",
+    "selectButton": "Selecionar"
   },
   "exercises": {
     "title": "Biblioteca de exercícios",

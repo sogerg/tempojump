@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Häst",
-    "empty": "Ingen häst sparad än. Lägg till en under fliken Hästar."
+    "empty": "Ingen häst sparad än. Lägg till en under fliken Hästar.",
+    "selectButton": "Välj"
   },
   "exercises": {
     "title": "Övningsbibliotek",

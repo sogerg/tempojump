@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "말",
-    "empty": "저장된 말이 없습니다. '말' 탭에서 추가하세요."
+    "empty": "저장된 말이 없습니다. '말' 탭에서 추가하세요.",
+    "selectButton": "선택"
   },
   "exercises": {
     "title": "운동 라이브러리",

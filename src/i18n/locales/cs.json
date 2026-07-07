@@ -112,7 +112,8 @@
   },
   "horsePicker": {
     "label": "Kůň",
-    "empty": "Zatím není uložen žádný kůň. Přidejte jej v záložce Koně."
+    "empty": "Zatím není uložen žádný kůň. Přidejte jej v záložce Koně.",
+    "selectButton": "Vybrat"
   },
   "exercises": {
     "title": "Knihovna cvičení",
