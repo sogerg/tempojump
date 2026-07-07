@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
-import { HorsePicker } from '../components/HorsePicker';
+import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
@@ -52,7 +52,8 @@ export function CombinationsScreen() {
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <IntroCard title={t('combination.title')} subtitle={t('combination.subtitle')} />
 
-      <HorsePicker />
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
+      <MountSummaryCard />
 
       <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('combination.fromLabel')}</Text>
       <SegmentedControl

@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { ResultCard } from '../components/ResultCard';
-import { HorsePicker } from '../components/HorsePicker';
+import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
@@ -46,7 +46,8 @@ export function ExercisesScreen() {
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <IntroCard title={t('exercises.title')} subtitle={t('exercises.subtitle')} />
 
-      <HorsePicker />
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
+      <MountSummaryCard />
 
       <NumberField
         label={t('exercises.heightLabel')}
@@ -72,6 +73,11 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
+  },
+  sectionLabel: {
+    fontSize: 13,
+    marginBottom: 6,
+    fontWeight: '500',
   },
   hint: {
     fontSize: 13,

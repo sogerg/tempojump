@@ -5,7 +5,7 @@ import { useAudioPlayer } from 'expo-audio';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
-import { HorsePicker } from '../components/HorsePicker';
+import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
@@ -50,7 +50,8 @@ export function MetronomeScreen() {
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <IntroCard title={t('metronome.title')} subtitle={t('metronome.subtitle')} />
 
-      <HorsePicker />
+      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
+      <MountSummaryCard />
 
       <NumberField label={t('metronome.speedLabel')} value={speed} onChangeText={setSpeed} suffix="m/min" />
 
@@ -91,6 +92,11 @@ const styles = StyleSheet.create({
   content: {
     padding: 20,
     paddingBottom: 60,
+  },
+  sectionLabel: {
+    fontSize: 13,
+    marginBottom: 6,
+    fontWeight: '500',
   },
   hint: {
     fontSize: 13,
