@@ -36,8 +36,8 @@
   "combination": {
     "title": "Combination calculator",
     "subtitle": "Exact distance to set between two elements of a combination (double, triple).",
-    "fromLabel": "1st element (take-off)",
-    "toLabel": "2nd element (landing)",
+    "fromLabel": "Entrance (Element A)",
+    "toLabel": "Exit (Element B)",
     "heightLabel": "Fence height",
     "targetStridesLabel": "Desired strides",
     "bounce": "Bounce",
@@ -46,7 +46,7 @@
     "threeStrides": "3 strides",
     "resultTitle": "Result",
     "effectiveStride": "Effective stride",
-    "adjustedAllowance": "Adjusted allowance",
+    "adjustedAllowance": "Take-off/landing adjustment",
     "distanceToSet": "Distance to set",
     "hintNoHeight": "Enter the fence height.",
     "hintNoMount": "Select or create a mount."
@@ -75,14 +75,14 @@
     "currentRiderStepLabel": "Step length"
   },
   "chrono": {
-    "title": "Allowed time",
-    "subtitle": "Calculate the allowed time from the course length and the required speed.",
+    "title": "Time allowed",
+    "subtitle": "Calculate the time allowed from the course length and the required speed.",
     "lengthLabel": "Course length",
     "lengthPlaceholder": "e.g. 420",
     "speedLabel": "Required speed",
     "speedPlaceholder": "e.g. 350",
     "resultTitle": "Result",
-    "allowedTimeLabel": "Allowed time",
+    "allowedTimeLabel": "Time allowed",
     "hintNoInput": "Enter the course length and speed."
   },
   "categories": {
@@ -96,7 +96,7 @@
     "Plat": "Flat",
     "Montant": "Uphill",
     "Descendant": "Downhill",
-    "Lourd": "Heavy / muddy ground"
+    "Lourd": "Deep / heavy ground"
   },
   "speed": {
     "Standard": "Standard (~350 m/min)",
@@ -143,11 +143,11 @@
     "resetButton": "Reset checklist",
     "items": {
       "protections": "Boots/protections",
-      "licol": "Head collar",
+      "licol": "Halter",
       "filet": "Bridle",
       "tapis": "Saddle pad",
       "selle": "Saddle",
-      "bombe": "Riding helmet",
+      "bombe": "Helmet",
       "bottes": "Riding boots",
       "pantalonBlanc": "White breeches",
       "veste": "Riding jacket",
@@ -187,7 +187,7 @@
     "addEntry": "New entry",
     "missingNameTitle": "Enter a competition name.",
     "deleteConfirmTitle": "Delete this entry?",
-    "deltaExact": "Exactly as planned",
+    "deltaExact": "Contract met",
     "deltaLong_one": "{{count}} stride more",
     "deltaLong_other": "{{count}} strides more",
     "deltaShort_one": "{{count}} stride less",

@@ -36,17 +36,17 @@
   "combination": {
     "title": "Kombinationsrechner",
     "subtitle": "Exakte Distanz zwischen zwei Elementen einer Kombination (Doppel, Dreifach).",
-    "fromLabel": "1. Element (Absprung)",
-    "toLabel": "2. Element (Landung)",
+    "fromLabel": "Einsprung (Element A)",
+    "toLabel": "Aussprung (Element B)",
     "heightLabel": "Hindernishöhe",
     "targetStridesLabel": "Gewünschte Galoppsprünge",
-    "bounce": "Ohne Zwischensprung",
+    "bounce": "In-Out",
     "oneStride": "1 Galoppsprung",
     "twoStrides": "2 Galoppsprünge",
     "threeStrides": "3 Galoppsprünge",
     "resultTitle": "Ergebnis",
     "effectiveStride": "Effektiver Galoppsprung",
-    "adjustedAllowance": "Angepasster Zuschlag",
+    "adjustedAllowance": "Absprung-/Lande-Korrektur",
     "distanceToSet": "Einzustellende Distanz",
     "hintNoHeight": "Gib die Hindernishöhe ein.",
     "hintNoMount": "Wähle oder erstelle ein Pferd."
@@ -96,7 +96,7 @@
     "Plat": "Eben",
     "Montant": "Bergauf",
     "Descendant": "Bergab",
-    "Lourd": "Schwerer / matschiger Boden"
+    "Lourd": "Tiefer / schwerer Boden"
   },
   "speed": {
     "Standard": "Standard (~350 m/min)",
@@ -150,7 +150,7 @@
       "bombe": "Reithelm",
       "bottes": "Reitstiefel",
       "pantalonBlanc": "Weiße Reithose",
-      "veste": "Reitjacke",
+      "veste": "Turniersakko",
       "cravache": "Gerte",
       "carnet": "Turnierpass",
       "licence": "Lizenz",
@@ -187,7 +187,7 @@
     "addEntry": "Neuer Eintrag",
     "missingNameTitle": "Gib einen Turniernamen ein.",
     "deleteConfirmTitle": "Diesen Eintrag löschen?",
-    "deltaExact": "Genau wie geplant",
+    "deltaExact": "Distanz passend",
     "deltaLong_one": "{{count}} Galoppsprung mehr",
     "deltaLong_other": "{{count}} Galoppsprünge mehr",
     "deltaShort_one": "{{count}} Galoppsprung weniger",

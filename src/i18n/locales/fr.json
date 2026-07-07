@@ -36,8 +36,8 @@
   "combination": {
     "title": "Calculateur de combinaisons",
     "subtitle": "Distance exacte à poser entre deux éléments d'une combinaison (double, triple).",
-    "fromLabel": "1er élément (appel)",
-    "toLabel": "2e élément (réception)",
+    "fromLabel": "Entrée (Élément A)",
+    "toLabel": "Sortie (Élément B)",
     "heightLabel": "Hauteur des obstacles",
     "targetStridesLabel": "Foulées souhaitées",
     "bounce": "Saut de puce",
@@ -46,7 +46,7 @@
     "threeStrides": "3 foulées",
     "resultTitle": "Résultat",
     "effectiveStride": "Foulée effective",
-    "adjustedAllowance": "Allocation ajustée",
+    "adjustedAllowance": "Marge d'ajustement",
     "distanceToSet": "Distance à poser",
     "hintNoHeight": "Renseigne la hauteur des obstacles.",
     "hintNoMount": "Sélectionne ou crée une monture."
@@ -58,7 +58,7 @@
     "nameLabel": "Nom",
     "namePlaceholder": "ex : Voltigeur",
     "categoryLabel": "Catégorie",
-    "strideLengthLabel": "Longueur de foulée par défaut",
+    "strideLengthLabel": "Amplitude de foulée par défaut",
     "addButton": "Ajouter la monture",
     "missingFieldsTitle": "Champs manquants",
     "missingFieldsMessage": "Renseigne un nom et une longueur de foulée valides.",
@@ -147,14 +147,14 @@
       "filet": "Filet",
       "tapis": "Tapis",
       "selle": "Selle",
-      "bombe": "Bombe",
+      "bombe": "Casque",
       "bottes": "Bottes",
       "pantalonBlanc": "Pantalon blanc",
       "veste": "Veste",
       "cravache": "Cravache",
       "carnet": "Carnet",
       "licence": "Licence",
-      "passeportCheval": "Passeport du cheval"
+      "passeportCheval": "Livret du cheval"
     }
   },
   "coursePlan": {
@@ -187,7 +187,7 @@
     "addEntry": "Nouvelle entrée",
     "missingNameTitle": "Renseigne un nom de concours.",
     "deleteConfirmTitle": "Supprimer cette entrée ?",
-    "deltaExact": "Pile prévu",
+    "deltaExact": "Contrat respecté",
     "deltaLong_one": "{{count}} foulée de plus",
     "deltaLong_other": "{{count}} foulées de plus",
     "deltaShort_one": "{{count}} foulée de moins",
