@@ -6,12 +6,10 @@ import { useTranslation } from 'react-i18next';
 import { Ellipsis, Fence, Footprints, Settings, Timer, Expand } from 'lucide-react-native';
 import { ConverterScreen } from '../screens/ConverterScreen';
 import { CombinationsScreen } from '../screens/CombinationsScreen';
-import { HorsesScreen } from '../screens/HorsesScreen';
 import { ExercisesScreen } from '../screens/ExercisesScreen';
 import { ChronoScreen } from '../screens/ChronoScreen';
 import { MoreScreen } from '../screens/MoreScreen';
 import { useSettings } from '../context/SettingsContext';
-import { HorseshoeIcon } from '../components/icons';
 import { FONTS } from '../constants/typography';
 
 const Tab = createBottomTabNavigator();
@@ -19,7 +17,6 @@ const Tab = createBottomTabNavigator();
 const TAB_ICONS: Record<string, React.ComponentType<{ size?: number; color?: string }>> = {
   Convertisseur: Footprints,
   Combinaisons: Fence,
-  Montures: HorseshoeIcon,
   Exercices: Expand,
   Chrono: Timer,
   Plus: Ellipsis,
@@ -58,7 +55,6 @@ export function BottomTabNavigator() {
         component={ConverterScreen}
       />
       <Tab.Screen name="Combinaisons" options={{ title: t('nav.combinations') }} component={CombinationsScreen} />
-      <Tab.Screen name="Montures" options={{ title: t('nav.mounts') }} component={HorsesScreen} />
       <Tab.Screen name="Exercices" options={{ title: t('nav.exercises') }} component={ExercisesScreen} />
       <Tab.Screen name="Chrono" options={{ title: t('nav.chrono') }} component={ChronoScreen} />
       <Tab.Screen name="Plus" options={{ title: t('nav.more') }} component={MoreScreen} />

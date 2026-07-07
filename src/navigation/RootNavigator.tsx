@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 import { BottomTabNavigator } from './BottomTabNavigator';
 import { SettingsScreen } from '../screens/SettingsScreen';
+import { HorsesScreen } from '../screens/HorsesScreen';
 import { MetronomeScreen } from '../screens/MetronomeScreen';
 import { ChecklistScreen } from '../screens/ChecklistScreen';
 import { CoursePlanScreen } from '../screens/CoursePlanScreen';
@@ -42,6 +43,7 @@ export function RootNavigator() {
           component={SettingsScreen}
           options={{ presentation: 'modal', title: t('settings.title'), headerShown: false }}
         />
+        <Stack.Screen name="Montures" component={HorsesScreen} options={{ title: t('nav.mounts') }} />
         <Stack.Screen name="Metronome" component={MetronomeScreen} options={{ title: t('nav.metronome') }} />
         <Stack.Screen name="Checklist" component={ChecklistScreen} options={{ title: t('nav.checklist') }} />
         <Stack.Screen name="CoursePlan" component={CoursePlanScreen} options={{ title: t('nav.coursePlan') }} />

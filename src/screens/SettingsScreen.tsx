@@ -21,6 +21,7 @@ export function SettingsScreen() {
   const { riderStepLength, setRiderStepLength } = useHorses();
 
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const [isCalibrationOpen, setIsCalibrationOpen] = useState(false);
   const [calibrationDistance, setCalibrationDistance] = useState('8');
   const [calibrationSteps, setCalibrationSteps] = useState('8');
 
@@ -54,42 +55,59 @@ export function SettingsScreen() {
 
         <View style={[styles.separator, { backgroundColor: colors.border }]} />
 
-        <Text style={[styles.sectionHeading, { color: colors.text }]}>{t('mounts.calibrationTitle')}</Text>
-        <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('mounts.calibrationSubtitle')}</Text>
-
-        <NumberField
-          label={t('mounts.calibrationDistanceLabel')}
-          value={calibrationDistance}
-          onChangeText={setCalibrationDistance}
-          suffix={inputUnitSuffix(unitSystem)}
-        />
-        <NumberField
-          label={t('mounts.calibrationStepsLabel')}
-          value={calibrationSteps}
-          onChangeText={setCalibrationSteps}
-        />
-
-        {calibrationResultMeters ? (
-          <ResultCard
-            title={t('mounts.calibrationResultTitle')}
-            rows={[
-              { label: t('mounts.riderStepLabel'), value: formatLength(calibrationResultMeters, unitSystem), emphasis: true },
-            ]}
-          />
-        ) : null}
-
         <TouchableOpacity
-          style={[styles.primaryButton, { backgroundColor: colors.primary }, !calibrationResultMeters && styles.primaryButtonDisabled]}
-          disabled={!calibrationResultMeters}
-          onPress={() => calibrationResultMeters && setRiderStepLength(calibrationResultMeters)}
+          style={[styles.menuRow, { borderColor: colors.border, backgroundColor: colors.surface }]}
+          onPress={() => setIsCalibrationOpen((open) => !open)}
         >
-          <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('mounts.saveAsRiderStep')}</Text>
+          <Text style={[styles.sectionLabel, { color: colors.textMuted, marginBottom: 0 }]}>
+            {t('mounts.calibrationTitle')}
+          </Text>
+          <ChevronRight
+            size={18}
+            color={colors.textMuted}
+            style={{ transform: [{ rotate: isCalibrationOpen ? '90deg' : '0deg' }] }}
+          />
         </TouchableOpacity>
 
-        <ResultCard
-          title={t('mounts.currentRiderStepTitle')}
-          rows={[{ label: t('mounts.currentRiderStepLabel'), value: formatLength(riderStepLength, unitSystem), emphasis: true }]}
-        />
+        {isCalibrationOpen ? (
+          <View style={styles.collapsibleContent}>
+            <Text style={[styles.subheading, { color: colors.textMuted }]}>{t('mounts.calibrationSubtitle')}</Text>
+
+            <NumberField
+              label={t('mounts.calibrationDistanceLabel')}
+              value={calibrationDistance}
+              onChangeText={setCalibrationDistance}
+              suffix={inputUnitSuffix(unitSystem)}
+            />
+            <NumberField
+              label={t('mounts.calibrationStepsLabel')}
+              value={calibrationSteps}
+              onChangeText={setCalibrationSteps}
+            />
+
+            {calibrationResultMeters ? (
+              <ResultCard
+                title={t('mounts.calibrationResultTitle')}
+                rows={[
+                  { label: t('mounts.riderStepLabel'), value: formatLength(calibrationResultMeters, unitSystem), emphasis: true },
+                ]}
+              />
+            ) : null}
+
+            <TouchableOpacity
+              style={[styles.primaryButton, { backgroundColor: colors.primary }, !calibrationResultMeters && styles.primaryButtonDisabled]}
+              disabled={!calibrationResultMeters}
+              onPress={() => calibrationResultMeters && setRiderStepLength(calibrationResultMeters)}
+            >
+              <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('mounts.saveAsRiderStep')}</Text>
+            </TouchableOpacity>
+
+            <ResultCard
+              title={t('mounts.currentRiderStepTitle')}
+              rows={[{ label: t('mounts.currentRiderStepLabel'), value: formatLength(riderStepLength, unitSystem), emphasis: true }]}
+            />
+          </View>
+        ) : null}
 
         <View style={[styles.separator, { backgroundColor: colors.border }]} />
 
@@ -179,12 +197,6 @@ const styles = StyleSheet.create({
   content: {
     paddingBottom: 40,
   },
-  sectionHeading: {
-    fontSize: 16,
-    fontWeight: '700',
-    marginTop: 4,
-    marginBottom: 10,
-  },
   sectionLabel: {
     fontSize: 13,
     fontWeight: '500',
@@ -194,6 +206,9 @@ const styles = StyleSheet.create({
   subheading: {
     fontSize: 13,
     marginBottom: 14,
+  },
+  collapsibleContent: {
+    marginTop: 12,
   },
   darkModeRow: {
     flexDirection: 'row',
