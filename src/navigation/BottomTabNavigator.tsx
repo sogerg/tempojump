@@ -38,11 +38,11 @@ export function BottomTabNavigator() {
       screenOptions={({ route }) => ({
         headerShown: true,
         headerRight,
-        headerStatusBarHeight: 0,
+        headerStatusBarHeight: 14,
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textMuted,
         tabBarStyle: { backgroundColor: colors.barBackground, borderTopColor: colors.border },
-        headerStyle: { backgroundColor: colors.barBackground, height: 56 },
+        headerStyle: { backgroundColor: colors.barBackground, height: 64 },
         headerTitleStyle: { color: colors.text, fontFamily: FONTS.heading, fontSize: 20 },
         tabBarIcon: ({ color, size }: { color: string; size: number }) => {
           const Icon = TAB_ICONS[route.name] ?? Footprints;
