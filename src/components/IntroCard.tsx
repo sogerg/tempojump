@@ -26,7 +26,15 @@ export function IntroCard({ title, subtitle }: IntroCardProps) {
       >
         {title}
       </Text>
-      {subtitle ? <Text style={[styles.subtitle, { color: colors.text }]}>{subtitle}</Text> : null}
+      {subtitle ? (
+        <Text
+          style={[styles.subtitle, { color: colors.text }]}
+          numberOfLines={2}
+          adjustsFontSizeToFit
+        >
+          {subtitle}
+        </Text>
+      ) : null}
     </LinearGradient>
   );
 }
