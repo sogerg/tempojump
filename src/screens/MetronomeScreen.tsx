@@ -7,6 +7,7 @@ import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { canterCadence } from '../lib/mathUtils';
@@ -47,7 +48,9 @@ export function MetronomeScreen() {
   }, [cadence]);
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('metronome.title')} subtitle={t('metronome.subtitle')} />
 
       <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
@@ -84,7 +87,8 @@ export function MetronomeScreen() {
           {selectedHorse ? t('metronome.hintNoSpeed') : t('metronome.hintNoMount')}
         </Text>
       )}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

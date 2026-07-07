@@ -1,9 +1,10 @@
 import React, { useMemo, useState } from 'react';
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { ResultCard } from '../components/ResultCard';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useSettings } from '../context/SettingsContext';
 import { allowedTime } from '../lib/mathUtils';
 
@@ -27,7 +28,9 @@ export function ChronoScreen() {
   }, [courseLength, speed]);
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('chrono.title')} subtitle={t('chrono.subtitle')} />
 
       <NumberField
@@ -60,7 +63,8 @@ export function ChronoScreen() {
       ) : (
         <Text style={[styles.hint, { color: colors.textMuted }]}>{t('chrono.hintNoInput')}</Text>
       )}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

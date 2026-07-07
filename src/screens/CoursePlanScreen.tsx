@@ -24,6 +24,7 @@ import {
 } from '../lib/storage';
 import { CoursePlan, DrawingStroke, StrideMarker } from '../types';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { Camera, Images, MapPin, PenLine, Save, Share2, Trash2, Undo2 } from 'lucide-react-native';
 
 function generateId(): string {
@@ -167,7 +168,9 @@ export function CoursePlanScreen() {
   };
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('coursePlan.title')} subtitle={t('coursePlan.subtitle')} />
 
       {plans.length > 0 ? (
@@ -317,7 +320,8 @@ export function CoursePlanScreen() {
       ) : (
         <Text style={[styles.hint, { color: colors.textMuted }]}>{t('coursePlan.hintNoPhoto')}</Text>
       )}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

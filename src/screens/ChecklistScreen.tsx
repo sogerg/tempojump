@@ -6,6 +6,7 @@ import { CHECKLIST_ITEMS } from '../constants/checklistDefaults';
 import { loadChecklistState, saveChecklistState } from '../lib/storage';
 import { ChecklistCategory } from '../types';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 
 const SECTIONS: { category: ChecklistCategory; titleKey: string }[] = [
   { category: 'horse', titleKey: 'checklist.sectionHorse' },
@@ -37,7 +38,9 @@ export function ChecklistScreen() {
   };
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('checklist.title')} subtitle={t('checklist.subtitle')} />
 
       {SECTIONS.map((section) => (
@@ -77,7 +80,8 @@ export function ChecklistScreen() {
       <TouchableOpacity style={[styles.resetButton, { borderColor: colors.danger }]} onPress={resetChecklist}>
         <Text style={[styles.resetButtonText, { color: colors.danger }]}>{t('checklist.resetButton')}</Text>
       </TouchableOpacity>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

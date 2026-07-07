@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/horseDefaults';
@@ -45,7 +46,9 @@ export function HorsesScreen() {
   };
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('mounts.title')} />
 
       {horses.map((horse) => {
@@ -104,7 +107,8 @@ export function HorsesScreen() {
       <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleAddHorse}>
         <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('mounts.addButton')}</Text>
       </TouchableOpacity>
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

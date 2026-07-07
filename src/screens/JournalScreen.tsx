@@ -8,6 +8,7 @@ import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from 
 import { strideDelta } from '../lib/mathUtils';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { FolderOpen, Plus, Save, Trash2, Video, X } from 'lucide-react-native';
 
 function generateId(): string {
@@ -116,7 +117,9 @@ export function JournalScreen() {
   };
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('journal.title')} subtitle={t('journal.subtitle')} />
 
       {entries.map((entry) => (
@@ -222,7 +225,8 @@ export function JournalScreen() {
           <Text style={{ color: colors.primaryText, fontWeight: '700' }}>{t('journal.addEntry')}</Text>
         </TouchableOpacity>
       )}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

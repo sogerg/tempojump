@@ -12,6 +12,7 @@ import { ResultCard } from '../components/ResultCard';
 import { formatLength, inputUnitSuffix, toMeters, UnitSystem } from '../lib/units';
 import { calibrateStepLength } from '../lib/mathUtils';
 import { FONTS } from '../constants/typography';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 
 export function SettingsScreen() {
   const { t } = useTranslation();
@@ -38,6 +39,7 @@ export function SettingsScreen() {
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <ScreenWatermark />
       <View style={styles.header}>
         <Text style={[styles.title, { color: colors.text, fontFamily: FONTS.heading }]}>{t('settings.title')}</Text>
         <TouchableOpacity onPress={() => navigation.goBack()}>

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { AlarmClock, BookOpen, ListChecks, Map } from 'lucide-react-native';
 
 const MENU_ITEMS: {
@@ -23,7 +24,9 @@ export function MoreScreen() {
   const navigation = useNavigation();
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <Text style={[styles.heading, { color: colors.text, fontFamily: FONTS.heading }]}>{t('nav.more')}</Text>
       {MENU_ITEMS.map((item) => (
         <TouchableOpacity
@@ -38,7 +41,8 @@ export function MoreScreen() {
           <Text style={{ color: colors.textMuted }}>›</Text>
         </TouchableOpacity>
       ))}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

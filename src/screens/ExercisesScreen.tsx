@@ -5,6 +5,7 @@ import { NumberField } from '../components/NumberField';
 import { ResultCard } from '../components/ResultCard';
 import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE, EXERCISE_STRIDE_RANGE } from '../constants/horseDefaults';
@@ -43,7 +44,9 @@ export function ExercisesScreen() {
   }, [selectedHorse, height, unitSystem, t]);
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
       <IntroCard title={t('exercises.title')} subtitle={t('exercises.subtitle')} />
 
       <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
@@ -65,7 +68,8 @@ export function ExercisesScreen() {
           {selectedHorse ? t('combination.hintNoHeight') : t('combination.hintNoMount')}
         </Text>
       )}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 

@@ -6,6 +6,7 @@ import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
 import { MountSummaryCard } from '../components/MountSummaryCard';
 import { IntroCard } from '../components/IntroCard';
+import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { DEFAULT_FIXED_ALLOWANCE, OBSTACLE_TYPES } from '../constants/horseDefaults';
@@ -49,8 +50,10 @@ export function CombinationsScreen() {
   }, [selectedHorse, height, unitSystem, from, to, targetStrides]);
 
   return (
-    <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
-      <IntroCard title={t('combination.title')} subtitle={t('combination.subtitle')} />
+    <View style={{ flex: 1, backgroundColor: colors.background }}>
+      <ScreenWatermark />
+      <ScrollView contentContainerStyle={styles.content}>
+        <IntroCard title={t('combination.title')} subtitle={t('combination.subtitle')} />
 
       <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
       <MountSummaryCard />
@@ -107,7 +110,8 @@ export function CombinationsScreen() {
           {selectedHorse ? t('combination.hintNoHeight') : t('combination.hintNoMount')}
         </Text>
       )}
-    </ScrollView>
+      </ScrollView>
+    </View>
   );
 }
 
