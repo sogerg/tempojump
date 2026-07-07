@@ -13,6 +13,7 @@ export interface ThemeColors {
   danger: string;
   placeholder: string;
   accentGold: string;
+  iconGoldActive: string;
   introGradientStart: string;
   introGradientEnd: string;
 }
@@ -21,7 +22,7 @@ export interface ThemeColors {
 // poudré, vert olive, accents or brossé — inspirée de la maquette design
 // (doc/maquette design elegante.png).
 export const lightColors: ThemeColors = {
-  background: '#FCFAF5',
+  background: '#FFFDF9',
   barBackground: '#F3EDE0',
   surface: '#FFFFFF',
   card: '#F0DFD8',
@@ -35,9 +36,14 @@ export const lightColors: ThemeColors = {
   danger: '#B5675A',
   placeholder: '#B69C86',
   accentGold: '#C9A24B',
+  iconGoldActive: '#6B4F24',
   introGradientStart: '#F3D9CE',
   introGradientEnd: '#E1B7A9',
 };
+
+// Nuances or brossé extraites de assets/horse-head-icon.png (ombre -> reflet -> ombre),
+// utilisées pour les contours dorés (bouton "Sélection", sélecteurs actifs).
+export const GOLD_ICON_GRADIENT = ['#6B4F24', '#C9A24B', '#F5DFA0', '#C9A24B', '#6B4F24'] as const;
 
 export const darkColors: ThemeColors = {
   background: '#211A14',
@@ -54,6 +60,7 @@ export const darkColors: ThemeColors = {
   danger: '#C97A6C',
   placeholder: '#8A7460',
   accentGold: '#D4AF6A',
+  iconGoldActive: '#F5DFA0',
   introGradientStart: '#4A342E',
   introGradientEnd: '#37241F',
 };

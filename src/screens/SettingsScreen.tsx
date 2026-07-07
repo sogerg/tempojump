@@ -66,7 +66,7 @@ export function SettingsScreen() {
           </Text>
           <ChevronRight
             size={18}
-            color={colors.textMuted}
+            color={colors.accentGold}
             style={{ transform: [{ rotate: isCalibrationOpen ? '90deg' : '0deg' }] }}
           />
         </TouchableOpacity>
@@ -134,7 +134,7 @@ export function SettingsScreen() {
           </Text>
           <View style={styles.menuRowValue}>
             <Text style={[styles.menuRowValueText, { color: colors.text }]}>{currentLanguageName}</Text>
-            <ChevronRight size={18} color={colors.textMuted} />
+            <ChevronRight size={18} color={colors.accentGold} />
           </View>
         </TouchableOpacity>
       </ScrollView>

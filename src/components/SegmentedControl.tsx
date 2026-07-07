@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useSettings } from '../context/SettingsContext';
+import { GOLD_ICON_GRADIENT } from '../constants/colors';
 
 interface SegmentedControlProps<T extends string> {
   options: { value: T; label: string; icon?: React.ComponentType<{ size?: number; color?: string }> }[];
@@ -19,21 +21,34 @@ export function SegmentedControl<T extends string>({
     <View style={[styles.container, { backgroundColor: colors.segmentBackground }]}>
       {options.map((option) => {
         const isActive = option.value === value;
-        const iconColor = isActive ? colors.primaryText : colors.accentGold;
+        const iconColor = isActive ? colors.iconGoldActive : colors.accentGold;
         const Icon = option.icon;
+
+        if (!isActive) {
+          return (
+            <TouchableOpacity key={option.value} style={styles.segment} onPress={() => onChange(option.value)}>
+              {Icon ? <Icon size={16} color={iconColor} /> : null}
+              <Text style={[styles.label, { color: colors.text }]}>{option.label}</Text>
+            </TouchableOpacity>
+          );
+        }
+
         return (
-          <TouchableOpacity
+          <LinearGradient
             key={option.value}
-            style={[styles.segment, isActive && { backgroundColor: colors.primary }]}
-            onPress={() => onChange(option.value)}
+            colors={GOLD_ICON_GRADIENT}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+            style={styles.activeSegmentBorder}
           >
-            {Icon ? <Icon size={16} color={iconColor} /> : null}
-            <Text
-              style={[styles.label, { color: isActive ? colors.primaryText : colors.text }]}
+            <TouchableOpacity
+              style={[styles.segment, styles.activeSegment, { backgroundColor: colors.primary }]}
+              onPress={() => onChange(option.value)}
             >
-              {option.label}
-            </Text>
-          </TouchableOpacity>
+              {Icon ? <Icon size={16} color={iconColor} /> : null}
+              <Text style={[styles.label, { color: colors.primaryText }]}>{option.label}</Text>
+            </TouchableOpacity>
+          </LinearGradient>
         );
       })}
     </View>
@@ -55,6 +70,13 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 12,
     borderRadius: 10,
+  },
+  activeSegmentBorder: {
+    borderRadius: 10,
+    padding: 1.5,
+  },
+  activeSegment: {
+    borderRadius: 8.5,
   },
   label: {
     fontSize: 13,

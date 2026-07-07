@@ -201,7 +201,7 @@ export function CoursePlanScreen() {
           style={[styles.photoButton, { backgroundColor: colors.primary }]}
           onPress={() => pickPhoto('camera')}
         >
-          <Camera size={16} color={colors.primaryText} />
+          <Camera size={16} color={colors.iconGoldActive} />
           <Text style={[styles.photoButtonText, { color: colors.primaryText }]}>{t('coursePlan.takePhoto')}</Text>
         </TouchableOpacity>
         <TouchableOpacity
@@ -230,7 +230,7 @@ export function CoursePlanScreen() {
               style={[styles.modeButton, { backgroundColor: mode === 'draw' ? colors.primary : colors.segmentBackground }]}
               onPress={() => setMode('draw')}
             >
-              <PenLine size={16} color={mode === 'draw' ? colors.primaryText : colors.accentGold} />
+              <PenLine size={16} color={mode === 'draw' ? colors.iconGoldActive : colors.accentGold} />
               <Text style={{ color: mode === 'draw' ? colors.primaryText : colors.text, fontWeight: '600' }}>
                 {t('coursePlan.drawMode')}
               </Text>
@@ -239,7 +239,7 @@ export function CoursePlanScreen() {
               style={[styles.modeButton, { backgroundColor: mode === 'mark' ? colors.primary : colors.segmentBackground }]}
               onPress={() => setMode('mark')}
             >
-              <MapPin size={16} color={mode === 'mark' ? colors.primaryText : colors.accentGold} />
+              <MapPin size={16} color={mode === 'mark' ? colors.iconGoldActive : colors.accentGold} />
               <Text style={{ color: mode === 'mark' ? colors.primaryText : colors.text, fontWeight: '600' }}>
                 {t('coursePlan.markMode')}
               </Text>
@@ -291,11 +291,11 @@ export function CoursePlanScreen() {
 
           <View style={styles.actionsRow}>
             <TouchableOpacity style={[styles.actionButton, { borderColor: colors.border }]} onPress={handleUndo}>
-              <Undo2 size={16} color={colors.text} />
+              <Undo2 size={16} color={colors.accentGold} />
               <Text style={[styles.actionButtonText, { color: colors.text }]}>{t('coursePlan.undo')}</Text>
             </TouchableOpacity>
             <TouchableOpacity style={[styles.actionButton, { borderColor: colors.danger }]} onPress={handleClear}>
-              <Trash2 size={16} color={colors.danger} />
+              <Trash2 size={16} color={colors.iconGoldActive} />
               <Text style={[styles.actionButtonText, { color: colors.danger }]}>{t('coursePlan.clear')}</Text>
             </TouchableOpacity>
           </View>
@@ -305,7 +305,7 @@ export function CoursePlanScreen() {
               style={[styles.primaryButton, { backgroundColor: colors.primary }]}
               onPress={handleSave}
             >
-              <Save size={16} color={colors.primaryText} />
+              <Save size={16} color={colors.iconGoldActive} />
               <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('coursePlan.save')}</Text>
             </TouchableOpacity>
             <TouchableOpacity

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { Droplets, TrendingDown, TrendingUp, WavesHorizontal, Zap } from 'lucide-react-native';
+import { Droplets, Zap } from 'lucide-react-native';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
@@ -15,9 +15,43 @@ import { stepsToStrides } from '../lib/mathUtils';
 import { formatLength } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
 
+const PLAT_ICON_RATIO = 501 / 151;
+const MONTANT_ICON_RATIO = 1188 / 728;
+const DESCENDANT_ICON_RATIO = 1188 / 728;
+
+function PlatIcon({ size = 16, color }: { size?: number; color?: string }) {
+  return (
+    <Image
+      source={require('../../assets/terrain-plat-icon.png')}
+      style={{ width: size * PLAT_ICON_RATIO, height: size, tintColor: color }}
+      resizeMode="contain"
+    />
+  );
+}
+
+function MontantIcon({ size = 16, color }: { size?: number; color?: string }) {
+  return (
+    <Image
+      source={require('../../assets/terrain-montant-icon.png')}
+      style={{ width: size * MONTANT_ICON_RATIO, height: size, tintColor: color }}
+      resizeMode="contain"
+    />
+  );
+}
+
+function DescendantIcon({ size = 16, color }: { size?: number; color?: string }) {
+  return (
+    <Image
+      source={require('../../assets/terrain-descendant-icon.png')}
+      style={{ width: size * DESCENDANT_ICON_RATIO, height: size, tintColor: color }}
+      resizeMode="contain"
+    />
+  );
+}
+
 const TERRAIN_OPTIONS: Terrain[] = ['Plat', 'Montant', 'Descendant', 'Lourd'];
 const SPEED_OPTIONS: SpeedLevel[] = ['Standard', 'Elite'];
-const TERRAIN_ICONS = { Plat: WavesHorizontal, Montant: TrendingUp, Descendant: TrendingDown, Lourd: Droplets };
+const TERRAIN_ICONS = { Plat: PlatIcon, Montant: MontantIcon, Descendant: DescendantIcon, Lourd: Droplets };
 
 export function ConverterScreen() {
   const { t } = useTranslation();

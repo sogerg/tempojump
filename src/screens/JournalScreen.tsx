@@ -130,7 +130,7 @@ export function JournalScreen() {
               <Text style={[styles.entryDate, { color: colors.textMuted }]}>{entry.date}</Text>
             </View>
             <TouchableOpacity onPress={() => handleDeleteEntry(entry.id)} style={styles.deleteRow}>
-              <Trash2 size={15} color={colors.danger} />
+              <Trash2 size={15} color={colors.iconGoldActive} />
               <Text style={{ color: colors.danger, fontWeight: '600' }}>{t('common.delete')}</Text>
             </TouchableOpacity>
           </View>
@@ -191,7 +191,7 @@ export function JournalScreen() {
               style={[styles.videoButton, { backgroundColor: colors.primary }]}
               onPress={() => pickVideo('camera')}
             >
-              <Video size={16} color={colors.primaryText} />
+              <Video size={16} color={colors.iconGoldActive} />
               <Text style={{ color: colors.primaryText, fontWeight: '600' }}>{t('journal.recordVideo')}</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -205,7 +205,7 @@ export function JournalScreen() {
           {videoUri ? <Text style={{ color: colors.textMuted, marginTop: 6 }}>{t('journal.videoAttached')}</Text> : null}
 
           <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleSaveEntry}>
-            <Save size={16} color={colors.primaryText} />
+            <Save size={16} color={colors.iconGoldActive} />
             <Text style={{ color: colors.primaryText, fontWeight: '700' }}>{t('journal.saveEntry')}</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -215,13 +215,13 @@ export function JournalScreen() {
               setIsAdding(false);
             }}
           >
-            <X size={16} color={colors.text} />
+            <X size={16} color={colors.accentGold} />
             <Text style={{ color: colors.text, fontWeight: '700' }}>{t('common.cancel')}</Text>
           </TouchableOpacity>
         </View>
       ) : (
         <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={() => setIsAdding(true)}>
-          <Plus size={16} color={colors.primaryText} />
+          <Plus size={16} color={colors.iconGoldActive} />
           <Text style={{ color: colors.primaryText, fontWeight: '700' }}>{t('journal.addEntry')}</Text>
         </TouchableOpacity>
       )}

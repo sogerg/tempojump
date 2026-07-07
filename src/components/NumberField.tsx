@@ -16,7 +16,7 @@ export function NumberField({ label, value, onChangeText, placeholder, suffix }:
   return (
     <View style={styles.container}>
       <Text style={[styles.label, { color: colors.textMuted }]}>{label}</Text>
-      <View style={[styles.inputRow, { borderColor: colors.border, backgroundColor: colors.surface }]}>
+      <View style={[styles.inputRow, { borderColor: colors.border, backgroundColor: colors.segmentBackground }]}>
         <TextInput
           style={[styles.input, { color: colors.text }]}
           value={value}
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   inputRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: 14,
     paddingHorizontal: 14,
   },

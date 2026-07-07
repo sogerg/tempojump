@@ -1,9 +1,9 @@
 import React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { Ellipsis, Fence, Footprints, Settings, Timer, Expand } from 'lucide-react-native';
+import { Ellipsis, Fence, Timer, Expand } from 'lucide-react-native';
 import { ConverterScreen } from '../screens/ConverterScreen';
 import { CombinationsScreen } from '../screens/CombinationsScreen';
 import { ExercisesScreen } from '../screens/ExercisesScreen';
@@ -14,8 +14,18 @@ import { FONTS } from '../constants/typography';
 
 const Tab = createBottomTabNavigator();
 
+function CavalierJumpIcon({ size = 24, color }: { size?: number; color?: string }) {
+  return (
+    <Image
+      source={require('../../assets/cavalier-jump-tab-icon.png')}
+      style={[styles.tabIcon, { width: size, height: size, tintColor: color }]}
+      resizeMode="contain"
+    />
+  );
+}
+
 const TAB_ICONS: Record<string, React.ComponentType<{ size?: number; color?: string }>> = {
-  Convertisseur: Footprints,
+  Convertisseur: CavalierJumpIcon,
   Combinaisons: Fence,
   Exercices: Expand,
   Chrono: Timer,
@@ -29,7 +39,7 @@ export function BottomTabNavigator() {
 
   const headerRight = () => (
     <TouchableOpacity onPress={() => navigation.navigate('Settings' as never)} style={styles.settingsButton}>
-      <Settings size={22} color={colors.accentGold} />
+      <Image source={require('../../assets/menu-button-icon.png')} style={styles.menuIcon} resizeMode="contain" />
     </TouchableOpacity>
   );
 
@@ -39,13 +49,13 @@ export function BottomTabNavigator() {
         headerShown: true,
         headerRight,
         headerStatusBarHeight: 14,
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.textMuted,
+        tabBarActiveTintColor: colors.iconGoldActive,
+        tabBarInactiveTintColor: colors.accentGold,
         tabBarStyle: { backgroundColor: colors.barBackground, borderTopColor: colors.border },
         headerStyle: { backgroundColor: colors.barBackground, height: 64 },
         headerTitleStyle: { color: colors.text, fontFamily: FONTS.heading, fontSize: 20 },
         tabBarIcon: ({ color, size }: { color: string; size: number }) => {
-          const Icon = TAB_ICONS[route.name] ?? Footprints;
+          const Icon = TAB_ICONS[route.name] ?? CavalierJumpIcon;
           return <Icon size={size} color={color} />;
         },
       })}
@@ -66,5 +76,12 @@ export function BottomTabNavigator() {
 const styles = StyleSheet.create({
   settingsButton: {
     marginRight: 16,
+  },
+  tabIcon: {
+    marginBottom: -2,
+  },
+  menuIcon: {
+    width: 26,
+    height: 26,
   },
 });

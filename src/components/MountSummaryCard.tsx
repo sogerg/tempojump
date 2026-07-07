@@ -1,9 +1,11 @@
 import React from 'react';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
+import { GOLD_ICON_GRADIENT } from '../constants/colors';
 import { formatLength } from '../lib/units';
 
 export function MountSummaryCard() {
@@ -13,7 +15,7 @@ export function MountSummaryCard() {
   const { colors, unitSystem } = useSettings();
 
   return (
-    <View style={[styles.card, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
+    <View style={[styles.card, { backgroundColor: colors.segmentBackground, borderColor: colors.cardBorder }]}>
       <View style={styles.info}>
         <Image source={require('../../assets/horse-head-icon.png')} style={styles.icon} resizeMode="contain" />
         <View style={styles.textBlock}>
@@ -27,12 +29,19 @@ export function MountSummaryCard() {
           ) : null}
         </View>
       </View>
-      <TouchableOpacity
-        style={[styles.selectButton, { backgroundColor: colors.primary, borderColor: colors.accentGold }]}
-        onPress={() => navigation.navigate('Montures' as never)}
+      <LinearGradient
+        colors={GOLD_ICON_GRADIENT}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+        style={styles.selectButtonBorder}
       >
-        <Text style={[styles.selectButtonText, { color: colors.primaryText }]}>{t('horsePicker.selectButton')}</Text>
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.selectButton, { backgroundColor: colors.primary }]}
+          onPress={() => navigation.navigate('Montures' as never)}
+        >
+          <Text style={[styles.selectButtonText, { color: colors.primaryText }]}>{t('horsePicker.selectButton')}</Text>
+        </TouchableOpacity>
+      </LinearGradient>
     </View>
   );
 }
@@ -70,13 +79,16 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 2,
   },
+  selectButtonBorder: {
+    borderRadius: 20,
+    padding: 1.5,
+  },
   selectButton: {
     paddingVertical: 10,
     paddingHorizontal: 22,
     minWidth: 116,
     alignItems: 'center',
-    borderRadius: 20,
-    borderWidth: 1.5,
+    borderRadius: 18.5,
   },
   selectButtonText: {
     fontSize: 13,
