@@ -1,5 +1,6 @@
 export interface ThemeColors {
   background: string;
+  barBackground: string;
   surface: string;
   card: string;
   cardBorder: string;
@@ -21,6 +22,7 @@ export interface ThemeColors {
 // (doc/maquette design elegante.png).
 export const lightColors: ThemeColors = {
   background: '#FCFAF5',
+  barBackground: '#F3EDE0',
   surface: '#FFFFFF',
   card: '#F0DFD8',
   cardBorder: '#D9BE98',
@@ -39,6 +41,7 @@ export const lightColors: ThemeColors = {
 
 export const darkColors: ThemeColors = {
   background: '#211A14',
+  barBackground: '#1A1510',
   surface: '#2B2119',
   card: '#3A2B27',
   cardBorder: '#6B4F35',

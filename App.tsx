@@ -2,6 +2,7 @@ import './src/i18n';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View } from 'react-native';
+import { NavigationBar } from 'expo-navigation-bar';
 import {
   useFonts,
   PlayfairDisplay_700Bold,
@@ -17,6 +18,7 @@ function AppContent() {
     <HorseProvider>
       <RootNavigator />
       <StatusBar style={isDarkMode ? 'light' : 'dark'} />
+      <NavigationBar hidden />
     </HorseProvider>
   );
 }

@@ -22,8 +22,8 @@ export function HorsesScreen() {
   const [newCategory, setNewCategory] = useState<HorseCategory>('Cheval');
   const [newStrideLength, setNewStrideLength] = useState(String(DEFAULT_STRIDE_LENGTH.Cheval));
 
-  const [calibrationDistance, setCalibrationDistance] = useState('');
-  const [calibrationSteps, setCalibrationSteps] = useState('10');
+  const [calibrationDistance, setCalibrationDistance] = useState('8');
+  const [calibrationSteps, setCalibrationSteps] = useState('8');
 
   const handleCategoryChange = (category: HorseCategory) => {
     setNewCategory(category);

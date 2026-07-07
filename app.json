@@ -37,7 +37,13 @@
         }
       ],
       "expo-file-system",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-navigation-bar",
+        {
+          "hidden": true
+        }
+      ]
     ]
   }
 }

@@ -43,8 +43,8 @@ export function BottomTabNavigator() {
         headerRight,
         tabBarActiveTintColor: colors.primary,
         tabBarInactiveTintColor: colors.textMuted,
-        tabBarStyle: { backgroundColor: colors.surface, borderTopColor: colors.border },
-        headerStyle: { backgroundColor: colors.surface },
+        tabBarStyle: { backgroundColor: colors.barBackground, borderTopColor: colors.border },
+        headerStyle: { backgroundColor: colors.barBackground },
         headerTitleStyle: { color: colors.text, fontFamily: FONTS.heading, fontSize: 20 },
         tabBarIcon: ({ color, size }: { color: string; size: number }) => {
           const Icon = TAB_ICONS[route.name] ?? Footprints;
