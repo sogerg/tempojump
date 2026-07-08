@@ -1,10 +1,7 @@
-export type HorseCategory = 'PoneyA' | 'PoneyB' | 'PoneyC' | 'PoneyD' | 'Cheval';
-
 export interface Horse {
   id: string;
   name: string;
-  category: HorseCategory;
-  strideLength: number; // foulée par défaut, en mètres
+  withersHeight: number; // taille au garrot, en cm
   notes?: string;
 }
 

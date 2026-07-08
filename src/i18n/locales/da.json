@@ -9,7 +9,7 @@
     "converter": "Konverter",
     "combinations": "Kombinationer",
     "mounts": "Heste",
-    "chrono": "Max tid",
+    "chrono": "Makstid",
     "exercises": "Øvelser",
     "metronome": "Metronom",
     "checklist": "Tjekliste",
@@ -75,21 +75,21 @@
     "currentRiderStepLabel": "Skridtlængde"
   },
   "chrono": {
-    "title": "Max tid",
+    "title": "Makstid",
     "subtitle": "Beregn den tilladte max tid ud fra banens længde og det krævede tempo.",
     "lengthLabel": "Banens længde",
     "lengthPlaceholder": "f.eks. 420",
     "speedLabel": "Krævet tempo",
     "speedPlaceholder": "f.eks. 350",
     "resultTitle": "Resultat",
-    "allowedTimeLabel": "Max tid",
+    "allowedTimeLabel": "Makstid",
     "hintNoInput": "Angiv banens længde og tempo."
   },
   "categories": {
-    "PoneyD": "Kat. 1 pony (D)",
-    "PoneyC": "Kat. 2 pony (C)",
-    "PoneyB": "Kat. 3 pony (B)",
-    "PoneyA": "Kat. 3 pony (A)",
+    "PoneyD": "Pony D",
+    "PoneyC": "Pony C",
+    "PoneyB": "Pony B",
+    "PoneyA": "Pony A",
     "Cheval": "Hest"
   },
   "terrain": {
@@ -144,15 +144,15 @@
     "items": {
       "protections": "Gamacher / Klokker",
       "licol": "Grime & træktov",
-      "filet": "Hovedtøj / Fortøj",
-      "tapis": "Underlag / Pad",
+      "filet": "Hovedtøj",
+      "tapis": "Saddeldækken",
       "selle": "Springsadel / Gjord",
       "bombe": "Ridehjelm",
-      "bottes": "Ridestøvler / Leggings",
+      "bottes": "Ridestøvler / Chaps",
       "pantalonBlanc": "Hvide ridebukser",
       "veste": "Stævnejakke",
       "cravache": "Springpisk",
-      "carnet": "Målerkort (Pony)",
+      "carnet": "Konkurrencehæfte",
       "licence": "Rytterlicens",
       "passeportCheval": "Hestepas (DRF/FEI)"
     }

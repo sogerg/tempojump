@@ -10,10 +10,10 @@ import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { DEFAULT_FIXED_ALLOWANCE } from '../constants/horseDefaults';
 import { stepsToStrides } from '../lib/mathUtils';
-import { formatLength } from '../lib/units';
+import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
+import { ThemeColors } from '../constants/colors';
 
 const PLAT_ICON_RATIO = 501 / 151;
 const MONTANT_ICON_RATIO = 1188 / 728;
@@ -52,21 +52,29 @@ function DescendantIcon({ size = 16, color }: { size?: number; color?: string })
 const TERRAIN_OPTIONS: Terrain[] = ['Plat', 'Montant', 'Descendant', 'Lourd'];
 const SPEED_OPTIONS: SpeedLevel[] = ['Standard', 'Elite'];
 const TERRAIN_ICONS = { Plat: PlatIcon, Montant: MontantIcon, Descendant: DescendantIcon, Lourd: Droplets };
+const TERRAIN_PASTELS: Record<Terrain, (colors: ThemeColors) => string> = {
+  Plat: (colors) => colors.terrainPastelPlat,
+  Montant: (colors) => colors.terrainPastelMontant,
+  Descendant: (colors) => colors.terrainPastelDescendant,
+  Lourd: (colors) => colors.terrainPastelLourd,
+};
 
 export function ConverterScreen() {
   const { t } = useTranslation();
   const { selectedHorse, riderStepLength } = useHorses();
   const { colors, unitSystem } = useSettings();
   const [humanSteps, setHumanSteps] = useState('');
+  const [height, setHeight] = useState('1.10');
   const [terrain, setTerrain] = useState<Terrain>('Plat');
   const [speed, setSpeed] = useState<SpeedLevel>('Standard');
 
   const result = useMemo(() => {
     const steps = Number(humanSteps.replace(',', '.'));
-    if (!selectedHorse || !steps || steps <= 0) return null;
-    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedHorse.category];
-    return stepsToStrides(steps, riderStepLength, selectedHorse, fixedAllowance, { terrain, speed });
-  }, [humanSteps, selectedHorse, riderStepLength, terrain, speed]);
+    const rawHeight = Number(height.replace(',', '.'));
+    if (!selectedHorse || !steps || steps <= 0 || !rawHeight || rawHeight <= 0) return null;
+    const heightMeters = toMeters(rawHeight, unitSystem);
+    return stepsToStrides(steps, riderStepLength, selectedHorse, heightMeters, { terrain, speed });
+  }, [humanSteps, height, unitSystem, selectedHorse, riderStepLength, terrain, speed]);
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background }}>
@@ -84,15 +92,24 @@ export function ConverterScreen() {
           placeholder={t('converter.stepsPlaceholder')}
         />
 
+        <NumberField
+          label={t('converter.heightLabel')}
+          value={height}
+          onChangeText={setHeight}
+          suffix={inputUnitSuffix(unitSystem)}
+        />
+
         <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('converter.terrainLabel')}</Text>
         <SegmentedControl
           options={TERRAIN_OPTIONS.map((terrainOption) => ({
             value: terrainOption,
             label: t(`terrain.${terrainOption}`),
             icon: TERRAIN_ICONS[terrainOption],
+            inactiveColor: TERRAIN_PASTELS[terrainOption](colors),
           }))}
           value={terrain}
           onChange={setTerrain}
+          columns={2}
         />
 
         <View style={{ height: 14 }} />
@@ -103,6 +120,7 @@ export function ConverterScreen() {
             value: speedOption,
             label: t(`speed.${speedOption}`),
             icon: speedOption === 'Elite' ? Zap : undefined,
+            inactiveColor: speedOption === 'Elite' ? colors.speedPastelElite : undefined,
           }))}
           value={speed}
           onChange={setSpeed}

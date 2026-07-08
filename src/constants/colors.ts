@@ -16,6 +16,11 @@ export interface ThemeColors {
   iconGoldActive: string;
   introGradientStart: string;
   introGradientEnd: string;
+  terrainPastelPlat: string;
+  terrainPastelMontant: string;
+  terrainPastelDescendant: string;
+  terrainPastelLourd: string;
+  speedPastelElite: string;
 }
 
 // Palette "cavalerie élégante" : beige cuir clair (presque blanc), rose
@@ -39,6 +44,11 @@ export const lightColors: ThemeColors = {
   iconGoldActive: '#6B4F24',
   introGradientStart: '#F3D9CE',
   introGradientEnd: '#E1B7A9',
+  terrainPastelPlat: '#DCE8E6',
+  terrainPastelMontant: '#F0C289',
+  terrainPastelDescendant: '#E3D9EA',
+  terrainPastelLourd: '#DDD6BC',
+  speedPastelElite: '#F0DFA8',
 };
 
 // Nuances or brossé extraites de assets/horse-head-icon.png (ombre -> reflet -> ombre),
@@ -63,4 +73,9 @@ export const darkColors: ThemeColors = {
   iconGoldActive: '#F5DFA0',
   introGradientStart: '#4A342E',
   introGradientEnd: '#37241F',
+  terrainPastelPlat: '#31413F',
+  terrainPastelMontant: '#5C4423',
+  terrainPastelDescendant: '#3C3444',
+  terrainPastelLourd: '#3A3826',
+  speedPastelElite: '#4A3F22',
 };

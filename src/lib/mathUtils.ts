@@ -1,33 +1,58 @@
 import {
   COMBINATION_ADJUSTMENT,
-  HEIGHT_ADJUSTMENT_STEP,
-  HEIGHT_ADJUSTMENT_THRESHOLD,
-  SPEED_ADJUSTMENT,
+  SPEED_METERS_PER_MINUTE,
   TERRAIN_ADJUSTMENT,
   combinationKey,
+  naturalAmplitudeForWithersHeight,
+  naturalSpeedForWithersHeight,
 } from '../constants/horseDefaults';
 import { CombinationResult, EnvironmentAdjustments, Horse, ObstacleType, StrideResult } from '../types';
 
-/** Foulée effective d'une monture une fois le terrain et la vitesse pris en compte. */
+/**
+ * Amplitude réelle d'une monture selon sa taille au garrot, la vitesse et le terrain :
+ * amplitude = amplitudeNaturelle(garrot) × (vitesse / vitesseNaturelle(garrot)) + ajustement terrain
+ */
 export function effectiveStrideLength(horse: Horse, env: EnvironmentAdjustments): number {
-  return horse.strideLength + TERRAIN_ADJUSTMENT[env.terrain] + SPEED_ADJUSTMENT[env.speed];
+  const naturalAmplitude = naturalAmplitudeForWithersHeight(horse.withersHeight);
+  const naturalSpeed = naturalSpeedForWithersHeight(horse.withersHeight);
+  const speed = SPEED_METERS_PER_MINUTE[env.speed];
+  return naturalAmplitude * (speed / naturalSpeed) + TERRAIN_ADJUSTMENT[env.terrain];
+}
+
+/**
+ * Allocation fixe (appel + réception) entre deux obstacles, selon l'amplitude et
+ * la hauteur de l'obstacle :
+ * - hauteur < 1,15 m : appel = réception = amplitude / 2 (total = amplitude)
+ * - hauteur >= 1,15 m : forfait total = 3 × hauteur (m),
+ *                        appel = forfait/2 - 0,15 (le cheval se rapproche pour monter),
+ *                        réception = forfait/2 + 0,15 (la parabole s'allonge)
+ */
+export function fixedAllowanceForHeight(amplitude: number, heightMeters: number): number {
+  if (heightMeters >= 1.15) {
+    const totalForfait = 3 * heightMeters;
+    const appel = totalForfait / 2 - 0.15;
+    const reception = totalForfait / 2 + 0.15;
+    return appel + reception;
+  }
+  return amplitude;
 }
 
 /**
  * Convertit un nombre de pas humains en distance puis en foulées théoriques.
  * distance = nbPas * longueurPasCavalier
- * foulées  = (distance - allocationFixe) / foulée + 1
+ * foulées  = (distance - allocationFixe) / foulée
  */
 export function stepsToStrides(
   humanSteps: number,
   riderStepLength: number,
   horse: Horse,
-  fixedAllowance: number,
+  heightMeters: number,
   env: EnvironmentAdjustments
 ): StrideResult {
   const distanceMeters = humanSteps * riderStepLength;
   const strideLength = effectiveStrideLength(horse, env);
-  const theoreticalStrides = (distanceMeters - fixedAllowance) / strideLength + 1;
+  const fixedAllowance = fixedAllowanceForHeight(strideLength, heightMeters);
+  const theoreticalStrides = (distanceMeters - fixedAllowance) / strideLength;
 
   return {
     distanceMeters,
@@ -41,7 +66,8 @@ export function stepsToStrides(
 /**
  * Calcule la distance exacte (m) à poser pour obtenir un nombre de foulées donné
  * dans une combinaison ou une ligne d'exercice, en tenant compte du type
- * d'obstacles et de leur hauteur.
+ * d'obstacles et de leur hauteur. `amplitudeRatio` permet de réduire l'amplitude
+ * pour les exercices de barres au sol/cavalettis (amplitude "sur le plat").
  */
 export function combinationDistance(
   targetStrides: number,
@@ -49,20 +75,14 @@ export function combinationDistance(
   to: ObstacleType,
   heightMeters: number,
   horse: Horse,
-  fixedAllowance: number,
-  env: EnvironmentAdjustments
+  env: EnvironmentAdjustments,
+  amplitudeRatio = 1
 ): CombinationResult {
-  const strideLength = effectiveStrideLength(horse, env);
+  const strideLength = effectiveStrideLength(horse, env) * amplitudeRatio;
 
   const combinationBonus = COMBINATION_ADJUSTMENT[combinationKey(from, to)] ?? 0;
-  const heightSteps = Math.max(0, heightMeters - HEIGHT_ADJUSTMENT_THRESHOLD) / 0.1;
-  const heightBonus = heightSteps * HEIGHT_ADJUSTMENT_STEP;
-
-  const adjustedFixedAllowance = fixedAllowance + combinationBonus + heightBonus;
-  const distanceMeters =
-    targetStrides <= 0
-      ? adjustedFixedAllowance
-      : adjustedFixedAllowance + (targetStrides - 1) * strideLength;
+  const adjustedFixedAllowance = fixedAllowanceForHeight(strideLength, heightMeters) + combinationBonus;
+  const distanceMeters = adjustedFixedAllowance + Math.max(0, targetStrides) * strideLength;
 
   return {
     distanceMeters,

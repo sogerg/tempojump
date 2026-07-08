@@ -6,13 +6,12 @@ import { useTranslation } from 'react-i18next';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { GOLD_ICON_GRADIENT } from '../constants/colors';
-import { formatLength } from '../lib/units';
 
 export function MountSummaryCard() {
   const { t } = useTranslation();
   const navigation = useNavigation();
   const { selectedHorse } = useHorses();
-  const { colors, unitSystem } = useSettings();
+  const { colors } = useSettings();
 
   return (
     <View style={[styles.card, { backgroundColor: colors.segmentBackground, borderColor: colors.cardBorder }]}>
@@ -24,7 +23,7 @@ export function MountSummaryCard() {
           </Text>
           {selectedHorse ? (
             <Text style={[styles.meta, { color: colors.textMuted }]}>
-              {t(`categories.${selectedHorse.category}`)} · {formatLength(selectedHorse.strideLength, unitSystem)}
+              {t('mounts.withersHeightLabel')} : {selectedHorse.withersHeight} cm
             </Text>
           ) : null}
         </View>

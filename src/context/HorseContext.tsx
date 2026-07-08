@@ -7,11 +7,30 @@ import {
   saveRiderStepLength,
   saveSelectedHorseId,
 } from '../lib/storage';
-import { DEFAULT_RIDER_STEP_LENGTH, DEFAULT_STRIDE_LENGTH } from '../constants/horseDefaults';
+import { DEFAULT_RIDER_STEP_LENGTH, DEFAULT_WITHERS_HEIGHT } from '../constants/horseDefaults';
 import { Horse } from '../types';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
+}
+
+// Correspondance approximative avec les anciennes catégories (Poney A/B/C/D/Cheval),
+// pour migrer les montures enregistrées avant le passage à la taille au garrot.
+const LEGACY_CATEGORY_WITHERS_HEIGHT: Record<string, number> = {
+  PoneyD: 110,
+  PoneyC: 122,
+  PoneyB: 133,
+  PoneyA: 144,
+  Cheval: 160,
+};
+
+function migrateHorse(horse: Horse & { category?: string }): Horse {
+  if (typeof horse.withersHeight === 'number') return horse;
+  const { category, strideLength, ...rest } = horse as Horse & { category?: string; strideLength?: number };
+  return {
+    ...rest,
+    withersHeight: category ? LEGACY_CATEGORY_WITHERS_HEIGHT[category] ?? DEFAULT_WITHERS_HEIGHT : DEFAULT_WITHERS_HEIGHT,
+  };
 }
 
 interface HorseContextValue {
@@ -43,15 +62,16 @@ export function HorseProvider({ children }: { children: React.ReactNode }) {
         loadSelectedHorseId(),
       ]);
 
-      let horsesToUse = storedHorses;
+      let horsesToUse = storedHorses.map(migrateHorse);
       if (horsesToUse.length === 0) {
         const defaultHorse: Horse = {
           id: generateId(),
           name: 'Ma monture',
-          category: 'Cheval',
-          strideLength: DEFAULT_STRIDE_LENGTH.Cheval,
+          withersHeight: DEFAULT_WITHERS_HEIGHT,
         };
         horsesToUse = [defaultHorse];
+      }
+      if (horsesToUse !== storedHorses) {
         await saveHorses(horsesToUse);
       }
 

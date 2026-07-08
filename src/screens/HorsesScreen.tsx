@@ -2,40 +2,29 @@ import React, { useState } from 'react';
 import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { NumberField } from '../components/NumberField';
-import { SegmentedControl } from '../components/SegmentedControl';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { CATEGORY_ORDER, DEFAULT_STRIDE_LENGTH } from '../constants/horseDefaults';
-import { formatLength, fromMeters, inputUnitSuffix, toMeters } from '../lib/units';
-import { HorseCategory } from '../types';
+import { DEFAULT_WITHERS_HEIGHT } from '../constants/horseDefaults';
 
 export function HorsesScreen() {
   const { t } = useTranslation();
-  const { colors, unitSystem } = useSettings();
+  const { colors } = useSettings();
   const { horses, selectedHorseId, selectHorse, addHorse, removeHorse } = useHorses();
 
   const [newName, setNewName] = useState('');
-  const [newCategory, setNewCategory] = useState<HorseCategory>('Cheval');
-  const [newStrideLength, setNewStrideLength] = useState(String(DEFAULT_STRIDE_LENGTH.Cheval));
-
-  const handleCategoryChange = (category: HorseCategory) => {
-    setNewCategory(category);
-    setNewStrideLength(fromMeters(DEFAULT_STRIDE_LENGTH[category], unitSystem).toFixed(2));
-  };
+  const [newWithersHeight, setNewWithersHeight] = useState(String(DEFAULT_WITHERS_HEIGHT));
 
   const handleAddHorse = async () => {
-    const rawStrideLength = Number(newStrideLength.replace(',', '.'));
-    if (!newName.trim() || !rawStrideLength || rawStrideLength <= 0) {
+    const withersHeight = Number(newWithersHeight.replace(',', '.'));
+    if (!newName.trim() || !withersHeight || withersHeight <= 0) {
       Alert.alert(t('mounts.missingFieldsTitle'), t('mounts.missingFieldsMessage'));
       return;
     }
-    const strideLength = toMeters(rawStrideLength, unitSystem);
-    await addHorse({ name: newName.trim(), category: newCategory, strideLength });
+    await addHorse({ name: newName.trim(), withersHeight });
     setNewName('');
-    setNewCategory('Cheval');
-    setNewStrideLength(fromMeters(DEFAULT_STRIDE_LENGTH.Cheval, unitSystem).toFixed(2));
+    setNewWithersHeight(String(DEFAULT_WITHERS_HEIGHT));
   };
 
   const handleRemoveHorse = (id: string, name: string) => {
@@ -64,7 +53,7 @@ export function HorsesScreen() {
             <TouchableOpacity style={styles.horseInfo} onPress={() => selectHorse(horse.id)}>
               <Text style={[styles.horseName, { color: colors.text }]}>{horse.name}</Text>
               <Text style={[styles.horseMeta, { color: colors.textMuted }]}>
-                {t(`categories.${horse.category}`)} · {formatLength(horse.strideLength, unitSystem)}
+                {t('mounts.withersHeightLabel')} : {horse.withersHeight} cm
               </Text>
             </TouchableOpacity>
             <TouchableOpacity onPress={() => handleRemoveHorse(horse.id, horse.name)}>
@@ -88,20 +77,11 @@ export function HorsesScreen() {
         </View>
       </View>
 
-      <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('mounts.categoryLabel')}</Text>
-      <SegmentedControl
-        options={CATEGORY_ORDER.map((c) => ({ value: c, label: t(`categories.${c}`) }))}
-        value={newCategory}
-        onChange={handleCategoryChange}
-      />
-
-      <View style={{ height: 14 }} />
-
       <NumberField
-        label={t('mounts.strideLengthLabel')}
-        value={newStrideLength}
-        onChangeText={setNewStrideLength}
-        suffix={inputUnitSuffix(unitSystem)}
+        label={t('mounts.withersHeightLabel')}
+        value={newWithersHeight}
+        onChangeText={setNewWithersHeight}
+        suffix="cm"
       />
 
       <TouchableOpacity style={[styles.primaryButton, { backgroundColor: colors.primary }]} onPress={handleAddHorse}>

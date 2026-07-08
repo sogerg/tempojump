@@ -99,7 +99,7 @@
     "Lourd": "Tungt / djupt underlag"
   },
   "speed": {
-    "Standard": "Grundtakt (~350 m/min)",
+    "Standard": "Grundtempo (~350 m/min)",
     "Elite": "Svår klass / Omhoppning (~375 m/min+)"
   },
   "settings": {
@@ -152,8 +152,8 @@
       "pantalonBlanc": "Vita ridbyxor",
       "veste": "Tävlingskavaj",
       "cravache": "Spö",
-      "carnet": "Mätintyg (Ponny)",
-      "licence": "Ryttarlicens / Grönt kort",
+      "carnet": "Tävlingshäfte",
+      "licence": "Licens",
       "passeportCheval": "Hästpass"
     }
   },

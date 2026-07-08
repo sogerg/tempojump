@@ -10,6 +10,7 @@ import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
+import { naturalAmplitudeForWithersHeight, naturalSpeedForWithersHeight } from '../constants/horseDefaults';
 import { canterCadence } from '../lib/mathUtils';
 
 const SPEED_PRESETS = ['300', '350', '375'];
@@ -27,7 +28,10 @@ export function MetronomeScreen() {
   const cadence = useMemo(() => {
     const speedValue = Number(speed.replace(',', '.'));
     if (!selectedHorse || !speedValue || speedValue <= 0) return null;
-    return canterCadence(speedValue, selectedHorse.strideLength);
+    const naturalAmplitude = naturalAmplitudeForWithersHeight(selectedHorse.withersHeight);
+    const naturalSpeed = naturalSpeedForWithersHeight(selectedHorse.withersHeight);
+    const strideLength = naturalAmplitude * (speedValue / naturalSpeed);
+    return canterCadence(speedValue, strideLength);
   }, [speed, selectedHorse]);
 
   useEffect(() => {

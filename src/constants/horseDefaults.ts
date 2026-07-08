@@ -1,37 +1,26 @@
-import { HorseCategory, ObstacleType, Terrain, SpeedLevel } from '../types';
+import { ObstacleType, Terrain, SpeedLevel } from '../types';
 
-export const CATEGORY_LABELS: Record<HorseCategory, string> = {
-  PoneyD: 'Poney D',
-  PoneyC: 'Poney C',
-  PoneyB: 'Poney B',
-  PoneyA: 'Poney A',
-  Cheval: 'Cheval',
-};
-
-export const CATEGORY_ORDER: HorseCategory[] = ['PoneyD', 'PoneyC', 'PoneyB', 'PoneyA', 'Cheval'];
-
-// Foulée par défaut (m), vitesse standard, terrain plat.
-export const DEFAULT_STRIDE_LENGTH: Record<HorseCategory, number> = {
-  PoneyD: 3.0,
-  PoneyC: 3.2,
-  PoneyB: 3.35,
-  PoneyA: 3.5,
-  Cheval: 3.6,
-};
-
-// Allocation fixe réception + impulsion (m), utilisée pour convertir une distance
-// en nombre de foulées : distance = allocationFixe + (nbFoulées - 1) * foulée.
-export const DEFAULT_FIXED_ALLOWANCE: Record<HorseCategory, number> = {
-  PoneyD: 2.4,
-  PoneyC: 2.8,
-  PoneyB: 3.2,
-  PoneyA: 3.4,
-  Cheval: 3.6,
-};
+export const DEFAULT_WITHERS_HEIGHT = 160; // cm, taille au garrot par défaut à la création d'une monture
 
 export const DEFAULT_RIDER_STEP_LENGTH = 0.75; // m, valeur de départ avant étalonnage
 
-// Ajustement de la foulée (m) selon le terrain, appliqué à la foulée de base.
+// Vitesse (m/min) associée à chaque niveau, utilisée dans le calcul de l'amplitude réelle.
+export const SPEED_METERS_PER_MINUTE: Record<SpeedLevel, number> = {
+  Standard: 350,
+  Elite: 375,
+};
+
+/** Amplitude naturelle (m) au galop selon la taille au garrot. */
+export function naturalAmplitudeForWithersHeight(withersHeight: number): number {
+  return withersHeight * 0.016 + 0.95;
+}
+
+/** Vitesse naturelle (m/min) associée à l'amplitude naturelle, selon la taille au garrot. */
+export function naturalSpeedForWithersHeight(withersHeight: number): number {
+  return withersHeight * 1.5 + 110;
+}
+
+// Ajustement de la foulée (m) selon le terrain, appliqué à l'amplitude calculée.
 export const TERRAIN_ADJUSTMENT: Record<Terrain, number> = {
   Plat: 0,
   Montant: -0.1,
@@ -46,16 +35,14 @@ export const TERRAIN_LABELS: Record<Terrain, string> = {
   Lourd: 'Terrain lourd / boueux',
 };
 
-// Ajustement de la foulée (m) selon la vitesse imposée.
-export const SPEED_ADJUSTMENT: Record<SpeedLevel, number> = {
-  Standard: 0,
-  Elite: 0.15,
-};
-
 export const SPEED_LABELS: Record<SpeedLevel, string> = {
   Standard: 'Standard (~350 m/min)',
   Elite: 'Élite / Barrage (~375 m/min+)',
 };
+
+// Ratio amplitude "sur le plat" / amplitude "à l'obstacle", pour les exercices de
+// barres au sol et cavalettis.
+export const EXERCISE_AMPLITUDE_RATIO = 0.857;
 
 // Ajustement (m) de l'allocation fixe selon l'enchaînement des obstacles d'une
 // combinaison : un oxer nécessite plus de terrain à la réception et à l'appel.
@@ -71,10 +58,6 @@ export const OBSTACLE_TYPES: ObstacleType[] = ['Vertical', 'Oxer'];
 export function combinationKey(from: ObstacleType, to: ObstacleType): string {
   return `${from}-${to}`;
 }
-
-// Ajustement (m) de l'allocation fixe par tranche de hauteur au-delà de 1,10 m.
-export const HEIGHT_ADJUSTMENT_STEP = 0.02; // m ajoutés par tranche de 10 cm
-export const HEIGHT_ADJUSTMENT_THRESHOLD = 1.1; // m, hauteur de référence sans ajustement
 
 // Nombre de foulées proposées par défaut dans le tableau de contrat de foulées (module Exercices).
 export const EXERCISE_STRIDE_RANGE = [0, 1, 2, 3, 4, 5, 6];

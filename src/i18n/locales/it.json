@@ -76,7 +76,7 @@
   },
   "chrono": {
     "title": "Tempo accordato",
-    "subtitle": "Calcola il tempo accordato a partire dalla lunghezza del percorso e dal tempo prescritto.",
+    "subtitle": "Calcola il tempo accordato a partire dalla lunghezza del percorso e dalla velocità prescritta.",
     "lengthLabel": "Lunghezza del percorso",
     "lengthPlaceholder": "es: 420",
     "speedLabel": "Velocità prescritta",
@@ -152,9 +152,9 @@
       "pantalonBlanc": "Pantaloni bianchi",
       "veste": "Giacca da concorso",
       "cravache": "Frustino",
-      "carnet": "Passaporto (FISE/FEI)",
-      "licence": "Patente (FISE)",
-      "passeportCheval": "Documento APA (Coggin)"
+      "carnet": "Libretto",
+      "licence": "Licenza",
+      "passeportCheval": "Passaporto del cavallo"
     }
   },
   "coursePlan": {

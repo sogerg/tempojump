@@ -9,7 +9,7 @@ import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { DEFAULT_FIXED_ALLOWANCE, OBSTACLE_TYPES } from '../constants/horseDefaults';
+import { OBSTACLE_TYPES } from '../constants/horseDefaults';
 import { combinationDistance } from '../lib/mathUtils';
 import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
 import { ObstacleType } from '../types';
@@ -37,16 +37,10 @@ export function CombinationsScreen() {
     const rawHeight = Number(height.replace(',', '.'));
     if (!rawHeight || rawHeight <= 0) return null;
     const heightMeters = toMeters(rawHeight, unitSystem);
-    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedHorse.category];
-    return combinationDistance(
-      targetStrides,
-      from,
-      to,
-      heightMeters,
-      selectedHorse,
-      fixedAllowance,
-      { terrain: 'Plat', speed: 'Standard' }
-    );
+    return combinationDistance(targetStrides, from, to, heightMeters, selectedHorse, {
+      terrain: 'Plat',
+      speed: 'Standard',
+    });
   }, [selectedHorse, height, unitSystem, from, to, targetStrides]);
 
   return (

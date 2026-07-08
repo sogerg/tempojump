@@ -8,7 +8,7 @@ import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { DEFAULT_FIXED_ALLOWANCE, EXERCISE_STRIDE_RANGE } from '../constants/horseDefaults';
+import { EXERCISE_AMPLITUDE_RATIO, EXERCISE_STRIDE_RANGE } from '../constants/horseDefaults';
 import { combinationDistance } from '../lib/mathUtils';
 import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
 
@@ -23,7 +23,6 @@ export function ExercisesScreen() {
     const rawHeight = Number(height.replace(',', '.'));
     if (!rawHeight || rawHeight <= 0) return null;
     const heightMeters = toMeters(rawHeight, unitSystem);
-    const fixedAllowance = DEFAULT_FIXED_ALLOWANCE[selectedHorse.category];
 
     return EXERCISE_STRIDE_RANGE.map((strideCount) => {
       const result = combinationDistance(
@@ -32,8 +31,8 @@ export function ExercisesScreen() {
         'Vertical',
         heightMeters,
         selectedHorse,
-        fixedAllowance,
-        { terrain: 'Plat', speed: 'Standard' }
+        { terrain: 'Plat', speed: 'Standard' },
+        EXERCISE_AMPLITUDE_RATIO
       );
       const label =
         strideCount === 0

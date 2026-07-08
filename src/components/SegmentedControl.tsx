@@ -5,17 +5,25 @@ import { useSettings } from '../context/SettingsContext';
 import { GOLD_ICON_GRADIENT } from '../constants/colors';
 
 interface SegmentedControlProps<T extends string> {
-  options: { value: T; label: string; icon?: React.ComponentType<{ size?: number; color?: string }> }[];
+  options: {
+    value: T;
+    label: string;
+    icon?: React.ComponentType<{ size?: number; color?: string }>;
+    inactiveColor?: string;
+  }[];
   value: T;
   onChange: (value: T) => void;
+  columns?: number;
 }
 
 export function SegmentedControl<T extends string>({
   options,
   value,
   onChange,
+  columns,
 }: SegmentedControlProps<T>) {
   const { colors } = useSettings();
+  const gridStyle: { width: `${number}%` } | null = columns ? { width: `${100 / columns - 2}%` } : null;
 
   return (
     <View style={[styles.container, { backgroundColor: colors.segmentBackground }]}>
@@ -26,7 +34,11 @@ export function SegmentedControl<T extends string>({
 
         if (!isActive) {
           return (
-            <TouchableOpacity key={option.value} style={styles.segment} onPress={() => onChange(option.value)}>
+            <TouchableOpacity
+              key={option.value}
+              style={[styles.segment, gridStyle, option.inactiveColor && { backgroundColor: option.inactiveColor }]}
+              onPress={() => onChange(option.value)}
+            >
               {Icon ? <Icon size={16} color={iconColor} /> : null}
               <Text style={[styles.label, { color: colors.text }]}>{option.label}</Text>
             </TouchableOpacity>
@@ -39,7 +51,7 @@ export function SegmentedControl<T extends string>({
             colors={GOLD_ICON_GRADIENT}
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 1 }}
-            style={styles.activeSegmentBorder}
+            style={[styles.activeSegmentBorder, gridStyle]}
           >
             <TouchableOpacity
               style={[styles.segment, styles.activeSegment, { backgroundColor: colors.primary }]}
@@ -66,6 +78,7 @@ const styles = StyleSheet.create({
   segment: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     gap: 6,
     paddingVertical: 8,
     paddingHorizontal: 12,
@@ -81,5 +94,6 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 13,
     fontWeight: '500',
+    flexShrink: 1,
   },
 });

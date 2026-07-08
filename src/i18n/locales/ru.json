@@ -36,8 +36,8 @@
   "combination": {
     "title": "Калькулятор систем",
     "subtitle": "Точное расстояние для установки между элементами системы (двойной, тройной).",
-    "fromLabel": "1-й элемент (приземление)",
-    "toLabel": "2-й элемент (отталкивание)",
+    "fromLabel": "1-й элемент (отталкивание)",
+    "toLabel": "2-й элемент (приземление)",
     "heightLabel": "Высота препятствий",
     "targetStridesLabel": "Планируемые темпы",
     "bounce": "Клавиши (In-out)",
@@ -121,7 +121,7 @@
     "heightLabel": "Высота жердей/кавалетти",
     "tableTitle": "Расчёт темпов",
     "strideCount_one": "{{count}} темп",
-    "strideCount_other": "{{count}} темпа/темпов"
+    "strideCount_other": "{{count}} темпов"
   },
   "metronome": {
     "title": "Метроном галопа",
@@ -142,7 +142,7 @@
     "sectionPapers": "Документы",
     "resetButton": "Сбросить список",
     "items": {
-      "protections": "Ногавки / Кобуры",
+      "protections": "Ногавки",
       "licol": "Недоуздок и чомбур",
       "filet": "Уздечка / Подперсье",
       "tapis": "Вальтрап / Амортизатор",
@@ -152,7 +152,7 @@
       "pantalonBlanc": "Белые бриджи",
       "veste": "Редингот",
       "cravache": "Конкурный хлыст",
-      "carnet": "Паспорт ФКСР",
+      "carnet": "Паспорт спортсмена",
       "licence": "Лицензия / Страховка",
       "passeportCheval": "Паспорт лошади (ФКСР/FEI)"
     }
@@ -182,15 +182,15 @@
     "notesLabel": "Заметки по маршруту",
     "recordVideo": "Снять видео",
     "pickVideo": "Выбрать видео",
-    "videoAttached": "Video прикреплено ✓",
+    "videoAttached": "Видео прикреплено ✓",
     "saveEntry": "Сохранить",
     "addEntry": "Новый маршрут",
     "missingNameTitle": "Введите название турнира/маршрута.",
     "deleteConfirmTitle": "Удалить эту запись?",
     "deltaExact": "Точно как на просмотре",
     "deltaLong_one": "на {{count}} темп больше",
-    "deltaLong_other": "на {{count}} темпа(ов) больше",
+    "deltaLong_other": "на {{count}} темпов больше",
     "deltaShort_one": "на {{count}} темп меньше",
-    "deltaShort_other": "на {{count}} темпа(ов) меньше"
+    "deltaShort_other": "на {{count}} темпов меньше"
   }
 }

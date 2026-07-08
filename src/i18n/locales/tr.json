@@ -55,7 +55,7 @@
     "title": "Atlarım",
     "delete": "Sil",
     "addTitle": "At Ekle",
-    "nameLabel": "Kılıç / İsim",
+    "nameLabel": "İsim",
     "namePlaceholder": "örn: Voltigeur",
     "categoryLabel": "Kategori",
     "strideLengthLabel": "Varsayılan Fule Uzunluğu",
@@ -147,14 +147,14 @@
       "filet": "Başlık / Kantarma Takımı",
       "tapis": "Şabraka / Amortisör",
       "selle": "Engel Eyeri / Kolan",
-      "bombe": "Tog (Kask)",
+      "bombe": "Kask",
       "bottes": "Çizme / Çaps",
       "pantalonBlanc": "Beyaz Binici Pantolonu",
       "veste": "Müsabaka Ceketi (Sako)",
       "cravache": "Engel Kırbacı",
-      "carnet": "At Pasaportu",
+      "carnet": "Yarışma defteri",
       "licence": "Binici Lisansı / Sporcu Kartı",
-      "passeportCheval": "FEI / Ulusal Kimlik Belgesi"
+      "passeportCheval": "At Pasaportu (FEI/Ulusal)"
     }
   },
   "coursePlan": {
