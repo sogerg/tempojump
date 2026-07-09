@@ -9,6 +9,7 @@ import { MetronomeScreen } from '../screens/MetronomeScreen';
 import { ChecklistScreen } from '../screens/ChecklistScreen';
 import { CoursePlanScreen } from '../screens/CoursePlanScreen';
 import { JournalScreen } from '../screens/JournalScreen';
+import { ChronoScreen } from '../screens/ChronoScreen';
 import { useSettings } from '../context/SettingsContext';
 
 const Stack = createNativeStackNavigator();
@@ -44,6 +45,7 @@ export function RootNavigator() {
           options={{ presentation: 'modal', title: t('settings.title'), headerShown: false }}
         />
         <Stack.Screen name="Montures" component={HorsesScreen} options={{ title: t('nav.mounts') }} />
+        <Stack.Screen name="Chrono" component={ChronoScreen} options={{ title: t('nav.chrono') }} />
         <Stack.Screen name="Metronome" component={MetronomeScreen} options={{ title: t('nav.metronome') }} />
         <Stack.Screen name="Checklist" component={ChecklistScreen} options={{ title: t('nav.checklist') }} />
         <Stack.Screen name="CoursePlan" component={CoursePlanScreen} options={{ title: t('nav.coursePlan') }} />

@@ -9,7 +9,7 @@
     "converter": "Converter",
     "combinations": "Combinations",
     "mounts": "Mounts",
-    "chrono": "Timer",
+    "chrono": "Time allowed",
     "exercises": "Exercises",
     "metronome": "Metronome",
     "checklist": "Checklist",
@@ -141,18 +141,26 @@
     "sectionRider": "Rider gear",
     "sectionPapers": "Documents",
     "resetButton": "Reset checklist",
+    "addPlaceholder": "Add an item…",
+    "addButton": "Add",
     "items": {
       "protections": "Boots/protections",
       "licol": "Halter",
       "filet": "Bridle",
       "tapis": "Saddle pad",
       "selle": "Saddle",
+      "sangle": "Girth",
+      "longe": "Lead rope",
+      "amortisseur": "Gel pad",
+      "seauEponge": "Bucket / sponge",
       "bombe": "Helmet",
       "bottes": "Riding boots",
       "pantalonBlanc": "White breeches",
       "veste": "Riding jacket",
       "cravache": "Riding crop",
-      "carnet": "Logbook",
+      "eperons": "Spurs",
+      "gants": "Gloves",
+      "giletProtection": "Body protector / Airbag",
       "licence": "Licence",
       "passeportCheval": "Horse passport"
     }
@@ -171,7 +179,9 @@
     "save": "Save",
     "share": "Share",
     "shareErrorTitle": "Could not share the plan.",
-    "hintNoPhoto": "Take or choose a photo of the plan to get started."
+    "hintNoPhoto": "Take or choose a photo of the plan to get started.",
+    "markerNumberLabel": "Number of strides",
+    "addMarkerButton": "Add"
   },
   "journal": {
     "title": "Logbook",

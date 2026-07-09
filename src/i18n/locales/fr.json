@@ -9,7 +9,7 @@
     "converter": "Convertisseur",
     "combinations": "Combinaisons",
     "mounts": "Montures",
-    "chrono": "Chrono",
+    "chrono": "Temps accordé",
     "exercises": "Exercices",
     "metronome": "Métronome",
     "checklist": "Check-list",
@@ -141,18 +141,26 @@
     "sectionRider": "Matériel du cavalier",
     "sectionPapers": "Papiers",
     "resetButton": "Réinitialiser la liste",
+    "addPlaceholder": "Ajouter un élément…",
+    "addButton": "Ajouter",
     "items": {
       "protections": "Protections",
       "licol": "Licol",
       "filet": "Filet",
       "tapis": "Tapis",
       "selle": "Selle",
+      "sangle": "Sangle",
+      "longe": "Longe",
+      "amortisseur": "Amortisseur",
+      "seauEponge": "Seau / éponge",
       "bombe": "Casque",
       "bottes": "Bottes",
       "pantalonBlanc": "Pantalon blanc",
       "veste": "Veste",
       "cravache": "Cravache",
-      "carnet": "Carnet",
+      "eperons": "Éperons",
+      "gants": "Gants",
+      "giletProtection": "Gilet de protection / Airbag",
       "licence": "Licence",
       "passeportCheval": "Livret du cheval"
     }
@@ -171,7 +179,9 @@
     "save": "Enregistrer",
     "share": "Partager",
     "shareErrorTitle": "Impossible de partager le plan.",
-    "hintNoPhoto": "Prends ou choisis une photo du plan pour commencer."
+    "hintNoPhoto": "Prends ou choisis une photo du plan pour commencer.",
+    "markerNumberLabel": "Nombre de foulées",
+    "addMarkerButton": "Ajouter"
   },
   "journal": {
     "title": "Journal de bord",

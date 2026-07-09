@@ -39,7 +39,7 @@ export function SettingsScreen() {
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
-      <ScreenWatermark />
+      <ScreenWatermark offsetTop={189} />
       <View style={styles.header}>
         <Text style={[styles.title, { color: colors.text, fontFamily: FONTS.heading }]}>{t('settings.title')}</Text>
         <TouchableOpacity onPress={() => navigation.goBack()}>

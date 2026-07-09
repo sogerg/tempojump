@@ -1,9 +1,8 @@
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import {
   Alert,
   Image,
   LayoutChangeEvent,
-  PanResponder,
   ScrollView,
   StyleSheet,
   Text,
@@ -17,21 +16,21 @@ import * as Sharing from 'expo-sharing';
 import { captureRef } from 'react-native-view-shot';
 import Svg, { Polyline } from 'react-native-svg';
 import { useSettings } from '../context/SettingsContext';
-import {
-  copyToPersistentStorage,
-  loadCoursePlans,
-  saveCoursePlans,
-} from '../lib/storage';
+import { copyToPersistentStorage, loadCoursePlans, saveCoursePlans } from '../lib/storage';
 import { CoursePlan, DrawingStroke, StrideMarker } from '../types';
+import { fractionToPixel, getContainRect } from '../lib/imageGeometry';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
-import { Camera, Images, MapPin, PenLine, Save, Share2, Trash2, Undo2 } from 'lucide-react-native';
+import { CoursePlanEditorScreen } from './CoursePlanEditorScreen';
+import { Camera, Images, MapPin, PenLine, Save, Share2 } from 'lucide-react-native';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
 type DrawMode = 'draw' | 'mark';
+
+const DEFAULT_STROKE_COLOR = '#e63946';
 
 export function CoursePlanScreen() {
   const { t } = useTranslation();
@@ -40,11 +39,23 @@ export function CoursePlanScreen() {
 
   const [plans, setPlans] = useState<CoursePlan[]>([]);
   const [currentPlan, setCurrentPlan] = useState<CoursePlan | null>(null);
-  const [mode, setMode] = useState<DrawMode>('draw');
   const [strokes, setStrokes] = useState<DrawingStroke[]>([]);
   const [markers, setMarkers] = useState<StrideMarker[]>([]);
-  const [currentStrokePoints, setCurrentStrokePoints] = useState<{ x: number; y: number }[]>([]);
-  const [imageLayout, setImageLayout] = useState({ width: 0, height: 0 });
+  const [editorVisible, setEditorVisible] = useState(false);
+  const [editorMode, setEditorMode] = useState<DrawMode>('draw');
+  const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
+  const [naturalSize, setNaturalSize] = useState({ width: 0, height: 0 });
+
+  useEffect(() => {
+    if (!currentPlan?.photoUri) return;
+    Image.getSize(
+      currentPlan.photoUri,
+      (width, height) => setNaturalSize({ width, height }),
+      () => setNaturalSize({ width: 0, height: 0 })
+    );
+  }, [currentPlan?.photoUri]);
+
+  const containRect = useMemo(() => getContainRect(canvasSize, naturalSize), [canvasSize, naturalSize]);
 
   React.useEffect(() => {
     (async () => {
@@ -52,37 +63,6 @@ export function CoursePlanScreen() {
       setPlans(stored);
     })();
   }, []);
-
-  const panResponder = useMemo(
-    () =>
-      PanResponder.create({
-        onStartShouldSetPanResponder: () => true,
-        onMoveShouldSetPanResponder: () => true,
-        onPanResponderGrant: (evt) => {
-          const { locationX, locationY } = evt.nativeEvent;
-          if (mode === 'mark') {
-            setMarkers((prev) => [...prev, { x: locationX, y: locationY, label: String(prev.length + 1) }]);
-          } else {
-            setCurrentStrokePoints([{ x: locationX, y: locationY }]);
-          }
-        },
-        onPanResponderMove: (evt) => {
-          if (mode !== 'draw') return;
-          const { locationX, locationY } = evt.nativeEvent;
-          setCurrentStrokePoints((prev) => [...prev, { x: locationX, y: locationY }]);
-        },
-        onPanResponderRelease: () => {
-          if (mode !== 'draw') return;
-          setCurrentStrokePoints((prev) => {
-            if (prev.length > 1) {
-              setStrokes((strokesPrev) => [...strokesPrev, { points: prev }]);
-            }
-            return [];
-          });
-        },
-      }),
-    [mode]
-  );
 
   const pickPhoto = async (source: 'camera' | 'library') => {
     const permission =
@@ -131,24 +111,6 @@ export function CoursePlanScreen() {
     await saveCoursePlans(next);
   };
 
-  const handleUndo = () => {
-    setStrokes((prev) => prev.slice(0, -1));
-  };
-
-  const handleClear = () => {
-    Alert.alert(t('coursePlan.clearConfirmTitle'), '', [
-      { text: t('common.cancel'), style: 'cancel' },
-      {
-        text: t('common.delete'),
-        style: 'destructive',
-        onPress: () => {
-          setStrokes([]);
-          setMarkers([]);
-        },
-      },
-    ]);
-  };
-
   const handleShare = async () => {
     if (!captureViewRef.current) return;
     try {
@@ -162,9 +124,16 @@ export function CoursePlanScreen() {
     }
   };
 
-  const onImageLayout = (event: LayoutChangeEvent) => {
-    const { width, height } = event.nativeEvent.layout;
-    setImageLayout({ width, height });
+  const openEditor = (mode: DrawMode) => {
+    if (!currentPlan) return;
+    setEditorMode(mode);
+    setEditorVisible(true);
+  };
+
+  const handleEditorClose = (nextStrokes: DrawingStroke[], nextMarkers: StrideMarker[]) => {
+    setStrokes(nextStrokes);
+    setMarkers(nextMarkers);
+    setEditorVisible(false);
   };
 
   return (
@@ -227,78 +196,63 @@ export function CoursePlanScreen() {
 
           <View style={styles.modeRow}>
             <TouchableOpacity
-              style={[styles.modeButton, { backgroundColor: mode === 'draw' ? colors.primary : colors.segmentBackground }]}
-              onPress={() => setMode('draw')}
+              style={[styles.modeButton, { backgroundColor: colors.segmentBackground }]}
+              onPress={() => openEditor('draw')}
             >
-              <PenLine size={16} color={mode === 'draw' ? colors.iconGoldActive : colors.accentGold} />
-              <Text style={{ color: mode === 'draw' ? colors.primaryText : colors.text, fontWeight: '600' }}>
-                {t('coursePlan.drawMode')}
-              </Text>
+              <PenLine size={16} color={colors.accentGold} />
+              <Text style={{ color: colors.text, fontWeight: '600' }}>{t('coursePlan.drawMode')}</Text>
             </TouchableOpacity>
             <TouchableOpacity
-              style={[styles.modeButton, { backgroundColor: mode === 'mark' ? colors.primary : colors.segmentBackground }]}
-              onPress={() => setMode('mark')}
+              style={[styles.modeButton, { backgroundColor: colors.segmentBackground }]}
+              onPress={() => openEditor('mark')}
             >
-              <MapPin size={16} color={mode === 'mark' ? colors.iconGoldActive : colors.accentGold} />
-              <Text style={{ color: mode === 'mark' ? colors.primaryText : colors.text, fontWeight: '600' }}>
-                {t('coursePlan.markMode')}
-              </Text>
+              <MapPin size={16} color={colors.accentGold} />
+              <Text style={{ color: colors.text, fontWeight: '600' }}>{t('coursePlan.markMode')}</Text>
             </TouchableOpacity>
           </View>
 
-          <View ref={captureViewRef} collapsable={false} style={styles.canvasWrapper}>
-            <Image
-              source={{ uri: currentPlan.photoUri }}
-              style={styles.image}
-              resizeMode="contain"
-              onLayout={onImageLayout}
-            />
-            <View style={StyleSheet.absoluteFill} {...panResponder.panHandlers}>
-              <Svg width={imageLayout.width} height={imageLayout.height} style={StyleSheet.absoluteFill}>
-                {strokes.map((stroke, index) => (
-                  <Polyline
-                    key={index}
-                    points={stroke.points.map((p) => `${p.x},${p.y}`).join(' ')}
-                    fill="none"
-                    stroke="#e63946"
-                    strokeWidth={4}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                ))}
-                {currentStrokePoints.length > 1 ? (
-                  <Polyline
-                    points={currentStrokePoints.map((p) => `${p.x},${p.y}`).join(' ')}
-                    fill="none"
-                    stroke="#e63946"
-                    strokeWidth={4}
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                ) : null}
-              </Svg>
-              {markers.map((marker, index) => (
-                <View
-                  key={index}
-                  style={[styles.marker, { left: marker.x - 14, top: marker.y - 14 }]}
-                  pointerEvents="none"
-                >
-                  <Text style={styles.markerText}>{marker.label}</Text>
-                </View>
-              ))}
+          <TouchableOpacity activeOpacity={0.85} onPress={() => openEditor('draw')}>
+            <View
+              ref={captureViewRef}
+              collapsable={false}
+              style={styles.canvasWrapper}
+              onLayout={(event: LayoutChangeEvent) => {
+                const { width, height } = event.nativeEvent.layout;
+                setCanvasSize({ width, height });
+              }}
+            >
+              <Image source={{ uri: currentPlan.photoUri }} style={styles.image} resizeMode="contain" />
+              <View style={StyleSheet.absoluteFill} pointerEvents="none">
+                <Svg width="100%" height="100%" style={StyleSheet.absoluteFill}>
+                  {strokes.map((stroke, index) => (
+                    <Polyline
+                      key={index}
+                      points={stroke.points
+                        .map((p) => fractionToPixel(p, containRect))
+                        .map((p) => `${p.x},${p.y}`)
+                        .join(' ')}
+                      fill="none"
+                      stroke={stroke.color ?? DEFAULT_STROKE_COLOR}
+                      strokeWidth={4}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  ))}
+                </Svg>
+                {markers.map((marker) => {
+                  const pixel = fractionToPixel(marker, containRect);
+                  return (
+                    <View
+                      key={marker.id ?? `${marker.x}-${marker.y}`}
+                      style={[styles.marker, { left: pixel.x - 14, top: pixel.y - 14 }]}
+                    >
+                      <Text style={styles.markerText}>{marker.label}</Text>
+                    </View>
+                  );
+                })}
+              </View>
             </View>
-          </View>
-
-          <View style={styles.actionsRow}>
-            <TouchableOpacity style={[styles.actionButton, { borderColor: colors.border }]} onPress={handleUndo}>
-              <Undo2 size={16} color={colors.accentGold} />
-              <Text style={[styles.actionButtonText, { color: colors.text }]}>{t('coursePlan.undo')}</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={[styles.actionButton, { borderColor: colors.danger }]} onPress={handleClear}>
-              <Trash2 size={16} color={colors.iconGoldActive} />
-              <Text style={[styles.actionButtonText, { color: colors.danger }]}>{t('coursePlan.clear')}</Text>
-            </TouchableOpacity>
-          </View>
+          </TouchableOpacity>
 
           <View style={styles.actionsRow}>
             <TouchableOpacity
@@ -321,6 +275,15 @@ export function CoursePlanScreen() {
         <Text style={[styles.hint, { color: colors.textMuted }]}>{t('coursePlan.hintNoPhoto')}</Text>
       )}
       </ScrollView>
+
+      <CoursePlanEditorScreen
+        visible={editorVisible}
+        photoUri={currentPlan?.photoUri ?? null}
+        initialStrokes={strokes}
+        initialMarkers={markers}
+        initialMode={editorMode}
+        onClose={handleEditorClose}
+      />
     </View>
   );
 }
@@ -406,20 +369,6 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     gap: 10,
     marginTop: 14,
-  },
-  actionButton: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 6,
-    paddingVertical: 10,
-    borderRadius: 10,
-    borderWidth: 1,
-    alignItems: 'center',
-  },
-  actionButtonText: {
-    fontWeight: '600',
-    fontSize: 14,
   },
   primaryButton: {
     flex: 1,

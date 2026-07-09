@@ -2,6 +2,7 @@ import './src/i18n';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NavigationBar } from 'expo-navigation-bar';
 import {
   useFonts,
@@ -34,10 +35,12 @@ export default function App() {
   }
 
   return (
-    <SafeAreaProvider>
-      <SettingsProvider>
-        <AppContent />
-      </SettingsProvider>
-    </SafeAreaProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <SafeAreaProvider>
+        <SettingsProvider>
+          <AppContent />
+        </SettingsProvider>
+      </SafeAreaProvider>
+    </GestureHandlerRootView>
   );
 }

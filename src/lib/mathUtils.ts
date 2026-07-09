@@ -106,7 +106,7 @@ export function allowedTime(courseLengthMeters: number, speedMetersPerMinute: nu
 /** Cadence du galop (foulées/minute) à une vitesse donnée, pour une longueur de foulée donnée. */
 export function canterCadence(speedMetersPerMinute: number, strideLength: number): number {
   if (strideLength <= 0) return 0;
-  return speedMetersPerMinute / strideLength;
+  return (speedMetersPerMinute / strideLength) * 0.5 + 50;
 }
 
 /** Écart entre les foulées réalisées en piste et les foulées théoriques prévues à la reconnaissance. */

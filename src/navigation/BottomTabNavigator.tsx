@@ -3,11 +3,10 @@ import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { Ellipsis, Fence, Timer, Expand } from 'lucide-react-native';
+import { Ellipsis, Fence, Expand } from 'lucide-react-native';
 import { ConverterScreen } from '../screens/ConverterScreen';
 import { CombinationsScreen } from '../screens/CombinationsScreen';
 import { ExercisesScreen } from '../screens/ExercisesScreen';
-import { ChronoScreen } from '../screens/ChronoScreen';
 import { MoreScreen } from '../screens/MoreScreen';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
@@ -28,7 +27,6 @@ const TAB_ICONS: Record<string, React.ComponentType<{ size?: number; color?: str
   Convertisseur: CavalierJumpIcon,
   Combinaisons: Fence,
   Exercices: Expand,
-  Chrono: Timer,
   Plus: Ellipsis,
 };
 
@@ -67,7 +65,6 @@ export function BottomTabNavigator() {
       />
       <Tab.Screen name="Combinaisons" options={{ title: t('nav.combinations') }} component={CombinationsScreen} />
       <Tab.Screen name="Exercices" options={{ title: t('nav.exercises') }} component={ExercisesScreen} />
-      <Tab.Screen name="Chrono" options={{ title: t('nav.chrono') }} component={ChronoScreen} />
       <Tab.Screen name="Plus" options={{ title: t('nav.more') }} component={MoreScreen} />
     </Tab.Navigator>
   );
@@ -81,7 +78,7 @@ const styles = StyleSheet.create({
     marginBottom: -2,
   },
   menuIcon: {
-    width: 26,
-    height: 26,
+    width: 38,
+    height: 38,
   },
 });

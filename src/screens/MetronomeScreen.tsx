@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, Vibration, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useAudioPlayer } from 'expo-audio';
 import { NumberField } from '../components/NumberField';
@@ -10,7 +10,7 @@ import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
-import { naturalAmplitudeForWithersHeight, naturalSpeedForWithersHeight } from '../constants/horseDefaults';
+import { naturalAmplitudeForWithersHeight } from '../constants/horseDefaults';
 import { canterCadence } from '../lib/mathUtils';
 
 const SPEED_PRESETS = ['300', '350', '375'];
@@ -28,22 +28,25 @@ export function MetronomeScreen() {
   const cadence = useMemo(() => {
     const speedValue = Number(speed.replace(',', '.'));
     if (!selectedHorse || !speedValue || speedValue <= 0) return null;
-    const naturalAmplitude = naturalAmplitudeForWithersHeight(selectedHorse.withersHeight);
-    const naturalSpeed = naturalSpeedForWithersHeight(selectedHorse.withersHeight);
-    const strideLength = naturalAmplitude * (speedValue / naturalSpeed);
-    return canterCadence(speedValue, strideLength);
+    const strideLength = naturalAmplitudeForWithersHeight(selectedHorse.withersHeight);
+    const rawCadence = canterCadence(speedValue, strideLength);
+    return rawCadence > 0 ? Math.ceil(rawCadence) : rawCadence;
   }, [speed, selectedHorse]);
 
   useEffect(() => {
     if (isRunning && cadence && cadence > 0) {
       const intervalMs = 60000 / cadence;
-      timerRef.current = setInterval(() => {
+      const tick = () => {
         player.seekTo(0);
         player.play();
-      }, intervalMs);
+        Vibration.vibrate(40);
+      };
+      tick();
+      timerRef.current = setInterval(tick, intervalMs);
     }
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
+      Vibration.cancel();
     };
   }, [isRunning, cadence, player]);
 
@@ -74,7 +77,7 @@ export function MetronomeScreen() {
         <>
           <ResultCard
             title={t('metronome.resultTitle')}
-            rows={[{ label: t('metronome.cadenceLabel'), value: `${cadence.toFixed(0)} /min`, emphasis: true }]}
+            rows={[{ label: t('metronome.cadenceLabel'), value: `${cadence} /min`, emphasis: true }]}
           />
           <View style={{ height: 20 }} />
           <TouchableOpacity

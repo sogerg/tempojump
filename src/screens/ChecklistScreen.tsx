@@ -1,10 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { Plus, X } from 'lucide-react-native';
 import { useSettings } from '../context/SettingsContext';
 import { CHECKLIST_ITEMS } from '../constants/checklistDefaults';
-import { loadChecklistState, saveChecklistState } from '../lib/storage';
-import { ChecklistCategory } from '../types';
+import {
+  loadChecklistState,
+  loadCustomChecklistItems,
+  saveChecklistState,
+  saveCustomChecklistItems,
+} from '../lib/storage';
+import { ChecklistCategory, CustomChecklistItem } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 
@@ -14,15 +20,26 @@ const SECTIONS: { category: ChecklistCategory; titleKey: string }[] = [
   { category: 'papers', titleKey: 'checklist.sectionPapers' },
 ];
 
+function generateId(): string {
+  return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
+}
+
 export function ChecklistScreen() {
   const { t } = useTranslation();
   const { colors } = useSettings();
   const [checkedState, setCheckedState] = useState<Record<string, boolean>>({});
+  const [customItems, setCustomItems] = useState<CustomChecklistItem[]>([]);
+  const [newItemText, setNewItemText] = useState<Record<ChecklistCategory, string>>({
+    horse: '',
+    rider: '',
+    papers: '',
+  });
 
   useEffect(() => {
     (async () => {
-      const stored = await loadChecklistState();
-      setCheckedState(stored);
+      const [storedState, storedCustomItems] = await Promise.all([loadChecklistState(), loadCustomChecklistItems()]);
+      setCheckedState(storedState);
+      setCustomItems(storedCustomItems);
     })();
   }, []);
 
@@ -35,6 +52,24 @@ export function ChecklistScreen() {
   const resetChecklist = async () => {
     setCheckedState({});
     await saveChecklistState({});
+  };
+
+  const addCustomItem = async (category: ChecklistCategory) => {
+    const label = newItemText[category].trim();
+    if (!label) return;
+    const next = [...customItems, { id: generateId(), category, label }];
+    setCustomItems(next);
+    await saveCustomChecklistItems(next);
+    setNewItemText((prev) => ({ ...prev, [category]: '' }));
+  };
+
+  const removeCustomItem = async (id: string) => {
+    const next = customItems.filter((item) => item.id !== id);
+    setCustomItems(next);
+    await saveCustomChecklistItems(next);
+    const { [id]: _removed, ...restChecked } = checkedState;
+    setCheckedState(restChecked);
+    await saveChecklistState(restChecked);
   };
 
   return (
@@ -74,6 +109,56 @@ export function ChecklistScreen() {
               </TouchableOpacity>
             );
           })}
+
+          {customItems
+            .filter((item) => item.category === section.category)
+            .map((item) => {
+              const isChecked = !!checkedState[item.id];
+              return (
+                <View key={item.id} style={[styles.itemRow, { borderColor: colors.border }]}>
+                  <TouchableOpacity style={styles.itemRowMain} onPress={() => toggleItem(item.id)}>
+                    <View
+                      style={[
+                        styles.checkbox,
+                        { borderColor: colors.primary, backgroundColor: isChecked ? colors.primary : 'transparent' },
+                      ]}
+                    >
+                      {isChecked ? <Text style={[styles.checkmark, { color: colors.primaryText }]}>✓</Text> : null}
+                    </View>
+                    <Text
+                      style={[
+                        styles.itemLabel,
+                        { color: isChecked ? colors.textMuted : colors.text },
+                        isChecked && styles.itemLabelChecked,
+                      ]}
+                    >
+                      {item.label}
+                    </Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity onPress={() => removeCustomItem(item.id)} style={styles.deleteCustomButton}>
+                    <X size={16} color={colors.danger} />
+                  </TouchableOpacity>
+                </View>
+              );
+            })}
+
+          <View style={styles.addRow}>
+            <TextInput
+              style={[styles.addInput, { borderColor: colors.border, color: colors.text }]}
+              value={newItemText[section.category]}
+              onChangeText={(text) => setNewItemText((prev) => ({ ...prev, [section.category]: text }))}
+              placeholder={t('checklist.addPlaceholder')}
+              placeholderTextColor={colors.placeholder}
+              onSubmitEditing={() => addCustomItem(section.category)}
+              returnKeyType="done"
+            />
+            <TouchableOpacity
+              style={[styles.addButton, { backgroundColor: colors.accentGold }]}
+              onPress={() => addCustomItem(section.category)}
+            >
+              <Plus size={18} color={colors.primaryText} />
+            </TouchableOpacity>
+          </View>
         </View>
       ))}
 
@@ -104,6 +189,11 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
+  itemRowMain: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+  },
   checkbox: {
     width: 22,
     height: 22,
@@ -119,9 +209,34 @@ const styles = StyleSheet.create({
   },
   itemLabel: {
     fontSize: 15,
+    flexShrink: 1,
   },
   itemLabelChecked: {
     textDecorationLine: 'line-through',
+  },
+  deleteCustomButton: {
+    padding: 6,
+  },
+  addRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginTop: 10,
+  },
+  addInput: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    fontSize: 14,
+  },
+  addButton: {
+    width: 36,
+    height: 36,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   resetButton: {
     marginTop: 12,

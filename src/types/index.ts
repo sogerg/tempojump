@@ -41,6 +41,13 @@ export interface ChecklistItemDefinition {
   category: ChecklistCategory;
 }
 
+/** Élément de checklist ajouté par l'utilisateur (libellé libre, non traduit). */
+export interface CustomChecklistItem {
+  id: string;
+  category: ChecklistCategory;
+  label: string;
+}
+
 export interface DrawingPoint {
   x: number;
   y: number;
@@ -48,9 +55,11 @@ export interface DrawingPoint {
 
 export interface DrawingStroke {
   points: DrawingPoint[];
+  color?: string; // absent = tracé importé avant l'ajout des couleurs (rouge par défaut)
 }
 
 export interface StrideMarker {
+  id?: string; // absent = repère importé avant l'ajout du glisser-déposer
   x: number;
   y: number;
   label: string;
