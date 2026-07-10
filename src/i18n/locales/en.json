@@ -185,10 +185,11 @@
   },
   "journal": {
     "title": "Logbook",
-    "subtitle": "Compare your planned and actual strides, with the video of your round.",
+    "subtitle": "Keep track of your competitions: ranking, how it felt, video and what to improve.",
     "nameLabel": "Competition name",
-    "theoreticalLabel": "Planned strides",
-    "actualLabel": "Actual strides",
+    "rankingLabel": "Ranking",
+    "feelingLabel": "How it felt",
+    "improvementLabel": "What to improve",
     "notesLabel": "Notes",
     "recordVideo": "Record",
     "pickVideo": "Choose a video",
@@ -196,11 +197,6 @@
     "saveEntry": "Save",
     "addEntry": "New entry",
     "missingNameTitle": "Enter a competition name.",
-    "deleteConfirmTitle": "Delete this entry?",
-    "deltaExact": "Contract met",
-    "deltaLong_one": "{{count}} stride more",
-    "deltaLong_other": "{{count}} strides more",
-    "deltaShort_one": "{{count}} stride less",
-    "deltaShort_other": "{{count}} strides less"
+    "deleteConfirmTitle": "Delete this entry?"
   }
 }

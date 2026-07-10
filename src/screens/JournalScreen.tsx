@@ -5,7 +5,6 @@ import * as ImagePicker from 'expo-image-picker';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
-import { strideDelta } from '../lib/mathUtils';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
@@ -20,20 +19,6 @@ function VideoPreview({ uri }: { uri: string }) {
   return <VideoView style={styles.video} player={player} nativeControls />;
 }
 
-function DeltaLabel({ theoretical, actual }: { theoretical?: number; actual?: number }) {
-  const { t } = useTranslation();
-  const { colors } = useSettings();
-  if (theoretical === undefined || actual === undefined) return null;
-  const delta = strideDelta(theoretical, actual);
-  const text =
-    delta === 0
-      ? t('journal.deltaExact')
-      : delta > 0
-      ? t('journal.deltaLong', { count: delta })
-      : t('journal.deltaShort', { count: Math.abs(delta) });
-  return <Text style={{ color: colors.primary, fontWeight: '600', marginTop: 4 }}>{text}</Text>;
-}
-
 export function JournalScreen() {
   const { t } = useTranslation();
   const { colors } = useSettings();
@@ -42,8 +27,9 @@ export function JournalScreen() {
 
   const [name, setName] = useState('');
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
-  const [theoreticalStrides, setTheoreticalStrides] = useState('');
-  const [actualStrides, setActualStrides] = useState('');
+  const [ranking, setRanking] = useState('');
+  const [feeling, setFeeling] = useState('');
+  const [improvement, setImprovement] = useState('');
   const [notes, setNotes] = useState('');
   const [videoUri, setVideoUri] = useState<string | null>(null);
 
@@ -57,8 +43,9 @@ export function JournalScreen() {
   const resetForm = () => {
     setName('');
     setDate(new Date().toISOString().slice(0, 10));
-    setTheoreticalStrides('');
-    setActualStrides('');
+    setRanking('');
+    setFeeling('');
+    setImprovement('');
     setNotes('');
     setVideoUri(null);
   };
@@ -90,8 +77,9 @@ export function JournalScreen() {
       name: name.trim(),
       date,
       videoUri: videoUri ?? undefined,
-      theoreticalStrides: theoreticalStrides ? Number(theoreticalStrides.replace(',', '.')) : undefined,
-      actualStrides: actualStrides ? Number(actualStrides.replace(',', '.')) : undefined,
+      ranking: ranking.trim() || undefined,
+      feeling: feeling.trim() || undefined,
+      improvement: improvement.trim() || undefined,
       notes: notes.trim() || undefined,
     };
     const next = [entry, ...entries];
@@ -135,7 +123,23 @@ export function JournalScreen() {
             </TouchableOpacity>
           </View>
 
-          <DeltaLabel theoretical={entry.theoreticalStrides} actual={entry.actualStrides} />
+          {entry.ranking ? (
+            <Text style={{ color: colors.primary, fontWeight: '600', marginTop: 4 }}>
+              {t('journal.rankingLabel')} : {entry.ranking}
+            </Text>
+          ) : null}
+          {entry.feeling ? (
+            <Text style={{ color: colors.text, marginTop: 4 }}>
+              <Text style={{ fontWeight: '600' }}>{t('journal.feelingLabel')} : </Text>
+              {entry.feeling}
+            </Text>
+          ) : null}
+          {entry.improvement ? (
+            <Text style={{ color: colors.text, marginTop: 4 }}>
+              <Text style={{ fontWeight: '600' }}>{t('journal.improvementLabel')} : </Text>
+              {entry.improvement}
+            </Text>
+          ) : null}
           {entry.notes ? <Text style={{ color: colors.textMuted, marginTop: 4 }}>{entry.notes}</Text> : null}
           {entry.videoUri ? (
             <View style={styles.videoWrapper}>
@@ -163,19 +167,26 @@ export function JournalScreen() {
           />
           <TextInput
             style={[styles.input, { borderColor: colors.border, color: colors.text }]}
-            value={theoreticalStrides}
-            onChangeText={setTheoreticalStrides}
-            placeholder={t('journal.theoreticalLabel')}
+            value={ranking}
+            onChangeText={setRanking}
+            placeholder={t('journal.rankingLabel')}
             placeholderTextColor={colors.placeholder}
-            keyboardType="decimal-pad"
           />
           <TextInput
-            style={[styles.input, { borderColor: colors.border, color: colors.text }]}
-            value={actualStrides}
-            onChangeText={setActualStrides}
-            placeholder={t('journal.actualLabel')}
+            style={[styles.input, styles.notesInput, { borderColor: colors.border, color: colors.text }]}
+            value={feeling}
+            onChangeText={setFeeling}
+            placeholder={t('journal.feelingLabel')}
             placeholderTextColor={colors.placeholder}
-            keyboardType="decimal-pad"
+            multiline
+          />
+          <TextInput
+            style={[styles.input, styles.notesInput, { borderColor: colors.border, color: colors.text }]}
+            value={improvement}
+            onChangeText={setImprovement}
+            placeholder={t('journal.improvementLabel')}
+            placeholderTextColor={colors.placeholder}
+            multiline
           />
           <TextInput
             style={[styles.input, styles.notesInput, { borderColor: colors.border, color: colors.text }]}

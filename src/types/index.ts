@@ -85,7 +85,8 @@ export interface JournalEntry {
   name: string;
   date: string; // ISO date
   videoUri?: string;
-  theoreticalStrides?: number;
-  actualStrides?: number;
+  ranking?: string;
+  feeling?: string;
+  improvement?: string;
   notes?: string;
 }

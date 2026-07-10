@@ -185,10 +185,11 @@
   },
   "journal": {
     "title": "Journal de bord",
-    "subtitle": "Compare tes foulées prévues et réalisées, avec la vidéo de ton parcours.",
+    "subtitle": "Garde une trace de tes concours : classement, ressenti, vidéo et axes de progrès.",
     "nameLabel": "Nom du concours",
-    "theoreticalLabel": "Foulées prévues",
-    "actualLabel": "Foulées réalisées",
+    "rankingLabel": "Classement",
+    "feelingLabel": "Ressenti",
+    "improvementLabel": "Quoi améliorer",
     "notesLabel": "Notes",
     "recordVideo": "Filmer",
     "pickVideo": "Choisir une vidéo",
@@ -196,11 +197,6 @@
     "saveEntry": "Enregistrer",
     "addEntry": "Nouvelle entrée",
     "missingNameTitle": "Renseigne un nom de concours.",
-    "deleteConfirmTitle": "Supprimer cette entrée ?",
-    "deltaExact": "Contrat respecté",
-    "deltaLong_one": "{{count}} foulée de plus",
-    "deltaLong_other": "{{count}} foulées de plus",
-    "deltaShort_one": "{{count}} foulée de moins",
-    "deltaShort_other": "{{count}} foulées de moins"
+    "deleteConfirmTitle": "Supprimer cette entrée ?"
   }
 }
