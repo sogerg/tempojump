@@ -3,10 +3,10 @@ import { Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { Ellipsis, Fence, Expand } from 'lucide-react-native';
+import { BookOpen, Ellipsis, ListChecks } from 'lucide-react-native';
 import { ConverterScreen } from '../screens/ConverterScreen';
-import { CombinationsScreen } from '../screens/CombinationsScreen';
-import { ExercisesScreen } from '../screens/ExercisesScreen';
+import { ChecklistScreen } from '../screens/ChecklistScreen';
+import { JournalScreen } from '../screens/JournalScreen';
 import { MoreScreen } from '../screens/MoreScreen';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
@@ -25,8 +25,8 @@ function CavalierJumpIcon({ size = 24, color }: { size?: number; color?: string 
 
 const TAB_ICONS: Record<string, React.ComponentType<{ size?: number; color?: string }>> = {
   Convertisseur: CavalierJumpIcon,
-  Combinaisons: Fence,
-  Exercices: Expand,
+  Checklist: ListChecks,
+  Journal: BookOpen,
   Plus: Ellipsis,
 };
 
@@ -63,8 +63,8 @@ export function BottomTabNavigator() {
         options={{ tabBarLabel: t('nav.converter'), title: t('converter.headerTitle') }}
         component={ConverterScreen}
       />
-      <Tab.Screen name="Combinaisons" options={{ title: t('nav.combinations') }} component={CombinationsScreen} />
-      <Tab.Screen name="Exercices" options={{ title: t('nav.exercises') }} component={ExercisesScreen} />
+      <Tab.Screen name="Checklist" options={{ title: t('nav.checklist') }} component={ChecklistScreen} />
+      <Tab.Screen name="Journal" options={{ title: t('nav.journal') }} component={JournalScreen} />
       <Tab.Screen name="Plus" options={{ title: t('nav.more') }} component={MoreScreen} />
     </Tab.Navigator>
   );

@@ -34,7 +34,7 @@ export interface CombinationResult {
   fixedAllowance: number;
 }
 
-export type ChecklistCategory = 'horse' | 'rider' | 'papers';
+export type ChecklistCategory = 'horse' | 'rider';
 
 export interface ChecklistItemDefinition {
   id: string;
@@ -46,6 +46,12 @@ export interface CustomChecklistItem {
   id: string;
   category: ChecklistCategory;
   label: string;
+}
+
+/** Check-list "matériel du cheval" propre à une monture (cases cochées + éléments ajoutés). */
+export interface HorseChecklistData {
+  checkedState: Record<string, boolean>;
+  customItems: CustomChecklistItem[];
 }
 
 export interface DrawingPoint {

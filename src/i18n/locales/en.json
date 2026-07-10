@@ -139,7 +139,6 @@
     "subtitle": "Make sure you don't forget anything before you leave.",
     "sectionHorse": "Horse gear",
     "sectionRider": "Rider gear",
-    "sectionPapers": "Documents",
     "resetButton": "Reset checklist",
     "addPlaceholder": "Add an item…",
     "addButton": "Add",
@@ -152,17 +151,18 @@
       "sangle": "Girth",
       "longe": "Lead rope",
       "amortisseur": "Gel pad",
-      "seauEponge": "Bucket / sponge",
+      "seauEponge": "Bucket",
+      "materielPansage": "Grooming kit",
+      "passeportCheval": "Horse logbook",
       "bombe": "Helmet",
       "bottes": "Riding boots",
       "pantalonBlanc": "White breeches",
+      "chemise": "Shirt",
       "veste": "Riding jacket",
       "cravache": "Riding crop",
       "eperons": "Spurs",
       "gants": "Gloves",
-      "giletProtection": "Body protector / Airbag",
-      "licence": "Licence",
-      "passeportCheval": "Horse passport"
+      "giletProtection": "Body protector / Airbag"
     }
   },
   "coursePlan": {

@@ -139,7 +139,6 @@
     "subtitle": "Vérifie que tu n'oublies rien avant de partir.",
     "sectionHorse": "Matériel du cheval",
     "sectionRider": "Matériel du cavalier",
-    "sectionPapers": "Papiers",
     "resetButton": "Réinitialiser la liste",
     "addPlaceholder": "Ajouter un élément…",
     "addButton": "Ajouter",
@@ -152,17 +151,18 @@
       "sangle": "Sangle",
       "longe": "Longe",
       "amortisseur": "Amortisseur",
-      "seauEponge": "Seau / éponge",
+      "seauEponge": "Seau",
+      "materielPansage": "Matériel de pansage",
+      "passeportCheval": "Carnet du cheval",
       "bombe": "Casque",
       "bottes": "Bottes",
       "pantalonBlanc": "Pantalon blanc",
+      "chemise": "Chemise",
       "veste": "Veste",
       "cravache": "Cravache",
       "eperons": "Éperons",
       "gants": "Gants",
-      "giletProtection": "Gilet de protection / Airbag",
-      "licence": "Licence",
-      "passeportCheval": "Livret du cheval"
+      "giletProtection": "Gilet de protection / Airbag"
     }
   },
   "coursePlan": {

@@ -5,18 +5,16 @@ import { useNavigation } from '@react-navigation/native';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
 import { ScreenWatermark } from '../components/ScreenWatermark';
-import { AlarmClock, BookOpen, ListChecks, Map, Timer } from 'lucide-react-native';
+import { AlarmClock, Expand, Map } from 'lucide-react-native';
 
 const MENU_ITEMS: {
   route: string;
   labelKey: string;
   icon: React.ComponentType<{ size?: number; color?: string }>;
 }[] = [
-  { route: 'Chrono', labelKey: 'nav.chrono', icon: Timer },
-  { route: 'Metronome', labelKey: 'nav.metronome', icon: AlarmClock },
-  { route: 'Checklist', labelKey: 'nav.checklist', icon: ListChecks },
   { route: 'CoursePlan', labelKey: 'nav.coursePlan', icon: Map },
-  { route: 'Journal', labelKey: 'nav.journal', icon: BookOpen },
+  { route: 'Metronome', labelKey: 'nav.metronome', icon: AlarmClock },
+  { route: 'Exercices', labelKey: 'nav.exercises', icon: Expand },
 ];
 
 export function MoreScreen() {

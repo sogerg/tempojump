@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { File, Paths } from 'expo-file-system';
-import { CoursePlan, CustomChecklistItem, Horse, JournalEntry } from '../types';
+import { CoursePlan, CustomChecklistItem, Horse, HorseChecklistData, JournalEntry } from '../types';
 import { UnitSystem } from './units';
 
 const HORSES_KEY = '@cavalier/horses';
@@ -11,6 +11,7 @@ const UNIT_SYSTEM_KEY = '@cavalier/unitSystem';
 const DARK_MODE_KEY = '@cavalier/darkMode';
 const CHECKLIST_STATE_KEY = '@cavalier/checklistState';
 const CUSTOM_CHECKLIST_ITEMS_KEY = '@cavalier/customChecklistItems';
+const HORSE_CHECKLISTS_KEY = '@cavalier/horseChecklists';
 const COURSE_PLANS_KEY = '@cavalier/coursePlans';
 const JOURNAL_ENTRIES_KEY = '@cavalier/journalEntries';
 
@@ -86,6 +87,16 @@ export async function loadCustomChecklistItems(): Promise<CustomChecklistItem[]>
 
 export async function saveCustomChecklistItems(items: CustomChecklistItem[]): Promise<void> {
   await AsyncStorage.setItem(CUSTOM_CHECKLIST_ITEMS_KEY, JSON.stringify(items));
+}
+
+/** Check-lists "matériel du cheval", indexées par id de monture. */
+export async function loadHorseChecklists(): Promise<Record<string, HorseChecklistData>> {
+  const raw = await AsyncStorage.getItem(HORSE_CHECKLISTS_KEY);
+  return raw ? (JSON.parse(raw) as Record<string, HorseChecklistData>) : {};
+}
+
+export async function saveHorseChecklists(data: Record<string, HorseChecklistData>): Promise<void> {
+  await AsyncStorage.setItem(HORSE_CHECKLISTS_KEY, JSON.stringify(data));
 }
 
 /** Copie un fichier (photo/vidéo) choisi par l'utilisateur vers le stockage permanent de l'app. */
