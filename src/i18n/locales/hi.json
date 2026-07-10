@@ -31,7 +31,8 @@
     "suggestedStrides": "सुझाए गए स्ट्राइड",
     "hintNoSteps": "परिणाम देखने के लिए कदमों की संख्या दर्ज करें।",
     "hintNoMount": "एक घोड़ा चुनें या जोड़ें।",
-    "headerTitle": "कनवर्टर"
+    "headerTitle": "कनवर्टर",
+    "heightLabel": "बाधा की ऊँचाई"
   },
   "combination": {
     "title": "कॉम्बिनेशन कैलकुलेटर",
@@ -57,8 +58,6 @@
     "addTitle": "घोड़ा जोड़ें",
     "nameLabel": "नाम",
     "namePlaceholder": "उदा: Voltigeur",
-    "categoryLabel": "श्रेणी",
-    "strideLengthLabel": "डिफ़ॉल्ट स्ट्राइड लंबाई",
     "addButton": "घोड़ा जोड़ें",
     "missingFieldsTitle": "अधूरी जानकारी",
     "missingFieldsMessage": "एक मान्य नाम और स्ट्राइड लंबाई दर्ज करें।",
@@ -72,7 +71,8 @@
     "riderStepLabel": "राइडर का कदम",
     "saveAsRiderStep": "राइडर के कदम के रूप में सहेजें",
     "currentRiderStepTitle": "वर्तमान राइडर का कदम",
-    "currentRiderStepLabel": "कदम की लंबाई"
+    "currentRiderStepLabel": "कदम की लंबाई",
+    "withersHeightLabel": "कंधे की ऊँचाई"
   },
   "chrono": {
     "title": "अनुमत समय (Time Allowed)",
@@ -99,8 +99,8 @@
     "Lourd": "भारी / गहरी ज़मीन"
   },
   "speed": {
-    "Standard": "मानक गति (~350 मी/मिनट)",
-    "Elite": "ग्रां प्री / जंप-ऑफ़ (~375 मी/मिनट+)"
+    "Standard": "मानक गति (~{{value}})",
+    "Elite": "ग्रां प्री / जंप-ऑफ़ (~{{value}}+)"
   },
   "settings": {
     "title": "सेटिंग्स",
@@ -139,7 +139,6 @@
     "subtitle": "जाने से पहले अपना टैक बॉक्स जांच लें।",
     "sectionHorse": "घोड़े का गियर (टैक)",
     "sectionRider": "राइडर का गियर",
-    "sectionPapers": "दस्तावेज़",
     "resetButton": "सूची रीसेट करें",
     "items": {
       "protections": "टेंडन बूट्स / बेल बूट्स",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "सफेद ब्रीचेस",
       "veste": "शो जैकेट",
       "cravache": "राइडिंग क्रॉप",
-      "carnet": "रिकॉर्ड बुक",
-      "licence": "राइडर लाइसेंस",
-      "passeportCheval": "घोड़े का पासपोर्ट (FEI/राष्ट्रीय)"
-    }
+      "passeportCheval": "घोड़े की डायरी",
+      "sangle": "तंग (गर्थ)",
+      "longe": "लीड रस्सी",
+      "amortisseur": "जेल पैड",
+      "seauEponge": "बाल्टी",
+      "materielPansage": "ग्रूमिंग किट",
+      "chemise": "शर्ट",
+      "eperons": "स्पर्स",
+      "gants": "दस्ताने",
+      "giletProtection": "सुरक्षा जैकेट / एयरबैग"
+    },
+    "addPlaceholder": "एक आइटम जोड़ें…",
+    "addButton": "जोड़ें"
   },
   "coursePlan": {
     "title": "कोर्स मैप एडिटर",
@@ -171,14 +179,14 @@
     "save": "सहेजें",
     "share": "साझा करें",
     "shareErrorTitle": "मैप साझा नहीं किया जा सका।",
-    "hintNoPhoto": "शुरू करने के लिए कोर्स मैप की फोटो लें या चुनें।"
+    "hintNoPhoto": "शुरू करने के लिए कोर्स मैप की फोटो लें या चुनें।",
+    "markerNumberLabel": "स्ट्राइड की संख्या",
+    "addMarkerButton": "जोड़ें"
   },
   "journal": {
     "title": "लॉगबुक",
     "subtitle": "कोर्स वॉक के स्ट्राइड और वास्तविक राइड की तुलना करें, अपने वीडियो के साथ।",
     "nameLabel": "क्लास / शो का नाम",
-    "theoreticalLabel": "योजनाबद्ध स्ट्राइड (कोर्स वॉक)",
-    "actualLabel": "वास्तविक स्ट्राइड (राइड)",
     "notesLabel": "राउंड के नोट्स",
     "recordVideo": "रिकॉर्ड करें",
     "pickVideo": "वीडियो चुनें",
@@ -187,10 +195,8 @@
     "addEntry": "नई प्रविष्टि",
     "missingNameTitle": "शो का नाम दर्ज करें।",
     "deleteConfirmTitle": "यह प्रविष्टि हटाएं?",
-    "deltaExact": "बिल्कुल कोर्स वॉक के अनुसार",
-    "deltaLong_one": "{{count}} स्ट्राइड ज़्यादा",
-    "deltaLong_other": "{{count}} स्ट्राइड ज़्यादा",
-    "deltaShort_one": "{{count}} स्ट्राइड कम",
-    "deltaShort_other": "{{count}} स्ट्राइड कम"
+    "rankingLabel": "रैंकिंग",
+    "feelingLabel": "कैसा महसूस हुआ",
+    "improvementLabel": "क्या सुधारें"
   }
 }

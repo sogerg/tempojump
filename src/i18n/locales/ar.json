@@ -31,7 +31,8 @@
     "suggestedStrides": "الوثبات المقترحة",
     "hintNoSteps": "أدخل عدد خطوات المشي لرؤية النتيجة.",
     "hintNoMount": "اختر أو أضف جواداً.",
-    "headerTitle": "المحوّل"
+    "headerTitle": "المحوّل",
+    "heightLabel": "ارتفاع الحاجز"
   },
   "combination": {
     "title": "حاسبة الحواجز المركبة",
@@ -57,8 +58,6 @@
     "addTitle": "إضافة جواد",
     "nameLabel": "الاسم",
     "namePlaceholder": "مثال: Voltigeur",
-    "categoryLabel": "الفئة",
-    "strideLengthLabel": "طول الوثبة الافتراضي",
     "addButton": "إضافة الجواد",
     "missingFieldsTitle": "بيانات ناقصة",
     "missingFieldsMessage": "أدخل اسمًا وطول وثبة صالحين.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "خطوة الفارس",
     "saveAsRiderStep": "حفظ كخطوة الفارس",
     "currentRiderStepTitle": "خطوة الفارس الحالية",
-    "currentRiderStepLabel": "طول الخطوة"
+    "currentRiderStepLabel": "طول الخطوة",
+    "withersHeightLabel": "ارتفاع الكاهل"
   },
   "chrono": {
     "title": "الزمن المسموح",
@@ -99,8 +99,8 @@
     "Lourd": "أرضية ثقيلة / عميقة"
   },
   "speed": {
-    "Standard": "سرعة أساسية (~350 م/د)",
-    "Elite": "الجائزة الكبرى / تمايز (~375 م/د+)"
+    "Standard": "سرعة أساسية (~{{value}})",
+    "Elite": "الجائزة الكبرى / تمايز (~{{value}}+)"
   },
   "settings": {
     "title": "الإعدادات",
@@ -139,7 +139,6 @@
     "subtitle": "تأكد من صندوق المعدات قبل المغادرة إلى البطولة.",
     "sectionHorse": "معدات الجواد",
     "sectionRider": "معدات الفارس",
-    "sectionPapers": "الوثائق",
     "resetButton": "إعادة تعيين القائمة",
     "items": {
       "protections": "واقيات الأوتار / واقيات الحوافر",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "بنطال ركوب أبيض",
       "veste": "سترة مسابقات (جاكيت)",
       "cravache": "كرباج (سوط قفز)",
-      "carnet": "كتيب التسجيل",
-      "licence": "رخصة الفارس (اتحاد الفروسية)",
-      "passeportCheval": "جواز سفر الجواد (FEI / محلي)"
-    }
+      "passeportCheval": "دفتر الحصان",
+      "sangle": "حزام السرج",
+      "longe": "حبل القيادة",
+      "amortisseur": "وسادة جل",
+      "seauEponge": "دلو",
+      "materielPansage": "أدوات العناية",
+      "chemise": "قميص",
+      "eperons": "مهماز",
+      "gants": "قفازات",
+      "giletProtection": "سترة حماية / كيس هواء"
+    },
+    "addPlaceholder": "أضف عنصرًا…",
+    "addButton": "إضافة"
   },
   "coursePlan": {
     "title": "محرر مسار الشوط",
@@ -171,14 +179,14 @@
     "save": "حفظ",
     "share": "مشاركة",
     "shareErrorTitle": "تعذرت مشاركة المسار.",
-    "hintNoPhoto": "التقط أو اختر صورة للمسار للبدء."
+    "hintNoPhoto": "التقط أو اختر صورة للمسار للبدء.",
+    "markerNumberLabel": "عدد الخطوات",
+    "addMarkerButton": "إضافة"
   },
   "journal": {
     "title": "سجل البطولات",
     "subtitle": "قارن الوثبات المتوقعة والفعلية، مع فيديو مسارك.",
     "nameLabel": "الفئة / اسم المسابقة",
-    "theoreticalLabel": "الوثبات المتوقعة",
-    "actualLabel": "الوثبات الفعلية",
     "notesLabel": "ملاحظات حول الجولة",
     "recordVideo": "تسجيل فيديو",
     "pickVideo": "اختيار فيديو",
@@ -187,10 +195,8 @@
     "addEntry": "جولة جديدة",
     "missingNameTitle": "أدخل اسم المسابقة.",
     "deleteConfirmTitle": "حذف هذه الجولة؟",
-    "deltaExact": "مطابقة تماماً للمعاينة",
-    "deltaLong_one": "وثبة واحدة زيادة",
-    "deltaLong_other": "{{count}} وثبة زيادة",
-    "deltaShort_one": "وثبة واحدة نقصان",
-    "deltaShort_other": "{{count}} وثبة نقصان"
+    "rankingLabel": "الترتيب",
+    "feelingLabel": "كيف كان شعورك",
+    "improvementLabel": "ما يجب تحسينه"
   }
 }

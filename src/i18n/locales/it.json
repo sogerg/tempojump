@@ -31,7 +31,8 @@
     "suggestedStrides": "Tempi da effettuare",
     "hintNoSteps": "Inserisci il numero di passi per vedere il risultato.",
     "hintNoMount": "Seleziona o aggiungi un cavallo.",
-    "headerTitle": "Convertitore"
+    "headerTitle": "Convertitore",
+    "heightLabel": "Altezza dell'ostacolo"
   },
   "combination": {
     "title": "Calcolatore combinazioni",
@@ -57,8 +58,6 @@
     "addTitle": "Aggiungi un cavallo",
     "nameLabel": "Nome",
     "namePlaceholder": "es: Voltigeur",
-    "categoryLabel": "Categoria",
-    "strideLengthLabel": "Ampiezza di galoppo predefinita",
     "addButton": "Aggiungi cavallo",
     "missingFieldsTitle": "Campi mancanti",
     "missingFieldsMessage": "Inserisci un nome e un'ampiezza di galoppo validi.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Passo del cavaliere",
     "saveAsRiderStep": "Salva come passo del cavaliere",
     "currentRiderStepTitle": "Passo attuale",
-    "currentRiderStepLabel": "Lunghezza del passo"
+    "currentRiderStepLabel": "Lunghezza del passo",
+    "withersHeightLabel": "Altezza al garrese"
   },
   "chrono": {
     "title": "Tempo accordato",
@@ -99,8 +99,8 @@
     "Lourd": "Terreno pesante / profondo"
   },
   "speed": {
-    "Standard": "Standard (~350 m/min)",
-    "Elite": "Gran Premio / Barrage (~375 m/min+)"
+    "Standard": "Standard (~{{value}})",
+    "Elite": "Gran Premio / Barrage (~{{value}}+)"
   },
   "settings": {
     "title": "Impostazioni",
@@ -139,7 +139,6 @@
     "subtitle": "Controlla il baule prima di partire.",
     "sectionHorse": "Finimenti cavallo",
     "sectionRider": "Abbigliamento cavaliere",
-    "sectionPapers": "Documenti",
     "resetButton": "Reimposta lista",
     "items": {
       "protections": "Stinchiere / Paraglomi",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Pantaloni bianchi",
       "veste": "Giacca da concorso",
       "cravache": "Frustino",
-      "carnet": "Libretto",
-      "licence": "Licenza",
-      "passeportCheval": "Passaporto del cavallo"
-    }
+      "passeportCheval": "Libretto del cavallo",
+      "sangle": "Sottopancia",
+      "longe": "Cavezza con corda",
+      "amortisseur": "Cuscinetto in gel",
+      "seauEponge": "Secchio",
+      "materielPansage": "Kit di toelettatura",
+      "chemise": "Camicia",
+      "eperons": "Speroni",
+      "gants": "Guanti",
+      "giletProtection": "Gilet protettivo / Airbag"
+    },
+    "addPlaceholder": "Aggiungi un elemento…",
+    "addButton": "Aggiungi"
   },
   "coursePlan": {
     "title": "Editor grafico percorso",
@@ -171,14 +179,14 @@
     "save": "Salva",
     "share": "Condividi",
     "shareErrorTitle": "Impossibile condividere il grafico.",
-    "hintNoPhoto": "Scatta o scegli una foto del grafico per iniziare."
+    "hintNoPhoto": "Scatta o scegli una foto del grafico per iniziare.",
+    "markerNumberLabel": "Numero di falcate",
+    "addMarkerButton": "Aggiungi"
   },
   "journal": {
     "title": "Diario",
     "subtitle": "Confronta i tempi di galoppo previsti e reali, con il video del tuo percorso.",
     "nameLabel": "Categoria / Concorso",
-    "theoreticalLabel": "Tempi previsti (ricognizione)",
-    "actualLabel": "Tempi effettuati (gara)",
     "notesLabel": "Note percorso",
     "recordVideo": "Filma",
     "pickVideo": "Scegli un video",
@@ -187,10 +195,8 @@
     "addEntry": "Nuovo percorso",
     "missingNameTitle": "Inserisci il nome del concorso.",
     "deleteConfirmTitle": "Eliminare questo percorso?",
-    "deltaExact": "Esattamente come in ricognizione",
-    "deltaLong_one": "{{count}} tempo in più",
-    "deltaLong_other": "{{count}} tempi in più",
-    "deltaShort_one": "{{count}} tempo in meno",
-    "deltaShort_other": "{{count}} tempi in meno"
+    "rankingLabel": "Classifica",
+    "feelingLabel": "Come ti sei sentito",
+    "improvementLabel": "Cosa migliorare"
   }
 }

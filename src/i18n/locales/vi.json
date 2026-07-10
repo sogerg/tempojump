@@ -31,7 +31,8 @@
     "suggestedStrides": "Số sải phi khuyến nghị",
     "hintNoSteps": "Nhập số bước bộ khảo sát để xem kết quả.",
     "hintNoMount": "Vui lòng chọn hoặc thêm ngựa.",
-    "headerTitle": "Bộ chuyển đổi"
+    "headerTitle": "Bộ chuyển đổi",
+    "heightLabel": "Chiều cao chướng ngại vật"
   },
   "combination": {
     "title": "Tính khoảng cách rào tổ hợp",
@@ -57,8 +58,6 @@
     "addTitle": "Thêm ngựa thi đấu",
     "nameLabel": "Tên",
     "namePlaceholder": "vd: Voltigeur",
-    "categoryLabel": "Hạng",
-    "strideLengthLabel": "Độ dài sải phi tiêu chuẩn",
     "addButton": "Thêm ngựa",
     "missingFieldsTitle": "Thiếu thông tin",
     "missingFieldsMessage": "Vui lòng nhập tên và độ dài sải phi hợp lệ.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Bước bộ kỵ sĩ",
     "saveAsRiderStep": "Lưu làm bước bộ khảo sát",
     "currentRiderStepTitle": "Bước bộ hiện tại",
-    "currentRiderStepLabel": "Độ dài bước chân"
+    "currentRiderStepLabel": "Độ dài bước chân",
+    "withersHeightLabel": "Chiều cao vai"
   },
   "chrono": {
     "title": "Thời gian quy định",
@@ -99,8 +99,8 @@
     "Lourd": "Mặt sân sâu / sũng nước"
   },
   "speed": {
-    "Standard": "Tốc độ cơ bản (~350 m/phút)",
-    "Elite": "Hạng Grand Prix / Vòng phân định (~375 m/phút+)"
+    "Standard": "Tốc độ cơ bản (~{{value}})",
+    "Elite": "Hạng Grand Prix / Vòng phân định (~{{value}}+)"
   },
   "settings": {
     "title": "Cài đặt",
@@ -139,7 +139,6 @@
     "subtitle": "Kiểm tra kỹ hòm đồ bảo hộ (tack box) trước khi xuất phát.",
     "sectionHorse": "Trang bị cho ngựa",
     "sectionRider": "Trang bị cho kỵ sĩ",
-    "sectionPapers": "Giấy tờ và chứng chỉ",
     "resetButton": "Đặt lại danh sách",
     "items": {
       "protections": "Bọc gân chân / Bọc móng",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Quần thi đấu trắng",
       "veste": "Áo khoác thi đấu (Veste)",
       "cravache": "Roi nhảy ngắn",
-      "carnet": "Sổ theo dõi/Thành tích",
-      "licence": "Chứng chỉ kỵ sĩ / Thẻ kỵ thủ",
-      "passeportCheval": "Hộ chiếu ngựa (FEI / Quốc gia)"
-    }
+      "passeportCheval": "Sổ tay ngựa",
+      "sangle": "Đai bụng",
+      "longe": "Dây dắt",
+      "amortisseur": "Đệm gel",
+      "seauEponge": "Xô",
+      "materielPansage": "Bộ dụng cụ chải lông",
+      "chemise": "Áo sơ mi",
+      "eperons": "Cựa",
+      "gants": "Găng tay",
+      "giletProtection": "Áo giáp bảo hộ / Túi khí"
+    },
+    "addPlaceholder": "Thêm một mục…",
+    "addButton": "Thêm"
   },
   "coursePlan": {
     "title": "Trình chỉnh sửa sơ đồ lộ trình",
@@ -171,14 +179,14 @@
     "save": "Lưu",
     "share": "Chia sẻ",
     "shareErrorTitle": "Không thể chia sẻ sơ đồ.",
-    "hintNoPhoto": "Chụp hoặc chọn ảnh sơ đồ lộ trình của ban tổ chức để bắt đầu."
+    "hintNoPhoto": "Chụp hoặc chọn ảnh sơ đồ lộ trình của ban tổ chức để bắt đầu.",
+    "markerNumberLabel": "Số bước sải",
+    "addMarkerButton": "Thêm"
   },
   "journal": {
     "title": "Nhật ký đường nhảy",
     "subtitle": "Đối chiếu số sải phi dự kiến khi khảo sát và sải thực tế khi thi đấu qua video ghi hình.",
     "nameLabel": "Hạng đấu / Tên giải đấu",
-    "theoreticalLabel": "Số sải dự kiến (Khảo sát sân)",
-    "actualLabel": "Số sải thực tế (Khi nhảy)",
     "notesLabel": "Ghi chú/Phân tích bài thi",
     "recordVideo": "Quay video",
     "pickVideo": "Chọn video",
@@ -187,10 +195,8 @@
     "addEntry": "Lượt thi mới",
     "missingNameTitle": "Vui lòng nhập tên giải đấu/hạng đấu.",
     "deleteConfirmTitle": "Xóa lượt thi này?",
-    "deltaExact": "Chuẩn xác theo khảo sát",
-    "deltaLong_one": "Dư {{count}} sải phi",
-    "deltaLong_other": "Dư {{count}} sải phi",
-    "deltaShort_one": "Thiếu {{count}} sải phi",
-    "deltaShort_other": "Thiếu {{count}} sải phi"
+    "rankingLabel": "Xếp hạng",
+    "feelingLabel": "Cảm nhận",
+    "improvementLabel": "Cần cải thiện"
   }
 }

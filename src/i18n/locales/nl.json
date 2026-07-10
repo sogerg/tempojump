@@ -31,7 +31,8 @@
     "suggestedStrides": "Te rijden galopsprongen",
     "hintNoSteps": "Voer het aantal passen in om het resultaat te zien.",
     "hintNoMount": "Selecteer of voeg een paard toe.",
-    "headerTitle": "Omzetter"
+    "headerTitle": "Omzetter",
+    "heightLabel": "Hoogte van de hindernis"
   },
   "combination": {
     "title": "Combinatiecalculator",
@@ -57,8 +58,6 @@
     "addTitle": "Paard toevoegen",
     "nameLabel": "Naam",
     "namePlaceholder": "bijv. Voltigeur",
-    "categoryLabel": "Categorie",
-    "strideLengthLabel": "Standaard lengte galopsprong",
     "addButton": "Paard toevoegen",
     "missingFieldsTitle": "Ontbrekende velden",
     "missingFieldsMessage": "Voer een geldige naam en lengte van de galopsprong in.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Ruiterstap",
     "saveAsRiderStep": "Opslaan als ruiterstap",
     "currentRiderStepTitle": "Huidige ruiterstap",
-    "currentRiderStepLabel": "Staplengte"
+    "currentRiderStepLabel": "Staplengte",
+    "withersHeightLabel": "Schofthoogte"
   },
   "chrono": {
     "title": "Toegestane tijd",
@@ -99,8 +99,8 @@
     "Lourd": "Zware / diepe bodem"
   },
   "speed": {
-    "Standard": "Basistempo (~350 m/min)",
-    "Elite": "Grote Prijs / Barrage (~375 m/min+)"
+    "Standard": "Basistempo (~{{value}})",
+    "Elite": "Grote Prijs / Barrage (~{{value}}+)"
   },
   "settings": {
     "title": "Instellingen",
@@ -139,7 +139,6 @@
     "subtitle": "Controleer je zadelkast voordat je vertrekt.",
     "sectionHorse": "Materiaal paard",
     "sectionRider": "Materiaal ruiter",
-    "sectionPapers": "Documenten",
     "resetButton": "Lijst resetten",
     "items": {
       "protections": "Beenbeschermers / Springschoenen",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Witte rijbroek",
       "veste": "Wedstrijdjasje",
       "cravache": "Zweep",
-      "carnet": "Wedstrijdboekje",
-      "licence": "Ruiterlicentie",
-      "passeportCheval": "Paspoort paard"
-    }
+      "passeportCheval": "Paardenboekje",
+      "sangle": "Singel",
+      "longe": "Leidtouw",
+      "amortisseur": "Gelkussen",
+      "seauEponge": "Emmer",
+      "materielPansage": "Poetsmateriaal",
+      "chemise": "Rijshirt",
+      "eperons": "Sporen",
+      "gants": "Handschoenen",
+      "giletProtection": "Beschermvest / Airbag"
+    },
+    "addPlaceholder": "Voeg een item toe…",
+    "addButton": "Toevoegen"
   },
   "coursePlan": {
     "title": "Parcours editor",
@@ -171,14 +179,14 @@
     "save": "Opslaan",
     "share": "Delen",
     "shareErrorTitle": "Kon het parcours niet delen.",
-    "hintNoPhoto": "Maak of kies een foto van de schets om te beginnen."
+    "hintNoPhoto": "Maak of kies een foto van de schets om te beginnen.",
+    "markerNumberLabel": "Aantal galopsprongen",
+    "addMarkerButton": "Toevoegen"
   },
   "journal": {
     "title": "Logboek",
     "subtitle": "Vergelijk je verkende en gereden galopsprongen met de video van je parcours.",
     "nameLabel": "Rubriek / Wedstrijd",
-    "theoreticalLabel": "Verkende galopsprongen",
-    "actualLabel": "Gereden galopsprongen",
     "notesLabel": "Parcoursnotities",
     "recordVideo": "Filmen",
     "pickVideo": "Video kiezen",
@@ -187,10 +195,8 @@
     "addEntry": "Nieuwe rit",
     "missingNameTitle": "Voer een wedstrijdnaam in.",
     "deleteConfirmTitle": "Deze rit verwijderen?",
-    "deltaExact": "Precies zoals verkend",
-    "deltaLong_one": "{{count}} galopsprong meer gereden",
-    "deltaLong_other": "{{count}} galopsprongen meer gereden",
-    "deltaShort_one": "{{count}} galopsprong minder gereden",
-    "deltaShort_other": "{{count}} galopsprongen minder gereden"
+    "rankingLabel": "Klassering",
+    "feelingLabel": "Hoe het voelde",
+    "improvementLabel": "Wat te verbeteren"
   }
 }

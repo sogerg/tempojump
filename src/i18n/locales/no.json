@@ -31,7 +31,8 @@
     "suggestedStrides": "Foreslåtte galoppsprang",
     "hintNoSteps": "Angi antall skritt for å se resultatet.",
     "hintNoMount": "Velg eller legg til en hest.",
-    "headerTitle": "Omregner"
+    "headerTitle": "Omregner",
+    "heightLabel": "Hinderets høyde"
   },
   "combination": {
     "title": "Kombinasjonskalkulator",
@@ -57,8 +58,6 @@
     "addTitle": "Legg til hest",
     "nameLabel": "Navn",
     "namePlaceholder": "f.eks. Voltigeur",
-    "categoryLabel": "Kategori",
-    "strideLengthLabel": "Standard galoppspranglengde",
     "addButton": "Legg til hest",
     "missingFieldsTitle": "Manglende felt",
     "missingFieldsMessage": "Angi et gyldig navn og en gyldig galoppspranglengde.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Rytterens skritt",
     "saveAsRiderStep": "Lagre som din skrittlengde",
     "currentRiderStepTitle": "Nåværende skrittlengde",
-    "currentRiderStepLabel": "Skrittlengde"
+    "currentRiderStepLabel": "Skrittlengde",
+    "withersHeightLabel": "Mankehøyde"
   },
   "chrono": {
     "title": "Makstid",
@@ -99,8 +99,8 @@
     "Lourd": "Tung / dyp bunn"
   },
   "speed": {
-    "Standard": "Grunntempo (~350 m/min)",
-    "Elite": "Grand Prix / Omhopping (~375 m/min+)"
+    "Standard": "Grunntempo (~{{value}})",
+    "Elite": "Grand Prix / Omhopping (~{{value}}+)"
   },
   "settings": {
     "title": "Innstillinger",
@@ -139,7 +139,6 @@
     "subtitle": "Sjekk stevneskapet før avreise.",
     "sectionHorse": "Hesteutstyr",
     "sectionRider": "Rytterutstyr",
-    "sectionPapers": "Dokumenter",
     "resetButton": "Tilbakestill listen",
     "items": {
       "protections": "Beinbeskyttelse",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Hvite ridebukser",
       "veste": "Stevnejakke",
       "cravache": "Sprangpisk",
-      "carnet": "Konkurransehefte",
-      "licence": "Lisens",
-      "passeportCheval": "Hestepass (NRYF/FEI)"
-    }
+      "passeportCheval": "Hestens loggbok",
+      "sangle": "Salgjord",
+      "longe": "Ledetau",
+      "amortisseur": "Gelpute",
+      "seauEponge": "Bøtte",
+      "materielPansage": "Stellesett",
+      "chemise": "Skjorte",
+      "eperons": "Sporer",
+      "gants": "Hansker",
+      "giletProtection": "Beskyttelsesvest / Airbag"
+    },
+    "addPlaceholder": "Legg til et element…",
+    "addButton": "Legg til"
   },
   "coursePlan": {
     "title": "Baneskisse-editor",
@@ -171,14 +179,14 @@
     "save": "Lagre",
     "share": "Del",
     "shareErrorTitle": "Kunne ikke dele baneskissen.",
-    "hintNoPhoto": "Ta eller velg et bilde av baneskissen for å komme i gang."
+    "hintNoPhoto": "Ta eller velg et bilde av baneskissen for å komme i gang.",
+    "markerNumberLabel": "Antall galoppsprang",
+    "addMarkerButton": "Legg til"
   },
   "journal": {
     "title": "Loggbok",
     "subtitle": "Sammenlign planlagte og faktiske galoppsprang, med videoen av banen din.",
     "nameLabel": "Klasse / Stevne",
-    "theoreticalLabel": "Planlagte galoppsprang",
-    "actualLabel": "Faktiske galoppsprang",
     "notesLabel": "Notater fra runden",
     "recordVideo": "Ta opp video",
     "pickVideo": "Velg en video",
@@ -187,10 +195,8 @@
     "addEntry": "Ny runde",
     "missingNameTitle": "Angi et stevnenavn.",
     "deleteConfirmTitle": "Slette denne runden?",
-    "deltaExact": "Akkurat som på banegåing",
-    "deltaLong_one": "{{count}} galoppsprang mer",
-    "deltaLong_other": "{{count}} galoppsprang mer",
-    "deltaShort_one": "{{count}} galoppsprang mindre",
-    "deltaShort_other": "{{count}} galoppsprang mindre"
+    "rankingLabel": "Plassering",
+    "feelingLabel": "Hvordan det føltes",
+    "improvementLabel": "Hva som bør forbedres"
   }
 }

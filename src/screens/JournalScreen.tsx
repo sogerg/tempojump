@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Alert, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import * as ImagePicker from 'expo-image-picker';
+import * as Sharing from 'expo-sharing';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
-import { FolderOpen, Plus, Save, Trash2, Video, X } from 'lucide-react-native';
+import { FolderOpen, Pencil, Plus, Save, Share2, Trash2, Video, X } from 'lucide-react-native';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
@@ -24,6 +25,7 @@ export function JournalScreen() {
   const { colors } = useSettings();
   const [entries, setEntries] = useState<JournalEntry[]>([]);
   const [isAdding, setIsAdding] = useState(false);
+  const [editingId, setEditingId] = useState<string | null>(null);
 
   const [name, setName] = useState('');
   const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
@@ -48,6 +50,35 @@ export function JournalScreen() {
     setImprovement('');
     setNotes('');
     setVideoUri(null);
+    setEditingId(null);
+  };
+
+  const handleEditEntry = (entry: JournalEntry) => {
+    setEditingId(entry.id);
+    setName(entry.name);
+    setDate(entry.date);
+    setRanking(entry.ranking ?? '');
+    setFeeling(entry.feeling ?? '');
+    setImprovement(entry.improvement ?? '');
+    setNotes(entry.notes ?? '');
+    setVideoUri(entry.videoUri ?? null);
+    setIsAdding(true);
+  };
+
+  const handleShareEntry = async (entry: JournalEntry) => {
+    if (entry.videoUri) {
+      const isAvailable = await Sharing.isAvailableAsync();
+      if (isAvailable) {
+        await Sharing.shareAsync(entry.videoUri);
+        return;
+      }
+    }
+    const lines = [entry.name, entry.date];
+    if (entry.ranking) lines.push(`${t('journal.rankingLabel')} : ${entry.ranking}`);
+    if (entry.feeling) lines.push(`${t('journal.feelingLabel')} : ${entry.feeling}`);
+    if (entry.improvement) lines.push(`${t('journal.improvementLabel')} : ${entry.improvement}`);
+    if (entry.notes) lines.push(entry.notes);
+    await Share.share({ message: lines.join('\n') });
   };
 
   const pickVideo = async (source: 'camera' | 'library') => {
@@ -73,7 +104,7 @@ export function JournalScreen() {
       return;
     }
     const entry: JournalEntry = {
-      id: generateId(),
+      id: editingId ?? generateId(),
       name: name.trim(),
       date,
       videoUri: videoUri ?? undefined,
@@ -82,7 +113,7 @@ export function JournalScreen() {
       improvement: improvement.trim() || undefined,
       notes: notes.trim() || undefined,
     };
-    const next = [entry, ...entries];
+    const next = editingId ? entries.map((e) => (e.id === editingId ? entry : e)) : [entry, ...entries];
     setEntries(next);
     await saveJournalEntries(next);
     resetForm();
@@ -117,10 +148,17 @@ export function JournalScreen() {
               <Text style={[styles.entryName, { color: colors.text }]}>{entry.name}</Text>
               <Text style={[styles.entryDate, { color: colors.textMuted }]}>{entry.date}</Text>
             </View>
-            <TouchableOpacity onPress={() => handleDeleteEntry(entry.id)} style={styles.deleteRow}>
-              <Trash2 size={15} color={colors.iconGoldActive} />
-              <Text style={{ color: colors.danger, fontWeight: '600' }}>{t('common.delete')}</Text>
-            </TouchableOpacity>
+            <View style={styles.entryActions}>
+              <TouchableOpacity onPress={() => handleShareEntry(entry)} style={styles.entryActionButton}>
+                <Share2 size={15} color={colors.accentGold} />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => handleEditEntry(entry)} style={styles.entryActionButton}>
+                <Pencil size={15} color={colors.accentGold} />
+              </TouchableOpacity>
+              <TouchableOpacity onPress={() => handleDeleteEntry(entry.id)} style={styles.entryActionButton}>
+                <Trash2 size={15} color={colors.danger} />
+              </TouchableOpacity>
+            </View>
           </View>
 
           {entry.ranking ? (
@@ -311,9 +349,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: 12,
   },
-  deleteRow: {
+  entryActions: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 4,
+  },
+  entryActionButton: {
+    padding: 8,
   },
 });

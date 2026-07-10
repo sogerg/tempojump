@@ -31,7 +31,8 @@
     "suggestedStrides": "Рекомендуемые темпы",
     "hintNoSteps": "Введите количество шагов для расчета.",
     "hintNoMount": "Выберите или добавьте лошадь.",
-    "headerTitle": "Конвертер"
+    "headerTitle": "Конвертер",
+    "heightLabel": "Высота препятствия"
   },
   "combination": {
     "title": "Калькулятор систем",
@@ -57,8 +58,6 @@
     "addTitle": "Добавить лошадь",
     "nameLabel": "Кличка",
     "namePlaceholder": "напр. Вольтижёр",
-    "categoryLabel": "Категория",
-    "strideLengthLabel": "Базовая длина темпа",
     "addButton": "Добавить лошадь",
     "missingFieldsTitle": "Поля не заполнены",
     "missingFieldsMessage": "Введите корректную кличку и длину темпа.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Шаг всадника",
     "saveAsRiderStep": "Сохранить как шаг всадника",
     "currentRiderStepTitle": "Текущий шаг",
-    "currentRiderStepLabel": "Длина шага"
+    "currentRiderStepLabel": "Длина шага",
+    "withersHeightLabel": "Высота в холке"
   },
   "chrono": {
     "title": "Норма времени",
@@ -99,8 +99,8 @@
     "Lourd": "Тяжёлый / вязкий грунт"
   },
   "speed": {
-    "Standard": "Базовая скорость (~350 м/мин)",
-    "Elite": "Гран-при / Перепрыжка (~375 м/мин+)"
+    "Standard": "Базовая скорость (~{{value}})",
+    "Elite": "Гран-при / Перепрыжка (~{{value}}+)"
   },
   "settings": {
     "title": "Настройки",
@@ -139,7 +139,6 @@
     "subtitle": "Проверьте свой турнирный ларь перед выездом.",
     "sectionHorse": "Амуниция лошади",
     "sectionRider": "Экипировка всадника",
-    "sectionPapers": "Документы",
     "resetButton": "Сбросить список",
     "items": {
       "protections": "Ногавки",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Белые бриджи",
       "veste": "Редингот",
       "cravache": "Конкурный хлыст",
-      "carnet": "Паспорт спортсмена",
-      "licence": "Лицензия / Страховка",
-      "passeportCheval": "Паспорт лошади (ФКСР/FEI)"
-    }
+      "passeportCheval": "Дневник лошади",
+      "sangle": "Подпруга",
+      "longe": "Чомбур",
+      "amortisseur": "Гелевая подкладка",
+      "seauEponge": "Ведро",
+      "materielPansage": "Набор для чистки",
+      "chemise": "Рубашка",
+      "eperons": "Шпоры",
+      "gants": "Перчатки",
+      "giletProtection": "Защитный жилет / Airbag"
+    },
+    "addPlaceholder": "Добавить элемент…",
+    "addButton": "Добавить"
   },
   "coursePlan": {
     "title": "Редактор схемы маршрута",
@@ -171,14 +179,14 @@
     "save": "Сохранить",
     "share": "Поделиться",
     "shareErrorTitle": "Не удалось поделиться схемой.",
-    "hintNoPhoto": "Сфотографируйте или выберите схему маршрута, чтобы начать."
+    "hintNoPhoto": "Сфотографируйте или выберите схему маршрута, чтобы начать.",
+    "markerNumberLabel": "Количество темпов",
+    "addMarkerButton": "Добавить"
   },
   "journal": {
     "title": "Журнал маршрутов",
     "subtitle": "Сравните запланированные на просмотре темпы с фактически сделанными по видеозаписи.",
     "nameLabel": "Маршрут / Турнир",
-    "theoreticalLabel": "Темпы на просмотре",
-    "actualLabel": "Сделанные темпы",
     "notesLabel": "Заметки по маршруту",
     "recordVideo": "Снять видео",
     "pickVideo": "Выбрать видео",
@@ -187,10 +195,8 @@
     "addEntry": "Новый маршрут",
     "missingNameTitle": "Введите название турнира/маршрута.",
     "deleteConfirmTitle": "Удалить эту запись?",
-    "deltaExact": "Точно как на просмотре",
-    "deltaLong_one": "на {{count}} темп больше",
-    "deltaLong_other": "на {{count}} темпов больше",
-    "deltaShort_one": "на {{count}} темп меньше",
-    "deltaShort_other": "на {{count}} темпов меньше"
+    "rankingLabel": "Место в рейтинге",
+    "feelingLabel": "Как ты себя чувствовал",
+    "improvementLabel": "Что улучшить"
   }
 }

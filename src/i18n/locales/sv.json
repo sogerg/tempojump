@@ -31,7 +31,8 @@
     "suggestedStrides": "Föreslagna galoppsprång",
     "hintNoSteps": "Ange antalet steg för att se resultatet.",
     "hintNoMount": "Välj eller lägg till en häst.",
-    "headerTitle": "Omvandlare"
+    "headerTitle": "Omvandlare",
+    "heightLabel": "Hindrets höjd"
   },
   "combination": {
     "title": "Kombinationskalkylator",
@@ -57,8 +58,6 @@
     "addTitle": "Lägg till häst",
     "nameLabel": "Namn",
     "namePlaceholder": "t.ex. Voltigeur",
-    "categoryLabel": "Kategori",
-    "strideLengthLabel": "Galoppsprångets standardlängd",
     "addButton": "Lägg till häst",
     "missingFieldsTitle": "Saknade fält",
     "missingFieldsMessage": "Ange ett giltigt namn och en giltig galoppsprångslängd.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Steglängd (ryttare)",
     "saveAsRiderStep": "Spara som din steglängd",
     "currentRiderStepTitle": "Nuvarande steglängd",
-    "currentRiderStepLabel": "Steglängd"
+    "currentRiderStepLabel": "Steglängd",
+    "withersHeightLabel": "Manklove"
   },
   "chrono": {
     "title": "Maxtid",
@@ -99,8 +99,8 @@
     "Lourd": "Tungt / djupt underlag"
   },
   "speed": {
-    "Standard": "Grundtempo (~350 m/min)",
-    "Elite": "Svår klass / Omhoppning (~375 m/min+)"
+    "Standard": "Grundtempo (~{{value}})",
+    "Elite": "Svår klass / Omhoppning (~{{value}}+)"
   },
   "settings": {
     "title": "Inställningar",
@@ -139,7 +139,6 @@
     "subtitle": "Bocka av packlistan innan avfärd.",
     "sectionHorse": "Hästutrustning",
     "sectionRider": "Ryttarutrustning",
-    "sectionPapers": "Dokument",
     "resetButton": "Återställ listan",
     "items": {
       "protections": "Benskydd / Boots",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Vita ridbyxor",
       "veste": "Tävlingskavaj",
       "cravache": "Spö",
-      "carnet": "Tävlingshäfte",
-      "licence": "Licens",
-      "passeportCheval": "Hästpass"
-    }
+      "passeportCheval": "Hästens loggbok",
+      "sangle": "Sadelgjord",
+      "longe": "Ledrep",
+      "amortisseur": "Geldyna",
+      "seauEponge": "Hink",
+      "materielPansage": "Ryktset",
+      "chemise": "Skjorta",
+      "eperons": "Sporrar",
+      "gants": "Handskar",
+      "giletProtection": "Skyddsväst / Airbag"
+    },
+    "addPlaceholder": "Lägg till ett objekt…",
+    "addButton": "Lägg till"
   },
   "coursePlan": {
     "title": "Banskiss-editor",
@@ -171,14 +179,14 @@
     "save": "Spara",
     "share": "Dela",
     "shareErrorTitle": "Det gick inte att dela banskissen.",
-    "hintNoPhoto": "Ta eller välj ett foto av banskissen för att komma igång."
+    "hintNoPhoto": "Ta eller välj ett foto av banskissen för att komma igång.",
+    "markerNumberLabel": "Antal galoppsprång",
+    "addMarkerButton": "Lägg till"
   },
   "journal": {
     "title": "Loggbok",
     "subtitle": "Jämför dina planerade galoppsprång med hur du faktiskt red (filmad runda).",
     "nameLabel": "Klass / Tävling",
-    "theoreticalLabel": "Planerade galoppsprång (bangång)",
-    "actualLabel": "Ridna galoppsprång",
     "notesLabel": "Anteckningar från ritten",
     "recordVideo": "Filma",
     "pickVideo": "Välj en video",
@@ -187,10 +195,8 @@
     "addEntry": "Ny start",
     "missingNameTitle": "Ange ett tävlingsnamn.",
     "deleteConfirmTitle": "Ta bort denna start?",
-    "deltaExact": "Exakt enligt bangång",
-    "deltaLong_one": "{{count}} extra galoppsprång",
-    "deltaLong_other": "{{count}} extra galoppsprång",
-    "deltaShort_one": "{{count}} galoppsprång färre",
-    "deltaShort_other": "{{count}} galoppsprång färre"
+    "rankingLabel": "Placering",
+    "feelingLabel": "Hur det kändes",
+    "improvementLabel": "Vad som ska förbättras"
   }
 }

@@ -31,7 +31,8 @@
     "suggestedStrides": "Προτεινόμενοι διασκελισμοί",
     "hintNoSteps": "Εισάγετε τον αριθμό των βημάτων για να δείτε το αποτέλεσμα.",
     "hintNoMount": "Επιλέξτε ή προσθέστε ένα άλογο.",
-    "headerTitle": "Μετατροπέας"
+    "headerTitle": "Μετατροπέας",
+    "heightLabel": "Ύψος εμποδίου"
   },
   "combination": {
     "title": "Υπολογιστής συνδυασμών",
@@ -57,8 +58,6 @@
     "addTitle": "Προσθήκη αλόγου",
     "nameLabel": "Όνομα",
     "namePlaceholder": "π.χ. Voltigeur",
-    "categoryLabel": "Κατηγορία",
-    "strideLengthLabel": "Βασικό μήκος διασκελισμού",
     "addButton": "Προσθήκη αλόγου",
     "missingFieldsTitle": "Ελλιπή στοιχεία",
     "missingFieldsMessage": "Εισάγετε ένα έγκυρο όνομα και μήκος διασκελισμού.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Βήμα αναβάτη",
     "saveAsRiderStep": "Αποθήκευση ως το βήμα σας",
     "currentRiderStepTitle": "Τρέχον μήκος βήματος",
-    "currentRiderStepLabel": "Μήκος βήματος"
+    "currentRiderStepLabel": "Μήκος βήματος",
+    "withersHeightLabel": "Ύψος στον ώμο"
   },
   "chrono": {
     "title": "Επιτρεπόμενος χρόνος (Time Allowed)",
@@ -99,8 +99,8 @@
     "Lourd": "Βαρύς / Βαθύς στίβος"
   },
   "speed": {
-    "Standard": "Βασικός Ρυθμός (~350 μ/λεπτό)",
-    "Elite": "Grand Prix / Μπαράζ (~375 μ/λεπτό+)"
+    "Standard": "Βασικός Ρυθμός (~{{value}})",
+    "Elite": "Grand Prix / Μπαράζ (~{{value}}+)"
   },
   "settings": {
     "title": "Ρυθμίσεις",
@@ -139,7 +139,6 @@
     "subtitle": "Ελέγξτε τον εξοπλισμό σας πριν την αναχώρηση για τον αγώνα.",
     "sectionHorse": "Εξοπλισμός αλόγου",
     "sectionRider": "Εξοπλισμός αναβάτη",
-    "sectionPapers": "Έγγραφα / Πιστοποιητικά",
     "resetButton": "Επαναφορά λίστας",
     "items": {
       "protections": "Προστατευτικά (Tendon boots/Bell boots)",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Λευκό παντελόνι ιππασίας",
       "veste": "Σακάκι αγώνων",
       "cravache": "Μαστίγιο εμποδίων",
-      "carnet": "Βιβλιάριο αγώνων",
-      "licence": "Δελτίο αθλητή (ΕΟΙ)",
-      "passeportCheval": "Διαβατήριο αλόγου (FEI / Εθνικό)"
-    }
+      "passeportCheval": "Βιβλιάριο αλόγου",
+      "sangle": "Ζώνη σέλας",
+      "longe": "Σχοινί οδήγησης",
+      "amortisseur": "Επίθεμα gel",
+      "seauEponge": "Κουβάς",
+      "materielPansage": "Είδη περιποίησης",
+      "chemise": "Πουκάμισο",
+      "eperons": "Σπιρούνια",
+      "gants": "Γάντια",
+      "giletProtection": "Προστατευτικό γιλέκο / Αερόσακος"
+    },
+    "addPlaceholder": "Προσθήκη στοιχείου…",
+    "addButton": "Προσθήκη"
   },
   "coursePlan": {
     "title": "Επεξεργασία σχεδιαγράμματος (Course Map)",
@@ -171,14 +179,14 @@
     "save": "Αποθήκευση",
     "share": "Κοινοποίηση",
     "shareErrorTitle": "Δεν ήταν δυνατή η κοινοποίηση του σχεδιαγράμματος.",
-    "hintNoPhoto": "Τραβήξτε ή επιλέξτε φωτογραφία του σχεδιαγράμματος για να ξεκινήσετε."
+    "hintNoPhoto": "Τραβήξτε ή επιλέξτε φωτογραφία του σχεδιαγράμματος για να ξεκινήσετε.",
+    "markerNumberLabel": "Αριθμός διασκελισμών",
+    "addMarkerButton": "Προσθήκη"
   },
   "journal": {
     "title": "Ημερολόγιο Αγώνων",
     "subtitle": "Συγκρίνετε τους προγραμματισμένους διασκελισμούς από την αναγνώριση με αυτούς που πραγματικά ιππεύσατε, χρησιμοποιώντας το βίντεό σας.",
     "nameLabel": "Κατηγορία / Όνομα Αγώνα",
-    "theoreticalLabel": "Προγραμματισμένοι διασκελισμοί (Αναγνώριση)",
-    "actualLabel": "Πραγματικοί διασκελισμοί (Διαδρομή)",
     "notesLabel": "Σημειώσεις / Αξιολόγηση",
     "recordVideo": "Λήψη Βίντεο",
     "pickVideo": "Επιλογή Βίντεο",
@@ -187,10 +195,8 @@
     "addEntry": "Νέα συμμετοχή",
     "missingNameTitle": "Εισάγετε το όνομα του αγώνα.",
     "deleteConfirmTitle": "Διαγραφή αυτής της συμμετοχής;",
-    "deltaExact": "Ακριβώς σύμφωνα με την αναγνώριση",
-    "deltaLong_one": "{{count}} επιπλέον διασκελισμός",
-    "deltaLong_other": "{{count}} επιπλέον διασκελισμοί",
-    "deltaShort_one": "{{count}} διασκελισμός λιγότερος",
-    "deltaShort_other": "{{count}} διασκελισμοί λιγότεροι"
+    "rankingLabel": "Κατάταξη",
+    "feelingLabel": "Πώς ένιωσες",
+    "improvementLabel": "Τι να βελτιώσεις"
   }
 }

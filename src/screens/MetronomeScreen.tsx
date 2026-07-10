@@ -12,26 +12,36 @@ import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { naturalAmplitudeForWithersHeight } from '../constants/horseDefaults';
 import { canterCadence } from '../lib/mathUtils';
+import { speedFromMetersPerMinute, speedToMetersPerMinute, speedUnitSuffix } from '../lib/units';
 
-const SPEED_PRESETS = ['300', '350', '375'];
+const SPEED_PRESETS_METERS_PER_MINUTE = [300, 350, 375];
 const clickSound = require('../../assets/sounds/metronome-click.wav');
 
 export function MetronomeScreen() {
   const { t } = useTranslation();
   const { selectedHorse } = useHorses();
-  const { colors } = useSettings();
+  const { colors, unitSystem } = useSettings();
   const [speed, setSpeed] = useState('350');
   const [isRunning, setIsRunning] = useState(false);
   const player = useAudioPlayer(clickSound);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  const speedPresets = useMemo(
+    () =>
+      SPEED_PRESETS_METERS_PER_MINUTE.map((metersPerMinute) =>
+        String(Math.round(speedFromMetersPerMinute(metersPerMinute, unitSystem)))
+      ),
+    [unitSystem]
+  );
+
   const cadence = useMemo(() => {
     const speedValue = Number(speed.replace(',', '.'));
     if (!selectedHorse || !speedValue || speedValue <= 0) return null;
+    const speedMetersPerMinute = speedToMetersPerMinute(speedValue, unitSystem);
     const strideLength = naturalAmplitudeForWithersHeight(selectedHorse.withersHeight);
-    const rawCadence = canterCadence(speedValue, strideLength);
+    const rawCadence = canterCadence(speedMetersPerMinute, strideLength);
     return rawCadence > 0 ? Math.ceil(rawCadence) : rawCadence;
-  }, [speed, selectedHorse]);
+  }, [speed, selectedHorse, unitSystem]);
 
   useEffect(() => {
     if (isRunning && cadence && cadence > 0) {
@@ -39,7 +49,7 @@ export function MetronomeScreen() {
       const tick = () => {
         player.seekTo(0);
         player.play();
-        Vibration.vibrate(40);
+        Vibration.vibrate(120);
       };
       tick();
       timerRef.current = setInterval(tick, intervalMs);
@@ -63,11 +73,16 @@ export function MetronomeScreen() {
       <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
       <MountSummaryCard />
 
-      <NumberField label={t('metronome.speedLabel')} value={speed} onChangeText={setSpeed} suffix="m/min" />
+      <NumberField
+        label={t('metronome.speedLabel')}
+        value={speed}
+        onChangeText={setSpeed}
+        suffix={speedUnitSuffix(unitSystem)}
+      />
 
       <SegmentedControl
-        options={SPEED_PRESETS.map((preset) => ({ value: preset, label: `${preset}` }))}
-        value={SPEED_PRESETS.includes(speed) ? speed : ''}
+        options={speedPresets.map((preset) => ({ value: preset, label: `${preset}` }))}
+        value={speedPresets.includes(speed) ? speed : ''}
         onChange={setSpeed}
       />
 

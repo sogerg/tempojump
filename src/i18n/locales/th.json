@@ -31,7 +31,8 @@
     "suggestedStrides": "จำนวนก้าวกระโดดที่แนะนำ",
     "hintNoSteps": "ป้อนจำนวนก้าวเพื่อดูผลลัพธ์",
     "hintNoMount": "เลือกหรือเพิ่มม้า",
-    "headerTitle": "ตัวแปลง"
+    "headerTitle": "ตัวแปลง",
+    "heightLabel": "ความสูงของสิ่งกีดขวาง"
   },
   "combination": {
     "title": "เครื่องคำนวณคอมบิเนชัน",
@@ -57,8 +58,6 @@
     "addTitle": "เพิ่มม้า",
     "nameLabel": "ชื่อ",
     "namePlaceholder": "เช่น Voltigeur",
-    "categoryLabel": "ประเภท",
-    "strideLengthLabel": "ความยาวก้าวกระโดดมาตรฐาน",
     "addButton": "เพิ่มม้า",
     "missingFieldsTitle": "ข้อมูลไม่ครบ",
     "missingFieldsMessage": "ป้อนชื่อและความยาวก้าวกระโดดที่ถูกต้อง",
@@ -72,7 +71,8 @@
     "riderStepLabel": "ความยาวก้าวของผู้ขี่",
     "saveAsRiderStep": "บันทึกเป็นความยาวก้าวของคุณ",
     "currentRiderStepTitle": "ความยาวก้าวที่ตั้งไว้ปัจจุบัน",
-    "currentRiderStepLabel": "ความยาวก้าว"
+    "currentRiderStepLabel": "ความยาวก้าว",
+    "withersHeightLabel": "ความสูงที่ไหล่"
   },
   "chrono": {
     "title": "เวลาที่อนุญาต (Time Allowed)",
@@ -99,8 +99,8 @@
     "Lourd": "พื้นหนัก / พื้นลึก"
   },
   "speed": {
-    "Standard": "ความเร็วพื้นฐาน (~350 ม./นาที)",
-    "Elite": "กรังด์ปรีซ์ / จัมพ์ออฟ (~375 ม./นาทีขึ้นไป)"
+    "Standard": "ความเร็วพื้นฐาน (~{{value}})",
+    "Elite": "กรังด์ปรีซ์ / จัมพ์ออฟ (~{{value}}+)"
   },
   "settings": {
     "title": "การตั้งค่า",
@@ -139,7 +139,6 @@
     "subtitle": "ตรวจสอบกล่องอุปกรณ์ของคุณก่อนออกเดินทาง",
     "sectionHorse": "อุปกรณ์สำหรับม้า",
     "sectionRider": "อุปกรณ์สำหรับผู้ขี่",
-    "sectionPapers": "เอกสาร",
     "resetButton": "รีเซ็ตรายการ",
     "items": {
       "protections": "สนับแข้ง / ที่ครอบกีบ",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "กางเกงขี่ม้าสีขาว",
       "veste": "เสื้อสูทแข่งขัน",
       "cravache": "แส้กระโดด",
-      "carnet": "สมุดประจำตัวม้า",
-      "licence": "ใบอนุญาตผู้ขี่ (ไลเซนส์)",
-      "passeportCheval": "พาสปอร์ตม้า (FEI/สมาคมฯ)"
-    }
+      "passeportCheval": "สมุดบันทึกม้า",
+      "sangle": "สายรัดท้อง",
+      "longe": "เชือกจูง",
+      "amortisseur": "แผ่นเจล",
+      "seauEponge": "ถัง",
+      "materielPansage": "ชุดแปรงขน",
+      "chemise": "เสื้อเชิ้ต",
+      "eperons": "เดือย",
+      "gants": "ถุงมือ",
+      "giletProtection": "เสื้อกั๊กป้องกัน / ถุงลมนิรภัย"
+    },
+    "addPlaceholder": "เพิ่มรายการ…",
+    "addButton": "เพิ่ม"
   },
   "coursePlan": {
     "title": "ตัวแก้ไขแผนผังสนาม",
@@ -171,14 +179,14 @@
     "save": "บันทึก",
     "share": "แชร์",
     "shareErrorTitle": "ไม่สามารถแชร์แผนผังได้",
-    "hintNoPhoto": "ถ่ายภาพหรือเลือกภาพแผนผังสนามเพื่อเริ่มต้น"
+    "hintNoPhoto": "ถ่ายภาพหรือเลือกภาพแผนผังสนามเพื่อเริ่มต้น",
+    "markerNumberLabel": "จำนวนก้าว",
+    "addMarkerButton": "เพิ่ม"
   },
   "journal": {
     "title": "บันทึกการแข่งขัน",
     "subtitle": "เปรียบเทียบจำนวนก้าวกระโดดที่วางแผนไว้ตอนเดินดูสนามกับที่ขี่จริง โดยใช้วิดีโอการแข่งขันของคุณ",
     "nameLabel": "คลาส / ชื่องานแข่งขัน",
-    "theoreticalLabel": "ก้าวกระโดดที่วางแผนไว้ (เดินดูสนาม)",
-    "actualLabel": "ก้าวกระโดดที่ขี่จริง",
     "notesLabel": "บันทึกหลังการแข่งขัน",
     "recordVideo": "บันทึกวิดีโอ",
     "pickVideo": "เลือกวิดีโอ",
@@ -187,10 +195,8 @@
     "addEntry": "เพิ่มรอบการแข่งขันใหม่",
     "missingNameTitle": "โปรดป้อนชื่อคลาสหรือการแข่งขัน",
     "deleteConfirmTitle": "ต้องการลบรายการนี้หรือไม่?",
-    "deltaExact": "ตรงตามที่วางแผนไว้เป๊ะ",
-    "deltaLong_one": "มากกว่าที่แผนไว้ {{count}} ก้าว",
-    "deltaLong_other": "มากกว่าที่แผนไว้ {{count}} ก้าว",
-    "deltaShort_one": "น้อยกว่าที่แผนไว้ {{count}} ก้าว",
-    "deltaShort_other": "น้อยกว่าที่แผนไว้ {{count}} ก้าว"
+    "rankingLabel": "อันดับ",
+    "feelingLabel": "ความรู้สึก",
+    "improvementLabel": "สิ่งที่ต้องปรับปรุง"
   }
 }

@@ -31,7 +31,8 @@
     "suggestedStrides": "Doporučené cvalové skoky",
     "hintNoSteps": "Zadejte počet kroků pro zobrazení výsledku.",
     "hintNoMount": "Vyberte nebo přidejte koně.",
-    "headerTitle": "Převodník"
+    "headerTitle": "Převodník",
+    "heightLabel": "Výška překážky"
   },
   "combination": {
     "title": "Kalkulačka kombinací",
@@ -57,8 +58,6 @@
     "addTitle": "Přidat koně",
     "nameLabel": "Jméno",
     "namePlaceholder": "např. Voltigeur",
-    "categoryLabel": "Kategorie",
-    "strideLengthLabel": "Základní délka cvalového skoku",
     "addButton": "Přidat koně",
     "missingFieldsTitle": "Chybějící údaje",
     "missingFieldsMessage": "Zadejte platné jméno a délku cvalového skoku.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Krok jezdce",
     "saveAsRiderStep": "Uložit jako krok jezdce",
     "currentRiderStepTitle": "Aktuální krok",
-    "currentRiderStepLabel": "Délka kroku"
+    "currentRiderStepLabel": "Délka kroku",
+    "withersHeightLabel": "Výška v kohoutku"
   },
   "chrono": {
     "title": "Stanovený čas",
@@ -99,8 +99,8 @@
     "Lourd": "Těžký / hluboký povrch"
   },
   "speed": {
-    "Standard": "Základní tempo (~350 m/min)",
-    "Elite": "Grand Prix / Rozeskakování (~375 m/min+)"
+    "Standard": "Základní tempo (~{{value}})",
+    "Elite": "Grand Prix / Rozeskakování (~{{value}}+)"
   },
   "settings": {
     "title": "Nastavení",
@@ -139,7 +139,6 @@
     "subtitle": "Zkontroluj si závodní bednu, než vyrazíš.",
     "sectionHorse": "Vybavení koně",
     "sectionRider": "Vybavení jezdce",
-    "sectionPapers": "Doklady",
     "resetButton": "Resetovat seznam",
     "items": {
       "protections": "Gamaše / zvony",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Bílé rajtky",
       "veste": "Závodní sako",
       "cravache": "Skokový bičík",
-      "carnet": "Závodní knížka",
-      "licence": "Licence jezdce (ČJF)",
-      "passeportCheval": "Pas koně"
-    }
+      "passeportCheval": "Deník koně",
+      "sangle": "Podbřišník",
+      "longe": "Vodítko",
+      "amortisseur": "Gelová podložka",
+      "seauEponge": "Kbelík",
+      "materielPansage": "Sada na hřebelcování",
+      "chemise": "Košile",
+      "eperons": "Ostruhy",
+      "gants": "Rukavice",
+      "giletProtection": "Ochranná vesta / Airbag"
+    },
+    "addPlaceholder": "Přidat položku…",
+    "addButton": "Přidat"
   },
   "coursePlan": {
     "title": "Editor plánku parkuru",
@@ -171,14 +179,14 @@
     "save": "Uložit",
     "share": "Sdílet",
     "shareErrorTitle": "Plánek se nepodařilo sdílet.",
-    "hintNoPhoto": "Vyfoť nebo vyber fotku plánku, abys mohl začít."
+    "hintNoPhoto": "Vyfoť nebo vyber fotku plánku, abys mohl začít.",
+    "markerNumberLabel": "Počet cvalových skoků",
+    "addMarkerButton": "Přidat"
   },
   "journal": {
     "title": "Deník parkurů",
     "subtitle": "Porovnej cvalové skoky z prohlídky s reálnou jízdou podle videa.",
     "nameLabel": "Soutěž / Název závodu",
-    "theoreticalLabel": "Naplánované skoky (z prohlídky)",
-    "actualLabel": "Odjeté cvalové skoky",
     "notesLabel": "Hodnocení parkuru",
     "recordVideo": "Natočit",
     "pickVideo": "Vybrat video",
@@ -187,10 +195,8 @@
     "addEntry": "Nový start",
     "missingNameTitle": "Zadejte název soutěže.",
     "deleteConfirmTitle": "Smazat tento start?",
-    "deltaExact": "Přesně podle prohlídky",
-    "deltaLong_one": "o {{count}} cvalový skok víc",
-    "deltaLong_other": "o {{count}} cvalových skoků víc",
-    "deltaShort_one": "o {{count}} cvalový skok méně",
-    "deltaShort_other": "o {{count}} cvalových skoků méně"
+    "rankingLabel": "Umístění",
+    "feelingLabel": "Jaké to bylo",
+    "improvementLabel": "Co zlepšit"
   }
 }

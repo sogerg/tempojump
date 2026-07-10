@@ -31,7 +31,8 @@
     "suggestedStrides": "Fulee de călărit",
     "hintNoSteps": "Introdu numărul de pași pentru a vedea rezultatul.",
     "hintNoMount": "Selectează sau adaugă un cal.",
-    "headerTitle": "Convertor"
+    "headerTitle": "Convertor",
+    "heightLabel": "Înălțimea obstacolului"
   },
   "combination": {
     "title": "Calculator sisteme",
@@ -57,8 +58,6 @@
     "addTitle": "Adaugă un cal",
     "nameLabel": "Nume",
     "namePlaceholder": "ex: Voltigeur",
-    "categoryLabel": "Categorie",
-    "strideLengthLabel": "Lungimea standard a fuleului",
     "addButton": "Adaugă calul",
     "missingFieldsTitle": "Câmpuri lipsă",
     "missingFieldsMessage": "Introdu un nume și o lungime a fuleului valide.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Pasul călărețului",
     "saveAsRiderStep": "Salvează ca pasul tău",
     "currentRiderStepTitle": "Pasul actual setat",
-    "currentRiderStepLabel": "Lungimea pasului"
+    "currentRiderStepLabel": "Lungimea pasului",
+    "withersHeightLabel": "Înălțimea la greabăn"
   },
   "chrono": {
     "title": "Timp acordat",
@@ -99,8 +99,8 @@
     "Lourd": "Teren greu / profund"
   },
   "speed": {
-    "Standard": "Ritm de bază (~350 m/min)",
-    "Elite": "Grand Prix / Baraj (~375 m/min+)"
+    "Standard": "Ritm de bază (~{{value}})",
+    "Elite": "Grand Prix / Baraj (~{{value}}+)"
   },
   "settings": {
     "title": "Setări",
@@ -139,7 +139,6 @@
     "subtitle": "Verifică lada cu echipament înainte de plecare.",
     "sectionHorse": "Echipament cal",
     "sectionRider": "Echipament călăreț",
-    "sectionPapers": "Acte",
     "resetButton": "Resetează lista",
     "items": {
       "protections": "Apărători (Jambiere) / Clopoței",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Pantaloni de călărie albi",
       "veste": "Sacou de concurs",
       "cravache": "Cravașă scurtă",
-      "carnet": "Carnet de concurs",
-      "licence": "Licență / Legitimare",
-      "passeportCheval": "Pașaportul calului"
-    }
+      "passeportCheval": "Carnetul calului",
+      "sangle": "Chingă",
+      "longe": "Funie de condus",
+      "amortisseur": "Pernă de gel",
+      "seauEponge": "Găleată",
+      "materielPansage": "Trusă de îngrijire",
+      "chemise": "Cămașă",
+      "eperons": "Pinteni",
+      "gants": "Mănuși",
+      "giletProtection": "Vestă de protecție / Airbag"
+    },
+    "addPlaceholder": "Adaugă un element…",
+    "addButton": "Adaugă"
   },
   "coursePlan": {
     "title": "Editor schiță parcurs",
@@ -171,14 +179,14 @@
     "save": "Salvează",
     "share": "Distribuie",
     "shareErrorTitle": "Nu s-a putut distribui schița.",
-    "hintNoPhoto": "Fă sau alege o fotografie a schiței pentru a începe."
+    "hintNoPhoto": "Fă sau alege o fotografie a schiței pentru a începe.",
+    "markerNumberLabel": "Numărul de foulée",
+    "addMarkerButton": "Adaugă"
   },
   "journal": {
     "title": "Jurnal de concurs",
     "subtitle": "Compară fuleele plănuite la recunoaștere cu cele efectuate, folosind videoclipul parcursului tău.",
     "nameLabel": "Probă / Nume concurs",
-    "theoreticalLabel": "Fulee recunoscute (plănuite)",
-    "actualLabel": "Fulee călărite (efectuate)",
     "notesLabel": "Notițe parcurs",
     "recordVideo": "Filmează",
     "pickVideo": "Alege un videoclip",
@@ -187,10 +195,8 @@
     "addEntry": "Parcurs nou",
     "missingNameTitle": "Introdu numele concursului sau probei.",
     "deleteConfirmTitle": "Ștergi acest parcurs?",
-    "deltaExact": "Exact cum s-a recunoscut",
-    "deltaLong_one": "{{count}} fuleu în plus",
-    "deltaLong_other": "{{count}} fulee în plus",
-    "deltaShort_one": "{{count}} fuleu în minus",
-    "deltaShort_other": "{{count}} fulee în minus"
+    "rankingLabel": "Clasament",
+    "feelingLabel": "Cum te-ai simțit",
+    "improvementLabel": "Ce să îmbunătățești"
   }
 }

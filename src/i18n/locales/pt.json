@@ -31,7 +31,8 @@
     "suggestedStrides": "Lances sugeridos",
     "hintNoSteps": "Introduz o número de passos para ver o resultado.",
     "hintNoMount": "Seleciona ou adiciona um cavalo.",
-    "headerTitle": "Conversor"
+    "headerTitle": "Conversor",
+    "heightLabel": "Altura do obstáculo"
   },
   "combination": {
     "title": "Calculadora de combinações",
@@ -57,8 +58,6 @@
     "addTitle": "Adicionar cavalo",
     "nameLabel": "Nome",
     "namePlaceholder": "ex: Voltigeur",
-    "categoryLabel": "Categoria",
-    "strideLengthLabel": "Amplitude de lance padrão",
     "addButton": "Adicionar cavalo",
     "missingFieldsTitle": "Campos em falta",
     "missingFieldsMessage": "Introduz um nome e uma amplitude de lance válidos.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Passo do cavaleiro",
     "saveAsRiderStep": "Guardar como passo do cavaleiro",
     "currentRiderStepTitle": "Passo atual",
-    "currentRiderStepLabel": "Comprimento do passo"
+    "currentRiderStepLabel": "Comprimento do passo",
+    "withersHeightLabel": "Altura na cernelha"
   },
   "chrono": {
     "title": "Tempo concedido",
@@ -99,8 +99,8 @@
     "Lourd": "Terreno pesado / profundo"
   },
   "speed": {
-    "Standard": "Velocidade base (~350 m/min)",
-    "Elite": "Grande Prémio / Desempate (~375 m/min+)"
+    "Standard": "Velocidade base (~{{value}})",
+    "Elite": "Grande Prémio / Desempate (~{{value}}+)"
   },
   "settings": {
     "title": "Definições",
@@ -139,7 +139,6 @@
     "subtitle": "Confirma a tua mala de material antes de saíres.",
     "sectionHorse": "Equipamento do cavalo",
     "sectionRider": "Equipamento do cavaleiro",
-    "sectionPapers": "Documentos",
     "resetButton": "Reiniciar lista",
     "items": {
       "protections": "Caneleiras / Boletos",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Calções brancos",
       "veste": "Casaco de concurso",
       "cravache": "Chicote",
-      "carnet": "Livrete FEP",
-      "licence": "Licença Desportiva",
-      "passeportCheval": "Passaporte do Cavalo"
-    }
+      "passeportCheval": "Caderneta do cavalo",
+      "sangle": "Cilha",
+      "longe": "Corda-guia",
+      "amortisseur": "Almofada de gel",
+      "seauEponge": "Balde",
+      "materielPansage": "Material de limpeza",
+      "chemise": "Camisa",
+      "eperons": "Esporas",
+      "gants": "Luvas",
+      "giletProtection": "Colete de proteção / Airbag"
+    },
+    "addPlaceholder": "Adicionar um item…",
+    "addButton": "Adicionar"
   },
   "coursePlan": {
     "title": "Editor de croqui do percurso",
@@ -171,14 +179,14 @@
     "save": "Guardar",
     "share": "Partilhar",
     "shareErrorTitle": "Não foi possível partilhar o percurso.",
-    "hintNoPhoto": "Tira ou escolhe uma foto do croqui para começar."
+    "hintNoPhoto": "Tira ou escolhe uma foto do croqui para começar.",
+    "markerNumberLabel": "Número de passadas",
+    "addMarkerButton": "Adicionar"
   },
   "journal": {
     "title": "Diário",
     "subtitle": "Compara os lances do reconhecimento e os efetuados, com o vídeo do teu percurso.",
     "nameLabel": "Prova / Concurso",
-    "theoreticalLabel": "Lances (reconhecimento)",
-    "actualLabel": "Lances (efetuados)",
     "notesLabel": "Notas do percurso",
     "recordVideo": "Filmar",
     "pickVideo": "Escolher um vídeo",
@@ -187,10 +195,8 @@
     "addEntry": "Novo percurso",
     "missingNameTitle": "Introduz o nome da prova.",
     "deleteConfirmTitle": "Eliminar este percurso?",
-    "deltaExact": "Exatamente igual ao reconhecimento",
-    "deltaLong_one": "{{count}} lance a mais",
-    "deltaLong_other": "{{count}} lances a mais",
-    "deltaShort_one": "{{count}} lance a menos",
-    "deltaShort_other": "{{count}} lances a menos"
+    "rankingLabel": "Classificação",
+    "feelingLabel": "Como te sentiste",
+    "improvementLabel": "O que melhorar"
   }
 }

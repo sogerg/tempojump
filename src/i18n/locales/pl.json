@@ -31,7 +31,8 @@
     "suggestedStrides": "Sugerowane cwały",
     "hintNoSteps": "Wprowadź liczbę kroków, aby zobaczyć wynik.",
     "hintNoMount": "Wybierz lub dodaj konia.",
-    "headerTitle": "Przelicznik"
+    "headerTitle": "Przelicznik",
+    "heightLabel": "Wysokość przeszkody"
   },
   "combination": {
     "title": "Kalkulator szeregów",
@@ -57,8 +58,6 @@
     "addTitle": "Dodaj konia",
     "nameLabel": "Imię",
     "namePlaceholder": "np. Voltigeur",
-    "categoryLabel": "Kategoria",
-    "strideLengthLabel": "Domyślna długość cwału",
     "addButton": "Dodaj konia",
     "missingFieldsTitle": "Brakujące pola",
     "missingFieldsMessage": "Wprowadź prawidłowe imię i długość cwału.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Krok jeźdźca",
     "saveAsRiderStep": "Zapisz jako krok jeźdźca",
     "currentRiderStepTitle": "Aktualny krok",
-    "currentRiderStepLabel": "Długość kroku"
+    "currentRiderStepLabel": "Długość kroku",
+    "withersHeightLabel": "Wysokość w kłębie"
   },
   "chrono": {
     "title": "Norma czasu",
@@ -99,8 +99,8 @@
     "Lourd": "Głębokie / ciężkie podłoże"
   },
   "speed": {
-    "Standard": "Tempo podstawowe (~350 m/min)",
-    "Elite": "Grand Prix / Rozgrywka (~375 m/min+)"
+    "Standard": "Tempo podstawowe (~{{value}})",
+    "Elite": "Grand Prix / Rozgrywka (~{{value}}+)"
   },
   "settings": {
     "title": "Ustawienia",
@@ -139,7 +139,6 @@
     "subtitle": "Sprawdź zawartość paki przed wyjazdem.",
     "sectionHorse": "Sprzęt dla konia",
     "sectionRider": "Sprzęt dla jeźdźca",
-    "sectionPapers": "Dokumenty",
     "resetButton": "Zresetuj listę",
     "items": {
       "protections": "Ochraniacze",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Białe bryczesy",
       "veste": "Rajtrok (marynarka)",
       "cravache": "Palcat skokowy",
-      "carnet": "Książeczka startowa",
-      "licence": "Licencja / Odznaka jeździecka",
-      "passeportCheval": "Paszport konia (PZJ/FEI)"
-    }
+      "passeportCheval": "Zeszyt konia",
+      "sangle": "Popręg",
+      "longe": "Linka prowadząca",
+      "amortisseur": "Podkładka żelowa",
+      "seauEponge": "Wiadro",
+      "materielPansage": "Zestaw do pielęgnacji",
+      "chemise": "Koszula",
+      "eperons": "Ostrogi",
+      "gants": "Rękawiczki",
+      "giletProtection": "Kamizelka ochronna / Airbag"
+    },
+    "addPlaceholder": "Dodaj element…",
+    "addButton": "Dodaj"
   },
   "coursePlan": {
     "title": "Edytor planu parkuru",
@@ -171,14 +179,14 @@
     "save": "Zapisz",
     "share": "Udostępnij",
     "shareErrorTitle": "Nie udało się udostępnić planu.",
-    "hintNoPhoto": "Zrób lub wybierz zdjęcie planu od gospodarza toru, aby zacząć."
+    "hintNoPhoto": "Zrób lub wybierz zdjęcie planu od gospodarza toru, aby zacząć.",
+    "markerNumberLabel": "Liczba cwałowych",
+    "addMarkerButton": "Dodaj"
   },
   "journal": {
     "title": "Dziennik startów",
     "subtitle": "Porównaj przewidywane i rzeczywiste cwały, wraz z filmem z przejazdu.",
     "nameLabel": "Konkurs / Zawody",
-    "theoreticalLabel": "Przewidywane cwały",
-    "actualLabel": "Rzeczywiste cwały",
     "notesLabel": "Notatki z parkuru",
     "recordVideo": "Nagraj",
     "pickVideo": "Wybierz film",
@@ -187,10 +195,8 @@
     "addEntry": "Nowy start",
     "missingNameTitle": "Wprowadź nazwę konkursu.",
     "deleteConfirmTitle": "Usunąć ten start?",
-    "deltaExact": "Zgodnie z oglądaniem",
-    "deltaLong_one": "{{count}} cwał więcej",
-    "deltaLong_other": "{{count}} cwały więcej",
-    "deltaShort_one": "{{count}} cwał mniej",
-    "deltaShort_other": "{{count}} cwały mniej"
+    "rankingLabel": "Klasyfikacja",
+    "feelingLabel": "Jak się czułeś",
+    "improvementLabel": "Co poprawić"
   }
 }

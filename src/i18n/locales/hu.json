@@ -31,7 +31,8 @@
     "suggestedStrides": "Lovagolandó vágtaugrások",
     "hintNoSteps": "Add meg a lépések számát az eredmény megtekintéséhez.",
     "hintNoMount": "Válassz vagy adj hozzá egy lovat.",
-    "headerTitle": "Átváltó"
+    "headerTitle": "Átváltó",
+    "heightLabel": "Akadály magassága"
   },
   "combination": {
     "title": "Kombináció-kalkulátor",
@@ -57,8 +58,6 @@
     "addTitle": "Ló hozzáadása",
     "nameLabel": "Név",
     "namePlaceholder": "pl.: Voltigeur",
-    "categoryLabel": "Kategória",
-    "strideLengthLabel": "Alap vágtaugrás-hossz",
     "addButton": "Ló hozzáadása",
     "missingFieldsTitle": "Hiányzó adatok",
     "missingFieldsMessage": "Adj meg egy érvényes nevet és vágtaugrás-hosszt.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Lovas lépéshossza",
     "saveAsRiderStep": "Mentés saját lépéshosszként",
     "currentRiderStepTitle": "Jelenlegi beállított lépés",
-    "currentRiderStepLabel": "Lépéshossz"
+    "currentRiderStepLabel": "Lépéshossz",
+    "withersHeightLabel": "Marmagasság"
   },
   "chrono": {
     "title": "Alapidő",
@@ -99,8 +99,8 @@
     "Lourd": "Mély / nehéz talaj"
   },
   "speed": {
-    "Standard": "Alapiram (~350 m/perc)",
-    "Elite": "Nagydíj / Összevetés (~375 m/perc+)"
+    "Standard": "Alapiram (~{{value}})",
+    "Elite": "Nagydíj / Összevetés (~{{value}}+)"
   },
   "settings": {
     "title": "Beállítások",
@@ -139,7 +139,6 @@
     "subtitle": "Ellenőrizd a felszereléses ládát indulás előtt.",
     "sectionHorse": "Ló felszerelése",
     "sectionRider": "Lovas felszerelése",
-    "sectionPapers": "Iratok",
     "resetButton": "Lista visszaállítása",
     "items": {
       "protections": "Ínvédők / Bokavédők / Pataharang",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Fehér lovaglónadrág",
       "veste": "Versenyzakó",
       "cravache": "Ugrópálca",
-      "carnet": "Versenykönyv",
-      "licence": "Lovas licenc / Rajtengedély",
-      "passeportCheval": "Lóútlevél (FEI / hazai)"
-    }
+      "passeportCheval": "Ló naplója",
+      "sangle": "Heveder",
+      "longe": "Vezetőkötél",
+      "amortisseur": "Gélpárna",
+      "seauEponge": "Vödör",
+      "materielPansage": "Ápolókészlet",
+      "chemise": "Ing",
+      "eperons": "Sarkantyú",
+      "gants": "Kesztyű",
+      "giletProtection": "Védőmellény / Légzsák"
+    },
+    "addPlaceholder": "Elem hozzáadása…",
+    "addButton": "Hozzáadás"
   },
   "coursePlan": {
     "title": "Pályarajz szerkesztő",
@@ -171,14 +179,14 @@
     "save": "Mentés",
     "share": "Megosztás",
     "shareErrorTitle": "A pályarajzot nem sikerült megosztani.",
-    "hintNoPhoto": "Készíts vagy válassz egy fényképet a pályarajzról a kezdéshez."
+    "hintNoPhoto": "Készíts vagy válassz egy fényképet a pályarajzról a kezdéshez.",
+    "markerNumberLabel": "Lépések száma",
+    "addMarkerButton": "Hozzáadás"
   },
   "journal": {
     "title": "Versenynapló",
     "subtitle": "Hasonlítsd össze a pályabejáráson tervezett és a ténylegesen lovagolt vágtaugrásokat a futásod videójával.",
     "nameLabel": "Versenyszám / Verseny neve",
-    "theoreticalLabel": "Tervezett vágtaugrások (pályabejárás)",
-    "actualLabel": "Lovagolt vágtaugrások",
     "notesLabel": "Jegyzetek a pályáról",
     "recordVideo": "Felvétel",
     "pickVideo": "Videó kiválasztása",
@@ -187,10 +195,8 @@
     "addEntry": "Új start",
     "missingNameTitle": "Add meg a versenyszám nevét.",
     "deleteConfirmTitle": "Törlöd ezt a startot?",
-    "deltaExact": "Pontosan a pályabejárás szerint",
-    "deltaLong_one": "{{count}} vágtaugrással több",
-    "deltaLong_other": "{{count}} vágtaugrással több",
-    "deltaShort_one": "{{count}} vágtaugrással kevesebb",
-    "deltaShort_other": "{{count}} vágtaugrással kevesebb"
+    "rankingLabel": "Helyezés",
+    "feelingLabel": "Milyen érzés volt",
+    "improvementLabel": "Mit kell fejleszteni"
   }
 }

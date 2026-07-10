@@ -31,7 +31,8 @@
     "suggestedStrides": "推奨完歩数",
     "hintNoSteps": "歩測の歩数を入力して結果を表示します。",
     "hintNoMount": "馬を選択または追加してください。",
-    "headerTitle": "換算"
+    "headerTitle": "換算",
+    "heightLabel": "障害の高さ"
   },
   "combination": {
     "title": "コンビネーション計算",
@@ -57,8 +58,6 @@
     "addTitle": "馬を追加",
     "nameLabel": "名前",
     "namePlaceholder": "例：Voltigeur",
-    "categoryLabel": "カテゴリー",
-    "strideLengthLabel": "基準の完歩の長さ",
     "addButton": "馬を追加",
     "missingFieldsTitle": "入力不足",
     "missingFieldsMessage": "有効な名前と完歩の長さを入力してください。",
@@ -72,7 +71,8 @@
     "riderStepLabel": "歩測の歩幅",
     "saveAsRiderStep": "自分の歩幅として保存",
     "currentRiderStepTitle": "現在の設定歩幅",
-    "currentRiderStepLabel": "歩幅"
+    "currentRiderStepLabel": "歩幅",
+    "withersHeightLabel": "き甲の高さ"
   },
   "chrono": {
     "title": "規定タイム",
@@ -99,8 +99,8 @@
     "Lourd": "重馬場 / 不良馬場"
   },
   "speed": {
-    "Standard": "基本（約350m/分）",
-    "Elite": "グランプリ / ジャンプオフ（約375m/分〜）"
+    "Standard": "基本 (~{{value}})",
+    "Elite": "グランプリ / ジャンプオフ (~{{value}}+)"
   },
   "settings": {
     "title": "設定",
@@ -139,7 +139,6 @@
     "subtitle": "出発前に馬具や道具を確認しましょう。",
     "sectionHorse": "馬具",
     "sectionRider": "ライダー装備",
-    "sectionPapers": "書類",
     "resetButton": "リストをリセット",
     "items": {
       "protections": "プロテクター / わんこ",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "白キュロット",
       "veste": "競技用ジャケット（じょうらん）",
       "cravache": "短鞭",
-      "carnet": "成績手帳",
-      "licence": "騎乗者資格",
-      "passeportCheval": "馬のパスポート"
-    }
+      "passeportCheval": "馬の手帳",
+      "sangle": "腹帯",
+      "longe": "引き綱",
+      "amortisseur": "ジェルパッド",
+      "seauEponge": "バケツ",
+      "materielPansage": "グルーミング用品",
+      "chemise": "シャツ",
+      "eperons": "拍車",
+      "gants": "手袋",
+      "giletProtection": "プロテクションベスト／エアバッグ"
+    },
+    "addPlaceholder": "項目を追加…",
+    "addButton": "追加"
   },
   "coursePlan": {
     "title": "経路図エディター",
@@ -171,14 +179,14 @@
     "save": "保存",
     "share": "共有",
     "shareErrorTitle": "経路図を共有できませんでした。",
-    "hintNoPhoto": "経路図の写真を撮るか選んで開始してください。"
+    "hintNoPhoto": "経路図の写真を撮るか選んで開始してください。",
+    "markerNumberLabel": "歩数",
+    "addMarkerButton": "追加"
   },
   "journal": {
     "title": "走行記録",
     "subtitle": "下見での予定完歩数と実際の完歩数を、走行動画とともに比較・振り返り。",
     "nameLabel": "競技名 / クラス",
-    "theoreticalLabel": "予定完歩数（下見）",
-    "actualLabel": "実際の完歩数（走行）",
     "notesLabel": "走行メモ",
     "recordVideo": "撮影",
     "pickVideo": "動画を選ぶ",
@@ -187,10 +195,8 @@
     "addEntry": "新しい走行記録",
     "missingNameTitle": "競技名を入力してください。",
     "deleteConfirmTitle": "この記録を削除しますか？",
-    "deltaExact": "下見の予定通り",
-    "deltaLong_one": "{{count}} 完歩多い",
-    "deltaLong_other": "{{count}} 完歩多い",
-    "deltaShort_one": "{{count}} 完歩少ない",
-    "deltaShort_other": "{{count}} 完歩少ない"
+    "rankingLabel": "順位",
+    "feelingLabel": "感想",
+    "improvementLabel": "改善点"
   }
 }

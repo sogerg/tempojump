@@ -31,7 +31,8 @@
     "suggestedStrides": "建议步数",
     "hintNoSteps": "输入步测步数以查看结果。",
     "hintNoMount": "请选择或添加一匹马。",
-    "headerTitle": "换算器"
+    "headerTitle": "换算器",
+    "heightLabel": "障碍高度"
   },
   "combination": {
     "title": "组合障碍计算器",
@@ -57,8 +58,6 @@
     "addTitle": "添加马匹",
     "nameLabel": "名称",
     "namePlaceholder": "例如：Voltigeur",
-    "categoryLabel": "级别",
-    "strideLengthLabel": "默认步幅",
     "addButton": "添加马匹",
     "missingFieldsTitle": "缺少信息",
     "missingFieldsMessage": "请输入有效的名称和步幅长度。",
@@ -72,7 +71,8 @@
     "riderStepLabel": "骑手步长",
     "saveAsRiderStep": "保存为骑手步长",
     "currentRiderStepTitle": "当前骑手步长",
-    "currentRiderStepLabel": "步长"
+    "currentRiderStepLabel": "步长",
+    "withersHeightLabel": "肩高"
   },
   "chrono": {
     "title": "规定时间",
@@ -99,8 +99,8 @@
     "Lourd": "深 / 湿软场地"
   },
   "speed": {
-    "Standard": "基础速度（约350米/分钟）",
-    "Elite": "大奖赛 / 附加赛（约375米/分钟以上）"
+    "Standard": "基础速度 (~{{value}})",
+    "Elite": "大奖赛 / 附加赛 (~{{value}}+)"
   },
   "settings": {
     "title": "设置",
@@ -139,7 +139,6 @@
     "subtitle": "出发前往赛场前检查装备箱。",
     "sectionHorse": "马匹装备",
     "sectionRider": "骑手装备",
-    "sectionPapers": "证件",
     "resetButton": "重置清单",
     "items": {
       "protections": "护腿 / 蹄套",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "白马裤",
       "veste": "比赛骑士服",
       "cravache": "障碍鞭",
-      "carnet": "赛事手册",
-      "licence": "骑手注册证",
-      "passeportCheval": "马匹护照 (FEI/国家)"
-    }
+      "passeportCheval": "马匹记录本",
+      "sangle": "肚带",
+      "longe": "牵引绳",
+      "amortisseur": "凝胶垫",
+      "seauEponge": "水桶",
+      "materielPansage": "梳理用具",
+      "chemise": "衬衫",
+      "eperons": "马刺",
+      "gants": "手套",
+      "giletProtection": "防护背心 / 安全气囊"
+    },
+    "addPlaceholder": "添加项目…",
+    "addButton": "添加"
   },
   "coursePlan": {
     "title": "路线图编辑器",
@@ -171,14 +179,14 @@
     "save": "保存",
     "share": "分享",
     "shareErrorTitle": "无法分享路线图。",
-    "hintNoPhoto": "拍摄或选择路线图照片以开始。"
+    "hintNoPhoto": "拍摄或选择路线图照片以开始。",
+    "markerNumberLabel": "步幅数",
+    "addMarkerButton": "添加"
   },
   "journal": {
     "title": "日志",
     "subtitle": "结合比赛录像，复盘计划步数与实际骑行步数。",
     "nameLabel": "级别 / 比赛名称",
-    "theoreticalLabel": "计划步数（走路线）",
-    "actualLabel": "实际骑行步数",
     "notesLabel": "路线复盘",
     "recordVideo": "录制",
     "pickVideo": "选择视频",
@@ -187,10 +195,8 @@
     "addEntry": "新记录",
     "missingNameTitle": "请输入比赛名称。",
     "deleteConfirmTitle": "删除此记录？",
-    "deltaExact": "与走路线计划完全一致",
-    "deltaLong_one": "多骑了 {{count}} 步",
-    "deltaLong_other": "多骑了 {{count}} 步",
-    "deltaShort_one": "少骑了 {{count}} 步",
-    "deltaShort_other": "少骑了 {{count}} 步"
+    "rankingLabel": "名次",
+    "feelingLabel": "感受如何",
+    "improvementLabel": "需要改进"
   }
 }

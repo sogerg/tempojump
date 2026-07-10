@@ -38,3 +38,25 @@ export function formatLength(meters: number, unitSystem: UnitSystem): string {
   if (feet === 0) return `${totalInches.toFixed(1)} in`;
   return `${feet} ft ${inches.toFixed(1)} in`;
 }
+
+const YARDS_PER_METER = 1.0936133;
+
+/** Convertit une vitesse saisie par l'utilisateur (dans son système d'unités) en m/min. */
+export function speedToMetersPerMinute(value: number, unitSystem: UnitSystem): number {
+  return unitSystem === 'imperial' ? value / YARDS_PER_METER : value;
+}
+
+/** Convertit une vitesse en m/min vers la valeur à afficher (m/min ou yd/min). */
+export function speedFromMetersPerMinute(metersPerMinute: number, unitSystem: UnitSystem): number {
+  return unitSystem === 'imperial' ? metersPerMinute * YARDS_PER_METER : metersPerMinute;
+}
+
+export function speedUnitSuffix(unitSystem: UnitSystem): string {
+  return unitSystem === 'imperial' ? 'yd/min' : 'm/min';
+}
+
+/** Formate une vitesse (m/min) pour affichage, arrondie à l'entier, avec son unité. */
+export function formatSpeed(metersPerMinute: number, unitSystem: UnitSystem): string {
+  const value = Math.round(speedFromMetersPerMinute(metersPerMinute, unitSystem));
+  return `${value} ${speedUnitSuffix(unitSystem)}`;
+}

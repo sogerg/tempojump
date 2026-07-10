@@ -31,7 +31,8 @@
     "suggestedStrides": "Atılması Gereken Fule",
     "hintNoSteps": "Sonucu görmek için adım sayısını gir.",
     "hintNoMount": "Bir at seç veya ekle.",
-    "headerTitle": "Dönüştürücü"
+    "headerTitle": "Dönüştürücü",
+    "heightLabel": "Engel yüksekliği"
   },
   "combination": {
     "title": "Kombinasyon Hesaplayıcı",
@@ -57,8 +58,6 @@
     "addTitle": "At Ekle",
     "nameLabel": "İsim",
     "namePlaceholder": "örn: Voltigeur",
-    "categoryLabel": "Kategori",
-    "strideLengthLabel": "Varsayılan Fule Uzunluğu",
     "addButton": "At ekle",
     "missingFieldsTitle": "Eksik alanlar",
     "missingFieldsMessage": "Geçerli bir isim ve fule uzunluğu gir.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Binici adımı",
     "saveAsRiderStep": "Binici adımı olarak kaydet",
     "currentRiderStepTitle": "Mevcut adım ayarı",
-    "currentRiderStepLabel": "Adım uzunluğu"
+    "currentRiderStepLabel": "Adım uzunluğu",
+    "withersHeightLabel": "Cidago yüksekliği"
   },
   "chrono": {
     "title": "Tanınan Süre",
@@ -99,8 +99,8 @@
     "Lourd": "Ağır / Derin Zemin"
   },
   "speed": {
-    "Standard": "Normal Parkur Hızı (~350 m/dk)",
-    "Elite": "Grand Prix / Baraj (~375 m/dk ve üzeri)"
+    "Standard": "Normal Parkur Hızı (~{{value}})",
+    "Elite": "Grand Prix / Baraj (~{{value}}+)"
   },
   "settings": {
     "title": "Ayarlar",
@@ -139,7 +139,6 @@
     "subtitle": "Yola çıkmadan önce malzeme dolabını (tack box) kontrol et.",
     "sectionHorse": "At Ekipmanı",
     "sectionRider": "Binici Ekipmanı",
-    "sectionPapers": "Belgeler ve Lisanslar",
     "resetButton": "Listeyi sıfırla",
     "items": {
       "protections": "Getr / Topukluk / Çan",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Beyaz Binici Pantolonu",
       "veste": "Müsabaka Ceketi (Sako)",
       "cravache": "Engel Kırbacı",
-      "carnet": "Yarışma defteri",
-      "licence": "Binici Lisansı / Sporcu Kartı",
-      "passeportCheval": "At Pasaportu (FEI/Ulusal)"
-    }
+      "passeportCheval": "At defteri",
+      "sangle": "Kolan",
+      "longe": "Yular ipi",
+      "amortisseur": "Jel pedi",
+      "seauEponge": "Kova",
+      "materielPansage": "Bakım malzemeleri",
+      "chemise": "Gömlek",
+      "eperons": "Mahmuz",
+      "gants": "Eldiven",
+      "giletProtection": "Koruyucu yelek / Airbag"
+    },
+    "addPlaceholder": "Bir öğe ekle…",
+    "addButton": "Ekle"
   },
   "coursePlan": {
     "title": "Parkur Düzenleyici",
@@ -171,14 +179,14 @@
     "save": "Kaydet",
     "share": "Paylaş",
     "shareErrorTitle": "Parkur paylaşılamadı.",
-    "hintNoPhoto": "Başlamak için parkur krokisinin fotoğrafını çek veya seç."
+    "hintNoPhoto": "Başlamak için parkur krokisinin fotoğrafını çek veya seç.",
+    "markerNumberLabel": "Adım sayısı",
+    "addMarkerButton": "Ekle"
   },
   "journal": {
     "title": "Parkur Günlüğü",
     "subtitle": "Müsabaka videonu izleyerek, parkurda atılan fulelerle yürüyüşte planladığın fuleleri kıyasla.",
     "nameLabel": "Müsabaka / Yarışma Adı",
-    "theoreticalLabel": "Planlanan Fuleler (Parkur Yürüyüşü)",
-    "actualLabel": "Atılan Fuleler (Parkurda)",
     "notesLabel": "Parkur Analizi / Notlar",
     "recordVideo": "Videoya Kaydet",
     "pickVideo": "Video Seç",
@@ -187,10 +195,8 @@
     "addEntry": "Yeni Parkur Ekle",
     "missingNameTitle": "Bir yarışma adı gir.",
     "deleteConfirmTitle": "Bu kayıt silinsin mi?",
-    "deltaExact": "Parkur yürüyüşüyle birebir aynı",
-    "deltaLong_one": "{{count}} fule fazla",
-    "deltaLong_other": "{{count}} fule fazla",
-    "deltaShort_one": "{{count}} fule eksik",
-    "deltaShort_other": "{{count}} fule eksik"
+    "rankingLabel": "Sıralama",
+    "feelingLabel": "Nasıl hissettin",
+    "improvementLabel": "Neyi geliştirmeli"
   }
 }

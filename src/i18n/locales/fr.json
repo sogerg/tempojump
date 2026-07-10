@@ -99,8 +99,8 @@
     "Lourd": "Terrain lourd / boueux"
   },
   "speed": {
-    "Standard": "Standard (~350 m/min)",
-    "Elite": "Élite / Barrage (~375 m/min+)"
+    "Standard": "Standard (~{{value}})",
+    "Elite": "Élite / Barrage (~{{value}}+)"
   },
   "settings": {
     "title": "Réglages",

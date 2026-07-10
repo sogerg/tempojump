@@ -31,7 +31,8 @@
     "suggestedStrides": "Empfohlene Galoppsprünge",
     "hintNoSteps": "Gib die Anzahl der Schritte ein, um das Ergebnis zu sehen.",
     "hintNoMount": "Wähle oder erstelle ein Pferd.",
-    "headerTitle": "Umrechner"
+    "headerTitle": "Umrechner",
+    "heightLabel": "Hindernishöhe"
   },
   "combination": {
     "title": "Kombinationsrechner",
@@ -57,8 +58,6 @@
     "addTitle": "Pferd hinzufügen",
     "nameLabel": "Name",
     "namePlaceholder": "z.B. Voltigeur",
-    "categoryLabel": "Kategorie",
-    "strideLengthLabel": "Standard-Galoppsprunglänge",
     "addButton": "Pferd hinzufügen",
     "missingFieldsTitle": "Fehlende Angaben",
     "missingFieldsMessage": "Gib einen Namen und eine gültige Galoppsprunglänge ein.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Reiterschritt",
     "saveAsRiderStep": "Als Reiterschritt speichern",
     "currentRiderStepTitle": "Aktueller Reiterschritt",
-    "currentRiderStepLabel": "Schrittlänge"
+    "currentRiderStepLabel": "Schrittlänge",
+    "withersHeightLabel": "Widerristhöhe"
   },
   "chrono": {
     "title": "Erlaubte Zeit",
@@ -99,8 +99,8 @@
     "Lourd": "Tiefer / schwerer Boden"
   },
   "speed": {
-    "Standard": "Standard (~350 m/min)",
-    "Elite": "Elite / Stechen (~375 m/min+)"
+    "Standard": "Standard (~{{value}})",
+    "Elite": "Elite / Stechen (~{{value}}+)"
   },
   "settings": {
     "title": "Einstellungen",
@@ -139,7 +139,6 @@
     "subtitle": "Stelle sicher, dass du nichts vergisst, bevor du losfährst.",
     "sectionHorse": "Ausrüstung Pferd",
     "sectionRider": "Ausrüstung Reiter",
-    "sectionPapers": "Papiere",
     "resetButton": "Liste zurücksetzen",
     "items": {
       "protections": "Gamaschen",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Weiße Reithose",
       "veste": "Turniersakko",
       "cravache": "Gerte",
-      "carnet": "Turnierpass",
-      "licence": "Lizenz",
-      "passeportCheval": "Pferdepass"
-    }
+      "passeportCheval": "Pferdeheft",
+      "sangle": "Sattelgurt",
+      "longe": "Führstrick",
+      "amortisseur": "Gelpad",
+      "seauEponge": "Eimer",
+      "materielPansage": "Putzzeug",
+      "chemise": "Reithemd",
+      "eperons": "Sporen",
+      "gants": "Handschuhe",
+      "giletProtection": "Sicherheitsweste / Airbag"
+    },
+    "addPlaceholder": "Element hinzufügen…",
+    "addButton": "Hinzufügen"
   },
   "coursePlan": {
     "title": "Parcoursplan-Editor",
@@ -171,14 +179,14 @@
     "save": "Speichern",
     "share": "Teilen",
     "shareErrorTitle": "Plan konnte nicht geteilt werden.",
-    "hintNoPhoto": "Nimm ein Foto des Plans auf oder wähle eines aus, um zu beginnen."
+    "hintNoPhoto": "Nimm ein Foto des Plans auf oder wähle eines aus, um zu beginnen.",
+    "markerNumberLabel": "Anzahl Galoppsprünge",
+    "addMarkerButton": "Hinzufügen"
   },
   "journal": {
     "title": "Logbuch",
     "subtitle": "Vergleiche geplante und tatsächliche Galoppsprünge mit dem Video deines Parcours.",
     "nameLabel": "Name des Turniers",
-    "theoreticalLabel": "Geplante Galoppsprünge",
-    "actualLabel": "Tatsächliche Galoppsprünge",
     "notesLabel": "Notizen",
     "recordVideo": "Aufnehmen",
     "pickVideo": "Video auswählen",
@@ -187,10 +195,8 @@
     "addEntry": "Neuer Eintrag",
     "missingNameTitle": "Gib einen Turniernamen ein.",
     "deleteConfirmTitle": "Diesen Eintrag löschen?",
-    "deltaExact": "Distanz passend",
-    "deltaLong_one": "{{count}} Galoppsprung mehr",
-    "deltaLong_other": "{{count}} Galoppsprünge mehr",
-    "deltaShort_one": "{{count}} Galoppsprung weniger",
-    "deltaShort_other": "{{count}} Galoppsprünge weniger"
+    "rankingLabel": "Platzierung",
+    "feelingLabel": "Wie es sich angefühlt hat",
+    "improvementLabel": "Was verbessern"
   }
 }

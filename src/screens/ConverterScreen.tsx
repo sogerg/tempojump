@@ -11,9 +11,10 @@ import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { stepsToStrides } from '../lib/mathUtils';
-import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
+import { formatLength, formatSpeed, inputUnitSuffix, toMeters } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
 import { ThemeColors } from '../constants/colors';
+import { SPEED_METERS_PER_MINUTE } from '../constants/horseDefaults';
 
 const PLAT_ICON_RATIO = 501 / 151;
 const MONTANT_ICON_RATIO = 1188 / 728;
@@ -118,7 +119,9 @@ export function ConverterScreen() {
         <SegmentedControl
           options={SPEED_OPTIONS.map((speedOption) => ({
             value: speedOption,
-            label: t(`speed.${speedOption}`),
+            label: t(`speed.${speedOption}`, {
+              value: formatSpeed(SPEED_METERS_PER_MINUTE[speedOption], unitSystem),
+            }),
             icon: speedOption === 'Elite' ? Zap : undefined,
             inactiveColor: speedOption === 'Elite' ? colors.speedPastelElite : undefined,
           }))}

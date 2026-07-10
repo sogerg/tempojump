@@ -99,8 +99,8 @@
     "Lourd": "Deep / heavy ground"
   },
   "speed": {
-    "Standard": "Standard (~350 m/min)",
-    "Elite": "Elite / Jump-off (~375 m/min+)"
+    "Standard": "Standard (~{{value}})",
+    "Elite": "Elite / Jump-off (~{{value}}+)"
   },
   "settings": {
     "title": "Settings",

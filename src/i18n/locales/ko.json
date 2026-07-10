@@ -31,7 +31,8 @@
     "suggestedStrides": "권장 완보 수",
     "hintNoSteps": "보측 걸음 수를 입력하면 결과가 표시됩니다.",
     "hintNoMount": "마필을 선택하거나 추가하세요.",
-    "headerTitle": "변환기"
+    "headerTitle": "변환기",
+    "heightLabel": "장애물 높이"
   },
   "combination": {
     "title": "복합 장애물 계산기",
@@ -57,8 +58,6 @@
     "addTitle": "마필 추가",
     "nameLabel": "이름",
     "namePlaceholder": "예: Voltigeur",
-    "categoryLabel": "카테고리",
-    "strideLengthLabel": "기본 완보 폭 (길이)",
     "addButton": "마필 추가",
     "missingFieldsTitle": "입력 정보 부족",
     "missingFieldsMessage": "유효한 마필 이름과 완보 폭을 입력하세요.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "라이더 답사 보폭",
     "saveAsRiderStep": "내 답사 보폭으로 저장",
     "currentRiderStepTitle": "현재 설정된 보폭",
-    "currentRiderStepLabel": "보폭"
+    "currentRiderStepLabel": "보폭",
+    "withersHeightLabel": "기갑 높이"
   },
   "chrono": {
     "title": "기준 시간 계산",
@@ -99,8 +99,8 @@
     "Lourd": "무겁거나 깊은 바닥"
   },
   "speed": {
-    "Standard": "기본 속도 (~350 m/분)",
-    "Elite": "그랑프리 / 점프오프 (~375 m/분 이상)"
+    "Standard": "기본 속도 (~{{value}})",
+    "Elite": "그랑프리 / 점프오프 (~{{value}}+)"
   },
   "settings": {
     "title": "설정",
@@ -139,7 +139,6 @@
     "subtitle": "출발 전 마구 수송 상자(택박스)를 최종 확인하세요.",
     "sectionHorse": "마필 장비",
     "sectionRider": "기수 장비",
-    "sectionPapers": "서류 및 면허",
     "resetButton": "목록 초기화",
     "items": {
       "protections": "건보호대 / 구절보호대 / 종보호대",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "흰색 마바지 (브리치즈)",
       "veste": "대회용 자켓 (란)",
       "cravache": "장애물 채찍 (단채찍)",
-      "carnet": "기록 수첩",
-      "licence": "선수 등록증 / 기수 면허",
-      "passeportCheval": "마필 여권 (협회/FEI)"
-    }
+      "passeportCheval": "말 수첩",
+      "sangle": "뱃대끈",
+      "longe": "리드로프",
+      "amortisseur": "젤 패드",
+      "seauEponge": "양동이",
+      "materielPansage": "손질 도구",
+      "chemise": "셔츠",
+      "eperons": "박차",
+      "gants": "장갑",
+      "giletProtection": "보호 조끼 / 에어백"
+    },
+    "addPlaceholder": "항목 추가…",
+    "addButton": "추가"
   },
   "coursePlan": {
     "title": "코스 배치도 편집기",
@@ -171,14 +179,14 @@
     "save": "저장",
     "share": "공유",
     "shareErrorTitle": "도면을 공유할 수 없습니다.",
-    "hintNoPhoto": "시작하려면 코스 배치도 사진을 촬영하거나 선택하세요."
+    "hintNoPhoto": "시작하려면 코스 배치도 사진을 촬영하거나 선택하세요.",
+    "markerNumberLabel": "스트라이드 수",
+    "addMarkerButton": "추가"
   },
   "journal": {
     "title": "주행 기록 일지",
     "subtitle": "복기 영상을 보며 답사 때 계획한 완보 수와 실제 경기 주행 시의 완보 수를 비교하세요.",
     "nameLabel": "클래스 / 대회명",
-    "theoreticalLabel": "계획한 완보 수 (도보 답사)",
-    "actualLabel": "실제 주행 완보 수",
     "notesLabel": "코스 복기 메모",
     "recordVideo": "촬영",
     "pickVideo": "동영상 선택",
@@ -187,10 +195,8 @@
     "addEntry": "새 주행 기록",
     "missingNameTitle": "대회 또는 종목 이름을 입력하세요.",
     "deleteConfirmTitle": "이 주행 기록을 삭제하시겠습니까?",
-    "deltaExact": "답사 계획과 정확히 일치",
-    "deltaLong_one": "{{count}} 완보 많게 주행함",
-    "deltaLong_other": "{{count}} 완보 많게 주행함",
-    "deltaShort_one": "{{count}} 완보 적게 주행함",
-    "deltaShort_other": "{{count}} 완보 적게 주행함"
+    "rankingLabel": "순위",
+    "feelingLabel": "느낌",
+    "improvementLabel": "개선할 점"
   }
 }

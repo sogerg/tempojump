@@ -31,7 +31,8 @@
     "suggestedStrides": "Suositellut laukka-askeleet",
     "hintNoSteps": "Syötä askelten määrä nähdäksesi tuloksen.",
     "hintNoMount": "Valitse tai lisää hevonen.",
-    "headerTitle": "Muunnin"
+    "headerTitle": "Muunnin",
+    "heightLabel": "Esteen korkeus"
   },
   "combination": {
     "title": "Sarjalaskuri",
@@ -57,8 +58,6 @@
     "addTitle": "Lisää hevonen",
     "nameLabel": "Nimi",
     "namePlaceholder": "esim. Voltigeur",
-    "categoryLabel": "Kategoria",
-    "strideLengthLabel": "Laukka-askeleen peruspituus",
     "addButton": "Lisää hevonen",
     "missingFieldsTitle": "Puuttuvia tietoja",
     "missingFieldsMessage": "Syötä kelvollinen nimi ja laukka-askeleen pituus.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Oma askelpituus",
     "saveAsRiderStep": "Tallenna omaksi askelpituudeksi",
     "currentRiderStepTitle": "Nykyinen askelpituus",
-    "currentRiderStepLabel": "Askelpituus"
+    "currentRiderStepLabel": "Askelpituus",
+    "withersHeightLabel": "Säkäkorkeus"
   },
   "chrono": {
     "title": "Enimmäisaika",
@@ -99,8 +99,8 @@
     "Lourd": "Raskas / syvä pohja"
   },
   "speed": {
-    "Standard": "Perustempo (~350 m/min)",
-    "Elite": "Vaativat luokat / Uusinta (~375 m/min+)"
+    "Standard": "Perustempo (~{{value}})",
+    "Elite": "Vaativat luokat / Uusinta (~{{value}}+)"
   },
   "settings": {
     "title": "Asetukset",
@@ -139,7 +139,6 @@
     "subtitle": "Tarkista varustelaatikko ennen lähtöä.",
     "sectionHorse": "Hevosen varusteet",
     "sectionRider": "Ratsastajan varusteet",
-    "sectionPapers": "Asiakirjat",
     "resetButton": "Nollaa lista",
     "items": {
       "protections": "Jännesuojat / putsit",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Valkoiset ratsastushousut",
       "veste": "Kilpailutakki",
       "cravache": "Estepiiska",
-      "carnet": "Kilpailukirja",
-      "licence": "Kilpailulupa",
-      "passeportCheval": "Hevospassi (SRL/FEI)"
-    }
+      "passeportCheval": "Hevosen päiväkirja",
+      "sangle": "Satulavyö",
+      "longe": "Taluttin",
+      "amortisseur": "Geelipehmuste",
+      "seauEponge": "Ämpäri",
+      "materielPansage": "Hoitovälineet",
+      "chemise": "Paita",
+      "eperons": "Kannukset",
+      "gants": "Hansikkaat",
+      "giletProtection": "Suojaliivi / Turvatyyny"
+    },
+    "addPlaceholder": "Lisää kohde…",
+    "addButton": "Lisää"
   },
   "coursePlan": {
     "title": "Ratasuunnitelman muokkain",
@@ -171,14 +179,14 @@
     "save": "Tallenna",
     "share": "Jaa",
     "shareErrorTitle": "Suunnitelmaa ei voitu jakaa.",
-    "hintNoPhoto": "Ota tai valitse kuva ratapiirroksesta aloittaaksesi."
+    "hintNoPhoto": "Ota tai valitse kuva ratapiirroksesta aloittaaksesi.",
+    "markerNumberLabel": "Askelten määrä",
+    "addMarkerButton": "Lisää"
   },
   "journal": {
     "title": "Päiväkirja",
     "subtitle": "Vertaa radankävelyssä suunniteltuja laukka-askelia todelliseen suoritukseen videosi avulla.",
     "nameLabel": "Luokka / Kilpailu",
-    "theoreticalLabel": "Suunnitellut askeleet (radankävely)",
-    "actualLabel": "Toteutuneet askeleet",
     "notesLabel": "Ratameno-muistiinpanot",
     "recordVideo": "Kuvaa video",
     "pickVideo": "Valitse video",
@@ -187,10 +195,8 @@
     "addEntry": "Uusi merkintä",
     "missingNameTitle": "Syötä kilpailun nimi.",
     "deleteConfirmTitle": "Poistetaanko tämä merkintä?",
-    "deltaExact": "Täsmälleen radankävelyn mukaan",
-    "deltaLong_one": "{{count}} laukka-askel enemmän",
-    "deltaLong_other": "{{count}} laukka-askelta enemmän",
-    "deltaShort_one": "{{count}} laukka-askel vähemmän",
-    "deltaShort_other": "{{count}} laukka-askelta vähemmän"
+    "rankingLabel": "Sijoitus",
+    "feelingLabel": "Miltä tuntui",
+    "improvementLabel": "Mitä parantaa"
   }
 }

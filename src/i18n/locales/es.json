@@ -31,7 +31,8 @@
     "suggestedStrides": "Trancos a dar",
     "hintNoSteps": "Introduce el número de pasos para ver el resultado.",
     "hintNoMount": "Selecciona o crea una montura.",
-    "headerTitle": "Convertidor"
+    "headerTitle": "Convertidor",
+    "heightLabel": "Altura del obstáculo"
   },
   "combination": {
     "title": "Calculadora de combinaciones",
@@ -57,8 +58,6 @@
     "addTitle": "Añadir una montura",
     "nameLabel": "Nombre",
     "namePlaceholder": "ej: Voltigeur",
-    "categoryLabel": "Categoría",
-    "strideLengthLabel": "Amplitud de tranco por defecto",
     "addButton": "Añadir montura",
     "missingFieldsTitle": "Campos incompletos",
     "missingFieldsMessage": "Introduce un nombre y una amplitud de tranco válidos.",
@@ -72,7 +71,8 @@
     "riderStepLabel": "Paso del jinete",
     "saveAsRiderStep": "Guardar como paso del jinete",
     "currentRiderStepTitle": "Paso actual",
-    "currentRiderStepLabel": "Longitud de paso"
+    "currentRiderStepLabel": "Longitud de paso",
+    "withersHeightLabel": "Altura a la cruz"
   },
   "chrono": {
     "title": "Tiempo acordado",
@@ -99,8 +99,8 @@
     "Lourd": "Terreno pesado / profundo"
   },
   "speed": {
-    "Standard": "Velocidad base (~350 m/min)",
-    "Elite": "Gran Premio / Desempate (~375 m/min+)"
+    "Standard": "Velocidad base (~{{value}})",
+    "Elite": "Gran Premio / Desempate (~{{value}}+)"
   },
   "settings": {
     "title": "Ajustes",
@@ -139,7 +139,6 @@
     "subtitle": "Comprueba el baúl antes de salir.",
     "sectionHorse": "Material del caballo",
     "sectionRider": "Material del jinete",
-    "sectionPapers": "Documentos",
     "resetButton": "Reiniciar lista",
     "items": {
       "protections": "Protectores / Campanas",
@@ -152,10 +151,19 @@
       "pantalonBlanc": "Pantalón blanco",
       "veste": "Americana",
       "cravache": "Fusta",
-      "carnet": "Libreta",
-      "licence": "Licencia federativa",
-      "passeportCheval": "Pasaporte (DIE)"
-    }
+      "passeportCheval": "Carné del caballo",
+      "sangle": "Cincha",
+      "longe": "Cuerda guía",
+      "amortisseur": "Almohadilla de gel",
+      "seauEponge": "Cubo",
+      "materielPansage": "Material de aseo",
+      "chemise": "Camisa",
+      "eperons": "Espuelas",
+      "gants": "Guantes",
+      "giletProtection": "Chaleco de protección / Airbag"
+    },
+    "addPlaceholder": "Añadir un elemento…",
+    "addButton": "Añadir"
   },
   "coursePlan": {
     "title": "Editor de croquis",
@@ -171,14 +179,14 @@
     "save": "Guardar",
     "share": "Compartir",
     "shareErrorTitle": "No se pudo compartir el croquis.",
-    "hintNoPhoto": "Haz o elige una foto del croquis para empezar."
+    "hintNoPhoto": "Haz o elige una foto del croquis para empezar.",
+    "markerNumberLabel": "Número de zancadas",
+    "addMarkerButton": "Añadir"
   },
   "journal": {
     "title": "Diario",
     "subtitle": "Compara tus trancos reconocidos y dados con el vídeo de tu recorrido.",
     "nameLabel": "Prueba / Concurso",
-    "theoreticalLabel": "Trancos reconocidos",
-    "actualLabel": "Trancos dados",
     "notesLabel": "Notas del recorrido",
     "recordVideo": "Grabar",
     "pickVideo": "Elegir un vídeo",
@@ -187,10 +195,8 @@
     "addEntry": "Nuevo recorrido",
     "missingNameTitle": "Introduce el nombre de la prueba.",
     "deleteConfirmTitle": "¿Eliminar este recorrido?",
-    "deltaExact": "Clavado al reconocimiento",
-    "deltaLong_one": "{{count}} tranco de más",
-    "deltaLong_other": "{{count}} trancos de más",
-    "deltaShort_one": "{{count}} tranco de menos",
-    "deltaShort_other": "{{count}} trancos de menos"
+    "rankingLabel": "Clasificación",
+    "feelingLabel": "Cómo te sentiste",
+    "improvementLabel": "Qué mejorar"
   }
 }
