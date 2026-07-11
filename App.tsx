@@ -11,13 +11,16 @@ import {
 } from '@expo-google-fonts/playfair-display';
 import { SettingsProvider, useSettings } from './src/context/SettingsContext';
 import { HorseProvider } from './src/context/HorseContext';
+import { SubscriptionProvider } from './src/context/SubscriptionContext';
 import { RootNavigator } from './src/navigation/RootNavigator';
 
 function AppContent() {
   const { isDarkMode } = useSettings();
   return (
     <HorseProvider>
-      <RootNavigator />
+      <SubscriptionProvider>
+        <RootNavigator />
+      </SubscriptionProvider>
       <StatusBar style={isDarkMode ? 'light' : 'dark'} hidden />
       <NavigationBar hidden />
     </HorseProvider>

@@ -6,6 +6,7 @@ import * as Sharing from 'expo-sharing';
 import { useVideoPlayer, VideoView } from 'expo-video';
 import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
+import { remuxToFastStart } from '../lib/mp4Faststart';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
@@ -66,19 +67,23 @@ export function JournalScreen() {
   };
 
   const handleShareEntry = async (entry: JournalEntry) => {
-    if (entry.videoUri) {
-      const isAvailable = await Sharing.isAvailableAsync();
-      if (isAvailable) {
-        await Sharing.shareAsync(entry.videoUri);
-        return;
-      }
-    }
     const lines = [entry.name, entry.date];
     if (entry.ranking) lines.push(`${t('journal.rankingLabel')} : ${entry.ranking}`);
     if (entry.feeling) lines.push(`${t('journal.feelingLabel')} : ${entry.feeling}`);
     if (entry.improvement) lines.push(`${t('journal.improvementLabel')} : ${entry.improvement}`);
     if (entry.notes) lines.push(entry.notes);
     await Share.share({ message: lines.join('\n') });
+
+    if (entry.videoUri) {
+      const isAvailable = await Sharing.isAvailableAsync();
+      if (isAvailable) {
+        await Sharing.shareAsync(entry.videoUri, {
+          mimeType: 'video/mp4',
+          UTI: 'public.mpeg-4',
+          dialogTitle: entry.name,
+        });
+      }
+    }
   };
 
   const pickVideo = async (source: 'camera' | 'library') => {
@@ -90,11 +95,12 @@ export function JournalScreen() {
 
     const result =
       source === 'camera'
-        ? await ImagePicker.launchCameraAsync({ mediaTypes: ['videos'], quality: 0.7 })
-        : await ImagePicker.launchImageLibraryAsync({ mediaTypes: ['videos'], quality: 0.7 });
+        ? await ImagePicker.launchCameraAsync({ mediaTypes: ['videos'] })
+        : await ImagePicker.launchImageLibraryAsync({ mediaTypes: ['videos'] });
 
     if (result.canceled) return;
     const persistentUri = copyToPersistentStorage(result.assets[0].uri, `journal-${generateId()}.mp4`);
+    remuxToFastStart(persistentUri);
     setVideoUri(persistentUri);
   };
 
