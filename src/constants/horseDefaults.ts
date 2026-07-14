@@ -2,7 +2,7 @@ import { ObstacleType, Terrain, SpeedLevel } from '../types';
 
 export const DEFAULT_WITHERS_HEIGHT = 160; // cm, taille au garrot par défaut à la création d'une monture
 
-export const DEFAULT_RIDER_STEP_LENGTH = 0.75; // m, valeur de départ avant étalonnage
+export const DEFAULT_RIDER_STEP_LENGTH = 1; // m, valeur de départ avant étalonnage (convention usuelle du pas cavalier)
 
 // Vitesse (m/min) associée à chaque niveau, utilisée dans le calcul de l'amplitude réelle.
 export const SPEED_METERS_PER_MINUTE: Record<SpeedLevel, number> = {

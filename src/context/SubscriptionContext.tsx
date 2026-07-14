@@ -8,7 +8,8 @@ interface SubscriptionContextValue {
   isLoading: boolean;
   offering: PurchasesOffering | null;
   purchasePackage: (packageId: string) => Promise<void>;
-  restorePurchases: () => Promise<void>;
+  restorePurchases: () => Promise<boolean>;
+  refreshOfferings: () => void;
 }
 
 const SubscriptionContext = createContext<SubscriptionContextValue | null>(null);
@@ -22,6 +23,12 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   const [isLoading, setIsLoading] = useState(true);
   const [offering, setOffering] = useState<PurchasesOffering | null>(null);
 
+  const fetchOfferings = () => {
+    Purchases.getOfferings()
+      .then((offerings) => setOffering(offerings.current))
+      .catch(() => setOffering(null));
+  };
+
   useEffect(() => {
     const apiKey = Platform.OS === 'ios' ? REVENUECAT_API_KEYS.ios : REVENUECAT_API_KEYS.android;
     Purchases.configure({ apiKey });
@@ -30,9 +37,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
       .then((customerInfo) => setIsPro(hasProEntitlement(customerInfo)))
       .finally(() => setIsLoading(false));
 
-    Purchases.getOfferings()
-      .then((offerings) => setOffering(offerings.current))
-      .catch(() => setOffering(null));
+    fetchOfferings();
 
     const listener = (customerInfo: CustomerInfo) => setIsPro(hasProEntitlement(customerInfo));
     Purchases.addCustomerInfoUpdateListener(listener);
@@ -51,7 +56,9 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
 
   const restorePurchases = async () => {
     const customerInfo = await Purchases.restorePurchases();
-    setIsPro(hasProEntitlement(customerInfo));
+    const restoredIsPro = hasProEntitlement(customerInfo);
+    setIsPro(restoredIsPro);
+    return restoredIsPro;
   };
 
   const value: SubscriptionContextValue = {
@@ -60,6 +67,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     offering,
     purchasePackage,
     restorePurchases,
+    refreshOfferings: fetchOfferings,
   };
 
   return <SubscriptionContext.Provider value={value}>{children}</SubscriptionContext.Provider>;

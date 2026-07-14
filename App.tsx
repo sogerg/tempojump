@@ -11,15 +11,31 @@ import {
 } from '@expo-google-fonts/playfair-display';
 import { SettingsProvider, useSettings } from './src/context/SettingsContext';
 import { HorseProvider } from './src/context/HorseContext';
-import { SubscriptionProvider } from './src/context/SubscriptionContext';
+import { SubscriptionProvider, useSubscription } from './src/context/SubscriptionContext';
 import { RootNavigator } from './src/navigation/RootNavigator';
+import { PaywallScreen } from './src/screens/PaywallScreen';
+
+function SubscriptionGate({ children }: { children: React.ReactNode }) {
+  const { isPro, isLoading } = useSubscription();
+  const { colors } = useSettings();
+
+  if (isLoading) {
+    return <View style={{ flex: 1, backgroundColor: colors.background }} />;
+  }
+  if (!isPro) {
+    return <PaywallScreen />;
+  }
+  return <>{children}</>;
+}
 
 function AppContent() {
   const { isDarkMode } = useSettings();
   return (
     <HorseProvider>
       <SubscriptionProvider>
-        <RootNavigator />
+        <SubscriptionGate>
+          <RootNavigator />
+        </SubscriptionGate>
       </SubscriptionProvider>
       <StatusBar style={isDarkMode ? 'light' : 'dark'} hidden />
       <NavigationBar hidden />

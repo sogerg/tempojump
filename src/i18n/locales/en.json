@@ -5,6 +5,22 @@
     "delete": "Delete",
     "close": "Close"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Unlock every feature: metronome, course plan, journal and more.",
+    "trialBadge": "3-day free trial",
+    "weekly": "Weekly",
+    "yearly": "Yearly",
+    "perWeek": "/ week",
+    "perYear": "/ year",
+    "subscribe": "Subscribe",
+    "trialDisclaimer": "3-day free trial, then auto-renews. Cancel anytime.",
+    "restore": "Restore purchases",
+    "restoreNoneFound": "No active subscription found for this account.",
+    "purchaseError": "The purchase could not be completed. Please try again later.",
+    "loadError": "Couldn't load offers. Check your connection.",
+    "retry": "Retry"
+  },
   "nav": {
     "converter": "Converter",
     "combinations": "Combinations",
