@@ -42,5 +42,9 @@ yarn-error.*
 /ios
 /android
 
+# Store screenshot exports (large binaries, regenerated from Canva, not code)
+/doc/store_screenshots_apple
+/doc/store_screenshots_google
+
 # Claude Code session state
 .claude/scheduled_tasks.lock
