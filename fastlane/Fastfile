@@ -1,0 +1,24 @@
+default_platform(:android)
+
+platform :android do
+  desc "Met à jour le nom, les descriptions et les screenshots sur Google Play (sans toucher au build)"
+  lane :update_metadata do
+    supply(
+      skip_upload_apk: true,
+      skip_upload_aab: true,
+      skip_upload_changelogs: true
+    )
+  end
+end
+
+platform :ios do
+  desc "Met à jour le nom, les descriptions et les screenshots sur App Store Connect (sans toucher au build)"
+  lane :update_metadata do
+    deliver(
+      skip_binary_upload: true,
+      skip_metadata: false,
+      skip_screenshots: false,
+      force: true
+    )
+  end
+end

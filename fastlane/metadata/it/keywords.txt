@@ -1,0 +1,1 @@
+falcata,cavallo,galoppo,distanza,salto ostacoli,percorso,concorso,checklist,cavaliere,pony

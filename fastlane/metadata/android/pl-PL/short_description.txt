@@ -1,0 +1,1 @@
+Oblicz krok galopu, zaplanuj trasę i śledź swoje postępy w skokach.

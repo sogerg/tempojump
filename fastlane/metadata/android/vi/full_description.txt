@@ -1,0 +1,26 @@
+TempoJump là công cụ chuẩn bị cho người cưỡi ngựa nhảy vượt chướng ngại vật: tính sải bước, lên kế hoạch đường đua và theo dõi tiến bộ trước mỗi lượt thi.
+
+**Máy tính sải bước tức thì**
+Nhập số bước đếm được giữa hai chướng ngại vật và nhận ngay số sải bước lý thuyết và khuyến nghị, dựa trên kích thước ngựa, mặt sân và tốc độ.
+
+**Máy tính khoảng cách liên quan**
+Tính khoảng cách chính xác cần đặt giữa hai phần của một tổ hợp (đôi, ba), chướng ngại thẳng đứng hoặc oxer.
+
+**Máy đếm nhịp**
+Tìm và ghi nhớ nhịp phi nước đại chính xác bằng máy đếm nhịp âm thanh và rung, có thể điều chỉnh theo tốc độ mục tiêu.
+
+**Sơ đồ đường đua có chú thích**
+Chụp ảnh sơ đồ đường đua, vẽ lộ trình, đặt các điểm đánh dấu có số và so sánh nhiều phương án lộ trình (màu sắc khác nhau).
+
+**Nhật ký tập luyện**
+Ghi lại mỗi lượt thi: cảm nhận, xếp hạng, điểm cần cải thiện, video. Chia sẻ ghi chú và video với huấn luyện viên chỉ với một chạm.
+
+**Bài tập & Danh sách kiểm tra**
+Khoảng cách cho thanh mặt đất và cavaletti, danh sách kiểm tra trước thi đấu, bộ chuyển đổi đơn vị (hệ mét/hệ Anh).
+
+**Nhiều con ngựa**
+Quản lý nhiều con ngựa hoặc ngựa nhỏ, mỗi con có chiều cao vai riêng và sải bước đã hiệu chỉnh riêng.
+
+Có sẵn bằng tiếng Việt và nhiều ngôn ngữ khác.
+
+Truy cập đầy đủ vào TempoJump yêu cầu gói đăng ký Pro (bao gồm dùng thử miễn phí 3 ngày, có thể hủy bất cứ lúc nào).

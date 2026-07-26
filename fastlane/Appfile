@@ -1,0 +1,2 @@
+app_identifier("com.sogerg.monappcavalier") # bundle ID iOS / package name Android
+package_name("com.sogerg.monappcavalier")

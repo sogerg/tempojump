@@ -34,6 +34,10 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
+fastlane/.env
+fastlane/report.xml
+fastlane/Preview.html
 
 # typescript
 *.tsbuildinfo
@@ -45,6 +49,8 @@ yarn-error.*
 # Store screenshot exports (large binaries, regenerated from Canva, not code)
 /doc/store_screenshots_apple
 /doc/store_screenshots_google
+/fastlane/metadata/android/*/images
+/fastlane/screenshots
 
 # Claude Code session state
 .claude/scheduled_tasks.lock

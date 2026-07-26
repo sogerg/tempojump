@@ -1,0 +1,1 @@
+stride,horse,canter,distance,show jumping,course,related distances,checklist,pony,rider

@@ -8,15 +8,15 @@
     "userInterfaceStyle": "light",
     "ios": {
       "bundleIdentifier": "com.sogerg.monappcavalier",
-      "supportsTablet": true,
+      "supportsTablet": false,
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       },
-      "buildNumber": "4"
+      "buildNumber": "5"
     },
     "android": {
       "package": "com.sogerg.monappcavalier",
-      "versionCode": 2,
+      "versionCode": 3,
       "adaptiveIcon": {
         "backgroundColor": "#0A2844",
         "foregroundImage": "./assets/android-icon-foreground.png",

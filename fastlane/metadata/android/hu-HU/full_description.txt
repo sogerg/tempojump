@@ -1,0 +1,26 @@
+A TempoJump a díjugrató lovas felkészülési eszköze: számítsd ki a vágtalépéseket, tervezd meg a pályát és kövesd fejlődésed minden pályafutás előtt.
+
+**Azonnali vágtalépés-kalkulátor**
+Add meg a két akadály között megszámolt lépések számát, és azonnal megkapod az elméleti és ajánlott vágtalépések számát, a ló mérete, a talaj és a sebesség alapján.
+
+**Távolság-kalkulátor**
+Számítsd ki a pontos távolságot egy kombináció (dupla, tripla) két eleme között, fekvő vagy oxer.
+
+**Kadencia metronóm**
+Találd meg és jegyezd meg a helyes vágtakadenciát egy hang- és rezgésmetronóm segítségével, a célsebességhez igazítva.
+
+**Jegyzetelhető pályaterv**
+Fényképezd le a pályatervet, rajzold meg az útvonalat, helyezz el számozott jelöléseket, és hasonlíts össze több útvonal-lehetőséget (különböző színek).
+
+**Edzésnapló**
+Rögzíts minden pályafutást: érzés, helyezés, fejlesztendő területek, videó. Oszd meg jegyzeteidet és videóidat az edződdel egy érintéssel.
+
+**Gyakorlatok & Ellenőrző lista**
+Távolságok földrudakhoz és cavalettikhez, ellenőrző lista verseny előtt, mértékegység-átváltó (metrikus/birodalmi).
+
+**Több ló**
+Kezelj több lovat vagy pónit, mindegyiket saját mardmagassággal és saját kalibrált lépéshosszal.
+
+Elérhető magyarul és sok más nyelven.
+
+A TempoJump teljes eléréséhez Pro-előfizetés szükséges (3 napos ingyenes próbaidőszakkal, bármikor lemondható).

@@ -1,0 +1,26 @@
+TempoJump je přípravný nástroj pro jezdce v parkurovém skákání: spočítej cvalové kroky, naplánuj trasu a sleduj svůj pokrok před každou jízdou.
+
+**Okamžitá kalkulačka cvalových kroků**
+Zadej počet kroků napočítaných mezi dvěma překážkami a okamžitě získej teoretický a doporučený počet cvalových kroků, podle velikosti koně, povrchu a rychlosti.
+
+**Kalkulačka vzdáleností**
+Vypočítej přesnou vzdálenost mezi dvěma prvky kombinace (dvojskok, trojskok), koláda nebo oxer.
+
+**Metronom kadence**
+Najdi a zapamatuj si správnou cvalovou kadenci pomocí zvukového a vibračního metronomu, nastavitelného podle cílové rychlosti.
+
+**Plán trasy s poznámkami**
+Vyfoť si plán trasy, zakresli jízdu, umísti očíslované značky a porovnej několik variant trasy (různé barvy).
+
+**Tréninkový deník**
+Zaznamenej každou jízdu: pocity, umístění, oblasti ke zlepšení, video. Sdílej své záznamy a videa s trenérem jedním dotykem.
+
+**Cvičení a checklist**
+Vzdálenosti pro kavaletky a žerdě na zemi, checklist před parkurem, převodník jednotek (metrický/imperiální).
+
+**Více koní**
+Spravuj více koní nebo poníků, každý s vlastní kohoutkovou výškou a vlastním kalibrovaným krokem.
+
+Dostupné v češtině a mnoha dalších jazycích.
+
+Plný přístup k TempoJump vyžaduje předplatné Pro (včetně bezplatné 3denní zkušební doby, kdykoli zrušitelné).
