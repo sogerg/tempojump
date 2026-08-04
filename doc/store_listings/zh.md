@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-马术步幅计算器
+TempoJump: 马步幅计算
 
 ## Short Description (80 char max)
 

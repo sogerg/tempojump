@@ -24,3 +24,5 @@ TempoJump คือเครื่องมือเตรียมตัวส�
 พร้อมใช้งานภาษาไทยและอีกหลายภาษา
 
 การเข้าถึง TempoJump แบบเต็มรูปแบบต้องสมัครสมาชิก Pro (รวมทดลองใช้ฟรี 3 วัน ยกเลิกได้ทุกเมื่อ)
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

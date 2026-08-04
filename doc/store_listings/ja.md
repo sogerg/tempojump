@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-馬のストライド計算機
+TempoJump: 馬ストライド計算
 
 ## Short Description (80 char max)
 

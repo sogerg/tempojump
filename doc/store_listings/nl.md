@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Galopsprong Calculator
+TempoJump: Galopsprong
 
 ## Short Description (80 char max)
 

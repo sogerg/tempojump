@@ -24,3 +24,5 @@ Zarządzaj kilkoma końmi lub kucykami, każdy z własną wysokością w kłębi
 Dostępne w języku polskim i wielu innych językach.
 
 Pełny dostęp do TempoJump wymaga subskrypcji Pro (bezpłatny 3-dniowy okres próbny w cenie, można anulować w każdej chwili).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

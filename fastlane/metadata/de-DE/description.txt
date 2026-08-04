@@ -24,3 +24,5 @@ Verwalte mehrere Pferde oder Ponys, jedes mit eigenem Stockmaß und eigener kali
 Verfügbar auf Deutsch und in vielen weiteren Sprachen.
 
 Der vollständige Zugriff auf TempoJump erfordert ein Pro-Abo (3 Tage kostenlose Testphase inklusive, jederzeit kündbar).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

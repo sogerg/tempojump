@@ -24,3 +24,5 @@ TempoJump هو أداة تحضير فارس قفز الحواجز: احسب خط
 متوفر باللغة العربية وبلغات أخرى عديدة.
 
 يتطلب الوصول الكامل إلى TempoJump اشتراك Pro (يتضمن تجربة مجانية لمدة 3 أيام، قابل للإلغاء في أي وقت).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

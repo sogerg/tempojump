@@ -24,3 +24,5 @@ Administrer flere heste eller ponyer, hver med sin egen stangmål og sit eget ka
 Tilgængelig på dansk og mange andre sprog.
 
 Fuld adgang til TempoJump kræver et Pro-abonnement (3 dages gratis prøveperiode inkluderet, kan opsiges når som helst).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

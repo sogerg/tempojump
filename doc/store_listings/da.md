@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Galopspring Beregner
+TempoJump: Galopspring Hest
 
 ## Short Description (80 char max)
 

@@ -24,3 +24,5 @@ Spravuj více koní nebo poníků, každý s vlastní kohoutkovou výškou a vla
 Dostupné v češtině a mnoha dalších jazycích.
 
 Plný přístup k TempoJump vyžaduje předplatné Pro (včetně bezplatné 3denní zkušební doby, kdykoli zrušitelné).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

@@ -1,1 +1,1 @@
-Calcul de Foulées de Cheval
+TempoJump: Foulées de Cheval

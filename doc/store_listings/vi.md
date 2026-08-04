@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-Máy Tính Sải Bước Ngựa
+TempoJump: Sải Bước Ngựa
 
 ## Short Description (80 char max)
 

@@ -12,7 +12,7 @@ Nota: verbos na forma "você" (neutra) para cobrir os mercados BR e PT.
 
 ## App Name (30 char max)
 
-Calculadora de Passadas
+TempoJump: Passadas Cavalo
 
 ## Short Description (80 char max)
 

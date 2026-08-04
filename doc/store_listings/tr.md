@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-At Adım Hesaplayıcı
+TempoJump: At Adımı
 
 ## Short Description (80 char max)
 

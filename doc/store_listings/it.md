@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Calcolatore di Falcate
+TempoJump: Falcate Cavallo
 
 ## Short Description (80 char max)
 

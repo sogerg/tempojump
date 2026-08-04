@@ -24,3 +24,5 @@ Gerencie vários cavalos ou pôneis, cada um com sua própria altura de garupa e
 Disponível em português e em muitos outros idiomas.
 
 O acesso completo ao TempoJump requer uma assinatura Pro (teste grátis de 3 dias incluído, cancelável a qualquer momento).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

@@ -24,3 +24,5 @@ Kezelj több lovat vagy pónit, mindegyiket saját mardmagassággal és saját k
 Elérhető magyarul és sok más nyelven.
 
 A TempoJump teljes eléréséhez Pro-előfizetés szükséges (3 napos ingyenes próbaidőszakkal, bármikor lemondható).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

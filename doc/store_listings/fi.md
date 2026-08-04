@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Laukka-askel Laskuri
+TempoJump: Laukka-askel
 
 ## Short Description (80 char max)
 

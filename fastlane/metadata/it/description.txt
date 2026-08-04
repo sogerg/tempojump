@@ -24,3 +24,5 @@ Gestisci più cavalli o pony, ciascuno con la propria altezza al garrese e la pr
 Disponibile in italiano e molte altre lingue.
 
 L'accesso completo a TempoJump richiede un abbonamento Pro (prova gratuita di 3 giorni inclusa, annullabile in qualsiasi momento).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

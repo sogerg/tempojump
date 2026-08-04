@@ -19,7 +19,12 @@
     "restoreNoneFound": "Aucun abonnement actif trouvé pour ce compte.",
     "purchaseError": "L'achat n'a pas pu aboutir. Réessaie plus tard.",
     "loadError": "Impossible de charger les offres. Vérifie ta connexion.",
-    "retry": "Réessayer"
+    "retry": "Réessayer",
+    "reviewCodePlaceholder": "Code d'accès",
+    "reviewCodeSubmit": "Valider",
+    "reviewCodeInvalid": "Code incorrect.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfUse": "Conditions d'utilisation"
   },
   "nav": {
     "converter": "Convertisseur",

@@ -24,3 +24,5 @@ Hallinnoi useita hevosia tai poneja, kullakin oma säkäkorkeus ja oma kalibroit
 Saatavilla suomeksi ja monella muulla kielellä.
 
 TempoJumpin täysi käyttö edellyttää Pro-tilausta (sisältää 3 päivän maksuttoman kokeilun, peruttavissa milloin tahansa).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

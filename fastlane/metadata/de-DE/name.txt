@@ -1,1 +1,1 @@
-Galoppsprung-Rechner
+TempoJump: Galoppsprung

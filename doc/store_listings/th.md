@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-เครื่องคำนวณก้าวม้า
+TempoJump: ก้าวม้า
 
 ## Short Description (80 char max)
 

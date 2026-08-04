@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Calculadora de Zancadas
+TempoJump: Zancadas Caballo
 
 ## Short Description (80 char max)
 

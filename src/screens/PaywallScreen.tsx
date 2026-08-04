@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Alert, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Alert, Linking, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { PACKAGE_TYPE, PurchasesPackage } from 'react-native-purchases';
 import { useSubscription } from '../context/SubscriptionContext';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
+import { PRIVACY_POLICY_URL, TERMS_OF_USE_URL } from '../constants/revenuecat';
+
+const REVIEW_CODE_TAP_THRESHOLD = 5;
 
 function packageLabel(pkg: PurchasesPackage, t: (key: string) => string): { title: string; period: string } {
   if (pkg.packageType === PACKAGE_TYPE.ANNUAL) {
@@ -16,10 +19,32 @@ function packageLabel(pkg: PurchasesPackage, t: (key: string) => string): { titl
 export function PaywallScreen() {
   const { t } = useTranslation();
   const { colors } = useSettings();
-  const { offering, purchasePackage, restorePurchases, refreshOfferings } = useSubscription();
+  const { offering, purchasePackage, restorePurchases, refreshOfferings, activateReviewBypass } = useSubscription();
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [isPurchasing, setIsPurchasing] = useState(false);
   const [isRestoring, setIsRestoring] = useState(false);
+  const [titleTapCount, setTitleTapCount] = useState(0);
+  const [showReviewCodeInput, setShowReviewCodeInput] = useState(false);
+  const [reviewCode, setReviewCode] = useState('');
+
+  const handleTitlePress = () => {
+    const nextCount = titleTapCount + 1;
+    if (nextCount >= REVIEW_CODE_TAP_THRESHOLD) {
+      setShowReviewCodeInput(true);
+      setTitleTapCount(0);
+    } else {
+      setTitleTapCount(nextCount);
+    }
+  };
+
+  const handleReviewCodeSubmit = async () => {
+    const ok = await activateReviewBypass(reviewCode);
+    if (!ok) {
+      Alert.alert(t('paywall.title'), t('paywall.reviewCodeInvalid'));
+    }
+    setReviewCode('');
+    setShowReviewCodeInput(false);
+  };
 
   const packages = offering?.availablePackages ?? [];
   const activeId = selectedId ?? packages.find((p) => p.packageType === PACKAGE_TYPE.ANNUAL)?.identifier ?? packages[0]?.identifier ?? null;
@@ -55,12 +80,34 @@ export function PaywallScreen() {
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       <ScrollView contentContainerStyle={styles.content}>
-        <Text style={[styles.title, { color: colors.text, fontFamily: FONTS.heading }]}>{t('paywall.title')}</Text>
+        <Text
+          style={[styles.title, { color: colors.text, fontFamily: FONTS.heading }]}
+          onPress={handleTitlePress}
+        >
+          {t('paywall.title')}
+        </Text>
         <Text style={[styles.subtitle, { color: colors.textMuted }]}>{t('paywall.subtitle')}</Text>
 
         <View style={[styles.badge, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
           <Text style={[styles.badgeText, { color: colors.accentGold }]}>{t('paywall.trialBadge')}</Text>
         </View>
+
+        {showReviewCodeInput && (
+          <View style={[styles.reviewCodeRow, { borderColor: colors.cardBorder }]}>
+            <TextInput
+              style={[styles.reviewCodeInput, { color: colors.text, borderColor: colors.cardBorder }]}
+              value={reviewCode}
+              onChangeText={setReviewCode}
+              placeholder={t('paywall.reviewCodePlaceholder')}
+              placeholderTextColor={colors.placeholder}
+              autoCapitalize="characters"
+              autoCorrect={false}
+            />
+            <TouchableOpacity style={[styles.reviewCodeButton, { backgroundColor: colors.primary }]} onPress={handleReviewCodeSubmit}>
+              <Text style={{ color: colors.primaryText, fontWeight: '700' }}>{t('paywall.reviewCodeSubmit')}</Text>
+            </TouchableOpacity>
+          </View>
+        )}
 
         {!offering && (
           <View style={styles.emptyState}>
@@ -114,6 +161,16 @@ export function PaywallScreen() {
             <Text style={[styles.restoreText, { color: colors.textMuted }]}>{t('paywall.restore')}</Text>
           )}
         </TouchableOpacity>
+
+        <View style={styles.legalRow}>
+          <Text style={[styles.legalLink, { color: colors.textMuted }]} onPress={() => Linking.openURL(PRIVACY_POLICY_URL)}>
+            {t('paywall.privacyPolicy')}
+          </Text>
+          <Text style={{ color: colors.textMuted }}> · </Text>
+          <Text style={[styles.legalLink, { color: colors.textMuted }]} onPress={() => Linking.openURL(TERMS_OF_USE_URL)}>
+            {t('paywall.termsOfUse')}
+          </Text>
+        </View>
       </ScrollView>
     </View>
   );
@@ -149,6 +206,25 @@ const styles = StyleSheet.create({
   badgeText: {
     fontSize: 13,
     fontWeight: '700',
+  },
+  reviewCodeRow: {
+    flexDirection: 'row',
+    gap: 8,
+    width: '100%',
+    marginBottom: 20,
+  },
+  reviewCodeInput: {
+    flex: 1,
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    fontSize: 14,
+  },
+  reviewCodeButton: {
+    borderRadius: 10,
+    paddingHorizontal: 16,
+    justifyContent: 'center',
   },
   emptyState: {
     alignItems: 'center',
@@ -207,6 +283,14 @@ const styles = StyleSheet.create({
   },
   restoreText: {
     fontSize: 14,
+    textDecorationLine: 'underline',
+  },
+  legalRow: {
+    flexDirection: 'row',
+    marginTop: 16,
+  },
+  legalLink: {
+    fontSize: 12,
     textDecorationLine: 'underline',
   },
 });

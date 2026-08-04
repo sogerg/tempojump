@@ -24,3 +24,5 @@ Birden fazla at veya midilliyi yönet, her birinin kendi cidago yüksekliği ve 
 Türkçe ve birçok başka dilde mevcuttur.
 
 TempoJump'a tam erişim, Pro aboneliği gerektirir (3 günlük ücretsiz deneme dahil, istediğin zaman iptal edilebilir).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

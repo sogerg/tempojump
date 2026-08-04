@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Galoppsprang Kalkulator
+TempoJump: Galoppsprang Hest
 
 ## Short Description (80 char max)
 

@@ -24,3 +24,5 @@ Quản lý nhiều con ngựa hoặc ngựa nhỏ, mỗi con có chiều cao vai
 Có sẵn bằng tiếng Việt và nhiều ngôn ngữ khác.
 
 Truy cập đầy đủ vào TempoJump yêu cầu gói đăng ký Pro (bao gồm dùng thử miễn phí 3 ngày, có thể hủy bất cứ lúc nào).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

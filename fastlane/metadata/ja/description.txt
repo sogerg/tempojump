@@ -24,3 +24,5 @@ TempoJumpは障害飛越ライダーのための準備ツールです。スト�
 日本語を含む多数の言語に対応。
 
 TempoJumpのフル機能利用にはProサブスクリプションが必要です（3日間の無料トライアル付き、いつでも解約可能）。
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

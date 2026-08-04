@@ -19,7 +19,12 @@
     "restoreNoneFound": "No active subscription found for this account.",
     "purchaseError": "The purchase could not be completed. Please try again later.",
     "loadError": "Couldn't load offers. Check your connection.",
-    "retry": "Retry"
+    "retry": "Retry",
+    "reviewCodePlaceholder": "Access code",
+    "reviewCodeSubmit": "Submit",
+    "reviewCodeInvalid": "Invalid code.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms of Use"
   },
   "nav": {
     "converter": "Converter",

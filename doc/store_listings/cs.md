@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Kalkulačka Cvalových Kroků
+TempoJump: Cvalové Kroky
 
 ## Short Description (80 char max)
 

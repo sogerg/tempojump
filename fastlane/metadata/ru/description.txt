@@ -24,3 +24,5 @@ TempoJump — инструмент подготовки всадника в ко
 Доступно на русском и многих других языках.
 
 Полный доступ к TempoJump требует подписки Pro (включён бесплатный 3-дневный пробный период, отмена в любой момент).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

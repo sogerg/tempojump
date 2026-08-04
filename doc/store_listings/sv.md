@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Galoppsteg Kalkylator
+TempoJump: Galoppsteg Häst
 
 ## Short Description (80 char max)
 

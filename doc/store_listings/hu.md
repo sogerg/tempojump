@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Vágtalépés Kalkulátor
+TempoJump: Vágtalépés
 
 ## Short Description (80 char max)
 

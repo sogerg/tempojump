@@ -24,3 +24,5 @@ Administrer flere hester eller ponnier, hver med egen manke­høyde og eget kali
 Tilgjengelig på norsk og mange andre språk.
 
 Full tilgang til TempoJump krever et Pro-abonnement (3 dagers gratis prøveperiode inkludert, kan sies opp når som helst).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

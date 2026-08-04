@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Galoppsprung-Rechner
+TempoJump: Galoppsprung
 
 ## Short Description (80 char max)
 

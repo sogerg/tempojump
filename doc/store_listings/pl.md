@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Kalkulator Kroku Galopu
+TempoJump: Krok Galopu Konia
 
 ## Short Description (80 char max)
 

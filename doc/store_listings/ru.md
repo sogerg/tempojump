@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-Калькулятор Темпа Лошади
+TempoJump: Темп Лошади
 
 ## Short Description (80 char max)
 

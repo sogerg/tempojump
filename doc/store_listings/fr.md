@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Calcul de Foulées de Cheval
+TempoJump: Foulées de Cheval
 
 ## Short Description (80 char max)
 
@@ -19,6 +19,8 @@ Calcule tes foulées, prépare ton parcours et progresse à cheval.
 ## Full Description
 
 TempoJump est l'outil de préparation du cavalier de saut d'obstacles : calcule tes foulées, prépare ton parcours et suis ta progression, avant chaque reprise.
+
+IMPORTANT : TempoJump fonctionne par abonnement payant (Hebdomadaire ou Annuel, essai gratuit de 3 jours inclus). Toutes les fonctionnalités ci-dessous nécessitent un abonnement actif pour être utilisées.
 
 **Calcul de foulées instantané**
 Entre le nombre de pas comptés entre deux obstacles et obtiens en un instant le nombre de foulées théoriques et conseillées, selon la taille de ta monture, le terrain et la vitesse.

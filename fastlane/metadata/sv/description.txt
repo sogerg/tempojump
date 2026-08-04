@@ -24,3 +24,5 @@ Hantera flera hästar eller ponnyer, var och en med egen mankhöjd och eget kali
 Tillgänglig på svenska och många andra språk.
 
 Full tillgång till TempoJump kräver ett Pro-abonnemang (3 dagars gratis provperiod ingår, kan avslutas när som helst).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

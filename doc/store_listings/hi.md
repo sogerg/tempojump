@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-घोड़े की चाल कैलकुलेटर
+TempoJump: घोड़े की चाल
 
 ## Short Description (80 char max)
 

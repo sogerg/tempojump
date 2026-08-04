@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Calculator Pași de Galop
+TempoJump: Pași de Galop
 
 ## Short Description (80 char max)
 

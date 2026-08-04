@@ -24,3 +24,5 @@ Gestionează mai mulți cai sau ponei, fiecare cu propria înălțime la greabă
 Disponibil în română și în multe alte limbi.
 
 Accesul complet la TempoJump necesită un abonament Pro (include perioadă de probă gratuită de 3 zile, anulabil oricând).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/

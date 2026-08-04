@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-حاسبة خطوات الحصان
+TempoJump: خطوات الحصان
 
 ## Short Description (80 char max)
 

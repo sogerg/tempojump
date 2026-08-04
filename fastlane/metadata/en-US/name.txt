@@ -1,1 +1,1 @@
-Horse Stride Calculator
+TempoJump: Horse Stride Calc

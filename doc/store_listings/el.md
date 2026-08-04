@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-Υπολογιστής Διασκελισμού
+TempoJump: Διασκελισμός
 
 ## Short Description (80 char max)
 

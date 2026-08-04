@@ -10,7 +10,7 @@
 
 ## App Name (30 char max)
 
-Horse Stride Calculator
+TempoJump: Horse Stride Calc
 
 ## Short Description (80 char max)
 
@@ -19,6 +19,8 @@ Calculate strides, plan your course, and track your show jumping progress.
 ## Full Description
 
 TempoJump is the show jumping rider's prep tool: calculate strides, plan your course and track your progress, before every round.
+
+IMPORTANT: TempoJump requires a paid subscription (Weekly or Yearly, 3-day free trial included). Every feature listed below requires an active subscription to use.
 
 **Instant stride calculator**
 Enter the number of steps counted between two fences and instantly get the theoretical and suggested number of strides, based on your horse's size, the footing and the speed.

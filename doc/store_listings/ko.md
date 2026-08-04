@@ -12,7 +12,7 @@
 
 ## App Name (30 char max)
 
-말 보폭 계산기
+TempoJump: 말 보폭 계산
 
 ## Short Description (80 char max)
 

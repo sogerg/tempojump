@@ -24,3 +24,5 @@
 Διαθέσιμο στα ελληνικά και σε πολλές άλλες γλώσσες.
 
 Η πλήρης πρόσβαση στο TempoJump απαιτεί συνδρομή Pro (περιλαμβάνεται δωρεάν δοκιμή 3 ημερών, ακύρωση ανά πάσα στιγμή).
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
