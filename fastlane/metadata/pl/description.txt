@@ -1,5 +1,7 @@
 TempoJump to narzędzie przygotowawcze dla jeźdźca skoków przez przeszkody: oblicz krok galopu, zaplanuj trasę i śledź swoje postępy przed każdym przejazdem.
 
+WAŻNE: TempoJump wymaga płatnej subskrypcji (tygodniowej lub rocznej, w tym bezpłatny 3-dniowy okres próbny). Wszystkie funkcje wymienione poniżej wymagają aktywnej subskrypcji, aby z nich korzystać.
+
 **Natychmiastowy kalkulator kroku galopu**
 Wpisz liczbę policzonych kroków między dwiema przeszkodami i od razu otrzymaj teoretyczną oraz zalecaną liczbę kroków galopu, w zależności od wzrostu konia, podłoża i prędkości.
 

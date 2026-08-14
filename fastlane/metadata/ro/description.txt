@@ -1,5 +1,7 @@
 TempoJump este instrumentul de pregătire pentru călărețul de sărituri peste obstacole: calculează pașii de galop, planifică traseul și urmărește-ți progresul înainte de fiecare parcurs.
 
+IMPORTANT: TempoJump necesită un abonament plătit (săptămânal sau anual, cu 3 zile de probă gratuită incluse). Toate funcțiile enumerate mai jos necesită un abonament activ pentru utilizare.
+
 **Calculator instant de pași de galop**
 Introdu numărul de pași numărați între două obstacole și obții instant numărul teoretic și recomandat de pași de galop, în funcție de mărimea calului, teren și viteză.
 

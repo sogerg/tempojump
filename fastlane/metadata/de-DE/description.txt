@@ -1,5 +1,7 @@
 TempoJump ist das Vorbereitungstool für Springreiter: berechne deine Galoppsprünge, plane deinen Parcours und verfolge deinen Fortschritt vor jedem Ritt.
 
+WICHTIG: TempoJump erfordert ein kostenpflichtiges Abo (wöchentlich oder jährlich, inklusive 3 Tage kostenloser Testphase). Alle unten aufgeführten Funktionen erfordern ein aktives Abo.
+
 **Sofortiger Galoppsprung-Rechner**
 Gib die Anzahl der gezählten Schritte zwischen zwei Hindernissen ein und erhalte sofort die theoretische und empfohlene Anzahl an Galoppsprüngen, basierend auf der Größe deines Pferdes, dem Boden und der Geschwindigkeit.
 

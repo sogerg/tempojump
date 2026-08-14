@@ -1,5 +1,7 @@
 TempoJump on esteratsastajan valmistautumistyökalu: laske laukka-askeleet, suunnittele ratasi ja seuraa edistymistäsi ennen jokaista ratasuoritusta.
 
+TÄRKEÄÄ: TempoJump vaatii maksullisen tilauksen (viikoittainen tai vuosittainen, sisältää 3 päivän ilmaisen kokeilujakson). Kaikki alla luetellut ominaisuudet vaativat aktiivisen tilauksen käyttöä varten.
+
 **Välitön laukka-askel-laskuri**
 Syötä kahden esteen välillä laskettujen askelten määrä ja saat heti teoreettisen ja suositellun laukka-askelmäärän hevosesi koon, pohjan ja nopeuden mukaan.
 

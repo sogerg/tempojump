@@ -1,5 +1,7 @@
 TempoJump es la herramienta de preparación del jinete de salto de obstáculos: calcula tus zancadas, prepara tu pista y sigue tu progreso, antes de cada recorrido.
 
+IMPORTANTE: TempoJump requiere una suscripción de pago (semanal o anual, con 3 días de prueba gratuita incluidos). Todas las funciones que se indican a continuación requieren una suscripción activa para poder usarse.
+
 **Calculadora instantánea de zancadas**
 Introduce el número de pasos contados entre dos obstáculos y obtén al instante el número de zancadas teóricas y recomendadas, según el tamaño de tu caballo, el terreno y la velocidad.
 

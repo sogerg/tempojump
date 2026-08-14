@@ -1,5 +1,7 @@
 TempoJump er forberedelsesværktøjet for springrytteren: beregn dine galopspring, planlæg din bane og følg dine fremskridt før hver runde.
 
+VIGTIGT: TempoJump kræver et betalt abonnement (ugentligt eller årligt, med 3 dages gratis prøveperiode inkluderet). Alle nedenstående funktioner kræver et aktivt abonnement for at kunne bruges.
+
 **Øjeblikkelig galopspring-beregner**
 Indtast antal talte skridt mellem to forhindringer, og få straks det teoretiske og anbefalede antal galopspring, baseret på hestens størrelse, bunden og hastigheden.
 

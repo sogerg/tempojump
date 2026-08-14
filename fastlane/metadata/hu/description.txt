@@ -1,5 +1,7 @@
 A TempoJump a díjugrató lovas felkészülési eszköze: számítsd ki a vágtalépéseket, tervezd meg a pályát és kövesd fejlődésed minden pályafutás előtt.
 
+FONTOS: A TempoJump fizetős előfizetést igényel (heti vagy éves, 3 napos ingyenes próbaidőszakkal). Az alább felsorolt összes funkció aktív előfizetést igényel a használathoz.
+
 **Azonnali vágtalépés-kalkulátor**
 Add meg a két akadály között megszámolt lépések számát, és azonnal megkapod az elméleti és ajánlott vágtalépések számát, a ló mérete, a talaj és a sebesség alapján.
 

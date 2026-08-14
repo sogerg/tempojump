@@ -1,5 +1,7 @@
 TempoJump, engel atlama biniciliği için hazırlık aracıdır: dörtnal adımını hesapla, parkurunu planla ve her turdan önce gelişimini takip et.
 
+ÖNEMLİ: TempoJump ücretli abonelik gerektirir (haftalık veya yıllık, 3 günlük ücretsiz deneme dahil). Aşağıda listelenen tüm özellikler kullanılabilmek için aktif abonelik gerektirir.
+
 **Anında dörtnal adım hesaplayıcı**
 İki engel arasında sayılan adım sayısını gir ve atının boyuna, zemine ve hıza göre teorik ve önerilen dörtnal adım sayısını anında al.
 

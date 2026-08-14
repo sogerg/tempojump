@@ -1,5 +1,7 @@
 TempoJump è lo strumento di preparazione del cavaliere di salto ostacoli: calcola le tue falcate, prepara il tuo percorso e segui i tuoi progressi, prima di ogni ripresa.
 
+IMPORTANTE: TempoJump richiede un abbonamento a pagamento (settimanale o annuale, con prova gratuita di 3 giorni inclusa). Tutte le funzionalità elencate di seguito richiedono un abbonamento attivo per essere utilizzate.
+
 **Calcolatore istantaneo di falcate**
 Inserisci il numero di passi contati tra due ostacoli e ottieni all'istante il numero di falcate teoriche e consigliate, in base alla taglia del tuo cavallo, al terreno e alla velocità.
 

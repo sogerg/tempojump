@@ -1,5 +1,7 @@
 TempoJump er forberedelsesverktøyet for sprangrytteren: regn ut galoppsprang, planlegg banen og følg fremgangen din før hver runde.
 
+VIKTIG: TempoJump krever et betalt abonnement (ukentlig eller årlig, inkludert 3 dagers gratis prøveperiode). Alle funksjonene nedenfor krever et aktivt abonnement for å kunne brukes.
+
 **Umiddelbar galoppsprang-kalkulator**
 Skriv inn antall talte skritt mellom to hindre, og få umiddelbart det teoretiske og anbefalte antallet galoppsprang, basert på hestens størrelse, underlaget og farten.
 

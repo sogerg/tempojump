@@ -1,5 +1,7 @@
 TempoJump é a ferramenta de preparação do cavaleiro de salto: calcule suas passadas, planeje sua pista e acompanhe seu progresso, antes de cada prova.
 
+IMPORTANTE: o TempoJump requer uma assinatura paga (semanal ou anual, com teste gratuito de 3 dias incluído). Todas as funcionalidades abaixo requerem uma assinatura ativa para serem utilizadas.
+
 **Calculadora instantânea de passadas**
 Digite o número de passos contados entre dois obstáculos e obtenha na hora o número de passadas teóricas e recomendadas, conforme o porte do cavalo, o piso e a velocidade.
 
