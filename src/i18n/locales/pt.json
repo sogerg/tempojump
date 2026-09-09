@@ -5,6 +5,27 @@
     "delete": "Eliminar",
     "close": "Fechar"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Desbloqueie todos os recursos: metrônomo, plano de percurso, diário e muito mais.",
+    "trialBadge": "Teste grátis de 3 dias",
+    "weekly": "Semanal",
+    "yearly": "Anual",
+    "perWeek": "/ semana",
+    "perYear": "/ ano",
+    "subscribe": "Assinar",
+    "trialDisclaimer": "Teste grátis de 3 dias, depois renovação automática. Cancele quando quiser.",
+    "restore": "Restaurar compras",
+    "restoreNoneFound": "Nenhuma assinatura ativa encontrada para esta conta.",
+    "purchaseError": "Não foi possível concluir a compra. Tente novamente mais tarde.",
+    "loadError": "Não foi possível carregar as ofertas. Verifique sua conexão.",
+    "retry": "Tentar novamente",
+    "reviewCodePlaceholder": "Código de acesso",
+    "reviewCodeSubmit": "Enviar",
+    "reviewCodeInvalid": "Código inválido.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfUse": "Termos de Uso"
+  },
   "nav": {
     "converter": "Conversor",
     "combinations": "Combinações",

@@ -5,6 +5,27 @@
     "delete": "삭제",
     "close": "닫기"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "메트로놈, 코스 플랜, 저널 등 모든 기능을 잠금 해제하세요.",
+    "trialBadge": "3일 무료 체험",
+    "weekly": "주간",
+    "yearly": "연간",
+    "perWeek": "/ 주",
+    "perYear": "/ 년",
+    "subscribe": "구독하기",
+    "trialDisclaimer": "3일 무료 체험 후 자동 갱신됩니다. 언제든지 취소할 수 있습니다.",
+    "restore": "구매 복원",
+    "restoreNoneFound": "이 계정에 활성화된 구독이 없습니다.",
+    "purchaseError": "구매를 완료할 수 없습니다. 나중에 다시 시도해 주세요.",
+    "loadError": "혜택을 불러올 수 없습니다. 연결 상태를 확인해 주세요.",
+    "retry": "다시 시도",
+    "reviewCodePlaceholder": "액세스 코드",
+    "reviewCodeSubmit": "제출",
+    "reviewCodeInvalid": "잘못된 코드입니다.",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfUse": "이용약관"
+  },
   "nav": {
     "converter": "변환기",
     "combinations": "복합 장애물",

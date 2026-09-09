@@ -5,6 +5,27 @@
     "delete": "Slet",
     "close": "Luk"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Lås op for alle funktioner: metronom, ruteplan, dagbog og mere.",
+    "trialBadge": "3 dages gratis prøveperiode",
+    "weekly": "Ugentligt",
+    "yearly": "Årligt",
+    "perWeek": "/ uge",
+    "perYear": "/ år",
+    "subscribe": "Abonnér",
+    "trialDisclaimer": "3 dages gratis prøveperiode, herefter fornyes automatisk. Kan opsiges når som helst.",
+    "restore": "Gendan køb",
+    "restoreNoneFound": "Intet aktivt abonnement fundet for denne konto.",
+    "purchaseError": "Købet kunne ikke gennemføres. Prøv igen senere.",
+    "loadError": "Kunne ikke indlæse tilbud. Tjek din forbindelse.",
+    "retry": "Prøv igen",
+    "reviewCodePlaceholder": "Adgangskode",
+    "reviewCodeSubmit": "Send",
+    "reviewCodeInvalid": "Ugyldig kode.",
+    "privacyPolicy": "Privatlivspolitik",
+    "termsOfUse": "Betingelser for brug"
+  },
   "nav": {
     "converter": "Konverter",
     "combinations": "Kombinationer",

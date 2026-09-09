@@ -5,6 +5,27 @@
     "delete": "删除",
     "close": "关闭"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "解锁全部功能：节拍器、路线规划、日志等更多内容。",
+    "trialBadge": "3天免费试用",
+    "weekly": "每周",
+    "yearly": "每年",
+    "perWeek": "/ 周",
+    "perYear": "/ 年",
+    "subscribe": "订阅",
+    "trialDisclaimer": "3天免费试用，之后自动续订。随时可取消。",
+    "restore": "恢复购买",
+    "restoreNoneFound": "未找到此账户的有效订阅。",
+    "purchaseError": "购买未能完成，请稍后重试。",
+    "loadError": "无法加载优惠内容，请检查网络连接。",
+    "retry": "重试",
+    "reviewCodePlaceholder": "访问码",
+    "reviewCodeSubmit": "提交",
+    "reviewCodeInvalid": "访问码无效。",
+    "privacyPolicy": "隐私政策",
+    "termsOfUse": "使用条款"
+  },
   "nav": {
     "converter": "换算器",
     "combinations": "组合障碍",

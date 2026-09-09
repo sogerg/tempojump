@@ -5,6 +5,27 @@
     "delete": "Sil",
     "close": "Kapat"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Tüm özelliklerin kilidini aç: metronom, parkur planı, günlük ve daha fazlası.",
+    "trialBadge": "3 günlük ücretsiz deneme",
+    "weekly": "Haftalık",
+    "yearly": "Yıllık",
+    "perWeek": "/ hafta",
+    "perYear": "/ yıl",
+    "subscribe": "Abone ol",
+    "trialDisclaimer": "3 günlük ücretsiz deneme, ardından otomatik olarak yenilenir. İstediğin zaman iptal edebilirsin.",
+    "restore": "Satın alımları geri yükle",
+    "restoreNoneFound": "Bu hesap için aktif bir abonelik bulunamadı.",
+    "purchaseError": "Satın alma tamamlanamadı. Lütfen daha sonra tekrar deneyin.",
+    "loadError": "Teklifler yüklenemedi. Bağlantınızı kontrol edin.",
+    "retry": "Tekrar dene",
+    "reviewCodePlaceholder": "Erişim kodu",
+    "reviewCodeSubmit": "Gönder",
+    "reviewCodeInvalid": "Geçersiz kod.",
+    "privacyPolicy": "Gizlilik Politikası",
+    "termsOfUse": "Kullanım Koşulları"
+  },
   "nav": {
     "converter": "Dönüştürücü",
     "combinations": "Kombinasyonlar",

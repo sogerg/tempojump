@@ -5,6 +5,27 @@
     "delete": "Smazat",
     "close": "Zavřít"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Odemkněte všechny funkce: metronom, plán trasy, deník a další.",
+    "trialBadge": "3denní zkušební období zdarma",
+    "weekly": "Týdně",
+    "yearly": "Ročně",
+    "perWeek": "/ týden",
+    "perYear": "/ rok",
+    "subscribe": "Předplatit",
+    "trialDisclaimer": "3denní zkušební období zdarma, poté se automaticky obnovuje. Kdykoli lze zrušit.",
+    "restore": "Obnovit nákupy",
+    "restoreNoneFound": "Pro tento účet nebylo nalezeno žádné aktivní předplatné.",
+    "purchaseError": "Nákup se nepodařilo dokončit. Zkuste to prosím později.",
+    "loadError": "Nabídky se nepodařilo načíst. Zkontrolujte připojení.",
+    "retry": "Zkusit znovu",
+    "reviewCodePlaceholder": "Přístupový kód",
+    "reviewCodeSubmit": "Odeslat",
+    "reviewCodeInvalid": "Neplatný kód.",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsOfUse": "Podmínky použití"
+  },
   "nav": {
     "converter": "Převodník",
     "combinations": "Kombinace",

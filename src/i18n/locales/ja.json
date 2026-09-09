@@ -5,6 +5,27 @@
     "delete": "削除",
     "close": "閉じる"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "メトロノーム、コースプラン、ジャーナルなど、すべての機能をアンロック。",
+    "trialBadge": "3日間無料トライアル",
+    "weekly": "週間",
+    "yearly": "年間",
+    "perWeek": "/ 週",
+    "perYear": "/ 年",
+    "subscribe": "登録する",
+    "trialDisclaimer": "3日間無料トライアル、その後自動更新されます。いつでもキャンセル可能です。",
+    "restore": "購入を復元",
+    "restoreNoneFound": "このアカウントに有効なサブスクリプションが見つかりません。",
+    "purchaseError": "購入を完了できませんでした。しばらくしてからもう一度お試しください。",
+    "loadError": "オファーを読み込めませんでした。接続を確認してください。",
+    "retry": "再試行",
+    "reviewCodePlaceholder": "アクセスコード",
+    "reviewCodeSubmit": "送信",
+    "reviewCodeInvalid": "無効なコードです。",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfUse": "利用規約"
+  },
   "nav": {
     "converter": "換算",
     "combinations": "コンビネーション",

@@ -5,6 +5,27 @@
     "delete": "Xóa",
     "close": "Đóng"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Mở khóa mọi tính năng: máy đếm nhịp, kế hoạch chặng đường, nhật ký và hơn thế nữa.",
+    "trialBadge": "Dùng thử miễn phí 3 ngày",
+    "weekly": "Hàng tuần",
+    "yearly": "Hàng năm",
+    "perWeek": "/ tuần",
+    "perYear": "/ năm",
+    "subscribe": "Đăng ký",
+    "trialDisclaimer": "Dùng thử miễn phí 3 ngày, sau đó tự động gia hạn. Có thể hủy bất cứ lúc nào.",
+    "restore": "Khôi phục giao dịch mua",
+    "restoreNoneFound": "Không tìm thấy gói đăng ký đang hoạt động cho tài khoản này.",
+    "purchaseError": "Không thể hoàn tất giao dịch mua. Vui lòng thử lại sau.",
+    "loadError": "Không thể tải ưu đãi. Kiểm tra kết nối của bạn.",
+    "retry": "Thử lại",
+    "reviewCodePlaceholder": "Mã truy cập",
+    "reviewCodeSubmit": "Gửi",
+    "reviewCodeInvalid": "Mã không hợp lệ.",
+    "privacyPolicy": "Chính sách quyền riêng tư",
+    "termsOfUse": "Điều khoản sử dụng"
+  },
   "nav": {
     "converter": "Bộ chuyển đổi",
     "combinations": "Rào tổ hợp",

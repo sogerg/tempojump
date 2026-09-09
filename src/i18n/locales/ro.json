@@ -5,6 +5,27 @@
     "delete": "Șterge",
     "close": "Închide"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Deblochează toate funcțiile: metronom, plan de traseu, jurnal și multe altele.",
+    "trialBadge": "3 zile de probă gratuită",
+    "weekly": "Săptămânal",
+    "yearly": "Anual",
+    "perWeek": "/ săptămână",
+    "perYear": "/ an",
+    "subscribe": "Abonează-te",
+    "trialDisclaimer": "3 zile de probă gratuită, apoi se reînnoiește automat. Poți anula oricând.",
+    "restore": "Restaurează achizițiile",
+    "restoreNoneFound": "Nu a fost găsit niciun abonament activ pentru acest cont.",
+    "purchaseError": "Achiziția nu a putut fi finalizată. Încearcă din nou mai târziu.",
+    "loadError": "Ofertele nu au putut fi încărcate. Verifică-ți conexiunea.",
+    "retry": "Reîncearcă",
+    "reviewCodePlaceholder": "Cod de acces",
+    "reviewCodeSubmit": "Trimite",
+    "reviewCodeInvalid": "Cod invalid.",
+    "privacyPolicy": "Politica de confidențialitate",
+    "termsOfUse": "Termeni de utilizare"
+  },
   "nav": {
     "converter": "Convertor",
     "combinations": "Combinații / Sisteme",

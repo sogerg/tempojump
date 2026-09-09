@@ -5,6 +5,27 @@
     "delete": "حذف",
     "close": "إغلاق"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "افتح كل الميزات: المترونوم، خطة المسار، اليوميات، والمزيد.",
+    "trialBadge": "تجربة مجانية لمدة 3 أيام",
+    "weekly": "أسبوعي",
+    "yearly": "سنوي",
+    "perWeek": "/ أسبوع",
+    "perYear": "/ سنة",
+    "subscribe": "اشترك",
+    "trialDisclaimer": "تجربة مجانية لمدة 3 أيام، ثم يتجدد تلقائيًا. يمكن الإلغاء في أي وقت.",
+    "restore": "استعادة المشتريات",
+    "restoreNoneFound": "لم يتم العثور على اشتراك نشط لهذا الحساب.",
+    "purchaseError": "تعذر إتمام عملية الشراء. يرجى المحاولة لاحقًا.",
+    "loadError": "تعذر تحميل العروض. تحقق من اتصالك.",
+    "retry": "إعادة المحاولة",
+    "reviewCodePlaceholder": "رمز الوصول",
+    "reviewCodeSubmit": "إرسال",
+    "reviewCodeInvalid": "رمز غير صالح.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfUse": "شروط الاستخدام"
+  },
   "nav": {
     "converter": "المحوّل",
     "combinations": "الحواجز المركبة",

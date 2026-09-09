@@ -5,6 +5,27 @@
     "delete": "Verwijderen",
     "close": "Sluiten"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Ontgrendel alle functies: metronoom, parcoursplan, dagboek en meer.",
+    "trialBadge": "3 dagen gratis proefperiode",
+    "weekly": "Wekelijks",
+    "yearly": "Jaarlijks",
+    "perWeek": "/ week",
+    "perYear": "/ jaar",
+    "subscribe": "Abonneren",
+    "trialDisclaimer": "3 dagen gratis proefperiode, daarna automatische verlenging. Altijd opzegbaar.",
+    "restore": "Aankopen herstellen",
+    "restoreNoneFound": "Geen actief abonnement gevonden voor dit account.",
+    "purchaseError": "De aankoop kon niet worden voltooid. Probeer het later opnieuw.",
+    "loadError": "Aanbiedingen konden niet worden geladen. Controleer je verbinding.",
+    "retry": "Opnieuw proberen",
+    "reviewCodePlaceholder": "Toegangscode",
+    "reviewCodeSubmit": "Verzenden",
+    "reviewCodeInvalid": "Ongeldige code.",
+    "privacyPolicy": "Privacybeleid",
+    "termsOfUse": "Gebruiksvoorwaarden"
+  },
   "nav": {
     "converter": "Omzetter",
     "combinations": "Combinaties",

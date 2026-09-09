@@ -5,6 +5,27 @@
     "delete": "Poista",
     "close": "Sulje"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Avaa kaikki ominaisuudet: metronomi, reittisuunnitelma, päiväkirja ja paljon muuta.",
+    "trialBadge": "3 päivän ilmainen kokeilu",
+    "weekly": "Viikoittain",
+    "yearly": "Vuosittain",
+    "perWeek": "/ viikko",
+    "perYear": "/ vuosi",
+    "subscribe": "Tilaa",
+    "trialDisclaimer": "3 päivän ilmainen kokeilu, jonka jälkeen tilaus uusiutuu automaattisesti. Peruutettavissa milloin tahansa.",
+    "restore": "Palauta ostokset",
+    "restoreNoneFound": "Tälle tilille ei löytynyt aktiivista tilausta.",
+    "purchaseError": "Ostoa ei voitu suorittaa loppuun. Yritä myöhemmin uudelleen.",
+    "loadError": "Tarjouksia ei voitu ladata. Tarkista yhteytesi.",
+    "retry": "Yritä uudelleen",
+    "reviewCodePlaceholder": "Käyttökoodi",
+    "reviewCodeSubmit": "Lähetä",
+    "reviewCodeInvalid": "Virheellinen koodi.",
+    "privacyPolicy": "Tietosuojakäytäntö",
+    "termsOfUse": "Käyttöehdot"
+  },
   "nav": {
     "converter": "Muunnin",
     "combinations": "Sarjat",

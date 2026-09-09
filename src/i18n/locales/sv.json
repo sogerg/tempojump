@@ -5,6 +5,27 @@
     "delete": "Ta bort",
     "close": "Stäng"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Lås upp alla funktioner: metronom, ruttplan, dagbok och mer.",
+    "trialBadge": "3 dagars gratis provperiod",
+    "weekly": "Veckovis",
+    "yearly": "Årsvis",
+    "perWeek": "/ vecka",
+    "perYear": "/ år",
+    "subscribe": "Prenumerera",
+    "trialDisclaimer": "3 dagars gratis provperiod, förnyas därefter automatiskt. Avsluta när som helst.",
+    "restore": "Återställ köp",
+    "restoreNoneFound": "Ingen aktiv prenumeration hittades för det här kontot.",
+    "purchaseError": "Köpet kunde inte slutföras. Försök igen senare.",
+    "loadError": "Kunde inte läsa in erbjudanden. Kontrollera din anslutning.",
+    "retry": "Försök igen",
+    "reviewCodePlaceholder": "Åtkomstkod",
+    "reviewCodeSubmit": "Skicka",
+    "reviewCodeInvalid": "Ogiltig kod.",
+    "privacyPolicy": "Integritetspolicy",
+    "termsOfUse": "Användarvillkor"
+  },
   "nav": {
     "converter": "Omvandlare",
     "combinations": "Kombinationer",

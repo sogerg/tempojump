@@ -5,6 +5,27 @@
     "delete": "Törlés",
     "close": "Bezárás"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Oldj fel minden funkciót: metronóm, pályaterv, napló és még sok más.",
+    "trialBadge": "3 napos ingyenes próbaidőszak",
+    "weekly": "Heti",
+    "yearly": "Éves",
+    "perWeek": "/ hét",
+    "perYear": "/ év",
+    "subscribe": "Feliratkozás",
+    "trialDisclaimer": "3 napos ingyenes próbaidőszak, ezután automatikusan megújul. Bármikor lemondható.",
+    "restore": "Vásárlások visszaállítása",
+    "restoreNoneFound": "Ehhez a fiókhoz nem található aktív előfizetés.",
+    "purchaseError": "A vásárlást nem sikerült befejezni. Kérjük, próbáld újra később.",
+    "loadError": "Az ajánlatokat nem sikerült betölteni. Ellenőrizd a kapcsolatot.",
+    "retry": "Újra",
+    "reviewCodePlaceholder": "Hozzáférési kód",
+    "reviewCodeSubmit": "Küldés",
+    "reviewCodeInvalid": "Érvénytelen kód.",
+    "privacyPolicy": "Adatvédelmi irányelvek",
+    "termsOfUse": "Felhasználási feltételek"
+  },
   "nav": {
     "converter": "Átváltó",
     "combinations": "Kombinációk",

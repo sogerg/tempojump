@@ -5,6 +5,27 @@
     "delete": "Usuń",
     "close": "Zamknij"
   },
+  "paywall": {
+    "title": "TempoJump Pro",
+    "subtitle": "Odblokuj wszystkie funkcje: metronom, plan trasy, dziennik i więcej.",
+    "trialBadge": "3-dniowy bezpłatny okres próbny",
+    "weekly": "Tygodniowo",
+    "yearly": "Rocznie",
+    "perWeek": "/ tydzień",
+    "perYear": "/ rok",
+    "subscribe": "Subskrybuj",
+    "trialDisclaimer": "3-dniowy bezpłatny okres próbny, następnie automatyczne odnowienie. Można anulować w każdej chwili.",
+    "restore": "Przywróć zakupy",
+    "restoreNoneFound": "Nie znaleziono aktywnej subskrypcji dla tego konta.",
+    "purchaseError": "Nie udało się zrealizować zakupu. Spróbuj ponownie później.",
+    "loadError": "Nie udało się załadować ofert. Sprawdź połączenie.",
+    "retry": "Spróbuj ponownie",
+    "reviewCodePlaceholder": "Kod dostępu",
+    "reviewCodeSubmit": "Wyślij",
+    "reviewCodeInvalid": "Nieprawidłowy kod.",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfUse": "Warunki korzystania"
+  },
   "nav": {
     "converter": "Przelicznik",
     "combinations": "Szeregi",
