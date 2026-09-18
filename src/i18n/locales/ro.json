@@ -20,9 +20,6 @@
     "purchaseError": "Achiziția nu a putut fi finalizată. Încearcă din nou mai târziu.",
     "loadError": "Ofertele nu au putut fi încărcate. Verifică-ți conexiunea.",
     "retry": "Reîncearcă",
-    "reviewCodePlaceholder": "Cod de acces",
-    "reviewCodeSubmit": "Trimite",
-    "reviewCodeInvalid": "Cod invalid.",
     "privacyPolicy": "Politica de confidențialitate",
     "termsOfUse": "Termeni de utilizare"
   },

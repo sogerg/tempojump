@@ -20,9 +20,6 @@
     "purchaseError": "Der Kauf konnte nicht abgeschlossen werden. Bitte später erneut versuchen.",
     "loadError": "Angebote konnten nicht geladen werden. Verbindung prüfen.",
     "retry": "Erneut versuchen",
-    "reviewCodePlaceholder": "Zugangscode",
-    "reviewCodeSubmit": "Absenden",
-    "reviewCodeInvalid": "Ungültiger Code.",
     "privacyPolicy": "Datenschutzerklärung",
     "termsOfUse": "Nutzungsbedingungen"
   },

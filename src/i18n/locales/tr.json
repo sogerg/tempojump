@@ -20,9 +20,6 @@
     "purchaseError": "Satın alma tamamlanamadı. Lütfen daha sonra tekrar deneyin.",
     "loadError": "Teklifler yüklenemedi. Bağlantınızı kontrol edin.",
     "retry": "Tekrar dene",
-    "reviewCodePlaceholder": "Erişim kodu",
-    "reviewCodeSubmit": "Gönder",
-    "reviewCodeInvalid": "Geçersiz kod.",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfUse": "Kullanım Koşulları"
   },

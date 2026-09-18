@@ -20,9 +20,6 @@
     "purchaseError": "Köpet kunde inte slutföras. Försök igen senare.",
     "loadError": "Kunde inte läsa in erbjudanden. Kontrollera din anslutning.",
     "retry": "Försök igen",
-    "reviewCodePlaceholder": "Åtkomstkod",
-    "reviewCodeSubmit": "Skicka",
-    "reviewCodeInvalid": "Ogiltig kod.",
     "privacyPolicy": "Integritetspolicy",
     "termsOfUse": "Användarvillkor"
   },

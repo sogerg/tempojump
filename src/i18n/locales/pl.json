@@ -20,9 +20,6 @@
     "purchaseError": "Nie udało się zrealizować zakupu. Spróbuj ponownie później.",
     "loadError": "Nie udało się załadować ofert. Sprawdź połączenie.",
     "retry": "Spróbuj ponownie",
-    "reviewCodePlaceholder": "Kod dostępu",
-    "reviewCodeSubmit": "Wyślij",
-    "reviewCodeInvalid": "Nieprawidłowy kod.",
     "privacyPolicy": "Polityka prywatności",
     "termsOfUse": "Warunki korzystania"
   },

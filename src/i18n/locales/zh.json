@@ -20,9 +20,6 @@
     "purchaseError": "购买未能完成，请稍后重试。",
     "loadError": "无法加载优惠内容，请检查网络连接。",
     "retry": "重试",
-    "reviewCodePlaceholder": "访问码",
-    "reviewCodeSubmit": "提交",
-    "reviewCodeInvalid": "访问码无效。",
     "privacyPolicy": "隐私政策",
     "termsOfUse": "使用条款"
   },

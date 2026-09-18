@@ -20,9 +20,6 @@
     "purchaseError": "Nákup se nepodařilo dokončit. Zkuste to prosím později.",
     "loadError": "Nabídky se nepodařilo načíst. Zkontrolujte připojení.",
     "retry": "Zkusit znovu",
-    "reviewCodePlaceholder": "Přístupový kód",
-    "reviewCodeSubmit": "Odeslat",
-    "reviewCodeInvalid": "Neplatný kód.",
     "privacyPolicy": "Zásady ochrany osobních údajů",
     "termsOfUse": "Podmínky použití"
   },

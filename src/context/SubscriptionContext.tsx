@@ -1,8 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { Platform } from 'react-native';
 import Purchases, { CustomerInfo, PurchasesOffering } from 'react-native-purchases';
-import { PRO_ENTITLEMENT_ID, REVENUECAT_API_KEYS, REVIEW_BYPASS_CODE } from '../constants/revenuecat';
-import { loadReviewBypass, saveReviewBypass } from '../lib/storage';
+import { PRO_ENTITLEMENT_ID, REVENUECAT_API_KEYS } from '../constants/revenuecat';
 
 interface SubscriptionContextValue {
   isPro: boolean;
@@ -11,7 +10,6 @@ interface SubscriptionContextValue {
   purchasePackage: (packageId: string) => Promise<void>;
   restorePurchases: () => Promise<boolean>;
   refreshOfferings: () => void;
-  activateReviewBypass: (code: string) => Promise<boolean>;
 }
 
 const SubscriptionContext = createContext<SubscriptionContextValue | null>(null);
@@ -22,7 +20,6 @@ function hasProEntitlement(customerInfo: CustomerInfo): boolean {
 
 export function SubscriptionProvider({ children }: { children: React.ReactNode }) {
   const [hasEntitlement, setHasEntitlement] = useState(false);
-  const [reviewBypass, setReviewBypass] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [offering, setOffering] = useState<PurchasesOffering | null>(null);
 
@@ -50,7 +47,6 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
 
     if (!configured) {
       setIsLoading(false);
-      loadReviewBypass().then(setReviewBypass);
       return;
     }
 
@@ -58,8 +54,6 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
       .then((customerInfo) => setHasEntitlement(hasProEntitlement(customerInfo)))
       .catch(() => setHasEntitlement(false))
       .finally(() => setIsLoading(false));
-
-    loadReviewBypass().then(setReviewBypass);
 
     fetchOfferings();
 
@@ -69,13 +63,6 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
       Purchases.removeCustomerInfoUpdateListener(listener);
     };
   }, []);
-
-  const activateReviewBypass = async (code: string) => {
-    if (code.trim().toUpperCase() !== REVIEW_BYPASS_CODE) return false;
-    await saveReviewBypass(true);
-    setReviewBypass(true);
-    return true;
-  };
 
   const purchasePackage = async (packageId: string) => {
     if (!offering) return;
@@ -93,13 +80,12 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   };
 
   const value: SubscriptionContextValue = {
-    isPro: hasEntitlement || reviewBypass,
+    isPro: hasEntitlement,
     isLoading,
     offering,
     purchasePackage,
     restorePurchases,
     refreshOfferings: fetchOfferings,
-    activateReviewBypass,
   };
 
   return <SubscriptionContext.Provider value={value}>{children}</SubscriptionContext.Provider>;

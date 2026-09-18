@@ -20,9 +20,6 @@
     "purchaseError": "Kjøpet kunne ikke fullføres. Prøv igjen senere.",
     "loadError": "Kunne ikke laste tilbud. Sjekk tilkoblingen din.",
     "retry": "Prøv igjen",
-    "reviewCodePlaceholder": "Tilgangskode",
-    "reviewCodeSubmit": "Send inn",
-    "reviewCodeInvalid": "Ugyldig kode.",
     "privacyPolicy": "Personvernerklæring",
     "termsOfUse": "Bruksvilkår"
   },

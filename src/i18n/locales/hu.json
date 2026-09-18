@@ -20,9 +20,6 @@
     "purchaseError": "A vásárlást nem sikerült befejezni. Kérjük, próbáld újra később.",
     "loadError": "Az ajánlatokat nem sikerült betölteni. Ellenőrizd a kapcsolatot.",
     "retry": "Újra",
-    "reviewCodePlaceholder": "Hozzáférési kód",
-    "reviewCodeSubmit": "Küldés",
-    "reviewCodeInvalid": "Érvénytelen kód.",
     "privacyPolicy": "Adatvédelmi irányelvek",
     "termsOfUse": "Felhasználási feltételek"
   },

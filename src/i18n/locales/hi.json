@@ -20,9 +20,6 @@
     "purchaseError": "खरीदारी पूरी नहीं हो सकी। कृपया बाद में पुनः प्रयास करें।",
     "loadError": "ऑफ़र लोड नहीं हो सके। अपना कनेक्शन जांचें।",
     "retry": "पुनः प्रयास करें",
-    "reviewCodePlaceholder": "एक्सेस कोड",
-    "reviewCodeSubmit": "सबमिट करें",
-    "reviewCodeInvalid": "अमान्य कोड।",
     "privacyPolicy": "गोपनीयता नीति",
     "termsOfUse": "उपयोग की शर्तें"
   },

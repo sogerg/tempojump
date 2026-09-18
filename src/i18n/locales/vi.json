@@ -20,9 +20,6 @@
     "purchaseError": "Không thể hoàn tất giao dịch mua. Vui lòng thử lại sau.",
     "loadError": "Không thể tải ưu đãi. Kiểm tra kết nối của bạn.",
     "retry": "Thử lại",
-    "reviewCodePlaceholder": "Mã truy cập",
-    "reviewCodeSubmit": "Gửi",
-    "reviewCodeInvalid": "Mã không hợp lệ.",
     "privacyPolicy": "Chính sách quyền riêng tư",
     "termsOfUse": "Điều khoản sử dụng"
   },

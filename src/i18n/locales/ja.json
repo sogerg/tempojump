@@ -20,9 +20,6 @@
     "purchaseError": "購入を完了できませんでした。しばらくしてからもう一度お試しください。",
     "loadError": "オファーを読み込めませんでした。接続を確認してください。",
     "retry": "再試行",
-    "reviewCodePlaceholder": "アクセスコード",
-    "reviewCodeSubmit": "送信",
-    "reviewCodeInvalid": "無効なコードです。",
     "privacyPolicy": "プライバシーポリシー",
     "termsOfUse": "利用規約"
   },

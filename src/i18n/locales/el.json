@@ -20,9 +20,6 @@
     "purchaseError": "Η αγορά δεν ολοκληρώθηκε. Δοκιμάστε ξανά αργότερα.",
     "loadError": "Δεν ήταν δυνατή η φόρτωση των προσφορών. Ελέγξτε τη σύνδεσή σας.",
     "retry": "Επανάληψη",
-    "reviewCodePlaceholder": "Κωδικός πρόσβασης",
-    "reviewCodeSubmit": "Υποβολή",
-    "reviewCodeInvalid": "Μη έγκυρος κωδικός.",
     "privacyPolicy": "Πολιτική απορρήτου",
     "termsOfUse": "Όροι χρήσης"
   },

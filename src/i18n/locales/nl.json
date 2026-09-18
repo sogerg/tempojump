@@ -20,9 +20,6 @@
     "purchaseError": "De aankoop kon niet worden voltooid. Probeer het later opnieuw.",
     "loadError": "Aanbiedingen konden niet worden geladen. Controleer je verbinding.",
     "retry": "Opnieuw proberen",
-    "reviewCodePlaceholder": "Toegangscode",
-    "reviewCodeSubmit": "Verzenden",
-    "reviewCodeInvalid": "Ongeldige code.",
     "privacyPolicy": "Privacybeleid",
     "termsOfUse": "Gebruiksvoorwaarden"
   },

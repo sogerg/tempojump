@@ -20,9 +20,6 @@
     "purchaseError": "구매를 완료할 수 없습니다. 나중에 다시 시도해 주세요.",
     "loadError": "혜택을 불러올 수 없습니다. 연결 상태를 확인해 주세요.",
     "retry": "다시 시도",
-    "reviewCodePlaceholder": "액세스 코드",
-    "reviewCodeSubmit": "제출",
-    "reviewCodeInvalid": "잘못된 코드입니다.",
     "privacyPolicy": "개인정보 처리방침",
     "termsOfUse": "이용약관"
   },

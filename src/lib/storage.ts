@@ -14,7 +14,6 @@ const CUSTOM_CHECKLIST_ITEMS_KEY = '@cavalier/customChecklistItems';
 const HORSE_CHECKLISTS_KEY = '@cavalier/horseChecklists';
 const COURSE_PLANS_KEY = '@cavalier/coursePlans';
 const JOURNAL_ENTRIES_KEY = '@cavalier/journalEntries';
-const REVIEW_BYPASS_KEY = '@cavalier/reviewBypass';
 
 export async function loadHorses(): Promise<Horse[]> {
   const raw = await AsyncStorage.getItem(HORSES_KEY);
@@ -126,10 +125,4 @@ export async function saveJournalEntries(entries: JournalEntry[]): Promise<void>
   await AsyncStorage.setItem(JOURNAL_ENTRIES_KEY, JSON.stringify(entries));
 }
 
-export async function loadReviewBypass(): Promise<boolean> {
-  return (await AsyncStorage.getItem(REVIEW_BYPASS_KEY)) === 'true';
-}
 
-export async function saveReviewBypass(value: boolean): Promise<void> {
-  await AsyncStorage.setItem(REVIEW_BYPASS_KEY, String(value));
-}

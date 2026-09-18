@@ -20,9 +20,6 @@
     "purchaseError": "Ostoa ei voitu suorittaa loppuun. Yritä myöhemmin uudelleen.",
     "loadError": "Tarjouksia ei voitu ladata. Tarkista yhteytesi.",
     "retry": "Yritä uudelleen",
-    "reviewCodePlaceholder": "Käyttökoodi",
-    "reviewCodeSubmit": "Lähetä",
-    "reviewCodeInvalid": "Virheellinen koodi.",
     "privacyPolicy": "Tietosuojakäytäntö",
     "termsOfUse": "Käyttöehdot"
   },
