@@ -34,10 +34,29 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
 
   useEffect(() => {
     const apiKey = Platform.OS === 'ios' ? REVENUECAT_API_KEYS.ios : REVENUECAT_API_KEYS.android;
-    Purchases.configure({ apiKey });
+
+    // `configure` lève si la clé est refusée ou si la boutique native est absente. Sans ce
+    // try/catch, l'exception remonte et l'app entière ne s'affiche plus : un problème de clé
+    // RevenueCat tuerait l'app au lancement au lieu de seulement priver l'utilisateur du paywall.
+    // Ce n'est pas théorique, des produits iOS du compte sont déjà restés bloqués « Could not
+    // check ». C'est aussi ce qui empêchait de tester l'app dans Expo Go.
+    let configured = false;
+    try {
+      Purchases.configure({ apiKey });
+      configured = true;
+    } catch (error) {
+      console.warn('RevenueCat non configuré, achats indisponibles', error);
+    }
+
+    if (!configured) {
+      setIsLoading(false);
+      loadReviewBypass().then(setReviewBypass);
+      return;
+    }
 
     Purchases.getCustomerInfo()
       .then((customerInfo) => setHasEntitlement(hasProEntitlement(customerInfo)))
+      .catch(() => setHasEntitlement(false))
       .finally(() => setIsLoading(false));
 
     loadReviewBypass().then(setReviewBypass);

@@ -2,7 +2,7 @@
   "expo": {
     "name": "TempoJump",
     "slug": "mon-appli-cavalier",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -67,7 +67,8 @@
           "hidden": true
         }
       ],
-      "./plugins/withReleaseSigning.js"
+      "./plugins/withReleaseSigning.js",
+      "expo-asset"
     ],
     "extra": {
       "expo-navigation-bar": {
