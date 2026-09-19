@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Tüm özelliklerin kilidini aç: metronom, parkur planı, günlük ve daha fazlası.",
-    "trialBadge": "1 ay ücretsiz deneme",
     "weekly": "Haftalık",
     "yearly": "Yıllık",
     "perWeek": "/ hafta",
     "perYear": "/ yıl",
     "subscribe": "Abone ol",
-    "trialDisclaimer": "1 ay ücretsiz deneme, ardından otomatik olarak yenilenir. İstediğin zaman iptal edebilirsin.",
+    "trialDisclaimer": "Gösterilen fiyattan, iptal edilene kadar otomatik yenilenen abonelik. Apple hesabı ayarlarından istediğin zaman iptal edebilirsin.",
     "restore": "Satın alımları geri yükle",
     "restoreNoneFound": "Bu hesap için aktif bir abonelik bulunamadı.",
     "purchaseError": "Satın alma tamamlanamadı. Lütfen daha sonra tekrar deneyin.",
     "loadError": "Teklifler yüklenemedi. Bağlantınızı kontrol edin.",
     "retry": "Tekrar dene",
     "privacyPolicy": "Gizlilik Politikası",
-    "termsOfUse": "Kullanım Koşulları"
+    "termsOfUse": "Kullanım Koşulları",
+    "trialEnded": "Ücretsiz ayın sona erdi"
   },
   "nav": {
     "converter": "Dönüştürücü",
@@ -216,5 +216,9 @@
     "rankingLabel": "Sıralama",
     "feelingLabel": "Nasıl hissettin",
     "improvementLabel": "Neyi geliştirmeli"
+  },
+  "trial": {
+    "banner_one": "Ücretsiz dönem: {{count}} gün kaldı",
+    "banner_other": "Ücretsiz dönem: {{count}} gün kaldı"
   }
 }

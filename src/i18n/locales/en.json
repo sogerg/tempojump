@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Unlock every feature: metronome, course plan, journal and more.",
-    "trialBadge": "1-month free trial",
     "weekly": "Weekly",
     "yearly": "Yearly",
     "perWeek": "/ week",
     "perYear": "/ year",
     "subscribe": "Subscribe",
-    "trialDisclaimer": "1-month free trial, then auto-renews. Cancel anytime.",
+    "trialDisclaimer": "Auto-renewing subscription at the price shown, until cancelled. Cancel any time in your Apple account settings.",
     "restore": "Restore purchases",
     "restoreNoneFound": "No active subscription found for this account.",
     "purchaseError": "The purchase could not be completed. Please try again later.",
     "loadError": "Couldn't load offers. Check your connection.",
     "retry": "Retry",
     "privacyPolicy": "Privacy Policy",
-    "termsOfUse": "Terms of Use"
+    "termsOfUse": "Terms of Use",
+    "trialEnded": "Your free month is over"
   },
   "nav": {
     "converter": "Converter",
@@ -216,5 +216,9 @@
     "addEntry": "New entry",
     "missingNameTitle": "Enter a competition name.",
     "deleteConfirmTitle": "Delete this entry?"
+  },
+  "trial": {
+    "banner_one": "Free period: {{count}} day left",
+    "banner_other": "Free period: {{count}} days left"
   }
 }

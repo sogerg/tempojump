@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Mở khóa mọi tính năng: máy đếm nhịp, kế hoạch chặng đường, nhật ký và hơn thế nữa.",
-    "trialBadge": "Dùng thử miễn phí 1 tháng",
     "weekly": "Hàng tuần",
     "yearly": "Hàng năm",
     "perWeek": "/ tuần",
     "perYear": "/ năm",
     "subscribe": "Đăng ký",
-    "trialDisclaimer": "Dùng thử miễn phí 1 tháng, sau đó tự động gia hạn. Có thể hủy bất cứ lúc nào.",
+    "trialDisclaimer": "Đăng ký tự động gia hạn theo giá hiển thị cho đến khi hủy. Hủy bất cứ lúc nào trong cài đặt tài khoản Apple.",
     "restore": "Khôi phục giao dịch mua",
     "restoreNoneFound": "Không tìm thấy gói đăng ký đang hoạt động cho tài khoản này.",
     "purchaseError": "Không thể hoàn tất giao dịch mua. Vui lòng thử lại sau.",
     "loadError": "Không thể tải ưu đãi. Kiểm tra kết nối của bạn.",
     "retry": "Thử lại",
     "privacyPolicy": "Chính sách quyền riêng tư",
-    "termsOfUse": "Điều khoản sử dụng"
+    "termsOfUse": "Điều khoản sử dụng",
+    "trialEnded": "Tháng miễn phí của bạn đã kết thúc"
   },
   "nav": {
     "converter": "Bộ chuyển đổi",
@@ -216,5 +216,8 @@
     "rankingLabel": "Xếp hạng",
     "feelingLabel": "Cảm nhận",
     "improvementLabel": "Cần cải thiện"
+  },
+  "trial": {
+    "banner_other": "Thời gian miễn phí: còn {{count}} ngày"
   }
 }

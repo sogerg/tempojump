@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Deblochează toate funcțiile: metronom, plan de traseu, jurnal și multe altele.",
-    "trialBadge": "1 lună de probă gratuită",
     "weekly": "Săptămânal",
     "yearly": "Anual",
     "perWeek": "/ săptămână",
     "perYear": "/ an",
     "subscribe": "Abonează-te",
-    "trialDisclaimer": "1 lună de probă gratuită, apoi se reînnoiește automat. Poți anula oricând.",
+    "trialDisclaimer": "Abonament cu reînnoire automată la prețul afișat, până la anulare. Anulează oricând din setările contului Apple.",
     "restore": "Restaurează achizițiile",
     "restoreNoneFound": "Nu a fost găsit niciun abonament activ pentru acest cont.",
     "purchaseError": "Achiziția nu a putut fi finalizată. Încearcă din nou mai târziu.",
     "loadError": "Ofertele nu au putut fi încărcate. Verifică-ți conexiunea.",
     "retry": "Reîncearcă",
     "privacyPolicy": "Politica de confidențialitate",
-    "termsOfUse": "Termeni de utilizare"
+    "termsOfUse": "Termeni de utilizare",
+    "trialEnded": "Luna ta gratuită s-a încheiat"
   },
   "nav": {
     "converter": "Convertor",
@@ -216,5 +216,10 @@
     "rankingLabel": "Clasament",
     "feelingLabel": "Cum te-ai simțit",
     "improvementLabel": "Ce să îmbunătățești"
+  },
+  "trial": {
+    "banner_one": "Perioadă gratuită: a mai rămas {{count}} zi",
+    "banner_few": "Perioadă gratuită: au mai rămas {{count}} zile",
+    "banner_other": "Perioadă gratuită: au mai rămas {{count}} de zile"
   }
 }

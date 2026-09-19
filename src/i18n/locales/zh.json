@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "解锁全部功能：节拍器、路线规划、日志等更多内容。",
-    "trialBadge": "1个月免费试用",
     "weekly": "每周",
     "yearly": "每年",
     "perWeek": "/ 周",
     "perYear": "/ 年",
     "subscribe": "订阅",
-    "trialDisclaimer": "1个月免费试用，之后自动续订。随时可取消。",
+    "trialDisclaimer": "订阅按所示价格自动续订，直至取消。可随时在 Apple 账户设置中取消。",
     "restore": "恢复购买",
     "restoreNoneFound": "未找到此账户的有效订阅。",
     "purchaseError": "购买未能完成，请稍后重试。",
     "loadError": "无法加载优惠内容，请检查网络连接。",
     "retry": "重试",
     "privacyPolicy": "隐私政策",
-    "termsOfUse": "使用条款"
+    "termsOfUse": "使用条款",
+    "trialEnded": "你的免费月份已结束"
   },
   "nav": {
     "converter": "换算器",
@@ -216,5 +216,8 @@
     "rankingLabel": "名次",
     "feelingLabel": "感受如何",
     "improvementLabel": "需要改进"
+  },
+  "trial": {
+    "banner_other": "免费期：还剩 {{count}} 天"
   }
 }

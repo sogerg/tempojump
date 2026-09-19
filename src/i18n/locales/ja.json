@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "メトロノーム、コースプラン、ジャーナルなど、すべての機能をアンロック。",
-    "trialBadge": "1か月間無料トライアル",
     "weekly": "週間",
     "yearly": "年間",
     "perWeek": "/ 週",
     "perYear": "/ 年",
     "subscribe": "登録する",
-    "trialDisclaimer": "1か月間無料トライアル、その後自動更新されます。いつでもキャンセル可能です。",
+    "trialDisclaimer": "表示価格で自動更新されるサブスクリプションです。解約するまで継続します。Apple アカウントの設定からいつでも解約できます。",
     "restore": "購入を復元",
     "restoreNoneFound": "このアカウントに有効なサブスクリプションが見つかりません。",
     "purchaseError": "購入を完了できませんでした。しばらくしてからもう一度お試しください。",
     "loadError": "オファーを読み込めませんでした。接続を確認してください。",
     "retry": "再試行",
     "privacyPolicy": "プライバシーポリシー",
-    "termsOfUse": "利用規約"
+    "termsOfUse": "利用規約",
+    "trialEnded": "無料の1か月が終了しました"
   },
   "nav": {
     "converter": "換算",
@@ -216,5 +216,8 @@
     "rankingLabel": "順位",
     "feelingLabel": "感想",
     "improvementLabel": "改善点"
+  },
+  "trial": {
+    "banner_other": "無料期間：残り {{count}} 日"
   }
 }

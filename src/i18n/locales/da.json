@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Lås op for alle funktioner: metronom, ruteplan, dagbog og mere.",
-    "trialBadge": "1 måneds gratis prøveperiode",
     "weekly": "Ugentligt",
     "yearly": "Årligt",
     "perWeek": "/ uge",
     "perYear": "/ år",
     "subscribe": "Abonnér",
-    "trialDisclaimer": "1 måneds gratis prøveperiode, herefter fornyes abonnementet automatisk. Kan opsiges når som helst.",
+    "trialDisclaimer": "Abonnement, der fornyes automatisk til den viste pris, indtil du opsiger det. Opsig når som helst i indstillingerne for din Apple-konto.",
     "restore": "Gendan køb",
     "restoreNoneFound": "Intet aktivt abonnement fundet for denne konto.",
     "purchaseError": "Købet kunne ikke gennemføres. Prøv igen senere.",
     "loadError": "Kunne ikke indlæse tilbud. Tjek din forbindelse.",
     "retry": "Prøv igen",
     "privacyPolicy": "Privatlivspolitik",
-    "termsOfUse": "Betingelser for brug"
+    "termsOfUse": "Betingelser for brug",
+    "trialEnded": "Din gratismåned er slut"
   },
   "nav": {
     "converter": "Konverter",
@@ -216,5 +216,9 @@
     "rankingLabel": "Placering",
     "feelingLabel": "Hvordan det føltes",
     "improvementLabel": "Hvad der skal forbedres"
+  },
+  "trial": {
+    "banner_one": "Gratisperiode: {{count}} dag tilbage",
+    "banner_other": "Gratisperiode: {{count}} dage tilbage"
   }
 }

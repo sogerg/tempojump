@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Débloque toutes les fonctionnalités : métronome, plan de parcours, journal et plus encore.",
-    "trialBadge": "1 mois d'essai gratuit",
     "weekly": "Hebdomadaire",
     "yearly": "Annuel",
     "perWeek": "/ semaine",
     "perYear": "/ an",
     "subscribe": "S'abonner",
-    "trialDisclaimer": "Essai gratuit d'un mois, puis abonnement reconduit automatiquement. Résiliable à tout moment.",
+    "trialDisclaimer": "Abonnement reconduit automatiquement au prix affiché, jusqu'à résiliation. Résiliable à tout moment dans les réglages de votre compte Apple.",
     "restore": "Restaurer mes achats",
     "restoreNoneFound": "Aucun abonnement actif trouvé pour ce compte.",
     "purchaseError": "L'achat n'a pas pu aboutir. Réessaie plus tard.",
     "loadError": "Impossible de charger les offres. Vérifie ta connexion.",
     "retry": "Réessayer",
     "privacyPolicy": "Politique de confidentialité",
-    "termsOfUse": "Conditions d'utilisation"
+    "termsOfUse": "Conditions d'utilisation",
+    "trialEnded": "Votre mois gratuit est terminé"
   },
   "nav": {
     "converter": "Convertisseur",
@@ -216,5 +216,10 @@
     "addEntry": "Nouvelle entrée",
     "missingNameTitle": "Renseigne un nom de concours.",
     "deleteConfirmTitle": "Supprimer cette entrée ?"
+  },
+  "trial": {
+    "banner_one": "Période gratuite : {{count}} jour restant",
+    "banner_many": "Période gratuite : {{count}} jours restants",
+    "banner_other": "Période gratuite : {{count}} jours restants"
   }
 }

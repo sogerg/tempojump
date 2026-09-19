@@ -12,20 +12,31 @@ import {
 import { SettingsProvider, useSettings } from './src/context/SettingsContext';
 import { HorseProvider } from './src/context/HorseContext';
 import { SubscriptionProvider, useSubscription } from './src/context/SubscriptionContext';
+import { TrialProvider, useTrial } from './src/context/TrialContext';
+import { TrialBanner } from './src/components/TrialBanner';
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { PaywallScreen } from './src/screens/PaywallScreen';
 
+// L'app est entière tant que la période gratuite court OU que l'abonnement est actif. Le paywall
+// n'apparaît qu'à l'expiration, et bloque alors tout — pas d'écran d'abonnement à la première
+// ouverture. Voir l'en-tête de src/utils/trial.ts pour le pourquoi.
 function SubscriptionGate({ children }: { children: React.ReactNode }) {
   const { isPro, isLoading } = useSubscription();
+  const { active: trialActive, isTrialLoading } = useTrial();
   const { colors } = useSettings();
 
-  if (isLoading) {
+  if (isLoading || isTrialLoading) {
     return <View style={{ flex: 1, backgroundColor: colors.background }} />;
   }
-  if (!isPro) {
+  if (!isPro && !trialActive) {
     return <PaywallScreen />;
   }
-  return <>{children}</>;
+  return (
+    <>
+      <TrialBanner />
+      {children}
+    </>
+  );
 }
 
 function AppContent() {
@@ -33,9 +44,11 @@ function AppContent() {
   return (
     <HorseProvider>
       <SubscriptionProvider>
-        <SubscriptionGate>
-          <RootNavigator />
-        </SubscriptionGate>
+        <TrialProvider>
+          <SubscriptionGate>
+            <RootNavigator />
+          </SubscriptionGate>
+        </TrialProvider>
       </SubscriptionProvider>
       <StatusBar style={isDarkMode ? 'light' : 'dark'} hidden />
       <NavigationBar hidden />

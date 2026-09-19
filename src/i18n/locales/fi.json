@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Avaa kaikki ominaisuudet: metronomi, reittisuunnitelma, päiväkirja ja paljon muuta.",
-    "trialBadge": "Kuukausi ilmaiseksi",
     "weekly": "Viikoittain",
     "yearly": "Vuosittain",
     "perWeek": "/ viikko",
     "perYear": "/ vuosi",
     "subscribe": "Tilaa",
-    "trialDisclaimer": "Kuukausi ilmaiseksi, jonka jälkeen tilaus uusiutuu automaattisesti. Peruutettavissa milloin tahansa.",
+    "trialDisclaimer": "Tilaus uusiutuu automaattisesti näytettyyn hintaan, kunnes perut sen. Peru milloin tahansa Apple-tilisi asetuksista.",
     "restore": "Palauta ostokset",
     "restoreNoneFound": "Tälle tilille ei löytynyt aktiivista tilausta.",
     "purchaseError": "Ostoa ei voitu suorittaa loppuun. Yritä myöhemmin uudelleen.",
     "loadError": "Tarjouksia ei voitu ladata. Tarkista yhteytesi.",
     "retry": "Yritä uudelleen",
     "privacyPolicy": "Tietosuojakäytäntö",
-    "termsOfUse": "Käyttöehdot"
+    "termsOfUse": "Käyttöehdot",
+    "trialEnded": "Ilmainen kuukautesi on päättynyt"
   },
   "nav": {
     "converter": "Muunnin",
@@ -216,5 +216,9 @@
     "rankingLabel": "Sijoitus",
     "feelingLabel": "Miltä tuntui",
     "improvementLabel": "Mitä parantaa"
+  },
+  "trial": {
+    "banner_one": "Ilmainen jakso: {{count}} päivä jäljellä",
+    "banner_other": "Ilmainen jakso: {{count}} päivää jäljellä"
   }
 }

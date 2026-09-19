@@ -60,7 +60,7 @@ export function PaywallScreen() {
         <Text style={[styles.subtitle, { color: colors.textMuted }]}>{t('paywall.subtitle')}</Text>
 
         <View style={[styles.badge, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
-          <Text style={[styles.badgeText, { color: colors.accentGold }]}>{t('paywall.trialBadge')}</Text>
+          <Text style={[styles.badgeText, { color: colors.accentGold }]}>{t('paywall.trialEnded')}</Text>
         </View>
 
 

@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Ontgrendel alle functies: metronoom, parcoursplan, dagboek en meer.",
-    "trialBadge": "1 maand gratis proefperiode",
     "weekly": "Wekelijks",
     "yearly": "Jaarlijks",
     "perWeek": "/ week",
     "perYear": "/ jaar",
     "subscribe": "Abonneren",
-    "trialDisclaimer": "1 maand gratis proefperiode, daarna automatische verlenging. Altijd opzegbaar.",
+    "trialDisclaimer": "Abonnement met automatische verlenging tegen de getoonde prijs, tot opzegging. Zeg op wanneer je wilt in de instellingen van je Apple-account.",
     "restore": "Aankopen herstellen",
     "restoreNoneFound": "Geen actief abonnement gevonden voor dit account.",
     "purchaseError": "De aankoop kon niet worden voltooid. Probeer het later opnieuw.",
     "loadError": "Aanbiedingen konden niet worden geladen. Controleer je verbinding.",
     "retry": "Opnieuw proberen",
     "privacyPolicy": "Privacybeleid",
-    "termsOfUse": "Gebruiksvoorwaarden"
+    "termsOfUse": "Gebruiksvoorwaarden",
+    "trialEnded": "Je gratis maand is voorbij"
   },
   "nav": {
     "converter": "Omzetter",
@@ -216,5 +216,9 @@
     "rankingLabel": "Klassering",
     "feelingLabel": "Hoe het voelde",
     "improvementLabel": "Wat te verbeteren"
+  },
+  "trial": {
+    "banner_one": "Gratis periode: nog {{count}} dag",
+    "banner_other": "Gratis periode: nog {{count}} dagen"
   }
 }

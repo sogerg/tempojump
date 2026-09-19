@@ -1,3 +1,7 @@
+// Le polyfill doit être importé AVANT i18next : les règles de pluriel de Hermes sont incomplètes,
+// et sans lui les clés `_one/_few/_many/_other` tombent sur la mauvaise forme en russe, polonais,
+// tchèque et arabe — constaté sur appareil sur une autre app du portefeuille, jamais sous Node.
+import 'intl-pluralrules';
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import * as Localization from 'expo-localization';

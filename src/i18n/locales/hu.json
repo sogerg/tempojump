@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Oldj fel minden funkciót: metronóm, pályaterv, napló és még sok más.",
-    "trialBadge": "1 hónap ingyenes próbaidőszak",
     "weekly": "Heti",
     "yearly": "Éves",
     "perWeek": "/ hét",
     "perYear": "/ év",
     "subscribe": "Feliratkozás",
-    "trialDisclaimer": "1 hónap ingyenes próbaidőszak, ezután automatikusan megújul. Bármikor lemondható.",
+    "trialDisclaimer": "A feltüntetett áron automatikusan megújuló előfizetés, lemondásig. Bármikor lemondható az Apple-fiók beállításaiban.",
     "restore": "Vásárlások visszaállítása",
     "restoreNoneFound": "Ehhez a fiókhoz nem található aktív előfizetés.",
     "purchaseError": "A vásárlást nem sikerült befejezni. Kérjük, próbáld újra később.",
     "loadError": "Az ajánlatokat nem sikerült betölteni. Ellenőrizd a kapcsolatot.",
     "retry": "Újra",
     "privacyPolicy": "Adatvédelmi irányelvek",
-    "termsOfUse": "Felhasználási feltételek"
+    "termsOfUse": "Felhasználási feltételek",
+    "trialEnded": "Az ingyenes hónapod lejárt"
   },
   "nav": {
     "converter": "Átváltó",
@@ -216,5 +216,9 @@
     "rankingLabel": "Helyezés",
     "feelingLabel": "Milyen érzés volt",
     "improvementLabel": "Mit kell fejleszteni"
+  },
+  "trial": {
+    "banner_one": "Ingyenes időszak: {{count}} nap van hátra",
+    "banner_other": "Ingyenes időszak: {{count}} nap van hátra"
   }
 }

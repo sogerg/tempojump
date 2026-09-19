@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Schalte alle Funktionen frei: Metronom, Streckenplan, Journal und mehr.",
-    "trialBadge": "1 Monat kostenlos testen",
     "weekly": "Wöchentlich",
     "yearly": "Jährlich",
     "perWeek": "/ Woche",
     "perYear": "/ Jahr",
     "subscribe": "Abonnieren",
-    "trialDisclaimer": "1 Monat kostenlos testen, danach automatische Verlängerung. Jederzeit kündbar.",
+    "trialDisclaimer": "Abo mit automatischer Verlängerung zum angezeigten Preis, bis zur Kündigung. Jederzeit kündbar in den Einstellungen deines Apple-Kontos.",
     "restore": "Käufe wiederherstellen",
     "restoreNoneFound": "Kein aktives Abonnement für dieses Konto gefunden.",
     "purchaseError": "Der Kauf konnte nicht abgeschlossen werden. Bitte später erneut versuchen.",
     "loadError": "Angebote konnten nicht geladen werden. Verbindung prüfen.",
     "retry": "Erneut versuchen",
     "privacyPolicy": "Datenschutzerklärung",
-    "termsOfUse": "Nutzungsbedingungen"
+    "termsOfUse": "Nutzungsbedingungen",
+    "trialEnded": "Dein Gratismonat ist vorbei"
   },
   "nav": {
     "converter": "Umrechner",
@@ -216,5 +216,9 @@
     "rankingLabel": "Platzierung",
     "feelingLabel": "Wie es sich angefühlt hat",
     "improvementLabel": "Was verbessern"
+  },
+  "trial": {
+    "banner_one": "Gratiszeit: noch {{count}} Tag",
+    "banner_other": "Gratiszeit: noch {{count}} Tage"
   }
 }

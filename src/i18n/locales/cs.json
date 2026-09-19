@@ -8,20 +8,20 @@
   "paywall": {
     "title": "TempoJump Pro",
     "subtitle": "Odemkněte všechny funkce: metronom, plán trasy, deník a další.",
-    "trialBadge": "Měsíc zdarma na vyzkoušení",
     "weekly": "Týdně",
     "yearly": "Ročně",
     "perWeek": "/ týden",
     "perYear": "/ rok",
     "subscribe": "Předplatit",
-    "trialDisclaimer": "Měsíc zdarma na vyzkoušení, poté se předplatné automaticky obnovuje. Kdykoli lze zrušit.",
+    "trialDisclaimer": "Předplatné se automaticky obnovuje za zobrazenou cenu, dokud ho nezrušíš. Zrušit ho můžeš kdykoli v nastavení účtu Apple.",
     "restore": "Obnovit nákupy",
     "restoreNoneFound": "Pro tento účet nebylo nalezeno žádné aktivní předplatné.",
     "purchaseError": "Nákup se nepodařilo dokončit. Zkuste to prosím později.",
     "loadError": "Nabídky se nepodařilo načíst. Zkontrolujte připojení.",
     "retry": "Zkusit znovu",
     "privacyPolicy": "Zásady ochrany osobních údajů",
-    "termsOfUse": "Podmínky použití"
+    "termsOfUse": "Podmínky použití",
+    "trialEnded": "Tvůj měsíc zdarma skončil"
   },
   "nav": {
     "converter": "Převodník",
@@ -216,5 +216,11 @@
     "rankingLabel": "Umístění",
     "feelingLabel": "Jaké to bylo",
     "improvementLabel": "Co zlepšit"
+  },
+  "trial": {
+    "banner_one": "Období zdarma: zbývá {{count}} den",
+    "banner_few": "Období zdarma: zbývají {{count}} dny",
+    "banner_many": "Období zdarma: zbývá {{count}} dne",
+    "banner_other": "Období zdarma: zbývá {{count}} dní"
   }
 }
