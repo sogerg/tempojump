@@ -59,7 +59,7 @@ TempoJump 是场地障碍赛骑手的备赛工具：计算步幅、规划路线�
 
 ### Promotional Text (170 char max)
 
-新功能：可标注路线图、节奏节拍器、支持视频分享的训练日志。
+新功能：可标注路线图、节奏节拍器、支持视频分享的训练日志。首次打开起 30 天免费。
 
 ### Keywords (100 char max, commas included)
 

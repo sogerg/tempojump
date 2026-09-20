@@ -57,7 +57,7 @@ Distanze Correlate e Percorso
 
 ### Promotional Text (170 char max)
 
-Novità: piano di percorso annotabile, metronomo di cadenza e diario di allenamento con condivisione video.
+Novità: piano di percorso annotabile, metronomo di cadenza e diario di allenamento con condivisione video. 30 giorni gratis dalla prima apertura.
 
 ### Keywords (100 char max, commas included)
 

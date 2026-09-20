@@ -57,7 +57,7 @@ Avstånd & Banplan
 
 ### Promotional Text (170 char max)
 
-Nytt: banplan med anteckningar, kadensmetronom och träningsdagbok med videodelning.
+Nytt: banplan med anteckningar, kadensmetronom och träningsdagbok med videodelning. 30 dagar gratis från första öppningen.
 
 ### Keywords (100 char max, commas included)
 

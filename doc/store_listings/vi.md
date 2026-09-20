@@ -59,7 +59,7 @@ Khoảng Cách & Lộ Trình
 
 ### Promotional Text (170 char max)
 
-Mới: sơ đồ đường đua có chú thích, máy đếm nhịp, và nhật ký tập luyện với chia sẻ video.
+Mới: sơ đồ đường đua có chú thích, máy đếm nhịp, và nhật ký tập luyện với chia sẻ video. Miễn phí 30 ngày kể từ lần mở đầu tiên.
 
 ### Keywords (100 char max, commas included)
 

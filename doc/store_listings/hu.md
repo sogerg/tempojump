@@ -57,7 +57,7 @@ Távolságok & Pályaterv
 
 ### Promotional Text (170 char max)
 
-Új: jegyzetelhető pályaterv, kadencia metronóm és edzésnapló videómegosztással.
+Új: jegyzetelhető pályaterv, kadencia metronóm és edzésnapló videómegosztással. 30 nap ingyen az első megnyitástól.
 
 ### Keywords (100 char max, commas included)
 

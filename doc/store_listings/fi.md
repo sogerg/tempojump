@@ -57,7 +57,7 @@ Etäisyydet & Ratasuunnitelma
 
 ### Promotional Text (170 char max)
 
-Uutta: merkitty ratasuunnitelma, kadenssimetronomi ja harjoituspäiväkirja videojaolla.
+Uutta: merkitty ratasuunnitelma, kadenssimetronomi ja harjoituspäiväkirja videojaolla. 30 päivää ilmaiseksi ensimmäisestä avauksesta.
 
 ### Keywords (100 char max, commas included)
 

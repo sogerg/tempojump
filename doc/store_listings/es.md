@@ -57,7 +57,7 @@ Distancias Relacionadas
 
 ### Promotional Text (170 char max)
 
-Nuevo: plano de pista anotable, metrónomo de cadencia y diario de entrenamiento con vídeos.
+Nuevo: plano de pista anotable, metrónomo de cadencia y diario de entrenamiento con vídeos. 30 días gratis desde la primera apertura.
 
 ### Keywords (100 char max, commas included)
 

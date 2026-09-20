@@ -57,7 +57,7 @@ Vzdálenosti a Plán Trasy
 
 ### Promotional Text (170 char max)
 
-Novinka: plán trasy s poznámkami, metronom kadence a tréninkový deník se sdílením videa.
+Novinka: plán trasy s poznámkami, metronom kadence a tréninkový deník se sdílením videa. 30 dní zdarma od prvního otevření.
 
 ### Keywords (100 char max, commas included)
 

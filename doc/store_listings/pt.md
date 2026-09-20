@@ -59,7 +59,7 @@ Distâncias Relacionadas
 
 ### Promotional Text (170 char max)
 
-Novo: plano de pista anotável, metrônomo de cadência e diário de treino com compartilhamento de vídeos.
+Novo: plano de pista anotável, metrônomo de cadência e diário de treino com compartilhamento de vídeos. 30 dias grátis a partir da primeira abertura.
 
 ### Keywords (100 char max, commas included)
 

@@ -57,7 +57,7 @@ Afstanden & Parcoursplan
 
 ### Promotional Text (170 char max)
 
-Nieuw: beschrijfbaar parcoursplan, cadans-metronoom en trainingslogboek met video delen.
+Nieuw: beschrijfbaar parcoursplan, cadans-metronoom en trainingslogboek met video delen. 30 dagen gratis vanaf de eerste keer openen.
 
 ### Keywords (100 char max, commas included)
 

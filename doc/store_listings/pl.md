@@ -57,7 +57,7 @@ Odległości i Plan Trasy
 
 ### Promotional Text (170 char max)
 
-Nowość: plan trasy z adnotacjami, metronom kadencji i dziennik treningowy z udostępnianiem wideo.
+Nowość: plan trasy z adnotacjami, metronom kadencji i dziennik treningowy z udostępnianiem wideo. 30 dni za darmo od pierwszego uruchomienia.
 
 ### Keywords (100 char max, commas included)
 

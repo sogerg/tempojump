@@ -57,7 +57,7 @@ Distanțe & Plan Traseu
 
 ### Promotional Text (170 char max)
 
-Nou: plan de traseu cu adnotări, metronom de cadență și jurnal de antrenament cu partajare video.
+Nou: plan de traseu cu adnotări, metronom de cadență și jurnal de antrenament cu partajare video. 30 de zile gratuit de la prima deschidere.
 
 ### Keywords (100 char max, commas included)
 

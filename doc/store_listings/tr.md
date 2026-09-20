@@ -57,7 +57,7 @@ Bağlantılı Mesafeler & Parkur
 
 ### Promotional Text (170 char max)
 
-Yeni: notlanabilir parkur planı, kadans metronomu ve video paylaşımlı antrenman günlüğü.
+Yeni: notlanabilir parkur planı, kadans metronomu ve video paylaşımlı antrenman günlüğü. İlk açılıştan itibaren 30 gün ücretsiz.
 
 ### Keywords (100 char max, commas included)
 

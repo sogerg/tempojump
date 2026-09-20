@@ -57,7 +57,7 @@ Contrat de Foulées & Parcours
 
 ### Promotional Text (170 char max)
 
-Nouveau : plan de parcours annotable, métronome de cadence et carnet de suivi avec partage vidéo.
+Nouveau : plan de parcours annotable, métronome de cadence et carnet de suivi avec partage vidéo. 30 jours gratuits à la première ouverture.
 
 ### Keywords (100 char max, commas included)
 

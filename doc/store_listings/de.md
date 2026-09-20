@@ -57,7 +57,7 @@ Distanzen & Parcours-Planer
 
 ### Promotional Text (170 char max)
 
-Neu: beschreibbarer Parcoursplan, Kadenz-Metronom und Trainingstagebuch mit Video-Sharing.
+Neu: beschreibbarer Parcoursplan, Kadenz-Metronom und Trainingstagebuch mit Video-Sharing. 30 Tage kostenlos ab dem ersten Öffnen.
 
 ### Keywords (100 char max, commas included)
 

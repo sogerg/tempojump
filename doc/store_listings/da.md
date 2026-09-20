@@ -57,7 +57,7 @@ Afstande & Baneplan
 
 ### Promotional Text (170 char max)
 
-Nyt: baneplan med noter, kadence-metronom og træningsdagbog med videodeling.
+Nyt: baneplan med noter, kadence-metronom og træningsdagbog med videodeling. 30 dage gratis fra første åbning.
 
 ### Keywords (100 char max, commas included)
 

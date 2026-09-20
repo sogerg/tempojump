@@ -57,7 +57,7 @@ Related Distances & Courses
 
 ### Promotional Text (170 char max)
 
-New: annotated course plan, canter cadence metronome, and training log with video sharing.
+New: annotated course plan, canter cadence metronome, and training log with video sharing. Free for 30 days from first launch.
 
 ### Keywords (100 char max, commas included)
 
