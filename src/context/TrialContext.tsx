@@ -19,6 +19,9 @@ const PERIODE_GEREE_PAR_APP = Platform.OS === 'ios';
 // Si le trousseau est indisponible (émulateur, appareil sans écran de verrouillage), on retombe
 // sur AsyncStorage plutôt que de refuser la période gratuite.
 const KEY = 'tempojump.firstLaunchAt';
+// La date la plus tardive jamais vue par l'app : le garde-fou contre l'horloge reculée
+// (voir trialStatus). Même double stockage que la date de première ouverture.
+const KEY_SEEN = 'tempojump.lastSeenAt';
 
 interface TrialContextValue extends TrialStatus {
   isTrialLoading: boolean;
@@ -26,30 +29,30 @@ interface TrialContextValue extends TrialStatus {
 
 const TrialContext = createContext<TrialContextValue | null>(null);
 
-async function readFirstLaunch(): Promise<number | null> {
+async function readStamp(key: string): Promise<number | null> {
   try {
-    const v = await SecureStore.getItemAsync(KEY);
+    const v = await SecureStore.getItemAsync(key);
     if (v) return Number(v);
   } catch {
     // trousseau indisponible : on tente le stockage ordinaire
   }
   try {
-    const v = await AsyncStorage.getItem(KEY);
+    const v = await AsyncStorage.getItem(key);
     return v ? Number(v) : null;
   } catch {
     return null;
   }
 }
 
-async function writeFirstLaunch(at: number): Promise<void> {
+async function writeStamp(key: string, at: number): Promise<void> {
   const v = String(at);
   try {
-    await SecureStore.setItemAsync(KEY, v);
+    await SecureStore.setItemAsync(key, v);
   } catch {
     // trousseau indisponible
   }
   try {
-    await AsyncStorage.setItem(KEY, v);
+    await AsyncStorage.setItem(key, v);
   } catch {
     // stockage indisponible : la période repartira à la prochaine ouverture, ce qui est le
     // moindre mal — mieux vaut un mois de trop qu'une app bloquée.
@@ -67,13 +70,19 @@ export function TrialProvider({ children }: { children: React.ReactNode }) {
     }
     let cancelled = false;
     (async () => {
-      let first = await readFirstLaunch();
+      const now = Date.now();
+      let first = await readStamp(KEY);
       if (!first || !Number.isFinite(first)) {
-        first = Date.now();
-        await writeFirstLaunch(first);
+        first = now;
+        await writeStamp(KEY, first);
       }
+      // Le repère « plus tard jamais vu » ne recule jamais : on garde le max de ce qui est
+      // enregistré, de maintenant et de la première ouverture.
+      const seenBefore = (await readStamp(KEY_SEEN)) ?? 0;
+      const seen = Math.max(seenBefore, now, first);
+      if (seen !== seenBefore) await writeStamp(KEY_SEEN, seen);
       if (!cancelled) {
-        setStatus(trialStatus(first));
+        setStatus(trialStatus(first, now, seen));
         setIsTrialLoading(false);
       }
     })();
