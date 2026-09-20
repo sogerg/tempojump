@@ -21,7 +21,10 @@
     "retry": "Riprova",
     "privacyPolicy": "Informativa sulla privacy",
     "termsOfUse": "Termini di utilizzo",
-    "trialEnded": "Il tuo mese gratuito è finito"
+    "trialEnded": "Il tuo mese gratuito è finito",
+    "trialDays_one": "Prova gratuita di {{count}} giorno",
+    "trialDays_many": "Prova gratuita di {{count}} giorni",
+    "trialDays_other": "Prova gratuita di {{count}} giorni"
   },
   "nav": {
     "converter": "Convertitore",

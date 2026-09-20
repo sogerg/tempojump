@@ -21,7 +21,9 @@
     "retry": "Erneut versuchen",
     "privacyPolicy": "Datenschutzerklärung",
     "termsOfUse": "Nutzungsbedingungen",
-    "trialEnded": "Dein Gratismonat ist vorbei"
+    "trialEnded": "Dein Gratismonat ist vorbei",
+    "trialDays_one": "{{count}} Tag kostenlos testen",
+    "trialDays_other": "{{count}} Tage kostenlos testen"
   },
   "nav": {
     "converter": "Umrechner",

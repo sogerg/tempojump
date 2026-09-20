@@ -1,7 +1,15 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { Platform } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as SecureStore from 'expo-secure-store';
 import { trialStatus, type TrialStatus } from '../utils/trial';
+
+// La période gratuite gérée par l'app n'existe QUE sur iOS. Sur Android rien ne survit à une
+// désinstallation — pas de trousseau — et réinstaller offrirait un nouveau mois. Google Play porte
+// donc l'essai lui-même (durée libre en jours, côté Play Console), le paywall s'affiche à
+// l'ouverture comme avant, et le badge lit la durée dans les données de la boutique
+// (src/lib/storeTrial.ts). Deux mécanismes, un par plateforme, chacun honnête sur la sienne.
+const PERIODE_GEREE_PAR_APP = Platform.OS === 'ios';
 
 // La date de première ouverture vit dans le TROUSSEAU (Keychain sur iOS), pas dans le stockage
 // ordinaire : le stockage ordinaire disparaît avec l'app, et désinstaller-réinstaller remettrait
@@ -53,6 +61,10 @@ export function TrialProvider({ children }: { children: React.ReactNode }) {
   const [isTrialLoading, setIsTrialLoading] = useState(true);
 
   useEffect(() => {
+    if (!PERIODE_GEREE_PAR_APP) {
+      setIsTrialLoading(false);
+      return;
+    }
     let cancelled = false;
     (async () => {
       let first = await readFirstLaunch();

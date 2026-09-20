@@ -21,7 +21,9 @@
     "retry": "पुनः प्रयास करें",
     "privacyPolicy": "गोपनीयता नीति",
     "termsOfUse": "उपयोग की शर्तें",
-    "trialEnded": "आपका मुफ़्त महीना समाप्त हो गया"
+    "trialEnded": "आपका मुफ़्त महीना समाप्त हो गया",
+    "trialDays_one": "{{count}} दिन का निःशुल्क ट्रायल",
+    "trialDays_other": "{{count}} दिन का निःशुल्क ट्रायल"
   },
   "nav": {
     "converter": "कनवर्टर",

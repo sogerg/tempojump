@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Alert, Linking, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { ActivityIndicator, Alert, Linking, Platform, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { PACKAGE_TYPE, PurchasesPackage } from 'react-native-purchases';
 import { useSubscription } from '../context/SubscriptionContext';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
 import { PRIVACY_POLICY_URL, TERMS_OF_USE_URL } from '../constants/revenuecat';
+import { freeTrialDays } from '../lib/storeTrial';
 
 function packageLabel(pkg: PurchasesPackage, t: (key: string) => string): { title: string; period: string } {
   if (pkg.packageType === PACKAGE_TYPE.ANNUAL) {
@@ -24,6 +25,12 @@ export function PaywallScreen() {
 
   const packages = offering?.availablePackages ?? [];
   const activeId = selectedId ?? packages.find((p) => p.packageType === PACKAGE_TYPE.ANNUAL)?.identifier ?? packages[0]?.identifier ?? null;
+
+  // Le badge dit ce que la BOUTIQUE déclare pour le forfait choisi, ou rien. Sur iPhone, le paywall
+  // n'apparaît qu'après le mois gratuit géré par l'app : on le dit. Sur Android, l'essai est celui
+  // de Google Play, lu dans les données ; s'il n'y en a pas, pas de badge — jamais un texte figé.
+  const storeTrialDays = freeTrialDays(packages.find((p) => p.identifier === activeId)?.product);
+  const badge = storeTrialDays > 0 ? t('paywall.trialDays', { count: storeTrialDays }) : Platform.OS === 'ios' ? t('paywall.trialEnded') : null;
 
   const handleSubscribe = async () => {
     if (!activeId) return;
@@ -59,9 +66,11 @@ export function PaywallScreen() {
         <Text style={[styles.title, { color: colors.text, fontFamily: FONTS.heading }]}>{t('paywall.title')}</Text>
         <Text style={[styles.subtitle, { color: colors.textMuted }]}>{t('paywall.subtitle')}</Text>
 
-        <View style={[styles.badge, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
-          <Text style={[styles.badgeText, { color: colors.accentGold }]}>{t('paywall.trialEnded')}</Text>
-        </View>
+        {badge ? (
+          <View style={[styles.badge, { backgroundColor: colors.card, borderColor: colors.cardBorder }]}>
+            <Text style={[styles.badgeText, { color: colors.accentGold }]}>{badge}</Text>
+          </View>
+        ) : null}
 
 
         {!offering && (

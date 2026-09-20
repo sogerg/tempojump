@@ -21,7 +21,11 @@
     "retry": "Zkusit znovu",
     "privacyPolicy": "Zásady ochrany osobních údajů",
     "termsOfUse": "Podmínky použití",
-    "trialEnded": "Tvůj měsíc zdarma skončil"
+    "trialEnded": "Tvůj měsíc zdarma skončil",
+    "trialDays_one": "Bezplatná zkušební doba {{count}} den",
+    "trialDays_few": "Bezplatná zkušební doba {{count}} dny",
+    "trialDays_many": "Bezplatná zkušební doba {{count}} dne",
+    "trialDays_other": "Bezplatná zkušební doba {{count}} dní"
   },
   "nav": {
     "converter": "Převodník",

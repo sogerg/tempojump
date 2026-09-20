@@ -21,7 +21,10 @@
     "retry": "Reîncearcă",
     "privacyPolicy": "Politica de confidențialitate",
     "termsOfUse": "Termeni de utilizare",
-    "trialEnded": "Luna ta gratuită s-a încheiat"
+    "trialEnded": "Luna ta gratuită s-a încheiat",
+    "trialDays_one": "Probă gratuită de {{count}} zi",
+    "trialDays_few": "Probă gratuită de {{count}} zile",
+    "trialDays_other": "Probă gratuită de {{count}} de zile"
   },
   "nav": {
     "converter": "Convertor",

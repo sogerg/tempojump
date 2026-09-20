@@ -21,7 +21,9 @@
     "retry": "Επανάληψη",
     "privacyPolicy": "Πολιτική απορρήτου",
     "termsOfUse": "Όροι χρήσης",
-    "trialEnded": "Ο δωρεάν μήνας σου τελείωσε"
+    "trialEnded": "Ο δωρεάν μήνας σου τελείωσε",
+    "trialDays_one": "Δωρεάν δοκιμή {{count}} ημέρας",
+    "trialDays_other": "Δωρεάν δοκιμή {{count}} ημερών"
   },
   "nav": {
     "converter": "Μετατροπέας",

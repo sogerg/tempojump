@@ -21,7 +21,9 @@
     "retry": "Tekrar dene",
     "privacyPolicy": "Gizlilik Politikası",
     "termsOfUse": "Kullanım Koşulları",
-    "trialEnded": "Ücretsiz ayın sona erdi"
+    "trialEnded": "Ücretsiz ayın sona erdi",
+    "trialDays_one": "{{count}} gün ücretsiz deneme",
+    "trialDays_other": "{{count}} gün ücretsiz deneme"
   },
   "nav": {
     "converter": "Dönüştürücü",

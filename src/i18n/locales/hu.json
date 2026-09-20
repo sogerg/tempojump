@@ -21,7 +21,9 @@
     "retry": "Újra",
     "privacyPolicy": "Adatvédelmi irányelvek",
     "termsOfUse": "Felhasználási feltételek",
-    "trialEnded": "Az ingyenes hónapod lejárt"
+    "trialEnded": "Az ingyenes hónapod lejárt",
+    "trialDays_one": "{{count}} napos ingyenes próba",
+    "trialDays_other": "{{count}} napos ingyenes próba"
   },
   "nav": {
     "converter": "Átváltó",

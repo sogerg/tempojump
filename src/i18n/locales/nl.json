@@ -21,7 +21,9 @@
     "retry": "Opnieuw proberen",
     "privacyPolicy": "Privacybeleid",
     "termsOfUse": "Gebruiksvoorwaarden",
-    "trialEnded": "Je gratis maand is voorbij"
+    "trialEnded": "Je gratis maand is voorbij",
+    "trialDays_one": "{{count}} dag gratis proberen",
+    "trialDays_other": "{{count}} dagen gratis proberen"
   },
   "nav": {
     "converter": "Omzetter",

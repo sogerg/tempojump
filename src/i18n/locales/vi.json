@@ -21,7 +21,8 @@
     "retry": "Thử lại",
     "privacyPolicy": "Chính sách quyền riêng tư",
     "termsOfUse": "Điều khoản sử dụng",
-    "trialEnded": "Tháng miễn phí của bạn đã kết thúc"
+    "trialEnded": "Tháng miễn phí của bạn đã kết thúc",
+    "trialDays_other": "Dùng thử miễn phí {{count}} ngày"
   },
   "nav": {
     "converter": "Bộ chuyển đổi",

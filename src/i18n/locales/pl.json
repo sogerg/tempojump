@@ -21,7 +21,11 @@
     "retry": "Spróbuj ponownie",
     "privacyPolicy": "Polityka prywatności",
     "termsOfUse": "Warunki korzystania",
-    "trialEnded": "Twój darmowy miesiąc dobiegł końca"
+    "trialEnded": "Twój darmowy miesiąc dobiegł końca",
+    "trialDays_one": "{{count}} dzień bezpłatnego okresu próbnego",
+    "trialDays_few": "{{count}} dni bezpłatnego okresu próbnego",
+    "trialDays_many": "{{count}} dni bezpłatnego okresu próbnego",
+    "trialDays_other": "{{count}} dni bezpłatnego okresu próbnego"
   },
   "nav": {
     "converter": "Przelicznik",

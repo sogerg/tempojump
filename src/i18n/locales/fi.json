@@ -21,7 +21,9 @@
     "retry": "Yritä uudelleen",
     "privacyPolicy": "Tietosuojakäytäntö",
     "termsOfUse": "Käyttöehdot",
-    "trialEnded": "Ilmainen kuukautesi on päättynyt"
+    "trialEnded": "Ilmainen kuukautesi on päättynyt",
+    "trialDays_one": "{{count}} päivän ilmainen kokeilu",
+    "trialDays_other": "{{count}} päivän ilmainen kokeilu"
   },
   "nav": {
     "converter": "Muunnin",

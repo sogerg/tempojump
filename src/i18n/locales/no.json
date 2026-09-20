@@ -21,7 +21,9 @@
     "retry": "Prøv igjen",
     "privacyPolicy": "Personvernerklæring",
     "termsOfUse": "Bruksvilkår",
-    "trialEnded": "Gratismåneden din er over"
+    "trialEnded": "Gratismåneden din er over",
+    "trialDays_one": "{{count}} dags gratis prøveperiode",
+    "trialDays_other": "{{count}} dagers gratis prøveperiode"
   },
   "nav": {
     "converter": "Omregner",

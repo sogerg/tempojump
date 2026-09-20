@@ -21,7 +21,8 @@
     "retry": "다시 시도",
     "privacyPolicy": "개인정보 처리방침",
     "termsOfUse": "이용약관",
-    "trialEnded": "무료 한 달이 끝났습니다"
+    "trialEnded": "무료 한 달이 끝났습니다",
+    "trialDays_other": "{{count}}일 무료 체험"
   },
   "nav": {
     "converter": "변환기",
