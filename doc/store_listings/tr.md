@@ -20,6 +20,8 @@ Dörtnal adımını hesapla, parkurunu planla ve gelişimini takip et.
 
 TempoJump, engel atlama biniciliği için hazırlık aracıdır: dörtnal adımını hesapla, parkurunu planla ve her turdan önce gelişimini takip et.
 
+ÖNEMLİ: TempoJump ilk açılıştan itibaren 30 gün boyunca, hiçbir şeye abone olmadan ücretsizdir. Sonrasında aşağıdaki tüm özellikler haftalık ya da yıllık Pro aboneliği gerektirir; fiyat, satın almadan önce uygulamada gösterilir.
+
 **Anında dörtnal adım hesaplayıcı**
 İki engel arasında sayılan adım sayısını gir ve atının boyuna, zemine ve hıza göre teorik ve önerilen dörtnal adım sayısını anında al.
 
@@ -43,7 +45,7 @@ Birden fazla at veya midilliyi yönet, her birinin kendi cidago yüksekliği ve 
 
 Türkçe ve birçok başka dilde mevcuttur.
 
-TempoJump'a tam erişim, Pro aboneliği gerektirir (3 günlük ücretsiz deneme dahil, istediğin zaman iptal edilebilir).
+Abonelik iptal edilene kadar her dönem otomatik yenilenir ve Apple hesabı ayarlarından istediğin zaman iptal edilebilir.
 
 ---
 
@@ -55,7 +57,7 @@ Bağlantılı Mesafeler & Parkur
 
 ### Promotional Text (170 char max)
 
-Yeni: notlanabilir parkur planı, kadans metronomu ve video paylaşımlı antrenman günlüğü. Her abonelikte 3 günlük ücretsiz deneme.
+Yeni: notlanabilir parkur planı, kadans metronomu ve video paylaşımlı antrenman günlüğü.
 
 ### Keywords (100 char max, commas included)
 

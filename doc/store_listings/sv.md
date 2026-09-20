@@ -20,6 +20,8 @@ Räkna ut galoppsteg, planera din bana och följ dina framsteg i hoppning.
 
 TempoJump är förberedelseverktyget för hopputövaren: räkna ut galoppsteg, planera din bana och följ dina framsteg inför varje runda.
 
+VIKTIGT: TempoJump är gratis i 30 dagar från första öppningen, utan att du tecknar något. Därefter kräver alla funktioner nedan en Pro-prenumeration, vecko- eller årsvis, till det pris som visas i appen före varje köp.
+
 **Omedelbar galoppsteg-kalkylator**
 Ange antalet räknade steg mellan två hinder och få genast det teoretiska och rekommenderade antalet galoppsteg, baserat på hästens storlek, underlaget och farten.
 
@@ -43,7 +45,7 @@ Hantera flera hästar eller ponnyer, var och en med egen mankhöjd och eget kali
 
 Tillgänglig på svenska och många andra språk.
 
-Full tillgång till TempoJump kräver ett Pro-abonnemang (3 dagars gratis provperiod ingår, kan avslutas när som helst).
+Prenumerationen förnyas automatiskt varje period tills den sägs upp, och kan sägas upp när som helst i inställningarna för ditt Apple-konto.
 
 ---
 
@@ -55,7 +57,7 @@ Avstånd & Banplan
 
 ### Promotional Text (170 char max)
 
-Nytt: banplan med anteckningar, kadensmetronom och träningsdagbok med videodelning. 3 dagars gratis provperiod på alla abonnemang.
+Nytt: banplan med anteckningar, kadensmetronom och träningsdagbok med videodelning.
 
 ### Keywords (100 char max, commas included)
 

@@ -20,6 +20,8 @@ Calcula tus zancadas, prepara tu pista y sigue tu progreso en hípica.
 
 TempoJump es la herramienta de preparación del jinete de salto de obstáculos: calcula tus zancadas, prepara tu pista y sigue tu progreso, antes de cada recorrido.
 
+IMPORTANTE: TempoJump es gratis durante 30 días desde la primera apertura, sin nada que contratar. Después, todas las funciones siguientes requieren una suscripción Pro, semanal o anual, al precio mostrado en la app antes de cualquier compra.
+
 **Calculadora instantánea de zancadas**
 Introduce el número de pasos contados entre dos obstáculos y obtén al instante el número de zancadas teóricas y recomendadas, según el tamaño de tu caballo, el terreno y la velocidad.
 
@@ -43,7 +45,7 @@ Gestiona varios caballos o ponis, cada uno con su propia alzada y su propio cali
 
 Disponible en español y muchos otros idiomas.
 
-El acceso completo a TempoJump requiere una suscripción Pro (prueba gratuita de 3 días incluida, cancelable en cualquier momento).
+La suscripción se renueva automáticamente cada periodo hasta que se cancele, y puede cancelarse en cualquier momento en los ajustes de tu cuenta de Apple.
 
 ---
 
@@ -55,7 +57,7 @@ Distancias Relacionadas
 
 ### Promotional Text (170 char max)
 
-Nuevo: plano de pista anotable, metrónomo de cadencia y diario de entrenamiento con vídeos. Prueba gratuita de 3 días en todas las suscripciones.
+Nuevo: plano de pista anotable, metrónomo de cadencia y diario de entrenamiento con vídeos.
 
 ### Keywords (100 char max, commas included)
 

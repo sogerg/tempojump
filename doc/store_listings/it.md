@@ -20,6 +20,8 @@ Calcola le falcate, prepara il percorso e segui i tuoi progressi a cavallo.
 
 TempoJump è lo strumento di preparazione del cavaliere di salto ostacoli: calcola le tue falcate, prepara il tuo percorso e segui i tuoi progressi, prima di ogni ripresa.
 
+IMPORTANTE: TempoJump è gratuita per 30 giorni dalla prima apertura, senza nulla da sottoscrivere. Dopo, tutte le funzionalità elencate sotto richiedono un abbonamento Pro, settimanale o annuale, al prezzo indicato nell'app prima di ogni acquisto.
+
 **Calcolatore istantaneo di falcate**
 Inserisci il numero di passi contati tra due ostacoli e ottieni all'istante il numero di falcate teoriche e consigliate, in base alla taglia del tuo cavallo, al terreno e alla velocità.
 
@@ -43,7 +45,7 @@ Gestisci più cavalli o pony, ciascuno con la propria altezza al garrese e la pr
 
 Disponibile in italiano e molte altre lingue.
 
-L'accesso completo a TempoJump richiede un abbonamento Pro (prova gratuita di 3 giorni inclusa, annullabile in qualsiasi momento).
+L'abbonamento si rinnova automaticamente a ogni periodo fino alla disdetta, e si può disdire in qualsiasi momento nelle impostazioni del tuo account Apple.
 
 ---
 
@@ -55,7 +57,7 @@ Distanze Correlate e Percorso
 
 ### Promotional Text (170 char max)
 
-Novità: piano di percorso annotabile, metronomo di cadenza e diario di allenamento con condivisione video. Prova gratuita di 3 giorni su ogni abbonamento.
+Novità: piano di percorso annotabile, metronomo di cadenza e diario di allenamento con condivisione video.
 
 ### Keywords (100 char max, commas included)
 

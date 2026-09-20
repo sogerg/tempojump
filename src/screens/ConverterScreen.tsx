@@ -11,7 +11,7 @@ import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { stepsToStrides } from '../lib/mathUtils';
-import { formatLength, formatSpeed, inputUnitSuffix, toMeters } from '../lib/units';
+import { formatLength, formatNumber, formatSpeed, inputUnitSuffix, toMeters } from '../lib/units';
 import { SpeedLevel, Terrain } from '../types';
 import { ThemeColors } from '../constants/colors';
 import { SPEED_METERS_PER_MINUTE } from '../constants/horseDefaults';
@@ -137,7 +137,7 @@ export function ConverterScreen() {
             rows={[
               { label: t('converter.distance'), value: formatLength(result.distanceMeters, unitSystem) },
               { label: t('converter.effectiveStride'), value: formatLength(result.strideLength, unitSystem) },
-              { label: t('converter.theoreticalStrides'), value: result.theoreticalStrides.toFixed(2) },
+              { label: t('converter.theoreticalStrides'), value: formatNumber(result.theoreticalStrides, 2) },
               {
                 label: t('converter.suggestedStrides'),
                 value: `${result.suggestedStrides}`,

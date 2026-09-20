@@ -20,6 +20,8 @@ Bereken je galopsprongen, plan je parcours en volg je vooruitgang.
 
 TempoJump is de voorbereidingstool voor de springruiter: bereken je galopsprongen, plan je parcours en volg je vooruitgang, voor elke rit.
 
+BELANGRIJK: TempoJump is 30 dagen gratis vanaf de eerste keer openen, zonder iets af te sluiten. Daarna vereisen alle onderstaande functies een Pro-abonnement, wekelijks of jaarlijks, tegen de prijs die in de app wordt getoond vóór elke aankoop.
+
 **Directe galopsprongen-calculator**
 Voer het aantal getelde stappen tussen twee hindernissen in en krijg direct het theoretische en aanbevolen aantal galopsprongen, gebaseerd op de maat van je paard, de bodem en de snelheid.
 
@@ -43,7 +45,7 @@ Beheer meerdere paarden of pony's, elk met hun eigen schofthoogte en eigen gekal
 
 Beschikbaar in het Nederlands en vele andere talen.
 
-Volledige toegang tot TempoJump vereist een Pro-abonnement (3 dagen gratis proefperiode inbegrepen, altijd opzegbaar).
+Het abonnement wordt elke periode automatisch verlengd tot je opzegt, en is op elk moment opzegbaar in de instellingen van je Apple-account.
 
 ---
 
@@ -55,7 +57,7 @@ Afstanden & Parcoursplan
 
 ### Promotional Text (170 char max)
 
-Nieuw: beschrijfbaar parcoursplan, cadans-metronoom en trainingslogboek met video delen. 3 dagen gratis proefperiode op elk abonnement.
+Nieuw: beschrijfbaar parcoursplan, cadans-metronoom en trainingslogboek met video delen.
 
 ### Keywords (100 char max, commas included)
 

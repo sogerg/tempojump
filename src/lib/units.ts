@@ -1,6 +1,24 @@
 import * as Localization from 'expo-localization';
+import i18n from '../i18n';
 
 export type UnitSystem = 'metric' | 'imperial';
+
+/**
+ * Un nombre dans la langue de l'utilisateur. ⚠️ Jamais `toFixed` pour afficher : il écrit
+ * toujours un point décimal, faux en français et dans la majorité des 25 langues — défaut déjà
+ * payé sur quatre apps du portefeuille, trouvé ici par le balayage du 20/09/2026.
+ * `Intl.NumberFormat` fonctionne sous Hermes ; le repli ne sert que si la langue est inconnue.
+ */
+export function formatNumber(value: number, decimals: number): string {
+  try {
+    return new Intl.NumberFormat(i18n.language || 'en', {
+      minimumFractionDigits: decimals,
+      maximumFractionDigits: decimals,
+    }).format(value);
+  } catch {
+    return value.toFixed(decimals);
+  }
+}
 
 /** Déduit le système d'unités par défaut à partir de la région de l'appareil. */
 export function detectDeviceUnitSystem(): UnitSystem {
@@ -28,15 +46,15 @@ export function inputUnitSuffix(unitSystem: UnitSystem): string {
 /** Formate une longueur en mètres pour l'affichage, dans le système d'unités choisi. */
 export function formatLength(meters: number, unitSystem: UnitSystem): string {
   if (unitSystem === 'metric') {
-    if (Math.abs(meters) < 1) return `${(meters * 100).toFixed(0)} cm`;
-    return `${meters.toFixed(2)} m`;
+    if (Math.abs(meters) < 1) return `${formatNumber(meters * 100, 0)} cm`;
+    return `${formatNumber(meters, 2)} m`;
   }
 
   const totalInches = meters * INCHES_PER_METER;
   const feet = Math.trunc(totalInches / 12);
   const inches = Math.abs(totalInches - feet * 12);
-  if (feet === 0) return `${totalInches.toFixed(1)} in`;
-  return `${feet} ft ${inches.toFixed(1)} in`;
+  if (feet === 0) return `${formatNumber(totalInches, 1)} in`;
+  return `${feet} ft ${formatNumber(inches, 1)} in`;
 }
 
 const YARDS_PER_METER = 1.0936133;

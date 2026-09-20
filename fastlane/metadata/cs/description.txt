@@ -1,6 +1,6 @@
 TempoJump je přípravný nástroj pro jezdce v parkurovém skákání: spočítej cvalové kroky, naplánuj trasu a sleduj svůj pokrok před každou jízdou.
 
-DŮLEŽITÉ: TempoJump vyžaduje placené předplatné (týdenní nebo roční, včetně bezplatné 3denní zkušební doby). Všechny níže uvedené funkce vyžadují aktivní předplatné.
+DŮLEŽITÉ: TempoJump je 30 dní od prvního otevření zdarma, bez jakéhokoli předplatného. Poté všechny níže uvedené funkce vyžadují předplatné Pro, týdenní nebo roční, za cenu zobrazenou v aplikaci před nákupem.
 
 **Okamžitá kalkulačka cvalových kroků**
 Zadej počet kroků napočítaných mezi dvěma překážkami a okamžitě získej teoretický a doporučený počet cvalových kroků, podle velikosti koně, povrchu a rychlosti.
@@ -25,6 +25,4 @@ Spravuj více koní nebo poníků, každý s vlastní kohoutkovou výškou a vla
 
 Dostupné v češtině a mnoha dalších jazycích.
 
-Plný přístup k TempoJump vyžaduje předplatné Pro (včetně bezplatné 3denní zkušební doby, kdykoli zrušitelné).
-
-Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Předplatné se automaticky obnovuje každé období až do zrušení a lze ho kdykoli zrušit v nastavení účtu Apple.

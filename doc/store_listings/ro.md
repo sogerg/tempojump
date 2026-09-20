@@ -20,6 +20,8 @@ Calculează pașii de galop, planifică traseul și urmărește-ți progresul.
 
 TempoJump este instrumentul de pregătire pentru călărețul de sărituri peste obstacole: calculează pașii de galop, planifică traseul și urmărește-ți progresul înainte de fiecare parcurs.
 
+IMPORTANT: TempoJump este gratuit 30 de zile de la prima deschidere, fără niciun abonament. Apoi, toate funcțiile enumerate mai jos necesită un abonament Pro, săptămânal sau anual, la prețul afișat în aplicație înainte de orice cumpărare.
+
 **Calculator instant de pași de galop**
 Introdu numărul de pași numărați între două obstacole și obții instant numărul teoretic și recomandat de pași de galop, în funcție de mărimea calului, teren și viteză.
 
@@ -43,7 +45,7 @@ Gestionează mai mulți cai sau ponei, fiecare cu propria înălțime la greabă
 
 Disponibil în română și în multe alte limbi.
 
-Accesul complet la TempoJump necesită un abonament Pro (include perioadă de probă gratuită de 3 zile, anulabil oricând).
+Abonamentul se reînnoiește automat în fiecare perioadă până la anulare și poate fi anulat oricând din setările contului Apple.
 
 ---
 
@@ -55,7 +57,7 @@ Distanțe & Plan Traseu
 
 ### Promotional Text (170 char max)
 
-Nou: plan de traseu cu adnotări, metronom de cadență și jurnal de antrenament cu partajare video. Probă gratuită de 3 zile la orice abonament.
+Nou: plan de traseu cu adnotări, metronom de cadență și jurnal de antrenament cu partajare video.
 
 ### Keywords (100 char max, commas included)
 

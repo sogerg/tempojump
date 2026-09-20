@@ -1,5 +1,7 @@
 TempoJump to narzędzie przygotowawcze dla jeźdźca skoków przez przeszkody: oblicz krok galopu, zaplanuj trasę i śledź swoje postępy przed każdym przejazdem.
 
+WAŻNE: TempoJump jest darmowy przez 30 dni od pierwszego uruchomienia, bez żadnej subskrypcji. Potem wszystkie wymienione poniżej funkcje wymagają subskrypcji Pro, tygodniowej lub rocznej, w cenie pokazanej w aplikacji przed zakupem.
+
 **Natychmiastowy kalkulator kroku galopu**
 Wpisz liczbę policzonych kroków między dwiema przeszkodami i od razu otrzymaj teoretyczną oraz zalecaną liczbę kroków galopu, w zależności od wzrostu konia, podłoża i prędkości.
 
@@ -23,4 +25,4 @@ Zarządzaj kilkoma końmi lub kucykami, każdy z własną wysokością w kłębi
 
 Dostępne w języku polskim i wielu innych językach.
 
-Pełny dostęp do TempoJump wymaga subskrypcji Pro (bezpłatny 3-dniowy okres próbny w cenie, można anulować w każdej chwili).
+Subskrypcja odnawia się automatycznie co okres aż do anulowania i można ją anulować w dowolnej chwili w ustawieniach konta Apple.

@@ -20,6 +20,8 @@ Berechne Galoppsprünge, plane deinen Parcours und verfolge deinen Fortschritt.
 
 TempoJump ist das Vorbereitungstool für Springreiter: berechne deine Galoppsprünge, plane deinen Parcours und verfolge deinen Fortschritt vor jedem Ritt.
 
+WICHTIG: TempoJump ist ab dem ersten Öffnen 30 Tage lang kostenlos, ohne etwas abzuschließen. Danach erfordern alle unten aufgeführten Funktionen ein Pro-Abo, wöchentlich oder jährlich, zum in der App vor jedem Kauf angezeigten Preis.
+
 **Sofortiger Galoppsprung-Rechner**
 Gib die Anzahl der gezählten Schritte zwischen zwei Hindernissen ein und erhalte sofort die theoretische und empfohlene Anzahl an Galoppsprüngen, basierend auf der Größe deines Pferdes, dem Boden und der Geschwindigkeit.
 
@@ -43,7 +45,7 @@ Verwalte mehrere Pferde oder Ponys, jedes mit eigenem Stockmaß und eigener kali
 
 Verfügbar auf Deutsch und in vielen weiteren Sprachen.
 
-Der vollständige Zugriff auf TempoJump erfordert ein Pro-Abo (3 Tage kostenlose Testphase inklusive, jederzeit kündbar).
+Das Abo verlängert sich automatisch um jede Periode, bis es gekündigt wird, und ist jederzeit in den Einstellungen deines Apple-Kontos kündbar.
 
 ---
 
@@ -55,7 +57,7 @@ Distanzen & Parcours-Planer
 
 ### Promotional Text (170 char max)
 
-Neu: beschreibbarer Parcoursplan, Kadenz-Metronom und Trainingstagebuch mit Video-Sharing. 3 Tage kostenlose Testphase bei jedem Abo.
+Neu: beschreibbarer Parcoursplan, Kadenz-Metronom und Trainingstagebuch mit Video-Sharing.
 
 ### Keywords (100 char max, commas included)
 
