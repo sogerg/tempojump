@@ -16,7 +16,7 @@ export function formatNumber(value: number, decimals: number): string {
       maximumFractionDigits: decimals,
     }).format(value);
   } catch {
-    return value.toFixed(decimals);
+    return value.toFixed(decimals);  // audit-ok: repli si la langue est inconnue, le point decimal est le moindre mal
   }
 }
 
