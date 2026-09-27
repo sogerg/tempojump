@@ -7,6 +7,7 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
 import { remuxToFastStart } from '../lib/mp4Faststart';
+import { dateLocaleIso } from '../lib/dates';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
@@ -29,7 +30,7 @@ export function JournalScreen() {
   const [editingId, setEditingId] = useState<string | null>(null);
 
   const [name, setName] = useState('');
-  const [date, setDate] = useState(new Date().toISOString().slice(0, 10));
+  const [date, setDate] = useState(() => dateLocaleIso());
   const [ranking, setRanking] = useState('');
   const [feeling, setFeeling] = useState('');
   const [improvement, setImprovement] = useState('');
@@ -45,7 +46,7 @@ export function JournalScreen() {
 
   const resetForm = () => {
     setName('');
-    setDate(new Date().toISOString().slice(0, 10));
+    setDate(dateLocaleIso());
     setRanking('');
     setFeeling('');
     setImprovement('');
