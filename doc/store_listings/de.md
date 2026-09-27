@@ -47,6 +47,14 @@ Verfügbar auf Deutsch und in vielen weiteren Sprachen.
 
 Das Abo verlängert sich automatisch um jede Periode, bis es gekündigt wird, und ist jederzeit in den Einstellungen deines Apple-Kontos kündbar.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+WICHTIG: TempoJump beginnt mit einem kostenlosen Testzeitraum über Google Play; seine Dauer wird vor dem Abschluss bei Google Play und in der App angezeigt, und du kannst ihn vor dem Ende kostenlos kündigen. Nach dem Testzeitraum erfordern alle unten aufgeführten Funktionen ein Pro-Abo, wöchentlich oder jährlich, zum in der App vor jedem Kauf angezeigten Preis.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Das Abo verlängert sich automatisch um jede Periode, bis es gekündigt wird, und ist jederzeit in Google Play unter „Zahlungen und Abos“ kündbar.
+
 ---
 
 ## iOS App Store

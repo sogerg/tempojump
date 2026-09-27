@@ -49,6 +49,14 @@ TempoJumpは障害飛越ライダーのための準備ツールです。スト�
 
 サブスクリプションは解約するまで各期間ごとに自動更新され、Apple アカウントの設定からいつでも解約できます。
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+重要：TempoJump は Google Play の無料トライアルから始まります。トライアル期間は登録前に Google Play とアプリ内に表示され、終了前であれば無料で解約できます。トライアル終了後、以下のすべての機能には Pro サブスクリプション（週額または年額）が必要です。価格は購入前にアプリ内に表示されます。
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+サブスクリプションは解約するまで各期間ごとに自動更新され、Google Play の「お支払いと定期購入」からいつでも解約できます。
+
 ---
 
 ## iOS App Store

@@ -49,6 +49,14 @@ TempoJump 是场地障碍赛骑手的备赛工具：计算步幅、规划路线�
 
 订阅在每个周期结束时自动续订，直至取消；可随时在 Apple 账户设置中取消。
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+重要提示：TempoJump 通过 Google Play 提供免费试用，试用时长会在订阅前显示在 Google Play 和应用内，试用结束前可免费取消。试用结束后，下列所有功能都需要 Pro 订阅（按周或按年），价格在购买前会显示在应用内。
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+订阅在每个周期结束时自动续订，直至取消；可随时在 Google Play 的“付款和订阅”中取消。
+
 ---
 
 ## iOS App Store

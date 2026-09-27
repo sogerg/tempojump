@@ -1,6 +1,6 @@
 TempoJump is the show jumping rider's prep tool: calculate strides, plan your course and track your progress, before every round.
 
-IMPORTANT: TempoJump is free for 30 days from first launch, with nothing to sign up for. After that, every feature listed below requires a Pro subscription, weekly or yearly, at the price shown in the app before any purchase.
+IMPORTANT: TempoJump starts with a free trial through Google Play; its length is shown on Google Play and in the app before you subscribe, and you can cancel before it ends at no cost. After the trial, every feature listed below requires a Pro subscription, weekly or yearly, at the price shown in the app before any purchase.
 
 **Instant stride calculator**
 Enter the number of steps counted between two fences and instantly get the theoretical and suggested number of strides, based on your horse's size, the footing and the speed.
@@ -25,4 +25,4 @@ Manage several horses or ponies, each with its own wither height and its own cal
 
 Available in English and many other languages.
 
-The subscription renews automatically each period until cancelled, and can be cancelled at any time in your Apple account settings.
+The subscription renews automatically each period until cancelled, and can be cancelled at any time in Google Play, under Payments & subscriptions.

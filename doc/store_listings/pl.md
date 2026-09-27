@@ -47,6 +47,14 @@ Dostępne w języku polskim i wielu innych językach.
 
 Subskrypcja odnawia się automatycznie co okres aż do anulowania i można ją anulować w dowolnej chwili w ustawieniach konta Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+WAŻNE: TempoJump zaczyna się od bezpłatnego okresu próbnego w Google Play; jego długość jest podana w Google Play i w aplikacji przed wykupieniem subskrypcji, a przed jego końcem możesz go bezpłatnie anulować. Po okresie próbnym wszystkie wymienione poniżej funkcje wymagają subskrypcji Pro, tygodniowej lub rocznej, w cenie pokazanej w aplikacji przed zakupem.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Subskrypcja odnawia się automatycznie co okres aż do anulowania i można ją anulować w dowolnej chwili w Google Play, w sekcji Płatności i subskrypcje.
+
 ---
 
 ## iOS App Store

@@ -49,6 +49,14 @@ TempoJump คือเครื่องมือเตรียมตัวส�
 
 การสมัครสมาชิกต่ออายุอัตโนมัติทุกรอบจนกว่าจะยกเลิก และยกเลิกได้ทุกเมื่อในการตั้งค่าบัญชี Apple
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+สำคัญ: TempoJump เริ่มต้นด้วยช่วงทดลองใช้ฟรีผ่าน Google Play ระยะเวลาทดลองจะแสดงบน Google Play และในแอปก่อนสมัคร และยกเลิกได้ฟรีก่อนหมดช่วงทดลอง หลังจากนั้นฟีเจอร์ทั้งหมดด้านล่างต้องสมัครสมาชิก Pro รายสัปดาห์หรือรายปี ในราคาที่แสดงในแอปก่อนซื้อ
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+การสมัครสมาชิกต่ออายุอัตโนมัติทุกรอบจนกว่าจะยกเลิก และยกเลิกได้ทุกเมื่อใน Google Play ที่เมนูการชำระเงินและการสมัครใช้บริการ
+
 ---
 
 ## iOS App Store

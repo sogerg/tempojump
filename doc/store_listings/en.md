@@ -47,6 +47,14 @@ Available in English and many other languages.
 
 The subscription renews automatically each period until cancelled, and can be cancelled at any time in your Apple account settings.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+IMPORTANT: TempoJump starts with a free trial through Google Play; its length is shown on Google Play and in the app before you subscribe, and you can cancel before it ends at no cost. After the trial, every feature listed below requires a Pro subscription, weekly or yearly, at the price shown in the app before any purchase.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+The subscription renews automatically each period until cancelled, and can be cancelled at any time in Google Play, under Payments & subscriptions.
+
 ---
 
 ## iOS App Store

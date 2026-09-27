@@ -47,6 +47,14 @@ Saatavilla suomeksi ja monella muulla kielellä.
 
 Tilaus uusiutuu automaattisesti joka jaksolla, kunnes se perutaan, ja sen voi perua milloin tahansa Apple-tilin asetuksista.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+TÄRKEÄÄ: TempoJump alkaa ilmaisella kokeilujaksolla Google Playn kautta; sen pituus näytetään Google Playssa ja sovelluksessa ennen tilausta, ja voit perua sen maksutta ennen sen päättymistä. Kokeilujakson jälkeen kaikki alla luetellut ominaisuudet vaativat Pro-tilauksen, viikoittaisen tai vuosittaisen, sovelluksessa ennen ostoa näytettyyn hintaan.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Tilaus uusiutuu automaattisesti joka jaksolla, kunnes se perutaan, ja sen voi perua milloin tahansa Google Playssa kohdassa Maksut ja tilaukset.
+
 ---
 
 ## iOS App Store

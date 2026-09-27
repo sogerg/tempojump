@@ -47,6 +47,14 @@ Disponibile in italiano e molte altre lingue.
 
 L'abbonamento si rinnova automaticamente a ogni periodo fino alla disdetta, e si può disdire in qualsiasi momento nelle impostazioni del tuo account Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+IMPORTANTE: TempoJump inizia con una prova gratuita tramite Google Play; la sua durata è indicata su Google Play e nell'app prima di abbonarti, e puoi annullarla gratuitamente prima che finisca. Dopo la prova, tutte le funzionalità elencate sotto richiedono un abbonamento Pro, settimanale o annuale, al prezzo indicato nell'app prima di ogni acquisto.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+L'abbonamento si rinnova automaticamente a ogni periodo fino alla disdetta, e si può disdire in qualsiasi momento in Google Play, alla voce Pagamenti e abbonamenti.
+
 ---
 
 ## iOS App Store

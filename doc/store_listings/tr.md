@@ -47,6 +47,14 @@ Türkçe ve birçok başka dilde mevcuttur.
 
 Abonelik iptal edilene kadar her dönem otomatik yenilenir ve Apple hesabı ayarlarından istediğin zaman iptal edilebilir.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+ÖNEMLİ: TempoJump, Google Play üzerinden ücretsiz bir deneme süresiyle başlar; süresi abone olmadan önce Google Play'de ve uygulamada gösterilir ve bitmeden önce ücretsiz iptal edebilirsin. Deneme süresinden sonra aşağıdaki tüm özellikler haftalık ya da yıllık Pro aboneliği gerektirir; fiyat, satın almadan önce uygulamada gösterilir.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Abonelik iptal edilene kadar her dönem otomatik yenilenir ve Google Play'de Ödemeler ve abonelikler bölümünden istediğin zaman iptal edilebilir.
+
 ---
 
 ## iOS App Store

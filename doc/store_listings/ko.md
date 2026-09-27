@@ -49,6 +49,14 @@ TempoJump는 장애물 비월 선수를 위한 준비 도구입니다: 보폭을
 
 구독은 해지할 때까지 매 기간 자동 갱신되며, Apple 계정 설정에서 언제든 해지할 수 있습니다.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+중요: TempoJump는 Google Play를 통한 무료 체험으로 시작합니다. 체험 기간은 구독 전에 Google Play와 앱에 표시되며, 끝나기 전에 무료로 해지할 수 있습니다. 체험 후에는 아래의 모든 기능에 주간 또는 연간 Pro 구독이 필요하며, 가격은 구매 전에 앱에 표시됩니다.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+구독은 해지할 때까지 매 기간 자동 갱신되며, Google Play의 결제 및 정기 결제에서 언제든 해지할 수 있습니다.
+
 ---
 
 ## iOS App Store

@@ -47,6 +47,14 @@ Tillgänglig på svenska och många andra språk.
 
 Prenumerationen förnyas automatiskt varje period tills den sägs upp, och kan sägas upp när som helst i inställningarna för ditt Apple-konto.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+VIKTIGT: TempoJump börjar med en gratis provperiod via Google Play; dess längd visas på Google Play och i appen innan du prenumererar, och du kan säga upp den kostnadsfritt innan den tar slut. Efter provperioden kräver alla funktioner nedan en Pro-prenumeration, vecko- eller årsvis, till det pris som visas i appen före varje köp.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Prenumerationen förnyas automatiskt varje period tills den sägs upp, och kan sägas upp när som helst i Google Play under Betalningar och prenumerationer.
+
 ---
 
 ## iOS App Store

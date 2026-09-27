@@ -49,6 +49,14 @@ TempoJump هو أداة تحضير فارس قفز الحواجز: احسب خط
 
 يتجدد الاشتراك تلقائيًا كل فترة حتى الإلغاء، ويمكن إلغاؤه في أي وقت من إعدادات حساب Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+مهم: يبدأ TempoJump بفترة تجريبية مجانية عبر Google Play؛ تُعرض مدتها على Google Play وفي التطبيق قبل الاشتراك، ويمكنك إلغاؤها مجانًا قبل انتهائها. بعد الفترة التجريبية تتطلب جميع الميزات المدرجة أدناه اشتراك Pro، أسبوعيًا أو سنويًا، بالسعر المعروض في التطبيق قبل أي شراء.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+يتجدد الاشتراك تلقائيًا كل فترة حتى الإلغاء، ويمكن إلغاؤه في أي وقت من Google Play ضمن «الدفعات والاشتراكات».
+
 ---
 
 ## iOS App Store

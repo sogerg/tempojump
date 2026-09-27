@@ -47,6 +47,14 @@ Disponible en français et dans de nombreuses autres langues.
 
 L'abonnement est reconduit automatiquement à chaque période jusqu'à résiliation, et se résilie à tout moment dans les réglages de votre compte Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+IMPORTANT : TempoJump commence par un essai gratuit via Google Play ; sa durée est indiquée sur Google Play et dans l'app avant de vous abonner, et vous pouvez l'annuler sans frais avant sa fin. Après l'essai, toutes les fonctionnalités ci-dessous nécessitent un abonnement Pro, hebdomadaire ou annuel, au prix affiché dans l'app avant tout achat.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+L'abonnement est reconduit automatiquement à chaque période jusqu'à résiliation, et se résilie à tout moment dans Google Play, rubrique Paiements et abonnements.
+
 ---
 
 ## iOS App Store

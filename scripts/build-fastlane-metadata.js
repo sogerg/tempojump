@@ -46,9 +46,43 @@ function section(content, header, isH3) {
   return m ? m[1].trim() : '';
 }
 
+// Écriture via un temporaire puis renommage : un écrit interrompu ne laisse jamais un fichier
+// à moitié vide (leçon du launchpad.html effacé le 21/09).
 function writeFile(filePath, text) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
-  fs.writeFileSync(filePath, text, 'utf8');
+  const tmp = `${filePath}.tmp`;
+  fs.writeFileSync(tmp, text, 'utf8');
+  fs.renameSync(tmp, filePath);
+}
+
+/**
+ * Description Google Play : la même que celle de l'App Store, sauf les deux paragraphes qui
+ * dépendent de la plateforme.
+ *
+ * Sur iPhone, l'app gère elle-même 30 jours gratuits (trousseau) et l'abonnement se résilie dans
+ * le compte Apple. Sur Android rien ne survit à une désinstallation : l'essai est porté par
+ * Google Play (commit 1b9c6ac), et la résiliation se fait dans Google Play. Le jour où la fiche
+ * Play repart, parler des « 30 jours gérés par l'app » ou du « compte Apple » y serait faux.
+ *
+ * Chaque fiche {lang}.md porte donc deux sections propres à Android ; elles remplacent le
+ * 2e paragraphe (IMPORTANT, l'essai) et le dernier (résiliation) de la description. La
+ * description iOS n'est pas touchée. Toute fiche qui ne ressemble plus à ce schéma arrête le
+ * script plutôt que de produire une fiche Play à moitié iOS.
+ */
+function androidDescription(lang, content, fullDesc) {
+  const trial = section(content, 'Android Trial Paragraph');
+  const sub = section(content, 'Android Subscription Paragraph');
+  if (!trial || !sub) throw new Error(`${lang}.md : sections Android manquantes`);
+  const paras = fullDesc.split(/\r?\n\s*\r?\n/);
+  const iosTrial = paras[1];
+  const iosSub = paras[paras.length - 1];
+  if (!/30/.test(iosTrial || '') || !/Apple/.test(iosSub || '')) {
+    throw new Error(`${lang}.md : paragraphes essai/résiliation iOS introuvables à leur place`);
+  }
+  const out = fullDesc.replace(iosTrial, trial).replace(iosSub, sub);
+  if (/Apple/.test(out)) throw new Error(`${lang}.md : la description Android nomme encore Apple`);
+  if (out.length > 4000) throw new Error(`${lang}.md : description Android > 4000 caractères`);
+  return out;
 }
 
 function copyImages(srcDir, destDir) {
@@ -76,7 +110,7 @@ for (const [lang, [playLocale, appleLocale]] of Object.entries(LOCALE_MAP)) {
   const androidDir = path.join(FASTLANE_DIR, 'metadata/android', playLocale);
   writeFile(path.join(androidDir, 'title.txt'), appName);
   writeFile(path.join(androidDir, 'short_description.txt'), shortDesc);
-  writeFile(path.join(androidDir, 'full_description.txt'), fullDesc);
+  writeFile(path.join(androidDir, 'full_description.txt'), androidDescription(lang, content, fullDesc));
   copyImages(
     path.join(GOOGLE_SCREENSHOTS_DIR, lang),
     path.join(androidDir, 'images/phoneScreenshots')

@@ -47,6 +47,14 @@ Elérhető magyarul és sok más nyelven.
 
 Az előfizetés lemondásig minden időszakban automatikusan megújul, és bármikor lemondható az Apple-fiók beállításaiban.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+FONTOS: A TempoJump ingyenes próbaidőszakkal indul a Google Playen keresztül; ennek hossza előfizetés előtt látható a Google Playen és az appban, és a vége előtt díjmentesen lemondhatod. A próbaidőszak után az alább felsorolt összes funkcióhoz heti vagy éves Pro-előfizetés szükséges, az appban vásárlás előtt megjelenített áron.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Az előfizetés lemondásig minden időszakban automatikusan megújul, és bármikor lemondható a Google Playen, a Fizetések és előfizetések menüpontban.
+
 ---
 
 ## iOS App Store

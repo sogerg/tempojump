@@ -47,6 +47,14 @@ Disponibil în română și în multe alte limbi.
 
 Abonamentul se reînnoiește automat în fiecare perioadă până la anulare și poate fi anulat oricând din setările contului Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+IMPORTANT: TempoJump începe cu o perioadă de probă gratuită prin Google Play; durata ei este afișată în Google Play și în aplicație înainte de abonare și o poți anula gratuit înainte să se încheie. După perioada de probă, toate funcțiile enumerate mai jos necesită un abonament Pro, săptămânal sau anual, la prețul afișat în aplicație înainte de orice cumpărare.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Abonamentul se reînnoiește automat în fiecare perioadă până la anulare și poate fi anulat oricând din Google Play, la Plăți și abonamente.
+
 ---
 
 ## iOS App Store

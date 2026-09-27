@@ -49,6 +49,14 @@ Disponível em português e em muitos outros idiomas.
 
 A assinatura renova-se automaticamente a cada período até ser cancelada, e pode ser cancelada a qualquer momento nas definições da sua conta Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+IMPORTANTE: o TempoJump começa com uma avaliação gratuita através do Google Play; a sua duração é indicada no Google Play e na app antes de subscrever, e pode cancelá-la sem custos antes de terminar. Depois da avaliação, todas as funcionalidades abaixo requerem uma assinatura Pro, semanal ou anual, ao preço indicado na app antes de qualquer compra.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+A assinatura renova-se automaticamente a cada período até ser cancelada, e pode ser cancelada a qualquer momento no Google Play, em Pagamentos e subscrições.
+
 ---
 
 ## iOS App Store

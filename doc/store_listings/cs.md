@@ -47,6 +47,14 @@ Dostupné v češtině a mnoha dalších jazycích.
 
 Předplatné se automaticky obnovuje každé období až do zrušení a lze ho kdykoli zrušit v nastavení účtu Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+DŮLEŽITÉ: TempoJump začíná bezplatnou zkušební dobou přes Google Play; její délka je uvedena v Google Play a v aplikaci před předplacením a před jejím koncem ji můžeš zdarma zrušit. Po zkušební době všechny níže uvedené funkce vyžadují předplatné Pro, týdenní nebo roční, za cenu zobrazenou v aplikaci před nákupem.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Předplatné se automaticky obnovuje každé období až do zrušení a lze ho kdykoli zrušit v Google Play v části Platby a předplatné.
+
 ---
 
 ## iOS App Store

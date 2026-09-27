@@ -47,6 +47,14 @@ Tilgjengelig på norsk og mange andre språk.
 
 Abonnementet fornyes automatisk hver periode til det sies opp, og kan sies opp når som helst i innstillingene for Apple-kontoen din.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+VIKTIG: TempoJump starter med en gratis prøveperiode via Google Play; lengden vises på Google Play og i appen før du abonnerer, og du kan si den opp kostnadsfritt før den er over. Etter prøveperioden krever alle funksjonene nedenfor et Pro-abonnement, ukentlig eller årlig, til prisen som vises i appen før ethvert kjøp.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Abonnementet fornyes automatisk hver periode til det sies opp, og kan sies opp når som helst i Google Play under Betalinger og abonnementer.
+
 ---
 
 ## iOS App Store

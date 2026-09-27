@@ -49,6 +49,14 @@ Có sẵn bằng tiếng Việt và nhiều ngôn ngữ khác.
 
 Gói đăng ký tự động gia hạn mỗi kỳ cho đến khi hủy, và có thể hủy bất cứ lúc nào trong cài đặt tài khoản Apple.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+QUAN TRỌNG: TempoJump bắt đầu bằng thời gian dùng thử miễn phí qua Google Play; thời lượng được hiển thị trên Google Play và trong ứng dụng trước khi đăng ký, và bạn có thể hủy miễn phí trước khi hết hạn. Sau thời gian dùng thử, mọi tính năng dưới đây cần gói đăng ký Pro theo tuần hoặc theo năm, với giá hiển thị trong ứng dụng trước khi mua.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Gói đăng ký tự động gia hạn mỗi kỳ cho đến khi hủy, và có thể hủy bất cứ lúc nào trong Google Play, mục Thanh toán và gói đăng ký.
+
 ---
 
 ## iOS App Store

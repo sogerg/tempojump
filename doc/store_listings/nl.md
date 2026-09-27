@@ -47,6 +47,14 @@ Beschikbaar in het Nederlands en vele andere talen.
 
 Het abonnement wordt elke periode automatisch verlengd tot je opzegt, en is op elk moment opzegbaar in de instellingen van je Apple-account.
 
+## Android Trial Paragraph (Google Play — replaces the IMPORTANT paragraph above)
+
+BELANGRIJK: TempoJump begint met een gratis proefperiode via Google Play; de duur ervan staat op Google Play en in de app voordat je een abonnement neemt, en je kunt die vóór het einde kosteloos opzeggen. Na de proefperiode vereisen alle onderstaande functies een Pro-abonnement, wekelijks of jaarlijks, tegen de prijs die in de app wordt getoond vóór elke aankoop.
+
+## Android Subscription Paragraph (Google Play — replaces the last paragraph above)
+
+Het abonnement wordt elke periode automatisch verlengd tot je opzegt, en is op elk moment opzegbaar in Google Play, onder Betalingen en abonnementen.
+
 ---
 
 ## iOS App Store
