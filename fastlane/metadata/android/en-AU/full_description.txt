@@ -1,0 +1,28 @@
+TempoJump is the showjumping rider's prep tool: count your strides, plan your course and track your progress, before every round.
+
+IMPORTANT: TempoJump starts with a free trial through Google Play; its length is shown on Google Play and in the app before you subscribe, and you can cancel before it ends at no cost. After the trial, every feature listed below requires a Pro subscription, weekly or yearly, at the price shown in the app before any purchase.
+
+**Instant stride calculator**
+Enter the number of steps you walked between two jumps and instantly get the theoretical and suggested number of strides, based on your horse's size, the footing and the pace.
+
+**Related distances calculator**
+Work out the exact distance in metres to set between two elements of a combination (double, treble), upright or oxer.
+
+**Canter metronome**
+Find and memorise the right canter rhythm with a sound and vibration metronome, adjustable to your target pace.
+
+**Annotated course plan**
+Take a photo of the course plan, draw your line, place numbered markers and compare several routes (different colours).
+
+**Training log**
+Record every round: how it felt, placing, areas to work on, video. Share your notes and videos with your instructor in one tap.
+
+**Exercises & Checklist**
+Related distances for ground poles, gridwork and cavaletti, pre-show checklist, unit converter (metric/imperial).
+
+**Multiple horses**
+Manage several horses or ponies, each with its own height and its own calibrated stride length.
+
+Available in English and many other languages.
+
+The subscription renews automatically each period until cancelled, and can be cancelled at any time in Google Play, under Payments & subscriptions.

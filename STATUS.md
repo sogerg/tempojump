@@ -3,6 +3,34 @@
 1.0.3 (build 18) en vente sur l'App Store. Google Play : compte développeur bloqué, rien ne part.
 Ce fichier est né le 28/09/2026. Avant cette date, l'historique est dans les messages de commit.
 
+## 28/09/2026 — variantes régionales de fiche (prêtes, partent avec la prochaine version)
+
+Procédure `docs/procedure/variantes-regionales-fiche.md`. Quatre fiches
+`doc/store_listings/{en-GB,en-AU,es-MX,fr-CA}.md`, même schéma que les 25 langues (sections
+Android comprises) ; `scripts/build-fastlane-metadata.js` les connaît (`VARIANTES`) et les écrit :
+iOS `fastlane/metadata/<locale>/` (nom, sous-titre, mots-clés, promo, description + URL
+confidentialité/support/marketing reprises de la mère), Android
+`fastlane/metadata/android/{en-GB,en-AU,es-419,fr-CA}/` (titre, courte, longue avec les
+paragraphes Play). **Contrôle bloquant propre aux variantes** : paragraphe IMPORTANT (30 jours),
+paragraphe de résiliation et les deux sections Android identiques mot pour mot à la langue mère ;
+limites ; mots-clés (pas de mot du nom/sous-titre, pas de copie de la mère) ; titres de captures.
+Relancé : les 25 langues existantes ressortent identiques (`git status` propre).
+
+| Locale (iOS / Play) | Mère | Ce qui change |
+|---|---|---|
+| en-GB / en-GB | en | sous-titre « Showjumping Distances & Poles », treble, upright, the going, instructor, colours, metres/yards and feet |
+| en-AU / en-AU | en | même sous-titre, gridwork, jumps, metres |
+| es-MX / es-419 | es | sous-titre « Salto Ecuestre y Recorridos », trancos, ingresa, piso, video, hípica |
+| fr-CA / fr-CA | fr | sous-titre « Saut d'obstacles & distances », liste de vérification, parcours, carnet d'entraînement (contenu générique : vaut au Québec) |
+
+Écartée : **en-CA** (pas de vocabulaire équestre canadien distinct de l'anglais américain : ce
+serait une copie). Titres de captures : dans chaque `.md` (section « Screenshots Text ») — ce
+dépôt n'a pas de CSV Canva ; les captures de la langue mère conviennent (aucun dossier
+`doc/store_screenshots_apple/<variante>`, donc rien de copié).
+
+**Envoi** : la 1.0.3 en vente n'accepte pas de nouvelle locale → iOS avec la **prochaine
+version** (celle du build qui retire la chaîne Face ID) ; Android le jour où le compte Play revient.
+
 ## 28/09/2026 — fiche Android séparée, balayage
 
 ### Fait

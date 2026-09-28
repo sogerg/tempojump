@@ -1,0 +1,28 @@
+TempoJump est l'outil de préparation du cavalier de saut d'obstacles : calcule tes foulées, prépare ton parcours et suis ta progression, avant chaque parcours en concours.
+
+IMPORTANT : TempoJump est gratuite pendant 30 jours à partir de la première ouverture, sans rien à souscrire. Ensuite, toutes les fonctionnalités ci-dessous nécessitent un abonnement Pro, hebdomadaire ou annuel, au prix affiché dans l'app avant tout achat.
+
+**Calcul de foulées instantané**
+Entre le nombre de pas comptés entre deux obstacles et obtiens en un instant le nombre de foulées théoriques et conseillées, selon la taille de ton cheval, le sol et la vitesse.
+
+**Calculateur de combinaisons**
+Calcule la distance exacte à placer entre deux éléments d'une combinaison (double, triple), vertical ou oxer.
+
+**Métronome de cadence**
+Trouve et mémorise la bonne cadence au galop grâce à un métronome sonore et vibrant, réglable selon la vitesse visée.
+
+**Plan de parcours annotable**
+Prends en photo ton plan de parcours, trace ton tracé, place des repères numérotés et compare plusieurs options de tracé (couleurs différentes).
+
+**Carnet d'entraînement**
+Enregistre chaque parcours : ressenti, classement, points à travailler, vidéo. Partage tes fiches et vidéos avec ton entraîneur en un geste.
+
+**Exercices & liste de vérification**
+Distances pour les barres au sol et cavalettis, liste de vérification avant le concours, convertisseur d'unités (métrique/impérial).
+
+**Plusieurs chevaux**
+Gère plusieurs chevaux ou poneys, chacun avec sa propre taille au garrot et son propre étalonnage de foulée.
+
+Offerte en français et dans de nombreuses autres langues.
+
+L'abonnement est reconduit automatiquement à chaque période jusqu'à résiliation, et se résilie à tout moment dans les réglages de votre compte Apple.

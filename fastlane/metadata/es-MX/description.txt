@@ -1,0 +1,28 @@
+TempoJump es la herramienta de preparación del jinete de salto ecuestre: calcula tus trancos, prepara tu pista y sigue tu progreso, antes de cada recorrido.
+
+IMPORTANTE: TempoJump es gratis durante 30 días desde la primera apertura, sin nada que contratar. Después, todas las funciones siguientes requieren una suscripción Pro, semanal o anual, al precio mostrado en la app antes de cualquier compra.
+
+**Calculadora instantánea de trancos**
+Ingresa el número de pasos contados entre dos obstáculos y obtén al instante el número de trancos teóricos y recomendados, según la alzada de tu caballo, el piso de la pista y la velocidad.
+
+**Calculadora de distancias relacionadas**
+Calcula la distancia exacta entre dos elementos de una combinación (doble, triple), vertical u oxer.
+
+**Metrónomo de cadencia**
+Encuentra y memoriza la cadencia correcta al galope con un metrónomo con sonido y vibración, ajustable según la velocidad deseada.
+
+**Plano de pista anotable**
+Toma una foto del plano de pista, traza tu recorrido, coloca marcadores numerados y compara varias opciones de recorrido (colores diferentes).
+
+**Diario de entrenamiento**
+Registra cada recorrido: sensaciones, lugar obtenido, aspectos a mejorar, video. Comparte tus notas y videos con tu entrenador en un toque.
+
+**Ejercicios y Checklist**
+Distancias relacionadas para barras en el piso y cavaletis, checklist antes del concurso, convertidor de unidades (métrico/imperial).
+
+**Varios caballos**
+Administra varios caballos o ponis, cada uno con su propia alzada y su propia calibración de tranco.
+
+Disponible en español y muchos otros idiomas.
+
+La suscripción se renueva automáticamente cada periodo hasta que se cancele, y puede cancelarse en cualquier momento en los ajustes de tu cuenta de Apple.

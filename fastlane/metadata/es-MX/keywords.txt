@@ -1,0 +1,1 @@
+trancos,galope,distancia,obstaculos,pista,concurso,checklist,jinete,poni,equitacion,hipica,cavaletis
