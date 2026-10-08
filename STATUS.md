@@ -3,6 +3,21 @@
 1.0.3 (build 18) en vente sur l'App Store. Google Play : compte développeur bloqué, rien ne part.
 Ce fichier est né le 28/09/2026. Avant cette date, l'historique est dans les messages de commit.
 
+## 08/10/2026 — Avis in-app (prochaine version, après la 1.0.3 build 18 en vente)
+Procédure `docs/procedure/avis-in-app.md`. Ni version ni buildNumber touchés, aucun build.
+- Aucun mécanisme équivalent avant (ni demande d'avis ni lien de notation ; l'app n'a pas de rappels).
+- **Moment de satisfaction** = nouvelle séance enregistrée au carnet (`src/screens/JournalScreen.tsx`,
+  `handleSaveEntry`, hors retouche d'une séance existante). Demande native (`expo-store-review` ~57.0.3)
+  seulement après 3 moments, 2 jours depuis la première ouverture (notée dans `App.tsx`, `AppContent`),
+  120 jours entre deux demandes. Jamais sur le paywall (le carnet n'est accessible qu'hors paywall).
+  Décision pure testée : `src/lib/avisDecision.ts` (+ `.test.ts`) ; AsyncStorage `@cavalier/avis`
+  (`src/lib/avis.ts`).
+- **Ligne « Noter l'app »** dans Réglages, sous « Langue » (même style de ligne), clé `settings.rateApp`
+  en 25 langues. iOS : `https://apps.apple.com/app/id6789875302?action=write-review` ; Android : fiche
+  Play `com.sogerg.monappcavalier`.
+- Module natif : effet au prochain build. À vérifier sur appareil : la fenêtre native n'apparaît pas en
+  TestFlight (normal), le lien ouvre le store.
+
 ## 28/09/2026 — variantes régionales de fiche (prêtes, partent avec la prochaine version)
 
 Procédure `docs/procedure/variantes-regionales-fiche.md`. Quatre fiches

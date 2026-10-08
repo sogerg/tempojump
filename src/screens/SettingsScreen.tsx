@@ -12,6 +12,7 @@ import { ResultCard } from '../components/ResultCard';
 import { formatLength, inputUnitSuffix, toMeters, UnitSystem } from '../lib/units';
 import { calibrateStepLength } from '../lib/mathUtils';
 import { FONTS } from '../constants/typography';
+import { lienNoterAppDisponible, ouvrirNoterApp } from '../lib/avis';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 
 export function SettingsScreen() {
@@ -137,6 +138,22 @@ export function SettingsScreen() {
             <ChevronRight size={18} color={colors.accentGold} />
           </View>
         </TouchableOpacity>
+
+        {lienNoterAppDisponible() ? (
+          <>
+            <View style={{ height: 14 }} />
+            <TouchableOpacity
+              style={[styles.menuRow, { borderColor: colors.border, backgroundColor: colors.surface }]}
+              onPress={() => ouvrirNoterApp()}
+              accessibilityRole="link"
+            >
+              <Text style={[styles.sectionLabel, { color: colors.textMuted, marginBottom: 0 }]}>
+                {t('settings.rateApp')}
+              </Text>
+              <ChevronRight size={18} color={colors.accentGold} />
+            </TouchableOpacity>
+          </>
+        ) : null}
       </ScrollView>
 
       <Modal

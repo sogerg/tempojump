@@ -129,7 +129,8 @@
     "units": "Unités",
     "metric": "Métrique (m, cm)",
     "imperial": "Impérial (ft, in)",
-    "darkMode": "Mode sombre"
+    "darkMode": "Mode sombre",
+    "rateApp": "Noter l'app"
   },
   "horsePicker": {
     "label": "Monture",

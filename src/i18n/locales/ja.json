@@ -127,7 +127,8 @@
     "units": "単位",
     "metric": "メートル法（m、cm）",
     "imperial": "ヤード・ポンド法（ft、in）",
-    "darkMode": "ダークモード"
+    "darkMode": "ダークモード",
+    "rateApp": "アプリを評価"
   },
   "horsePicker": {
     "label": "馬",

@@ -128,7 +128,8 @@
     "units": "Yksiköt",
     "metric": "Metrinen (m, cm)",
     "imperial": "Imperiaalinen (ft, in)",
-    "darkMode": "Tumma tila"
+    "darkMode": "Tumma tila",
+    "rateApp": "Arvioi sovellus"
   },
   "horsePicker": {
     "label": "Hevonen",

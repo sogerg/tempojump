@@ -127,7 +127,8 @@
     "units": "单位",
     "metric": "公制（米、厘米）",
     "imperial": "英制（英尺、英寸）",
-    "darkMode": "深色模式"
+    "darkMode": "深色模式",
+    "rateApp": "给应用评分"
   },
   "horsePicker": {
     "label": "马匹",

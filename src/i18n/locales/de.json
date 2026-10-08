@@ -128,7 +128,8 @@
     "units": "Einheiten",
     "metric": "Metrisch (m, cm)",
     "imperial": "Imperial (ft, in)",
-    "darkMode": "Dunkler Modus"
+    "darkMode": "Dunkler Modus",
+    "rateApp": "App bewerten"
   },
   "horsePicker": {
     "label": "Pferd",

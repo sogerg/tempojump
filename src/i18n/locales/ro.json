@@ -129,7 +129,8 @@
     "units": "Unități",
     "metric": "Metric (m, cm)",
     "imperial": "Imperial (ft, in)",
-    "darkMode": "Mod întunecat"
+    "darkMode": "Mod întunecat",
+    "rateApp": "Evaluează aplicația"
   },
   "horsePicker": {
     "label": "Cal",

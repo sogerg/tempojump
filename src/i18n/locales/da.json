@@ -128,7 +128,8 @@
     "units": "Enheder",
     "metric": "Metrisk (m, cm)",
     "imperial": "Imperial (ft, in)",
-    "darkMode": "Mørk tilstand"
+    "darkMode": "Mørk tilstand",
+    "rateApp": "Bedøm appen"
   },
   "horsePicker": {
     "label": "Hest",

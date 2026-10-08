@@ -128,7 +128,8 @@
     "units": "Units",
     "metric": "Metric (m, cm)",
     "imperial": "Imperial (ft, in)",
-    "darkMode": "Dark mode"
+    "darkMode": "Dark mode",
+    "rateApp": "Rate the app"
   },
   "horsePicker": {
     "label": "Mount",

@@ -128,7 +128,8 @@
     "units": "Birimler",
     "metric": "Metrik (m, cm)",
     "imperial": "İngiliz birimi (ft, in)",
-    "darkMode": "Karanlık mod"
+    "darkMode": "Karanlık mod",
+    "rateApp": "Uygulamayı değerlendir"
   },
   "horsePicker": {
     "label": "At",

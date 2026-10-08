@@ -128,7 +128,8 @@
     "units": "Eenheden",
     "metric": "Metrisch (m, cm)",
     "imperial": "Imperiaal (ft, in)",
-    "darkMode": "Donkere modus"
+    "darkMode": "Donkere modus",
+    "rateApp": "App beoordelen"
   },
   "horsePicker": {
     "label": "Paard",

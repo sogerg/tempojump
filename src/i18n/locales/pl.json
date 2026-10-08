@@ -130,7 +130,8 @@
     "units": "Jednostki",
     "metric": "Metryczne (m, cm)",
     "imperial": "Imperialne (ft, in)",
-    "darkMode": "Tryb ciemny"
+    "darkMode": "Tryb ciemny",
+    "rateApp": "Oceń aplikację"
   },
   "horsePicker": {
     "label": "Koń",

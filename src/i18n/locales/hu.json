@@ -128,7 +128,8 @@
     "units": "Mértékegységek",
     "metric": "Metrikus (m, cm)",
     "imperial": "Angolszász (ft, in)",
-    "darkMode": "Sötét mód"
+    "darkMode": "Sötét mód",
+    "rateApp": "Az app értékelése"
   },
   "horsePicker": {
     "label": "Ló",

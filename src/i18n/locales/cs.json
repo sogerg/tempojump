@@ -130,7 +130,8 @@
     "units": "Jednotky",
     "metric": "Metrické (m, cm)",
     "imperial": "Imperiální (ft, in)",
-    "darkMode": "Tmavý režim"
+    "darkMode": "Tmavý režim",
+    "rateApp": "Ohodnotit aplikaci"
   },
   "horsePicker": {
     "label": "Kůň",

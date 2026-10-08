@@ -129,7 +129,8 @@
     "units": "Unità",
     "metric": "Metrico (m, cm)",
     "imperial": "Imperiale (ft, in)",
-    "darkMode": "Modalità scura"
+    "darkMode": "Modalità scura",
+    "rateApp": "Valuta l'app"
   },
   "horsePicker": {
     "label": "Cavallo",
