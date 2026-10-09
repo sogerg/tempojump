@@ -12,7 +12,7 @@ import { ResultCard } from '../components/ResultCard';
 import { formatLength, inputUnitSuffix, toMeters, UnitSystem } from '../lib/units';
 import { calibrateStepLength } from '../lib/mathUtils';
 import { FONTS } from '../constants/typography';
-import { lienNoterAppDisponible, ouvrirNoterApp } from '../lib/avis';
+import { hasRatingLink, openRatingPage } from '../lib/rating';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 
 export function SettingsScreen() {
@@ -139,12 +139,12 @@ export function SettingsScreen() {
           </View>
         </TouchableOpacity>
 
-        {lienNoterAppDisponible() ? (
+        {hasRatingLink() ? (
           <>
             <View style={{ height: 14 }} />
             <TouchableOpacity
               style={[styles.menuRow, { borderColor: colors.border, backgroundColor: colors.surface }]}
-              onPress={() => ouvrirNoterApp()}
+              onPress={() => openRatingPage()}
               accessibilityRole="link"
             >
               <Text style={[styles.sectionLabel, { color: colors.textMuted, marginBottom: 0 }]}>

@@ -2,6 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { File, Paths } from 'expo-file-system';
 import { CoursePlan, CustomChecklistItem, Horse, HorseChecklistData, JournalEntry } from '../types';
 import { UnitSystem } from './units';
+import { RatingPromptState, parseRatingPromptState } from './ratingPrompt';
 
 const HORSES_KEY = '@cavalier/horses';
 const RIDER_STEP_LENGTH_KEY = '@cavalier/riderStepLength';
@@ -14,6 +15,7 @@ const CUSTOM_CHECKLIST_ITEMS_KEY = '@cavalier/customChecklistItems';
 const HORSE_CHECKLISTS_KEY = '@cavalier/horseChecklists';
 const COURSE_PLANS_KEY = '@cavalier/coursePlans';
 const JOURNAL_ENTRIES_KEY = '@cavalier/journalEntries';
+const RATING_PROMPT_KEY = '@cavalier/ratingPrompt';
 
 export async function loadHorses(): Promise<Horse[]> {
   const raw = await AsyncStorage.getItem(HORSES_KEY);
@@ -125,4 +127,10 @@ export async function saveJournalEntries(entries: JournalEntry[]): Promise<void>
   await AsyncStorage.setItem(JOURNAL_ENTRIES_KEY, JSON.stringify(entries));
 }
 
+export async function loadRatingPromptState(): Promise<RatingPromptState> {
+  return parseRatingPromptState(await AsyncStorage.getItem(RATING_PROMPT_KEY));
+}
 
+export async function saveRatingPromptState(state: RatingPromptState): Promise<void> {
+  await AsyncStorage.setItem(RATING_PROMPT_KEY, JSON.stringify(state));
+}

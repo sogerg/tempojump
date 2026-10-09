@@ -11,7 +11,7 @@ import { dateLocaleIso } from '../lib/dates';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
-import { noterMomentDeSatisfaction } from '../lib/avis';
+import { onSessionLogged } from '../lib/rating';
 import { FolderOpen, Pencil, Plus, Save, Share2, Trash2, Video, X } from 'lucide-react-native';
 
 function generateId(): string {
@@ -125,7 +125,7 @@ export function JournalScreen() {
     setEntries(next);
     await saveJournalEntries(next);
     // Avis in-app : une nouvelle séance notée au carnet (pas une simple retouche).
-    if (!editingId) noterMomentDeSatisfaction();
+    if (!editingId) onSessionLogged();
     resetForm();
     setIsAdding(false);
   };

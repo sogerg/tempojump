@@ -1,5 +1,8 @@
 # Statut TempoJump
 
+## 09/10/2026 — Restes de gabarit (audit 4.3)
+Avis in-app réécrit propre à l'app (09/10) : `src/lib/ratingPrompt.ts` (règles, + `ratingPrompt.test.ts`, 12 cas), `src/lib/rating.ts` (natif), stockage par `loadRatingPromptState` / `saveRatingPromptState` dans `src/lib/storage.ts` (clé `@cavalier/ratingPrompt`) ; moment inchangé (nouvelle séance au carnet) ; comportement inchangé. Médias retirés : 12 restes non référencés de `assets/` (bouton menu icone, cavalier jump icon, cheval-filigrane, horse-head…svgrepo.svg, icone pente descendante/montante, icone plat, icone-strideOn, splash-icon, sreenshot amelioré, tempojump-icon, tete cheval icone ; leurs remplaçants renommés restent).
+
 1.0.3 (build 18) en vente sur l'App Store. Google Play : compte développeur bloqué, rien ne part.
 Ce fichier est né le 28/09/2026. Avant cette date, l'historique est dans les messages de commit.
 

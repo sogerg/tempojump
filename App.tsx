@@ -16,7 +16,7 @@ import { SubscriptionProvider, useSubscription } from './src/context/Subscriptio
 import { TrialProvider, useTrial } from './src/context/TrialContext';
 import { TrialBanner } from './src/components/TrialBanner';
 import { RootNavigator } from './src/navigation/RootNavigator';
-import { noterOuvertureApp } from './src/lib/avis';
+import { trackFirstLaunch } from './src/lib/rating';
 import { PaywallScreen } from './src/screens/PaywallScreen';
 
 // L'app est entière tant que la période gratuite court OU que l'abonnement est actif. Le paywall
@@ -44,7 +44,7 @@ function SubscriptionGate({ children }: { children: React.ReactNode }) {
 function AppContent() {
   const { isDarkMode } = useSettings();
   useEffect(() => {
-    noterOuvertureApp();
+    trackFirstLaunch();
   }, []);
   return (
     <HorseProvider>
