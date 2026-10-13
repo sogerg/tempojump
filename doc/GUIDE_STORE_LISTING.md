@@ -71,7 +71,7 @@ Keywords iOS = tout ce qui n'a pas pu rentrer ailleurs
 
 - Title et Subtitle doivent se **completer**, pas se repeter
 - Mettre le keyword principal dans le Title
-- **Mener le Title avec le keyword commercial / la marque** (ex: "Gun Value: ..." pas "... : Gun Value") — le premier bloc pese le plus en ASO et c'est ce que le user voit d'abord. Format type : `[kw argent + Objet] : [Verbe d'action que le user tape]`
+- **Mener le Title avec le keyword commercial / la marque** (ex: "Concrete Calculator: ..." pas "... : Concrete Calculator") — le premier bloc pese le plus en ASO et c'est ce que le user voit d'abord. Format type : `[kw argent + Objet] : [Verbe d'action que le user tape]`
 - Mettre les keywords secondaires dans le Subtitle
 - Sonner naturel, pas spammy
 - Verifier les char limits dans CHAQUE langue (certaines langues sont plus longues)
