@@ -130,7 +130,8 @@
     "metric": "Métrico (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Modo oscuro",
-    "rateApp": "Valorar la app"
+    "rateApp": "Valorar la app",
+    "otherApps": "Nuestras otras apps"
   },
   "horsePicker": {
     "label": "Montura",
@@ -143,7 +144,8 @@
     "heightLabel": "Altura de las barras",
     "tableTitle": "Patrón de trancos",
     "strideCount_one": "{{count}} tranco",
-    "strideCount_other": "{{count}} trancos"
+    "strideCount_other": "{{count}} trancos",
+    "strideCount_many": "{{count}} trancos"
   },
   "metronome": {
     "title": "Metrónomo de galope",

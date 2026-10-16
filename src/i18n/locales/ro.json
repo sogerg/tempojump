@@ -130,7 +130,8 @@
     "metric": "Metric (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Mod întunecat",
-    "rateApp": "Evaluează aplicația"
+    "rateApp": "Evaluează aplicația",
+    "otherApps": "Celelalte aplicații ale noastre"
   },
   "horsePicker": {
     "label": "Cal",
@@ -143,7 +144,8 @@
     "heightLabel": "Înălțimea barelor",
     "tableTitle": "Model de fulee",
     "strideCount_one": "{{count}} fuleu",
-    "strideCount_other": "{{count}} fulee"
+    "strideCount_few": "{{count}} fulee",
+    "strideCount_other": "{{count}} de fulee"
   },
   "metronome": {
     "title": "Metronom de galop",

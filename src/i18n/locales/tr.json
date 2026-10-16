@@ -129,7 +129,8 @@
     "metric": "Metrik (m, cm)",
     "imperial": "İngiliz birimi (ft, in)",
     "darkMode": "Karanlık mod",
-    "rateApp": "Uygulamayı değerlendir"
+    "rateApp": "Uygulamayı değerlendir",
+    "otherApps": "Diğer uygulamalarımız"
   },
   "horsePicker": {
     "label": "At",

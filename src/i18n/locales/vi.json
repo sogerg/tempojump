@@ -128,7 +128,8 @@
     "metric": "Hệ mét (m, cm)",
     "imperial": "Hệ Anh (ft, in)",
     "darkMode": "Chế độ tối",
-    "rateApp": "Đánh giá ứng dụng"
+    "rateApp": "Đánh giá ứng dụng",
+    "otherApps": "Các ứng dụng khác của chúng tôi"
   },
   "horsePicker": {
     "label": "Ngựa",

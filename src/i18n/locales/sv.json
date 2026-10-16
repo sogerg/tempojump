@@ -129,7 +129,8 @@
     "metric": "Metriskt (m, cm)",
     "imperial": "Brittiskt (ft, in)",
     "darkMode": "Mörkt läge",
-    "rateApp": "Betygsätt appen"
+    "rateApp": "Betygsätt appen",
+    "otherApps": "Våra andra appar"
   },
   "horsePicker": {
     "label": "Häst",

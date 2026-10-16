@@ -130,7 +130,8 @@
     "metric": "Métrique (m, cm)",
     "imperial": "Impérial (ft, in)",
     "darkMode": "Mode sombre",
-    "rateApp": "Noter l'app"
+    "rateApp": "Noter l'app",
+    "otherApps": "Nos autres apps"
   },
   "horsePicker": {
     "label": "Monture",
@@ -143,7 +144,8 @@
     "heightLabel": "Hauteur des barres",
     "tableTitle": "Contrat de foulées",
     "strideCount_one": "{{count}} foulée",
-    "strideCount_other": "{{count}} foulées"
+    "strideCount_other": "{{count}} foulées",
+    "strideCount_many": "{{count}} foulées"
   },
   "metronome": {
     "title": "Métronome de galop",

@@ -129,7 +129,8 @@
     "metric": "Metrikus (m, cm)",
     "imperial": "Angolszász (ft, in)",
     "darkMode": "Sötét mód",
-    "rateApp": "Az app értékelése"
+    "rateApp": "Az app értékelése",
+    "otherApps": "További alkalmazásaink"
   },
   "horsePicker": {
     "label": "Ló",

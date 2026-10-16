@@ -128,7 +128,8 @@
     "metric": "미터법 (m, cm)",
     "imperial": "야드파운드법 (ft, in)",
     "darkMode": "다크 모드",
-    "rateApp": "앱 평가하기"
+    "rateApp": "앱 평가하기",
+    "otherApps": "다른 앱 보기"
   },
   "horsePicker": {
     "label": "마필",

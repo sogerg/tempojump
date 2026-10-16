@@ -130,7 +130,8 @@
     "metric": "Metrico (m, cm)",
     "imperial": "Imperiale (ft, in)",
     "darkMode": "Modalità scura",
-    "rateApp": "Valuta l'app"
+    "rateApp": "Valuta l'app",
+    "otherApps": "Le nostre altre app"
   },
   "horsePicker": {
     "label": "Cavallo",
@@ -143,7 +144,8 @@
     "heightLabel": "Altezza delle barriere",
     "tableTitle": "Schema dei tempi",
     "strideCount_one": "{{count}} tempo",
-    "strideCount_other": "{{count}} tempi"
+    "strideCount_other": "{{count}} tempi",
+    "strideCount_many": "{{count}} tempi"
   },
   "metronome": {
     "title": "Metronomo del galoppo",

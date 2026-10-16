@@ -128,7 +128,8 @@
     "metric": "メートル法（m、cm）",
     "imperial": "ヤード・ポンド法（ft、in）",
     "darkMode": "ダークモード",
-    "rateApp": "アプリを評価"
+    "rateApp": "アプリを評価",
+    "otherApps": "その他のアプリ"
   },
   "horsePicker": {
     "label": "馬",

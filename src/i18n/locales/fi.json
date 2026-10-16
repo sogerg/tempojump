@@ -129,7 +129,8 @@
     "metric": "Metrinen (m, cm)",
     "imperial": "Imperiaalinen (ft, in)",
     "darkMode": "Tumma tila",
-    "rateApp": "Arvioi sovellus"
+    "rateApp": "Arvioi sovellus",
+    "otherApps": "Muut sovelluksemme"
   },
   "horsePicker": {
     "label": "Hevonen",

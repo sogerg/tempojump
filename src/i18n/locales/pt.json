@@ -130,7 +130,8 @@
     "metric": "Métrico (m, cm)",
     "imperial": "Imperial (ft, in)",
     "darkMode": "Modo escuro",
-    "rateApp": "Avaliar o app"
+    "rateApp": "Avaliar o app",
+    "otherApps": "Nossos outros apps"
   },
   "horsePicker": {
     "label": "Cavalo",
@@ -143,7 +144,8 @@
     "heightLabel": "Altura das varas",
     "tableTitle": "Padrão de lances",
     "strideCount_one": "{{count}} lance",
-    "strideCount_other": "{{count}} lances"
+    "strideCount_other": "{{count}} lances",
+    "strideCount_many": "{{count}} lances"
   },
   "metronome": {
     "title": "Metrónomo de galope",

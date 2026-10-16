@@ -129,7 +129,8 @@
     "metric": "Metrisch (m, cm)",
     "imperial": "Imperiaal (ft, in)",
     "darkMode": "Donkere modus",
-    "rateApp": "App beoordelen"
+    "rateApp": "App beoordelen",
+    "otherApps": "Onze andere apps"
   },
   "horsePicker": {
     "label": "Paard",

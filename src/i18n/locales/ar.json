@@ -133,7 +133,8 @@
     "metric": "متري (م، سم)",
     "imperial": "إمبراطوري (قدم، إنش)",
     "darkMode": "الوضع الداكن",
-    "rateApp": "قيّم التطبيق"
+    "rateApp": "قيّم التطبيق",
+    "otherApps": "تطبيقاتنا الأخرى"
   },
   "horsePicker": {
     "label": "الجواد",
@@ -145,7 +146,11 @@
     "subtitle": "جهّز خطوط العصي الأرضية أو الكافاليتي: مسافات دقيقة لكل عدد من الوثبات.",
     "heightLabel": "ارتفاع العوارض",
     "tableTitle": "مخطط الوثبات",
+    "strideCount_zero": "{{count}} وثبة",
     "strideCount_one": "وثبة واحدة",
+    "strideCount_two": "وثبتان",
+    "strideCount_few": "{{count}} وثبات",
+    "strideCount_many": "{{count}} وثبة",
     "strideCount_other": "{{count}} وثبة"
   },
   "metronome": {

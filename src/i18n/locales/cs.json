@@ -131,7 +131,8 @@
     "metric": "Metrické (m, cm)",
     "imperial": "Imperiální (ft, in)",
     "darkMode": "Tmavý režim",
-    "rateApp": "Ohodnotit aplikaci"
+    "rateApp": "Ohodnotit aplikaci",
+    "otherApps": "Naše další aplikace"
   },
   "horsePicker": {
     "label": "Kůň",
@@ -144,6 +145,8 @@
     "heightLabel": "Výška kavalet",
     "tableTitle": "Schéma cvalových skoků",
     "strideCount_one": "{{count}} cvalový skok",
+    "strideCount_few": "{{count}} cvalové skoky",
+    "strideCount_many": "{{count}} cvalového skoku",
     "strideCount_other": "{{count}} cvalových skoků"
   },
   "metronome": {

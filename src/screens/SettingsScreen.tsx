@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FlatList, Modal, Pressable, ScrollView, StyleSheet, Switch, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Linking, Modal, Platform, Pressable, ScrollView, StyleSheet, Switch, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
 import { ChevronRight } from 'lucide-react-native';
@@ -14,6 +14,9 @@ import { calibrateStepLength } from '../lib/mathUtils';
 import { FONTS } from '../constants/typography';
 import { hasRatingLink, openRatingPage } from '../lib/rating';
 import { ScreenWatermark } from '../components/ScreenWatermark';
+
+/** Page développeur App Store (identifiant public lu par l'API iTunes le 17/10/2026). */
+const PAGE_DEVELOPPEUR_IOS = 'https://apps.apple.com/developer/id6786003873';
 
 export function SettingsScreen() {
   const { t } = useTranslation();
@@ -149,6 +152,24 @@ export function SettingsScreen() {
             >
               <Text style={[styles.sectionLabel, { color: colors.textMuted, marginBottom: 0 }]}>
                 {t('settings.rateApp')}
+              </Text>
+              <ChevronRight size={18} color={colors.accentGold} />
+            </TouchableOpacity>
+          </>
+        ) : null}
+
+        {/* « Nos autres apps » : page développeur App Store (tenue à jour par Apple, dans la langue du
+            téléphone). iOS seulement : le compte Google Play n'a pas de page publique pour l'instant. */}
+        {Platform.OS === 'ios' ? (
+          <>
+            <View style={{ height: 14 }} />
+            <TouchableOpacity
+              style={[styles.menuRow, { borderColor: colors.border, backgroundColor: colors.surface }]}
+              onPress={() => { Linking.openURL(PAGE_DEVELOPPEUR_IOS).catch(() => {}); }}
+              accessibilityRole="link"
+            >
+              <Text style={[styles.sectionLabel, { color: colors.textMuted, marginBottom: 0 }]}>
+                {t('settings.otherApps')}
               </Text>
               <ChevronRight size={18} color={colors.accentGold} />
             </TouchableOpacity>
