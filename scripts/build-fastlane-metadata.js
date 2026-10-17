@@ -162,6 +162,50 @@ function copyImages(srcDir, destDir) {
   }
 }
 
+/**
+ * Rejet 3.1.2(c) du 17/10/2026 (1.0.5) : la description iOS doit porter un lien fonctionnel vers
+ * les conditions d'utilisation (EULA standard d'Apple) et vers la confidentialité. Ajoutés ici, en
+ * fin de description iOS seulement (la fiche Play ne parle pas d'Apple), dans la langue de la fiche.
+ */
+const EULA = 'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
+const LIBELLES_LIENS = {
+  fr: ["Conditions d'utilisation (CLUF)", 'Politique de confidentialité'],
+  en: ['Terms of Use (EULA)', 'Privacy Policy'],
+  de: ['Nutzungsbedingungen (EULA)', 'Datenschutzerklärung'],
+  es: ['Términos de uso (EULA)', 'Política de privacidad'],
+  it: ["Termini d'uso (EULA)", 'Informativa sulla privacy'],
+  pt: ['Termos de utilização (EULA)', 'Política de privacidade'],
+  nl: ['Gebruiksvoorwaarden (EULA)', 'Privacybeleid'],
+  da: ['Brugsvilkår (EULA)', 'Privatlivspolitik'],
+  no: ['Bruksvilkår (EULA)', 'Personvernerklæring'],
+  sv: ['Användarvillkor (EULA)', 'Integritetspolicy'],
+  fi: ['Käyttöehdot (EULA)', 'Tietosuojakäytäntö'],
+  pl: ['Warunki korzystania (EULA)', 'Polityka prywatności'],
+  cs: ['Podmínky použití (EULA)', 'Zásady ochrany osobních údajů'],
+  hu: ['Felhasználási feltételek (EULA)', 'Adatvédelmi irányelvek'],
+  el: ['Όροι χρήσης (EULA)', 'Πολιτική απορρήτου'],
+  ru: ['Условия использования (EULA)', 'Политика конфиденциальности'],
+  tr: ['Kullanım Koşulları (EULA)', 'Gizlilik Politikası'],
+  ar: ['شروط الاستخدام (EULA)', 'سياسة الخصوصية'],
+  ro: ['Termeni de utilizare (EULA)', 'Politica de confidențialitate'],
+  hi: ['उपयोग की शर्तें (EULA)', 'गोपनीयता नीति'],
+  ja: ['利用規約（EULA）', 'プライバシーポリシー'],
+  ko: ['이용 약관(EULA)', '개인정보 처리방침'],
+  zh: ['使用条款（EULA）', '隐私政策'],
+  th: ['ข้อกำหนดการใช้งาน (EULA)', 'นโยบายความเป็นส่วนตัว'],
+  vi: ['Điều khoản sử dụng (EULA)', 'Chính sách quyền riêng tư'],
+};
+function liensLegaux(lang, iosDir, mere) {
+  const base = mere || lang;
+  const lib = LIBELLES_LIENS[base];
+  if (!lib) throw new Error(`${lang} : libellés EULA/confidentialité manquants`);
+  const dirConf = mere ? path.join(FASTLANE_DIR, 'metadata', LOCALE_MAP[mere][1]) : iosDir;
+  const conf = fs.readFileSync(path.join(dirConf, 'privacy_url.txt'), 'utf8').trim();
+  if (!/^https:\/\//.test(conf)) throw new Error(`${lang} : privacy_url.txt absent ou invalide`);
+  const sep = base === 'fr' ? ' : ' : ['ja', 'zh'].includes(base) ? '：' : ': ';
+  return `${lib[0]}${sep}${EULA}\n${lib[1]}${sep}${conf}`;
+}
+
 let processed = 0;
 for (const [lang, [playLocale, appleLocale]] of Object.entries(LOCALE_MAP)) {
   const mdPath = path.join(LISTINGS_DIR, `${lang}.md`);
@@ -191,7 +235,9 @@ for (const [lang, [playLocale, appleLocale]] of Object.entries(LOCALE_MAP)) {
   const iosDir = path.join(FASTLANE_DIR, 'metadata', appleLocale);
   writeFile(path.join(iosDir, 'name.txt'), appName);
   writeFile(path.join(iosDir, 'subtitle.txt'), subtitle);
-  writeFile(path.join(iosDir, 'description.txt'), fullDesc);
+  const descIos = `${fullDesc}\n\n${liensLegaux(lang, iosDir, mere)}`;
+  if (descIos.length > 4000) throw new Error(`${lang}.md : description iOS > 4000 caractères avec les liens`);
+  writeFile(path.join(iosDir, 'description.txt'), descIos);
   writeFile(path.join(iosDir, 'keywords.txt'), keywords);
   writeFile(path.join(iosDir, 'promotional_text.txt'), promoText);
   // Variante : les URL (confidentialité, support, marketing) sont celles de la langue mère.

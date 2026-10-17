@@ -26,3 +26,6 @@ TempoJump คือเครื่องมือเตรียมตัวส�
 พร้อมใช้งานภาษาไทยและอีกหลายภาษา
 
 การสมัครสมาชิกต่ออายุอัตโนมัติทุกรอบจนกว่าจะยกเลิก และยกเลิกได้ทุกเมื่อในการตั้งค่าบัญชี Apple
+
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://sogerg.github.io/tempojump-legal/

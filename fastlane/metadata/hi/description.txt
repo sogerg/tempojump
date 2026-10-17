@@ -26,3 +26,6 @@ TempoJump शो जंपिंग सवार के लिए तैया�
 हिन्दी और कई अन्य भाषाओं में उपलब्ध।
 
 सदस्यता रद्द किए जाने तक हर अवधि में स्वतः नवीनीकृत होती है, और इसे Apple खाते की सेटिंग में कभी भी रद्द किया जा सकता है।
+
+उपयोग की शर्तें (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+गोपनीयता नीति: https://sogerg.github.io/tempojump-legal/

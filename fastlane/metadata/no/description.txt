@@ -26,3 +26,6 @@ Administrer flere hester eller ponnier, hver med egen manke­høyde og eget kali
 Tilgjengelig på norsk og mange andre språk.
 
 Abonnementet fornyes automatisk hver periode til det sies opp, og kan sies opp når som helst i innstillingene for Apple-kontoen din.
+
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://sogerg.github.io/tempojump-legal/

@@ -26,3 +26,6 @@ Hallinnoi useita hevosia tai poneja, kullakin oma säkäkorkeus ja oma kalibroit
 Saatavilla suomeksi ja monella muulla kielellä.
 
 Tilaus uusiutuu automaattisesti joka jaksolla, kunnes se perutaan, ja sen voi perua milloin tahansa Apple-tilin asetuksista.
+
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://sogerg.github.io/tempojump-legal/

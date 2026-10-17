@@ -26,3 +26,6 @@ TempoJump 是场地障碍赛骑手的备赛工具：计算步幅、规划路线�
 支持中文及多种其他语言。
 
 订阅在每个周期结束时自动续订，直至取消；可随时在 Apple 账户设置中取消。
+
+使用条款（EULA）：https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策：https://sogerg.github.io/tempojump-legal/

@@ -26,3 +26,6 @@ Spravuj více koní nebo poníků, každý s vlastní kohoutkovou výškou a vla
 Dostupné v češtině a mnoha dalších jazycích.
 
 Předplatné se automaticky obnovuje každé období až do zrušení a lze ho kdykoli zrušit v nastavení účtu Apple.
+
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://sogerg.github.io/tempojump-legal/

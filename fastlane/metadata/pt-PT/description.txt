@@ -26,3 +26,6 @@ Gerencie vários cavalos ou pôneis, cada um com sua própria altura de garupa e
 Disponível em português e em muitos outros idiomas.
 
 A assinatura renova-se automaticamente a cada período até ser cancelada, e pode ser cancelada a qualquer momento nas definições da sua conta Apple.
+
+Termos de utilização (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidade: https://sogerg.github.io/tempojump-legal/

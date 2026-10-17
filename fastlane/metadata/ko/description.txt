@@ -26,3 +26,6 @@ TempoJump는 장애물 비월 선수를 위한 준비 도구입니다: 보폭을
 한국어를 포함한 다양한 언어로 제공됩니다.
 
 구독은 해지할 때까지 매 기간 자동 갱신되며, Apple 계정 설정에서 언제든 해지할 수 있습니다.
+
+이용 약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보 처리방침: https://sogerg.github.io/tempojump-legal/

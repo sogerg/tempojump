@@ -26,3 +26,6 @@ Zarządzaj kilkoma końmi lub kucykami, każdy z własną wysokością w kłębi
 Dostępne w języku polskim i wielu innych językach.
 
 Subskrypcja odnawia się automatycznie co okres aż do anulowania i można ją anulować w dowolnej chwili w ustawieniach konta Apple.
+
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://sogerg.github.io/tempojump-legal/

@@ -26,3 +26,6 @@ TempoJump هو أداة تحضير فارس قفز الحواجز: احسب خط
 متوفر باللغة العربية وبلغات أخرى عديدة.
 
 يتجدد الاشتراك تلقائيًا كل فترة حتى الإلغاء، ويمكن إلغاؤه في أي وقت من إعدادات حساب Apple.
+
+شروط الاستخدام (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+سياسة الخصوصية: https://sogerg.github.io/tempojump-legal/

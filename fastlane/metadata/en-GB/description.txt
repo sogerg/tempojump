@@ -26,3 +26,6 @@ Manage several horses or ponies, each with its own height and its own calibrated
 Available in English and many other languages.
 
 The subscription renews automatically each period until cancelled, and can be cancelled at any time in your Apple account settings.
+
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://sogerg.github.io/tempojump-legal/

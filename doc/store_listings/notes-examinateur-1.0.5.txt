@@ -1,3 +1,6 @@
+REVIEW HISTORY
+- 1.0.5 (build 20), rejected on 17/10/2026 under Guideline 3.1.2(c): the App Description had no link to the Terms of Use (EULA). Fixed in the metadata: the App Description of all 29 localizations now ends with a link to the standard Apple Terms of Use (EULA) (https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) and to our Privacy Policy (https://sogerg.github.io/tempojump-legal/), which is also set in the Privacy Policy field. No custom EULA is used.
+- In the app, the subscription screen shows, for each plan, its title, its duration and its price, plus working links to the Privacy Policy and to the Terms of Use (EULA).
 No account and no login are required. The app opens straight onto its features.
 
 HOW ACCESS WORKS (unchanged since 1.0.3)

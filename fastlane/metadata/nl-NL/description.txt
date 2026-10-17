@@ -26,3 +26,6 @@ Beheer meerdere paarden of pony's, elk met hun eigen schofthoogte en eigen gekal
 Beschikbaar in het Nederlands en vele andere talen.
 
 Het abonnement wordt elke periode automatisch verlengd tot je opzegt, en is op elk moment opzegbaar in de instellingen van je Apple-account.
+
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://sogerg.github.io/tempojump-legal/

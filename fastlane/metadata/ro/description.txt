@@ -26,3 +26,6 @@ Gestionează mai mulți cai sau ponei, fiecare cu propria înălțime la greabă
 Disponibil în română și în multe alte limbi.
 
 Abonamentul se reînnoiește automat în fiecare perioadă până la anulare și poate fi anulat oricând din setările contului Apple.
+
+Termeni de utilizare (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politica de confidențialitate: https://sogerg.github.io/tempojump-legal/
