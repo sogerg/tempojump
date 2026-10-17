@@ -221,7 +221,9 @@
     "deleteConfirmTitle": "Ștergi acest parcurs?",
     "rankingLabel": "Clasament",
     "feelingLabel": "Cum te-ai simțit",
-    "improvementLabel": "Ce să îmbunătățești"
+    "improvementLabel": "Ce să îmbunătățești",
+    "dayBefore": "Ziua precedentă",
+    "dayAfter": "Ziua următoare"
   },
   "trial": {
     "banner_one": "Perioadă gratuită: a mai rămas {{count}} zi",

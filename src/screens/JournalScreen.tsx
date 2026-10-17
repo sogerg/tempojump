@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Alert, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { Alert, I18nManager, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
@@ -7,12 +7,12 @@ import { useVideoPlayer, VideoView } from 'expo-video';
 import { useSettings } from '../context/SettingsContext';
 import { copyToPersistentStorage, loadJournalEntries, saveJournalEntries } from '../lib/storage';
 import { remuxToFastStart } from '../lib/mp4Faststart';
-import { dateLocaleIso } from '../lib/dates';
+import { dateLisible, dateLocaleIso, decalerJours } from '../lib/dates';
 import { JournalEntry } from '../types';
 import { IntroCard } from '../components/IntroCard';
 import { ScreenWatermark } from '../components/ScreenWatermark';
 import { onSessionLogged } from '../lib/rating';
-import { FolderOpen, Pencil, Plus, Save, Share2, Trash2, Video, X } from 'lucide-react-native';
+import { ChevronLeft, ChevronRight, FolderOpen, Pencil, Plus, Save, Share2, Trash2, Video, X } from 'lucide-react-native';
 
 function generateId(): string {
   return `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
@@ -24,7 +24,7 @@ function VideoPreview({ uri }: { uri: string }) {
 }
 
 export function JournalScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { colors } = useSettings();
   const [entries, setEntries] = useState<JournalEntry[]>([]);
   const [isAdding, setIsAdding] = useState(false);
@@ -69,10 +69,12 @@ export function JournalScreen() {
   };
 
   const handleShareEntry = async (entry: JournalEntry) => {
-    const lines = [entry.name, entry.date];
-    if (entry.ranking) lines.push(`${t('journal.rankingLabel')} : ${entry.ranking}`);
-    if (entry.feeling) lines.push(`${t('journal.feelingLabel')} : ${entry.feeling}`);
-    if (entry.improvement) lines.push(`${t('journal.improvementLabel')} : ${entry.improvement}`);
+    // Libellé + valeur avec la ponctuation de la langue (« Classement : » en français, « Ranking: » ailleurs).
+    const sep = i18n.language === 'fr' ? ' : ' : ['ja', 'zh'].includes(i18n.language) ? '：' : ': ';
+    const lines = [entry.name, dateLisible(entry.date, i18n.language)];
+    if (entry.ranking) lines.push(`${t('journal.rankingLabel')}${sep}${entry.ranking}`);
+    if (entry.feeling) lines.push(`${t('journal.feelingLabel')}${sep}${entry.feeling}`);
+    if (entry.improvement) lines.push(`${t('journal.improvementLabel')}${sep}${entry.improvement}`);
     if (entry.notes) lines.push(entry.notes);
     await Share.share({ message: lines.join('\n') });
 
@@ -156,7 +158,7 @@ export function JournalScreen() {
           <View style={styles.entryHeader}>
             <View style={{ flex: 1 }}>
               <Text style={[styles.entryName, { color: colors.text }]}>{entry.name}</Text>
-              <Text style={[styles.entryDate, { color: colors.textMuted }]}>{entry.date}</Text>
+              <Text style={[styles.entryDate, { color: colors.textMuted }]}>{dateLisible(entry.date, i18n.language)}</Text>
             </View>
             <View style={styles.entryActions}>
               <TouchableOpacity onPress={() => handleShareEntry(entry)} style={styles.entryActionButton}>
@@ -206,13 +208,16 @@ export function JournalScreen() {
             placeholder={t('journal.nameLabel')}
             placeholderTextColor={colors.placeholder}
           />
-          <TextInput
-            style={[styles.input, { borderColor: colors.border, color: colors.text }]}
-            value={date}
-            onChangeText={setDate}
-            placeholder="YYYY-MM-DD"
-            placeholderTextColor={colors.placeholder}
-          />
+          {/* Date en toutes lettres + veille / lendemain (plus de saisie libre en AAAA-MM-JJ, S24 17/10/2026). */}
+          <View style={[styles.input, styles.dateRow, { borderColor: colors.border }]}>
+            <TouchableOpacity onPress={() => setDate((d) => decalerJours(d, -1))} accessibilityRole="button" accessibilityLabel={t('journal.dayBefore')} hitSlop={10}>
+              {I18nManager.isRTL ? <ChevronRight size={22} color={colors.accentGold} /> : <ChevronLeft size={22} color={colors.accentGold} />}
+            </TouchableOpacity>
+            <Text style={[styles.dateText, { color: colors.text }]}>{dateLisible(date, i18n.language)}</Text>
+            <TouchableOpacity onPress={() => setDate((d) => decalerJours(d, 1))} accessibilityRole="button" accessibilityLabel={t('journal.dayAfter')} hitSlop={10}>
+              {I18nManager.isRTL ? <ChevronLeft size={22} color={colors.accentGold} /> : <ChevronRight size={22} color={colors.accentGold} />}
+            </TouchableOpacity>
+          </View>
           <TextInput
             style={[styles.input, { borderColor: colors.border, color: colors.text }]}
             value={ranking}
@@ -325,6 +330,8 @@ const styles = StyleSheet.create({
   form: {
     marginTop: 10,
   },
+  dateRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  dateText: { flex: 1, textAlign: 'center', fontSize: 16 },
   input: {
     borderWidth: 1,
     borderRadius: 10,

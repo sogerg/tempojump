@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Törlöd ezt a startot?",
     "rankingLabel": "Helyezés",
     "feelingLabel": "Milyen érzés volt",
-    "improvementLabel": "Mit kell fejleszteni"
+    "improvementLabel": "Mit kell fejleszteni",
+    "dayBefore": "Előző nap",
+    "dayAfter": "Következő nap"
   },
   "trial": {
     "banner_one": "Ingyenes időszak: {{count}} nap van hátra",

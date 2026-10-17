@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "यह प्रविष्टि हटाएं?",
     "rankingLabel": "रैंकिंग",
     "feelingLabel": "कैसा महसूस हुआ",
-    "improvementLabel": "क्या सुधारें"
+    "improvementLabel": "क्या सुधारें",
+    "dayBefore": "पिछला दिन",
+    "dayAfter": "अगला दिन"
   },
   "trial": {
     "banner_one": "मुफ़्त अवधि: {{count}} दिन बाकी",

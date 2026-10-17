@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Bu kayıt silinsin mi?",
     "rankingLabel": "Sıralama",
     "feelingLabel": "Nasıl hissettin",
-    "improvementLabel": "Neyi geliştirmeli"
+    "improvementLabel": "Neyi geliştirmeli",
+    "dayBefore": "Önceki gün",
+    "dayAfter": "Sonraki gün"
   },
   "trial": {
     "banner_one": "Ücretsiz dönem: {{count}} gün kaldı",

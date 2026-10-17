@@ -218,7 +218,9 @@
     "deleteConfirmTitle": "이 주행 기록을 삭제하시겠습니까?",
     "rankingLabel": "순위",
     "feelingLabel": "느낌",
-    "improvementLabel": "개선할 점"
+    "improvementLabel": "개선할 점",
+    "dayBefore": "이전 날",
+    "dayAfter": "다음 날"
   },
   "trial": {
     "banner_other": "무료 기간: {{count}}일 남음"

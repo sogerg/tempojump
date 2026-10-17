@@ -223,7 +223,9 @@
     "deleteConfirmTitle": "Удалить эту запись?",
     "rankingLabel": "Место в рейтинге",
     "feelingLabel": "Как ты себя чувствовал",
-    "improvementLabel": "Что улучшить"
+    "improvementLabel": "Что улучшить",
+    "dayBefore": "Предыдущий день",
+    "dayAfter": "Следующий день"
   },
   "trial": {
     "banner_one": "Бесплатный период: остался {{count}} день",

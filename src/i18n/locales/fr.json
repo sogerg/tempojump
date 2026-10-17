@@ -221,7 +221,9 @@
     "saveEntry": "Enregistrer",
     "addEntry": "Nouvelle entrée",
     "missingNameTitle": "Renseigne un nom de concours.",
-    "deleteConfirmTitle": "Supprimer cette entrée ?"
+    "deleteConfirmTitle": "Supprimer cette entrée ?",
+    "dayBefore": "Jour précédent",
+    "dayAfter": "Jour suivant"
   },
   "trial": {
     "banner_one": "Période gratuite : {{count}} jour restant",

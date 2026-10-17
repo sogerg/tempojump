@@ -221,7 +221,9 @@
     "deleteConfirmTitle": "¿Eliminar este recorrido?",
     "rankingLabel": "Clasificación",
     "feelingLabel": "Cómo te sentiste",
-    "improvementLabel": "Qué mejorar"
+    "improvementLabel": "Qué mejorar",
+    "dayBefore": "Día anterior",
+    "dayAfter": "Día siguiente"
   },
   "trial": {
     "banner_one": "Periodo gratuito: queda {{count}} día",

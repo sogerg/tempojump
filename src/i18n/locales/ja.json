@@ -218,7 +218,9 @@
     "deleteConfirmTitle": "この記録を削除しますか？",
     "rankingLabel": "順位",
     "feelingLabel": "感想",
-    "improvementLabel": "改善点"
+    "improvementLabel": "改善点",
+    "dayBefore": "前の日",
+    "dayAfter": "次の日"
   },
   "trial": {
     "banner_other": "無料期間：残り {{count}} 日"

@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Poistetaanko tämä merkintä?",
     "rankingLabel": "Sijoitus",
     "feelingLabel": "Miltä tuntui",
-    "improvementLabel": "Mitä parantaa"
+    "improvementLabel": "Mitä parantaa",
+    "dayBefore": "Edellinen päivä",
+    "dayAfter": "Seuraava päivä"
   },
   "trial": {
     "banner_one": "Ilmainen jakso: {{count}} päivä jäljellä",

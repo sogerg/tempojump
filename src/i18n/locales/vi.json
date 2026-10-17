@@ -218,7 +218,9 @@
     "deleteConfirmTitle": "Xóa lượt thi này?",
     "rankingLabel": "Xếp hạng",
     "feelingLabel": "Cảm nhận",
-    "improvementLabel": "Cần cải thiện"
+    "improvementLabel": "Cần cải thiện",
+    "dayBefore": "Ngày trước",
+    "dayAfter": "Ngày sau"
   },
   "trial": {
     "banner_other": "Thời gian miễn phí: còn {{count}} ngày"

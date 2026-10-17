@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Διαγραφή αυτής της συμμετοχής;",
     "rankingLabel": "Κατάταξη",
     "feelingLabel": "Πώς ένιωσες",
-    "improvementLabel": "Τι να βελτιώσεις"
+    "improvementLabel": "Τι να βελτιώσεις",
+    "dayBefore": "Προηγούμενη ημέρα",
+    "dayAfter": "Επόμενη ημέρα"
   },
   "trial": {
     "banner_one": "Δωρεάν περίοδος: απομένει {{count}} ημέρα",

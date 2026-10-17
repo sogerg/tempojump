@@ -227,7 +227,9 @@
     "deleteConfirmTitle": "حذف هذه الجولة؟",
     "rankingLabel": "الترتيب",
     "feelingLabel": "كيف كان شعورك",
-    "improvementLabel": "ما يجب تحسينه"
+    "improvementLabel": "ما يجب تحسينه",
+    "dayBefore": "اليوم السابق",
+    "dayAfter": "اليوم التالي"
   },
   "trial": {
     "banner_zero": "الفترة المجانية: لم يتبقَّ أي يوم",

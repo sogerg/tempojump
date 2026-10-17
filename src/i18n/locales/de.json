@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Diesen Eintrag löschen?",
     "rankingLabel": "Platzierung",
     "feelingLabel": "Wie es sich angefühlt hat",
-    "improvementLabel": "Was verbessern"
+    "improvementLabel": "Was verbessern",
+    "dayBefore": "Vorheriger Tag",
+    "dayAfter": "Nächster Tag"
   },
   "trial": {
     "banner_one": "Gratiszeit: noch {{count}} Tag",

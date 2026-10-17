@@ -223,7 +223,9 @@
     "deleteConfirmTitle": "Usunąć ten start?",
     "rankingLabel": "Klasyfikacja",
     "feelingLabel": "Jak się czułeś",
-    "improvementLabel": "Co poprawić"
+    "improvementLabel": "Co poprawić",
+    "dayBefore": "Poprzedni dzień",
+    "dayAfter": "Następny dzień"
   },
   "trial": {
     "banner_one": "Okres darmowy: został {{count}} dzień",

@@ -218,7 +218,9 @@
     "deleteConfirmTitle": "ต้องการลบรายการนี้หรือไม่?",
     "rankingLabel": "อันดับ",
     "feelingLabel": "ความรู้สึก",
-    "improvementLabel": "สิ่งที่ต้องปรับปรุง"
+    "improvementLabel": "สิ่งที่ต้องปรับปรุง",
+    "dayBefore": "วันก่อนหน้า",
+    "dayAfter": "วันถัดไป"
   },
   "trial": {
     "banner_other": "ช่วงฟรี: เหลืออีก {{count}} วัน"

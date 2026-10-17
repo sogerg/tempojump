@@ -218,7 +218,9 @@
     "deleteConfirmTitle": "删除此记录？",
     "rankingLabel": "名次",
     "feelingLabel": "感受如何",
-    "improvementLabel": "需要改进"
+    "improvementLabel": "需要改进",
+    "dayBefore": "前一天",
+    "dayAfter": "后一天"
   },
   "trial": {
     "banner_other": "免费期：还剩 {{count}} 天"

@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Deze rit verwijderen?",
     "rankingLabel": "Klassering",
     "feelingLabel": "Hoe het voelde",
-    "improvementLabel": "Wat te verbeteren"
+    "improvementLabel": "Wat te verbeteren",
+    "dayBefore": "Vorige dag",
+    "dayAfter": "Volgende dag"
   },
   "trial": {
     "banner_one": "Gratis periode: nog {{count}} dag",

@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Slette denne runden?",
     "rankingLabel": "Plassering",
     "feelingLabel": "Hvordan det føltes",
-    "improvementLabel": "Hva som bør forbedres"
+    "improvementLabel": "Hva som bør forbedres",
+    "dayBefore": "Forrige dag",
+    "dayAfter": "Neste dag"
   },
   "trial": {
     "banner_one": "Gratisperiode: {{count}} dag igjen",

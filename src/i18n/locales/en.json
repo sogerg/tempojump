@@ -219,7 +219,9 @@
     "saveEntry": "Save",
     "addEntry": "New entry",
     "missingNameTitle": "Enter a competition name.",
-    "deleteConfirmTitle": "Delete this entry?"
+    "deleteConfirmTitle": "Delete this entry?",
+    "dayBefore": "Previous day",
+    "dayAfter": "Next day"
   },
   "trial": {
     "banner_one": "Free period: {{count}} day left",

@@ -219,7 +219,9 @@
     "deleteConfirmTitle": "Slette denne start?",
     "rankingLabel": "Placering",
     "feelingLabel": "Hvordan det føltes",
-    "improvementLabel": "Hvad der skal forbedres"
+    "improvementLabel": "Hvad der skal forbedres",
+    "dayBefore": "Forrige dag",
+    "dayAfter": "Næste dag"
   },
   "trial": {
     "banner_one": "Gratisperiode: {{count}} dag tilbage",

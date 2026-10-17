@@ -223,7 +223,9 @@
     "deleteConfirmTitle": "Smazat tento start?",
     "rankingLabel": "Umístění",
     "feelingLabel": "Jaké to bylo",
-    "improvementLabel": "Co zlepšit"
+    "improvementLabel": "Co zlepšit",
+    "dayBefore": "Předchozí den",
+    "dayAfter": "Další den"
   },
   "trial": {
     "banner_one": "Období zdarma: zbývá {{count}} den",
