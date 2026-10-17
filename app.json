@@ -13,7 +13,7 @@
         "ITSAppUsesNonExemptEncryption": false,
         "CFBundleAllowMixedLocalizations": true
       },
-      "buildNumber": "19"
+      "buildNumber": "20"
     },
     "android": {
       "package": "com.sogerg.monappcavalier",
