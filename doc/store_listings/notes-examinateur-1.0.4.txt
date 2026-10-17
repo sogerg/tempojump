@@ -5,7 +5,7 @@ The app is fully usable for 30 days from first launch, with no purchase and no s
 
 To review the subscription screen itself, the 30-day period would have to expire, which is not practical in a review; the screen shows, for each plan, its name, its duration, its price, and working links to the Privacy Policy and to the standard Apple EULA (guideline 3.1.2(c)). In the App Review sandbox, purchases are not charged. No review unlock code exists in the app.
 
-WHAT CHANGED IN 1.0.4 (all reachable without purchase; Settings = gear icon, top right of every screen)
+WHAT CHANGED IN 1.0.4 (all reachable without purchase; Settings = gear icon, top right of the four main tabs)
 1. Settings > "Rate the app": opens this app's App Store page on the review form.
 2. Settings > "Our other apps": opens our own developer page on the App Store (https://apps.apple.com/developer/id6786003873). It only lists our apps; no third-party links, no ads.
 3. Native rating prompt (StoreKit requestReview): requested only after the rider has saved 3 competition entries in the Journal, at least 2 days after first launch, and at most once every 120 days. Never shown on the subscription screen. The system decides whether to display it (it does not appear in TestFlight or sandbox).
