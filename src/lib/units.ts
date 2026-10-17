@@ -39,6 +39,26 @@ export function fromMeters(meters: number, unitSystem: UnitSystem): number {
   return unitSystem === 'imperial' ? meters / METERS_PER_FOOT : meters;
 }
 
+/**
+ * Valeur de départ d'un champ de hauteur, dans l'unité du champ (m ou ft) et avec le séparateur
+ * décimal de la langue. Écrite en dur, « 1.10 » s'affichait avec un point en français et valait
+ * 1,10 PIED en impérial (S24 17/10/2026). Chiffres latins, sans séparateur de milliers : le champ
+ * doit se relire tel quel (lecture : virgule ou point).
+ */
+export function hauteurInitiale(meters: number, unitSystem: UnitSystem): string {
+  const valeur = fromMeters(meters, unitSystem);
+  const decimales = unitSystem === 'imperial' ? 1 : 2;
+  try {
+    return new Intl.NumberFormat(`${i18n.language || 'en'}-u-nu-latn`, {
+      minimumFractionDigits: decimales,
+      maximumFractionDigits: decimales,
+      useGrouping: false,
+    }).format(valeur);
+  } catch {
+    return valeur.toFixed(decimales);  // audit-ok: repli si la langue est inconnue
+  }
+}
+
 export function inputUnitSuffix(unitSystem: UnitSystem): string {
   return unitSystem === 'imperial' ? 'ft' : 'm';
 }
