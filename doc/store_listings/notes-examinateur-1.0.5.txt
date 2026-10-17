@@ -1,0 +1,18 @@
+No account and no login are required. The app opens straight onto its features.
+
+HOW ACCESS WORKS (unchanged since 1.0.3)
+The app is fully usable for 30 days from first launch, with no purchase and no sign-up: a small line at the top shows the days left. Only after those 30 days does the subscription screen appear. So to review the app, simply open it — every feature is available immediately, and nothing needs to be purchased.
+
+To review the subscription screen itself, the 30-day period would have to expire, which is not practical in a review; the screen shows, for each plan, its name, its duration, its price, and working links to the Privacy Policy and to the standard Apple EULA (guideline 3.1.2(c)). In the App Review sandbox, purchases are not charged. No review unlock code exists in the app.
+
+WHAT CHANGED IN 1.0.5 (all reachable without purchase; Settings = gear icon, top right of the four main tabs)
+1. Settings > "Rate the app": opens this app's App Store page on the review form.
+2. Settings > "Our other apps": opens our own developer page on the App Store (https://apps.apple.com/developer/id6786003873). It only lists our apps; no third-party links, no ads.
+3. Native rating prompt (StoreKit requestReview): requested only after the rider has saved 3 competition entries in the Journal, at least 2 days after first launch, and at most once every 120 days. Never shown on the subscription screen. The system decides whether to display it (it does not appear in TestFlight or sandbox).
+4. Journal > New entry: the competition date is now shown in full in the device language ("Saturday, October 17, 2026") with previous-day / next-day buttons, instead of a free text field in YYYY-MM-DD format.
+5. Converter and Exercises: the default obstacle height now uses the decimal separator of the device language, and is converted when switching between metric and imperial units in Settings (previously it kept the same number and changed the unit).
+6. Stride counts now use the correct plural forms in Russian, Polish, Czech, Arabic and Romanian.
+7. The system permission prompts (camera, microphone, photo library) are now localized in the app's 25 languages; previously they were shown in French only. The permissions themselves are unchanged: camera and microphone are requested only when the rider films a round or photographs a course plan, photo library only when picking a plan or video.
+8. Store listing only: new regional listings for en-GB, en-AU, es-MX and fr-CA.
+
+No change to the product identifiers, the subscription plans, the prices or the entitlement logic. No new permission is requested.
