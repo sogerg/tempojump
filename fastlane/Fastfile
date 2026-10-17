@@ -13,12 +13,20 @@ end
 
 platform :ios do
   desc "Met à jour le nom, les descriptions et les screenshots sur App Store Connect (sans toucher au build)"
-  lane :update_metadata do
-    app_store_connect_api_key
+  # fastlane ios update_metadata version:1.0.4 captures:non  → fiche de cette version, sans renvoyer les captures
+  lane :update_metadata do |options|
+    # Clé lue sur disque (dossier hors Git), jamais copiée dans le dépôt ; même clé que docs/scripts/asc-*.js.
+    app_store_connect_api_key(
+      key_id: "4U4YCTG298",
+      issuer_id: "512d4bb1-a476-4d88-a5d7-d5ad63a98526",
+      key_filepath: File.expand_path("../../../docs-local-only-non-git/clés/AuthKey_4U4YCTG298.p8", __dir__),
+      in_house: false
+    )
     deliver(
+      app_version: options[:version],
       skip_binary_upload: true,
       skip_metadata: false,
-      skip_screenshots: false,
+      skip_screenshots: options[:captures] == "non",
       force: true,
       run_precheck_before_submit: false
     )
