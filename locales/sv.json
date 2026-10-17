@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Ge åtkomst till kameran för att fotografera banskisser och filma dina rundor.",
+    "NSMicrophoneUsageDescription": "Ge åtkomst till mikrofonen för att filma dina rundor med ljud.",
+    "NSPhotoLibraryUsageDescription": "Ge åtkomst till dina bilder för att välja en banskiss eller en video.",
+    "NSPhotoLibraryAddUsageDescription": "Ge åtkomst till dina bilder för att välja en banskiss eller en video."
+  }
+}

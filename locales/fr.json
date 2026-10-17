@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Autorise l'accès à la caméra pour photographier les plans de parcours et filmer tes reprises.",
+    "NSMicrophoneUsageDescription": "Autorise l'accès au micro pour filmer tes reprises avec le son.",
+    "NSPhotoLibraryUsageDescription": "Autorise l'accès à tes photos pour choisir un plan de parcours ou une vidéo.",
+    "NSPhotoLibraryAddUsageDescription": "Autorise l'accès à tes photos pour choisir un plan de parcours ou une vidéo."
+  }
+}

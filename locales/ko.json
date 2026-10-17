@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "코스 도면을 촬영하고 주행을 영상으로 찍으려면 카메라 접근을 허용하세요.",
+    "NSMicrophoneUsageDescription": "주행을 소리와 함께 촬영하려면 마이크 접근을 허용하세요.",
+    "NSPhotoLibraryUsageDescription": "코스 도면이나 동영상을 고르려면 사진 접근을 허용하세요.",
+    "NSPhotoLibraryAddUsageDescription": "코스 도면이나 동영상을 고르려면 사진 접근을 허용하세요."
+  }
+}

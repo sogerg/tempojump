@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "コース図の撮影や走行の動画撮影のため、カメラへのアクセスを許可してください。",
+    "NSMicrophoneUsageDescription": "走行を音声付きで撮影するため、マイクへのアクセスを許可してください。",
+    "NSPhotoLibraryUsageDescription": "コース図や動画を選ぶため、写真へのアクセスを許可してください。",
+    "NSPhotoLibraryAddUsageDescription": "コース図や動画を選ぶため、写真へのアクセスを許可してください。"
+  }
+}

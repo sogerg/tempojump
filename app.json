@@ -10,7 +10,8 @@
       "bundleIdentifier": "com.sogerg.monappcavalier",
       "supportsTablet": false,
       "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
+        "ITSAppUsesNonExemptEncryption": false,
+        "CFBundleAllowMixedLocalizations": true
       },
       "buildNumber": "19"
     },
@@ -87,6 +88,33 @@
         "projectId": "2bcded99-f727-4fc0-9a2c-fc8c191b9430"
       }
     },
-    "owner": "sogerg"
+    "owner": "sogerg",
+    "locales": {
+      "ar": "./locales/ar.json",
+      "cs": "./locales/cs.json",
+      "da": "./locales/da.json",
+      "de": "./locales/de.json",
+      "el": "./locales/el.json",
+      "en": "./locales/en.json",
+      "es": "./locales/es.json",
+      "fi": "./locales/fi.json",
+      "fr": "./locales/fr.json",
+      "hi": "./locales/hi.json",
+      "hu": "./locales/hu.json",
+      "it": "./locales/it.json",
+      "ja": "./locales/ja.json",
+      "ko": "./locales/ko.json",
+      "nl": "./locales/nl.json",
+      "no": "./locales/no.json",
+      "pl": "./locales/pl.json",
+      "pt": "./locales/pt.json",
+      "ro": "./locales/ro.json",
+      "ru": "./locales/ru.json",
+      "sv": "./locales/sv.json",
+      "th": "./locales/th.json",
+      "tr": "./locales/tr.json",
+      "vi": "./locales/vi.json",
+      "zh": "./locales/zh.json"
+    }
   }
 }

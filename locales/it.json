@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Consenti l'accesso alla fotocamera per fotografare i percorsi e filmare le tue riprese.",
+    "NSMicrophoneUsageDescription": "Consenti l'accesso al microfono per filmare le tue riprese con l'audio.",
+    "NSPhotoLibraryUsageDescription": "Consenti l'accesso alle tue foto per scegliere un percorso o un video.",
+    "NSPhotoLibraryAddUsageDescription": "Consenti l'accesso alle tue foto per scegliere un percorso o un video."
+  }
+}

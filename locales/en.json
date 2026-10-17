@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Allow camera access to photograph course plans and film your rides.",
+    "NSMicrophoneUsageDescription": "Allow microphone access to film your rides with sound.",
+    "NSPhotoLibraryUsageDescription": "Allow access to your photos to choose a course plan or a video.",
+    "NSPhotoLibraryAddUsageDescription": "Allow access to your photos to choose a course plan or a video."
+  }
+}

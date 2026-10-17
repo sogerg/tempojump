@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "允许使用相机，以拍摄路线图并录下你的骑乘。",
+    "NSMicrophoneUsageDescription": "允许使用麦克风，以录制带声音的骑乘视频。",
+    "NSPhotoLibraryUsageDescription": "允许访问照片，以选择路线图或视频。",
+    "NSPhotoLibraryAddUsageDescription": "允许访问照片，以选择路线图或视频。"
+  }
+}

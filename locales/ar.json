@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "اسمح بالوصول إلى الكاميرا لتصوير مخططات المسار وتصوير جولاتك بالفيديو.",
+    "NSMicrophoneUsageDescription": "اسمح بالوصول إلى الميكروفون لتصوير جولاتك مع الصوت.",
+    "NSPhotoLibraryUsageDescription": "اسمح بالوصول إلى صورك لاختيار مخطط مسار أو مقطع فيديو.",
+    "NSPhotoLibraryAddUsageDescription": "اسمح بالوصول إلى صورك لاختيار مخطط مسار أو مقطع فيديو."
+  }
+}

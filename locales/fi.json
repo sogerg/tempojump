@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Salli kameran käyttö ratapiirrosten kuvaamiseen ja ratojesi videointiin.",
+    "NSMicrophoneUsageDescription": "Salli mikrofonin käyttö, jotta voit videoida ratasi äänen kanssa.",
+    "NSPhotoLibraryUsageDescription": "Salli kuviesi käyttö ratapiirroksen tai videon valitsemiseen.",
+    "NSPhotoLibraryAddUsageDescription": "Salli kuviesi käyttö ratapiirroksen tai videon valitsemiseen."
+  }
+}

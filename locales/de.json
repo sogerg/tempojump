@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Erlaube den Kamerazugriff, um Parcourspläne zu fotografieren und deine Ritte zu filmen.",
+    "NSMicrophoneUsageDescription": "Erlaube den Mikrofonzugriff, um deine Ritte mit Ton zu filmen.",
+    "NSPhotoLibraryUsageDescription": "Erlaube den Zugriff auf deine Fotos, um einen Parcoursplan oder ein Video auszuwählen.",
+    "NSPhotoLibraryAddUsageDescription": "Erlaube den Zugriff auf deine Fotos, um einen Parcoursplan oder ein Video auszuwählen."
+  }
+}

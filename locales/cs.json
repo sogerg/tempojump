@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Povol přístup ke kameře, abys mohl fotit plánky parkuru a natáčet své jízdy.",
+    "NSMicrophoneUsageDescription": "Povol přístup k mikrofonu, abys mohl natáčet jízdy se zvukem.",
+    "NSPhotoLibraryUsageDescription": "Povol přístup k fotkám, abys mohl vybrat plánek parkuru nebo video.",
+    "NSPhotoLibraryAddUsageDescription": "Povol přístup k fotkám, abys mohl vybrat plánek parkuru nebo video."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSCameraUsageDescription": "Permite accesul la cameră ca să fotografiezi planurile de parcurs și să-ți filmezi parcursurile.",
+    "NSMicrophoneUsageDescription": "Permite accesul la microfon ca să-ți filmezi parcursurile cu sunet.",
+    "NSPhotoLibraryUsageDescription": "Permite accesul la fotografii ca să alegi un plan de parcurs sau un videoclip.",
+    "NSPhotoLibraryAddUsageDescription": "Permite accesul la fotografii ca să alegi un plan de parcurs sau un videoclip."
+  }
+}

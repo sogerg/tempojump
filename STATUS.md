@@ -1,5 +1,12 @@
 # Statut TempoJump
 
+## 17/10/2026 matin — chaînes d'autorisation traduites (OUBLIÉES dans la 1.0.4)
+- Le build 19 (1.0.4, en vérification) est parti avec les textes caméra / micro / photos en français seulement : point du
+  dashboard non traité avant le build. Corrigé dans le code pour la PROCHAINE version : `locales/<langue>.json` (25 langues,
+  clé `ios` dans le fichier), `expo.locales` en chemins texte, `CFBundleAllowMixedLocalizations` ; 0 chaîne générique.
+- À la prochaine version : passer en 1.0.5 (la 1.0.4 est en vérification), vérifier la fenêtre d'autorisation dans une
+  autre langue que le français sur l'iPhone de Marie (TestFlight).
+
 ## 09/10/2026 — Restes de gabarit (audit 4.3)
 Avis in-app réécrit propre à l'app (09/10) : `src/lib/ratingPrompt.ts` (règles, + `ratingPrompt.test.ts`, 12 cas), `src/lib/rating.ts` (natif), stockage par `loadRatingPromptState` / `saveRatingPromptState` dans `src/lib/storage.ts` (clé `@cavalier/ratingPrompt`) ; moment inchangé (nouvelle séance au carnet) ; comportement inchangé. Médias retirés : 12 restes non référencés de `assets/` (bouton menu icone, cavalier jump icon, cheval-filigrane, horse-head…svgrepo.svg, icone pente descendante/montante, icone plat, icone-strideOn, splash-icon, sreenshot amelioré, tempojump-icon, tete cheval icone ; leurs remplaçants renommés restent).
 
