@@ -10,13 +10,14 @@ import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { EXERCISE_AMPLITUDE_RATIO, EXERCISE_STRIDE_RANGE } from '../constants/horseDefaults';
 import { combinationDistance } from '../lib/mathUtils';
-import { formatLength, hauteurInitiale, inputUnitSuffix, toMeters } from '../lib/units';
+import { formatLength, inputUnitSuffix, toMeters } from '../lib/units';
+import { useChampHauteur } from '../lib/useChampHauteur';
 
 export function ExercisesScreen() {
   const { t } = useTranslation();
   const { selectedHorse } = useHorses();
   const { colors, unitSystem } = useSettings();
-  const [height, setHeight] = useState(() => hauteurInitiale(0.6, unitSystem));
+  const [height, setHeight] = useChampHauteur(0.6, unitSystem);
 
   const rows = useMemo(() => {
     if (!selectedHorse) return null;

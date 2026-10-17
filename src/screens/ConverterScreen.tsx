@@ -11,7 +11,8 @@ import { ScreenWatermark } from '../components/ScreenWatermark';
 import { useHorses } from '../context/HorseContext';
 import { useSettings } from '../context/SettingsContext';
 import { stepsToStrides } from '../lib/mathUtils';
-import { formatLength, hauteurInitiale, formatNumber, formatSpeed, inputUnitSuffix, toMeters } from '../lib/units';
+import { formatLength, formatNumber, formatSpeed, inputUnitSuffix, toMeters } from '../lib/units';
+import { useChampHauteur } from '../lib/useChampHauteur';
 import { SpeedLevel, Terrain } from '../types';
 import { ThemeColors } from '../constants/colors';
 import { SPEED_METERS_PER_MINUTE } from '../constants/horseDefaults';
@@ -65,7 +66,7 @@ export function ConverterScreen() {
   const { selectedHorse, riderStepLength } = useHorses();
   const { colors, unitSystem } = useSettings();
   const [humanSteps, setHumanSteps] = useState('');
-  const [height, setHeight] = useState(() => hauteurInitiale(1.1, unitSystem));
+  const [height, setHeight] = useChampHauteur(1.1, unitSystem);
   const [terrain, setTerrain] = useState<Terrain>('Plat');
   const [speed, setSpeed] = useState<SpeedLevel>('Standard');
 
