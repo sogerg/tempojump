@@ -98,3 +98,23 @@ export function formatSpeed(metersPerMinute: number, unitSystem: UnitSystem): st
   const value = Math.round(speedFromMetersPerMinute(metersPerMinute, unitSystem));
   return `${value} ${speedUnitSuffix(unitSystem)}`;
 }
+
+const CHIFFRES_ARABES_INDIENS = '٠١٢٣٤٥٦٧٨٩';
+const CHIFFRES_PERSANS = '۰۱۲۳۴۵۶۷۸۹';
+
+/**
+ * Lit un nombre tapé par l'utilisateur, quelle que soit sa langue : virgule ou point décimal
+ * (« 1,10 » comme « 1.10 »), séparateur décimal arabe « ٫ », chiffres arabo-indiens, espaces.
+ * Rend NaN si le texte est vide ou illisible — jamais une valeur tronquée en silence comme
+ * parseFloat(« 1,10 ») = 1 (défaut connu, audit « saisie-sans-virgule »).
+ */
+export function lireNombre(texte: string): number {
+  const normalise = texte
+    .trim()
+    .replace(/[\s  ]/g, '')
+    .replace(/[٠-٩]/g, (c) => String(CHIFFRES_ARABES_INDIENS.indexOf(c)))
+    .replace(/[۰-۹]/g, (c) => String(CHIFFRES_PERSANS.indexOf(c)))
+    .replace(/[٫,]/g, '.');
+  if (normalise === '' || !/^[-+]?(\d+\.?\d*|\.\d+)$/.test(normalise)) return NaN;
+  return Number(normalise);
+}
