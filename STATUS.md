@@ -51,7 +51,17 @@ au moment du build, comme pour la 1.0.5.
 - Numérotation 1 / 2a / 2b juste ; +/− de l'éditeur : 20 pas → 17,00 m.
 - 🔧 Corrigés (commit suivant, revus au S24) : « -1,0 théoriques » à 0 pas (affichage borné à 0) ;
   en arabe « البداية → 1 » s'affichait « 1 → البداية » (chaque bout isolé, `isolerIntervalle`).
-- Non faits : marcher réellement (4, utilisateur), 5 (hauteur / note), 6, 10 (plan), 14, 15.
+- ✅ Suite du tour (28/10 soir) : 4 (marche RÉELLE par l'utilisateur : reco « Paris », Gege, 22 / 21 /
+  38 pas au podomètre, 46,29 m, 8 s, 2 et 5 foulées), 5 (hauteur « 3 » → « Hauteur entre 0,30 et
+  2,20 m », « 1,25 » acceptée ; note enregistrée ; défilement en partant du champ de note), 6
+  (SCREEN_BRIGHT_WAKE_LOCK au nom de l'app pendant la reco), 10 (nouveau plan depuis la galerie :
+  repères 1-3 posés, repère glissé gardé à la réouverture, « Plan : Nouveau plan » sur la reco), 14
+  (police 2.0 : tout utilisable, « Annuler le dernier » sur 3 lignes), 15 (impérial : 151 ft 10,4 in,
+  383 yd/min). **Tour S24 de la 1.1 complet.**
+- Données de test laissées sur le S24 : plan « Nouveau plan » (photo d'écran) relié à « Paris », entrée
+  « Fontainebleau » du journal ; recos de test supprimées.
+- Le pas enregistré est de 57 cm (pas naturel) : en reco, les cavaliers marchent souvent un pas d'un
+  mètre — l'étalonnage doit se faire avec la même foulée que pendant la reco.
 - Remarques : 362,5 m/min s'affiche « 363 m/min » (arrondi d'affichage, calcul juste) ; l'app
   masque la barre d'état partout (voulu, App.tsx) ; sur Android l'app s'ouvre sur le paywall
   (essai Play) : neutraliser `SubscriptionGate` dans la copie de build pour le tour.
