@@ -1,12 +1,13 @@
 # Store Listing - Nederlands (nl)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Bereken je Galopsprongen Direct
-2: Theoretische Sprongen & Exacte Afstand
-3: Jouw Checklist Voor de Wedstrijd
-4: Teken je Parcoursplan
-5: Trainingslogboek & Video's
+1: Parcours Verkennen met Stappenteller
+2: Bereken je Galopsprongen Direct
+3: Theoretische Sprongen & Exacte Afstand
+4: Jouw Checklist Voor de Wedstrijd
+5: Teken je Parcoursplan
+6: Trainingslogboek & Video's
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Bereken je galopsprongen, plan je parcours en volg je vooruitgang.
 TempoJump is de voorbereidingstool voor de springruiter: bereken je galopsprongen, plan je parcours en volg je vooruitgang, voor elke rit.
 
 BELANGRIJK: TempoJump is 30 dagen gratis vanaf de eerste keer openen, zonder iets af te sluiten. Daarna vereisen alle onderstaande functies een Pro-abonnement, wekelijks of jaarlijks, tegen de prijs die in de app wordt getoond vóór elke aankoop.
+
+**Parcours verkennen (nieuw)**
+Loop het parcours vóór je rit: de stappenteller van je telefoon telt je passen en bij elke hindernis berekent TempoJump de afstand en de galopsprongen voor JOUW paard. In combinaties zie je of de afstand kort, goed of lang is. Noteer je galopsprongenplan en opmerkingen, krijg de parcourslengte en de toegestane tijd, vind al je verkenningen terug per datum en per paard, toon de 'laatste blik' schermvullend op het losrijterrein, exporteer een pdf voor je trainer en zet de hindernissen op je gefotografeerde parcoursplan.
 
 **Directe galopsprongen-calculator**
 Voer het aantal getelde stappen tussen twee hindernissen in en krijg direct het theoretische en aanbevolen aantal galopsprongen, gebaseerd op de maat van je paard, de bodem en de snelheid.
@@ -65,7 +69,7 @@ Afstanden & Parcoursplan
 
 ### Promotional Text (170 char max)
 
-Nieuw: beschrijfbaar parcoursplan, cadans-metronoom en trainingslogboek met video delen. 30 dagen gratis vanaf de eerste keer openen.
+Nieuw: parcours verkennen. Loop het parcours, de stappenteller telt je passen en berekent de galopsprongen voor je paard. 30 dagen gratis vanaf de eerste keer openen.
 
 ### Keywords (100 char max, commas included)
 

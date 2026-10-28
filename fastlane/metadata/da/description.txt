@@ -2,6 +2,9 @@ TempoJump er forberedelsesværktøjet for springrytteren: beregn dine galopsprin
 
 VIGTIGT: TempoJump er gratis i 30 dage fra første åbning, uden at tegne noget. Derefter kræver alle nedenstående funktioner et Pro-abonnement, ugentligt eller årligt, til den pris, der vises i appen før ethvert køb.
 
+**Banegennemgang (nyt)**
+Gå banen før din runde: telefonens skridttæller tæller dine skridt, og ved hver forhindring beregner TempoJump afstanden og galopspringene til DIN hest. I kombinationer ser du, om afstanden er kort, passende eller lang. Noter din galopspringsplan og dine bemærkninger, få banens længde og den tilladte tid, find alle dine banegennemgange efter dato og hest, vis det »sidste blik« i fuld skærm på opvarmningsbanen, eksportér en PDF til din træner, og placer forhindringerne på din fotograferede baneplan.
+
 **Øjeblikkelig galopspring-beregner**
 Indtast antal talte skridt mellem to forhindringer, og få straks det teoretiske og anbefalede antal galopspring, baseret på hestens størrelse, bunden og hastigheden.
 

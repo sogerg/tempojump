@@ -2,6 +2,9 @@ TempoJump je přípravný nástroj pro jezdce v parkurovém skákání: spočít
 
 DŮLEŽITÉ: TempoJump je 30 dní od prvního otevření zdarma, bez jakéhokoli předplatného. Poté všechny níže uvedené funkce vyžadují předplatné Pro, týdenní nebo roční, za cenu zobrazenou v aplikaci před nákupem.
 
+**Prohlídka parkuru (novinka)**
+Projdi parkur před svým kolem: krokoměr telefonu počítá tvé kroky a u každé překážky TempoJump spočítá vzdálenost a cvalové skoky pro TVÉHO koně. V kombinacích ukáže, zda je vzdálenost krátká, akorát, nebo dlouhá. Zapiš si plán cvalových skoků a poznámky, získej délku parkuru a stanovený čas, najdi všechny prohlídky podle data a koně, zobraz „poslední pohled“ na celé obrazovce na opracovišti, exportuj PDF pro trenéra a umísti překážky na vyfocený plán trasy.
+
 **Okamžitá kalkulačka cvalových kroků**
 Zadej počet kroků napočítaných mezi dvěma překážkami a okamžitě získej teoretický a doporučený počet cvalových kroků, podle velikosti koně, povrchu a rychlosti.
 

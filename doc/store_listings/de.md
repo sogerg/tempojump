@@ -1,12 +1,13 @@
 # Store Listing - Deutsch (de)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Galoppsprünge Sofort Berechnen
-2: Theoretische Sprünge & Exakte Distanz
-3: Deine Checkliste vor dem Turnier
-4: Zeichne deinen Parcoursplan
-5: Trainingstagebuch & Ritt-Videos
+1: Parcoursbegehung mit Schrittzähler
+2: Galoppsprünge Sofort Berechnen
+3: Theoretische Sprünge & Exakte Distanz
+4: Deine Checkliste vor dem Turnier
+5: Zeichne deinen Parcoursplan
+6: Trainingstagebuch & Ritt-Videos
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Berechne Galoppsprünge, plane deinen Parcours und verfolge deinen Fortschritt.
 TempoJump ist das Vorbereitungstool für Springreiter: berechne deine Galoppsprünge, plane deinen Parcours und verfolge deinen Fortschritt vor jedem Ritt.
 
 WICHTIG: TempoJump ist ab dem ersten Öffnen 30 Tage lang kostenlos, ohne etwas abzuschließen. Danach erfordern alle unten aufgeführten Funktionen ein Pro-Abo, wöchentlich oder jährlich, zum in der App vor jedem Kauf angezeigten Preis.
+
+**Parcoursbegehung (neu)**
+Geh den Parcours vor deinem Ritt ab: Der Schrittzähler des Handys zählt deine Schritte, und an jedem Hindernis berechnet TempoJump die Distanz und die Galoppsprünge für DEIN Pferd. In Kombinationen zeigt es, ob die Distanz kurz, passend oder lang ist. Notiere deine Sprungeinteilung und Hinweise, erhalte die Parcourslänge und die erlaubte Zeit, finde alle Begehungen nach Datum und Pferd, zeig den „letzten Blick“ im Vollbild auf dem Abreiteplatz, exportiere ein PDF für deinen Trainer und setze die Hindernisse auf deinen fotografierten Parcoursplan.
 
 **Sofortiger Galoppsprung-Rechner**
 Gib die Anzahl der gezählten Schritte zwischen zwei Hindernissen ein und erhalte sofort die theoretische und empfohlene Anzahl an Galoppsprüngen, basierend auf der Größe deines Pferdes, dem Boden und der Geschwindigkeit.
@@ -65,7 +69,7 @@ Distanzen & Parcours-Planer
 
 ### Promotional Text (170 char max)
 
-Neu: beschreibbarer Parcoursplan, Kadenz-Metronom und Trainingstagebuch mit Video-Sharing. 30 Tage kostenlos ab dem ersten Öffnen.
+Neu: Parcoursbegehung. Geh den Parcours ab: Der Schrittzähler zählt mit und berechnet die Galoppsprünge für dein Pferd. 30 Tage kostenlos ab dem ersten Öffnen.
 
 ### Keywords (100 char max, commas included)
 

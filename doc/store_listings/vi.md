@@ -2,13 +2,14 @@
 
 ⚠️ Nhảy vượt chướng ngại vật là môn thể thao ít phổ biến tại thị trường Việt Nam — nên nhờ người cưỡi ngựa bản xứ kiểm tra thuật ngữ trước khi phát hành.
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Tính Sải Bước Ngay Lập Tức
-2: Sải Bước Lý Thuyết & Khoảng Cách Chính Xác
-3: Danh Sách Kiểm Tra Trước Thi Đấu
-4: Vẽ Sơ Đồ Đường Đua
-5: Nhật Ký Tập Luyện & Video
+1: Đi Bộ Khảo Sát Chướng Ngại Vật
+2: Tính Sải Bước Ngay Lập Tức
+3: Sải Bước Lý Thuyết & Khoảng Cách Chính Xác
+4: Danh Sách Kiểm Tra Trước Thi Đấu
+5: Vẽ Sơ Đồ Đường Đua
+6: Nhật Ký Tập Luyện & Video
 
 ## App Name (30 char max)
 
@@ -23,6 +24,9 @@ Tính sải bước ngựa, lên kế hoạch đường đua và theo dõi tiế
 TempoJump là công cụ chuẩn bị cho người cưỡi ngựa nhảy vượt chướng ngại vật: tính sải bước, lên kế hoạch đường đua và theo dõi tiến bộ trước mỗi lượt thi.
 
 QUAN TRỌNG: TempoJump miễn phí trong 30 ngày kể từ lần mở đầu tiên, không cần đăng ký gì. Sau đó, mọi tính năng dưới đây cần gói đăng ký Pro theo tuần hoặc theo năm, với giá hiển thị trong ứng dụng trước khi mua.
+
+**Khảo sát sân bằng bước bộ (mới)**
+Đi bộ trên lộ trình trước lượt thi: máy đếm bước của điện thoại đếm bước chân của bạn, và tại mỗi chướng ngại vật TempoJump tính khoảng cách và số sải bước cho CHÍNH con ngựa của bạn. Ở các tổ hợp, ứng dụng cho biết khoảng cách ngắn, vừa hay dài. Ghi kế hoạch sải bước và ghi chú, xem tổng chiều dài lộ trình và thời gian quy định, tìm lại mọi lần khảo sát theo ngày và theo ngựa, hiển thị “xem lại lần cuối” toàn màn hình ở sân khởi động, xuất PDF cho huấn luyện viên và đặt các chướng ngại vật lên ảnh sơ đồ đường đua.
 
 **Máy tính sải bước tức thì**
 Nhập số bước đếm được giữa hai chướng ngại vật và nhận ngay số sải bước lý thuyết và khuyến nghị, dựa trên kích thước ngựa, mặt sân và tốc độ.
@@ -67,7 +71,7 @@ Khoảng Cách & Lộ Trình
 
 ### Promotional Text (170 char max)
 
-Mới: sơ đồ đường đua có chú thích, máy đếm nhịp, và nhật ký tập luyện với chia sẻ video. Miễn phí 30 ngày kể từ lần mở đầu tiên.
+Mới: khảo sát sân bằng bước bộ. Đi bộ lộ trình, máy đếm bước đếm bước chân và tính sải bước cho ngựa của bạn. Miễn phí 30 ngày kể từ lần mở đầu tiên.
 
 ### Keywords (100 char max, commas included)
 

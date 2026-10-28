@@ -1,12 +1,13 @@
 # Store Listing - Español (es)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Calcula tus Zancadas al Instante
-2: Zancadas Teóricas y Distancia Exacta
-3: Tu Checklist Antes del Concurso
-4: Dibuja tu Plano de Pista
-5: Diario de Entrenamiento y Vídeos
+1: Reconocimiento a Pie con Podómetro
+2: Calcula tus Zancadas al Instante
+3: Zancadas Teóricas y Distancia Exacta
+4: Tu Checklist Antes del Concurso
+5: Dibuja tu Plano de Pista
+6: Diario de Entrenamiento y Vídeos
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Calcula tus zancadas, prepara tu pista y sigue tu progreso en hípica.
 TempoJump es la herramienta de preparación del jinete de salto de obstáculos: calcula tus zancadas, prepara tu pista y sigue tu progreso, antes de cada recorrido.
 
 IMPORTANTE: TempoJump es gratis durante 30 días desde la primera apertura, sin nada que contratar. Después, todas las funciones siguientes requieren una suscripción Pro, semanal o anual, al precio mostrado en la app antes de cualquier compra.
+
+**Reconocimiento a pie (nuevo)**
+Camina el recorrido antes de tu turno: el podómetro del teléfono cuenta tus pasos y, en cada obstáculo, TempoJump calcula la distancia y los trancos para TU caballo. En las combinaciones te indica si la distancia es corta, justa o larga. Anota tu plan de trancos y tus observaciones, obtén la longitud del recorrido y el tiempo concedido, encuentra todos tus reconocimientos por fecha y por caballo, muestra el «último vistazo» a pantalla completa en la pista de calentamiento, exporta un PDF para tu entrenador y coloca los obstáculos en tu plano de pista fotografiado.
 
 **Calculadora instantánea de zancadas**
 Introduce el número de pasos contados entre dos obstáculos y obtén al instante el número de zancadas teóricas y recomendadas, según el tamaño de tu caballo, el terreno y la velocidad.
@@ -65,7 +69,7 @@ Distancias Relacionadas
 
 ### Promotional Text (170 char max)
 
-Nuevo: plano de pista anotable, metrónomo de cadencia y diario de entrenamiento con vídeos. 30 días gratis desde la primera apertura.
+Nuevo: reconocimiento a pie. Camina el recorrido, el podómetro cuenta tus pasos y calcula los trancos para tu caballo. 30 días gratis desde la primera apertura.
 
 ### Keywords (100 char max, commas included)
 

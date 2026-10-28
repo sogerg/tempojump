@@ -2,6 +2,9 @@ TempoJump es la herramienta de preparación del jinete de salto de obstáculos: 
 
 IMPORTANTE: TempoJump empieza con una prueba gratuita a través de Google Play; su duración se indica en Google Play y en la app antes de suscribirte, y puedes cancelarla sin coste antes de que termine. Después de la prueba, todas las funciones siguientes requieren una suscripción Pro, semanal o anual, al precio mostrado en la app antes de cualquier compra.
 
+**Reconocimiento a pie (nuevo)**
+Camina el recorrido antes de tu turno: el podómetro del teléfono cuenta tus pasos y, en cada obstáculo, TempoJump calcula la distancia y los trancos para TU caballo. En las combinaciones te indica si la distancia es corta, justa o larga. Anota tu plan de trancos y tus observaciones, obtén la longitud del recorrido y el tiempo concedido, encuentra todos tus reconocimientos por fecha y por caballo, muestra el «último vistazo» a pantalla completa en la pista de calentamiento, exporta un PDF para tu entrenador y coloca los obstáculos en tu plano de pista fotografiado.
+
 **Calculadora instantánea de zancadas**
 Introduce el número de pasos contados entre dos obstáculos y obtén al instante el número de zancadas teóricas y recomendadas, según el tamaño de tu caballo, el terreno y la velocidad.
 

@@ -1,12 +1,13 @@
 # Store Listing - Čeština (cs)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Spočítej Cvalové Kroky Okamžitě
-2: Teoretické Kroky a Přesná Vzdálenost
-3: Tvůj Checklist Před Parkurem
-4: Nakresli Plán Trasy
-5: Tréninkový Deník a Videa
+1: Prohlídka Parkuru s Krokoměrem
+2: Spočítej Cvalové Kroky Okamžitě
+3: Teoretické Kroky a Přesná Vzdálenost
+4: Tvůj Checklist Před Parkurem
+5: Nakresli Plán Trasy
+6: Tréninkový Deník a Videa
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Spočítej cvalové kroky, naplánuj trasu a sleduj svůj pokrok v parkuru.
 TempoJump je přípravný nástroj pro jezdce v parkurovém skákání: spočítej cvalové kroky, naplánuj trasu a sleduj svůj pokrok před každou jízdou.
 
 DŮLEŽITÉ: TempoJump je 30 dní od prvního otevření zdarma, bez jakéhokoli předplatného. Poté všechny níže uvedené funkce vyžadují předplatné Pro, týdenní nebo roční, za cenu zobrazenou v aplikaci před nákupem.
+
+**Prohlídka parkuru (novinka)**
+Projdi parkur před svým kolem: krokoměr telefonu počítá tvé kroky a u každé překážky TempoJump spočítá vzdálenost a cvalové skoky pro TVÉHO koně. V kombinacích ukáže, zda je vzdálenost krátká, akorát, nebo dlouhá. Zapiš si plán cvalových skoků a poznámky, získej délku parkuru a stanovený čas, najdi všechny prohlídky podle data a koně, zobraz „poslední pohled“ na celé obrazovce na opracovišti, exportuj PDF pro trenéra a umísti překážky na vyfocený plán trasy.
 
 **Okamžitá kalkulačka cvalových kroků**
 Zadej počet kroků napočítaných mezi dvěma překážkami a okamžitě získej teoretický a doporučený počet cvalových kroků, podle velikosti koně, povrchu a rychlosti.
@@ -65,7 +69,7 @@ Vzdálenosti a Plán Trasy
 
 ### Promotional Text (170 char max)
 
-Novinka: plán trasy s poznámkami, metronom kadence a tréninkový deník se sdílením videa. 30 dní zdarma od prvního otevření.
+Novinka: prohlídka parkuru. Projdi parkur, krokoměr počítá tvé kroky a spočítá cvalové skoky pro tvého koně. 30 dní zdarma od prvního otevření.
 
 ### Keywords (100 char max, commas included)
 

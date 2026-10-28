@@ -1,12 +1,13 @@
 # Store Listing - Svenska (sv)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Räkna ut Galoppsteg Direkt
-2: Teoretiska Steg & Exakt Avstånd
-3: Din Checklista Före Tävlingen
-4: Rita din Banplan
-5: Träningsdagbok & Videor
+1: Bangång med Stegräknare
+2: Räkna ut Galoppsteg Direkt
+3: Teoretiska Steg & Exakt Avstånd
+4: Din Checklista Före Tävlingen
+5: Rita din Banplan
+6: Träningsdagbok & Videor
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Räkna ut galoppsteg, planera din bana och följ dina framsteg i hoppning.
 TempoJump är förberedelseverktyget för hopputövaren: räkna ut galoppsteg, planera din bana och följ dina framsteg inför varje runda.
 
 VIKTIGT: TempoJump är gratis i 30 dagar från första öppningen, utan att du tecknar något. Därefter kräver alla funktioner nedan en Pro-prenumeration, vecko- eller årsvis, till det pris som visas i appen före varje köp.
+
+**Bangång (nytt)**
+Gå banan före din ritt: telefonens stegräknare räknar dina steg och vid varje hinder räknar TempoJump ut avståndet och galoppstegen för DIN häst. I kombinationer ser du om avståndet är kort, rätt eller långt. Anteckna din galoppstegsplan och dina noteringar, få banans längd och tillåten tid, hitta alla dina bangångar efter datum och häst, visa "sista blicken" i helskärm på framridningen, exportera en PDF till din tränare och placera hindren på din fotograferade banplan.
 
 **Omedelbar galoppsteg-kalkylator**
 Ange antalet räknade steg mellan två hinder och få genast det teoretiska och rekommenderade antalet galoppsteg, baserat på hästens storlek, underlaget och farten.
@@ -65,7 +69,7 @@ Avstånd & Banplan
 
 ### Promotional Text (170 char max)
 
-Nytt: banplan med anteckningar, kadensmetronom och träningsdagbok med videodelning. 30 dagar gratis från första öppningen.
+Nytt: bangång. Gå banan, stegräknaren räknar dina steg och räknar ut galoppstegen för din häst. 30 dagar gratis från första öppningen.
 
 ### Keywords (100 char max, commas included)
 

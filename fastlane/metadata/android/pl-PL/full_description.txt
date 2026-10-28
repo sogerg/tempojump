@@ -2,6 +2,9 @@ TempoJump to narzędzie przygotowawcze dla jeźdźca skoków przez przeszkody: o
 
 WAŻNE: TempoJump zaczyna się od bezpłatnego okresu próbnego w Google Play; jego długość jest podana w Google Play i w aplikacji przed wykupieniem subskrypcji, a przed jego końcem możesz go bezpłatnie anulować. Po okresie próbnym wszystkie wymienione poniżej funkcje wymagają subskrypcji Pro, tygodniowej lub rocznej, w cenie pokazanej w aplikacji przed zakupem.
 
+**Oglądanie parkuru (nowość)**
+Przejdź parkur przed swoim przejazdem: krokomierz telefonu liczy twoje kroki, a przy każdej przeszkodzie TempoJump oblicza dystans i kroki galopu dla TWOJEGO konia. W kombinacjach pokazuje, czy odległość jest krótka, w sam raz czy długa. Zapisz swój plan kroków galopu i uwagi, poznaj długość parkuru i normę czasu, odnajdź wszystkie oglądania według daty i konia, pokaż „ostatnie spojrzenie” na pełnym ekranie na rozprężalni, wyeksportuj PDF dla trenera i umieść przeszkody na sfotografowanym planie trasy.
+
 **Natychmiastowy kalkulator kroku galopu**
 Wpisz liczbę policzonych kroków między dwiema przeszkodami i od razu otrzymaj teoretyczną oraz zalecaną liczbę kroków galopu, w zależności od wzrostu konia, podłoża i prędkości.
 

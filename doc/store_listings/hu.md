@@ -1,12 +1,13 @@
 # Store Listing - Magyar (hu)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Számítsd ki a Vágtalépéseket
-2: Elméleti Lépések & Pontos Távolság
-3: Ellenőrző Lista Verseny Előtt
-4: Rajzold meg a Pályatervet
-5: Edzésnapló & Videók
+1: Pályabejárás Lépésszámlálóval
+2: Számítsd ki a Vágtalépéseket
+3: Elméleti Lépések & Pontos Távolság
+4: Ellenőrző Lista Verseny Előtt
+5: Rajzold meg a Pályatervet
+6: Edzésnapló & Videók
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Számítsd ki a vágtalépéseket, tervezd meg a pályát, kövesd fejlődésed.
 A TempoJump a díjugrató lovas felkészülési eszköze: számítsd ki a vágtalépéseket, tervezd meg a pályát és kövesd fejlődésed minden pályafutás előtt.
 
 FONTOS: A TempoJump az első megnyitástól 30 napig ingyenes, semmit sem kell előfizetni. Utána az alább felsorolt összes funkcióhoz heti vagy éves Pro-előfizetés szükséges, az appban vásárlás előtt megjelenített áron.
+
+**Pályabejárás (új)**
+Járd be a pályát a menet előtt: a telefon lépésszámlálója számolja a lépéseidet, és minden akadálynál a TempoJump kiszámolja a távolságot és a vágtalépéseket a TE lovadra. Kombinációkban megmutatja, hogy a távolság rövid, megfelelő vagy hosszú. Jegyezd fel a vágtalépés-tervedet és a megjegyzéseidet, kapd meg a pálya hosszát és az alapidőt, keresd vissza az összes pályabejárásodat dátum és ló szerint, mutasd meg az „utolsó pillantást” teljes képernyőn a melegítőpályán, exportálj PDF-et az edződnek, és helyezd el az akadályokat a lefotózott pályaterven.
 
 **Azonnali vágtalépés-kalkulátor**
 Add meg a két akadály között megszámolt lépések számát, és azonnal megkapod az elméleti és ajánlott vágtalépések számát, a ló mérete, a talaj és a sebesség alapján.
@@ -65,7 +69,7 @@ Távolságok & Pályaterv
 
 ### Promotional Text (170 char max)
 
-Új: jegyzetelhető pályaterv, kadencia metronóm és edzésnapló videómegosztással. 30 nap ingyen az első megnyitástól.
+Új: pályabejárás. Járd be a pályát, a lépésszámláló számolja a lépéseidet, és kiszámolja a vágtalépéseket a lovadra. 30 nap ingyen az első megnyitástól.
 
 ### Keywords (100 char max, commas included)
 

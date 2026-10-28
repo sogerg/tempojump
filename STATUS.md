@@ -100,9 +100,46 @@ langue, podomètre iOS réel (CMPedometer livre ses comptes par paquets de quelq
 que la correction +/− suffit).
 
 ### Reste (après validation — rien de cela n'est écrit)
-- Fiche ASO à refaire (lire les 4 documents ASO d'abord), capture « reco en marchant » en tête,
-  Nouveautés 1.1 dans les 25 langues. Fiche store et mots-clés non touchés.
+- ~~Fiche ASO à refaire~~ → faite le 28/10, voir « Fiche 1.1 » ci-dessous ; restent les captures.
 - buildNumber 21 (et versionCode) dans un commit à part au moment du build, sur ordre.
+
+### Fiche 1.1 (28/10, rien d'envoyé à App Store Connect)
+Lus en entier avant d'écrire : règle permanente ASO, `GUIDE_SCREENSHOT.md`, `GUIDE_STORE_LISTING.md`,
+`procedure/canva-screenshots.md`, `NICHES_V8.md`.
+- **Description** (29 fiches : 25 langues + en-GB, en-AU, es-MX, fr-CA) : bloc « Reco en marchant » inséré
+  en tête des fonctions (marcher le parcours, podomètre, foulées pour SA monture, combinaisons
+  courte/juste/longue, contrat et notes, longueur et temps accordé, liste des recos, dernier regard, PDF,
+  plan photographié), vocabulaire des libellés de l'app (`reco.*`). Paragraphe 30 jours (2.3.2),
+  résiliation, sections Android et liens EULA/confidentialité inchangés. Description iOS la plus longue :
+  2 569 car. avec les liens (el).
+- **Texte promotionnel** réécrit pour la reco (29 fiches, ≤ 170, 30 jours gardés).
+- **Nouveautés 1.1.0** : `doc/store_listings/nouveautes-1.1.0.json` (29 locales ASC), par
+  `node scripts/gen-nouveautes-1.1.0.js` (libellés réels « {reco} » / « {last} » lus dans l'app).
+- **Nom, sous-titre, mots-clés : NON changés.** `NICHES_V8.md` n'a aucun volume pour l'équitation
+  (ni course walk, ni striding, ni show jumping) ; règle « hors V8 = pas tranché ». Donc pages produit
+  non concernées par un changement de mots-clés. **Proposition à valider par une recherche ASO
+  (volumes à trouver)** : EN remplacer « rider » par « walk » ou « pedometer » dans les mots-clés (le
+  sous-titre « Related Distances & Courses » couvre déjà « course ») ; FR ajouter « reco » ou
+  « reconnaissance » à la place de « poney » ; DE « Begehung ». Si on les change : soumettre la version
+  seule, pages produit après validation.
+- **Captures : 6** (5 + la reco en tête), justification écran par écran et prompt Gemini dans
+  `doc/SCREENSHOT_PROMPTS.md`. Titres de la capture 1 : section « Screenshots Text » des 29 `.md`
+  (≤ 38 car., aucun mot du nom/sous-titre de la langue, contrôlé). CSV Canva créé :
+  `doc/store_listings/captures-canva.csv` (`node scripts/gen-csv-captures.js`, BOM, 25 langues × 6).
+  `build-fastlane-metadata.js` : contrôle des variantes passé à 6 titres, écran résultat = 3.
+- **Contrôles** (script, 28/10) : limites nom/sous-titre/mots-clés/promo/description sur les 29 fiches
+  iOS et 29 Android ; aucun « gratuit/free » dans nom, sous-titre, mots-clés ; aucune autre plateforme
+  dans la fiche iOS ; aucune mention d'Apple dans les descriptions Android ; liens EULA/confidentialité
+  présents ; nom/sous-titre/mots-clés identiques avant/après (`git diff`).
+- ⚠️ Défauts ANCIENS relevés, non corrigés (les 5 captures existantes sont déjà fabriquées) : titres
+  de captures qui reprennent un mot du nom/sous-titre dans 21 fiches (ex. FR « Calcule tes Foulées »,
+  « Dessine ton Plan de Parcours ») ; deux titres > 38 car. (fi capture 3 : 39, vi capture 3 : 42).
+  À réécrire si on refait les 5 anciens designs.
+
+**À faire par l'utilisateur** : générer l'UI de la capture 1 avec Gemini (prompt ci-dessus), l'assembler
+dans Canva (calque titre nommé `screenshot1`), « Créer en masse » avec la colonne `screenshot1` du CSV,
+ranger en `1.png` et décaler les anciennes en `2..6.png` (archiver d'abord), titre arabe en RTL
+(procédure § 9) ; puis `node scripts/build-fastlane-metadata.js` et envoi sur ordre.
 
 ### À trancher
 1. **Historique séparé** et **vitesses 300–400 m/min (libre 150–600, défaut 350)** : appliqués par

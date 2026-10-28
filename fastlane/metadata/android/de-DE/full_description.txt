@@ -2,6 +2,9 @@ TempoJump ist das Vorbereitungstool für Springreiter: berechne deine Galoppspr�
 
 WICHTIG: TempoJump beginnt mit einem kostenlosen Testzeitraum über Google Play; seine Dauer wird vor dem Abschluss bei Google Play und in der App angezeigt, und du kannst ihn vor dem Ende kostenlos kündigen. Nach dem Testzeitraum erfordern alle unten aufgeführten Funktionen ein Pro-Abo, wöchentlich oder jährlich, zum in der App vor jedem Kauf angezeigten Preis.
 
+**Parcoursbegehung (neu)**
+Geh den Parcours vor deinem Ritt ab: Der Schrittzähler des Handys zählt deine Schritte, und an jedem Hindernis berechnet TempoJump die Distanz und die Galoppsprünge für DEIN Pferd. In Kombinationen zeigt es, ob die Distanz kurz, passend oder lang ist. Notiere deine Sprungeinteilung und Hinweise, erhalte die Parcourslänge und die erlaubte Zeit, finde alle Begehungen nach Datum und Pferd, zeig den „letzten Blick“ im Vollbild auf dem Abreiteplatz, exportiere ein PDF für deinen Trainer und setze die Hindernisse auf deinen fotografierten Parcoursplan.
+
 **Sofortiger Galoppsprung-Rechner**
 Gib die Anzahl der gezählten Schritte zwischen zwei Hindernissen ein und erhalte sofort die theoretische und empfohlene Anzahl an Galoppsprüngen, basierend auf der Größe deines Pferdes, dem Boden und der Geschwindigkeit.
 

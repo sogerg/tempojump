@@ -1,12 +1,13 @@
 # Store Listing - Italiano (it)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Calcola le tue Falcate all'Istante
-2: Falcate Teoriche e Distanza Esatta
-3: La tua Checklist Prima del Concorso
-4: Disegna il tuo Piano di Percorso
-5: Diario di Allenamento e Video
+1: Ricognizione a Piedi col Contapassi
+2: Calcola le tue Falcate all'Istante
+3: Falcate Teoriche e Distanza Esatta
+4: La tua Checklist Prima del Concorso
+5: Disegna il tuo Piano di Percorso
+6: Diario di Allenamento e Video
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Calcola le falcate, prepara il percorso e segui i tuoi progressi a cavallo.
 TempoJump è lo strumento di preparazione del cavaliere di salto ostacoli: calcola le tue falcate, prepara il tuo percorso e segui i tuoi progressi, prima di ogni ripresa.
 
 IMPORTANTE: TempoJump è gratuita per 30 giorni dalla prima apertura, senza nulla da sottoscrivere. Dopo, tutte le funzionalità elencate sotto richiedono un abbonamento Pro, settimanale o annuale, al prezzo indicato nell'app prima di ogni acquisto.
+
+**Ricognizione a piedi (novità)**
+Cammina il percorso prima del tuo giro: il contapassi del telefono conta i tuoi passi e, a ogni ostacolo, TempoJump calcola la distanza e le falcate per il TUO cavallo. Nelle combinazioni ti dice se la distanza è corta, giusta o lunga. Annota il tuo piano di falcate e le tue osservazioni, ottieni la lunghezza del percorso e il tempo massimo, ritrova tutte le ricognizioni per data e per cavallo, mostra l'«ultimo sguardo» a tutto schermo in campo prova, esporta un PDF per il tuo istruttore e posiziona gli ostacoli sulla foto del tuo piano di percorso.
 
 **Calcolatore istantaneo di falcate**
 Inserisci il numero di passi contati tra due ostacoli e ottieni all'istante il numero di falcate teoriche e consigliate, in base alla taglia del tuo cavallo, al terreno e alla velocità.
@@ -65,7 +69,7 @@ Distanze Correlate e Percorso
 
 ### Promotional Text (170 char max)
 
-Novità: piano di percorso annotabile, metronomo di cadenza e diario di allenamento con condivisione video. 30 giorni gratis dalla prima apertura.
+Novità: la ricognizione a piedi. Cammina il percorso, il contapassi conta i tuoi passi e calcola le falcate per il tuo cavallo. 30 giorni gratis dalla prima apertura.
 
 ### Keywords (100 char max, commas included)
 
