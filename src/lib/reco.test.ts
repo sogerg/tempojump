@@ -16,6 +16,7 @@ import {
   numeroter,
   parseCourseWalks,
   pasEnMetres,
+  reperesPourPlan,
   peutAjouterElement,
   recalculer,
   tempsAccorde,
@@ -214,6 +215,23 @@ describe('historique', () => {
     const c = { ...reco(), id: 'c', date: '2026-10-10T10:00:00.000Z' };
     expect(trierEtFiltrer([a, b, c], null).map((w) => w.id)).toEqual(['b', 'c', 'a']);
     expect(trierEtFiltrer([a, b, c], 'h1').map((w) => w.id)).toEqual(['c', 'a']);
+  });
+});
+
+describe('repères sur le plan', () => {
+  it('ajoute les numéros manquants dans la photo, garde ceux déjà posés', () => {
+    let k = 0;
+    const existants = [{ id: 'm1', label: '2', x: 0.5, y: 0.5 }];
+    const reperes = reperesPourPlan(existants, ['1', '2', '3', '4a', '4b', '5', '6', '7', '8'], () => `n${++k}`);
+    expect(reperes.map((m) => m.label)).toEqual(['2', '1', '3', '4a', '4b', '5', '6', '7', '8']);
+    expect(reperes[0]).toEqual(existants[0]);
+    reperes.forEach((m) => {
+      expect(m.x).toBeGreaterThanOrEqual(0);
+      expect(m.x).toBeLessThanOrEqual(1);
+      expect(m.y).toBeGreaterThanOrEqual(0);
+      expect(m.y).toBeLessThanOrEqual(1);
+    });
+    expect(new Set(reperes.map((m) => `${m.x},${m.y}`)).size).toBe(reperes.length);
   });
 });
 

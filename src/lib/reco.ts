@@ -10,7 +10,7 @@
  * via stepsToStrides et combinationDistance, allowedTime). Voir doc/cahier-des-charges-1.1-reco-en-marchant.md.
  */
 import { allowedTime, combinationDistance, stepsToStrides } from './mathUtils';
-import { EnvironmentAdjustments, Horse, ObstacleType, SpeedLevel, Terrain } from '../types';
+import { EnvironmentAdjustments, Horse, ObstacleType, SpeedLevel, StrideMarker, Terrain } from '../types';
 
 /** Un obstacle relevé pendant la reco (un élément d'une combinaison compte pour un obstacle). */
 export interface CourseWalkObstacle {
@@ -331,6 +331,25 @@ export function trierEtFiltrer(walks: CourseWalk[], horseId: string | null): Cou
   return walks
     .filter((w) => !horseId || w.horseId === horseId)
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+}
+
+// ——— Plan photographié ——————————————————————————————————————————————————————————————
+
+/**
+ * Repères 1…n d'une reco à poser sur un plan (StrideMarker, coordonnées en fraction de la photo).
+ * Ceux qui existent déjà (même libellé) sont gardés à leur place ; les autres sont alignés en haut
+ * de la photo, 6 par rangée, prêts à être glissés sur leurs obstacles.
+ */
+export function reperesPourPlan(existants: StrideMarker[], numeros: string[], genererId: () => string): StrideMarker[] {
+  const deja = new Set(existants.map((m) => m.label));
+  const manquants = numeros.filter((n) => !deja.has(n));
+  const nouveaux = manquants.map((label, i) => ({
+    id: genererId(),
+    label,
+    x: 0.1 + (i % 6) * 0.16,
+    y: Math.min(0.92, 0.08 + Math.floor(i / 6) * 0.1),
+  }));
+  return [...existants, ...nouveaux];
 }
 
 // ——— Lecture du stockage ———————————————————————————————————————————————————————————————
