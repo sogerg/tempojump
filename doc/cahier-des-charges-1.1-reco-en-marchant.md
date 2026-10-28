@@ -122,7 +122,12 @@ Ce que TempoJump peut faire mieux que CleaRound :
    Apple lus le 28/10 : septembre 14 installations / 5 suppressions, octobre 35 / 13 ; la meilleure
    rétention du portefeuille.)
 2. **Historique** : dans le carnet de bord existant, ou une liste « Recos » séparée.
+   → **Par défaut, à confirmer par l'utilisateur (28/10)** : liste « Recos » SÉPARÉE (par date,
+   filtrable par monture ; rouvrir, dupliquer, supprimer) ; chaque reco peut être liée à une
+   entrée du journal de bord et à un plan photographié.
 3. **Vitesses du barème** proposées par défaut (liste FFE à confirmer).
+   → **Par défaut, à confirmer par l'utilisateur (28/10)** : 300 / 325 / 350 / 375 / 400 m/min +
+   valeur libre (bornée 150–600 m/min) ; 350 m/min présélectionné.
 4. **Version** : 1.1 (nouveauté majeure) — fiche ASO à refaire avec.
 
 ## 8. Tour S24 et validation
