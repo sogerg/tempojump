@@ -42,6 +42,20 @@ au moment du build, comme pour la 1.0.5.
   mon-appli-cavalier. `expo-doctor` : 8 paquets en retard d'un patch (expo 57.0.24 → .31, expo-asset,
   image-picker, navigation-bar, screen-orientation, sharing, video, jest-expo) — laissés, voir « À trancher ».
 
+### Tour S24 du 28/10 (APK release local, clé de débogage, paywall neutralisé dans la COPIE E:\b\tj seulement)
+- ✅ Gestes 1, 2 (8,5 m / 10 pas → 85 cm), 3 (100 refusé, 362,5 accepté), 7 (tuer/relancer : reco
+  « En cours — touche pour reprendre », reprise exacte), 8 (récapitulatif : 37,40 m, 7 s, combinaison
+  « Juste : +28 cm (7,37 m conseillés) » ; dernier regard), 9 (aperçu PDF une page, propre ; fermé sans
+  imprimer), 11 (entrée « Fontainebleau » créée au journal), 12 (refus → bandeau et saisie manuelle ;
+  accepté à la reprise → « Podomètre actif »), 13 (arabe).
+- Numérotation 1 / 2a / 2b juste ; +/− de l'éditeur : 20 pas → 17,00 m.
+- 🔧 Corrigés (commit suivant, revus au S24) : « -1,0 théoriques » à 0 pas (affichage borné à 0) ;
+  en arabe « البداية → 1 » s'affichait « 1 → البداية » (chaque bout isolé, `isolerIntervalle`).
+- Non faits : marcher réellement (4, utilisateur), 5 (hauteur / note), 6, 10 (plan), 14, 15.
+- Remarques : 362,5 m/min s'affiche « 363 m/min » (arrondi d'affichage, calcul juste) ; l'app
+  masque la barre d'état partout (voulu, App.tsx) ; sur Android l'app s'ouvre sur le paywall
+  (essai Play) : neutraliser `SubscriptionGate` dans la copie de build pour le tour.
+
 ### Gestes S24 (APK local, mémoire « build-android-local » ; Expo Go n'ouvre plus le SDK 57)
 1. Installer l'APK local, ouvrir l'app : bouton « Reco en marchant » sous la carte d'accueil, ligne
    « Recos » dans Plus.

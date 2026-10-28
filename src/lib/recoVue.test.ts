@@ -3,7 +3,7 @@
 // de gauche à droite (isolement LRI … PDI).
 import i18n from '../i18n';
 import { ajouterObstacle, modifierObstacle, nouvelleReco, recalculer } from './reco';
-import { echapperHtml, htmlReco, vueReco } from './recoVue';
+import { echapperHtml, htmlReco, isolerIntervalle, vueReco } from './recoVue';
 
 const cheval = { id: 'h1', name: 'Voltigeur', withersHeight: 160 };
 let w = nouvelleReco({ id: 'w', date: '2026-10-28T09:00:00.000Z', horse: cheval, terrain: 'Plat', speed: 'Standard', speedMetersPerMinute: 350, longueurPas: 0.9 });
@@ -40,11 +40,26 @@ describe.each(langues)('reco en %s', (langue) => {
     expect(html).not.toContain('<b>&</b>');
     if (langue === 'ar') {
       expect(html).toContain('dir="rtl"');
-      expect(vue.lignes[1].intervalle).toBe('⁦1 → 2a⁩');
+      expect(vue.lignes[1].intervalle).toBe('⁦⁦1⁩ → ⁦2a⁩⁩');
     }
   });
 });
 
 test('échappement HTML', () => {
   expect(echapperHtml(`<script>alert('x')</script>`)).toBe('&lt;script&gt;alert(&#39;x&#39;)&lt;/script&gt;');
+});
+
+describe('défauts vus au S24 le 28/10', () => {
+  test('« départ → 1 » : chaque bout est isolé, sinon l’arabe retourne la ligne', () => {
+    expect(isolerIntervalle('البداية', '1')).toBe('⁦⁦البداية⁩ → ⁦1⁩⁩');
+  });
+
+  test('un intervalle plus court qu’une foulée n’affiche pas de foulées théoriques négatives', async () => {
+    await i18n.changeLanguage('fr');
+    let court = nouvelleReco({ id: 'x', date: '2026-10-28T09:00:00.000Z', horse: cheval, terrain: 'Plat', speed: 'Standard', speedMetersPerMinute: 350, longueurPas: 0.85 });
+    court = ajouterObstacle(court, cheval, { id: 'a', pas: 20, type: 'Vertical', enCombinaison: false });
+    court = ajouterObstacle(court, cheval, { id: 'b', pas: 1, type: 'Vertical', enCombinaison: false });
+    const vue = vueReco(court, cheval, 'metric', i18n.t);
+    expect(vue.lignes[1].theoriques).not.toMatch(/[-−]/);
+  });
 });

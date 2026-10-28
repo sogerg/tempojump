@@ -8,6 +8,14 @@ import { formatLength, formatNumber, formatSpeed, UnitSystem } from './units';
 import { isoler } from './bidi';
 import { Horse } from '../types';
 
+/**
+ * « départ → 1 » : chaque bout est isolé à son tour. Sans cela, en arabe, le mot « البداية » (de droite
+ * à gauche) entraîne la flèche et le chiffre qui suit, et la ligne se lit « 1 → البداية » (S24, 28/10).
+ */
+export function isolerIntervalle(de: string, vers: string): string {
+  return isoler(`${isoler(de)} → ${isoler(vers)}`);
+}
+
 export interface LigneReco {
   id: string;
   numero: string;
@@ -44,7 +52,7 @@ export function vueReco(walk: CourseWalk, horse: Horse, unitSystem: UnitSystem, 
     const ligne: LigneReco = {
       id: o.id,
       numero: o.numero,
-      intervalle: isoler(`${depuis} → ${o.numero}`),
+      intervalle: isolerIntervalle(depuis, o.numero),
       type: t(`reco.type${o.type}`),
       hauteur: o.hauteur ? isoler(formatLength(o.hauteur, unitSystem)) : undefined,
       pas: o.pasDepuisPrecedent,
@@ -53,7 +61,8 @@ export function vueReco(walk: CourseWalk, horse: Horse, unitSystem: UnitSystem, 
       note: o.note,
     };
     if (intervalle) {
-      ligne.theoriques = isoler(formatNumber(intervalle.fouleesTheoriques, 1));
+      // Borné à 0 : un intervalle plus court qu'une foulée donnait « -0,8 » (S24, 28/10).
+      ligne.theoriques = isoler(formatNumber(Math.max(0, intervalle.fouleesTheoriques), 1));
       ligne.conseillees = t('exercises.strideCount', { count: intervalle.fouleesConseillees });
       if (intervalle.combinaison) {
         const { signal, ecart, distanceConseillee } = intervalle.combinaison;
@@ -74,7 +83,7 @@ export function vueReco(walk: CourseWalk, horse: Horse, unitSystem: UnitSystem, 
   const arrivee =
     dernier && w.pasJusquArrivee
       ? {
-          intervalle: isoler(`${dernier.numero} → ${t('reco.finishLine')}`),
+          intervalle: isolerIntervalle(dernier.numero, t('reco.finishLine')),
           distance: isoler(formatLength(w.pasJusquArrivee * w.longueurPas, unitSystem)),
         }
       : undefined;

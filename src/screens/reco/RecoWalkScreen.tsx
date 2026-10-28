@@ -184,7 +184,8 @@ export function RecoWalkScreen() {
             {isoler(formatLength(pasEnMetres(pasCourant, walk.longueurPas), unitSystem))}
             {apercu
               ? `  ·  ${t('reco.liveStrides', {
-                  theoriques: isoler(formatNumber(apercu.fouleesTheoriques, 1)),
+                  // Borné à 0 : « -1,0 théoriques » s'affichait à 0 pas (S24, 28/10).
+                  theoriques: isoler(formatNumber(Math.max(0, apercu.fouleesTheoriques), 1)),
                   conseillees: t('exercises.strideCount', { count: apercu.fouleesConseillees }),
                 })}`
               : ''}
