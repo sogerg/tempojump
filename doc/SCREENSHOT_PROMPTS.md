@@ -65,6 +65,41 @@ followed by exactly two white rows with a thin #DEC6A6 border, and no other rows
 No other text anywhere. Clean, elegant equestrian style, generous spacing, large readable type.
 ```
 
+**Version française (à utiliser)** : les cinq captures existantes ont une interface en français dans
+toutes les langues (seul le titre Canva change). Libellés repris de `src/i18n/locales/fr.json` (`reco.*`).
+
+```
+Full-screen mobile UI design, light theme, background #FFFDF9, portrait 1290x2796 canvas.
+Keep all content inside the central 70% of the width: 15% empty margin on the left and right,
+8% empty margin at the top, 15% empty margin at the bottom. No phone frame, no mockup, no device border.
+All text in the image is in French, exactly as written below.
+
+At the top, a small header bar, background #F3EDE0, with dark brown (#3B2A20) bold text at font size 30
+reading "Reco en marchant" and nothing else.
+
+Below it, a small olive green (#8FA377) status line with a small footprints icon, text at font size 26 reading
+"Podomètre actif" and nothing else.
+
+Then a large rounded card, background #F0DFD8, 2px border #D9BE98:
+- small muted brown (#8A6F5C) label, font size 26: "Pas depuis l'obstacle 2"
+- a huge bold dark brown (#3B2A20) number, font size 150: "14"
+- below, dark brown text, font size 30: "11,90 m  ·  2,3 théoriques → 2"
+- a row with a round "−" button on the left, the muted label "Correction du podomètre" in the middle,
+  a round "+" button on the right. Exactly two round buttons, no more.
+
+Then one very large full-width olive green (#8FA377) rounded button, white bold text at font size 48,
+reading "Obstacle" and nothing else.
+Below it, one full-width outlined olive green rounded button, olive text at font size 30, reading
+"Élément suivant de la combinaison" and nothing else.
+
+Then a section label in muted brown, font size 24: "Obstacles relevés (touche pour modifier)"
+followed by exactly two white rows with a thin #DEC6A6 border, and no other rows:
+- row 1: bold number at font size 34 "1", then dark text "Vertical · 21,25 m" and below it olive bold text "5 foulées"
+- row 2: bold number at font size 34 "2", then dark text "Oxer · 18,70 m" and below it olive bold text "4 foulées  ·  Contrat : 4 foulées"
+
+No other text anywhere. Clean, elegant equestrian style, generous spacing, large readable type.
+```
+
 Contrôles après génération : ratio 0,461 (sinon `docs/scripts/recadrer-ui-gemini.py`), aucun texte
 parasite (compter les deux boutons et les deux lignes), aucun « px » ni taille de police rendus.
 
