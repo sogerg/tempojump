@@ -117,7 +117,10 @@ Ce que TempoJump peut faire mieux que CleaRound :
 ## 7. Points à trancher (utilisateur)
 1. **Accès** : (a) la reco dans Pro comme le reste (essai 30 jours puis abonnement) ; (b) reco
    **gratuite jusqu'à 7 obstacles** même après 30 jours, comme CleaRound, pour garder l'app installée
-   et pousser vers Pro. → Décider après lecture des rapports « suppressions » d'Apple (vers le 28/10).
+   et pousser vers Pro. → **TRANCHÉ le 28/10 : (a)**. On garde le modèle actuel, 30 jours d'essai
+   puis paywall sur toute l'app, reco comprise ; pas de palier gratuit à 7 obstacles. (Rapports
+   Apple lus le 28/10 : septembre 14 installations / 5 suppressions, octobre 35 / 13 ; la meilleure
+   rétention du portefeuille.)
 2. **Historique** : dans le carnet de bord existant, ou une liste « Recos » séparée.
 3. **Vitesses du barème** proposées par défaut (liste FFE à confirmer).
 4. **Version** : 1.1 (nouveauté majeure) — fiche ASO à refaire avec.
