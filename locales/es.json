@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Permite el acceso a la cámara para fotografiar los planos de recorrido y grabar tus reprises.",
     "NSMicrophoneUsageDescription": "Permite el acceso al micrófono para grabar tus reprises con sonido.",
     "NSPhotoLibraryUsageDescription": "Permite el acceso a tus fotos para elegir un plano de recorrido o un vídeo.",
-    "NSPhotoLibraryAddUsageDescription": "Permite el acceso a tus fotos para elegir un plano de recorrido o un vídeo."
+    "NSPhotoLibraryAddUsageDescription": "Permite el acceso a tus fotos para elegir un plano de recorrido o un vídeo.",
+    "NSMotionUsageDescription": "Permite el acceso al movimiento para contar tus pasos durante el reconocimiento del recorrido y calcular las distancias entre obstáculos."
   }
 }

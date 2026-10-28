@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Allow camera access to photograph course plans and film your rides.",
     "NSMicrophoneUsageDescription": "Allow microphone access to film your rides with sound.",
     "NSPhotoLibraryUsageDescription": "Allow access to your photos to choose a course plan or a video.",
-    "NSPhotoLibraryAddUsageDescription": "Allow access to your photos to choose a course plan or a video."
+    "NSPhotoLibraryAddUsageDescription": "Allow access to your photos to choose a course plan or a video.",
+    "NSMotionUsageDescription": "Allow motion access to count your steps while you walk the course and work out the distances between fences."
   }
 }
