@@ -1,12 +1,13 @@
 # Store Listing - Dansk (da)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Beregn Galopspring Med Det Samme
-2: Teoretiske Spring & Præcis Afstand
-3: Din Tjekliste Før Stævnet
-4: Tegn din Baneplan
-5: Træningsdagbog & Videoer
+1: Banegennemgang med Skridttæller
+2: Beregn Galopspring Med Det Samme
+3: Teoretiske Spring & Præcis Afstand
+4: Din Tjekliste Før Stævnet
+5: Tegn din Baneplan
+6: Træningsdagbog & Videoer
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Beregn galopspring, planlæg din bane og følg dine fremskridt i spring.
 TempoJump er forberedelsesværktøjet for springrytteren: beregn dine galopspring, planlæg din bane og følg dine fremskridt før hver runde.
 
 VIGTIGT: TempoJump er gratis i 30 dage fra første åbning, uden at tegne noget. Derefter kræver alle nedenstående funktioner et Pro-abonnement, ugentligt eller årligt, til den pris, der vises i appen før ethvert køb.
+
+**Banegennemgang (nyt)**
+Gå banen før din runde: telefonens skridttæller tæller dine skridt, og ved hver forhindring beregner TempoJump afstanden og galopspringene til DIN hest. I kombinationer ser du, om afstanden er kort, passende eller lang. Noter din galopspringsplan og dine bemærkninger, få banens længde og den tilladte tid, find alle dine banegennemgange efter dato og hest, vis det »sidste blik« i fuld skærm på opvarmningsbanen, eksportér en PDF til din træner, og placer forhindringerne på din fotograferede baneplan.
 
 **Øjeblikkelig galopspring-beregner**
 Indtast antal talte skridt mellem to forhindringer, og få straks det teoretiske og anbefalede antal galopspring, baseret på hestens størrelse, bunden og hastigheden.
@@ -65,7 +69,7 @@ Afstande & Baneplan
 
 ### Promotional Text (170 char max)
 
-Nyt: baneplan med noter, kadence-metronom og træningsdagbog med videodeling. 30 dage gratis fra første åbning.
+Nyt: banegennemgang. Gå banen, skridttælleren tæller dine skridt og beregner galopspringene til din hest. 30 dage gratis fra første åbning.
 
 ### Keywords (100 char max, commas included)
 

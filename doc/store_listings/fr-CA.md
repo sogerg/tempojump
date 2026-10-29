@@ -5,13 +5,14 @@
 saut d'obstacles, parcours, liste de vérification, entraîneur, vidéos de parcours. Paragraphe
 IMPORTANT, paragraphe de résiliation et sections Android IDENTIQUES à fr.md : le générateur l'exige. -->
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Calcule ton Galop en un Instant
-2: Foulées Théoriques & Distance Exacte
-3: Ta Liste de Vérification du Concours
-4: Dessine ton Plan de Parcours
-5: Carnet d'Entraînement & Vidéos
+1: Reconnaissance à Pied au Podomètre
+2: Calcule ton Galop en un Instant
+3: Foulées Théoriques & Distance Exacte
+4: Ta Liste de Vérification du Concours
+5: Dessine ton Plan de Parcours
+6: Carnet d'Entraînement & Vidéos
 
 ## App Name (30 char max)
 
@@ -26,6 +27,9 @@ Calcule tes foulées, prépare ton parcours et progresse en saut d'obstacles.
 TempoJump est l'outil de préparation du cavalier de saut d'obstacles : calcule tes foulées, prépare ton parcours et suis ta progression, avant chaque parcours en concours.
 
 IMPORTANT : TempoJump est gratuite pendant 30 jours à partir de la première ouverture, sans rien à souscrire. Ensuite, toutes les fonctionnalités ci-dessous nécessitent un abonnement Pro, hebdomadaire ou annuel, au prix affiché dans l'app avant tout achat.
+
+**Reco en marchant (nouveau)**
+Marche le parcours avant ton tour : le podomètre du téléphone compte tes pas et, à chaque obstacle, TempoJump calcule la distance et les foulées pour TA monture. En combinaison, il t'indique si la distance est courte, juste ou longue. Note ton contrat de foulées et tes remarques, obtiens la longueur du parcours et le temps accordé, retrouve toutes tes recos par date et par monture, affiche le « dernier regard » en plein écran au paddock, exporte un PDF pour ton entraîneur et place les obstacles sur ton plan de parcours photographié.
 
 **Calcul de foulées instantané**
 Entre le nombre de pas comptés entre deux obstacles et obtiens en un instant le nombre de foulées théoriques et conseillées, selon la taille de ton cheval, le sol et la vitesse.
@@ -70,7 +74,7 @@ Saut d'obstacles & distances
 
 ### Promotional Text (170 char max)
 
-Nouveau : plan de parcours annotable, métronome de cadence et carnet d'entraînement avec partage vidéo. 30 jours gratuits à la première ouverture.
+Nouveau : la reco en marchant. Marche le parcours, le podomètre compte tes pas et calcule les foulées pour ton cheval. 30 jours gratuits à la première ouverture.
 
 ### Keywords (100 char max, commas included)
 

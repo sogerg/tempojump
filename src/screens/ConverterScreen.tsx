@@ -1,7 +1,8 @@
 import React, { useMemo, useState } from 'react';
-import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
-import { Droplets, Zap } from 'lucide-react-native';
+import { ChevronRight, Droplets, Footprints, Zap } from 'lucide-react-native';
 import { NumberField } from '../components/NumberField';
 import { SegmentedControl } from '../components/SegmentedControl';
 import { ResultCard } from '../components/ResultCard';
@@ -69,6 +70,7 @@ export function ConverterScreen() {
   const [height, setHeight] = useChampHauteur(1.1, unitSystem);
   const [terrain, setTerrain] = useState<Terrain>('Plat');
   const [speed, setSpeed] = useState<SpeedLevel>('Standard');
+  const navigation = useNavigation();
 
   const result = useMemo(() => {
     const steps = Number(humanSteps.replace(',', '.'));
@@ -83,6 +85,20 @@ export function ConverterScreen() {
       <ScreenWatermark />
       <ScrollView contentContainerStyle={styles.content}>
         <IntroCard title={t('converter.title')} subtitle={t('converter.subtitle')} />
+
+        {/* 1.1 : entrée de la reco en marchant (historique « Recos », puis « Nouvelle reco »). */}
+        <TouchableOpacity
+          style={[styles.recoButton, { backgroundColor: colors.primary }]}
+          onPress={() => navigation.navigate('RecoList' as never)}
+          accessibilityRole="button"
+        >
+          <Footprints size={26} color={colors.iconGoldActive} />
+          <View style={{ flex: 1 }}>
+            <Text style={[styles.recoTitle, { color: colors.primaryText }]}>{t('reco.homeButton')}</Text>
+            <Text style={[styles.recoText, { color: colors.primaryText }]}>{t('reco.homeHint')}</Text>
+          </View>
+          <ChevronRight size={22} color={colors.primaryText} />
+        </TouchableOpacity>
 
         <Text style={[styles.sectionLabel, { color: colors.textMuted }]}>{t('horsePicker.label')}</Text>
         <MountSummaryCard />
@@ -170,5 +186,21 @@ const styles = StyleSheet.create({
     fontSize: 13,
     textAlign: 'center',
     marginTop: 10,
+  },
+  recoButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    borderRadius: 14,
+    padding: 14,
+    marginBottom: 20,
+  },
+  recoTitle: {
+    fontSize: 17,
+    fontWeight: '700',
+  },
+  recoText: {
+    fontSize: 13,
+    marginTop: 2,
   },
 });

@@ -1,0 +1,19 @@
+No account and no login are required. The app opens straight onto its features.
+
+HOW ACCESS WORKS (unchanged since 1.0.3)
+The app is fully usable for 30 days from first launch, with no purchase and no sign-up: a small line at the top shows the days left. Only after those 30 days does the subscription screen appear. So to review the app, simply open it — every feature, including the new one below, is available immediately, and nothing needs to be purchased.
+
+The subscription screen shows, for each plan, its name, its duration, its price, and working links to the Privacy Policy and to the standard Apple EULA (guideline 3.1.2(c)); the App Description of every localization also ends with both links. In the App Review sandbox, purchases are not charged. No review unlock code exists in the app.
+
+WHAT'S NEW IN 1.1.0: "COURSE WALK"
+Before a show-jumping round, riders walk the course on foot and count their steps between fences to know how many canter strides their horse needs. The new Course walk feature does this counting with the iPhone pedometer.
+
+How to reach it: first tab (Converter) > "Course walk" button > "New course walk" > choose a horse and a speed > "Start the course walk".
+- While walking, the screen shows the steps counted since the last fence, the distance, and the theoretical and advised number of strides. Tap "Fence" at each fence (and "Next element of the combination" inside a combination). "−" / "+" correct the pedometer by one step.
+- "Finish" opens a summary that can be printed or shared as a PDF, placed on a course plan photo, and linked to a logbook entry.
+- The screen stays awake during the walk only.
+
+New permission — Motion & Fitness (NSMotionUsageDescription, localized in the app's 25 languages): requested only when the rider starts a course walk, to read the step count from Core Motion. Step data stays on the device; nothing is sent anywhere, and the app has no server. If access is refused, the walk still works: the rider types the steps counted by hand ("Count my steps myself").
+To test on a desk, the counter only rises when the device is actually walked; the "+" button adds steps manually.
+
+Also in 1.1.0: library updates (Expo SDK 57 maintenance releases). No change to the product identifiers, the subscription plans, the prices or the entitlement logic.

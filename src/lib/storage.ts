@@ -3,6 +3,7 @@ import { File, Paths } from 'expo-file-system';
 import { CoursePlan, CustomChecklistItem, Horse, HorseChecklistData, JournalEntry } from '../types';
 import { UnitSystem } from './units';
 import { RatingPromptState, parseRatingPromptState } from './ratingPrompt';
+import { CourseWalk, parseCourseWalks } from './reco';
 
 const HORSES_KEY = '@cavalier/horses';
 const RIDER_STEP_LENGTH_KEY = '@cavalier/riderStepLength';
@@ -16,6 +17,7 @@ const HORSE_CHECKLISTS_KEY = '@cavalier/horseChecklists';
 const COURSE_PLANS_KEY = '@cavalier/coursePlans';
 const JOURNAL_ENTRIES_KEY = '@cavalier/journalEntries';
 const RATING_PROMPT_KEY = '@cavalier/ratingPrompt';
+const COURSE_WALKS_KEY = '@cavalier/courseWalks';
 
 export async function loadHorses(): Promise<Horse[]> {
   const raw = await AsyncStorage.getItem(HORSES_KEY);
@@ -133,4 +135,32 @@ export async function loadRatingPromptState(): Promise<RatingPromptState> {
 
 export async function saveRatingPromptState(state: RatingPromptState): Promise<void> {
   await AsyncStorage.setItem(RATING_PROMPT_KEY, JSON.stringify(state));
+}
+
+/** Recos en marchant (1.1). Absent sur un téléphone venu de la 1.0.x : liste vide. */
+export async function loadCourseWalks(): Promise<CourseWalk[]> {
+  return parseCourseWalks(await AsyncStorage.getItem(COURSE_WALKS_KEY));
+}
+
+export async function saveCourseWalks(walks: CourseWalk[]): Promise<void> {
+  await AsyncStorage.setItem(COURSE_WALKS_KEY, JSON.stringify(walks));
+}
+
+/** Ajoute ou remplace une reco (même id), en tête de liste ; rend la liste enregistrée. */
+export async function upsertCourseWalk(walk: CourseWalk): Promise<CourseWalk[]> {
+  const walks = await loadCourseWalks();
+  const next = [walk, ...walks.filter((w) => w.id !== walk.id)];
+  await saveCourseWalks(next);
+  return next;
+}
+
+export async function deleteCourseWalk(id: string): Promise<CourseWalk[]> {
+  const next = (await loadCourseWalks()).filter((w) => w.id !== id);
+  await saveCourseWalks(next);
+  return next;
+}
+
+/** Vrai si le cavalier a déjà enregistré un pas étalonné (sinon l'app part de 1 m par défaut). */
+export async function isRiderStepCalibrated(): Promise<boolean> {
+  return (await AsyncStorage.getItem(RIDER_STEP_LENGTH_KEY)) !== null;
 }

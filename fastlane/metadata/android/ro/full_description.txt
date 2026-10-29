@@ -2,6 +2,9 @@ TempoJump este instrumentul de pregătire pentru călărețul de sărituri peste
 
 IMPORTANT: TempoJump începe cu o perioadă de probă gratuită prin Google Play; durata ei este afișată în Google Play și în aplicație înainte de abonare și o poți anula gratuit înainte să se încheie. După perioada de probă, toate funcțiile enumerate mai jos necesită un abonament Pro, săptămânal sau anual, la prețul afișat în aplicație înainte de orice cumpărare.
 
+**Recunoaștere pe jos (nou)**
+Mergi pe parcurs înainte de manșa ta: pedometrul telefonului îți numără pașii și, la fiecare obstacol, TempoJump calculează distanța și fuleele pentru CALUL TĂU. În combinații îți arată dacă distanța e scurtă, corectă sau lungă. Notează-ți planul de fulee și observațiile, află lungimea parcursului și timpul acordat, regăsește toate recunoașterile după dată și cal, afișează „ultima privire” pe tot ecranul în zona de încălzire, exportă un PDF pentru antrenor și plasează obstacolele pe planul de traseu fotografiat.
+
 **Calculator instant de pași de galop**
 Introdu numărul de pași numărați între două obstacole și obții instant numărul teoretic și recomandat de pași de galop, în funcție de mărimea calului, teren și viteză.
 

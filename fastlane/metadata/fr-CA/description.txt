@@ -2,6 +2,9 @@ TempoJump est l'outil de préparation du cavalier de saut d'obstacles : calcule 
 
 IMPORTANT : TempoJump est gratuite pendant 30 jours à partir de la première ouverture, sans rien à souscrire. Ensuite, toutes les fonctionnalités ci-dessous nécessitent un abonnement Pro, hebdomadaire ou annuel, au prix affiché dans l'app avant tout achat.
 
+**Reco en marchant (nouveau)**
+Marche le parcours avant ton tour : le podomètre du téléphone compte tes pas et, à chaque obstacle, TempoJump calcule la distance et les foulées pour TA monture. En combinaison, il t'indique si la distance est courte, juste ou longue. Note ton contrat de foulées et tes remarques, obtiens la longueur du parcours et le temps accordé, retrouve toutes tes recos par date et par monture, affiche le « dernier regard » en plein écran au paddock, exporte un PDF pour ton entraîneur et place les obstacles sur ton plan de parcours photographié.
+
 **Calcul de foulées instantané**
 Entre le nombre de pas comptés entre deux obstacles et obtiens en un instant le nombre de foulées théoriques et conseillées, selon la taille de ton cheval, le sol et la vitesse.
 

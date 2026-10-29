@@ -2,6 +2,9 @@ A TempoJump a díjugrató lovas felkészülési eszköze: számítsd ki a vágta
 
 FONTOS: A TempoJump ingyenes próbaidőszakkal indul a Google Playen keresztül; ennek hossza előfizetés előtt látható a Google Playen és az appban, és a vége előtt díjmentesen lemondhatod. A próbaidőszak után az alább felsorolt összes funkcióhoz heti vagy éves Pro-előfizetés szükséges, az appban vásárlás előtt megjelenített áron.
 
+**Pályabejárás (új)**
+Járd be a pályát a menet előtt: a telefon lépésszámlálója számolja a lépéseidet, és minden akadálynál a TempoJump kiszámolja a távolságot és a vágtalépéseket a TE lovadra. Kombinációkban megmutatja, hogy a távolság rövid, megfelelő vagy hosszú. Jegyezd fel a vágtalépés-tervedet és a megjegyzéseidet, kapd meg a pálya hosszát és az alapidőt, keresd vissza az összes pályabejárásodat dátum és ló szerint, mutasd meg az „utolsó pillantást” teljes képernyőn a melegítőpályán, exportálj PDF-et az edződnek, és helyezd el az akadályokat a lefotózott pályaterven.
+
 **Azonnali vágtalépés-kalkulátor**
 Add meg a két akadály között megszámolt lépések számát, és azonnal megkapod az elméleti és ajánlott vágtalépések számát, a ló mérete, a talaj és a sebesség alapján.
 

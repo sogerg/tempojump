@@ -2,6 +2,9 @@ TempoJump, engel atlama biniciliği için hazırlık aracıdır: dörtnal adım�
 
 ÖNEMLİ: TempoJump, Google Play üzerinden ücretsiz bir deneme süresiyle başlar; süresi abone olmadan önce Google Play'de ve uygulamada gösterilir ve bitmeden önce ücretsiz iptal edebilirsin. Deneme süresinden sonra aşağıdaki tüm özellikler haftalık ya da yıllık Pro aboneliği gerektirir; fiyat, satın almadan önce uygulamada gösterilir.
 
+**Parkur yürüyüşü (yeni)**
+Turundan önce parkuru yürü: telefonun adımsayarı adımlarını sayar ve her engelde TempoJump mesafeyi ve SENİN atın için fuleleri hesaplar. Kombinasyonlarda mesafenin kısa, uygun ya da uzun olduğunu gösterir. Fule planını ve notlarını kaydet, parkur uzunluğunu ve tanınan süreyi gör, tüm parkur yürüyüşlerini tarihe ve ata göre bul, "son bakış" ekranını ısınma alanında tam ekran aç, antrenörün için PDF dışa aktar ve engelleri fotoğrafladığın parkur planına yerleştir.
+
 **Anında dörtnal adım hesaplayıcı**
 İki engel arasında sayılan adım sayısını gir ve atının boyuna, zemine ve hıza göre teorik ve önerilen dörtnal adım sayısını anında al.
 

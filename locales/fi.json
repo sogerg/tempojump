@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Salli kameran käyttö ratapiirrosten kuvaamiseen ja ratojesi videointiin.",
     "NSMicrophoneUsageDescription": "Salli mikrofonin käyttö, jotta voit videoida ratasi äänen kanssa.",
     "NSPhotoLibraryUsageDescription": "Salli kuviesi käyttö ratapiirroksen tai videon valitsemiseen.",
-    "NSPhotoLibraryAddUsageDescription": "Salli kuviesi käyttö ratapiirroksen tai videon valitsemiseen."
+    "NSPhotoLibraryAddUsageDescription": "Salli kuviesi käyttö ratapiirroksen tai videon valitsemiseen.",
+    "NSMotionUsageDescription": "Salli liikkeen käyttö, jotta askeleesi lasketaan radankävelyn aikana ja esteiden väliset etäisyydet saadaan laskettua."
   }
 }

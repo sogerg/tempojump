@@ -11,12 +11,14 @@ import {
   View,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
+import { useRoute } from '@react-navigation/native';
 import * as ImagePicker from 'expo-image-picker';
 import * as Sharing from 'expo-sharing';
 import { captureRef } from 'react-native-view-shot';
 import Svg, { Polyline } from 'react-native-svg';
 import { useSettings } from '../context/SettingsContext';
-import { copyToPersistentStorage, loadCoursePlans, saveCoursePlans } from '../lib/storage';
+import { copyToPersistentStorage, loadCoursePlans, loadCourseWalks, saveCoursePlans, upsertCourseWalk } from '../lib/storage';
+import { reperesPourPlan } from '../lib/reco';
 import { CoursePlan, DrawingStroke, StrideMarker } from '../types';
 import { fractionToPixel, getContainRect } from '../lib/imageGeometry';
 import { IntroCard } from '../components/IntroCard';
@@ -45,6 +47,9 @@ export function CoursePlanScreen() {
   const [editorMode, setEditorMode] = useState<DrawMode>('draw');
   const [canvasSize, setCanvasSize] = useState({ width: 0, height: 0 });
   const [naturalSize, setNaturalSize] = useState({ width: 0, height: 0 });
+  // « Placer sur le plan » depuis une reco (1.1) : numéros à poser et reco à relier au plan.
+  const route = useRoute();
+  const [depuisReco, setDepuisReco] = useState<{ reperes: string[]; walkId?: string } | null>(null);
 
   useEffect(() => {
     if (!currentPlan?.photoUri) return;
@@ -61,8 +66,19 @@ export function CoursePlanScreen() {
     (async () => {
       const stored = await loadCoursePlans();
       setPlans(stored);
+      const params = (route.params ?? {}) as { planId?: string; reperes?: string[]; walkId?: string };
+      if (!params.reperes) return;
+      setDepuisReco({ reperes: params.reperes, walkId: params.walkId });
+      const plan = stored.find((p) => p.id === params.planId);
+      if (plan) {
+        setCurrentPlan(plan);
+        setStrokes(plan.strokes);
+        setMarkers(reperesPourPlan(plan.markers, params.reperes, generateId));
+        setEditorMode('mark');
+        setEditorVisible(true);
+      }
     })();
-  }, []);
+  }, [route.params]);
 
   const pickPhoto = async (source: 'camera' | 'library') => {
     const permission =
@@ -90,7 +106,13 @@ export function CoursePlanScreen() {
       };
       setCurrentPlan(newPlan);
       setStrokes([]);
-      setMarkers([]);
+      if (depuisReco) {
+        setMarkers(reperesPourPlan([], depuisReco.reperes, generateId));
+        setEditorMode('mark');
+        setEditorVisible(true);
+      } else {
+        setMarkers([]);
+      }
     } catch (error) {
       Alert.alert(t('coursePlan.shareErrorTitle'), String(error));
     }
@@ -102,13 +124,18 @@ export function CoursePlanScreen() {
     setMarkers(plan.markers);
   };
 
-  const handleSave = async () => {
+  const handleSave = async (nextStrokes: DrawingStroke[] = strokes, nextMarkers: StrideMarker[] = markers) => {
     if (!currentPlan) return;
-    const updatedPlan: CoursePlan = { ...currentPlan, strokes, markers };
+    const updatedPlan: CoursePlan = { ...currentPlan, strokes: nextStrokes, markers: nextMarkers };
     const next = [updatedPlan, ...plans.filter((p) => p.id !== updatedPlan.id)];
     setPlans(next);
     setCurrentPlan(updatedPlan);
     await saveCoursePlans(next);
+    // Plan venu d'une reco : la reco garde le lien vers ce plan.
+    if (depuisReco?.walkId) {
+      const walk = (await loadCourseWalks()).find((w) => w.id === depuisReco.walkId);
+      if (walk && walk.planId !== updatedPlan.id) await upsertCourseWalk({ ...walk, planId: updatedPlan.id });
+    }
   };
 
   const handleShare = async () => {
@@ -134,6 +161,8 @@ export function CoursePlanScreen() {
     setStrokes(nextStrokes);
     setMarkers(nextMarkers);
     setEditorVisible(false);
+    // Depuis une reco, les repères posés sont enregistrés tout de suite (pas d'oubli du bouton).
+    if (depuisReco) handleSave(nextStrokes, nextMarkers);
   };
 
   return (
@@ -257,7 +286,7 @@ export function CoursePlanScreen() {
           <View style={styles.actionsRow}>
             <TouchableOpacity
               style={[styles.primaryButton, { backgroundColor: colors.primary }]}
-              onPress={handleSave}
+              onPress={() => handleSave()}
             >
               <Save size={16} color={colors.iconGoldActive} />
               <Text style={[styles.primaryButtonText, { color: colors.primaryText }]}>{t('coursePlan.save')}</Text>

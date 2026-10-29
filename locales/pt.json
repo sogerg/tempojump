@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Permite o acesso à câmara para fotografar os planos de percurso e filmar as tuas voltas.",
     "NSMicrophoneUsageDescription": "Permite o acesso ao microfone para filmar as tuas voltas com som.",
     "NSPhotoLibraryUsageDescription": "Permite o acesso às tuas fotos para escolher um plano de percurso ou um vídeo.",
-    "NSPhotoLibraryAddUsageDescription": "Permite o acesso às tuas fotos para escolher um plano de percurso ou um vídeo."
+    "NSPhotoLibraryAddUsageDescription": "Permite o acesso às tuas fotos para escolher um plano de percurso ou um vídeo.",
+    "NSMotionUsageDescription": "Permite o acesso ao movimento para contar os teus passos durante o reconhecimento do percurso e calcular as distâncias entre os obstáculos."
   }
 }

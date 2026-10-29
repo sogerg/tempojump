@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Geef toegang tot de camera om parcoursplattegronden te fotograferen en je rondes te filmen.",
     "NSMicrophoneUsageDescription": "Geef toegang tot de microfoon om je rondes met geluid te filmen.",
     "NSPhotoLibraryUsageDescription": "Geef toegang tot je foto's om een parcoursplattegrond of video te kiezen.",
-    "NSPhotoLibraryAddUsageDescription": "Geef toegang tot je foto's om een parcoursplattegrond of video te kiezen."
+    "NSPhotoLibraryAddUsageDescription": "Geef toegang tot je foto's om een parcoursplattegrond of video te kiezen.",
+    "NSMotionUsageDescription": "Geef toegang tot beweging om je passen te tellen tijdens het verkennen van het parcours en de afstanden tussen de hindernissen te berekenen."
   }
 }

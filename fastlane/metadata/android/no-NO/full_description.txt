@@ -2,6 +2,9 @@ TempoJump er forberedelsesverktøyet for sprangrytteren: regn ut galoppsprang, p
 
 VIKTIG: TempoJump starter med en gratis prøveperiode via Google Play; lengden vises på Google Play og i appen før du abonnerer, og du kan si den opp kostnadsfritt før den er over. Etter prøveperioden krever alle funksjonene nedenfor et Pro-abonnement, ukentlig eller årlig, til prisen som vises i appen før ethvert kjøp.
 
+**Banegåing (nytt)**
+Gå banen før runden din: telefonens skritteller teller skrittene dine, og ved hvert hinder regner TempoJump ut avstanden og galoppsprangene for DIN hest. I kombinasjoner ser du om avstanden er kort, riktig eller lang. Noter galoppsprangplanen og merknadene dine, få banelengden og tillatt tid, finn alle banegåingene dine etter dato og hest, vis «siste blikk» i fullskjerm på oppvarmingsbanen, eksporter en PDF til treneren din og plasser hindrene på den fotograferte baneplanen.
+
 **Umiddelbar galoppsprang-kalkulator**
 Skriv inn antall talte skritt mellom to hindre, og få umiddelbart det teoretiske og anbefalte antallet galoppsprang, basert på hestens størrelse, underlaget og farten.
 

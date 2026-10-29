@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Cho phép truy cập camera để chụp sơ đồ đường đua và quay các vòng chạy của bạn.",
     "NSMicrophoneUsageDescription": "Cho phép truy cập micrô để quay các vòng chạy có âm thanh.",
     "NSPhotoLibraryUsageDescription": "Cho phép truy cập ảnh để chọn sơ đồ đường đua hoặc video.",
-    "NSPhotoLibraryAddUsageDescription": "Cho phép truy cập ảnh để chọn sơ đồ đường đua hoặc video."
+    "NSPhotoLibraryAddUsageDescription": "Cho phép truy cập ảnh để chọn sơ đồ đường đua hoặc video.",
+    "NSMotionUsageDescription": "Cho phép truy cập chuyển động để đếm bước khi bạn khảo sát lộ trình và tính khoảng cách giữa các chướng ngại vật."
   }
 }

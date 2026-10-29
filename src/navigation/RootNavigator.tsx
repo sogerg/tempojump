@@ -8,6 +8,11 @@ import { HorsesScreen } from '../screens/HorsesScreen';
 import { MetronomeScreen } from '../screens/MetronomeScreen';
 import { CoursePlanScreen } from '../screens/CoursePlanScreen';
 import { ExercisesScreen } from '../screens/ExercisesScreen';
+import { RecoListScreen } from '../screens/reco/RecoListScreen';
+import { RecoStartScreen } from '../screens/reco/RecoStartScreen';
+import { RecoWalkScreen } from '../screens/reco/RecoWalkScreen';
+import { RecoSummaryScreen } from '../screens/reco/RecoSummaryScreen';
+import { RecoLastLookScreen } from '../screens/reco/RecoLastLookScreen';
 import { useSettings } from '../context/SettingsContext';
 
 const Stack = createNativeStackNavigator();
@@ -46,6 +51,15 @@ export function RootNavigator() {
         <Stack.Screen name="Metronome" component={MetronomeScreen} options={{ title: t('nav.metronome') }} />
         <Stack.Screen name="CoursePlan" component={CoursePlanScreen} options={{ title: t('nav.coursePlan') }} />
         <Stack.Screen name="Exercices" component={ExercisesScreen} options={{ title: t('nav.exercises') }} />
+        <Stack.Screen name="RecoList" component={RecoListScreen} options={{ title: t('nav.recos') }} />
+        <Stack.Screen name="RecoStart" component={RecoStartScreen} options={{ title: t('reco.homeButton') }} />
+        <Stack.Screen name="RecoWalk" component={RecoWalkScreen} options={{ title: t('nav.recoWalk') }} />
+        <Stack.Screen name="RecoSummary" component={RecoSummaryScreen} options={{ title: t('reco.summaryTitle') }} />
+        <Stack.Screen
+          name="RecoLastLook"
+          component={RecoLastLookScreen}
+          options={{ headerShown: false, presentation: 'fullScreenModal' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

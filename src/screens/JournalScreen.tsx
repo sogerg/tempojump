@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useState } from 'react';
+import { useFocusEffect } from '@react-navigation/native';
 import { Alert, I18nManager, ScrollView, Share, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import * as ImagePicker from 'expo-image-picker';
@@ -38,12 +39,12 @@ export function JournalScreen() {
   const [notes, setNotes] = useState('');
   const [videoUri, setVideoUri] = useState<string | null>(null);
 
-  useEffect(() => {
-    (async () => {
-      const stored = await loadJournalEntries();
-      setEntries(stored);
-    })();
-  }, []);
+  // Relu à chaque affichage de l'onglet : une fiche peut avoir été créée depuis une reco (1.1).
+  useFocusEffect(
+    useCallback(() => {
+      loadJournalEntries().then(setEntries);
+    }, [])
+  );
 
   const resetForm = () => {
     setName('');

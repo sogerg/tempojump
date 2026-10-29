@@ -1,12 +1,13 @@
 # Store Listing - Norsk (no)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Regn ut Galoppsprang Med Én Gang
-2: Teoretiske Sprang & Nøyaktig Avstand
-3: Sjekklisten Din Før Stevnet
-4: Tegn Baneplanen Din
-5: Treningsdagbok & Videoer
+1: Banegåing med Skritteller
+2: Regn ut Galoppsprang Med Én Gang
+3: Teoretiske Sprang & Nøyaktig Avstand
+4: Sjekklisten Din Før Stevnet
+5: Tegn Baneplanen Din
+6: Treningsdagbok & Videoer
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Regn ut galoppsprang, planlegg banen og følg fremgangen din i sprang.
 TempoJump er forberedelsesverktøyet for sprangrytteren: regn ut galoppsprang, planlegg banen og følg fremgangen din før hver runde.
 
 VIKTIG: TempoJump er gratis i 30 dager fra første åpning, uten å tegne noe. Deretter krever alle funksjonene nedenfor et Pro-abonnement, ukentlig eller årlig, til prisen som vises i appen før ethvert kjøp.
+
+**Banegåing (nytt)**
+Gå banen før runden din: telefonens skritteller teller skrittene dine, og ved hvert hinder regner TempoJump ut avstanden og galoppsprangene for DIN hest. I kombinasjoner ser du om avstanden er kort, riktig eller lang. Noter galoppsprangplanen og merknadene dine, få banelengden og tillatt tid, finn alle banegåingene dine etter dato og hest, vis «siste blikk» i fullskjerm på oppvarmingsbanen, eksporter en PDF til treneren din og plasser hindrene på den fotograferte baneplanen.
 
 **Umiddelbar galoppsprang-kalkulator**
 Skriv inn antall talte skritt mellom to hindre, og få umiddelbart det teoretiske og anbefalte antallet galoppsprang, basert på hestens størrelse, underlaget og farten.
@@ -65,7 +69,7 @@ Avstander & Baneplan
 
 ### Promotional Text (170 char max)
 
-Nytt: baneplan med notater, kadensmetronom og treningsdagbok med videodeling. 30 dager gratis fra første åpning.
+Nytt: banegåing. Gå banen, skrittelleren teller skrittene dine og regner ut galoppsprangene for hesten din. 30 dager gratis fra første åpning.
 
 ### Keywords (100 char max, commas included)
 

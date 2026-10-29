@@ -1,12 +1,13 @@
 # Store Listing - Türkçe (tr)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Dörtnal Adımını Anında Hesapla
-2: Teorik Adımlar & Kesin Mesafe
-3: Yarış Öncesi Kontrol Listen
-4: Parkur Planını Çiz
-5: Antrenman Günlüğü & Videolar
+1: Engelleri Adımsayarla Yürü
+2: Dörtnal Adımını Anında Hesapla
+3: Teorik Adımlar & Kesin Mesafe
+4: Yarış Öncesi Kontrol Listen
+5: Parkur Planını Çiz
+6: Antrenman Günlüğü & Videolar
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Dörtnal adımını hesapla, parkurunu planla ve gelişimini takip et.
 TempoJump, engel atlama biniciliği için hazırlık aracıdır: dörtnal adımını hesapla, parkurunu planla ve her turdan önce gelişimini takip et.
 
 ÖNEMLİ: TempoJump ilk açılıştan itibaren 30 gün boyunca, hiçbir şeye abone olmadan ücretsizdir. Sonrasında aşağıdaki tüm özellikler haftalık ya da yıllık Pro aboneliği gerektirir; fiyat, satın almadan önce uygulamada gösterilir.
+
+**Parkur yürüyüşü (yeni)**
+Turundan önce parkuru yürü: telefonun adımsayarı adımlarını sayar ve her engelde TempoJump mesafeyi ve SENİN atın için fuleleri hesaplar. Kombinasyonlarda mesafenin kısa, uygun ya da uzun olduğunu gösterir. Fule planını ve notlarını kaydet, parkur uzunluğunu ve tanınan süreyi gör, tüm parkur yürüyüşlerini tarihe ve ata göre bul, "son bakış" ekranını ısınma alanında tam ekran aç, antrenörün için PDF dışa aktar ve engelleri fotoğrafladığın parkur planına yerleştir.
 
 **Anında dörtnal adım hesaplayıcı**
 İki engel arasında sayılan adım sayısını gir ve atının boyuna, zemine ve hıza göre teorik ve önerilen dörtnal adım sayısını anında al.
@@ -65,7 +69,7 @@ Bağlantılı Mesafeler & Parkur
 
 ### Promotional Text (170 char max)
 
-Yeni: notlanabilir parkur planı, kadans metronomu ve video paylaşımlı antrenman günlüğü. İlk açılıştan itibaren 30 gün ücretsiz.
+Yeni: parkur yürüyüşü. Parkuru yürü, adımsayar adımlarını sayar ve atın için fuleleri hesaplar. İlk açılıştan itibaren 30 gün ücretsiz.
 
 ### Keywords (100 char max, commas included)
 

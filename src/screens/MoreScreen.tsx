@@ -5,13 +5,14 @@ import { useNavigation } from '@react-navigation/native';
 import { useSettings } from '../context/SettingsContext';
 import { FONTS } from '../constants/typography';
 import { ScreenWatermark } from '../components/ScreenWatermark';
-import { AlarmClock, Expand, Map } from 'lucide-react-native';
+import { AlarmClock, Expand, Footprints, Map } from 'lucide-react-native';
 
 const MENU_ITEMS: {
   route: string;
   labelKey: string;
   icon: React.ComponentType<{ size?: number; color?: string }>;
 }[] = [
+  { route: 'RecoList', labelKey: 'nav.recos', icon: Footprints },
   { route: 'CoursePlan', labelKey: 'nav.coursePlan', icon: Map },
   { route: 'Metronome', labelKey: 'nav.metronome', icon: AlarmClock },
   { route: 'Exercices', labelKey: 'nav.exercises', icon: Expand },

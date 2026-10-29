@@ -1,5 +1,159 @@
 # Statut TempoJump
 
+## 28/10/2026 — 1.1.0 « Reco en marchant » (branche `v1.1-reco`, rien de construit ni d'envoyé)
+Spécification : `doc/cahier-des-charges-1.1-reco-en-marchant.md` (§7 : historique séparé et vitesses
+300–400 m/min notés « par défaut, à confirmer par l'utilisateur »). Accès : dans Pro comme le reste
+(30 jours gérés par l'app puis paywall sur toute l'app) — achats, paywall et TrialContext non touchés.
+`version` 1.1.0 ; `buildNumber` (20) et `versionCode` (5) non touchés : ils montent dans un commit à part
+au moment du build, comme pour la 1.0.5.
+
+### Fait
+- **Domaine** `src/lib/reco.ts` (+ `reco.test.ts`, `storage.reco.test.ts`) : `CourseWalk` (§3.4, + pas
+  étalonné de la reco, pas jusqu'à l'arrivée, `terminee`), pas → distance, foulées théoriques/conseillées
+  via `stepsToStrides` / `combinationDistance` (non dupliqués ; hauteur = la plus haute des deux barres),
+  numérotation 1, 2, 4a/4b/4c (triple au plus), signal court / juste / long à ±30 cm en combinaison,
+  longueur totale, temps accordé (`allowedTime`, arrondi à la seconde supérieure), annuler, corriger,
+  dupliquer, recalcul pour une autre monture, repères de plan. `lireNombre` (units.ts) : virgule, point,
+  « ٫ », chiffres arabo-indiens ; NaN sinon (jamais de nombre tronqué).
+- **Stockage** : clé `@cavalier/courseWalks`, relecture tolérante (téléphone venu de la 1.0.5 = liste
+  vide, autres données intactes — testé). ⚠️ L'app n'a **aucune sauvegarde/restauration** (ni avant ni
+  maintenant) : rien à y inclure ; voir « À trancher ».
+- **Écrans** (`src/screens/reco/`, `src/components/reco/`) : accueil → bouton « Reco en marchant »
+  (historique), onglet Plus → « Recos » ; démarrer (monture, terrain, Standard/Élite, barème
+  300/325/350/375/400 + libre, concours, étalonnage proposé si le pas n'a jamais été enregistré) ;
+  marcher (podomètre `Pedometer.watchStepCount` lu à l'appui, correction +/−, Obstacle / élément de
+  combinaison, type, hauteur, contrat, note, annuler le dernier avec confirmation, pause, `useKeepAwake`,
+  saisie manuelle si refusé/absent ou au choix ; reco enregistrée à chaque obstacle, reprise depuis
+  l'historique) ; récapitulatif (longueur, temps, foulées pour une autre monture, édition) ; « Dernier
+  regard » plein écran blanc sur noir ; PDF `expo-print` (Imprimer / Partager, notes échappées) ;
+  « Placer sur le plan » (repères 1…n posés en haut du plan choisi ou d'une nouvelle photo, éditeur
+  ouvert en mode Repères, enregistrés à la fermeture, plan relié à la reco) ; lien vers le journal de
+  bord (entrée existante ou créée ; le journal se relit à chaque affichage de l'onglet).
+- **Natif** : `expo-sensors`, `expo-keep-awake`, `expo-print` (npx expo install). Plugin expo-sensors avec
+  `motionPermission` réel (jamais `false`) ; `NSMotionUsageDescription` dans `locales/<langue>.json`
+  (25 langues) ; `ACTIVITY_RECOGNITION` dans app.json. Vérifié par `expo config --type introspect` (le
+  prebuild iOS refuse de tourner sous Windows ; copie temporaire supprimée, aucun dossier ios/) :
+  4 chaînes d'usage (caméra, micro, photos, mouvements), aucune générique.
+- **i18n** : 95 chaînes `reco.*` + 2 `nav.*` dans les 25 langues ; aucun nouveau pluriel (foulées via
+  `exercises.strideCount`, déjà complet ; compteurs en forme neutre) ; arabe : nombres, unités et
+  « 1 → 2a » isolés LRI/PDI (`src/lib/bidi.ts`), PDF en `dir="rtl"`. Test `recoVue.test.ts` : mêmes clés
+  partout, aucune clé brute ni « {{ ».
+- **Contrôles** : 178 tests verts, `tsc --noEmit` propre, audit des défauts connus : 0 ligne
+  mon-appli-cavalier. `expo-doctor` : 8 paquets en retard d'un patch (expo 57.0.24 → .31, expo-asset,
+  image-picker, navigation-bar, screen-orientation, sharing, video, jest-expo) — laissés, voir « À trancher ».
+
+### Tour S24 du 28/10 (APK release local, clé de débogage, paywall neutralisé dans la COPIE E:\b\tj seulement)
+- ✅ Gestes 1, 2 (8,5 m / 10 pas → 85 cm), 3 (100 refusé, 362,5 accepté), 7 (tuer/relancer : reco
+  « En cours — touche pour reprendre », reprise exacte), 8 (récapitulatif : 37,40 m, 7 s, combinaison
+  « Juste : +28 cm (7,37 m conseillés) » ; dernier regard), 9 (aperçu PDF une page, propre ; fermé sans
+  imprimer), 11 (entrée « Fontainebleau » créée au journal), 12 (refus → bandeau et saisie manuelle ;
+  accepté à la reprise → « Podomètre actif »), 13 (arabe).
+- Numérotation 1 / 2a / 2b juste ; +/− de l'éditeur : 20 pas → 17,00 m.
+- 🔧 Corrigés (commit suivant, revus au S24) : « -1,0 théoriques » à 0 pas (affichage borné à 0) ;
+  en arabe « البداية → 1 » s'affichait « 1 → البداية » (chaque bout isolé, `isolerIntervalle`).
+- ✅ Suite du tour (28/10 soir) : 4 (marche RÉELLE par l'utilisateur : reco « Paris », Gege, 22 / 21 /
+  38 pas au podomètre, 46,29 m, 8 s, 2 et 5 foulées), 5 (hauteur « 3 » → « Hauteur entre 0,30 et
+  2,20 m », « 1,25 » acceptée ; note enregistrée ; défilement en partant du champ de note), 6
+  (SCREEN_BRIGHT_WAKE_LOCK au nom de l'app pendant la reco), 10 (nouveau plan depuis la galerie :
+  repères 1-3 posés, repère glissé gardé à la réouverture, « Plan : Nouveau plan » sur la reco), 14
+  (police 2.0 : tout utilisable, « Annuler le dernier » sur 3 lignes), 15 (impérial : 151 ft 10,4 in,
+  383 yd/min). **Tour S24 de la 1.1 complet.**
+- Données de test laissées sur le S24 : plan « Nouveau plan » (photo d'écran) relié à « Paris », entrée
+  « Fontainebleau » du journal ; recos de test supprimées.
+- Le pas enregistré est de 57 cm (pas naturel) : en reco, les cavaliers marchent souvent un pas d'un
+  mètre — l'étalonnage doit se faire avec la même foulée que pendant la reco.
+- Remarques : 362,5 m/min s'affiche « 363 m/min » (arrondi d'affichage, calcul juste) ; l'app
+  masque la barre d'état partout (voulu, App.tsx) ; sur Android l'app s'ouvre sur le paywall
+  (essai Play) : neutraliser `SubscriptionGate` dans la copie de build pour le tour.
+
+### Gestes S24 (APK local, mémoire « build-android-local » ; Expo Go n'ouvre plus le SDK 57)
+1. Installer l'APK local, ouvrir l'app : bouton « Reco en marchant » sous la carte d'accueil, ligne
+   « Recos » dans Plus.
+2. « Nouvelle reco » sur un téléphone jamais étalonné : la carte d'étalonnage apparaît ; taper « 8,5 »
+   (virgule) dans la distance et « 10 » dans les pas → « Pas mesuré : 85 cm » ; enregistrer.
+3. Barème « Autre » : taper « 362,5 » (virgule) → accepté ; « 100 » → message de plage, bouton grisé.
+4. Commencer : accepter l'autorisation « Activité physique » ; **marcher réellement** (à faire par
+   l'utilisateur) une vingtaine de pas, vérifier que le compteur monte, appuyer « Obstacle », puis
+   « Élément suivant de la combinaison » → numéros 1, 2a, 2b ; corriger +/− ; « Pause » : le compteur ne
+   bouge plus en marchant ; « Reprendre ».
+5. Toucher un obstacle relevé : hauteur « 1,25 » (virgule) acceptée, « 3 » refusée (message) ; contrat
+   +/− ; note longue ; faire défiler en partant du champ de note (mémoire « champ de saisie qui bloque
+   le défilement »).
+6. Écran allumé : laisser le téléphone posé 2 min pendant la reco → l'écran ne s'éteint pas.
+7. Tuer l'app pendant une reco, relancer → Plus → Recos : la reco est « En cours », la rouvrir, les
+   obstacles sont là ; terminer.
+8. Récapitulatif : changer de monture → foulées recalculées ; « Dernier regard » plein écran lisible.
+9. PDF : « Imprimer » → « Enregistrer au format PDF » seulement (ne jamais lire ni capturer la feuille
+   de partage) ; ouvrir le PDF : tableau complet, une note contenant « < & » affichée telle quelle.
+10. « Placer sur le plan » → plan existant : éditeur en mode Repères avec 1…n en haut, glisser, fermer,
+    rouvrir le plan : repères enregistrés ; idem avec « Nouveau plan (photo) ».
+11. « Lier au journal de bord » → « Créer une entrée » : l'onglet Journal la montre.
+12. Refus de l'autorisation (Réglages Android → Applis → TempoJump → Autorisations → Activité physique
+    → Refuser), relancer une reco → message « refusé », champ « Pas comptés » (taper « 24 »),
+    « Obstacle » fonctionne.
+13. Arabe (Réglages → Langue) : « 1 → 2 », distances et « 22,5 m » restent de gauche à droite dans la
+    marche, le récapitulatif, le dernier regard et le PDF.
+14. Police système au maximum : gros boutons, compteur, dernier regard sans texte coupé.
+15. Unités impériales : distances en ft/in, hauteur en ft, vitesse en yd/min.
+Puis TestFlight sur l'iPhone de Marie : fenêtre « Mouvements et forme » en français ET dans une autre
+langue, podomètre iOS réel (CMPedometer livre ses comptes par paquets de quelques secondes : vérifier
+que la correction +/− suffit).
+
+### Reste (après validation — rien de cela n'est écrit)
+- ~~Fiche ASO à refaire~~ → faite le 28/10, voir « Fiche 1.1 » ci-dessous ; restent les captures.
+- buildNumber 21 (et versionCode) dans un commit à part au moment du build, sur ordre.
+
+### Fiche 1.1 (28/10, rien d'envoyé à App Store Connect)
+Lus en entier avant d'écrire : règle permanente ASO, `GUIDE_SCREENSHOT.md`, `GUIDE_STORE_LISTING.md`,
+`procedure/canva-screenshots.md`, `NICHES_V8.md`.
+- **Description** (29 fiches : 25 langues + en-GB, en-AU, es-MX, fr-CA) : bloc « Reco en marchant » inséré
+  en tête des fonctions (marcher le parcours, podomètre, foulées pour SA monture, combinaisons
+  courte/juste/longue, contrat et notes, longueur et temps accordé, liste des recos, dernier regard, PDF,
+  plan photographié), vocabulaire des libellés de l'app (`reco.*`). Paragraphe 30 jours (2.3.2),
+  résiliation, sections Android et liens EULA/confidentialité inchangés. Description iOS la plus longue :
+  2 569 car. avec les liens (el).
+- **Texte promotionnel** réécrit pour la reco (29 fiches, ≤ 170, 30 jours gardés).
+- **Nouveautés 1.1.0** : `doc/store_listings/nouveautes-1.1.0.json` (29 locales ASC), par
+  `node scripts/gen-nouveautes-1.1.0.js` (libellés réels « {reco} » / « {last} » lus dans l'app).
+- **Nom, sous-titre, mots-clés : NON changés.** `NICHES_V8.md` n'a aucun volume pour l'équitation
+  (ni course walk, ni striding, ni show jumping) ; règle « hors V8 = pas tranché ». Donc pages produit
+  non concernées par un changement de mots-clés. **Proposition à valider par une recherche ASO
+  (volumes à trouver)** : EN remplacer « rider » par « walk » ou « pedometer » dans les mots-clés (le
+  sous-titre « Related Distances & Courses » couvre déjà « course ») ; FR ajouter « reco » ou
+  « reconnaissance » à la place de « poney » ; DE « Begehung ». Si on les change : soumettre la version
+  seule, pages produit après validation.
+- **Captures : 6** (5 + la reco en tête), justification écran par écran et prompt Gemini dans
+  `doc/SCREENSHOT_PROMPTS.md`. Titres de la capture 1 : section « Screenshots Text » des 29 `.md`
+  (≤ 38 car., aucun mot du nom/sous-titre de la langue, contrôlé). CSV Canva créé :
+  `doc/store_listings/captures-canva.csv` (`node scripts/gen-csv-captures.js`, BOM, 25 langues × 6).
+  `build-fastlane-metadata.js` : contrôle des variantes passé à 6 titres, écran résultat = 3.
+- **Contrôles** (script, 28/10) : limites nom/sous-titre/mots-clés/promo/description sur les 29 fiches
+  iOS et 29 Android ; aucun « gratuit/free » dans nom, sous-titre, mots-clés ; aucune autre plateforme
+  dans la fiche iOS ; aucune mention d'Apple dans les descriptions Android ; liens EULA/confidentialité
+  présents ; nom/sous-titre/mots-clés identiques avant/après (`git diff`).
+- ⚠️ Défauts ANCIENS relevés, non corrigés (les 5 captures existantes sont déjà fabriquées) : titres
+  de captures qui reprennent un mot du nom/sous-titre dans 21 fiches (ex. FR « Calcule tes Foulées »,
+  « Dessine ton Plan de Parcours ») ; deux titres > 38 car. (fi capture 3 : 39, vi capture 3 : 42).
+  À réécrire si on refait les 5 anciens designs.
+
+**À faire par l'utilisateur** : générer l'UI de la capture 1 avec Gemini (prompt ci-dessus), l'assembler
+dans Canva (calque titre nommé `screenshot1`), « Créer en masse » avec la colonne `screenshot1` du CSV,
+ranger en `1.png` et décaler les anciennes en `2..6.png` (archiver d'abord), titre arabe en RTL
+(procédure § 9) ; puis `node scripts/build-fastlane-metadata.js` et envoi sur ordre.
+
+### À trancher
+1. **Historique séparé** et **vitesses 300–400 m/min (libre 150–600, défaut 350)** : appliqués par
+   défaut, à confirmer (cahier §7).
+2. **Sauvegarde/restauration** : l'app n'en a pas ; les recos (comme les plans, le journal, les
+   montures) ne survivent pas à une réinstallation. À créer un jour pour toutes les données ?
+3. **expo-doctor** : 8 patchs en retard. Les monter (`npx expo install --check`) touche expo et peut
+   faire monter expo-modules-jsi (patch-package `patches/expo-modules-jsi+57.1.0.patch`) : à faire en
+   connaissance de cause avant le build, pas dans cette branche sans essai.
+4. **Hauteur d'un intervalle** : la plus haute des deux barres sert à l'allocation fixe ; sans hauteur
+   saisie, allocation « amplitude » (barres < 1,15 m). Tolérance court/long en combinaison : 30 cm.
+5. **Contrat** stocké en nombre de foulées (« 5 ») ; un qualificatif (« tenues ») va dans la note.
+6. Android : pas en ligne tant que Google Play est bloqué ; `ACTIVITY_RECOGNITION` prête.
+
 ## 17/10/2026 matin — chaînes d'autorisation traduites (OUBLIÉES dans la 1.0.4)
 - Le build 19 (1.0.4, en vérification) est parti avec les textes caméra / micro / photos en français seulement : point du
   dashboard non traité avant le build. Corrigé dans le code pour la PROCHAINE version : `locales/<langue>.json` (25 langues,

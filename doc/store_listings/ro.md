@@ -1,12 +1,13 @@
 # Store Listing - Română (ro)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Calculează Pașii de Galop Instant
-2: Pași Teoretici & Distanță Exactă
-3: Checklist Înainte de Concurs
-4: Desenează Planul Traseului
-5: Jurnal de Antrenament & Video
+1: Recunoaștere pe Jos cu Pedometrul
+2: Calculează Pașii de Galop Instant
+3: Pași Teoretici & Distanță Exactă
+4: Checklist Înainte de Concurs
+5: Desenează Planul Traseului
+6: Jurnal de Antrenament & Video
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Calculează pașii de galop, planifică traseul și urmărește-ți progresul.
 TempoJump este instrumentul de pregătire pentru călărețul de sărituri peste obstacole: calculează pașii de galop, planifică traseul și urmărește-ți progresul înainte de fiecare parcurs.
 
 IMPORTANT: TempoJump este gratuit 30 de zile de la prima deschidere, fără niciun abonament. Apoi, toate funcțiile enumerate mai jos necesită un abonament Pro, săptămânal sau anual, la prețul afișat în aplicație înainte de orice cumpărare.
+
+**Recunoaștere pe jos (nou)**
+Mergi pe parcurs înainte de manșa ta: pedometrul telefonului îți numără pașii și, la fiecare obstacol, TempoJump calculează distanța și fuleele pentru CALUL TĂU. În combinații îți arată dacă distanța e scurtă, corectă sau lungă. Notează-ți planul de fulee și observațiile, află lungimea parcursului și timpul acordat, regăsește toate recunoașterile după dată și cal, afișează „ultima privire” pe tot ecranul în zona de încălzire, exportă un PDF pentru antrenor și plasează obstacolele pe planul de traseu fotografiat.
 
 **Calculator instant de pași de galop**
 Introdu numărul de pași numărați între două obstacole și obții instant numărul teoretic și recomandat de pași de galop, în funcție de mărimea calului, teren și viteză.
@@ -65,7 +69,7 @@ Distanțe & Plan Traseu
 
 ### Promotional Text (170 char max)
 
-Nou: plan de traseu cu adnotări, metronom de cadență și jurnal de antrenament cu partajare video. 30 de zile gratuit de la prima deschidere.
+Nou: recunoașterea pe jos. Mergi pe parcurs, pedometrul îți numără pașii și calculează fuleele pentru calul tău. 30 de zile gratuit de la prima deschidere.
 
 ### Keywords (100 char max, commas included)
 

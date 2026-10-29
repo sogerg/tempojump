@@ -1,12 +1,13 @@
 # Store Listing - English (en)
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Calculate Strides Instantly
-2: Theoretical Strides & Exact Distance
-3: Your Pre-Show Checklist
-4: Draw Your Course Plan
-5: Training Log & Round Videos
+1: Walk Your Round With a Pedometer
+2: Calculate Strides Instantly
+3: Theoretical Strides & Exact Distance
+4: Your Pre-Show Checklist
+5: Draw Your Course Plan
+6: Training Log & Round Videos
 
 ## App Name (30 char max)
 
@@ -21,6 +22,9 @@ Calculate strides, plan your course, and track your show jumping progress.
 TempoJump is the show jumping rider's prep tool: calculate strides, plan your course and track your progress, before every round.
 
 IMPORTANT: TempoJump is free for 30 days from first launch, with nothing to sign up for. After that, every feature listed below requires a Pro subscription, weekly or yearly, at the price shown in the app before any purchase.
+
+**Course walk (new)**
+Walk the course before your round: the phone's pedometer counts your steps and, at each fence, TempoJump works out the distance and the strides for YOUR horse. In combinations it tells you whether the distance rides short, right or long. Note your stride plan and your remarks, get the course length and the time allowed, find all your course walks by date and by horse, show a full-screen "last look" in the warm-up ring, export a PDF for your trainer and place the fences on your photographed course plan.
 
 **Instant stride calculator**
 Enter the number of steps counted between two fences and instantly get the theoretical and suggested number of strides, based on your horse's size, the footing and the speed.
@@ -65,7 +69,7 @@ Related Distances & Courses
 
 ### Promotional Text (170 char max)
 
-New: annotated course plan, canter cadence metronome, and training log with video sharing. Free for 30 days from first launch.
+New: course walk. Walk the course, the pedometer counts your steps and works out the strides for your horse. Free for 30 days from first launch.
 
 ### Keywords (100 char max, commas included)
 

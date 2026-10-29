@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Parkur planlarını fotoğraflamak ve turlarını çekmek için kamera erişimine izin ver.",
     "NSMicrophoneUsageDescription": "Turlarını sesli çekmek için mikrofon erişimine izin ver.",
     "NSPhotoLibraryUsageDescription": "Bir parkur planı veya video seçmek için fotoğraflarına erişime izin ver.",
-    "NSPhotoLibraryAddUsageDescription": "Bir parkur planı veya video seçmek için fotoğraflarına erişime izin ver."
+    "NSPhotoLibraryAddUsageDescription": "Bir parkur planı veya video seçmek için fotoğraflarına erişime izin ver.",
+    "NSMotionUsageDescription": "Parkur yürüyüşünde adımlarını saymak ve engeller arasındaki mesafeleri hesaplamak için hareket erişimine izin ver."
   }
 }

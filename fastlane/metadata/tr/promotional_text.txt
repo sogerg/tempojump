@@ -1,1 +1,1 @@
-Yeni: notlanabilir parkur planı, kadans metronomu ve video paylaşımlı antrenman günlüğü. İlk açılıştan itibaren 30 gün ücretsiz.
+Yeni: parkur yürüyüşü. Parkuru yürü, adımsayar adımlarını sayar ve atın için fuleleri hesaplar. İlk açılıştan itibaren 30 gün ücretsiz.

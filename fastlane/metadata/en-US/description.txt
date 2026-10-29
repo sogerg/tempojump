@@ -2,6 +2,9 @@ TempoJump is the show jumping rider's prep tool: calculate strides, plan your co
 
 IMPORTANT: TempoJump is free for 30 days from first launch, with nothing to sign up for. After that, every feature listed below requires a Pro subscription, weekly or yearly, at the price shown in the app before any purchase.
 
+**Course walk (new)**
+Walk the course before your round: the phone's pedometer counts your steps and, at each fence, TempoJump works out the distance and the strides for YOUR horse. In combinations it tells you whether the distance rides short, right or long. Note your stride plan and your remarks, get the course length and the time allowed, find all your course walks by date and by horse, show a full-screen "last look" in the warm-up ring, export a PDF for your trainer and place the fences on your photographed course plan.
+
 **Instant stride calculator**
 Enter the number of steps counted between two fences and instantly get the theoretical and suggested number of strides, based on your horse's size, the footing and the speed.
 

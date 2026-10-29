@@ -2,6 +2,9 @@ TempoJump è lo strumento di preparazione del cavaliere di salto ostacoli: calco
 
 IMPORTANTE: TempoJump inizia con una prova gratuita tramite Google Play; la sua durata è indicata su Google Play e nell'app prima di abbonarti, e puoi annullarla gratuitamente prima che finisca. Dopo la prova, tutte le funzionalità elencate sotto richiedono un abbonamento Pro, settimanale o annuale, al prezzo indicato nell'app prima di ogni acquisto.
 
+**Ricognizione a piedi (novità)**
+Cammina il percorso prima del tuo giro: il contapassi del telefono conta i tuoi passi e, a ogni ostacolo, TempoJump calcola la distanza e le falcate per il TUO cavallo. Nelle combinazioni ti dice se la distanza è corta, giusta o lunga. Annota il tuo piano di falcate e le tue osservazioni, ottieni la lunghezza del percorso e il tempo massimo, ritrova tutte le ricognizioni per data e per cavallo, mostra l'«ultimo sguardo» a tutto schermo in campo prova, esporta un PDF per il tuo istruttore e posiziona gli ostacoli sulla foto del tuo piano di percorso.
+
 **Calcolatore istantaneo di falcate**
 Inserisci il numero di passi contati tra due ostacoli e ottieni all'istante il numero di falcate teoriche e consigliate, in base alla taglia del tuo cavallo, al terreno e alla velocità.
 

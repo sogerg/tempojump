@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Giv adgang til kameraet for at fotografere baneplaner og filme dine runder.",
     "NSMicrophoneUsageDescription": "Giv adgang til mikrofonen for at filme dine runder med lyd.",
     "NSPhotoLibraryUsageDescription": "Giv adgang til dine billeder for at vælge en baneplan eller en video.",
-    "NSPhotoLibraryAddUsageDescription": "Giv adgang til dine billeder for at vælge en baneplan eller en video."
+    "NSPhotoLibraryAddUsageDescription": "Giv adgang til dine billeder for at vælge en baneplan eller en video.",
+    "NSMotionUsageDescription": "Giv adgang til bevægelse for at tælle dine skridt under banegennemgangen og beregne afstandene mellem forhindringerne."
   }
 }

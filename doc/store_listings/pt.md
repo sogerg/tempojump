@@ -2,13 +2,14 @@
 
 Nota: verbos na forma "você" (neutra) para cobrir os mercados BR e PT.
 
-## Screenshots Text (5 screenshots)
+## Screenshots Text (6 screenshots)
 
-1: Calcule suas Passadas na Hora
-2: Passadas Teóricas e Distância Exata
-3: Sua Checklist Antes da Prova
-4: Desenhe seu Plano de Pista
-5: Diário de Treino e Vídeos
+1: Reconhecimento a Pé com Pedômetro
+2: Calcule suas Passadas na Hora
+3: Passadas Teóricas e Distância Exata
+4: Sua Checklist Antes da Prova
+5: Desenhe seu Plano de Pista
+6: Diário de Treino e Vídeos
 
 ## App Name (30 char max)
 
@@ -23,6 +24,9 @@ Calcule suas passadas, planeje a pista e acompanhe seu progresso.
 TempoJump é a ferramenta de preparação do cavaleiro de salto: calcule suas passadas, planeje sua pista e acompanhe seu progresso, antes de cada prova.
 
 IMPORTANTE: o TempoJump é gratuito durante 30 dias a partir da primeira abertura, sem nada para subscrever. Depois, todas as funcionalidades abaixo requerem uma assinatura Pro, semanal ou anual, ao preço indicado na app antes de qualquer compra.
+
+**Reconhecimento a pé (novo)**
+Percorra a pista a pé antes da sua volta: o pedômetro do celular conta seus passos e, em cada obstáculo, o TempoJump calcula a distância e as passadas para o SEU cavalo. Nas combinações, indica se a distância está curta, certa ou longa. Anote seu plano de passadas e suas observações, obtenha o comprimento do percurso e o tempo concedido, encontre todos os seus reconhecimentos por data e por cavalo, exiba o "último olhar" em tela cheia no aquecimento, exporte um PDF para seu treinador e posicione os obstáculos no seu plano de pista fotografado.
 
 **Calculadora instantânea de passadas**
 Digite o número de passos contados entre dois obstáculos e obtenha na hora o número de passadas teóricas e recomendadas, conforme o porte do cavalo, o piso e a velocidade.
@@ -67,7 +71,7 @@ Distâncias Relacionadas
 
 ### Promotional Text (170 char max)
 
-Novo: plano de pista anotável, metrônomo de cadência e diário de treino com compartilhamento de vídeos. 30 dias grátis a partir da primeira abertura.
+Novo: reconhecimento a pé. Percorra a pista, o pedômetro conta seus passos e calcula as passadas para seu cavalo. 30 dias grátis a partir da primeira abertura.
 
 ### Keywords (100 char max, commas included)
 

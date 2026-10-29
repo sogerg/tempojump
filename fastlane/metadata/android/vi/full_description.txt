@@ -2,6 +2,9 @@ TempoJump là công cụ chuẩn bị cho người cưỡi ngựa nhảy vượt
 
 QUAN TRỌNG: TempoJump bắt đầu bằng thời gian dùng thử miễn phí qua Google Play; thời lượng được hiển thị trên Google Play và trong ứng dụng trước khi đăng ký, và bạn có thể hủy miễn phí trước khi hết hạn. Sau thời gian dùng thử, mọi tính năng dưới đây cần gói đăng ký Pro theo tuần hoặc theo năm, với giá hiển thị trong ứng dụng trước khi mua.
 
+**Khảo sát sân bằng bước bộ (mới)**
+Đi bộ trên lộ trình trước lượt thi: máy đếm bước của điện thoại đếm bước chân của bạn, và tại mỗi chướng ngại vật TempoJump tính khoảng cách và số sải bước cho CHÍNH con ngựa của bạn. Ở các tổ hợp, ứng dụng cho biết khoảng cách ngắn, vừa hay dài. Ghi kế hoạch sải bước và ghi chú, xem tổng chiều dài lộ trình và thời gian quy định, tìm lại mọi lần khảo sát theo ngày và theo ngựa, hiển thị “xem lại lần cuối” toàn màn hình ở sân khởi động, xuất PDF cho huấn luyện viên và đặt các chướng ngại vật lên ảnh sơ đồ đường đua.
+
 **Máy tính sải bước tức thì**
 Nhập số bước đếm được giữa hai chướng ngại vật và nhận ngay số sải bước lý thuyết và khuyến nghị, dựa trên kích thước ngựa, mặt sân và tốc độ.
 

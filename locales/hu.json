@@ -3,6 +3,7 @@
     "NSCameraUsageDescription": "Engedélyezd a kamerát a pályarajzok lefényképezéséhez és a köreid felvételéhez.",
     "NSMicrophoneUsageDescription": "Engedélyezd a mikrofont, hogy hanggal vehesd fel a köreidet.",
     "NSPhotoLibraryUsageDescription": "Engedélyezd a fotóidhoz való hozzáférést pályarajz vagy videó kiválasztásához.",
-    "NSPhotoLibraryAddUsageDescription": "Engedélyezd a fotóidhoz való hozzáférést pályarajz vagy videó kiválasztásához."
+    "NSPhotoLibraryAddUsageDescription": "Engedélyezd a fotóidhoz való hozzáférést pályarajz vagy videó kiválasztásához.",
+    "NSMotionUsageDescription": "Engedélyezd a mozgásadatok elérését, hogy a pályabejárás közben számolja a lépéseidet és kiszámolja az akadályok közti távolságot."
   }
 }

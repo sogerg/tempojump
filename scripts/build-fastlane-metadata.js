@@ -107,7 +107,9 @@ function androidDescription(lang, content, fullDesc) {
 const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
 const mots = (s) => norm(s).replace(/[^\p{L}\p{N}]+/gu, ' ').split(/\s+/).filter((w) => w.length > 2);
 const racine = (w) => w.replace(/(es|s)$/u, '');
-const MARQUES_NICHES = /bijou|jewel|gemstone|mulch|gravel|\bfence|clôture|mileage|receipt|pony club|ffe\b|fei\b|british showjumping|equestrian australia|longines|rolex/i;
+const NB_CAPTURES = 6;
+const ECRAN_RESULTAT = 3;
+const MARQUES_NICHES =/bijou|jewel|gemstone|mulch|gravel|\bfence|clôture|mileage|receipt|pony club|ffe\b|fei\b|british showjumping|equestrian australia|longines|rolex/i;
 function controlerVariante(code, content, mereContent) {
   const lire = (c) => ({
     name: section(c, 'App Name (30 char max)'),
@@ -142,12 +144,14 @@ function controlerVariante(code, content, mereContent) {
   if (v.keywords === m.keywords) pb.push('mots-clés identiques à la langue mère : une copie ne se crée pas');
   const visibles = [v.name, v.subtitle, v.keywords, v.promo, v.short].join('\n');
   if (MARQUES_NICHES.test(visibles)) pb.push(`marque ou niche réservée : ${visibles.match(MARQUES_NICHES)[0]}`);
-  // Titres de captures : ≤ 38 caractères, aucun mot du nom/sous-titre hors écran 2 (le résultat).
-  const titres = [...content.matchAll(/^(\d): (.+)$/gm)].map((x) => x[2].trim()).slice(0, 5);
-  if (titres.length !== 5) pb.push(`${titres.length} titres de captures au lieu de 5`);
+  // Titres de captures : ≤ 38 caractères, aucun mot du nom/sous-titre hors écran résultat.
+  // 1.1 (28/10/2026) : 6 écrans, la reco en marchant en tête ; le résultat (foulées théoriques &
+  // distance exacte) passe de l'écran 2 à l'écran 3.
+  const titres = [...content.matchAll(/^(\d): (.+)$/gm)].map((x) => x[2].trim()).slice(0, NB_CAPTURES);
+  if (titres.length !== NB_CAPTURES) pb.push(`${titres.length} titres de captures au lieu de ${NB_CAPTURES}`);
   titres.forEach((t, i) => {
     if ([...t].length > 38) pb.push(`capture ${i + 1} : ${[...t].length} caractères`);
-    if (i === 1) return;
+    if (i === ECRAN_RESULTAT - 1) return;
     const dup = [...new Set(mots(t).filter((w) => deja.has(racine(w))))];
     if (dup.length) pb.push(`capture ${i + 1} reprend ${dup.join(', ')} du nom/sous-titre`);
   });
